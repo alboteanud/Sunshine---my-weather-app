@@ -17,6 +17,7 @@ package com.example.android.sunshine.ui.list;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +26,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.android.sunshine.R;
+import com.example.android.sunshine.data.database.ListWeatherEntry;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.utilities.SunshineDateUtils;
 import com.example.android.sunshine.utilities.SunshineWeatherUtils;
@@ -57,7 +59,7 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
      * boolean resources.
      */
     private final boolean mUseTodayLayout;
-    private List<WeatherEntry> mForecast;
+    private List<ListWeatherEntry> mForecast;
 
     /**
      * Creates a ForecastAdapter.
@@ -104,7 +106,7 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
      */
     @Override
     public void onBindViewHolder(ForecastAdapterViewHolder forecastAdapterViewHolder, int position) {
-        WeatherEntry currentWeather = mForecast.get(position);
+        ListWeatherEntry currentWeather = mForecast.get(position);
 
         /****************
          * Weather Icon *
@@ -117,20 +119,20 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
          * Weather Date *
          ****************/
         long dateInMillis = currentWeather.getDate().getTime();
-         /* Get human readable string using our utility method */
+        /* Get human readable string using our utility method */
         String dateString = SunshineDateUtils.getFriendlyDateString(mContext, dateInMillis, false);
 
-         /* Display friendly date string */
+        /* Display friendly date string */
         forecastAdapterViewHolder.dateView.setText(dateString);
 
         /***********************
          * Weather Description *
          ***********************/
         String description = SunshineWeatherUtils.getStringForWeatherCondition(mContext, weatherIconId);
-         /* Create the accessibility (a11y) String from the weather description */
+        /* Create the accessibility (a11y) String from the weather description */
         String descriptionA11y = mContext.getString(R.string.a11y_forecast, description);
 
-         /* Set the text and content description (for accessibility purposes) */
+        /* Set the text and content description (for accessibility purposes) */
         forecastAdapterViewHolder.descriptionView.setText(description);
         forecastAdapterViewHolder.descriptionView.setContentDescription(descriptionA11y);
 
@@ -138,16 +140,16 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
          * High (max) temperature *
          **************************/
         double highInCelsius = currentWeather.getMax();
-         /*
-          * If the user's preference for weather is fahrenheit, formatTemperature will convert
-          * the temperature. This method will also append either °C or °F to the temperature
-          * String.
-          */
+        /*
+         * If the user's preference for weather is fahrenheit, formatTemperature will convert
+         * the temperature. This method will also append either °C or °F to the temperature
+         * String.
+         */
         String highString = SunshineWeatherUtils.formatTemperature(mContext, highInCelsius);
-         /* Create the accessibility (a11y) String from the weather description */
+        /* Create the accessibility (a11y) String from the weather description */
         String highA11y = mContext.getString(R.string.a11y_high_temp, highString);
 
-         /* Set the text and content description (for accessibility purposes) */
+        /* Set the text and content description (for accessibility purposes) */
         forecastAdapterViewHolder.highTempView.setText(highString);
         forecastAdapterViewHolder.highTempView.setContentDescription(highA11y);
 
@@ -155,15 +157,15 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
          * Low (min) temperature *
          *************************/
         double lowInCelsius = currentWeather.getMin();
-         /*
-          * If the user's preference for weather is fahrenheit, formatTemperature will convert
-          * the temperature. This method will also append either °C or °F to the temperature
-          * String.
-          */
+        /*
+         * If the user's preference for weather is fahrenheit, formatTemperature will convert
+         * the temperature. This method will also append either °C or °F to the temperature
+         * String.
+         */
         String lowString = SunshineWeatherUtils.formatTemperature(mContext, lowInCelsius);
         String lowA11y = mContext.getString(R.string.a11y_low_temp, lowString);
 
-         /* Set the text and content description (for accessibility purposes) */
+        /* Set the text and content description (for accessibility purposes) */
         forecastAdapterViewHolder.lowTempView.setText(lowString);
         forecastAdapterViewHolder.lowTempView.setContentDescription(lowA11y);
     }
@@ -232,9 +234,47 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
      *
      * @param newForecast the new list of forecasts to use as ForecastAdapter's data source
      */
-    void swapForecast(final List<WeatherEntry> newForecast) {
-        mForecast = newForecast;
-        notifyDataSetChanged();
+    void swapForecast(final List<ListWeatherEntry> newForecast) {
+        // If there was no forecast data, then recreate all of the list
+        if (mForecast == null) {
+            mForecast = newForecast;
+            notifyDataSetChanged();
+        } else {
+                        /*
++            * Otherwise we use DiffUtil to calculate the changes and update accordingly. This
++            * shows the four methods you need to override to return a DiffUtil callback. The
++            * old list is the current list stored in mForecast, where the new list is the new
++            * values passed in from the observing the database.
++            */
+
+            DiffUtil.DiffResult result = DiffUtil.calculateDiff(new DiffUtil.Callback() {
+                @Override
+                public int getOldListSize() {
+                    return mForecast.size();
+                }
+
+                @Override
+                public int getNewListSize() {
+                    return newForecast.size();
+                }
+
+                @Override
+                public boolean areItemsTheSame(int oldItemPosition, int newItemPosition) {
+                    return mForecast.get(oldItemPosition).getId() ==
+                            newForecast.get(newItemPosition).getId();
+                }
+
+                @Override
+                public boolean areContentsTheSame(int oldItemPosition, int newItemPosition) {
+                    ListWeatherEntry newWeather = newForecast.get(newItemPosition);
+                    ListWeatherEntry oldWeather = mForecast.get(oldItemPosition);
+                    return newWeather.getId() == oldWeather.getId()
+                            && newWeather.getDate().equals(oldWeather.getDate());
+                }
+            });
+            mForecast = newForecast;
+            result.dispatchUpdatesTo(this);
+        }
     }
 
     /**

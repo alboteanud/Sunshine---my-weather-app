@@ -15,13 +15,16 @@
  */
 package com.example.android.sunshine.utilities;
 
+import android.arch.lifecycle.LiveData;
 import android.content.Context;
 import android.text.format.DateUtils;
 
 import com.example.android.sunshine.R;
+import com.example.android.sunshine.data.database.WeatherEntry;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
@@ -102,6 +105,8 @@ public final class SunshineDateUtils {
         long normalizedMilli = getNormalizedUtcMsForToday();
         return new Date(normalizedMilli);
     }
+
+
 
     /**
      * This method returns the number of days since the epoch (January 01, 1970, 12:00 Midnight UTC)
