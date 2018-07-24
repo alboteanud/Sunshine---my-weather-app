@@ -23,17 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-26.1.0.aar\\6f36b3aab4d8c9a1d4c252d6f3f199d8\\res\\values-v16\\values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.1.aar\\7c00d8fb4bdc211190441edb31d3fe96\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\45c81dfcad4ce4ce3d7f996715d050a3\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -49,6 +39,16 @@
                         "endLines": "12",
                         "endColumns": "12",
                         "endOffsets": "636"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\e6902070cef09e15f8b3d865e5561acd\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]
