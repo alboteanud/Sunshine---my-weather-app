@@ -38,7 +38,8 @@ public interface WeatherDao {
     @Query("SELECT * FROM weather WHERE date = :date")
     int countAllFutureWeather(Date date);
 
-
+//    Gets the weather for a single day
+    @Query("SELECT * FROM weather WHERE date = :date")
     LiveData<WeatherEntry> getWeatherByDate(Date date);
 
     /**
