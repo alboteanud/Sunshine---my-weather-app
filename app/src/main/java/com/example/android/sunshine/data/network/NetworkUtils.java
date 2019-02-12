@@ -49,6 +49,12 @@ final class NetworkUtils {
     private static final String STATIC_WEATHER_URL =
             "https://andfun-weather.udacity.com/staticweather";
 
+    private static final String BASE_OWM_WEATHER_URL = "http://api.openweathermap.org/data/2.5/forecast?";
+    public static final String OWM_USER_ID = "fa5d8273d9b9f6123bdeb94d0a05c9aa"; // cont Anca Scobaru
+    private static final String LANG_PARAM = "lang";
+    private static final String ID_PARAM = "id";
+    private static final String APPID_PARAM = "APPID";
+
     private static final String FORECAST_BASE_URL = DYNAMIC_WEATHER_URL;
 
     /*
@@ -80,8 +86,11 @@ final class NetworkUtils {
      * @return URL to query weather service
      */
     static URL getUrl() {
-        String locationQuery = "Mountain View, CA";
-        return buildUrlWithLocationQuery(locationQuery);
+//        String locationQuery = "Mountain View, CA";
+//        return buildUrlWithLocationQuery(locationQuery);
+
+        String locationId = "524901";
+        return buildUrlWithLocationId(locationId);
     }
 
     /**
@@ -97,6 +106,24 @@ final class NetworkUtils {
                 .appendQueryParameter(FORMAT_PARAM, format)
                 .appendQueryParameter(UNITS_PARAM, units)
                 .appendQueryParameter(DAYS_PARAM, Integer.toString(WeatherNetworkDataSource.NUM_DAYS))
+                .build();
+
+        try {
+            URL weatherQueryUrl = new URL(weatherQueryUri.toString());
+            Log.v(TAG, "URL: " + weatherQueryUrl);
+            return weatherQueryUrl;
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private static URL buildUrlWithLocationId(String locationID) {
+        Uri weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
+                .appendQueryParameter(ID_PARAM, locationID)
+                .appendQueryParameter(FORMAT_PARAM, format)
+                .appendQueryParameter(UNITS_PARAM, units)
+                .appendQueryParameter(APPID_PARAM, OWM_USER_ID)
                 .build();
 
         try {

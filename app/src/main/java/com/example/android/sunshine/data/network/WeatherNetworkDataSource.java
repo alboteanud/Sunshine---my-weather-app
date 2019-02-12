@@ -39,7 +39,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class WeatherNetworkDataSource {
     // The number of days we want our API to return, set to 14 days or two weeks
-    public static final int NUM_DAYS = 14;
+    public static final int NUM_DAYS = 5;
     private static final String LOG_TAG = WeatherNetworkDataSource.class.getSimpleName();
 
     // Interval at which to sync with the weather. Use TimeUnit for convenience, rather than
@@ -171,9 +171,10 @@ public class WeatherNetworkDataSource {
                 if (response != null && response.getWeatherForecast().length != 0) {
                     Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
                             + " values");
-                    Log.d(LOG_TAG, String.format("First value is %1.0f and %1.0f",
+                    Log.d(LOG_TAG, String.format("First value is %1.0f and %1.0f  date %s",
                             response.getWeatherForecast()[0].getMin(),
-                            response.getWeatherForecast()[0].getMax()));
+                            response.getWeatherForecast()[0].getMax(),
+                            response.getWeatherForecast()[0].getDate()));
 
                     mDownloadedWeatherForecasts.postValue(response.getWeatherForecast());
                     // Will eventually do something with the downloaded data

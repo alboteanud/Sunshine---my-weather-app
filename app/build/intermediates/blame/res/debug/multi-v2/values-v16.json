@@ -1,29 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine - arch comp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine - arch comp\\app\\src\\main\\res\\values-v16\\styles.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/44e96902beae8e3e4d6cd2dcb397b751/res/values-v16/values-v16.xml",
                     "from": {
-                        "startLines": "19",
+                        "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "694",
-                        "endLines": "24",
-                        "endColumns": "12",
-                        "endOffsets": "1036"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "463"
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 },
                 {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\45c81dfcad4ce4ce3d7f996715d050a3\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/226b3423cb9855d480eb4e8abe4ba354/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,13 +33,22 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.1.1.aar\\e6902070cef09e15f8b3d865e5561acd\\res\\values-v16\\values-v16.xml",
+                    "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/values-v16/styles.xml",
                     "from": {
-                        "startLines": "2",
+                        "startLines": "19",
                         "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
+                        "startOffsets": "694",
+                        "endLines": "24",
+                        "endColumns": "12",
+                        "endOffsets": "1036"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "463"
                     }
                 }
             ]

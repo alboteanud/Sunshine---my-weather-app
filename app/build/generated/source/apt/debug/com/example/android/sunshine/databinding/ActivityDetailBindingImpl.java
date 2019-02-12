@@ -16,7 +16,8 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
         sIncludes.setIncludes(0, 
             new String[] {"primary_weather_info", "extra_weather_details"},
             new int[] {1, 2},
-            new int[] {R.layout.primary_weather_info, R.layout.extra_weather_details});
+            new int[] {com.example.android.sunshine.R.layout.primary_weather_info,
+                com.example.android.sunshine.R.layout.extra_weather_details});
         sViewsWithIds = null;
     }
     // views
