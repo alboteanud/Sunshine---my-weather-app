@@ -32,7 +32,7 @@ public class WeatherDao_Impl implements WeatherDao {
     this.__insertionAdapterOfWeatherEntry = new EntityInsertionAdapter<WeatherEntry>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`min`,`max`,`humidity`,`pressure`,`wind`,`degrees`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`min`,`max`,`humidity`,`pressure`,`wind`,`degrees`,`icon`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -52,6 +52,11 @@ public class WeatherDao_Impl implements WeatherDao {
         stmt.bindDouble(7, value.getPressure());
         stmt.bindDouble(8, value.getWind());
         stmt.bindDouble(9, value.getDegrees());
+        if (value.getIcon() == null) {
+          stmt.bindNull(10);
+        } else {
+          stmt.bindString(10, value.getIcon());
+        }
       }
     };
     this.__preparedStmtOfDeleteOldWeather = new SharedSQLiteStatement(__db) {
@@ -97,7 +102,7 @@ public class WeatherDao_Impl implements WeatherDao {
 
   @Override
   public LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date) {
-    final String _sql = "SELECT id, weatherIconId, date, min, max FROM weather WHERE date >= ?";
+    final String _sql = "SELECT id, weatherIconId, date, min, max, icon FROM weather WHERE date >= ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -128,6 +133,7 @@ public class WeatherDao_Impl implements WeatherDao {
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
           final int _cursorIndexOfMin = _cursor.getColumnIndexOrThrow("min");
           final int _cursorIndexOfMax = _cursor.getColumnIndexOrThrow("max");
+          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
           final List<ListWeatherEntry> _result = new ArrayList<ListWeatherEntry>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final ListWeatherEntry _item;
@@ -147,7 +153,9 @@ public class WeatherDao_Impl implements WeatherDao {
             _tmpMin = _cursor.getDouble(_cursorIndexOfMin);
             final double _tmpMax;
             _tmpMax = _cursor.getDouble(_cursorIndexOfMax);
-            _item = new ListWeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpMin,_tmpMax);
+            final String _tmpIcon;
+            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
+            _item = new ListWeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpMin,_tmpMax,_tmpIcon);
             _result.add(_item);
           }
           return _result;
@@ -227,6 +235,7 @@ public class WeatherDao_Impl implements WeatherDao {
           final int _cursorIndexOfPressure = _cursor.getColumnIndexOrThrow("pressure");
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
+          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
           final WeatherEntry _result;
           if(_cursor.moveToFirst()) {
             final int _tmpId;
@@ -253,7 +262,9 @@ public class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpMin,_tmpMax,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees);
+            final String _tmpIcon;
+            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
+            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpMin,_tmpMax,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon);
           } else {
             _result = null;
           }

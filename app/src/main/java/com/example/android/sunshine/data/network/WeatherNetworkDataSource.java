@@ -91,6 +91,12 @@ public class WeatherNetworkDataSource {
         Log.d(LOG_TAG, "Service created");
     }
 
+    public void startFetchWeatherNowService() {
+        Intent intentToFetch = new Intent(mContext, SunshineSyncWeatherNowIntentService.class);
+        mContext.startService(intentToFetch);
+        Log.d(LOG_TAG, "Service created - weather Now");
+    }
+
     /**
      * Schedules a repeating job service which fetches the weather.
      */
@@ -171,10 +177,11 @@ public class WeatherNetworkDataSource {
                 if (response != null && response.getWeatherForecast().length != 0) {
                     Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
                             + " values");
-                    Log.d(LOG_TAG, String.format("First value is %1.0f and %1.0f  date %s",
+                    Log.d(LOG_TAG, String.format("First value is %1.0f and %1.0f  date %s  icon %s",
                             response.getWeatherForecast()[0].getMin(),
                             response.getWeatherForecast()[0].getMax(),
-                            response.getWeatherForecast()[0].getDate()));
+                            response.getWeatherForecast()[0].getDate(),
+                            response.getWeatherForecast()[0].getIcon()));
 
                     mDownloadedWeatherForecasts.postValue(response.getWeatherForecast());
                     // Will eventually do something with the downloaded data
@@ -185,5 +192,52 @@ public class WeatherNetworkDataSource {
             }
         });
     }
+
+    void fetchWeatherNow() {
+        Log.d(LOG_TAG, "Fetch weather NOW started");
+        mExecutors.networkIO().execute(() -> {
+            try {
+
+                // The getUrl method will return the URL that we need to get the forecast JSON for the
+                // weather. It will decide whether to create a URL based off of the latitude and
+                // longitude or off of a simple location as a String.
+
+//                URL weatherRequestUrl = NetworkUtils.getUrl_();                                           // for test server
+                URL weatherRequestUrl = NetworkUtils.getUrlWeatherNow();
+
+                // Use the URL to retrieve the JSON
+                String jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl);
+
+                // Parse the JSON into a list of weather forecasts
+//                WeatherResponse response = new OpenWeatherJsonParser().parse_(jsonWeatherResponse);       // for test server
+                WeatherResponse response = new OpenWeatherJsonParser().parseWeatherNow(jsonWeatherResponse);
+                Log.d(LOG_TAG, "JSON Parsing finished Weather Now");
+
+
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the
+                // SunshineRepository.
+                if (response != null && response.getWeatherForecast().length != 0) {
+                    Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
+                            + " values");
+                    Log.d(LOG_TAG, String.format("Weather Now First value is %1.0f and %1.0f  date %s  icon %s",
+                            response.getWeatherForecast()[0].getMin(),
+                            response.getWeatherForecast()[0].getMax(),
+                            response.getWeatherForecast()[0].getDate(),
+                            response.getWeatherForecast()[0].getIcon()));
+
+                    WeatherEntry[] entries = response.getWeatherForecast();
+//                    WeatherEntry[] entry = new WeatherEntry[]{entries[0]};
+
+                    mDownloadedWeatherForecasts.postValue(entries);
+                    // Will eventually do something with the downloaded data
+                }
+            } catch (Exception e) {
+                // Server probably invalid
+                e.printStackTrace();
+            }
+        });
+    }
+
 
 }

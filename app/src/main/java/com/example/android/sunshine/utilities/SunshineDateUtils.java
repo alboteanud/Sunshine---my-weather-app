@@ -15,16 +15,16 @@
  */
 package com.example.android.sunshine.utilities;
 
-import android.arch.lifecycle.LiveData;
 import android.content.Context;
 import android.text.format.DateUtils;
+import android.util.Log;
 
 import com.example.android.sunshine.R;
-import com.example.android.sunshine.data.database.WeatherEntry;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
+import java.util.GregorianCalendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
@@ -158,6 +158,19 @@ public final class SunshineDateUtils {
 
 
     public static String getFriendlyDateString(Context context, long normalizedUtcMidnight, boolean showFullDate) {
+        // START DAN
+        if (normalizedUtcMidnight > 1){
+
+            TimeZone tz = TimeZone.getDefault();
+            Calendar cal = GregorianCalendar.getInstance(tz);
+            long deviceOffset = tz.getOffset(cal.getTimeInMillis());
+            long cityOffset = getCityOffsetMillis();
+
+            String localizedDayName = new SimpleDateFormat("dd MMM  HH:mm").format(
+                    normalizedUtcMidnight + cityOffset - deviceOffset);
+            return localizedDayName ;  //  + "  " + normalizedUtcMidnight/(1000*1000);
+        }
+        // END DAN
 
         /*
          * NOTE: localDate should be localDateMidnightMillis and should be straight from the
@@ -189,6 +202,8 @@ public final class SunshineDateUtils {
              */
             String dayName = getDayName(context, localDate);
             String readableDate = getReadableDateString(context, localDate);
+
+
             if (daysFromEpochToProvidedDate - daysFromEpochToToday < 2) {
                 /*
                  * Since there is no localized format that returns "Today" or "Tomorrow" in the API
@@ -196,9 +211,11 @@ public final class SunshineDateUtils {
                  * and use it to replace the date from DateUtils. This isn't guaranteed to work,
                  * but our testing so far has been conclusively positive.
                  *
-                 * For information on a simpler API to use (on API > 18), please check out the
-                 * documentation on DateFormat#getBestDateTimePattern(Locale, String)
-                 * https://developer.android.com/reference/android/text/format/DateFormat.html#getBestDateTimePattern
+                 * For information on a simpler API to use (on API > 18), please chec\
+                 * ]{P":OIlu hn
+                 * .0k out the
+                 * doµ˜˜vc\]
+                 * =_P?). p .frvdecswxåΩumentation on DateFormat#getBestDateTimePattern(Locale, String)                 * https://developer.android.com/reference/android/text/format/DateFormat.html#getBestDateTimePattern
                  */
                 String localizedDayName = new SimpleDateFormat("EEEE").format(localDate);
                 return readableDate.replace(localizedDayName, dayName);
@@ -263,4 +280,17 @@ public final class SunshineDateUtils {
                 return dayFormat.format(dateInMillis);
         }
     }
+
+    //  https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/
+    public static final String TIME_ZONE_ID = "Australia/Brisbane";
+
+    public static long getCityOffsetMillis() {
+        TimeZone timeZone = TimeZone.getTimeZone(TIME_ZONE_ID);
+        long now = System.currentTimeMillis();
+        long offset = timeZone.getOffset(now);
+//        Log.d("TAG", "time_zone ID  " + timeZone.getID() + "   offset: " + offset);
+        return offset;
+    }
+
+
 }

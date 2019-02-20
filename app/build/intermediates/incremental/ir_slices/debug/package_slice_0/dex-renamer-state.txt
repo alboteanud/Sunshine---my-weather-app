@@ -1,4 +1,4 @@
-#Tue Feb 12 18:54:39 EET 2019
+#Wed Feb 20 13:58:12 EET 2019
 base.0=/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

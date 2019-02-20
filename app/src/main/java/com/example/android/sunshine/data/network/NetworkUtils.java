@@ -48,8 +48,8 @@ final class NetworkUtils {
 
     private static final String STATIC_WEATHER_URL =
             "https://andfun-weather.udacity.com/staticweather";
-
     private static final String BASE_OWM_WEATHER_URL = "http://api.openweathermap.org/data/2.5/forecast?";
+    private static final String BASE_OWM_WEATHER_NOW_URL = "http://api.openweathermap.org/data/2.5/weather?";
     public static final String OWM_USER_ID = "fa5d8273d9b9f6123bdeb94d0a05c9aa"; // cont Anca Scobaru
     private static final String LANG_PARAM = "lang";
     private static final String ID_PARAM = "id";
@@ -86,11 +86,23 @@ final class NetworkUtils {
      * @return URL to query weather service
      */
     static URL getUrl() {
-//        String locationQuery = "Mountain View, CA";
-//        return buildUrlWithLocationQuery(locationQuery);
-
-        String locationId = "524901";
+//        String locationId = "680332"; // Craiova
+        String locationId = "7839562";  // Brisbane, AU
         return buildUrlWithLocationId(locationId);
+    }
+
+    /**
+     * used in testing server
+     */
+    static URL getUrl_() {
+        String locationQuery = "Mountain View, CA";
+        return buildUrlWithLocationQuery(locationQuery);
+    }
+
+    static URL getUrlWeatherNow() {
+
+        String locationId = "7839562";  // Brisbane, AU
+        return buildUrlWeatherNowWithLocationId(locationId);
     }
 
     /**
@@ -129,6 +141,25 @@ final class NetworkUtils {
         try {
             URL weatherQueryUrl = new URL(weatherQueryUri.toString());
             Log.v(TAG, "URL: " + weatherQueryUrl);
+            return weatherQueryUrl;
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    private static URL buildUrlWeatherNowWithLocationId(String locationID) {
+        // ex:  api.openweathermap.org/data/2.5/weather?id=2172797
+        Uri weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_NOW_URL).buildUpon()
+                .appendQueryParameter(ID_PARAM, locationID)
+                .appendQueryParameter(FORMAT_PARAM, format)
+                .appendQueryParameter(UNITS_PARAM, units)
+                .appendQueryParameter(APPID_PARAM, OWM_USER_ID)
+                .build();
+
+        try {
+            URL weatherQueryUrl = new URL(weatherQueryUri.toString());
+            Log.v(TAG, "URL NOW current weather: " + weatherQueryUrl);
             return weatherQueryUrl;
         } catch (MalformedURLException e) {
             e.printStackTrace();

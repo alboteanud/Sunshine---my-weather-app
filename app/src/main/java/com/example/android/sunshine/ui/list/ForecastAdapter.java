@@ -19,12 +19,14 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.data.database.ListWeatherEntry;
 import com.example.android.sunshine.data.database.WeatherEntry;
@@ -113,7 +115,16 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
          ****************/
         int weatherIconId = currentWeather.getWeatherIconId();
         int weatherImageResourceId = getImageResourceId(weatherIconId, position);
-        forecastAdapterViewHolder.iconView.setImageResource(weatherImageResourceId);
+//        forecastAdapterViewHolder.iconView.setImageResource(weatherImageResourceId);
+
+        //DAN
+        String icon = currentWeather.getIcon();
+        String iconUrl = "http://openweathermap.org/img/w/"+ icon + ".png";
+//        Log.d("TAG", "icon url: " + iconUrl);
+
+        Glide.with(forecastAdapterViewHolder.iconView)
+                .load(iconUrl)
+                .into(forecastAdapterViewHolder.iconView);
 
         /****************
          * Weather Date *

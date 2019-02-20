@@ -83,6 +83,11 @@ public class SunshineRepository {
      * immediate sync is required, this method will take care of making sure that sync occurs.
      */
     public synchronized void initializeData() {
+        mExecutors.diskIO().execute(() -> {
+            if (isFetchNeededCurrentWeather()) {
+                startFetchWeatherNowService();
+            }
+        });
 
         // Only perform initialization once per app lifetime. If initialization has already been
         // performed, we have nothing to do in this method.
@@ -128,12 +133,20 @@ public class SunshineRepository {
         return (count < WeatherNetworkDataSource.NUM_DAYS);
     }
 
+    private boolean isFetchNeededCurrentWeather() {
+        return true;
+    }
+
     /**
      * Network related operation
      */
 
     private void startFetchWeatherService() {
         mWeatherNetworkDataSource.startFetchWeatherService();
+    }
+
+    private void startFetchWeatherNowService() {
+        mWeatherNetworkDataSource.startFetchWeatherNowService();
     }
 
     public LiveData<WeatherEntry> getWeatherByDate(Date date) {
