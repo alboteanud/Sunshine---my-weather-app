@@ -19,9 +19,11 @@ import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.util.Log;
 
 import com.example.android.sunshine.AppExecutors;
+import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.firebase.jobdispatcher.Constraint;
 import com.firebase.jobdispatcher.Driver;
@@ -32,6 +34,9 @@ import com.firebase.jobdispatcher.Lifetime;
 import com.firebase.jobdispatcher.Trigger;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -92,7 +97,7 @@ public class WeatherNetworkDataSource {
     }
 
     public void startFetchWeatherNowService() {
-        Intent intentToFetch = new Intent(mContext, SunshineSyncWeatherNowIntentService.class);
+        Intent intentToFetch = new Intent(mContext, SunshineSyncIntentServiceWNow.class);
         mContext.startService(intentToFetch);
         Log.d(LOG_TAG, "Service created - weather Now");
     }
@@ -185,6 +190,16 @@ public class WeatherNetworkDataSource {
 
                     mDownloadedWeatherForecasts.postValue(response.getWeatherForecast());
                     // Will eventually do something with the downloaded data
+
+                    if (BuildConfig.DEBUG){
+                        SharedPreferences prefs = mContext.getSharedPreferences("_", Context.MODE_PRIVATE);
+                        String txt = prefs.getString("txt", "");
+                        String date = new SimpleDateFormat("dd MMM  HH:mm", Locale.getDefault()).format(System.currentTimeMillis());
+                        String dateWeather = new SimpleDateFormat("dd MMM  HH:mm", Locale.getDefault()).format( response.getWeatherForecast()[0].getDate());
+                        txt += date + "   dt: " + dateWeather+  "\n";
+                        prefs.edit().putString("txt", txt).apply();
+                    }
+
                 }
             } catch (Exception e) {
                 // Server probably invalid

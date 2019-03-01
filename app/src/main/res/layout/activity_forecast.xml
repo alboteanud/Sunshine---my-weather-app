@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2017 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,11 +12,11 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  -->
-<!-- This layout defines the main screen and will display the list of weather or an error -->
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+  --><!-- This layout defines the main screen and will display the list of weather or an error -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
       - This RecyclerView will be responsible for displaying our list of weather data. All of  -
@@ -36,8 +35,14 @@
         android:id="@+id/recyclerview_forecast"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
+        android:layout_alignTop="@id/adContainer"
+        android:layout_alignParentTop="true"
+
         android:clipToPadding="false"
-        android:paddingBottom="8dp"/>
+        android:paddingBottom="8dp" />
+    <!--android:layout_above="@+id/adContainer"-->
+
 
 
     <!-- A progress bar that will be shown to users to indicate that weather data is loading -->
@@ -45,7 +50,18 @@
         android:id="@+id/pb_loading_indicator"
         android:layout_width="42dp"
         android:layout_height="42dp"
-        android:layout_gravity="center"
+        android:layout_centerInParent="true"
         android:visibility="invisible" />
 
-</FrameLayout>
+    <FrameLayout
+        android:id="@+id/adContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        tools:background="#777"
+        tools:layout_height="50dp"
+        tools:layout_width="200dp" />
+
+
+</RelativeLayout>

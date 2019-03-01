@@ -27,11 +27,11 @@ import com.example.android.sunshine.utilities.InjectorUtils;
  * will not trigger a job immediately. This should only be called when the application is on the
  * screen.
  */
-public class SunshineSyncWeatherNowIntentService extends IntentService {
-    private static final String LOG_TAG = SunshineSyncWeatherNowIntentService.class.getSimpleName();
+public class SunshineSyncIntentServiceWNow extends IntentService {
+    private static final String LOG_TAG = SunshineSyncIntentServiceWNow.class.getSimpleName();
 
-    public SunshineSyncWeatherNowIntentService() {
-        super("SunshineSyncWeatherNowIntentService");
+    public SunshineSyncIntentServiceWNow() {
+        super("SunshineSyncIntentServiceWNow");
         Log.d(LOG_TAG, "Intent Service Now constructor");
     }
 

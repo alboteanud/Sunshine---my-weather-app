@@ -101,6 +101,74 @@ public class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
+  public LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts_orig(Date date) {
+    final String _sql = "SELECT id, weatherIconId, date, min, max FROM weather WHERE date >= ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    final Long _tmp;
+    _tmp = DateConverter.toTimestamp(date);
+    if (_tmp == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp);
+    }
+    return new ComputableLiveData<List<ListWeatherEntry>>() {
+      private Observer _observer;
+
+      @Override
+      protected List<ListWeatherEntry> compute() {
+        if (_observer == null) {
+          _observer = new Observer("weather") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfWeatherIconId = _cursor.getColumnIndexOrThrow("weatherIconId");
+          final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
+          final int _cursorIndexOfMin = _cursor.getColumnIndexOrThrow("min");
+          final int _cursorIndexOfMax = _cursor.getColumnIndexOrThrow("max");
+          final List<ListWeatherEntry> _result = new ArrayList<ListWeatherEntry>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final ListWeatherEntry _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final int _tmpWeatherIconId;
+            _tmpWeatherIconId = _cursor.getInt(_cursorIndexOfWeatherIconId);
+            final Date _tmpDate;
+            final Long _tmp_1;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmp_1 = null;
+            } else {
+              _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
+            }
+            _tmpDate = DateConverter.toDate(_tmp_1);
+            final double _tmpMin;
+            _tmpMin = _cursor.getDouble(_cursorIndexOfMin);
+            final double _tmpMax;
+            _tmpMax = _cursor.getDouble(_cursorIndexOfMax);
+            _item = new ListWeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpMin,_tmpMax,null);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
   public LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date) {
     final String _sql = "SELECT id, weatherIconId, date, min, max, icon FROM weather WHERE date >= ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);

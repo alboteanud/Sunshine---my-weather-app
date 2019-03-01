@@ -115,16 +115,15 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
          ****************/
         int weatherIconId = currentWeather.getWeatherIconId();
         int weatherImageResourceId = getImageResourceId(weatherIconId, position);
-//        forecastAdapterViewHolder.iconView.setImageResource(weatherImageResourceId);
+        forecastAdapterViewHolder.iconView.setImageResource(weatherImageResourceId);
 
-        //DAN
-        String icon = currentWeather.getIcon();
-        String iconUrl = "http://openweathermap.org/img/w/"+ icon + ".png";
+        //DAN icons from OWM
+//        String icon = currentWeather.getIcon();
+//        String iconUrl = "http://openweathermap.org/img/w/"+ icon + ".png";
 //        Log.d("TAG", "icon url: " + iconUrl);
-
-        Glide.with(forecastAdapterViewHolder.iconView)
-                .load(iconUrl)
-                .into(forecastAdapterViewHolder.iconView);
+//        Glide.with(forecastAdapterViewHolder.iconView)
+//                .load(iconUrl)
+//                .into(forecastAdapterViewHolder.iconView);
 
         /****************
          * Weather Date *

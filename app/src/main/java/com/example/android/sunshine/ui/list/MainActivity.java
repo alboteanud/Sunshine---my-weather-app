@@ -16,17 +16,30 @@
 package com.example.android.sunshine.ui.list;
 
 import android.arch.lifecycle.ViewModelProviders;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
+import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.ui.detail.DetailActivity;
 import com.example.android.sunshine.utilities.InjectorUtils;
+import com.example.android.sunshine.utilities.Utils;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdSize;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.Date;
 
@@ -118,6 +131,28 @@ public class MainActivity extends AppCompatActivity implements
             else showLoading();
         });
 
+        setAdView();
+    }
+
+    private void setAdView() {
+        MobileAds.initialize(this, getString(R.string.app_id));
+        AdView adView = new AdView(this);
+        adView.setAdSize(AdSize.SMART_BANNER);
+        String id = Utils.getAdBannerId(this);
+        Log.d("MainActivity", " ad id " + id);
+        adView.setAdUnitId(id);
+        adView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+                // Code to be executed when an ad finishes loading.
+            }
+                             });
+        FrameLayout frameLayout = findViewById(R.id.adContainer);
+        frameLayout.addView(adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+// TODO: Add adView to your view hierarchy.
+
     }
 
     /**
@@ -159,5 +194,27 @@ public class MainActivity extends AppCompatActivity implements
         mRecyclerView.setVisibility(View.INVISIBLE);
         // Finally, show the loading indicator
         mLoadingIndicator.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        if (BuildConfig.DEBUG)
+            getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.menu_test_1) {
+            String txt = getSharedPreferences("_", Context.MODE_PRIVATE).getString("txt", "");
+            Log.d("MainActivity", txt);
+            Toast.makeText(this, txt, Toast.LENGTH_LONG).show();
+        } else if (id == R.id.menu_test_2) {
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
