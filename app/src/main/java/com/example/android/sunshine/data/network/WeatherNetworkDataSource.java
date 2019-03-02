@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -20,11 +20,13 @@ import android.arch.lifecycle.MutableLiveData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.text.format.DateUtils;
 import android.util.Log;
 
 import com.example.android.sunshine.AppExecutors;
 import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.data.database.WeatherEntry;
+import com.example.android.sunshine.utilities.Utils;
 import com.firebase.jobdispatcher.Constraint;
 import com.firebase.jobdispatcher.Driver;
 import com.firebase.jobdispatcher.FirebaseJobDispatcher;
@@ -35,7 +37,6 @@ import com.firebase.jobdispatcher.Trigger;
 
 import java.net.URL;
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
@@ -44,7 +45,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class WeatherNetworkDataSource {
     // The number of days we want our API to return, set to 14 days or two weeks
-    public static final int NUM_DAYS = 5;
+    public static final int NUM_DAYS = 14;
     private static final String LOG_TAG = WeatherNetworkDataSource.class.getSimpleName();
 
     // Interval at which to sync with the weather. Use TimeUnit for convenience, rather than
@@ -57,14 +58,14 @@ public class WeatherNetworkDataSource {
     // For Singleton instantiation
     private static final Object LOCK = new Object();
     private static WeatherNetworkDataSource sInstance;
-    private final Context mContext;
+    private final Context context;
 
     private final AppExecutors mExecutors;
     // LiveData storing the latest downloaded weather forecasts
     private final MutableLiveData<WeatherEntry[]> mDownloadedWeatherForecasts;
 
     private WeatherNetworkDataSource(Context context, AppExecutors executors) {
-        mContext = context;
+        this.context = context;
         mExecutors = executors;
         mDownloadedWeatherForecasts = new MutableLiveData<WeatherEntry[]>();
     }
@@ -91,14 +92,14 @@ public class WeatherNetworkDataSource {
      * Starts an intent service to fetch the weather.
      */
     public void startFetchWeatherService() {
-        Intent intentToFetch = new Intent(mContext, SunshineSyncIntentService.class);
-        mContext.startService(intentToFetch);
+        Intent intentToFetch = new Intent(context, SunshineSyncIntentService.class);
+        context.startService(intentToFetch);
         Log.d(LOG_TAG, "Service created");
     }
 
     public void startFetchWeatherNowService() {
-        Intent intentToFetch = new Intent(mContext, SunshineSyncIntentServiceWNow.class);
-        mContext.startService(intentToFetch);
+        Intent intentToFetch = new Intent(context, SunshineSyncIntentServiceWNow.class);
+        context.startService(intentToFetch);
         Log.d(LOG_TAG, "Service created - weather Now");
     }
 
@@ -106,7 +107,7 @@ public class WeatherNetworkDataSource {
      * Schedules a repeating job service which fetches the weather.
      */
     public void scheduleRecurringFetchWeatherSync() {
-        Driver driver = new GooglePlayDriver(mContext);
+        Driver driver = new GooglePlayDriver(context);
         FirebaseJobDispatcher dispatcher = new FirebaseJobDispatcher(driver);
 
         // Create the Job to periodically sync Sunshine
@@ -132,7 +133,7 @@ public class WeatherNetworkDataSource {
                  */
                 .setRecurring(true)
                 /*
-                 * We want the weather data to be synced every 3 to 4 hours. The first argument for
+                 * We want the weather data to be synced every c3 to c4 hours. The first argument for
                  * Trigger's static executionWindow method is the start of the time frame when the
                  * sync should be performed. The second argument is the latest point in time at
                  * which the data should be synced. Please note that this end time is not
@@ -166,7 +167,7 @@ public class WeatherNetworkDataSource {
                 // weather. It will decide whether to create a URL based off of the latitude and
                 // longitude or off of a simple location as a String.
 
-                URL weatherRequestUrl = NetworkUtils.getUrl();
+                URL weatherRequestUrl = NetworkUtils.getUrl(context);
 
                 // Use the URL to retrieve the JSON
                 String jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl);
@@ -192,13 +193,27 @@ public class WeatherNetworkDataSource {
                     // Will eventually do something with the downloaded data
 
                     if (BuildConfig.DEBUG){
-                        SharedPreferences prefs = mContext.getSharedPreferences("_", Context.MODE_PRIVATE);
+                        SharedPreferences prefs = context.getSharedPreferences("_", Context.MODE_PRIVATE);
                         String txt = prefs.getString("txt", "");
                         String date = new SimpleDateFormat("dd MMM  HH:mm", Locale.getDefault()).format(System.currentTimeMillis());
                         String dateWeather = new SimpleDateFormat("dd MMM  HH:mm", Locale.getDefault()).format( response.getWeatherForecast()[0].getDate());
                         txt += date + "   dt: " + dateWeather+  "\n";
                         prefs.edit().putString("txt", txt).apply();
                     }
+
+                    boolean notificationsEnabled = Utils.areNotificationsEnabled(context);
+                    long timeSinceLastNotification = Utils.getEllapsedTimeSinceLastNotification(context);
+                    boolean oneDayPassedSinceLastNotification = false;
+
+                    if (timeSinceLastNotification >= DateUtils.DAY_IN_MILLIS) {
+                        oneDayPassedSinceLastNotification = true;
+                    }
+
+                    if (notificationsEnabled && oneDayPassedSinceLastNotification) {
+                        WeatherEntry entry = response.getWeatherForecast()[0];
+                        Utils.notifyUserOfNewWeather(context, entry);
+                    }
+
 
                 }
             } catch (Exception e) {
@@ -235,7 +250,7 @@ public class WeatherNetworkDataSource {
                 if (response != null && response.getWeatherForecast().length != 0) {
                     Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
                             + " values");
-                    Log.d(LOG_TAG, String.format("Weather Now First value is %1.0f and %1.0f  date %s  icon %s",
+                    Log.d(LOG_TAG, String.format("Weather Now First value is %c1.0f and %c1.0f  date %s  icon %s",
                             response.getWeatherForecast()[0].getMin(),
                             response.getWeatherForecast()[0].getMax(),
                             response.getWeatherForecast()[0].getDate(),

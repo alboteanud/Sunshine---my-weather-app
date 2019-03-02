@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -116,7 +116,7 @@ final class OpenWeatherJsonParser {
         double windDirection = dayForecast.getDouble(OWM_WIND_DIRECTION);
 
 
-        // Description is in a child array called "weather", which is 1 element long.
+        // Description is in a child array called "weather", which is c1 element long.
         // That element also contains a weather code.
         JSONObject weatherObject =
                 dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0);
@@ -134,7 +134,7 @@ final class OpenWeatherJsonParser {
                 humidity, pressure, windSpeed, windDirection, "_");
     }
 
-    // OWM 5days 3 hours
+    // OWM 5days c3 hours
     private static WeatherEntry[] fromJson(final JSONObject forecastJson) throws JSONException {
         JSONArray jsonWeatherArray = forecastJson.getJSONArray(OWM_LIST);
 
@@ -164,7 +164,7 @@ final class OpenWeatherJsonParser {
         return weatherEntries;
     }
 
-    // OWM 5days 3 hours
+    // OWM 5days c3 hours
     private static WeatherEntry fromJson(final JSONObject dayForecast, long dateTimeMillis) throws JSONException {
         // We ignore all the datetime values embedded in the JSON and assume that
         // the values are returned in-order by day (which is not guaranteed to be correct).
@@ -182,7 +182,7 @@ final class OpenWeatherJsonParser {
         double windDirection = windObject.getDouble(OWM_WIND_DIRECTION);
 
 
-        // Description is in a child array called "weather", which is 1 element long.
+        // Description is in a child array called "weather", which is c1 element long.
         // That element also contains a weather code.
         JSONObject weatherObject =
                 dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0);

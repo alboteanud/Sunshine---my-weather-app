@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright (C) 2017 The Android Open Source Project
   ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ Licensed under the Apache License, Version c2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
   ~ You may obtain a copy of the License at
   ~
@@ -17,6 +17,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:contentDescription="city image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:src="@drawable/c1"
+        android:scaleType="centerCrop"
+        android:layout_above="@id/adContainer"/>
+
 
     <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
       - This RecyclerView will be responsible for displaying our list of weather data. All of  -
@@ -35,13 +45,12 @@
         android:id="@+id/recyclerview_forecast"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
         android:layout_alignTop="@id/adContainer"
         android:layout_alignParentTop="true"
-
-        android:clipToPadding="false"
-        android:paddingBottom="8dp" />
-    <!--android:layout_above="@+id/adContainer"-->
+        android:layout_above="@+id/adContainer"
+        android:clipToPadding="false"/>
+        <!--android:paddingBottom="8dp" />-->
+    <!-- android:layout_above="@+id/adContainer" -->
 
 
 
@@ -55,13 +64,12 @@
 
     <FrameLayout
         android:id="@+id/adContainer"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:minHeight="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        tools:background="#777"
-        tools:layout_height="50dp"
-        tools:layout_width="200dp" />
+        tools:background="#377"/>
 
 
 </RelativeLayout>

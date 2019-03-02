@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -27,6 +27,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -132,6 +133,10 @@ public class MainActivity extends AppCompatActivity implements
         });
 
         setAdView();
+
+       ImageView imageView =  findViewById(R.id.backgroundImageView);
+       int imgId = Utils.getBackgrResourceIdForToday();
+       imageView.setImageResource(imgId);
     }
 
     private void setAdView() {
@@ -139,19 +144,19 @@ public class MainActivity extends AppCompatActivity implements
         AdView adView = new AdView(this);
         adView.setAdSize(AdSize.SMART_BANNER);
         String id = Utils.getAdBannerId(this);
-        Log.d("MainActivity", " ad id " + id);
         adView.setAdUnitId(id);
         adView.setAdListener(new AdListener() {
             @Override
             public void onAdLoaded() {
-                // Code to be executed when an ad finishes loading.
+
             }
-                             });
+        });
+
         FrameLayout frameLayout = findViewById(R.id.adContainer);
         frameLayout.addView(adView);
+
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
-// TODO: Add adView to your view hierarchy.
 
     }
 

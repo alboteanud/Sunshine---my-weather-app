@@ -1,4 +1,4 @@
-com.example.android.sunshine
+com.craiovadata.us.ct.bridgeport
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -45,6 +45,9 @@ attr actionOverflowMenuStyle
 attr actionProviderClass
 attr actionViewClass
 attr activityChooserViewStyle
+attr adSize
+attr adSizes
+attr adUnitId
 attr adjustable
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
@@ -446,6 +449,8 @@ color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
 color background_material_light
+color blackSemi
+color blackSemiDark
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -484,6 +489,7 @@ color material_grey_850
 color material_grey_900
 color notification_action_color_filter
 color notification_icon_bg_color
+color notification_material_background_media_default_color
 color preference_fallback_accent_color
 color primary_dark_material_dark
 color primary_dark_material_light
@@ -510,6 +516,7 @@ color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color whiteSemi
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -732,20 +739,32 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable art_clear
+drawable art_clear_n
 drawable art_clouds
 drawable art_fog
 drawable art_light_clouds
+drawable art_light_clouds_n
 drawable art_light_rain
 drawable art_rain
 drawable art_snow
 drawable art_storm
+drawable c1
+drawable c2
+drawable c3
+drawable c4
+drawable c5
+drawable c6
+drawable gradient_0_semi
 drawable ic_arrow_down_24dp
 drawable ic_clear
+drawable ic_clear_n
 drawable ic_cloudy
 drawable ic_fog
 drawable ic_light_clouds
+drawable ic_light_clouds_n
 drawable ic_light_rain
 drawable ic_logo
+drawable ic_notif
 drawable ic_rain
 drawable ic_snow
 drawable ic_storm
@@ -772,6 +791,7 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
+id action0
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -791,16 +811,19 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id adContainer
 id add
 id alertTitle
 id all
 id always
 id async
+id backgroundImageView
 id barrier
 id beginning
 id blocking
 id bottom
 id buttonPanel
+id cancel_action
 id center
 id center_horizontal
 id center_vertical
@@ -823,6 +846,7 @@ id direct
 id disableHome
 id edit_query
 id end
+id end_padder
 id expand_activities_button
 id expanded_menu
 id extra_details
@@ -857,6 +881,9 @@ id line3
 id listMode
 id list_item
 id low_temperature
+id media_actions
+id menu_test_1
+id menu_test_2
 id message
 id middle
 id multiply
@@ -915,6 +942,7 @@ id src_in
 id src_over
 id standard
 id start
+id status_bar_latest_event_content
 id submenuarrow
 id submit_area
 id switchWidget
@@ -947,6 +975,7 @@ integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer cancel_button_image_alpha
 integer config_tooltipAnimTime
+integer google_play_services_version
 integer status_bar_notification_info_maxnum
 layout abc_action_bar_title_item
 layout abc_action_bar_up_container
@@ -984,8 +1013,17 @@ layout forecast_list_item
 layout list_item_forecast_today
 layout notification_action
 layout notification_action_tombstone
+layout notification_media_action
+layout notification_media_cancel_action
+layout notification_template_big_media
+layout notification_template_big_media_custom
+layout notification_template_big_media_narrow
+layout notification_template_big_media_narrow_custom
 layout notification_template_custom_big
 layout notification_template_icon_group
+layout notification_template_lines_media
+layout notification_template_media
+layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout preference
@@ -1009,6 +1047,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu_main
 mipmap ic_launcher
 string a11y_forecast
 string a11y_forecast_icon
@@ -1056,7 +1095,10 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string app_id
 string app_name
+string banner_id_Petru
+string common_google_play_services_unknown_issue
 string condition_2xx
 string condition_3xx
 string condition_500
@@ -1122,10 +1164,31 @@ string format_temperature
 string format_wind_kmh
 string format_wind_mph
 string humidity_label
+string norif_channel_id
+string notif_channel_name
+string notification_text
+string owm_city_id
+string pref_enable_notifications_key
+string pref_enable_notifications_label
+string pref_last_notification
+string pref_location_key
+string pref_units_key
+string pref_units_label
+string pref_units_label_imperial
+string pref_units_label_metric
 string pressure_label
+string s1
+string s2
+string s3
+string s4
+string s5
+string s6
+string s7
 string search_menu_title
+string settings
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string time_zone
 string title_activity_detail
 string today
 string tomorrow
@@ -1140,6 +1203,7 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style AppTheme
 style AppTheme_Forecast
+style AppTheme_Forecast_orig
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -1405,9 +1469,14 @@ style TextAppearance_AppCompat_Widget_Switch
 style TextAppearance_AppCompat_Widget_TextView_SpinnerItem
 style TextAppearance_Compat_Notification
 style TextAppearance_Compat_Notification_Info
+style TextAppearance_Compat_Notification_Info_Media
 style TextAppearance_Compat_Notification_Line2
+style TextAppearance_Compat_Notification_Line2_Media
+style TextAppearance_Compat_Notification_Media
 style TextAppearance_Compat_Notification_Time
+style TextAppearance_Compat_Notification_Time_Media
 style TextAppearance_Compat_Notification_Title
+style TextAppearance_Compat_Notification_Title_Media
 style TextAppearance_Widget_AppCompat_ExpandedMenu_Item
 style TextAppearance_Widget_AppCompat_Toolbar_Subtitle
 style TextAppearance_Widget_AppCompat_Toolbar_Title
@@ -1432,6 +1501,7 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_IAPTheme
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -1520,6 +1590,7 @@ styleable ActionMenuItemView android_minWidth
 styleable ActionMenuView
 styleable ActionMode background backgroundSplit closeItemLayout height subtitleTextStyle titleTextStyle
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
+styleable AdsAttrs adSize adSizes adUnitId
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable

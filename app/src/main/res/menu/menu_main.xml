@@ -5,12 +5,12 @@
     <item
         android:id="@+id/menu_test_1"
         android:title="Show"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
 
     <item
         android:id="@+id/menu_test_2"
-        android:title="Sync"
-        app:showAsAction="ifRoom" />
+        android:title="Test 2"
+        app:showAsAction="never" />
 
 
 </menu>

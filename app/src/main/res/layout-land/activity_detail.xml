@@ -2,7 +2,7 @@
 <!--
   ~ Copyright (C) 2017 The Android Open Source Project
   ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ Licensed under the Apache License, Version c2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
   ~ You may obtain a copy of the License at
   ~
@@ -15,7 +15,7 @@
   ~ limitations under the License.
   -->
 
-<!-- COMPLETED (3) Create the version of activity_detail that will be used in landscape mode -->
+<!-- COMPLETED (c3) Create the version of activity_detail that will be used in landscape mode -->
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   - This layout displays the complete details of a given day's weather, including the date, a    -
   - weather icon and description, the high and low temperature, the humidity, pressure, and the  -

@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -19,14 +19,12 @@ import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.util.DiffUtil;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.data.database.ListWeatherEntry;
 import com.example.android.sunshine.data.database.WeatherEntry;
@@ -110,15 +108,18 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
     public void onBindViewHolder(ForecastAdapterViewHolder forecastAdapterViewHolder, int position) {
         ListWeatherEntry currentWeather = mForecast.get(position);
 
+        //DAN icons from OWM
+        String iconId = currentWeather.getIcon();
+        int weatherImageResourceId = getImageResourceId_n(iconId, position);
+
         /****************
          * Weather Icon *
          ****************/
         int weatherIconId = currentWeather.getWeatherIconId();
-        int weatherImageResourceId = getImageResourceId(weatherIconId, position);
+//        int weatherImageResourceId = getImageResourceId(weatherIconId, position);
         forecastAdapterViewHolder.iconView.setImageResource(weatherImageResourceId);
 
-        //DAN icons from OWM
-//        String icon = currentWeather.getIcon();
+
 //        String iconUrl = "http://openweathermap.org/img/w/"+ icon + ".png";
 //        Log.d("TAG", "icon url: " + iconUrl);
 //        Glide.with(forecastAdapterViewHolder.iconView)
@@ -200,6 +201,24 @@ class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForecastAdapt
             case VIEW_TYPE_FUTURE_DAY:
                 return SunshineWeatherUtils
                         .getSmallArtResourceIdForWeatherCondition(weatherIconId);
+
+            default:
+                throw new IllegalArgumentException("Invalid view type, value of " + viewType);
+        }
+    }
+
+  private int getImageResourceId_n(String iconId, int position) {
+        int viewType = getItemViewType(position);
+
+        switch (viewType) {
+
+            case VIEW_TYPE_TODAY:
+                return SunshineWeatherUtils
+                        .getLargeArtResourceIdForIconCode(iconId);
+
+            case VIEW_TYPE_FUTURE_DAY:
+                return SunshineWeatherUtils
+                        .getSmallArtResourceIdForIconCode(iconId);
 
             default:
                 throw new IllegalArgumentException("Invalid view type, value of " + viewType);

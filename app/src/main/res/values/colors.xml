@@ -2,7 +2,7 @@
 <!--
   ~ Copyright (C) 2017 The Android Open Source Project
   ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ Licensed under the Apache License, Version c2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
   ~ You may obtain a copy of the License at
   ~
@@ -15,6 +15,7 @@
   ~ limitations under the License.
   -->
 <resources>
+
     <color name="colorPrimary">#03A9F4</color>
     <color name="colorPrimaryDark">#0288D1</color>
     <color name="colorAccent">#FFD740</color>
@@ -31,4 +32,8 @@
 
     <!-- the activated state color for a forecast list item -->
     <color name="activated">#E0E0E0</color>
+
+    <color name="blackSemi">#8000</color>
+    <color name="blackSemiDark">#9000</color>
+    <color name="whiteSemi">#7fff</color>
 </resources>

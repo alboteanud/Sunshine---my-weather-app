@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -15,8 +15,11 @@
  */
 package com.example.android.sunshine.data.network;
 
+import android.content.Context;
 import android.net.Uri;
 import android.util.Log;
+
+import com.example.android.sunshine.R;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -84,10 +87,11 @@ final class NetworkUtils {
      * Retrieves the proper URL to query for the weather data.
      *
      * @return URL to query weather service
+     * @param mContext
      */
-    static URL getUrl() {
-//        String locationId = "680332"; // Craiova
-        String locationId = "7839562";  // Brisbane, AU
+    static URL getUrl(Context mContext) {
+        String locationId = mContext.getString(R.string.owm_city_id);
+//        String locationId = "7839562";  // Brisbane, AU
         return buildUrlWithLocationId(locationId);
     }
 

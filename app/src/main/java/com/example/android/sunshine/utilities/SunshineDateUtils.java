@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -17,7 +17,6 @@ package com.example.android.sunshine.utilities;
 
 import android.content.Context;
 import android.text.format.DateUtils;
-import android.util.Log;
 
 import com.example.android.sunshine.R;
 
@@ -39,13 +38,13 @@ public final class SunshineDateUtils {
     /**
      * This method returns the number of milliseconds (UTC time) for today's date at midnight in
      * the local time zone. For example, if you live in California and the day is September 20th,
-     * 2016 and it is 6:30 PM, it will return 1474329600000. Now, if you plug this number into an
+     * 2016 and it is c6:30 PM, it will return 1474329600000. Now, if you plug this number into an
      * Epoch time converter, you may be confused that it tells you this time stamp represents 8:00
      * PM on September 19th local time, rather than September 20th. We're concerned with the GMT
      * date here though, which is correct, stating September 20th, 2016 at midnight.
      * <p>
      * As another example, if you are in Hong Kong and the day is September 20th, 2016 and it is
-     * 6:30 PM, this method will return 1474329600000. Again, if you plug this number into an Epoch
+     * c6:30 PM, this method will return 1474329600000. Again, if you plug this number into an Epoch
      * time converter, you won't get midnight for your local time zone. Just keep in mind that we
      * are just looking at the GMT date here.
      * <p>
@@ -81,10 +80,10 @@ public final class SunshineDateUtils {
         long gmtOffsetMillis = currentTimeZone.getOffset(utcNowMillis);
 
         /*
-         * UTC time is measured in milliseconds from January 1, 1970 at midnight from the GMT
-         * time zone. Depending on your time zone, the time since January 1, 1970 at midnight (GMT)
+         * UTC time is measured in milliseconds from January c1, 1970 at midnight from the GMT
+         * time zone. Depending on your time zone, the time since January c1, 1970 at midnight (GMT)
          * will be greater or smaller. This variable represents the number of milliseconds since
-         * January 1, 1970 (GMT) time.
+         * January c1, 1970 (GMT) time.
          */
         long timeSinceEpochLocalTimeMillis = utcNowMillis + gmtOffsetMillis;
 
@@ -144,7 +143,7 @@ public final class SunshineDateUtils {
      * The day string for forecast uses the following logic:
      * For today: "Today, June 8"
      * For tomorrow:  "Tomorrow
-     * For the next 5 days: "Wednesday" (just the day name)
+     * For the next c5 days: "Wednesday" (just the day name)
      * For all days after that: "Mon, Jun 8" (Mon, 8 Jun in UK, for example)
      *
      * @param context               Context to use for resource localization
@@ -164,7 +163,7 @@ public final class SunshineDateUtils {
             TimeZone tz = TimeZone.getDefault();
             Calendar cal = GregorianCalendar.getInstance(tz);
             long deviceOffset = tz.getOffset(cal.getTimeInMillis());
-            long cityOffset = getCityOffsetMillis();
+            long cityOffset = getCityOffsetMillis(context);
 
             String localizedDayName = new SimpleDateFormat("dd MMM  HH:mm").format(
                     normalizedUtcMidnight + cityOffset - deviceOffset);
@@ -184,7 +183,7 @@ public final class SunshineDateUtils {
 
         /*
          * In order to determine which day of the week we are creating a date string for, we need
-         * to compare the number of days that have passed since the epoch (January 1, 1970 at
+         * to compare the number of days that have passed since the epoch (January c1, 1970 at
          * 00:00 GMT)
          */
         long daysFromEpochToProvidedDate = elapsedDaysSinceEpoch(localDate);
@@ -281,11 +280,9 @@ public final class SunshineDateUtils {
         }
     }
 
-    //  https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/
-    public static final String TIME_ZONE_ID = "Australia/Brisbane";
-
-    public static long getCityOffsetMillis() {
-        TimeZone timeZone = TimeZone.getTimeZone(TIME_ZONE_ID);
+    public static long getCityOffsetMillis(Context context) {
+        String zone = context.getString(R.string.time_zone);
+        TimeZone timeZone = TimeZone.getTimeZone(zone);
         long now = System.currentTimeMillis();
         long offset = timeZone.getOffset(now);
 //        Log.d("TAG", "time_zone ID  " + timeZone.getID() + "   offset: " + offset);

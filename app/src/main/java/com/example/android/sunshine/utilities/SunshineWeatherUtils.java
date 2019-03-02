@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version 2.0 (the "License");
+ * Licensed under the Apache License, Version c2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -16,6 +16,8 @@
 package com.example.android.sunshine.utilities;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.example.android.sunshine.R;
@@ -42,10 +44,26 @@ public final class SunshineWeatherUtils {
      * "21°"
      */
     public static String formatTemperature(Context context, double temperature) {
+
+        if (isImperialSystem(context)) {
+            temperature = celsiusToFahrenheit(temperature);
+        }
+        float roundedTemp = Math.round(temperature);
         int temperatureFormatResourceId = R.string.format_temperature;
 
         /* For presentation, assume the user doesn't care about tenths of a degree. */
-        return String.format(context.getString(temperatureFormatResourceId), temperature);
+        return String.format(context.getString(temperatureFormatResourceId), roundedTemp);
+    }
+
+    public static boolean isImperialSystem(Context context) {
+        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+        String key = context.getString(R.string.pref_units_key);
+        return sp.getBoolean(key, true);
+    }
+
+
+    private static double celsiusToFahrenheit(double temperatureInCelsius) {
+        return (temperatureInCelsius * 1.8) + 32;
     }
 
     /**
@@ -53,13 +71,19 @@ public final class SunshineWeatherUtils {
      * String. (eg NW) The method will return the wind String in the following form: "2 km/h SW"
      *
      * @param context   Android Context to access preferences and resources
-     * @param windSpeed Wind speed in kilometers / hour
+     * @param windSpeed_m_s Wind speed in kilometers / hour
      * @param degrees   Degrees as measured on a compass, NOT temperature degrees!
      *                  See https://www.mathsisfun.com/geometry/degrees.html
      * @return Wind String in the following form: "2 km/h SW"
      */
-    public static String getFormattedWind(Context context, double windSpeed, double degrees) {
+    public static String getFormattedWind(Context context, double windSpeed_m_s, double degrees) {
         int windFormat = R.string.format_wind_kmh;
+
+        float windSpeed = (float) (windSpeed_m_s * 3.6f); // transf in km/h
+        if (isImperialSystem(context)) {
+            windFormat = R.string.format_wind_mph;
+            windSpeed = .621371192237334f * windSpeed;  // transf in miles/hour
+        }
 
         String direction = "Unknown";
         if (degrees >= 337.5 || degrees < 22.5) {
@@ -273,7 +297,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource id for the corresponding icon. -1 if no relation is found.
+     * @return resource id for the corresponding icon. -c1 if no relation is found.
      */
     public static int getSmallArtResourceIdForWeatherCondition(int weatherId) {
 
@@ -314,6 +338,80 @@ public final class SunshineWeatherUtils {
         return R.drawable.ic_storm;
     }
 
+    public static int getSmallArtResourceIdForIconCode(String iconCode) {
+
+        switch (iconCode) {
+            case "01d":
+                return R.drawable.ic_clear;
+            case "01n":
+                return R.drawable.ic_clear_n;
+            case "02d":
+                return R.drawable.ic_light_clouds;
+            case "02n":
+                return R.drawable.ic_light_clouds_n;
+            case "03d":
+            case "03n":
+            case "04d":
+            case "04n":
+                return R.drawable.ic_cloudy;
+            case "09d":
+            case "09n":
+                return R.drawable.ic_light_rain;
+            case "10d":
+            case "10n":
+                return R.drawable.ic_rain;
+            case "11d":
+            case "11n":
+                return R.drawable.ic_storm;
+            case "13d":
+            case "13n":
+                return R.drawable.ic_snow;
+            case "50d":
+            case "50n":
+                return R.drawable.ic_fog;
+        }
+
+        Log.e(LOG_TAG, "Unknown Weather: " + iconCode);
+        return R.drawable.ic_storm;
+    }
+
+    public static int getLargeArtResourceIdForIconCode(String iconCode) {
+
+        switch (iconCode) {
+            case "01d":
+                return R.drawable.art_clear;
+            case "01n":
+                return R.drawable.art_clear_n;
+            case "02d":
+                return R.drawable.art_light_clouds;
+            case "02n":
+                return R.drawable.art_light_clouds_n;
+            case "03d":
+            case "03n":
+            case "04d":
+            case "04n":
+                return R.drawable.art_clouds;
+            case "09d":
+            case "09n":
+                return R.drawable.art_light_rain;
+            case "10d":
+            case "10n":
+                return R.drawable.art_rain;
+            case "11d":
+            case "11n":
+                return R.drawable.art_storm;
+            case "13d":
+            case "13n":
+                return R.drawable.art_snow;
+            case "50d":
+            case "50n":
+                return R.drawable.art_fog;
+        }
+
+        Log.e(LOG_TAG, "Unknown Weather: " + iconCode);
+        return R.drawable.art_storm;
+    }
+
     /**
      * Helper method to provide the art resource ID according to the weather condition ID returned
      * by the OpenWeatherMap call. This method is very similar to
@@ -325,7 +423,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource ID for the corresponding icon. -1 if no relation is found.
+     * @return resource ID for the corresponding icon. -c1 if no relation is found.
      */
     public static int getLargeArtResourceIdForWeatherCondition(int weatherId) {
 
