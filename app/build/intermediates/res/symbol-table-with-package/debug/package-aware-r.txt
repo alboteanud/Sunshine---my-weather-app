@@ -88,6 +88,13 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr cardBackgroundColor
+attr cardCornerRadius
+attr cardElevation
+attr cardMaxElevation
+attr cardPreventCornerOverlap
+attr cardUseCompatPadding
+attr cardViewStyle
 attr chainUseRtl
 attr checkBoxPreferenceStyle
 attr checkboxStyle
@@ -118,6 +125,11 @@ attr contentInsetLeft
 attr contentInsetRight
 attr contentInsetStart
 attr contentInsetStartWithNavigation
+attr contentPadding
+attr contentPaddingBottom
+attr contentPaddingLeft
+attr contentPaddingRight
+attr contentPaddingTop
 attr controlBackground
 attr coordinatorLayoutStyle
 attr customNavigationLayout
@@ -324,6 +336,10 @@ attr seekBarStyle
 attr selectable
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr seriesColor
+attr seriesData
+attr seriesTitle
+attr seriesType
 attr shouldDisableView
 attr showAsAction
 attr showDividers
@@ -417,6 +433,7 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool config_materialPreferenceIconSpaceReserved
+bool default_units_imperial
 bool use_today_layout
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
@@ -459,6 +476,10 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color cardview_dark_background
+color cardview_light_background
+color cardview_shadow_end_color
+color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
@@ -475,6 +496,7 @@ color foreground_material_dark
 color foreground_material_light
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color ic_launcher_background
 color material_blue_grey_800
 color material_blue_grey_900
 color material_blue_grey_950
@@ -592,6 +614,9 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen cardview_compat_inset_shadow
+dimen cardview_default_elevation
+dimen cardview_default_radius
 dimen compat_button_inset_horizontal_material
 dimen compat_button_inset_vertical_material
 dimen compat_button_padding_horizontal_material
@@ -781,6 +806,13 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
+drawable stabil1
+drawable stabil2
+drawable stabil3
+drawable stabil4
+drawable stabil5
+drawable stabil6
+drawable stabil7
 drawable today_touch_selector
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -824,6 +856,7 @@ id blocking
 id bottom
 id buttonPanel
 id cancel_action
+id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -857,6 +890,7 @@ id fill_vertical
 id forever
 id glide_custom_view_target_tag
 id gone
+id graph
 id group_divider
 id groups
 id guideline
@@ -872,6 +906,7 @@ id icon_group
 id ifRoom
 id image
 id info
+id info_text
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1007,6 +1042,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_detail
 layout activity_forecast
+layout activity_test2
 layout expand_button
 layout extra_weather_details
 layout forecast_list_item
@@ -1049,6 +1085,8 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 menu menu_main
 mipmap ic_launcher
+mipmap ic_launcher_foreground
+mipmap ic_launcher_round
 string a11y_forecast
 string a11y_forecast_icon
 string a11y_high_temp
@@ -1095,7 +1133,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string app_id
+string admob_app_id
 string app_name
 string banner_id_Petru
 string common_google_play_services_unknown_issue
@@ -1190,6 +1228,7 @@ string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string time_zone
 string title_activity_detail
+string title_activity_test
 string today
 string tomorrow
 string v7_preference_off
@@ -1209,6 +1248,7 @@ style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
 style Base_Animation_AppCompat_DropDownUp
 style Base_Animation_AppCompat_Tooltip
+style Base_CardView
 style Base_DialogWindowTitle_AppCompat
 style Base_DialogWindowTitleBackground_AppCompat
 style Base_TextAppearance_AppCompat
@@ -1359,6 +1399,9 @@ style Base_Widget_AppCompat_Spinner_Underlined
 style Base_Widget_AppCompat_TextView_SpinnerItem
 style Base_Widget_AppCompat_Toolbar
 style Base_Widget_AppCompat_Toolbar_Button_Navigation
+style CardView
+style CardView_Dark
+style CardView_Light
 style DetailLabel
 style ExtraWeatherMeasurement
 style Platform_AppCompat
@@ -1602,6 +1645,7 @@ styleable AppCompatTextView android_textAppearance autoSizeMaxTextSize autoSizeM
 styleable AppCompatTheme android_windowIsFloating android_windowAnimationStyle actionBarDivider actionBarItemBackground actionBarPopupTheme actionBarSize actionBarSplitStyle actionBarStyle actionBarTabBarStyle actionBarTabStyle actionBarTabTextStyle actionBarTheme actionBarWidgetTheme actionButtonStyle actionDropDownStyle actionMenuTextAppearance actionMenuTextColor actionModeBackground actionModeCloseButtonStyle actionModeCloseDrawable actionModeCopyDrawable actionModeCutDrawable actionModeFindDrawable actionModePasteDrawable actionModePopupWindowStyle actionModeSelectAllDrawable actionModeShareDrawable actionModeSplitBackground actionModeStyle actionModeWebSearchDrawable actionOverflowButtonStyle actionOverflowMenuStyle activityChooserViewStyle alertDialogButtonGroupStyle alertDialogCenterButtons alertDialogStyle alertDialogTheme autoCompleteTextViewStyle borderlessButtonStyle buttonBarButtonStyle buttonBarNegativeButtonStyle buttonBarNeutralButtonStyle buttonBarPositiveButtonStyle buttonBarStyle buttonStyle buttonStyleSmall checkboxStyle checkedTextViewStyle colorAccent colorBackgroundFloating colorButtonNormal colorControlActivated colorControlHighlight colorControlNormal colorError colorPrimary colorPrimaryDark colorSwitchThumbNormal controlBackground dialogCornerRadius dialogPreferredPadding dialogTheme dividerHorizontal dividerVertical dropDownListViewStyle dropdownListPreferredItemHeight editTextBackground editTextColor editTextStyle homeAsUpIndicator imageButtonStyle listChoiceBackgroundIndicator listDividerAlertDialog listMenuViewStyle listPopupWindowStyle listPreferredItemHeight listPreferredItemHeightLarge listPreferredItemHeightSmall listPreferredItemPaddingLeft listPreferredItemPaddingRight panelBackground panelMenuListTheme panelMenuListWidth popupMenuStyle popupWindowStyle radioButtonStyle ratingBarStyle ratingBarStyleIndicator ratingBarStyleSmall searchViewStyle seekBarStyle selectableItemBackground selectableItemBackgroundBorderless spinnerDropDownItemStyle spinnerStyle switchStyle textAppearanceLargePopupMenu textAppearanceListItem textAppearanceListItemSecondary textAppearanceListItemSmall textAppearancePopupMenuHeader textAppearanceSearchResultSubtitle textAppearanceSearchResultTitle textAppearanceSmallPopupMenu textColorAlertDialogListItem textColorSearchUrl toolbarNavigationButtonStyle toolbarStyle tooltipForegroundColor tooltipFrameBackground viewInflaterClass windowActionBar windowActionBarOverlay windowActionModeOverlay windowFixedHeightMajor windowFixedHeightMinor windowFixedWidthMajor windowFixedWidthMinor windowMinWidthMajor windowMinWidthMinor windowNoTitle
 styleable BackgroundStyle android_selectableItemBackground selectableItemBackground
 styleable ButtonBarLayout allowStacking
+styleable CardView android_minWidth android_minHeight cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable CheckBoxPreference android_summaryOn android_summaryOff android_disableDependentsState disableDependentsState summaryOff summaryOn
 styleable ColorStateListItem android_color android_alpha alpha
 styleable CompoundButton android_button buttonTint buttonTintMode
@@ -1616,6 +1660,7 @@ styleable FontFamily fontProviderAuthority fontProviderCerts fontProviderFetchSt
 styleable FontFamilyFont android_font android_fontWeight android_fontStyle android_ttcIndex android_fontVariationSettings font fontStyle fontVariationSettings fontWeight ttcIndex
 styleable GradientColor android_startColor android_endColor android_type android_centerX android_centerY android_gradientRadius android_tileMode android_centerColor android_startX android_startY android_endX android_endY
 styleable GradientColorItem android_color android_offset
+styleable GraphViewXML android_title seriesColor seriesData seriesTitle seriesType
 styleable LinearConstraintLayout android_orientation
 styleable LinearLayoutCompat android_gravity android_orientation android_baselineAligned android_baselineAlignedChildIndex android_weightSum divider dividerPadding measureWithLargestChild showDividers
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight

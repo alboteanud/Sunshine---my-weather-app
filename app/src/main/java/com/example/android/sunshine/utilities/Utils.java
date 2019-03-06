@@ -16,6 +16,7 @@ import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
+import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.ui.list.MainActivity;
@@ -23,7 +24,7 @@ import com.example.android.sunshine.ui.list.MainActivity;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import static com.example.android.sunshine.utilities.SunshineWeatherUtils.getSmallArtResourceIdForIconCode;
+import static com.example.android.sunshine.utilities.SunshineWeatherUtils.getLargeArtResourceIdForIconCode;
 
 public class Utils {
     public static String getAdBannerId(Context context) {
@@ -32,7 +33,7 @@ public class Utils {
 
         String id = "ca-app-pub-3931793949981809/9792691746";
         if (r < 2) id = context.getString(R.string.banner_id_Petru);
-//        if (BuildConfig.DEBUG) id = "ca-app-pub-3940256099942544/6300978111";
+        if (BuildConfig.DEBUG) id = "ca-app-pub-3940256099942544/6300978111";
         Log.d("tag", "limit: " + limit + " r: " + r + " \n" + id);
         return id;
     }
@@ -49,16 +50,28 @@ public class Utils {
     }
 
 
-    public static int getBackgrResourceIdForToday() {
+    public static int getBackgrResourceIdForToday(Context context) {
         int[] imgs = {
                 R.drawable.c1,
+                R.drawable.stabil1,
                 R.drawable.c2,
+                R.drawable.stabil2,
                 R.drawable.c3,
+                R.drawable.stabil3,
                 R.drawable.c4,
+                R.drawable.stabil4,
                 R.drawable.c5,
-                R.drawable.c6
+                R.drawable.stabil5,
+                R.drawable.c6,
+                R.drawable.stabil6,
+                R.drawable.stabil7
         };
-//        int r = new Random().nextInt(imgs.length);
+        SharedPreferences pref = context.getSharedPreferences("_", Context.MODE_PRIVATE);
+        boolean wasInit = pref.getBoolean("init", false);
+        if (!wasInit){
+            pref.edit().putBoolean("init", true).apply();
+            return imgs[0];
+        }
         long now = System.currentTimeMillis();
         long daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(now);
         int n = (int) (daysSinceEpoch % imgs.length);
@@ -108,13 +121,13 @@ public class Utils {
     }
 
     private static Notification getNotification(Context context, WeatherEntry entry) {
-        int backgrResourceId = getBackgrResourceIdForToday();
+        int backgrResourceId = getBackgrResourceIdForToday(context);
         Bitmap largeIcon = BitmapFactory.decodeResource(context.getResources(), backgrResourceId);
 
-        int smallIconId = getSmallArtResourceIdForIconCode(entry.getIcon());
+        int smallIconId = getLargeArtResourceIdForIconCode(entry.getIcon());
         String chanel_id = context.getString(R.string.norif_channel_id);
 
-        String highString = SunshineWeatherUtils.formatTemperature(context, entry.getMax());
+        String highString = SunshineWeatherUtils.formatTemperature(context, entry.getTemp());
         String txtContent = String.format(context.getString(R.string.notification_text), highString);
 
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, chanel_id)

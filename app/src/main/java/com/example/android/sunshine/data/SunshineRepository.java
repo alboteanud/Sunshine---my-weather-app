@@ -24,7 +24,6 @@ import com.example.android.sunshine.data.database.ListWeatherEntry;
 import com.example.android.sunshine.data.database.WeatherDao;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.data.network.WeatherNetworkDataSource;
-import com.example.android.sunshine.utilities.SunshineDateUtils;
 
 import java.util.Date;
 import java.util.List;
@@ -43,6 +42,7 @@ public class SunshineRepository {
     private final WeatherNetworkDataSource mWeatherNetworkDataSource;
     private final AppExecutors mExecutors;
     private boolean mInitialized = false;
+//    private boolean mInitialized_now = false;
 
     private SunshineRepository(WeatherDao weatherDao,
                                WeatherNetworkDataSource weatherNetworkDataSource,
@@ -52,14 +52,17 @@ public class SunshineRepository {
         mExecutors = executors;
 
         LiveData<WeatherEntry[]> networkData = mWeatherNetworkDataSource.getCurrentWeatherForecasts();
+
         networkData.observeForever(newForecastsFromNetwork -> {
+
             mExecutors.diskIO().execute(() -> {
                 // Deletes old historical data
                 deleteOldData();
                 Log.d(LOG_TAG, "Old weather deleted");
                 // Insert our new weather data into Sunshine's database
                 mWeatherDao.bulkInsert(newForecastsFromNetwork);
-                Log.d(LOG_TAG, "New values inserted");
+                Log.d(LOG_TAG, "New values inserted.");
+
             });
         });
     }
@@ -83,8 +86,10 @@ public class SunshineRepository {
      * immediate sync is required, this method will take care of making sure that sync occurs.
      */
     public synchronized void initializeData() {
+
 //        mExecutors.diskIO().execute(() -> {
-//            if (isFetchNeededCurrentWeather()) {
+//            Log.d(LOG_TAG, "execute fetchWN");
+//            if (isFetchNeededWeatherNow()) {
 //                startFetchWeatherNowService();
 //            }
 //        });
@@ -99,7 +104,9 @@ public class SunshineRepository {
         mWeatherNetworkDataSource.scheduleRecurringFetchWeatherSync();
 
         mExecutors.diskIO().execute(() -> {
+            Log.d(LOG_TAG, "execute initData");
             if (isFetchNeeded()) {
+                startFetchWeatherNowService();
                 startFetchWeatherService();
             }
         });
@@ -109,22 +116,34 @@ public class SunshineRepository {
      * Database related operations
      **/
     public LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts() {
+//        fetchWeatherForNow();
         initializeData();
-//        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();        //orig
 
-        // dan
-        long utcNowMillis = System.currentTimeMillis();
-        Date dateNow = new Date(utcNowMillis);          // dan
+//        long utcNowMillis = System.currentTimeMillis() - DateUtils.HOUR_IN_MILLIS;
+        Date date = new Date(System.currentTimeMillis());          // dan
 
-        return mWeatherDao.getCurrentWeatherForecasts(dateNow);
+        return mWeatherDao.getCurrentWeatherForecasts(date);
+    }
+
+    public synchronized void fetchWeatherForNow() {
+//        if (mInitialized_now) return;
+//        mInitialized_now = true;
+        mExecutors.diskIO().execute(() -> {
+            Log.d(LOG_TAG, "execute fetchWN");
+            if (isFetchNeededWeatherNow()) {
+                startFetchWeatherNowService();
+            }
+        });
     }
 
     /**
      * Deletes old weather data because we don't need to keep multiple days' data
      */
     private void deleteOldData() {
-        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
-        mWeatherDao.deleteOldWeather(today);
+//        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
+//        long oldTime = System.currentTimeMillis() - DateUtils.HOUR_IN_MILLIS;
+        Date date = new Date(System.currentTimeMillis());
+        mWeatherDao.deleteOldWeather(date);
     }
 
     /**
@@ -133,14 +152,18 @@ public class SunshineRepository {
      * @return Whether a fetch is needed
      */
     private boolean isFetchNeeded() {
-        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
-        int count = mWeatherDao.countAllFutureWeather(today);
-        return (count < WeatherNetworkDataSource.NUM_DAYS);
-
-//        return true;
+//        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
+        Date now = new Date(System.currentTimeMillis());
+        int count = mWeatherDao.countAllFutureWeather(now);
+        return (count < WeatherNetworkDataSource.NUM_MIN_DATA_COUNTS);
     }
 
-    private boolean isFetchNeededCurrentWeather() {
+    private boolean isFetchNeededWeatherNow() {
+
+//        long timeSinceLastSync = Utils.getEllapsedTimeSinceLastSyncWN(context);
+//
+//        return timeSinceLastSync >= DateUtils.HOUR_IN_MILLIS / 2;
+
         return true;
     }
 

@@ -2,81 +2,73 @@
 <instant-run
     abi="armeabi-v7a,armeabi"
     api-level="24"
-    build-mode="HOT_WARM"
+    build-mode="FULL"
     density="360dpi"
     format="10"
-    plugin-version="3.3.1"
-    timestamp="1551541989979"
+    plugin-version="3.3.2"
+    timestamp="1551818366778"
     token="-851128806517288368"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="1949" />
+        duration="1441" />
     <task
         name="instant-run-dex"
-        duration="46" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="7" />
+        duration="25" />
     <task
         name="verifier"
-        duration="1" />
+        duration="64" />
 
     <artifact
-        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/reload-dex/debug/classes.dex"
-        type="RELOAD_DEX" />
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1551540156778"
+        timestamp="1551818366778"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1551541418219"
-        verifier="BINARY_MANIFEST_FILE_CHANGE" >
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
@@ -85,19 +77,22 @@
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
@@ -105,14 +100,6 @@
         <artifact
             location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
             type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1551541989979"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/reload-dex/debug/classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

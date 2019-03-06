@@ -118,7 +118,7 @@ public class DetailActivity extends AppCompatActivity {
          * High (max) temperature *
          **************************/
 
-        double maxInCelsius = weatherEntry.getMax();
+        double maxInCelsius = weatherEntry.getTemp();
 
         /*
          * If the user's preference for weather is fahrenheit, formatTemperature will convert
@@ -138,19 +138,19 @@ public class DetailActivity extends AppCompatActivity {
          * Low (min) temperature *
          *************************/
 
-        double minInCelsius = weatherEntry.getMin();
+//        double minInCelsius = weatherEntry.getMin();
         /*
          * If the user's preference for weather is fahrenheit, formatTemperature will convert
          * the temperature. This method will also append either °C or °F to the temperature
          * String.
          */
-        String lowString = SunshineWeatherUtils.formatTemperature(DetailActivity.this, minInCelsius);
+//        String lowString = SunshineWeatherUtils.formatTemperature(DetailActivity.this, minInCelsius);
 
-        String lowA11y = getString(R.string.a11y_low_temp, lowString);
+//        String lowA11y = getString(R.string.a11y_low_temp, lowString);
 
         /* Set the text and content description (for accessibility purposes) */
-        mDetailBinding.primaryInfo.lowTemperature.setText(lowString);
-        mDetailBinding.primaryInfo.lowTemperature.setContentDescription(lowA11y);
+//        mDetailBinding.primaryInfo.lowTemperature.setText(lowString);
+//        mDetailBinding.primaryInfo.lowTemperature.setContentDescription(lowA11y);
 
         /************
          * Humidity *

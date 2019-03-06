@@ -58,11 +58,12 @@ public final class SunshineWeatherUtils {
     public static boolean isImperialSystem(Context context) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         String key = context.getString(R.string.pref_units_key);
-        return sp.getBoolean(key, true);
+        boolean defaultImperial = context.getResources().getBoolean(R.bool.default_units_imperial);
+        return sp.getBoolean(key, defaultImperial);
     }
 
 
-    private static double celsiusToFahrenheit(double temperatureInCelsius) {
+    public static double celsiusToFahrenheit(double temperatureInCelsius) {
         return (temperatureInCelsius * 1.8) + 32;
     }
 

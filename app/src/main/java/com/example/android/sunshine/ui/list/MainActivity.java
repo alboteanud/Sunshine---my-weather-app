@@ -31,12 +31,11 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.R;
+import com.example.android.sunshine.ui.test.Test2Activity;
 import com.example.android.sunshine.ui.detail.DetailActivity;
 import com.example.android.sunshine.utilities.InjectorUtils;
 import com.example.android.sunshine.utilities.Utils;
-import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
@@ -130,34 +129,32 @@ public class MainActivity extends AppCompatActivity implements
             // and is loaded
             if (weatherEntries != null && weatherEntries.size() != 0) showWeatherDataView();
             else showLoading();
+
+
+            if (weatherEntries != null)
+                Log.d("main", "Total values: " + weatherEntries.size());
+
+
         });
 
         setAdView();
 
-       ImageView imageView =  findViewById(R.id.backgroundImageView);
-       int imgId = Utils.getBackgrResourceIdForToday();
-       imageView.setImageResource(imgId);
+        ImageView imageView = findViewById(R.id.backgroundImageView);
+        int imgId = Utils.getBackgrResourceIdForToday(this);
+        imageView.setImageResource(imgId);
     }
 
     private void setAdView() {
-        MobileAds.initialize(this, getString(R.string.app_id));
+        MobileAds.initialize(this, getString(R.string.admob_app_id));
         AdView adView = new AdView(this);
         adView.setAdSize(AdSize.SMART_BANNER);
         String id = Utils.getAdBannerId(this);
         adView.setAdUnitId(id);
-        adView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-
-            }
-        });
-
         FrameLayout frameLayout = findViewById(R.id.adContainer);
         frameLayout.addView(adView);
 
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
-
     }
 
     /**
@@ -203,8 +200,8 @@ public class MainActivity extends AppCompatActivity implements
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        if (BuildConfig.DEBUG)
-            getMenuInflater().inflate(R.menu.menu_main, menu);
+//        if (BuildConfig.DEBUG)
+        getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -217,7 +214,7 @@ public class MainActivity extends AppCompatActivity implements
             Log.d("MainActivity", txt);
             Toast.makeText(this, txt, Toast.LENGTH_LONG).show();
         } else if (id == R.id.menu_test_2) {
-
+startActivity(new Intent(this, Test2Activity.class));
         }
 
         return super.onOptionsItemSelected(item);

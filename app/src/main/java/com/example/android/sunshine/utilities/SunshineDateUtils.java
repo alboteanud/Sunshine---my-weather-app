@@ -136,6 +136,19 @@ public final class SunshineDateUtils {
         return normalizedUtcDate - gmtOffset;
     }
 
+    public static long getCityTimeMills(Context context, long timeInMills){
+        TimeZone tz = TimeZone.getDefault();
+        Calendar cal = GregorianCalendar.getInstance(tz);
+        long deviceOffset = tz.getOffset(cal.getTimeInMillis());
+        long cityOffset = getCityOffsetMillis(context);
+
+//        long result = timeInMills + cityOffset - deviceOffset;
+        long result = timeInMills + cityOffset;
+
+        return result;
+
+    }
+
     /**
      * Helper method to convert the database representation of the date into something to display
      * to users. As classy and polished a user experience as "1474061664" is, we can do better.
@@ -154,9 +167,8 @@ public final class SunshineDateUtils {
      * @return A user-friendly representation of the date such as "Today, June 8", "Tomorrow",
      * or "Friday"
      */
-
-
     public static String getFriendlyDateString(Context context, long normalizedUtcMidnight, boolean showFullDate) {
+
         // START DAN
         if (normalizedUtcMidnight > 1){
 

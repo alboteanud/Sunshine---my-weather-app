@@ -16,8 +16,7 @@ public class WeatherEntry {
     private int id;
     private int weatherIconId;
     private Date date;
-    private double min;
-    private double max;
+    private double temp;
     private double humidity;
     private double pressure;
     private double wind;
@@ -29,8 +28,7 @@ public class WeatherEntry {
      * converts this data to WeatherEntry objects using this constructor.
      * @param weatherIconId Image id for weather
      * @param date Date of weather
-     * @param min Min temperature
-     * @param max Max temperature
+     * @param temp Max temperature
      * @param humidity Humidity for the day
      * @param pressure Barometric pressure
      * @param wind Wind speed
@@ -38,11 +36,10 @@ public class WeatherEntry {
      * @param icon Icon code OWM
      */
     @Ignore
-    public WeatherEntry(int weatherIconId, Date date, double min, double max, double humidity, double pressure, double wind, double degrees, String icon) {
+    public WeatherEntry(int weatherIconId, Date date, double temp, double humidity, double pressure, double wind, double degrees, String icon) {
         this.weatherIconId = weatherIconId;
         this.date = date;
-        this.min = min;
-        this.max = max;
+        this.temp = temp;
         this.humidity = humidity;
         this.pressure = pressure;
         this.wind = wind;
@@ -51,13 +48,11 @@ public class WeatherEntry {
     }
 
 
-
-    public WeatherEntry(int id, int weatherIconId, Date date, double min, double max, double humidity, double pressure, double wind, double degrees, String icon) {
+    public WeatherEntry(int id, int weatherIconId, Date date, double temp, double humidity, double pressure, double wind, double degrees, String icon) {
         this.id = id;
         this.weatherIconId = weatherIconId;
         this.date = date;
-        this.min = min;
-        this.max = max;
+        this.temp = temp;
         this.humidity = humidity;
         this.pressure = pressure;
         this.wind = wind;
@@ -77,12 +72,8 @@ public class WeatherEntry {
         return weatherIconId;
     }
 
-    public double getMin() {
-        return min;
-    }
-
-    public double getMax() {
-        return max;
+    public double getTemp() {
+        return temp;
     }
 
     public double getHumidity() {

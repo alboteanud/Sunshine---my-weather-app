@@ -45,13 +45,15 @@ import java.util.concurrent.TimeUnit;
  */
 public class WeatherNetworkDataSource {
     // The number of days we want our API to return, set to 14 days or two weeks
-    public static final int NUM_DAYS = 14;
+    public static final int NUM_DAYS = 5;
+    public static final int NUM_MIN_DATA_COUNTS = (NUM_DAYS - 1) * (24 / 3);
     private static final String LOG_TAG = WeatherNetworkDataSource.class.getSimpleName();
 
     // Interval at which to sync with the weather. Use TimeUnit for convenience, rather than
     // writing out a bunch of multiplication ourselves and risk making a silly mistake.
-    private static final int SYNC_INTERVAL_HOURS = 3;
+    private static final int SYNC_INTERVAL_HOURS = 6;
     private static final int SYNC_INTERVAL_SECONDS = (int) TimeUnit.HOURS.toSeconds(SYNC_INTERVAL_HOURS);
+    //    private static final int SYNC_INTERVAL_SECONDS = 5 * 60;
     private static final int SYNC_FLEXTIME_SECONDS = SYNC_INTERVAL_SECONDS / 3;
     private static final String SUNSHINE_SYNC_TAG = "sunshine-sync";
 
@@ -133,7 +135,7 @@ public class WeatherNetworkDataSource {
                  */
                 .setRecurring(true)
                 /*
-                 * We want the weather data to be synced every c3 to c4 hours. The first argument for
+                 * We want the weather data to be synced every 3 to 4 hours. The first argument for
                  * Trigger's static executionWindow method is the start of the time frame when the
                  * sync should be performed. The second argument is the latest point in time at
                  * which the data should be synced. Please note that this end time is not
@@ -183,22 +185,22 @@ public class WeatherNetworkDataSource {
                 if (response != null && response.getWeatherForecast().length != 0) {
                     Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
                             + " values");
-                    Log.d(LOG_TAG, String.format("First value is %1.0f and %1.0f  date %s  icon %s",
-                            response.getWeatherForecast()[0].getMin(),
-                            response.getWeatherForecast()[0].getMax(),
+                    Log.d(LOG_TAG, String.format("First value is %1.0f, date %s  icon %s",
+                            response.getWeatherForecast()[0].getTemp(),
                             response.getWeatherForecast()[0].getDate(),
                             response.getWeatherForecast()[0].getIcon()));
 
                     mDownloadedWeatherForecasts.postValue(response.getWeatherForecast());
                     // Will eventually do something with the downloaded data
 
-                    if (BuildConfig.DEBUG){
+                    if (BuildConfig.DEBUG) {
                         SharedPreferences prefs = context.getSharedPreferences("_", Context.MODE_PRIVATE);
                         String txt = prefs.getString("txt", "");
-                        String date = new SimpleDateFormat("dd MMM  HH:mm", Locale.getDefault()).format(System.currentTimeMillis());
-                        String dateWeather = new SimpleDateFormat("dd MMM  HH:mm", Locale.getDefault()).format( response.getWeatherForecast()[0].getDate());
-                        txt += date + "   dt: " + dateWeather+  "\n";
+                        long now = System.currentTimeMillis();
+                        String date = new SimpleDateFormat("HH:mm  dd MMM", Locale.getDefault()).format(now);
+                        txt += date + "\n";
                         prefs.edit().putString("txt", txt).apply();
+
                     }
 
                     boolean notificationsEnabled = Utils.areNotificationsEnabled(context);
@@ -233,7 +235,7 @@ public class WeatherNetworkDataSource {
                 // longitude or off of a simple location as a String.
 
 //                URL weatherRequestUrl = NetworkUtils.getUrl_();                                           // for test server
-                URL weatherRequestUrl = NetworkUtils.getUrlWeatherNow();
+                URL weatherRequestUrl = NetworkUtils.getUrlWeatherNow(context);
 
                 // Use the URL to retrieve the JSON
                 String jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl);
@@ -250,14 +252,12 @@ public class WeatherNetworkDataSource {
                 if (response != null && response.getWeatherForecast().length != 0) {
                     Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
                             + " values");
-                    Log.d(LOG_TAG, String.format("Weather Now First value is %c1.0f and %c1.0f  date %s  icon %s",
-                            response.getWeatherForecast()[0].getMin(),
-                            response.getWeatherForecast()[0].getMax(),
+                    Log.d(LOG_TAG, String.format("Weather Now First value is %1.0f,  date %s  icon %s",
+                            response.getWeatherForecast()[0].getTemp(),
                             response.getWeatherForecast()[0].getDate(),
                             response.getWeatherForecast()[0].getIcon()));
 
                     WeatherEntry[] entries = response.getWeatherForecast();
-//                    WeatherEntry[] entry = new WeatherEntry[]{entries[0]};
 
                     mDownloadedWeatherForecasts.postValue(entries);
                     // Will eventually do something with the downloaded data

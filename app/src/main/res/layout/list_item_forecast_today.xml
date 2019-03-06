@@ -138,6 +138,7 @@
          - particular issue won't break the app, but you should note that this attribute will be     -
          - ignored on devices that run an Android version less than 16.                              -
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+   <!--
         <TextView
             android:id="@+id/low_temperature"
             android:layout_width="wrap_content"
@@ -149,6 +150,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/high_temperature"
             app:layout_constraintRight_toRightOf="@+id/high_temperature"
             tools:text="10\u00b0" />
+        -->
 
     </android.support.constraint.ConstraintLayout>
 

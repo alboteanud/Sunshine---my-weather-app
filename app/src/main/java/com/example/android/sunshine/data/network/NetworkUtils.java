@@ -91,7 +91,6 @@ final class NetworkUtils {
      */
     static URL getUrl(Context mContext) {
         String locationId = mContext.getString(R.string.owm_city_id);
-//        String locationId = "7839562";  // Brisbane, AU
         return buildUrlWithLocationId(locationId);
     }
 
@@ -103,9 +102,8 @@ final class NetworkUtils {
         return buildUrlWithLocationQuery(locationQuery);
     }
 
-    static URL getUrlWeatherNow() {
-
-        String locationId = "7839562";  // Brisbane, AU
+    static URL getUrlWeatherNow(Context mContext) {
+        String locationId = mContext.getString(R.string.owm_city_id);
         return buildUrlWeatherNowWithLocationId(locationId);
     }
 
