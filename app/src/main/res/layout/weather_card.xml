@@ -10,13 +10,10 @@
     card_view:cardBackgroundColor="@color/blackSemi"
     card_view:cardElevation="2sp"
     card_view:cardUseCompatPadding="true">
-    <!--
-
-    -->
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="16dp">
 
             <ImageView

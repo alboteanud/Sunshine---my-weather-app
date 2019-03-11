@@ -43,7 +43,7 @@ object Utils {
 
 
     fun getBackResId(context: Context): Int {
-        val imgs = intArrayOf(R.drawable.c1, R.drawable.stabil1, R.drawable.c2, R.drawable.stabil2, R.drawable.c3, R.drawable.stabil3, R.drawable.c4, R.drawable.stabil4, R.drawable.c5, R.drawable.stabil5, R.drawable.c6, R.drawable.stabil6, R.drawable.stabil7)
+        val imgs = intArrayOf(R.drawable.c1, R.drawable.stabil1, R.drawable.c2, R.drawable.stabil2, R.drawable.c3, R.drawable.stabil3, R.drawable.c4, R.drawable.stabil4, R.drawable.c5, R.drawable.stabil5, R.drawable.c6, R.drawable.stabil6)
         val pref = context.getSharedPreferences("_", Context.MODE_PRIVATE)
         val wasInit = pref.getBoolean("init", false)
         if (!wasInit) {

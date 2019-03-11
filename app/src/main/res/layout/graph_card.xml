@@ -10,7 +10,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="16dp">
 
             <com.jjoe64.graphview.GraphView
@@ -38,24 +38,6 @@
                 android:text="Some labels options"
                 android:textColor="#666"
                 android:textSize="14dp" />
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/fullscreen"
-                android:id="@+id/weatherIcon"
-                android:layout_margin="5dp"
-                android:layout_alignParentRight="true"
-                android:layout_alignTop="@id/title"/>
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:src="@drawable/source"
-                android:id="@+id/imgSource"
-                android:layout_margin="5dp"
-                android:layout_toLeftOf="@id/weatherIcon"
-                android:layout_alignTop="@id/title"/>
 
         </RelativeLayout>
 

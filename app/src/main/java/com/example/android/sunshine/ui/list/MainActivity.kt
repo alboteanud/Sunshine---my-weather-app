@@ -12,6 +12,12 @@ import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.ListWeatherEntry
 import com.example.android.sunshine.ui.test.TestActivity
 import com.example.android.sunshine.utilities.InjectorUtils
+import com.example.android.sunshine.utilities.Utils.getAdBannerId
+import com.example.android.sunshine.utilities.Utils.getBackResId
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.graph_card.*
@@ -41,20 +47,20 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-//        initAdBanner()
-//        val imgId = getBackResId(this)
-//        backgroundImageView.setImageResource(imgId)
+        initAdBanner()
+        val imgId = getBackResId(this)
+        backgroundImageView.setImageResource(imgId)
     }
 
-//    private fun initAdBanner() {
-//        MobileAds.initialize(this, getString(R.string.admob_app_id))
-//        AdView(this).apply {
-//            adUnitId = getAdBannerId(this@MainActivity)
-//            adSize = AdSize.SMART_BANNER
+    private fun initAdBanner() {
+        MobileAds.initialize(this, getString(R.string.admob_app_id))
+        AdView(this).apply {
+            adUnitId = getAdBannerId(this@MainActivity)
+            adSize = AdSize.SMART_BANNER
 //            adContainer.addView(this)
 //            loadAd(AdRequest.Builder().build())
-//        }
-//    }
+        }
+    }
 
     private fun showWeatherDataView(weatherEntries: MutableList<ListWeatherEntry>) {
         // First, hide the loading indicator

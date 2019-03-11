@@ -9,23 +9,13 @@
     card_view:cardBackgroundColor="@color/blackSemi"
     card_view:cardElevation="2sp"
     card_view:cardUseCompatPadding="true">
-    <!--
 
-    -->
-
-    <FrameLayout
+    <ImageView
+        android:id="@+id/weatherIcon"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageView
-            android:id="@+id/weatherIcon"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/c1" />
-
-    </FrameLayout>
-
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/c1" />
 
 </androidx.cardview.widget.CardView>
 

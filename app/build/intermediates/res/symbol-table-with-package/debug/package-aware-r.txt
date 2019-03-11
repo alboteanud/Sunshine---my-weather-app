@@ -1210,6 +1210,7 @@ id add
 id alertTitle
 id all
 id always
+id app_bar
 id async
 id auto
 id barrier
@@ -1225,12 +1226,6 @@ id buttonPanel
 id cancel_action
 id cardGraph
 id cardWeather
-id card_container
-id card_header_shadow
-id card_recyclerview
-id card_subtitle
-id card_title
-id cardview
 id center
 id center_horizontal
 id center_vertical
@@ -1270,7 +1265,6 @@ id expanded_menu
 id extra_details
 id extra_details_
 id fab
-id fab_old
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1321,7 +1315,6 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id navigation_header_container
-id nestedscrollview
 id never
 id none
 id normal
@@ -1414,7 +1407,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar_container
 id top
 id topPanel
 id touch_outside

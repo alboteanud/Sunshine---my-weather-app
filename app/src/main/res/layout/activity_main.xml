@@ -9,30 +9,11 @@
     tools:ignore="MergeRootFrame">
 
     <ImageView
-        android:id="@+id/weatherIcon"
+        android:id="@+id/backgroundImageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/c3" />
-
-
-        <FrameLayout
-            android:id="@+id/toolbar_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/toolbar_background_gradient"
-            android:fitsSystemWindows="true">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/main_toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-
-        </FrameLayout>
-
-<!--
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -46,107 +27,23 @@
             android:layout_height="?attr/actionBarSize"
             android:background="@android:color/transparent"
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+            
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
--->
 
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/main_nested_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="com.example.android.sunshine.ui.CustomBehavior">
-        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <include layout="@layout/content_main" />
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.example.android.sunshine.ui.CustomNestedScrollView2
-        android:id='@+id/nestedscrollview'
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="com.example.android.sunshine.ui.CustomBehavior">
-
-        <FrameLayout
-            android:id="@+id/card_container"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:descendantFocusability="blocksDescendants">
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cardview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/card_title"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ellipsize="end"
-                        android:maxLines="1"
-                        android:paddingBottom="4dp"
-                        android:paddingLeft="24dp"
-                        android:paddingRight="24dp"
-                        android:paddingTop="16dp"
-                        android:text="Title"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
-
-                    <TextView
-                        android:id="@+id/card_subtitle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:ellipsize="end"
-                        android:maxLines="1"
-                        android:paddingBottom="8dp"
-                        android:paddingLeft="24dp"
-                        android:paddingRight="24dp"
-                        android:text="Subtitle"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
-
-                    <FrameLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <com.example.android.sunshine.ui.MaxHeightRecyclerView
-                            android:id="@+id/card_recyclerview"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content" />
-
-                        <View
-                            android:id="@+id/card_header_shadow"
-                            android:layout_width="match_parent"
-                            android:layout_height="6dp"
-                            android:alpha="0"
-                            android:background="@drawable/toolbar_shadow" />
-
-                    </FrameLayout>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/fab"
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:layout_gravity="top|end"
-                android:layout_marginEnd="24dp"
-                android:clickable="true"
-                android:focusable="true"
-                app:srcCompat="@drawable/ic_share_white" />
-
-        </FrameLayout>
-
-    </com.example.android.sunshine.ui.CustomNestedScrollView2>
 
     <ProgressBar
         android:id="@+id/pb_loading_indicator"
@@ -155,17 +52,7 @@
         android:visibility="invisible"
         app:layout_anchor="@+id/main_nested_container"
         app:layout_anchorGravity="center"
-
         tools:visibility="visible" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab_old"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical|start"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@+id/main_nested_container"
-        app:layout_anchorGravity="top|end"
-        app:srcCompat="@android:drawable/stat_notify_chat" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
