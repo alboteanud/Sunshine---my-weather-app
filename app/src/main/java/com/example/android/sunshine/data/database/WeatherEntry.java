@@ -2,12 +2,12 @@
 
 package com.example.android.sunshine.data.database;
 
-import android.arch.persistence.room.Entity;
-import android.arch.persistence.room.Ignore;
-import android.arch.persistence.room.Index;
-import android.arch.persistence.room.PrimaryKey;
-
 import java.util.Date;
+
+import androidx.room.Entity;
+import androidx.room.Ignore;
+import androidx.room.Index;
+import androidx.room.PrimaryKey;
 
 @Entity(tableName = "weather", indices = {@Index(value = {"date"}, unique = true)})
 public class WeatherEntry {
@@ -28,7 +28,7 @@ public class WeatherEntry {
      * converts this data to WeatherEntry objects using this constructor.
      * @param weatherIconId Image id for weather
      * @param date Date of weather
-     * @param temp Max temperature
+     * @param temp Max temp
      * @param humidity Humidity for the day
      * @param pressure Barometric pressure
      * @param wind Wind speed

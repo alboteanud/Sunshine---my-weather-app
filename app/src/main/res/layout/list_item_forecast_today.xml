@@ -16,7 +16,7 @@
 
 <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
   - This layout displays today's primary weather information, such as the date, an icon and      -
-  - description, and the high and low temperature.                                               -
+  - description, and the high and low temp.                                               -
   -                                                                                              -
   - Although this layout is very similar to primary_weather_info.xml, we decided to create two   -
   - different layouts for simplicity. The differences are that in this layout, we add additional -
@@ -36,7 +36,7 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
 
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
          - This Guideline divides the screen into a left half and a right half and is used to        -
          - anchor the views to the middle of the screen.                                             -
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-        <android.support.constraint.Guideline
+        <androidx.constraintlayout.widget.Guideline
             android:id="@+id/horizontal_middle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -67,7 +67,7 @@
          - ignored on devices that run an Android version less than 16.                              -
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <TextView
-            android:id="@+id/date"
+            android:id="@+id/date_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -75,14 +75,14 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:textColor="@color/white"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/weather_icon"
+            app:layout_constraintBottom_toTopOf="@+id/weather_icon_detail"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             tools:text="Today, April 03" />
 
         <!-- Icon indicating weather condition -->
         <ImageView
-            android:id="@+id/weather_icon"
+            android:id="@+id/weather_icon_detail"
             android:layout_width="96dp"
             android:layout_height="96dp"
             android:adjustViewBounds="true"
@@ -101,13 +101,13 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintHorizontal_bias="0.52"
-            app:layout_constraintLeft_toLeftOf="@+id/weather_icon"
-            app:layout_constraintRight_toRightOf="@+id/weather_icon"
-            app:layout_constraintTop_toBottomOf="@+id/weather_icon"
+            app:layout_constraintLeft_toLeftOf="@+id/weather_icon_detail"
+            app:layout_constraintRight_toRightOf="@+id/weather_icon_detail"
+            app:layout_constraintTop_toBottomOf="@+id/weather_icon_detail"
             tools:text="Rainy" />
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         - High temperature for today                                                                -
+         - High temp for today                                                                -
          -                                                                                           -
          - You may notice that the line android:fontFamily="sans-serif" is highlighted in yellow.    -
          - The reason for the highlighted line is that the fontFamily attribute is not available on  -
@@ -116,21 +116,21 @@
          - ignored on devices that run an Android version less than 16.                              -
          - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
         <TextView
-            android:id="@+id/high_temperature"
+            android:id="@+id/high_temperature_detail"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-light"
             android:textColor="@color/white"
             android:textSize="72sp"
-            app:layout_constraintBottom_toBottomOf="@+id/weather_icon"
+            app:layout_constraintBottom_toBottomOf="@+id/weather_icon_detail"
             app:layout_constraintHorizontal_bias="0.45"
             app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/weather_icon"
+            app:layout_constraintTop_toTopOf="@+id/weather_icon_detail"
             tools:text="19\u00b0" />
 
         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-         - Low temperature for today                                                                 -
+         - Low temp for today                                                                 -
          -                                                                                           -
          - You may notice that the line android:fontFamily="sans-serif" is highlighted in yellow.    -
          - The reason for the highlighted line is that the fontFamily attribute is not available on  -
@@ -152,6 +152,6 @@
             tools:text="10\u00b0" />
         -->
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

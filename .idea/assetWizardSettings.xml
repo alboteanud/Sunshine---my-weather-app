@@ -62,8 +62,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="598fa6" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/ic_launcher.png" />
+                                      <entry key="backgroundColor" value="03a9f4" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Desktop/ic_clear.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

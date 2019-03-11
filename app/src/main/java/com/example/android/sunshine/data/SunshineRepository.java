@@ -16,7 +16,6 @@
 
 package com.example.android.sunshine.data;
 
-import android.arch.lifecycle.LiveData;
 import android.util.Log;
 
 import com.example.android.sunshine.AppExecutors;
@@ -27,6 +26,8 @@ import com.example.android.sunshine.data.network.WeatherNetworkDataSource;
 
 import java.util.Date;
 import java.util.List;
+
+import androidx.lifecycle.LiveData;
 
 /**
  * Handles data operations in Sunshine. Acts as a mediator between {@link WeatherNetworkDataSource}

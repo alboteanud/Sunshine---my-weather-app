@@ -24,7 +24,6 @@ import com.example.android.sunshine.data.database.SunshineDatabase;
 import com.example.android.sunshine.data.network.WeatherNetworkDataSource;
 import com.example.android.sunshine.ui.detail.DetailViewModelFactory;
 import com.example.android.sunshine.ui.list.MainViewModelFactory;
-import com.example.android.sunshine.ui.test.TestViewModelFactory;
 
 import java.util.Date;
 
@@ -57,10 +56,6 @@ public class InjectorUtils {
     public static MainViewModelFactory provideMainActivityViewModelFactory(Context context) {
         SunshineRepository repository = provideRepository(context.getApplicationContext());
         return new MainViewModelFactory(repository);
-    }
- public static TestViewModelFactory provideTestActivityViewModelFactory(Context context) {
-        SunshineRepository repository = provideRepository(context.getApplicationContext());
-        return new TestViewModelFactory(repository);
     }
 
 }

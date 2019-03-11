@@ -1,18 +1,18 @@
 package com.example.android.sunshine.databinding;
 import com.example.android.sunshine.R;
 import com.example.android.sunshine.BR;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import android.view.View;
 @SuppressWarnings("unchecked")
 public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
 
     @Nullable
-    private static final android.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new android.databinding.ViewDataBinding.IncludedLayouts(3);
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(3);
         sIncludes.setIncludes(0, 
             new String[] {"primary_weather_info", "extra_weather_details"},
             new int[] {1, 2},
@@ -28,10 +28,10 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     // listeners
     // Inverse Binding Event Handlers
 
-    public ActivityDetailBindingImpl(@Nullable android.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+    public ActivityDetailBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
         this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
     }
-    private ActivityDetailBindingImpl(android.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+    private ActivityDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 2
             , (com.example.android.sunshine.databinding.ExtraWeatherDetailsBinding) bindings[2]
             , (com.example.android.sunshine.databinding.PrimaryWeatherInfoBinding) bindings[1]
@@ -76,7 +76,7 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     }
 
     @Override
-    public void setLifecycleOwner(@Nullable android.arch.lifecycle.LifecycleOwner lifecycleOwner) {
+    public void setLifecycleOwner(@Nullable androidx.lifecycle.LifecycleOwner lifecycleOwner) {
         super.setLifecycleOwner(lifecycleOwner);
         primaryInfo.setLifecycleOwner(lifecycleOwner);
         extraDetails.setLifecycleOwner(lifecycleOwner);

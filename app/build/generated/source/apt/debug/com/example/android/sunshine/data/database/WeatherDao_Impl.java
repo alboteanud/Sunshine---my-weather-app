@@ -1,15 +1,15 @@
 package com.example.android.sunshine.data.database;
 
-import android.arch.lifecycle.ComputableLiveData;
-import android.arch.lifecycle.LiveData;
-import android.arch.persistence.db.SupportSQLiteStatement;
-import android.arch.persistence.room.EntityInsertionAdapter;
-import android.arch.persistence.room.InvalidationTracker.Observer;
-import android.arch.persistence.room.RoomDatabase;
-import android.arch.persistence.room.RoomSQLiteQuery;
-import android.arch.persistence.room.SharedSQLiteStatement;
 import android.database.Cursor;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
+import androidx.lifecycle.ComputableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.room.EntityInsertionAdapter;
+import androidx.room.InvalidationTracker.Observer;
+import androidx.room.RoomDatabase;
+import androidx.room.RoomSQLiteQuery;
+import androidx.room.SharedSQLiteStatement;
+import androidx.sqlite.db.SupportSQLiteStatement;
 import java.lang.Long;
 import java.lang.Override;
 import java.lang.String;
@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Set;
 
 @SuppressWarnings("unchecked")
-public class WeatherDao_Impl implements WeatherDao {
+public final class WeatherDao_Impl implements WeatherDao {
   private final RoomDatabase __db;
 
   private final EntityInsertionAdapter __insertionAdapterOfWeatherEntry;
@@ -111,7 +111,7 @@ public class WeatherDao_Impl implements WeatherDao {
     } else {
       _statement.bindLong(_argIndex, _tmp);
     }
-    return new ComputableLiveData<List<ListWeatherEntry>>() {
+    return new ComputableLiveData<List<ListWeatherEntry>>(__db.getQueryExecutor()) {
       private Observer _observer;
 
       @Override
@@ -206,7 +206,7 @@ public class WeatherDao_Impl implements WeatherDao {
     } else {
       _statement.bindLong(_argIndex, _tmp);
     }
-    return new ComputableLiveData<WeatherEntry>() {
+    return new ComputableLiveData<WeatherEntry>(__db.getQueryExecutor()) {
       private Observer _observer;
 
       @Override

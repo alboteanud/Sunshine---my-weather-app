@@ -15,8 +15,8 @@
  */
 package com.example.android.sunshine.data.network;
 
-import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.MutableLiveData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -203,8 +203,8 @@ public class WeatherNetworkDataSource {
 
                     }
 
-                    boolean notificationsEnabled = Utils.areNotificationsEnabled(context);
-                    long timeSinceLastNotification = Utils.getEllapsedTimeSinceLastNotification(context);
+                    boolean notificationsEnabled = Utils.INSTANCE.areNotificationsEnabled(context);
+                    long timeSinceLastNotification = Utils.INSTANCE.getEllapsedTimeSinceLastNotification(context);
                     boolean oneDayPassedSinceLastNotification = false;
 
                     if (timeSinceLastNotification >= DateUtils.DAY_IN_MILLIS) {
@@ -213,7 +213,7 @@ public class WeatherNetworkDataSource {
 
                     if (notificationsEnabled && oneDayPassedSinceLastNotification) {
                         WeatherEntry entry = response.getWeatherForecast()[0];
-                        Utils.notifyUserOfNewWeather(context, entry);
+                        Utils.INSTANCE.notifyUserOfNewWeather(context, entry);
                     }
 
 
