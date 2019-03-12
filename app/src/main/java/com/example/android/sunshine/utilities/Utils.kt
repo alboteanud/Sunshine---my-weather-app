@@ -105,7 +105,10 @@ object Utils {
         val chanel_id = context.getString(R.string.norif_channel_id)
 
         val highString = SunshineWeatherUtils.formatTemperature(context, entry.temp)
-        val txtContent = String.format(context.getString(R.string.notification_text), highString)
+
+        val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherIconId)
+
+        val txtContent = String.format(context.getString(R.string.notification_text), description, highString)
 
         val builder = NotificationCompat.Builder(context, chanel_id)
                 .setSmallIcon(smallIconId)

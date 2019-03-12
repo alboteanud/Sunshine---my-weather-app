@@ -15,17 +15,19 @@
  */
 package com.example.android.sunshine.ui.detail
 
+import android.content.Context
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import com.example.android.sunshine.BuildConfig
 import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.WeatherEntry
 import com.example.android.sunshine.utilities.InjectorUtils
 import com.example.android.sunshine.utilities.SunshineDateUtils
 import com.example.android.sunshine.utilities.SunshineWeatherUtils
+import kotlinx.android.synthetic.main.activity_detail.*
 import kotlinx.android.synthetic.main.extra_weather_details.*
 import kotlinx.android.synthetic.main.primary_weather_info.*
-import kotlinx.android.synthetic.main.weather_card.*
 import java.util.*
 
 /**
@@ -51,8 +53,13 @@ class DetailActivity : AppCompatActivity() {
             if (weatherEntry != null) bindWeatherToUI(weatherEntry)
         })
 
-
         InjectorUtils.provideRepository(this).initializeData()
+
+        if (BuildConfig.DEBUG){
+            val prefs = getSharedPreferences("_", Context.MODE_PRIVATE)
+            val txt = prefs.getString("txt", "")
+            textTest.text = txt
+        }
 
     }
 
@@ -94,8 +101,8 @@ class DetailActivity : AppCompatActivity() {
         val descriptionA11y = getString(R.string.a11y_forecast, description)
 
         /* Set the text and content description (for accessibility purposes) */
-        weatherDescription.text = description
-        weatherDescription.contentDescription = descriptionA11y
+        weather_description.text = description
+        weather_description.contentDescription = descriptionA11y
 
         /* Set the content description on the weather image (for accessibility purposes) */
         weather_icon_detail.contentDescription = descriptionA11y

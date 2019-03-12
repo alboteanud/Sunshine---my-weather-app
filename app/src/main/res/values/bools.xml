@@ -2,5 +2,5 @@
 
 <resources>
     <bool name="use_today_layout">false</bool>
-    <bool name="default_units_imperial">false</bool>
+    <bool name="default_units_imperial">true</bool>
 </resources>

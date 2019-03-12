@@ -102,7 +102,7 @@ final class NetworkUtils {
         return buildUrlWithLocationQuery(locationQuery);
     }
 
-    static URL getUrlWeatherNow(Context mContext) {
+    static URL getUrlCurrentWeather(Context mContext) {
         String locationId = mContext.getString(R.string.owm_city_id);
         return buildUrlWeatherNowWithLocationId(locationId);
     }
@@ -119,7 +119,7 @@ final class NetworkUtils {
                 .appendQueryParameter(QUERY_PARAM, locationQuery)
                 .appendQueryParameter(FORMAT_PARAM, format)
                 .appendQueryParameter(UNITS_PARAM, units)
-                .appendQueryParameter(DAYS_PARAM, Integer.toString(WeatherNetworkDataSource.NUM_DAYS))
+                .appendQueryParameter(DAYS_PARAM, Integer.toString(NetworkDataSource.NUM_DAYS))
                 .build();
 
         try {

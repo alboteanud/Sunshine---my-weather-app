@@ -32,7 +32,7 @@ public final class WeatherDao_Impl implements WeatherDao {
     this.__insertionAdapterOfWeatherEntry = new EntityInsertionAdapter<WeatherEntry>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`temp`,`humidity`,`pressure`,`wind`,`degrees`,`icon`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`temp`,`humidity`,`pressure`,`wind`,`degrees`,`icon`,`isCurrentWeather`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -56,6 +56,7 @@ public final class WeatherDao_Impl implements WeatherDao {
         } else {
           stmt.bindString(9, value.getIcon());
         }
+        stmt.bindLong(10, value.isCurrentWeather());
       }
     };
     this.__preparedStmtOfDeleteOldWeather = new SharedSQLiteStatement(__db) {
@@ -100,8 +101,8 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date) {
-    final String _sql = "SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= ?";
+  public LiveData<List<ListWeatherEntry>> getWeatherForecasts(Date date) {
+    final String _sql = "SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= ? LIMIT 5";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -196,7 +197,7 @@ public final class WeatherDao_Impl implements WeatherDao {
 
   @Override
   public LiveData<WeatherEntry> getWeatherByDate(Date date) {
-    final String _sql = "SELECT * FROM weather WHERE date = ?";
+    final String _sql = "SELECT * FROM weather WHERE date > ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -231,6 +232,7 @@ public final class WeatherDao_Impl implements WeatherDao {
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
           final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
+          final int _cursorIndexOfIsCurrentWeather = _cursor.getColumnIndexOrThrow("isCurrentWeather");
           final WeatherEntry _result;
           if(_cursor.moveToFirst()) {
             final int _tmpId;
@@ -257,9 +259,112 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
             final String _tmpIcon;
             _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon);
+            final int _tmpIsCurrentWeather;
+            _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
+            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
           } else {
             _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public Date getLastUpdatedDateCW(Date date) {
+    final String _sql = "SELECT date FROM weather WHERE date > ? AND isCurrentWeather = 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    final Long _tmp;
+    _tmp = DateConverter.toTimestamp(date);
+    if (_tmp == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp);
+    }
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final Date _result;
+      if(_cursor.moveToFirst()) {
+        final Long _tmp_1;
+        if (_cursor.isNull(0)) {
+          _tmp_1 = null;
+        } else {
+          _tmp_1 = _cursor.getLong(0);
+        }
+        _result = DateConverter.toDate(_tmp_1);
+      } else {
+        _result = null;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public LiveData<List<ListWeatherEntry>> getCurrentWeather(Date date) {
+    final String _sql = "SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= ? ORDER BY isCurrentWeather DESC LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    final Long _tmp;
+    _tmp = DateConverter.toTimestamp(date);
+    if (_tmp == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp);
+    }
+    return new ComputableLiveData<List<ListWeatherEntry>>(__db.getQueryExecutor()) {
+      private Observer _observer;
+
+      @Override
+      protected List<ListWeatherEntry> compute() {
+        if (_observer == null) {
+          _observer = new Observer("weather") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfWeatherIconId = _cursor.getColumnIndexOrThrow("weatherIconId");
+          final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
+          final int _cursorIndexOfTemp = _cursor.getColumnIndexOrThrow("temp");
+          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
+          final List<ListWeatherEntry> _result = new ArrayList<ListWeatherEntry>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final ListWeatherEntry _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final int _tmpWeatherIconId;
+            _tmpWeatherIconId = _cursor.getInt(_cursorIndexOfWeatherIconId);
+            final Date _tmpDate;
+            final Long _tmp_1;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmp_1 = null;
+            } else {
+              _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
+            }
+            _tmpDate = DateConverter.toDate(_tmp_1);
+            final double _tmpTemp;
+            _tmpTemp = _cursor.getDouble(_cursorIndexOfTemp);
+            final String _tmpIcon;
+            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
+            _item = new ListWeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpIcon);
+            _result.add(_item);
           }
           return _result;
         } finally {

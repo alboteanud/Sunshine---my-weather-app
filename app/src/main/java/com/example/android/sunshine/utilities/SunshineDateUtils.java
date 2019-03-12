@@ -142,8 +142,7 @@ public final class SunshineDateUtils {
         long deviceOffset = tz.getOffset(cal.getTimeInMillis());
         long cityOffset = getCityOffsetMillis(context);
 
-//        long result = timeInMills + cityOffset - deviceOffset;
-        long result = timeInMills + cityOffset;
+        long result = timeInMills + cityOffset - deviceOffset;
 
         return result;
 
@@ -296,6 +295,7 @@ public final class SunshineDateUtils {
         String zone = context.getString(R.string.time_zone);
         TimeZone timeZone = TimeZone.getTimeZone(zone);
         long now = System.currentTimeMillis();
+
         long offset = timeZone.getOffset(now);
 //        Log.d("TAG", "time_zone ID  " + timeZone.getID() + "   offset: " + offset);
         return offset;

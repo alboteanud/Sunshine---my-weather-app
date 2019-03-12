@@ -15,6 +15,7 @@
         android:scaleType="centerCrop"
         android:src="@drawable/c3" />
 
+<!--
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
@@ -32,6 +33,8 @@
         </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
+    -->
+
 
 
     <androidx.core.widget.NestedScrollView
@@ -44,6 +47,31 @@
 
     </androidx.core.widget.NestedScrollView>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:padding="8dp"
+        android:background="@drawable/toolbar_background_gradient">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_centerVertical="true"
+            android:text="Details" />
+
+    </RelativeLayout>
 
     <ProgressBar
         android:id="@+id/pb_loading_indicator"

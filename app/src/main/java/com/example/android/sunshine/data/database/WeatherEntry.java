@@ -22,19 +22,34 @@ public class WeatherEntry {
     private double wind;
     private double degrees;
     private String icon;
+    private int isCurrentWeather;
 
     /**
      * This constructor is used by OpenWeatherJsonParser. When the network fetch has JSON data, it
      * converts this data to WeatherEntry objects using this constructor.
+     *
      * @param weatherIconId Image id for weather
-     * @param date Date of weather
-     * @param temp Max temp
-     * @param humidity Humidity for the day
-     * @param pressure Barometric pressure
-     * @param wind Wind speed
-     * @param degrees Wind direction
-     * @param icon Icon code OWM
+     * @param date          Date of weather
+     * @param temp          Max temp
+     * @param humidity      Humidity for the day
+     * @param pressure      Barometric pressure
+     * @param wind          Wind speed
+     * @param degrees       Wind direction
+     * @param icon          Icon code OWM
      */
+    @Ignore
+    public WeatherEntry(int weatherIconId, Date date, double temp, double humidity, double pressure, double wind, double degrees, String icon, int isCurrentWeather) {
+        this.weatherIconId = weatherIconId;
+        this.date = date;
+        this.temp = temp;
+        this.humidity = humidity;
+        this.pressure = pressure;
+        this.wind = wind;
+        this.degrees = degrees;
+        this.icon = icon;
+        this.isCurrentWeather = isCurrentWeather;
+    }
+
     @Ignore
     public WeatherEntry(int weatherIconId, Date date, double temp, double humidity, double pressure, double wind, double degrees, String icon) {
         this.weatherIconId = weatherIconId;
@@ -47,8 +62,7 @@ public class WeatherEntry {
         this.icon = icon;
     }
 
-
-    public WeatherEntry(int id, int weatherIconId, Date date, double temp, double humidity, double pressure, double wind, double degrees, String icon) {
+    public WeatherEntry(int id, int weatherIconId, Date date, double temp, double humidity, double pressure, double wind, double degrees, String icon, int isCurrentWeather) {
         this.id = id;
         this.weatherIconId = weatherIconId;
         this.date = date;
@@ -58,7 +72,9 @@ public class WeatherEntry {
         this.wind = wind;
         this.degrees = degrees;
         this.icon = icon;
+        this.isCurrentWeather = isCurrentWeather;
     }
+
 
     public int getId() {
         return id;
@@ -94,5 +110,9 @@ public class WeatherEntry {
 
     public String getIcon() {
         return icon;
+    }
+
+    public int isCurrentWeather() {
+        return isCurrentWeather;
     }
 }

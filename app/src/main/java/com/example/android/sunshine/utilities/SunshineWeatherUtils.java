@@ -45,14 +45,21 @@ public final class SunshineWeatherUtils {
      */
     public static String formatTemperature(Context context, double temperature) {
 
-        if (isImperialSystem(context)) {
-            temperature = celsiusToFahrenheit(temperature);
-        }
+        temperature = adaptTemperature(context, temperature);
+
         float roundedTemp = Math.round(temperature);
         int temperatureFormatResourceId = R.string.format_temperature;
 
         /* For presentation, assume the user doesn't care about tenths of a degree. */
         return String.format(context.getString(temperatureFormatResourceId), roundedTemp);
+    }
+
+    public static double adaptTemperature(Context context, double temperature) {
+
+        if (isImperialSystem(context)) {
+            temperature = celsiusToFahrenheit(temperature);
+        }
+        return temperature;
     }
 
     public static boolean isImperialSystem(Context context) {
@@ -71,10 +78,10 @@ public final class SunshineWeatherUtils {
      * This method uses the wind direction in degrees to determine compass direction as a
      * String. (eg NW) The method will return the wind String in the following form: "2 km/h SW"
      *
-     * @param context   Android Context to access preferences and resources
+     * @param context       Android Context to access preferences and resources
      * @param windSpeed_m_s Wind speed in kilometers / hour
-     * @param degrees   Degrees as measured on a compass, NOT temperature degrees!
-     *                  See https://www.mathsisfun.com/geometry/degrees.html
+     * @param degrees       Degrees as measured on a compass, NOT temperature degrees!
+     *                      See https://www.mathsisfun.com/geometry/degrees.html
      * @return Wind String in the following form: "2 km/h SW"
      */
     public static String getFormattedWind(Context context, double windSpeed_m_s, double degrees) {

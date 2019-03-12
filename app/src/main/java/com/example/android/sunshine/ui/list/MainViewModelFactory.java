@@ -1,15 +1,15 @@
 package com.example.android.sunshine.ui.list;
 
+import com.example.android.sunshine.data.RepositoryWeather;
+
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.android.sunshine.data.SunshineRepository;
-
 public class MainViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 
-    private final SunshineRepository mRepository;
+    private final RepositoryWeather mRepository;
 
-    public MainViewModelFactory(SunshineRepository repository) {
+    public MainViewModelFactory(RepositoryWeather repository) {
         this.mRepository = repository;
     }
 

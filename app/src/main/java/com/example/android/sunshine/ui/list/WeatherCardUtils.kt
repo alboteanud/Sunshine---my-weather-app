@@ -23,7 +23,7 @@ object WeatherCardUtils {
         cardWeather.weatherDate.text = dateString
 
         val weatherImageResourceId = SunshineWeatherUtils
-                .getLargeArtResourceIdForIconCode(iconId);
+                .getLargeArtResourceIdForIconCode(iconId)
 
         cardWeather.weatherIcon.setImageResource(weatherImageResourceId)
 

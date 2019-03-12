@@ -19,20 +19,20 @@ package com.example.android.sunshine.ui.detail;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.android.sunshine.data.SunshineRepository;
+import com.example.android.sunshine.data.RepositoryWeather;
 
 import java.util.Date;
 
 /**
  * Factory method that allows us to create a ViewModel with a constructor that takes a
- * {@link SunshineRepository} and an ID for the current {@link WeatherEntry}
+ * {@link RepositoryWeather} and an ID for the current {@link WeatherEntry}
  */
 public class DetailViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 
-    private final SunshineRepository mRepository;
+    private final RepositoryWeather mRepository;
     private final Date mDate;
 
-    public DetailViewModelFactory(SunshineRepository repository, Date date) {
+    public DetailViewModelFactory(RepositoryWeather repository, Date date) {
         this.mRepository = repository;
         this.mDate = date;
     }

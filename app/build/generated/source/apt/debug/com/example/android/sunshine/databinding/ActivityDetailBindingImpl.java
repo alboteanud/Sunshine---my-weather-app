@@ -12,13 +12,14 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     @Nullable
     private static final android.util.SparseIntArray sViewsWithIds;
     static {
-        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(3);
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(4);
         sIncludes.setIncludes(0, 
             new String[] {"primary_weather_info", "extra_weather_details"},
             new int[] {1, 2},
             new int[] {com.example.android.sunshine.R.layout.primary_weather_info,
                 com.example.android.sunshine.R.layout.extra_weather_details});
-        sViewsWithIds = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.textTest, 3);
     }
     // views
     @NonNull
@@ -29,12 +30,13 @@ public class ActivityDetailBindingImpl extends ActivityDetailBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityDetailBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 3, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 4, sIncludes, sViewsWithIds));
     }
     private ActivityDetailBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 2
             , (com.example.android.sunshine.databinding.ExtraWeatherDetailsBinding) bindings[2]
             , (com.example.android.sunshine.databinding.PrimaryWeatherInfoBinding) bindings[1]
+            , (android.widget.TextView) bindings[3]
             );
         this.mboundView0 = (android.widget.LinearLayout) bindings[0];
         this.mboundView0.setTag(null);

@@ -1131,8 +1131,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable fullscreen
-drawable gradient_0_semi
 drawable ic_arrow_down_24dp
 drawable ic_clear
 drawable ic_clear_n
@@ -1147,7 +1145,6 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notif
 drawable ic_rain
-drawable ic_share_white
 drawable ic_snow
 drawable ic_storm
 drawable mtrl_snackbar_background
@@ -1166,20 +1163,15 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
-drawable source
 drawable stabil1
 drawable stabil2
 drawable stabil3
 drawable stabil4
 drawable stabil5
 drawable stabil6
-drawable stabil7
-drawable today_touch_selector
 drawable toolbar_background_gradient
-drawable toolbar_shadow
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
-drawable touch_selector
 id ALT
 id CTRL
 id FUNCTION
@@ -1210,9 +1202,9 @@ id add
 id alertTitle
 id all
 id always
-id app_bar
 id async
 id auto
+id backgroundImageView
 id barrier
 id beginning
 id blocking
@@ -1251,6 +1243,7 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id detailsTextView
 id dimensions
 id direct
 id disableHome
@@ -1264,7 +1257,6 @@ id expand_activities_button
 id expanded_menu
 id extra_details
 id extra_details_
-id fab
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1274,10 +1266,8 @@ id forever
 id ghost_view
 id glide_custom_view_target_tag
 id gone
-id graph1
 id group_divider
 id groups
-id guideline
 id high_temperature_detail
 id home
 id homeAsUp
@@ -1289,7 +1279,6 @@ id icon_frame
 id icon_group
 id ifRoom
 id image
-id imgSource
 id info
 id invisible
 id italic
@@ -1303,7 +1292,6 @@ id listMode
 id list_item
 id low_temperature
 id main_nested_container
-id main_toolbar
 id masked
 id media_actions
 id menu_test_1
@@ -1314,6 +1302,7 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id my_graph
 id navigation_header_container
 id never
 id none
@@ -1398,6 +1387,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textTest
 id textWatcher
 id text_input_password_toggle
 id textinput_counter
@@ -1481,7 +1471,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_detail
 layout activity_main
-layout activity_test
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout content_main
@@ -1501,9 +1490,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout expand_button
 layout extra_weather_details
-layout forecast_list_item
 layout graph_card
-layout list_item_forecast_today
 layout map_card
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include

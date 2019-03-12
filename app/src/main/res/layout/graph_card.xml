@@ -16,28 +16,18 @@
             <com.jjoe64.graphview.GraphView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:id="@+id/graph1" />
+                android:id="@+id/my_graph" />
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/graph1"
-                android:maxLines="3"
+                android:layout_below="@+id/my_graph"
                 android:layout_marginTop="8dp"
-                android:text="Styling labels"
-                android:textColor="#222"
-                android:textStyle="bold"
-                android:textSize="22dp" />
+                android:text="Hour"
+                android:layout_centerHorizontal="true"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/title"
-                android:maxLines="3"
-                android:text="Some labels options"
-                android:textColor="#666"
-                android:textSize="14dp" />
+
 
         </RelativeLayout>
 
