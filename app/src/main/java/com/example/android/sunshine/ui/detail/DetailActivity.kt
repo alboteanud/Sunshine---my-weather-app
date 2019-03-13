@@ -20,14 +20,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.example.android.sunshine.BuildConfig
-import com.example.android.sunshine.R
-import com.example.android.sunshine.data.database.WeatherEntry
 import com.example.android.sunshine.utilities.InjectorUtils
-import com.example.android.sunshine.utilities.SunshineDateUtils
-import com.example.android.sunshine.utilities.SunshineWeatherUtils
-import kotlinx.android.synthetic.main.activity_detail.*
-import kotlinx.android.synthetic.main.extra_weather_details.*
-import kotlinx.android.synthetic.main.primary_weather_info.*
 import java.util.*
 
 /**
@@ -38,7 +31,7 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail)
+//        setContentView(R.layout.activity_detail)
         val timestamp = intent.getLongExtra(WEATHER_ID_EXTRA, -1)
         //        Date date = SunshineDateUtils.getNormalizedUtcDateForToday();
         val date = Date(timestamp)
@@ -50,7 +43,7 @@ class DetailActivity : AppCompatActivity() {
 
         mViewModel.weather.observe(this, androidx.lifecycle.Observer { weatherEntry ->
             // Update the UI
-            if (weatherEntry != null) bindWeatherToUI(weatherEntry)
+//            if (weatherEntry != null) bindWeatherToUI(weatherEntry)
         })
 
         InjectorUtils.provideRepository(this).initializeData()
@@ -58,10 +51,12 @@ class DetailActivity : AppCompatActivity() {
         if (BuildConfig.DEBUG){
             val prefs = getSharedPreferences("_", Context.MODE_PRIVATE)
             val txt = prefs.getString("txt", "")
-            textTest.text = txt
+//            textTest.text = txt
         }
 
     }
+
+   /*
 
     private fun bindWeatherToUI(weatherEntry: WeatherEntry) {
         /****************
@@ -154,8 +149,8 @@ class DetailActivity : AppCompatActivity() {
         val humidityA11y = getString(R.string.a11y_humidity, humidityString)
 
         /* Set the text and content description (for accessibility purposes) */
-        humidity_label.text = humidityString
-        humidity_label.contentDescription = humidityA11y
+        humidity_measurement.text = humidityString
+        humidity_measurement.contentDescription = humidityA11y
 
         humidity_label.contentDescription = humidityA11y
 
@@ -194,6 +189,8 @@ class DetailActivity : AppCompatActivity() {
         pressure_details.contentDescription = pressureA11y
         pressure_label.contentDescription = pressureA11y
     }
+*/
+
 
     companion object {
 

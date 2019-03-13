@@ -15,11 +15,11 @@
 
             <com.jjoe64.graphview.GraphView
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:id="@+id/my_graph" />
+                android:layout_height="160dp"
+                android:id="@+id/my_graph"/>
 
             <TextView
-                android:id="@+id/title"
+                android:id="@+id/temperature_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/my_graph"

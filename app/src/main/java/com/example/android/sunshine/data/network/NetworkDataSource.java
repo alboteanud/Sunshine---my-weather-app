@@ -17,15 +17,12 @@ package com.example.android.sunshine.data.network;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.text.format.DateUtils;
 import android.util.Log;
 
 import com.example.android.sunshine.AppExecutors;
-import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.data.database.WeatherEntry;
-import com.example.android.sunshine.utilities.ForegroundListener;
-import com.example.android.sunshine.utilities.Utils;
+import com.example.android.sunshine.utilities.LogUtils;
+import com.example.android.sunshine.utilities.NotifUtils;
 import com.firebase.jobdispatcher.Constraint;
 import com.firebase.jobdispatcher.Driver;
 import com.firebase.jobdispatcher.FirebaseJobDispatcher;
@@ -35,8 +32,6 @@ import com.firebase.jobdispatcher.Lifetime;
 import com.firebase.jobdispatcher.Trigger;
 
 import java.net.URL;
-import java.text.SimpleDateFormat;
-import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 
 import androidx.lifecycle.LiveData;
@@ -191,44 +186,12 @@ public class NetworkDataSource {
                 // weather forecasts. This will trigger observers of that LiveData, such as the
                 // RepositoryWeather.
                 if (response != null && response.getWeatherForecast().length != 0) {
-                    Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
-                            + " values");
-                    Log.d(LOG_TAG, String.format("First value is %1.0f, date %s  icon %s",
-                            response.getWeatherForecast()[0].getTemp(),
-                            response.getWeatherForecast()[0].getDate(),
-                            response.getWeatherForecast()[0].getIcon()));
-
                     mDownloadedWeatherForecasts.postValue(response.getWeatherForecast());
-                    // Will eventually do something with the downloaded data
+                    NotifUtils.notifyIfNeeded(context, response.getWeatherForecast()[0]);
 
-                    if (BuildConfig.DEBUG) {
-                        SharedPreferences prefs = context.getSharedPreferences("_", Context.MODE_PRIVATE);
-                        String txt = prefs.getString("txt", "");
-                        long now = System.currentTimeMillis();
-                        String date = new SimpleDateFormat("HH:mm  dd MMM", Locale.getDefault()).format(now);
-                        txt += date + "\n";
-                        prefs.edit().putString("txt", txt).apply();
-
-                    }
-
-                    boolean notificationsEnabled = Utils.INSTANCE.areNotificationsEnabled(context);
-                    long timeSinceLastNotification = Utils.INSTANCE.getEllapsedTimeSinceLastNotification(context);
-                    boolean oneDayPassedSinceLastNotification = false;
-
-                    if (timeSinceLastNotification >= DateUtils.DAY_IN_MILLIS) {
-                        oneDayPassedSinceLastNotification = true;
-                    }
-
-                    if (notificationsEnabled && oneDayPassedSinceLastNotification) {
-                        WeatherEntry entry = response.getWeatherForecast()[0];
-
-                        if (!ForegroundListener.Companion.isForeground()) {
-                            Utils.INSTANCE.notifyUserOfNewWeather(context, entry);
-                        }
-
-                    }
-
-
+                    Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length + " values");
+                    LogUtils.logResponse(LOG_TAG, response.getWeatherForecast()[0]);
+                    LogUtils.saveDateToPrefs(context);
                 }
             } catch (Exception e) {
                 // Server probably invalid
@@ -238,7 +201,7 @@ public class NetworkDataSource {
     }
 
     void fetchCurrentWeather() {
-        Log.d(LOG_TAG, "Fetch weather NOW started");
+        Log.d(LOG_TAG, "Fetch current weather started");
         mExecutors.networkIO().execute(() -> {
             try {
 
@@ -255,25 +218,19 @@ public class NetworkDataSource {
                 // Parse the JSON into a list of weather forecasts
 //                WeatherResponse response = new WeatherJsonParser().parse_(jsonWeatherResponse);       // for test server
                 WeatherResponse response = new WeatherJsonParser().parseCurrentWeather(jsonWeatherResponse);
-                Log.d(LOG_TAG, "JSON Parsing finished Weather Now");
+                Log.d(LOG_TAG, "JSON Parsing finished Current Weather");
 
 
                 // As long as there are weather forecasts, update the LiveData storing the most recent
                 // weather forecasts. This will trigger observers of that LiveData, such as the
                 // RepositoryWeather.
                 if (response != null && response.getWeatherForecast().length != 0) {
-                    Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length
-                            + " values");
-                    Log.d(LOG_TAG, String.format("Current Weather First value is %1.0f,  date %s  icon %s,  isCurrentW %d",
-                            response.getWeatherForecast()[0].getTemp(),
-                            response.getWeatherForecast()[0].getDate(),
-                            response.getWeatherForecast()[0].getIcon(),
-                            response.getWeatherForecast()[0].isCurrentWeather()));
-
                     WeatherEntry[] entries = response.getWeatherForecast();
-
                     mDownloadedCurrentWeather.postValue(entries);
                     // Will eventually do something with the downloaded data
+
+                    Log.d(LOG_TAG, "CurrentWeather - JSON not null and has " + entries.length + " values");
+                    LogUtils.logResponse(LOG_TAG, entries[0]);
                 }
             } catch (Exception e) {
                 // Server probably invalid

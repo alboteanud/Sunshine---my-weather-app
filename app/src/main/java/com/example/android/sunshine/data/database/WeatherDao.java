@@ -27,8 +27,8 @@ public interface WeatherDao {
      */
 //    @Query("SELECT id, weatherIconId, date, min, max FROM weather WHERE date >= :date")
 //    LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts_orig(Date date);
-    @Query("SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= :date LIMIT 5")
-    LiveData<List<ListWeatherEntry>> getWeatherForecasts(Date date);
+    @Query("SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= :date LIMIT 6")
+    LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date);
 
     /**
      * Selects all ids entries after a give date, inclusive. This is for easily seeing
@@ -41,7 +41,7 @@ public interface WeatherDao {
     int countAllFutureWeather(Date date);
 
     //    Gets the weather for a single day
-    @Query("SELECT * FROM weather WHERE date > :date")
+    @Query("SELECT * FROM weather WHERE date = :date")
     LiveData<WeatherEntry> getWeatherByDate(Date date);
 
     @Query("SELECT date FROM weather WHERE date > :date AND isCurrentWeather = 1")
@@ -66,7 +66,9 @@ public interface WeatherDao {
     @Query("DELETE FROM weather WHERE date < :date")
     void deleteOldWeather(Date date);
 
-    @Query("SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= :date ORDER BY isCurrentWeather DESC LIMIT 1")
-    LiveData<List<ListWeatherEntry>> getCurrentWeather(Date date);
+    @Query("SELECT id, weatherIconId, date, `temp`, icon, humidity, pressure, wind, degrees, isCurrentWeather FROM weather WHERE date >= :date " +
+            "ORDER BY isCurrentWeather DESC " +
+            "LIMIT 1")
+    LiveData<WeatherEntry>getCurrentWeather(Date date);
 
 }

@@ -114,43 +114,41 @@ public class RepositoryWeather {
 
     }
 
-    public void initializeDataCurrentWeather() {
-
+    public void initializeDataCW() {
         if (mInitializedCW) return;
         mInitializedCW = true;
 
         mExecutors.diskIO().execute(() -> {
             Log.d(LOG_TAG, "execute initDataCurrentWeather");
-            if (isFetchNeededCurrentWeather()) {
+            if (isFetchNeededCW()) {
                 startFetchCWeatherService();
             }
         });
+    }
+
+    public void resetInitializedCW(){
+        mInitializedCW = false;
     }
 
     /**
      * Database related operations
      **/
     public LiveData<List<ListWeatherEntry>> getWeatherForecasts() {
-
         initializeData();
-
         long utcNowMillis = System.currentTimeMillis();
         Date date = new Date(utcNowMillis);
-
-        return mWeatherDao.getWeatherForecasts(date);
+        return mWeatherDao.getCurrentWeatherForecasts(date);
     }
 
-    private long someTimeMills = DateUtils.MINUTE_IN_MILLIS * 25;
-    public LiveData<List<ListWeatherEntry>> getCurrentWeather() {
-        initializeDataCurrentWeather();
-        long recentlyMills = System.currentTimeMillis() - someTimeMills;
+    public LiveData<WeatherEntry> getCurrentWeather() {
+        initializeDataCW();
+        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 25;
         Date date = new Date(recentlyMills);
-        return mWeatherDao.getCurrentWeather(date);
+
+        LiveData<WeatherEntry> resultWeather = mWeatherDao.getCurrentWeather(date);
+        return resultWeather;
     }
 
-    /**
-     * Deletes old weather data because we don't need to keep multiple days' data
-     */
     private void deleteOldData() {
 //        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
         long oldTime = System.currentTimeMillis() - DateUtils.HOUR_IN_MILLIS;
@@ -170,17 +168,12 @@ public class RepositoryWeather {
         return (count < NetworkDataSource.NUM_MIN_DATA_COUNTS);
     }
 
-    private boolean isFetchNeededCurrentWeather() {
-        long recentlyMills = System.currentTimeMillis() - someTimeMills;
+    private boolean isFetchNeededCW() {
+        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 25;
         Date dateRecently = new Date(recentlyMills);
         Date result = mWeatherDao.getLastUpdatedDateCW(dateRecently);
-
         return result == null;
     }
-
-    /**
-     * Network related operation
-     */
 
     private void startFetchWeatherService() {
         mNetworkDataSource.startFetchWeatherService();

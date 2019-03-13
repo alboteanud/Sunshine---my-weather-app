@@ -1216,7 +1216,9 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
 id cancel_action
+id cardDetailsWeather
 id cardGraph
+id cardMap
 id cardWeather
 id center
 id center_horizontal
@@ -1230,7 +1232,6 @@ id collapseActionView
 id container
 id content
 id contentPanel
-id content_main
 id coordinator
 id custom
 id customPanel
@@ -1243,7 +1244,6 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
-id detailsTextView
 id dimensions
 id direct
 id disableHome
@@ -1255,7 +1255,6 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
-id extra_details
 id extra_details_
 id fill
 id fill_horizontal
@@ -1272,8 +1271,9 @@ id high_temperature_detail
 id home
 id homeAsUp
 id horizontal_middle
-id humidity
+id horizontal_middle2
 id humidity_label
+id humidity_measurement
 id icon
 id icon_frame
 id icon_group
@@ -1291,7 +1291,6 @@ id line3
 id listMode
 id list_item
 id low_temperature
-id main_nested_container
 id masked
 id media_actions
 id menu_test_1
@@ -1304,6 +1303,7 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id my_graph
 id navigation_header_container
+id nestedScrollView
 id never
 id none
 id normal
@@ -1323,7 +1323,6 @@ id percent
 id pin
 id pressure_details
 id pressure_label
-id primary_info
 id progress_circular
 id progress_horizontal
 id radio
@@ -1382,12 +1381,12 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id temperature_main
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
-id textTest
 id textWatcher
 id text_input_password_toggle
 id textinput_counter
@@ -1469,11 +1468,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
-layout activity_detail
 layout activity_main
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
-layout content_main
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1488,8 +1485,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout details_weather_card
 layout expand_button
-layout extra_weather_details
 layout graph_card
 layout map_card
 layout mtrl_layout_snackbar
@@ -1525,7 +1522,6 @@ layout preference_widget_seekbar
 layout preference_widget_seekbar_material
 layout preference_widget_switch
 layout preference_widget_switch_compat
-layout primary_weather_info
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -1660,7 +1656,9 @@ string humidity_label
 string mtrl_chip_close_icon_content_description
 string norif_channel_id
 string notif_channel_name
-string notification_text
+string notif_city_name
+string notification_content_text
+string notification_title_text
 string owm_city_id
 string password_toggle_content_description
 string path_password_eye

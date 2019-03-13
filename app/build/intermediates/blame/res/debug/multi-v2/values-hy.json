@@ -4,13 +4,13 @@
             "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy/values-hy.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.1.3.aar/93318d322496edbcac6f2d1374da4b57/res/values-hy/values.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/ac1cbadd262bc4b686e3359c0b4803b6/res/values-hy/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10",
                         "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "197,267,374,440,504,590,697",
+                        "startOffsets": "199,269,376,442,506,592,699",
                         "endColumns": "69,106,65,63,85,106,74",
-                        "endOffsets": "266,373,439,503,589,696,771"
+                        "endOffsets": "268,375,441,505,591,698,773"
                     },
                     "to": {
                         "startLines": "31,32,33,34,35,36,37",

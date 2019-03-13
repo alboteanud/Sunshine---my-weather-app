@@ -2,6 +2,7 @@ package com.example.android.sunshine.ui.list;
 
 import com.example.android.sunshine.data.RepositoryWeather;
 import com.example.android.sunshine.data.database.ListWeatherEntry;
+import com.example.android.sunshine.data.database.WeatherEntry;
 
 import java.util.List;
 
@@ -12,7 +13,7 @@ public class MainActivityViewModel extends ViewModel {
 
     private final RepositoryWeather mRepository;
     private final LiveData<List<ListWeatherEntry>> mForecast;
-    private final LiveData<List<ListWeatherEntry>> currentWeather;
+    private final LiveData<WeatherEntry> currentWeather;
 
 
 
@@ -26,7 +27,7 @@ public class MainActivityViewModel extends ViewModel {
         return mForecast;
     }
 
-    public LiveData<List<ListWeatherEntry>> getCurrentWeather() {
+    public LiveData<WeatherEntry> getCurrentWeather() {
         return currentWeather;
     }
 

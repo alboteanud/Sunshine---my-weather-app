@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardWeather"
+    android:id="@+id/cardMap"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardBackgroundColor="@color/blackSemi"
@@ -13,7 +13,7 @@
     <ImageView
         android:id="@+id/weatherIcon"
         android:layout_width="match_parent"
-        android:layout_height="1200dp"
+        android:layout_height="400dp"
         android:scaleType="centerCrop"
         android:src="@drawable/c1" />
 

@@ -15,7 +15,7 @@ import java.util.*
 object GraphCardUtils {
 
     fun initGraph(weatherEntries: MutableList<ListWeatherEntry>, graph1: GraphView) {
-        if (weatherEntries.size < 4) return
+//        if (weatherEntries.size < 4) return
 
         val series = LineGraphSeries<DataPoint>()
         val numPoints = weatherEntries.size

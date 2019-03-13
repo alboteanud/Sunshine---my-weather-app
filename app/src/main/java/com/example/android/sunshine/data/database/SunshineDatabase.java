@@ -23,8 +23,7 @@ public abstract class SunshineDatabase extends RoomDatabase {
         Log.d(LOG_TAG, "Getting the database");
         if (sInstance == null) {
             synchronized (LOCK) {
-                sInstance = Room.databaseBuilder(context.getApplicationContext(),
-                        SunshineDatabase.class, SunshineDatabase.DATABASE_NAME).build();
+                sInstance = Room.databaseBuilder(context.getApplicationContext(), SunshineDatabase.class, SunshineDatabase.DATABASE_NAME).build();
                 Log.d(LOG_TAG, "Made new database");
             }
         }

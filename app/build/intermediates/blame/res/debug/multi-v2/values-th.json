@@ -72,13 +72,13 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.1.3.aar/93318d322496edbcac6f2d1374da4b57/res/values-th/values.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/ac1cbadd262bc4b686e3359c0b4803b6/res/values-th/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10",
                         "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "197,266,367,431,495,573,668",
+                        "startOffsets": "199,268,369,433,497,575,670",
                         "endColumns": "68,100,63,63,77,94,67",
-                        "endOffsets": "265,366,430,494,572,667,735"
+                        "endOffsets": "267,368,432,496,574,669,737"
                     },
                     "to": {
                         "startLines": "31,32,33,34,35,36,37",
