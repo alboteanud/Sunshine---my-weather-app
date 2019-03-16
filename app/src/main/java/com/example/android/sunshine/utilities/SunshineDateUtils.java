@@ -28,7 +28,7 @@ import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Class for handling date conversions that are useful for Sunshine.
+ * Class for handling _date conversions that are useful for Sunshine.
  */
 public final class SunshineDateUtils {
 
@@ -36,26 +36,26 @@ public final class SunshineDateUtils {
     public static final long DAY_IN_MILLIS = TimeUnit.DAYS.toMillis(1);
 
     /**
-     * This method returns the number of milliseconds (UTC time) for today's date at midnight in
+     * This method returns the number of milliseconds (UTC time) for today's _date at midnight in
      * the local time zone. For example, if you live in California and the day is September 20th,
      * 2016 and it is c6:30 PM, it will return 1474329600000. Now, if you plug this number into an
      * Epoch time converter, you may be confused that it tells you this time stamp represents 8:00
      * PM on September 19th local time, rather than September 20th. We're concerned with the GMT
-     * date here though, which is correct, stating September 20th, 2016 at midnight.
+     * _date here though, which is correct, stating September 20th, 2016 at midnight.
      * <p>
      * As another example, if you are in Hong Kong and the day is September 20th, 2016 and it is
      * c6:30 PM, this method will return 1474329600000. Again, if you plug this number into an Epoch
      * time converter, you won't get midnight for your local time zone. Just keep in mind that we
-     * are just looking at the GMT date here.
+     * are just looking at the GMT _date here.
      * <p>
-     * This method will ALWAYS return the date at midnight (in GMT time) for the time zone you
-     * are currently in. In other words, the GMT date will always represent your date.
+     * This method will ALWAYS return the _date at midnight (in GMT time) for the time zone you
+     * are currently in. In other words, the GMT _date will always represent your _date.
      * <p>
      * Since UTC / GMT time are the standard for all time zones in the world, we use it to
      * normalize our dates that are stored in the database. When we extract values from the
      * database, we adjust for the current time zone using time zone offsets.
      *
-     * @return The number of milliseconds (UTC / GMT) for today's date at midnight in the local
+     * @return The number of milliseconds (UTC / GMT) for today's _date at midnight in the local
      * time zone
      */
     public static long getNormalizedUtcMsForToday() {
@@ -91,7 +91,7 @@ public final class SunshineDateUtils {
         long daysSinceEpochLocal = TimeUnit.MILLISECONDS.toDays(timeSinceEpochLocalTimeMillis);
 
         /*
-         * Finally, we convert back to milliseconds. This time stamp represents today's date at
+         * Finally, we convert back to milliseconds. This time stamp represents today's _date at
          * midnight in GMT time. We will need to account for local time zone offsets when
          * extracting this information from the database.
          */
@@ -109,27 +109,27 @@ public final class SunshineDateUtils {
 
     /**
      * This method returns the number of days since the epoch (January 01, 1970, 12:00 Midnight UTC)
-     * in UTC time from the current date.
+     * in UTC time from the current _date.
      *
-     * @param utcDate A date in milliseconds in UTC time.
-     * @return The number of days from the epoch to the date argument.
+     * @param utcDate A _date in milliseconds in UTC time.
+     * @return The number of days from the epoch to the _date argument.
      */
     private static long elapsedDaysSinceEpoch(long utcDate) {
         return TimeUnit.MILLISECONDS.toDays(utcDate);
     }
 
     /**
-     * This method will return the local time midnight for the provided normalized UTC date.
+     * This method will return the local time midnight for the provided normalized UTC _date.
      *
-     * @param normalizedUtcDate UTC time at midnight for a given date. This number comes from the
+     * @param normalizedUtcDate UTC time at midnight for a given _date. This number comes from the
      *                          database
-     * @return The local date corresponding to the given normalized UTC date
+     * @return The local _date corresponding to the given normalized UTC _date
      */
     private static long getLocalMidnightFromNormalizedUtcDate(long normalizedUtcDate) {
         /* The timeZone object will provide us the current user's time zone offset */
         TimeZone timeZone = TimeZone.getDefault();
         /*
-         * This offset, in milliseconds, when added to a UTC date time, will produce the local
+         * This offset, in milliseconds, when added to a UTC _date time, will produce the local
          * time.
          */
         long gmtOffset = timeZone.getOffset(normalizedUtcDate);
@@ -149,7 +149,7 @@ public final class SunshineDateUtils {
     }
 
     /**
-     * Helper method to convert the database representation of the date into something to display
+     * Helper method to convert the database representation of the _date into something to display
      * to users. As classy and polished a user experience as "1474061664" is, we can do better.
      * <p/>
      * The day string for forecast uses the following logic:
@@ -159,11 +159,11 @@ public final class SunshineDateUtils {
      * For all days after that: "Mon, Jun 8" (Mon, 8 Jun in UK, for example)
      *
      * @param context               Context to use for resource localization
-     * @param normalizedUtcMidnight The date in milliseconds (UTC midnight)
-     * @param showFullDate          Used to show a fuller-version of the date, which always
+     * @param normalizedUtcMidnight The _date in milliseconds (UTC midnight)
+     * @param showFullDate          Used to show a fuller-version of the _date, which always
      *                              contains either the day of the week, today, or tomorrow, in
-     *                              addition to the date.
-     * @return A user-friendly representation of the date such as "Today, June 8", "Tomorrow",
+     *                              addition to the _date.
+     * @return A user-friendly representation of the _date such as "Today, June 8", "Tomorrow",
      * or "Friday"
      */
     public static String getFriendlyDateString(Context context, long normalizedUtcMidnight, boolean showFullDate) {
@@ -186,14 +186,14 @@ public final class SunshineDateUtils {
          * NOTE: localDate should be localDateMidnightMillis and should be straight from the
          * database
          *
-         * Since we normalized the date when we inserted it into the database, we need to take
-         * that normalized date and produce a date (in UTC time) that represents the local time
+         * Since we normalized the _date when we inserted it into the database, we need to take
+         * that normalized _date and produce a _date (in UTC time) that represents the local time
          * zone at midnight.
          */
         long localDate = getLocalMidnightFromNormalizedUtcDate(normalizedUtcMidnight);
 
         /*
-         * In order to determine which day of the week we are creating a date string for, we need
+         * In order to determine which day of the week we are creating a _date string for, we need
          * to compare the number of days that have passed since the epoch (January c1, 1970 at
          * 00:00 GMT)
          */
@@ -207,7 +207,7 @@ public final class SunshineDateUtils {
 
         if (daysFromEpochToProvidedDate == daysFromEpochToToday || showFullDate) {
             /*
-             * If the date we're building the String for is today's date, the format
+             * If the _date we're building the String for is today's _date, the format
              * is "Today, June 24"
              */
             String dayName = getDayName(context, localDate);
@@ -218,7 +218,7 @@ public final class SunshineDateUtils {
                 /*
                  * Since there is no localized format that returns "Today" or "Tomorrow" in the API
                  * levels we have to support, we take the name of the day (from SimpleDateFormat)
-                 * and use it to replace the date from DateUtils. This isn't guaranteed to work,
+                 * and use it to replace the _date from DateUtils. This isn't guaranteed to work,
                  * but our testing so far has been conclusively positive.
                  *
                  * For information on a simpler API to use (on API > 18), please chec\
@@ -233,7 +233,7 @@ public final class SunshineDateUtils {
                 return readableDate;
             }
         } else if (daysFromEpochToProvidedDate < daysFromEpochToToday + 7) {
-            /* If the input date is less than a week in the future, just return the day name. */
+            /* If the input _date is less than a week in the future, just return the day name. */
             return getDayName(context, localDate);
         } else {
             int flags = DateUtils.FORMAT_SHOW_DATE
@@ -246,12 +246,12 @@ public final class SunshineDateUtils {
     }
 
     /**
-     * Returns a date string in the format specified, which shows an abbreviated date without a
+     * Returns a _date string in the format specified, which shows an abbreviated _date without a
      * year.
      *
-     * @param context      Used by DateUtils to format the date in the current locale
+     * @param context      Used by DateUtils to format the _date in the current locale
      * @param timeInMillis Time in milliseconds since the epoch (local time)
-     * @return The formatted date string
+     * @return The formatted _date string
      */
     private static String getReadableDateString(Context context, long timeInMillis) {
         int flags = DateUtils.FORMAT_SHOW_DATE
@@ -266,12 +266,12 @@ public final class SunshineDateUtils {
      * E.g "today", "tomorrow", "Wednesday".
      *
      * @param context      Context to use for resource localization
-     * @param dateInMillis The date in milliseconds (UTC time)
+     * @param dateInMillis The _date in milliseconds (UTC time)
      * @return the string day of the week
      */
     private static String getDayName(Context context, long dateInMillis) {
         /*
-         * If the date is today, return the localized version of "Today" instead of the actual
+         * If the _date is today, return the localized version of "Today" instead of the actual
          * day name.
          */
         long daysFromEpochToProvidedDate = elapsedDaysSinceEpoch(dateInMillis);

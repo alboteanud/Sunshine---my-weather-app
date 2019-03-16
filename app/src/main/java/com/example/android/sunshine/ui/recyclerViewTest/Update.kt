@@ -1,17 +1,18 @@
 package com.example.android.sunshine.ui.recyclerViewTest
 
 abstract class Update(
-        val updateType: String,
-        val updateUser: User,
-        val updateTime: String) {
+//        val _id: Int,
+        val _type: String
+//        val _date: Date
+) {
 
     class TYPE {
         companion object {
-            val NEW_FRIEND = "friend"
-            val COMMENT = "comment"
-            val READ_STATUS = "readstatus"
-            val USER_STATUS = "userstatus"
-            val REVIEW = "review"
+            const val WEATHER = "weather"
+            const val DETAILS = "details"
+            const val GRAPH = "graph"
+            const val MAP = "map"
         }
     }
+
 }

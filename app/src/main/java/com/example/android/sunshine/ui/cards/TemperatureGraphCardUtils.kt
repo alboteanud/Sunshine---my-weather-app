@@ -1,4 +1,4 @@
-package com.example.android.sunshine.ui.list
+package com.example.android.sunshine.ui.cards
 
 import android.graphics.Color
 import com.example.android.sunshine.data.database.ListWeatherEntry
@@ -12,7 +12,7 @@ import com.jjoe64.graphview.series.LineGraphSeries
 import java.text.SimpleDateFormat
 import java.util.*
 
-object GraphCardUtils {
+object TemperatureGraphCardUtils {
 
     fun initGraph(weatherEntries: MutableList<ListWeatherEntry>, graph1: GraphView) {
 //        if (weatherEntries.size < 4) return

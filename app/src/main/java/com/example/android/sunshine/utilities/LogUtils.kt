@@ -23,10 +23,10 @@ object LogUtils {
     @JvmStatic
     fun logResponse(logTag: String, entry: WeatherEntry) {
         if (!BuildConfig.DEBUG) return
-        Log.d(logTag, String.format("First value is %1.0f, date %s  icon %s",
-                entry.getTemp(),
-                entry.getDate(),
-                entry.getIcon()))
+        Log.d(logTag, String.format("First value is %1.0f, _date %s  icon %s",
+                entry.temp,
+                entry.date,
+                entry.icon))
 
     }
 

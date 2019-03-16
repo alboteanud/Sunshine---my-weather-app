@@ -134,7 +134,7 @@ public class NetworkDataSource {
                  */
                 .setLifetime(Lifetime.FOREVER)
                 /*
-                 * We want Sunshine's weather data to stay up to date, so we tell this Job to recur.
+                 * We want Sunshine's weather data to stay up to _date, so we tell this Job to recur.
                  */
                 .setRecurring(true)
                 /*

@@ -1219,7 +1219,6 @@ id cancel_action
 id cardDetailsWeather
 id cardGraph
 id cardMap
-id cardWeather
 id center
 id center_horizontal
 id center_vertical
@@ -1236,7 +1235,6 @@ id coordinator
 id custom
 id customPanel
 id dataBinding
-id date_detail
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1267,10 +1265,8 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
-id high_temperature_detail
 id home
 id homeAsUp
-id horizontal_middle
 id horizontal_middle2
 id humidity_label
 id humidity_measurement
@@ -1290,7 +1286,6 @@ id line1
 id line3
 id listMode
 id list_item
-id low_temperature
 id masked
 id media_actions
 id menu_test_1
@@ -1303,7 +1298,6 @@ id mtrl_internal_children_alpha_tag
 id multiply
 id my_graph
 id navigation_header_container
-id nestedScrollView
 id never
 id none
 id normal
@@ -1326,6 +1320,7 @@ id pressure_label
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerView
 id recycler_view
 id right
 id right_icon
@@ -1413,8 +1408,6 @@ id visible
 id weatherDate
 id weatherDescription
 id weatherIcon
-id weather_description
-id weather_icon_detail
 id wind_label
 id wind_measurement
 id withText

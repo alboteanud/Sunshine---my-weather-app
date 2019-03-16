@@ -17,24 +17,22 @@ import androidx.room.Query;
 public interface WeatherDao {
 
     /**
-     * +     * Selects all {@link ListWeatherEntry} entries after a give date, inclusive. The LiveData will
+     * +     * Selects all {@link ListWeatherEntry} entries after a give _date, inclusive. The LiveData will
      * +     * be kept in sync with the database, so that it will automatically notify observers when the
      * +     * values in the table change.
      * +     *
-     * +     * @param date A {@link Date} from which to select all future weather
-     * +     * @return {@link LiveData} list of all {@link ListWeatherEntry} objects after date
+     * +     * @param _date A {@link Date} from which to select all future weather
+     * +     * @return {@link LiveData} list of all {@link ListWeatherEntry} objects after _date
      * +
      */
-//    @Query("SELECT id, weatherIconId, date, min, max FROM weather WHERE date >= :date")
-//    LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts_orig(Date date);
     @Query("SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= :date LIMIT 6")
     LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date);
 
     /**
-     * Selects all ids entries after a give date, inclusive. This is for easily seeing
+     * Selects all ids entries after a give _date, inclusive. This is for easily seeing
      * what entries are in the database without pulling all of the data.
      *
-     * @param date The date to select after (inclusive)
+     * @param date The _date to select after (inclusive)
      * @return Number of future weather forecasts stored in the database
      */
     @Query("SELECT * FROM weather WHERE date = :date")
@@ -48,8 +46,8 @@ public interface WeatherDao {
     Date getLastUpdatedDateCW(Date date);
 
     /**
-     * Inserts a list of {@link WeatherEntry} into the weather table. If there is a conflicting id
-     * or date the weather entry uses the {@link OnConflictStrategy} of replacing the weather
+     * Inserts a list of {@link WeatherEntry} into the weather table. If there is a conflicting _id
+     * or _date the weather entry uses the {@link OnConflictStrategy} of replacing the weather
      * forecast. The required uniqueness of these values is defined in the {@link WeatherEntry}.
      *
      * @param weather A list of weather forecasts to insert
@@ -60,13 +58,14 @@ public interface WeatherDao {
     /**
      * +     * Deletes any weather data older than the given day
      * +     *
-     * +     * @param date The date to delete all prior weather from (exclusive)
+     * +     * @param _date The _date to delete all prior weather from (exclusive)
      * +
      */
     @Query("DELETE FROM weather WHERE date < :date")
     void deleteOldWeather(Date date);
 
-    @Query("SELECT id, weatherIconId, date, `temp`, icon, humidity, pressure, wind, degrees, isCurrentWeather FROM weather WHERE date >= :date " +
+//    @Query("SELECT id, weatherIconId, date, `temp`, icon, humidity, pressure, wind, degrees, isCurrentWeather FROM weather WHERE date >= :date " +
+    @Query("SELECT * FROM weather WHERE date >= :date " +
             "ORDER BY isCurrentWeather DESC " +
             "LIMIT 1")
     LiveData<WeatherEntry>getCurrentWeather(Date date);

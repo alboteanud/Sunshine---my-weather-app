@@ -67,7 +67,7 @@ object NotifUtils {
         val highString = SunshineWeatherUtils.formatTemperature(context, entry.temp)
 
         val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherIconId)
-        val weatherTimeMills = SunshineDateUtils.getCityTimeMills(context, entry.date.time)
+        val weatherTimeMills = SunshineDateUtils.getCityTimeMills(context, entry.date!!.time)
 //        val weatherDate = SimpleDateFormat("HH mm", Locale.getDefault()).format(weatherTimeMills)
         val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
         val cityName = context.getString(R.string.notif_city_name)

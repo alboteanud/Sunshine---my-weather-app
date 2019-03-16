@@ -53,7 +53,7 @@ final class NetworkUtils {
             "https://andfun-weather.udacity.com/staticweather";
     private static final String BASE_OWM_WEATHER_URL = "http://api.openweathermap.org/data/2.5/forecast?";
     private static final String BASE_OWM_WEATHER_NOW_URL = "http://api.openweathermap.org/data/2.5/weather?";
-    public static final String OWM_USER_ID = "fa5d8273d9b9f6123bdeb94d0a05c9aa"; // cont Anca Scobaru
+    public static final String OWM_USER_ID = "fa5d8273d9b9f6123bdeb94d0a05c9aa"; // OWM cont Anca Scobaru
     private static final String LANG_PARAM = "lang";
     private static final String ID_PARAM = "id";
     private static final String APPID_PARAM = "APPID";
@@ -151,7 +151,7 @@ final class NetworkUtils {
     }
 
     private static URL buildUrlWeatherNowWithLocationId(String locationID) {
-        // ex:  api.openweathermap.org/data/2.5/weather?id=2172797
+        // ex:  api.openweathermap.org/data/2.5/weather?_id=2172797
         Uri weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_NOW_URL).buildUpon()
                 .appendQueryParameter(ID_PARAM, locationID)
                 .appendQueryParameter(FORMAT_PARAM, format)

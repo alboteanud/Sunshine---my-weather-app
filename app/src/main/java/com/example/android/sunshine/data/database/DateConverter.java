@@ -7,7 +7,7 @@ import androidx.room.TypeConverter;
 /**
  * {@link TypeConverter} for long to {@link Date}
  * <p>
- * This stores the date as a long in the database, but returns it as a {@link Date}
+ * This stores the _date as a long in the database, but returns it as a {@link Date}
  */
 class DateConverter {
     @TypeConverter

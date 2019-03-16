@@ -313,7 +313,7 @@ public final class WeatherDao_Impl implements WeatherDao {
 
   @Override
   public LiveData<WeatherEntry> getCurrentWeather(Date date) {
-    final String _sql = "SELECT id, weatherIconId, date, `temp`, icon, humidity, pressure, wind, degrees, isCurrentWeather FROM weather WHERE date >= ? ORDER BY isCurrentWeather DESC LIMIT 1";
+    final String _sql = "SELECT * FROM weather WHERE date >= ? ORDER BY isCurrentWeather DESC LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -343,11 +343,11 @@ public final class WeatherDao_Impl implements WeatherDao {
           final int _cursorIndexOfWeatherIconId = _cursor.getColumnIndexOrThrow("weatherIconId");
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
           final int _cursorIndexOfTemp = _cursor.getColumnIndexOrThrow("temp");
-          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
           final int _cursorIndexOfHumidity = _cursor.getColumnIndexOrThrow("humidity");
           final int _cursorIndexOfPressure = _cursor.getColumnIndexOrThrow("pressure");
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
+          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
           final int _cursorIndexOfIsCurrentWeather = _cursor.getColumnIndexOrThrow("isCurrentWeather");
           final WeatherEntry _result;
           if(_cursor.moveToFirst()) {
@@ -365,8 +365,6 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpDate = DateConverter.toDate(_tmp_1);
             final double _tmpTemp;
             _tmpTemp = _cursor.getDouble(_cursorIndexOfTemp);
-            final String _tmpIcon;
-            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
             final double _tmpHumidity;
             _tmpHumidity = _cursor.getDouble(_cursorIndexOfHumidity);
             final double _tmpPressure;
@@ -375,6 +373,8 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
+            final String _tmpIcon;
+            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
             _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);

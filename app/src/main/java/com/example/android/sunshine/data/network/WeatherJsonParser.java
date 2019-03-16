@@ -84,7 +84,7 @@ final class WeatherJsonParser {
          * OWM returns daily forecasts based upon the local time of the city that is being asked
          * for, which means that we need to know the GMT offset to translate this data properly.
          * Since this data is also sent in-order and the first day is always the current day, we're
-         * going to take advantage of that to get a nice normalized UTC date for all of our weather.
+         * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
          */
         long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
 
@@ -144,7 +144,7 @@ final class WeatherJsonParser {
          * OWM returns daily forecasts based upon the local time of the city that is being asked
          * for, which means that we need to know the GMT offset to translate this data properly.
          * Since this data is also sent in-order and the first day is always the current day, we're
-         * going to take advantage of that to get a nice normalized UTC date for all of our weather.
+         * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
          */
         long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
 

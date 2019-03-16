@@ -117,7 +117,7 @@ public final class SunshineWeatherUtils {
 
     /**
      * Helper method to provide the string according to the weather
-     * condition id returned by the OpenWeatherMap call.
+     * condition _id returned by the OpenWeatherMap call.
      *
      * @param context   Android context
      * @param weatherId from OpenWeatherMap API response
@@ -295,7 +295,7 @@ public final class SunshineWeatherUtils {
     }
 
     /**
-     * Helper method to provide the icon resource id according to the weather condition id returned
+     * Helper method to provide the icon resource _id according to the weather condition _id returned
      * by the OpenWeatherMap call. This method is very similar to
      * <p>
      * {@link #getLargeArtResourceIdForWeatherCondition(int)}.
@@ -305,7 +305,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource id for the corresponding icon. -c1 if no relation is found.
+     * @return resource _id for the corresponding icon. -c1 if no relation is found.
      */
     public static int getSmallArtResourceIdForWeatherCondition(int weatherId) {
 

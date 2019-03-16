@@ -33,7 +33,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_detail)
         val timestamp = intent.getLongExtra(WEATHER_ID_EXTRA, -1)
-        //        Date date = SunshineDateUtils.getNormalizedUtcDateForToday();
+        //        Date _date = SunshineDateUtils.getNormalizedUtcDateForToday();
         val date = Date(timestamp)
 
 
@@ -75,14 +75,14 @@ class DetailActivity : AppCompatActivity() {
          * Weather Date *
          */
         /*
-         * The date that is stored is a GMT representation at midnight of the date when the weather
+         * The _date that is stored is a GMT representation at midnight of the _date when the weather
          * information was loaded for.
          *
-         * When displaying this date, one must add the GMT offset (in milliseconds) to acquire
-         * the date representation for the local date in local time.
+         * When displaying this _date, one must add the GMT offset (in milliseconds) to acquire
+         * the _date representation for the local _date in local time.
          * SunshineDateUtils#getFriendlyDateString takes care of this for us.
          */
-        val localDateMidnightGmt = weatherEntry.date!!.time
+        val localDateMidnightGmt = weatherEntry._date!!.time
         val dateText = SunshineDateUtils.getFriendlyDateString(this@DetailActivity, localDateMidnightGmt, true)
         date_detail.text = dateText
 
