@@ -5184,220 +5184,226 @@ public final class R {
     public static final int actions=0x7f080018;
     public static final int activity_chooser_view_content=0x7f080019;
     public static final int add=0x7f08001a;
-    public static final int alertTitle=0x7f08001b;
-    public static final int all=0x7f08001c;
-    public static final int always=0x7f08001d;
-    public static final int async=0x7f08001e;
-    public static final int auto=0x7f08001f;
-    public static final int backgroundImageView=0x7f080020;
-    public static final int barrier=0x7f080021;
-    public static final int beginning=0x7f080022;
-    public static final int blocking=0x7f080023;
-    public static final int bottom=0x7f080024;
-    public static final int browser_actions_header_text=0x7f080025;
-    public static final int browser_actions_menu_item_icon=0x7f080026;
-    public static final int browser_actions_menu_item_text=0x7f080027;
-    public static final int browser_actions_menu_items=0x7f080028;
-    public static final int browser_actions_menu_view=0x7f080029;
-    public static final int buttonPanel=0x7f08002a;
-    public static final int cancel_action=0x7f08002b;
-    public static final int cardDetailsWeather=0x7f08002c;
-    public static final int cardGraph=0x7f08002d;
-    public static final int cardMap=0x7f08002e;
-    public static final int center=0x7f08002f;
-    public static final int center_horizontal=0x7f080030;
-    public static final int center_vertical=0x7f080031;
-    public static final int chains=0x7f080032;
-    public static final int checkbox=0x7f080033;
-    public static final int chronometer=0x7f080034;
-    public static final int clip_horizontal=0x7f080035;
-    public static final int clip_vertical=0x7f080036;
-    public static final int collapseActionView=0x7f080037;
-    public static final int container=0x7f080038;
-    public static final int content=0x7f080039;
-    public static final int contentPanel=0x7f08003a;
-    public static final int coordinator=0x7f08003b;
-    public static final int custom=0x7f08003c;
-    public static final int customPanel=0x7f08003d;
-    public static final int dataBinding=0x7f08003e;
-    public static final int decor_content_parent=0x7f08003f;
-    public static final int default_activity_button=0x7f080040;
-    public static final int design_bottom_sheet=0x7f080041;
-    public static final int design_menu_item_action_area=0x7f080042;
-    public static final int design_menu_item_action_area_stub=0x7f080043;
-    public static final int design_menu_item_text=0x7f080044;
-    public static final int design_navigation_view=0x7f080045;
-    public static final int dimensions=0x7f080046;
-    public static final int direct=0x7f080047;
-    public static final int disableHome=0x7f080048;
-    public static final int edit_query=0x7f080049;
-    public static final int end=0x7f08004a;
-    public static final int end_padder=0x7f08004b;
-    public static final int enterAlways=0x7f08004c;
-    public static final int enterAlwaysCollapsed=0x7f08004d;
-    public static final int exitUntilCollapsed=0x7f08004e;
-    public static final int expand_activities_button=0x7f08004f;
-    public static final int expanded_menu=0x7f080050;
-    public static final int extra_details_=0x7f080051;
-    public static final int fill=0x7f080052;
-    public static final int fill_horizontal=0x7f080053;
-    public static final int fill_vertical=0x7f080054;
-    public static final int filled=0x7f080055;
-    public static final int fixed=0x7f080056;
-    public static final int forever=0x7f080057;
-    public static final int ghost_view=0x7f080058;
-    public static final int glide_custom_view_target_tag=0x7f080059;
-    public static final int gone=0x7f08005a;
-    public static final int group_divider=0x7f08005b;
-    public static final int groups=0x7f08005c;
-    public static final int home=0x7f08005d;
-    public static final int homeAsUp=0x7f08005e;
-    public static final int horizontal_middle2=0x7f08005f;
-    public static final int humidity_label=0x7f080060;
-    public static final int humidity_measurement=0x7f080061;
-    public static final int icon=0x7f080062;
-    public static final int icon_frame=0x7f080063;
-    public static final int icon_group=0x7f080064;
-    public static final int ifRoom=0x7f080065;
-    public static final int image=0x7f080066;
-    public static final int info=0x7f080067;
-    public static final int invisible=0x7f080068;
-    public static final int italic=0x7f080069;
-    public static final int item_touch_helper_previous_elevation=0x7f08006a;
-    public static final int labeled=0x7f08006b;
-    public static final int largeLabel=0x7f08006c;
-    public static final int left=0x7f08006d;
-    public static final int line1=0x7f08006e;
-    public static final int line3=0x7f08006f;
-    public static final int listMode=0x7f080070;
-    public static final int list_item=0x7f080071;
-    public static final int masked=0x7f080072;
-    public static final int media_actions=0x7f080073;
-    public static final int menu_test_1=0x7f080074;
-    public static final int menu_test_2=0x7f080075;
-    public static final int message=0x7f080076;
-    public static final int middle=0x7f080077;
-    public static final int mini=0x7f080078;
-    public static final int mtrl_child_content_container=0x7f080079;
-    public static final int mtrl_internal_children_alpha_tag=0x7f08007a;
-    public static final int multiply=0x7f08007b;
-    public static final int my_graph=0x7f08007c;
-    public static final int navigation_header_container=0x7f08007d;
-    public static final int never=0x7f08007e;
-    public static final int none=0x7f08007f;
-    public static final int normal=0x7f080080;
-    public static final int notification_background=0x7f080081;
-    public static final int notification_main_column=0x7f080082;
-    public static final int notification_main_column_container=0x7f080083;
-    public static final int onAttachStateChangeListener=0x7f080084;
-    public static final int onDateChanged=0x7f080085;
-    public static final int outline=0x7f080086;
-    public static final int packed=0x7f080087;
-    public static final int parallax=0x7f080088;
-    public static final int parent=0x7f080089;
-    public static final int parentPanel=0x7f08008a;
-    public static final int parent_matrix=0x7f08008b;
-    public static final int pb_loading_indicator=0x7f08008c;
-    public static final int percent=0x7f08008d;
-    public static final int pin=0x7f08008e;
-    public static final int pressure_details=0x7f08008f;
-    public static final int pressure_label=0x7f080090;
-    public static final int progress_circular=0x7f080091;
-    public static final int progress_horizontal=0x7f080092;
-    public static final int radio=0x7f080093;
-    public static final int recyclerView=0x7f080094;
-    public static final int recycler_view=0x7f080095;
-    public static final int right=0x7f080096;
-    public static final int right_icon=0x7f080097;
-    public static final int right_side=0x7f080098;
-    public static final int save_image_matrix=0x7f080099;
-    public static final int save_non_transition_alpha=0x7f08009a;
-    public static final int save_scale_type=0x7f08009b;
-    public static final int screen=0x7f08009c;
-    public static final int scroll=0x7f08009d;
-    public static final int scrollIndicatorDown=0x7f08009e;
-    public static final int scrollIndicatorUp=0x7f08009f;
-    public static final int scrollView=0x7f0800a0;
-    public static final int scrollable=0x7f0800a1;
-    public static final int search_badge=0x7f0800a2;
-    public static final int search_bar=0x7f0800a3;
-    public static final int search_button=0x7f0800a4;
-    public static final int search_close_btn=0x7f0800a5;
-    public static final int search_edit_frame=0x7f0800a6;
-    public static final int search_go_btn=0x7f0800a7;
-    public static final int search_mag_icon=0x7f0800a8;
-    public static final int search_plate=0x7f0800a9;
-    public static final int search_src_text=0x7f0800aa;
-    public static final int search_voice_btn=0x7f0800ab;
-    public static final int seekbar=0x7f0800ac;
-    public static final int seekbar_value=0x7f0800ad;
-    public static final int select_dialog_listview=0x7f0800ae;
-    public static final int selected=0x7f0800af;
-    public static final int shortcut=0x7f0800b0;
-    public static final int showCustom=0x7f0800b1;
-    public static final int showHome=0x7f0800b2;
-    public static final int showTitle=0x7f0800b3;
-    public static final int smallLabel=0x7f0800b4;
-    public static final int snackbar_action=0x7f0800b5;
-    public static final int snackbar_text=0x7f0800b6;
-    public static final int snap=0x7f0800b7;
-    public static final int snapMargins=0x7f0800b8;
-    public static final int spacer=0x7f0800b9;
-    public static final int spinner=0x7f0800ba;
-    public static final int split_action_bar=0x7f0800bb;
-    public static final int spread=0x7f0800bc;
-    public static final int spread_inside=0x7f0800bd;
-    public static final int src_atop=0x7f0800be;
-    public static final int src_in=0x7f0800bf;
-    public static final int src_over=0x7f0800c0;
-    public static final int standard=0x7f0800c1;
-    public static final int start=0x7f0800c2;
-    public static final int status_bar_latest_event_content=0x7f0800c3;
-    public static final int stretch=0x7f0800c4;
-    public static final int submenuarrow=0x7f0800c5;
-    public static final int submit_area=0x7f0800c6;
-    public static final int switchWidget=0x7f0800c7;
-    public static final int tabMode=0x7f0800c8;
-    public static final int tag_transition_group=0x7f0800c9;
-    public static final int tag_unhandled_key_event_manager=0x7f0800ca;
-    public static final int tag_unhandled_key_listeners=0x7f0800cb;
-    public static final int temperature_main=0x7f0800cc;
-    public static final int text=0x7f0800cd;
-    public static final int text2=0x7f0800ce;
-    public static final int textSpacerNoButtons=0x7f0800cf;
-    public static final int textSpacerNoTitle=0x7f0800d0;
-    public static final int textStart=0x7f0800d1;
-    public static final int textWatcher=0x7f0800d2;
-    public static final int text_input_password_toggle=0x7f0800d3;
-    public static final int textinput_counter=0x7f0800d4;
-    public static final int textinput_error=0x7f0800d5;
-    public static final int textinput_helper_text=0x7f0800d6;
-    public static final int time=0x7f0800d7;
-    public static final int title=0x7f0800d8;
-    public static final int titleDividerNoCustom=0x7f0800d9;
-    public static final int title_template=0x7f0800da;
-    public static final int top=0x7f0800db;
-    public static final int topPanel=0x7f0800dc;
-    public static final int touch_outside=0x7f0800dd;
-    public static final int transition_current_scene=0x7f0800de;
-    public static final int transition_layout_save=0x7f0800df;
-    public static final int transition_position=0x7f0800e0;
-    public static final int transition_scene_layoutid_cache=0x7f0800e1;
-    public static final int transition_transform=0x7f0800e2;
-    public static final int uniform=0x7f0800e3;
-    public static final int unlabeled=0x7f0800e4;
-    public static final int up=0x7f0800e5;
-    public static final int useLogo=0x7f0800e6;
-    public static final int view_offset_helper=0x7f0800e7;
-    public static final int visible=0x7f0800e8;
-    public static final int weatherDate=0x7f0800e9;
-    public static final int weatherDescription=0x7f0800ea;
-    public static final int weatherIcon=0x7f0800eb;
-    public static final int wind_label=0x7f0800ec;
-    public static final int wind_measurement=0x7f0800ed;
-    public static final int withText=0x7f0800ee;
-    public static final int wrap=0x7f0800ef;
-    public static final int wrap_content=0x7f0800f0;
+    public static final int adsContainer=0x7f08001b;
+    public static final int alertTitle=0x7f08001c;
+    public static final int all=0x7f08001d;
+    public static final int always=0x7f08001e;
+    public static final int async=0x7f08001f;
+    public static final int auto=0x7f080020;
+    public static final int backgroundImageView=0x7f080021;
+    public static final int barrier=0x7f080022;
+    public static final int beginning=0x7f080023;
+    public static final int blocking=0x7f080024;
+    public static final int bottom=0x7f080025;
+    public static final int browser_actions_header_text=0x7f080026;
+    public static final int browser_actions_menu_item_icon=0x7f080027;
+    public static final int browser_actions_menu_item_text=0x7f080028;
+    public static final int browser_actions_menu_items=0x7f080029;
+    public static final int browser_actions_menu_view=0x7f08002a;
+    public static final int buttonPanel=0x7f08002b;
+    public static final int cancel_action=0x7f08002c;
+    public static final int cardAds=0x7f08002d;
+    public static final int cardDetailsWeather=0x7f08002e;
+    public static final int cardGraph=0x7f08002f;
+    public static final int cardMap=0x7f080030;
+    public static final int center=0x7f080031;
+    public static final int center_horizontal=0x7f080032;
+    public static final int center_vertical=0x7f080033;
+    public static final int chains=0x7f080034;
+    public static final int checkbox=0x7f080035;
+    public static final int chronometer=0x7f080036;
+    public static final int clip_horizontal=0x7f080037;
+    public static final int clip_vertical=0x7f080038;
+    public static final int collapseActionView=0x7f080039;
+    public static final int container=0x7f08003a;
+    public static final int content=0x7f08003b;
+    public static final int contentPanel=0x7f08003c;
+    public static final int coordinator=0x7f08003d;
+    public static final int custom=0x7f08003e;
+    public static final int customPanel=0x7f08003f;
+    public static final int dataBinding=0x7f080040;
+    public static final int decor_content_parent=0x7f080041;
+    public static final int default_activity_button=0x7f080042;
+    public static final int design_bottom_sheet=0x7f080043;
+    public static final int design_menu_item_action_area=0x7f080044;
+    public static final int design_menu_item_action_area_stub=0x7f080045;
+    public static final int design_menu_item_text=0x7f080046;
+    public static final int design_navigation_view=0x7f080047;
+    public static final int dimensions=0x7f080048;
+    public static final int direct=0x7f080049;
+    public static final int disableHome=0x7f08004a;
+    public static final int edit_query=0x7f08004b;
+    public static final int end=0x7f08004c;
+    public static final int end_padder=0x7f08004d;
+    public static final int enterAlways=0x7f08004e;
+    public static final int enterAlwaysCollapsed=0x7f08004f;
+    public static final int exitUntilCollapsed=0x7f080050;
+    public static final int expand_activities_button=0x7f080051;
+    public static final int expanded_menu=0x7f080052;
+    public static final int extra_details_=0x7f080053;
+    public static final int fill=0x7f080054;
+    public static final int fill_horizontal=0x7f080055;
+    public static final int fill_vertical=0x7f080056;
+    public static final int filled=0x7f080057;
+    public static final int fixed=0x7f080058;
+    public static final int forever=0x7f080059;
+    public static final int ghost_view=0x7f08005a;
+    public static final int glide_custom_view_target_tag=0x7f08005b;
+    public static final int gone=0x7f08005c;
+    public static final int group_divider=0x7f08005d;
+    public static final int groups=0x7f08005e;
+    public static final int home=0x7f08005f;
+    public static final int homeAsUp=0x7f080060;
+    public static final int horizontal_middle2=0x7f080061;
+    public static final int humidity_label=0x7f080062;
+    public static final int humidity_measurement=0x7f080063;
+    public static final int icon=0x7f080064;
+    public static final int icon_frame=0x7f080065;
+    public static final int icon_group=0x7f080066;
+    public static final int ifRoom=0x7f080067;
+    public static final int image=0x7f080068;
+    public static final int info=0x7f080069;
+    public static final int invisible=0x7f08006a;
+    public static final int italic=0x7f08006b;
+    public static final int item_touch_helper_previous_elevation=0x7f08006c;
+    public static final int labeled=0x7f08006d;
+    public static final int largeLabel=0x7f08006e;
+    public static final int left=0x7f08006f;
+    public static final int line1=0x7f080070;
+    public static final int line3=0x7f080071;
+    public static final int listMode=0x7f080072;
+    public static final int list_item=0x7f080073;
+    public static final int mapImageView=0x7f080074;
+    public static final int masked=0x7f080075;
+    public static final int media_actions=0x7f080076;
+    public static final int menu_test_1=0x7f080077;
+    public static final int menu_test_2=0x7f080078;
+    public static final int message=0x7f080079;
+    public static final int middle=0x7f08007a;
+    public static final int mini=0x7f08007b;
+    public static final int mtrl_child_content_container=0x7f08007c;
+    public static final int mtrl_internal_children_alpha_tag=0x7f08007d;
+    public static final int multiply=0x7f08007e;
+    public static final int my_graph=0x7f08007f;
+    public static final int navigation_header_container=0x7f080080;
+    public static final int never=0x7f080081;
+    public static final int none=0x7f080082;
+    public static final int normal=0x7f080083;
+    public static final int notification_background=0x7f080084;
+    public static final int notification_main_column=0x7f080085;
+    public static final int notification_main_column_container=0x7f080086;
+    public static final int onAttachStateChangeListener=0x7f080087;
+    public static final int onDateChanged=0x7f080088;
+    public static final int outline=0x7f080089;
+    public static final int packed=0x7f08008a;
+    public static final int parallax=0x7f08008b;
+    public static final int parent=0x7f08008c;
+    public static final int parentPanel=0x7f08008d;
+    public static final int parent_matrix=0x7f08008e;
+    public static final int pb_loading_indicator=0x7f08008f;
+    public static final int percent=0x7f080090;
+    public static final int pin=0x7f080091;
+    public static final int pressure_details=0x7f080092;
+    public static final int pressure_label=0x7f080093;
+    public static final int progress_circular=0x7f080094;
+    public static final int progress_horizontal=0x7f080095;
+    public static final int radio=0x7f080096;
+    public static final int recyclerView=0x7f080097;
+    public static final int recycler_view=0x7f080098;
+    public static final int right=0x7f080099;
+    public static final int right_icon=0x7f08009a;
+    public static final int right_side=0x7f08009b;
+    public static final int save_image_matrix=0x7f08009c;
+    public static final int save_non_transition_alpha=0x7f08009d;
+    public static final int save_scale_type=0x7f08009e;
+    public static final int screen=0x7f08009f;
+    public static final int scroll=0x7f0800a0;
+    public static final int scrollIndicatorDown=0x7f0800a1;
+    public static final int scrollIndicatorUp=0x7f0800a2;
+    public static final int scrollView=0x7f0800a3;
+    public static final int scrollable=0x7f0800a4;
+    public static final int search_badge=0x7f0800a5;
+    public static final int search_bar=0x7f0800a6;
+    public static final int search_button=0x7f0800a7;
+    public static final int search_close_btn=0x7f0800a8;
+    public static final int search_edit_frame=0x7f0800a9;
+    public static final int search_go_btn=0x7f0800aa;
+    public static final int search_mag_icon=0x7f0800ab;
+    public static final int search_plate=0x7f0800ac;
+    public static final int search_src_text=0x7f0800ad;
+    public static final int search_voice_btn=0x7f0800ae;
+    public static final int seekbar=0x7f0800af;
+    public static final int seekbar_value=0x7f0800b0;
+    public static final int select_dialog_listview=0x7f0800b1;
+    public static final int selected=0x7f0800b2;
+    public static final int separator=0x7f0800b3;
+    public static final int shortcut=0x7f0800b4;
+    public static final int showCustom=0x7f0800b5;
+    public static final int showHome=0x7f0800b6;
+    public static final int showTitle=0x7f0800b7;
+    public static final int smallLabel=0x7f0800b8;
+    public static final int snackbar_action=0x7f0800b9;
+    public static final int snackbar_text=0x7f0800ba;
+    public static final int snap=0x7f0800bb;
+    public static final int snapMargins=0x7f0800bc;
+    public static final int spacer=0x7f0800bd;
+    public static final int spinner=0x7f0800be;
+    public static final int split_action_bar=0x7f0800bf;
+    public static final int spread=0x7f0800c0;
+    public static final int spread_inside=0x7f0800c1;
+    public static final int src_atop=0x7f0800c2;
+    public static final int src_in=0x7f0800c3;
+    public static final int src_over=0x7f0800c4;
+    public static final int standard=0x7f0800c5;
+    public static final int start=0x7f0800c6;
+    public static final int status_bar_latest_event_content=0x7f0800c7;
+    public static final int stretch=0x7f0800c8;
+    public static final int submenuarrow=0x7f0800c9;
+    public static final int submit_area=0x7f0800ca;
+    public static final int switchWidget=0x7f0800cb;
+    public static final int tabMode=0x7f0800cc;
+    public static final int tag_transition_group=0x7f0800cd;
+    public static final int tag_unhandled_key_event_manager=0x7f0800ce;
+    public static final int tag_unhandled_key_listeners=0x7f0800cf;
+    public static final int temperatureText=0x7f0800d0;
+    public static final int text=0x7f0800d1;
+    public static final int text2=0x7f0800d2;
+    public static final int textSpacerNoButtons=0x7f0800d3;
+    public static final int textSpacerNoTitle=0x7f0800d4;
+    public static final int textStart=0x7f0800d5;
+    public static final int textViewCelsius=0x7f0800d6;
+    public static final int textViewFarenheit=0x7f0800d7;
+    public static final int textWatcher=0x7f0800d8;
+    public static final int text_input_password_toggle=0x7f0800d9;
+    public static final int textinput_counter=0x7f0800da;
+    public static final int textinput_error=0x7f0800db;
+    public static final int textinput_helper_text=0x7f0800dc;
+    public static final int time=0x7f0800dd;
+    public static final int title=0x7f0800de;
+    public static final int titleDividerNoCustom=0x7f0800df;
+    public static final int title_template=0x7f0800e0;
+    public static final int top=0x7f0800e1;
+    public static final int topPanel=0x7f0800e2;
+    public static final int touch_outside=0x7f0800e3;
+    public static final int transition_current_scene=0x7f0800e4;
+    public static final int transition_layout_save=0x7f0800e5;
+    public static final int transition_position=0x7f0800e6;
+    public static final int transition_scene_layoutid_cache=0x7f0800e7;
+    public static final int transition_transform=0x7f0800e8;
+    public static final int uniform=0x7f0800e9;
+    public static final int unlabeled=0x7f0800ea;
+    public static final int up=0x7f0800eb;
+    public static final int useLogo=0x7f0800ec;
+    public static final int view_offset_helper=0x7f0800ed;
+    public static final int visible=0x7f0800ee;
+    public static final int weatherDate=0x7f0800ef;
+    public static final int weatherDescription=0x7f0800f0;
+    public static final int weatherIcon=0x7f0800f1;
+    public static final int wind_label=0x7f0800f2;
+    public static final int wind_measurement=0x7f0800f3;
+    public static final int withText=0x7f0800f4;
+    public static final int wrap=0x7f0800f5;
+    public static final int wrap_content=0x7f0800f6;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -5414,8 +5420,9 @@ public final class R {
     public static final int mtrl_btn_anim_duration_ms=0x7f09000b;
     public static final int mtrl_chip_anim_duration=0x7f09000c;
     public static final int mtrl_tab_indicator_anim_duration_ms=0x7f09000d;
-    public static final int show_password_duration=0x7f09000e;
-    public static final int status_bar_notification_info_maxnum=0x7f09000f;
+    public static final int scale_static_map=0x7f09000e;
+    public static final int show_password_duration=0x7f09000f;
+    public static final int status_bar_notification_info_maxnum=0x7f090010;
   }
   public static final class interpolator {
     public static final int mtrl_fast_out_linear_in=0x7f0a0000;
@@ -5453,64 +5460,65 @@ public final class R {
     public static final int abc_select_dialog_material=0x7f0b001a;
     public static final int abc_tooltip=0x7f0b001b;
     public static final int activity_main=0x7f0b001c;
-    public static final int browser_actions_context_menu_page=0x7f0b001d;
-    public static final int browser_actions_context_menu_row=0x7f0b001e;
-    public static final int design_bottom_navigation_item=0x7f0b001f;
-    public static final int design_bottom_sheet_dialog=0x7f0b0020;
-    public static final int design_layout_snackbar=0x7f0b0021;
-    public static final int design_layout_snackbar_include=0x7f0b0022;
-    public static final int design_layout_tab_icon=0x7f0b0023;
-    public static final int design_layout_tab_text=0x7f0b0024;
-    public static final int design_menu_item_action_area=0x7f0b0025;
-    public static final int design_navigation_item=0x7f0b0026;
-    public static final int design_navigation_item_header=0x7f0b0027;
-    public static final int design_navigation_item_separator=0x7f0b0028;
-    public static final int design_navigation_item_subheader=0x7f0b0029;
-    public static final int design_navigation_menu=0x7f0b002a;
-    public static final int design_navigation_menu_item=0x7f0b002b;
-    public static final int design_text_input_password_icon=0x7f0b002c;
-    public static final int details_weather_card=0x7f0b002d;
-    public static final int expand_button=0x7f0b002e;
-    public static final int graph_card=0x7f0b002f;
-    public static final int map_card=0x7f0b0030;
-    public static final int mtrl_layout_snackbar=0x7f0b0031;
-    public static final int mtrl_layout_snackbar_include=0x7f0b0032;
-    public static final int notification_action=0x7f0b0033;
-    public static final int notification_action_tombstone=0x7f0b0034;
-    public static final int notification_media_action=0x7f0b0035;
-    public static final int notification_media_cancel_action=0x7f0b0036;
-    public static final int notification_template_big_media=0x7f0b0037;
-    public static final int notification_template_big_media_custom=0x7f0b0038;
-    public static final int notification_template_big_media_narrow=0x7f0b0039;
-    public static final int notification_template_big_media_narrow_custom=0x7f0b003a;
-    public static final int notification_template_custom_big=0x7f0b003b;
-    public static final int notification_template_icon_group=0x7f0b003c;
-    public static final int notification_template_lines_media=0x7f0b003d;
-    public static final int notification_template_media=0x7f0b003e;
-    public static final int notification_template_media_custom=0x7f0b003f;
-    public static final int notification_template_part_chronometer=0x7f0b0040;
-    public static final int notification_template_part_time=0x7f0b0041;
-    public static final int preference=0x7f0b0042;
-    public static final int preference_category=0x7f0b0043;
-    public static final int preference_category_material=0x7f0b0044;
-    public static final int preference_dialog_edittext=0x7f0b0045;
-    public static final int preference_dropdown=0x7f0b0046;
-    public static final int preference_dropdown_material=0x7f0b0047;
-    public static final int preference_information=0x7f0b0048;
-    public static final int preference_information_material=0x7f0b0049;
-    public static final int preference_list_fragment=0x7f0b004a;
-    public static final int preference_material=0x7f0b004b;
-    public static final int preference_recyclerview=0x7f0b004c;
-    public static final int preference_widget_checkbox=0x7f0b004d;
-    public static final int preference_widget_seekbar=0x7f0b004e;
-    public static final int preference_widget_seekbar_material=0x7f0b004f;
-    public static final int preference_widget_switch=0x7f0b0050;
-    public static final int preference_widget_switch_compat=0x7f0b0051;
-    public static final int select_dialog_item_material=0x7f0b0052;
-    public static final int select_dialog_multichoice_material=0x7f0b0053;
-    public static final int select_dialog_singlechoice_material=0x7f0b0054;
-    public static final int support_simple_spinner_dropdown_item=0x7f0b0055;
-    public static final int weather_card=0x7f0b0056;
+    public static final int ads_card=0x7f0b001d;
+    public static final int browser_actions_context_menu_page=0x7f0b001e;
+    public static final int browser_actions_context_menu_row=0x7f0b001f;
+    public static final int current_weather_card=0x7f0b0020;
+    public static final int design_bottom_navigation_item=0x7f0b0021;
+    public static final int design_bottom_sheet_dialog=0x7f0b0022;
+    public static final int design_layout_snackbar=0x7f0b0023;
+    public static final int design_layout_snackbar_include=0x7f0b0024;
+    public static final int design_layout_tab_icon=0x7f0b0025;
+    public static final int design_layout_tab_text=0x7f0b0026;
+    public static final int design_menu_item_action_area=0x7f0b0027;
+    public static final int design_navigation_item=0x7f0b0028;
+    public static final int design_navigation_item_header=0x7f0b0029;
+    public static final int design_navigation_item_separator=0x7f0b002a;
+    public static final int design_navigation_item_subheader=0x7f0b002b;
+    public static final int design_navigation_menu=0x7f0b002c;
+    public static final int design_navigation_menu_item=0x7f0b002d;
+    public static final int design_text_input_password_icon=0x7f0b002e;
+    public static final int details_weather_card=0x7f0b002f;
+    public static final int expand_button=0x7f0b0030;
+    public static final int graph_card=0x7f0b0031;
+    public static final int map_card=0x7f0b0032;
+    public static final int mtrl_layout_snackbar=0x7f0b0033;
+    public static final int mtrl_layout_snackbar_include=0x7f0b0034;
+    public static final int notification_action=0x7f0b0035;
+    public static final int notification_action_tombstone=0x7f0b0036;
+    public static final int notification_media_action=0x7f0b0037;
+    public static final int notification_media_cancel_action=0x7f0b0038;
+    public static final int notification_template_big_media=0x7f0b0039;
+    public static final int notification_template_big_media_custom=0x7f0b003a;
+    public static final int notification_template_big_media_narrow=0x7f0b003b;
+    public static final int notification_template_big_media_narrow_custom=0x7f0b003c;
+    public static final int notification_template_custom_big=0x7f0b003d;
+    public static final int notification_template_icon_group=0x7f0b003e;
+    public static final int notification_template_lines_media=0x7f0b003f;
+    public static final int notification_template_media=0x7f0b0040;
+    public static final int notification_template_media_custom=0x7f0b0041;
+    public static final int notification_template_part_chronometer=0x7f0b0042;
+    public static final int notification_template_part_time=0x7f0b0043;
+    public static final int preference=0x7f0b0044;
+    public static final int preference_category=0x7f0b0045;
+    public static final int preference_category_material=0x7f0b0046;
+    public static final int preference_dialog_edittext=0x7f0b0047;
+    public static final int preference_dropdown=0x7f0b0048;
+    public static final int preference_dropdown_material=0x7f0b0049;
+    public static final int preference_information=0x7f0b004a;
+    public static final int preference_information_material=0x7f0b004b;
+    public static final int preference_list_fragment=0x7f0b004c;
+    public static final int preference_material=0x7f0b004d;
+    public static final int preference_recyclerview=0x7f0b004e;
+    public static final int preference_widget_checkbox=0x7f0b004f;
+    public static final int preference_widget_seekbar=0x7f0b0050;
+    public static final int preference_widget_seekbar_material=0x7f0b0051;
+    public static final int preference_widget_switch=0x7f0b0052;
+    public static final int preference_widget_switch_compat=0x7f0b0053;
+    public static final int select_dialog_item_material=0x7f0b0054;
+    public static final int select_dialog_multichoice_material=0x7f0b0055;
+    public static final int select_dialog_singlechoice_material=0x7f0b0056;
+    public static final int support_simple_spinner_dropdown_item=0x7f0b0057;
   }
   public static final class menu {
     public static final int menu_main=0x7f0c0000;
@@ -6233,35 +6241,35 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.craiovadata.us.ct.bridgeport:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.craiovadata.us.ct.bridgeport:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.craiovadata.us.ct.bridgeport:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.craiovadata.us.ct.bridgeport:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.craiovadata.us.ct.bridgeport:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.craiovadata.us.ct.bridgeport:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.craiovadata.us.ct.bridgeport:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.craiovadata.us.ct.bridgeport:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.craiovadata.us.ct.bridgeport:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.craiovadata.us.ct.bridgeport:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.craiovadata.us.ct.bridgeport:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.craiovadata.us.ct.bridgeport:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.craiovadata.us.ct.bridgeport:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_height com.craiovadata.us.ct.bridgeport:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.craiovadata.us.ct.bridgeport:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.craiovadata.us.ct.bridgeport:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.craiovadata.us.ct.bridgeport:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.craiovadata.us.ct.bridgeport:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.craiovadata.us.ct.bridgeport:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.craiovadata.us.ct.bridgeport:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.craiovadata.us.ct.bridgeport:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.craiovadata.us.ct.bridgeport:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.craiovadata.us.ct.bridgeport:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.craiovadata.us.ct.bridgeport:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.craiovadata.us.ct.bridgeport:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.craiovadata.us.ct.bridgeport:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.craiovadata.us.ct.bridgeport:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_title com.craiovadata.us.ct.bridgeport:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.craiovadata.us.ct.bridgeport:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.craiovadata.aus.sydney:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.craiovadata.aus.sydney:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.craiovadata.aus.sydney:backgroundStacked}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.craiovadata.aus.sydney:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.craiovadata.aus.sydney:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.craiovadata.aus.sydney:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.craiovadata.aus.sydney:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.craiovadata.aus.sydney:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.craiovadata.aus.sydney:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.craiovadata.aus.sydney:customNavigationLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.craiovadata.aus.sydney:displayOptions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.craiovadata.aus.sydney:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.craiovadata.aus.sydney:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_height com.craiovadata.aus.sydney:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.craiovadata.aus.sydney:hideOnContentScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.craiovadata.aus.sydney:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.craiovadata.aus.sydney:homeLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.craiovadata.aus.sydney:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.craiovadata.aus.sydney:indeterminateProgressStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.craiovadata.aus.sydney:itemPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.craiovadata.aus.sydney:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.craiovadata.aus.sydney:navigationMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.craiovadata.aus.sydney:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.craiovadata.aus.sydney:progressBarPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.craiovadata.aus.sydney:progressBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.craiovadata.aus.sydney:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.craiovadata.aus.sydney:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_title com.craiovadata.aus.sydney:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.craiovadata.aus.sydney:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -6304,7 +6312,7 @@ public final class R {
       0x7f030240
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#background}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6312,11 +6320,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:background
+     * @attr name com.craiovadata.aus.sydney:background
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6327,11 +6335,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundSplit
+     * @attr name com.craiovadata.aus.sydney:backgroundSplit
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundStacked}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundStacked}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6342,11 +6350,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundStacked
+     * @attr name com.craiovadata.aus.sydney:backgroundStacked
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6355,11 +6363,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetEnd
+     * @attr name com.craiovadata.aus.sydney:contentInsetEnd
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6368,11 +6376,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetEndWithActions
+     * @attr name com.craiovadata.aus.sydney:contentInsetEndWithActions
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6381,11 +6389,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetLeft
+     * @attr name com.craiovadata.aus.sydney:contentInsetLeft
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6394,11 +6402,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetRight
+     * @attr name com.craiovadata.aus.sydney:contentInsetRight
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6407,11 +6415,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetStart
+     * @attr name com.craiovadata.aus.sydney:contentInsetStart
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6420,11 +6428,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetStartWithNavigation
+     * @attr name com.craiovadata.aus.sydney:contentInsetStartWithNavigation
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#customNavigationLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#customNavigationLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6432,11 +6440,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:customNavigationLayout
+     * @attr name com.craiovadata.aus.sydney:customNavigationLayout
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#displayOptions}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#displayOptions}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -6454,11 +6462,11 @@ public final class R {
      * <tr><td>useLogo</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:displayOptions
+     * @attr name com.craiovadata.aus.sydney:displayOptions
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#divider}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6466,11 +6474,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:divider
+     * @attr name com.craiovadata.aus.sydney:divider
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#elevation}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6479,11 +6487,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:elevation
+     * @attr name com.craiovadata.aus.sydney:elevation
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#height}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6492,21 +6500,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:height
+     * @attr name com.craiovadata.aus.sydney:height
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hideOnContentScroll}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hideOnContentScroll}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hideOnContentScroll
+     * @attr name com.craiovadata.aus.sydney:hideOnContentScroll
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6514,11 +6522,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:homeAsUpIndicator
+     * @attr name com.craiovadata.aus.sydney:homeAsUpIndicator
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#homeLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#homeLayout}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6526,11 +6534,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:homeLayout
+     * @attr name com.craiovadata.aus.sydney:homeLayout
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#icon}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6538,11 +6546,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:icon
+     * @attr name com.craiovadata.aus.sydney:icon
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#indeterminateProgressStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#indeterminateProgressStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6550,11 +6558,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:indeterminateProgressStyle
+     * @attr name com.craiovadata.aus.sydney:indeterminateProgressStyle
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6563,11 +6571,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemPadding
+     * @attr name com.craiovadata.aus.sydney:itemPadding
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#logo}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6575,11 +6583,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:logo
+     * @attr name com.craiovadata.aus.sydney:logo
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#navigationMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#navigationMode}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -6593,11 +6601,11 @@ public final class R {
      * <tr><td>tabMode</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:navigationMode
+     * @attr name com.craiovadata.aus.sydney:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#popupTheme}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6605,11 +6613,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:popupTheme
+     * @attr name com.craiovadata.aus.sydney:popupTheme
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#progressBarPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#progressBarPadding}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6618,11 +6626,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:progressBarPadding
+     * @attr name com.craiovadata.aus.sydney:progressBarPadding
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#progressBarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#progressBarStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6630,21 +6638,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:progressBarStyle
+     * @attr name com.craiovadata.aus.sydney:progressBarStyle
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subtitle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subtitle
+     * @attr name com.craiovadata.aus.sydney:subtitle
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6652,21 +6660,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subtitleTextStyle
+     * @attr name com.craiovadata.aus.sydney:subtitleTextStyle
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#title}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:title
+     * @attr name com.craiovadata.aus.sydney:title
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6674,7 +6682,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleTextStyle
+     * @attr name com.craiovadata.aus.sydney:titleTextStyle
      */
     public static final int ActionBar_titleTextStyle=28;
     /**
@@ -6756,12 +6764,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.craiovadata.us.ct.bridgeport:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.craiovadata.us.ct.bridgeport:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.craiovadata.us.ct.bridgeport:closeItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_height com.craiovadata.us.ct.bridgeport:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.craiovadata.us.ct.bridgeport:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.craiovadata.us.ct.bridgeport:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.craiovadata.aus.sydney:background}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.craiovadata.aus.sydney:backgroundSplit}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.craiovadata.aus.sydney:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_height com.craiovadata.aus.sydney:height}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.craiovadata.aus.sydney:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.craiovadata.aus.sydney:titleTextStyle}</code></td><td></td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -6775,7 +6783,7 @@ public final class R {
       0x7f0301ea, 0x7f030240
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#background}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#background}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6783,11 +6791,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:background
+     * @attr name com.craiovadata.aus.sydney:background
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundSplit}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundSplit}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6798,11 +6806,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundSplit
+     * @attr name com.craiovadata.aus.sydney:backgroundSplit
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeItemLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeItemLayout}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6810,11 +6818,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeItemLayout
+     * @attr name com.craiovadata.aus.sydney:closeItemLayout
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#height}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#height}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6823,11 +6831,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:height
+     * @attr name com.craiovadata.aus.sydney:height
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subtitleTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subtitleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6835,11 +6843,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subtitleTextStyle
+     * @attr name com.craiovadata.aus.sydney:subtitleTextStyle
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleTextStyle}
      * attribute's value can be found in the {@link #ActionMode} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6847,7 +6855,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleTextStyle
+     * @attr name com.craiovadata.aus.sydney:titleTextStyle
      */
     public static final int ActionMode_titleTextStyle=5;
     /**
@@ -6857,8 +6865,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.craiovadata.us.ct.bridgeport:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.craiovadata.us.ct.bridgeport:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.craiovadata.aus.sydney:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.craiovadata.aus.sydney:initialActivityCount}</code></td><td></td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -6867,7 +6875,7 @@ public final class R {
       0x7f0300d6, 0x7f030115
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandActivityOverflowButtonDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandActivityOverflowButtonDrawable}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6875,17 +6883,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandActivityOverflowButtonDrawable
+     * @attr name com.craiovadata.aus.sydney:expandActivityOverflowButtonDrawable
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#initialActivityCount}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#initialActivityCount}
      * attribute's value can be found in the {@link #ActivityChooserView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:initialActivityCount
+     * @attr name com.craiovadata.aus.sydney:initialActivityCount
      */
     public static final int ActivityChooserView_initialActivityCount=1;
     /**
@@ -6895,9 +6903,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSize com.craiovadata.us.ct.bridgeport:adSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adSizes com.craiovadata.us.ct.bridgeport:adSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AdsAttrs_adUnitId com.craiovadata.us.ct.bridgeport:adUnitId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSize com.craiovadata.aus.sydney:adSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adSizes com.craiovadata.aus.sydney:adSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AdsAttrs_adUnitId com.craiovadata.aus.sydney:adUnitId}</code></td><td></td></tr>
      * </table>
      * @see #AdsAttrs_adSize
      * @see #AdsAttrs_adSizes
@@ -6907,33 +6915,33 @@ public final class R {
       0x7f030022, 0x7f030023, 0x7f030024
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#adSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#adSize}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:adSize
+     * @attr name com.craiovadata.aus.sydney:adSize
      */
     public static final int AdsAttrs_adSize=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#adSizes}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#adSizes}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:adSizes
+     * @attr name com.craiovadata.aus.sydney:adSizes
      */
     public static final int AdsAttrs_adSizes=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#adUnitId}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#adUnitId}
      * attribute's value can be found in the {@link #AdsAttrs} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:adUnitId
+     * @attr name com.craiovadata.aus.sydney:adUnitId
      */
     public static final int AdsAttrs_adUnitId=2;
     /**
@@ -6944,13 +6952,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AlertDialog_android_layout android:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.craiovadata.us.ct.bridgeport:buttonIconDimen}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.craiovadata.us.ct.bridgeport:buttonPanelSideLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listItemLayout com.craiovadata.us.ct.bridgeport:listItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_listLayout com.craiovadata.us.ct.bridgeport:listLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.craiovadata.us.ct.bridgeport:multiChoiceItemLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_showTitle com.craiovadata.us.ct.bridgeport:showTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.craiovadata.us.ct.bridgeport:singleChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonIconDimen com.craiovadata.aus.sydney:buttonIconDimen}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_buttonPanelSideLayout com.craiovadata.aus.sydney:buttonPanelSideLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listItemLayout com.craiovadata.aus.sydney:listItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_listLayout com.craiovadata.aus.sydney:listLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_multiChoiceItemLayout com.craiovadata.aus.sydney:multiChoiceItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_showTitle com.craiovadata.aus.sydney:showTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AlertDialog_singleChoiceItemLayout com.craiovadata.aus.sydney:singleChoiceItemLayout}</code></td><td></td></tr>
      * </table>
      * @see #AlertDialog_android_layout
      * @see #AlertDialog_buttonIconDimen
@@ -6978,7 +6986,7 @@ public final class R {
      */
     public static final int AlertDialog_android_layout=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonIconDimen}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonIconDimen}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -6987,11 +6995,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonIconDimen
+     * @attr name com.craiovadata.aus.sydney:buttonIconDimen
      */
     public static final int AlertDialog_buttonIconDimen=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonPanelSideLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonPanelSideLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -6999,11 +7007,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonPanelSideLayout
+     * @attr name com.craiovadata.aus.sydney:buttonPanelSideLayout
      */
     public static final int AlertDialog_buttonPanelSideLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listItemLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7011,11 +7019,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listItemLayout
+     * @attr name com.craiovadata.aus.sydney:listItemLayout
      */
     public static final int AlertDialog_listItemLayout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7023,11 +7031,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listLayout
+     * @attr name com.craiovadata.aus.sydney:listLayout
      */
     public static final int AlertDialog_listLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#multiChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#multiChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7035,21 +7043,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:multiChoiceItemLayout
+     * @attr name com.craiovadata.aus.sydney:multiChoiceItemLayout
      */
     public static final int AlertDialog_multiChoiceItemLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showTitle}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showTitle
+     * @attr name com.craiovadata.aus.sydney:showTitle
      */
     public static final int AlertDialog_showTitle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#singleChoiceItemLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#singleChoiceItemLayout}
      * attribute's value can be found in the {@link #AlertDialog} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7057,7 +7065,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:singleChoiceItemLayout
+     * @attr name com.craiovadata.aus.sydney:singleChoiceItemLayout
      */
     public static final int AlertDialog_singleChoiceItemLayout=7;
     /**
@@ -7259,9 +7267,9 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.craiovadata.us.ct.bridgeport:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.craiovadata.us.ct.bridgeport:expanded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.craiovadata.us.ct.bridgeport:liftOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.craiovadata.aus.sydney:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.craiovadata.aus.sydney:expanded}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.craiovadata.aus.sydney:liftOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -7310,7 +7318,7 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#elevation}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7319,27 +7327,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:elevation
+     * @attr name com.craiovadata.aus.sydney:elevation
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expanded}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expanded}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expanded
+     * @attr name com.craiovadata.aus.sydney:expanded
      */
     public static final int AppBarLayout_expanded=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#liftOnScroll}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#liftOnScroll}
      * attribute's value can be found in the {@link #AppBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:liftOnScroll
+     * @attr name com.craiovadata.aus.sydney:liftOnScroll
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
@@ -7349,10 +7357,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.craiovadata.us.ct.bridgeport:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.craiovadata.us.ct.bridgeport:state_collapsible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.craiovadata.us.ct.bridgeport:state_liftable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.craiovadata.us.ct.bridgeport:state_lifted}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.craiovadata.aus.sydney:state_collapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.craiovadata.aus.sydney:state_collapsible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.craiovadata.aus.sydney:state_liftable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.craiovadata.aus.sydney:state_lifted}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
@@ -7363,43 +7371,43 @@ public final class R {
       0x7f0301dd, 0x7f0301de, 0x7f0301df, 0x7f0301e0
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#state_collapsed}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#state_collapsed}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:state_collapsed
+     * @attr name com.craiovadata.aus.sydney:state_collapsed
      */
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#state_collapsible}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#state_collapsible}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:state_collapsible
+     * @attr name com.craiovadata.aus.sydney:state_collapsible
      */
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#state_liftable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#state_liftable}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:state_liftable
+     * @attr name com.craiovadata.aus.sydney:state_liftable
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#state_lifted}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#state_lifted}
      * attribute's value can be found in the {@link #AppBarLayoutStates} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:state_lifted
+     * @attr name com.craiovadata.aus.sydney:state_lifted
      */
     public static final int AppBarLayoutStates_state_lifted=3;
     /**
@@ -7409,8 +7417,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.craiovadata.us.ct.bridgeport:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.craiovadata.us.ct.bridgeport:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.craiovadata.aus.sydney:layout_scrollFlags}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.craiovadata.aus.sydney:layout_scrollInterpolator}</code></td><td></td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -7419,7 +7427,7 @@ public final class R {
       0x7f030166, 0x7f030167
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_scrollFlags}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_scrollFlags}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -7436,11 +7444,11 @@ public final class R {
      * <tr><td>snapMargins</td><td>20</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_scrollFlags
+     * @attr name com.craiovadata.aus.sydney:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_scrollInterpolator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_scrollInterpolator}
      * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7448,7 +7456,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_scrollInterpolator
+     * @attr name com.craiovadata.aus.sydney:layout_scrollInterpolator
      */
     public static final int AppBarLayout_Layout_layout_scrollInterpolator=1;
     /**
@@ -7459,9 +7467,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.craiovadata.us.ct.bridgeport:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.craiovadata.us.ct.bridgeport:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.craiovadata.us.ct.bridgeport:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.craiovadata.aus.sydney:srcCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.craiovadata.aus.sydney:tint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.craiovadata.aus.sydney:tintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -7487,7 +7495,7 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#srcCompat}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#srcCompat}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7495,22 +7503,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:srcCompat
+     * @attr name com.craiovadata.aus.sydney:srcCompat
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tint}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tint
+     * @attr name com.craiovadata.aus.sydney:tint
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tintMode}
      * attribute's value can be found in the {@link #AppCompatImageView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7527,7 +7535,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tintMode
+     * @attr name com.craiovadata.aus.sydney:tintMode
      */
     public static final int AppCompatImageView_tintMode=3;
     /**
@@ -7538,9 +7546,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.craiovadata.us.ct.bridgeport:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.craiovadata.us.ct.bridgeport:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.craiovadata.us.ct.bridgeport:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.craiovadata.aus.sydney:tickMark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.craiovadata.aus.sydney:tickMarkTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.craiovadata.aus.sydney:tickMarkTintMode}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -7563,7 +7571,7 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tickMark}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tickMark}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7571,22 +7579,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tickMark
+     * @attr name com.craiovadata.aus.sydney:tickMark
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tickMarkTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tickMarkTint}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tickMarkTint
+     * @attr name com.craiovadata.aus.sydney:tickMarkTint
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tickMarkTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tickMarkTintMode}
      * attribute's value can be found in the {@link #AppCompatSeekBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7603,7 +7611,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tickMarkTintMode
+     * @attr name com.craiovadata.aus.sydney:tickMarkTintMode
      */
     public static final int AppCompatSeekBar_tickMarkTintMode=3;
     /**
@@ -7743,16 +7751,16 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.craiovadata.us.ct.bridgeport:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.craiovadata.us.ct.bridgeport:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.craiovadata.us.ct.bridgeport:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.craiovadata.us.ct.bridgeport:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.craiovadata.us.ct.bridgeport:autoSizeTextType}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.craiovadata.us.ct.bridgeport:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.craiovadata.us.ct.bridgeport:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.craiovadata.us.ct.bridgeport:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.craiovadata.us.ct.bridgeport:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.craiovadata.us.ct.bridgeport:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.craiovadata.aus.sydney:autoSizeMaxTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.craiovadata.aus.sydney:autoSizeMinTextSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.craiovadata.aus.sydney:autoSizePresetSizes}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.craiovadata.aus.sydney:autoSizeStepGranularity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.craiovadata.aus.sydney:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.craiovadata.aus.sydney:firstBaselineToTopHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.craiovadata.aus.sydney:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.craiovadata.aus.sydney:lastBaselineToBottomHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.craiovadata.aus.sydney:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.craiovadata.aus.sydney:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -7784,7 +7792,7 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#autoSizeMaxTextSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#autoSizeMaxTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7793,11 +7801,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:autoSizeMaxTextSize
+     * @attr name com.craiovadata.aus.sydney:autoSizeMaxTextSize
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#autoSizeMinTextSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#autoSizeMinTextSize}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7806,11 +7814,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:autoSizeMinTextSize
+     * @attr name com.craiovadata.aus.sydney:autoSizeMinTextSize
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#autoSizePresetSizes}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#autoSizePresetSizes}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7818,11 +7826,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:autoSizePresetSizes
+     * @attr name com.craiovadata.aus.sydney:autoSizePresetSizes
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#autoSizeStepGranularity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#autoSizeStepGranularity}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7831,11 +7839,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:autoSizeStepGranularity
+     * @attr name com.craiovadata.aus.sydney:autoSizeStepGranularity
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#autoSizeTextType}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#autoSizeTextType}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -7848,11 +7856,11 @@ public final class R {
      * <tr><td>uniform</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:autoSizeTextType
+     * @attr name com.craiovadata.aus.sydney:autoSizeTextType
      */
     public static final int AppCompatTextView_autoSizeTextType=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#firstBaselineToTopHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#firstBaselineToTopHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7861,21 +7869,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:firstBaselineToTopHeight
+     * @attr name com.craiovadata.aus.sydney:firstBaselineToTopHeight
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontFamily}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontFamily
+     * @attr name com.craiovadata.aus.sydney:fontFamily
      */
     public static final int AppCompatTextView_fontFamily=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#lastBaselineToBottomHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#lastBaselineToBottomHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7884,11 +7892,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:lastBaselineToBottomHeight
+     * @attr name com.craiovadata.aus.sydney:lastBaselineToBottomHeight
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#lineHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#lineHeight}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -7897,11 +7905,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:lineHeight
+     * @attr name com.craiovadata.aus.sydney:lineHeight
      */
     public static final int AppCompatTextView_lineHeight=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #AppCompatTextView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -7911,7 +7919,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAllCaps
+     * @attr name com.craiovadata.aus.sydney:textAllCaps
      */
     public static final int AppCompatTextView_textAllCaps=10;
     /**
@@ -7923,125 +7931,125 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.craiovadata.us.ct.bridgeport:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.craiovadata.us.ct.bridgeport:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.craiovadata.us.ct.bridgeport:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.craiovadata.us.ct.bridgeport:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.craiovadata.us.ct.bridgeport:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.craiovadata.us.ct.bridgeport:actionBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.craiovadata.us.ct.bridgeport:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.craiovadata.us.ct.bridgeport:actionBarTabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.craiovadata.us.ct.bridgeport:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.craiovadata.us.ct.bridgeport:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.craiovadata.us.ct.bridgeport:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.craiovadata.us.ct.bridgeport:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.craiovadata.us.ct.bridgeport:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.craiovadata.us.ct.bridgeport:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.craiovadata.us.ct.bridgeport:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.craiovadata.us.ct.bridgeport:actionModeBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.craiovadata.us.ct.bridgeport:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.craiovadata.us.ct.bridgeport:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.craiovadata.us.ct.bridgeport:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.craiovadata.us.ct.bridgeport:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.craiovadata.us.ct.bridgeport:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.craiovadata.us.ct.bridgeport:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.craiovadata.us.ct.bridgeport:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.craiovadata.us.ct.bridgeport:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.craiovadata.us.ct.bridgeport:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.craiovadata.us.ct.bridgeport:actionModeSplitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.craiovadata.us.ct.bridgeport:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.craiovadata.us.ct.bridgeport:actionModeWebSearchDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.craiovadata.us.ct.bridgeport:actionOverflowButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.craiovadata.us.ct.bridgeport:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.craiovadata.us.ct.bridgeport:activityChooserViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.craiovadata.us.ct.bridgeport:alertDialogButtonGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.craiovadata.us.ct.bridgeport:alertDialogCenterButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.craiovadata.us.ct.bridgeport:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.craiovadata.us.ct.bridgeport:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.craiovadata.us.ct.bridgeport:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.craiovadata.us.ct.bridgeport:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.craiovadata.us.ct.bridgeport:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.craiovadata.us.ct.bridgeport:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.craiovadata.us.ct.bridgeport:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.craiovadata.us.ct.bridgeport:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.craiovadata.us.ct.bridgeport:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.craiovadata.us.ct.bridgeport:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.craiovadata.us.ct.bridgeport:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.craiovadata.us.ct.bridgeport:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.craiovadata.us.ct.bridgeport:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.craiovadata.us.ct.bridgeport:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.craiovadata.us.ct.bridgeport:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.craiovadata.us.ct.bridgeport:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.craiovadata.us.ct.bridgeport:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.craiovadata.us.ct.bridgeport:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.craiovadata.us.ct.bridgeport:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.craiovadata.us.ct.bridgeport:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.craiovadata.us.ct.bridgeport:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.craiovadata.us.ct.bridgeport:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.craiovadata.us.ct.bridgeport:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.craiovadata.us.ct.bridgeport:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.craiovadata.us.ct.bridgeport:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.craiovadata.us.ct.bridgeport:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.craiovadata.us.ct.bridgeport:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.craiovadata.us.ct.bridgeport:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.craiovadata.us.ct.bridgeport:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.craiovadata.us.ct.bridgeport:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.craiovadata.us.ct.bridgeport:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.craiovadata.us.ct.bridgeport:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.craiovadata.us.ct.bridgeport:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.craiovadata.us.ct.bridgeport:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.craiovadata.us.ct.bridgeport:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.craiovadata.us.ct.bridgeport:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.craiovadata.us.ct.bridgeport:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.craiovadata.us.ct.bridgeport:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.craiovadata.us.ct.bridgeport:listMenuViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.craiovadata.us.ct.bridgeport:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.craiovadata.us.ct.bridgeport:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.craiovadata.us.ct.bridgeport:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.craiovadata.us.ct.bridgeport:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.craiovadata.us.ct.bridgeport:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.craiovadata.us.ct.bridgeport:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.craiovadata.us.ct.bridgeport:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.craiovadata.us.ct.bridgeport:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.craiovadata.us.ct.bridgeport:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.craiovadata.us.ct.bridgeport:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.craiovadata.us.ct.bridgeport:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.craiovadata.us.ct.bridgeport:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.craiovadata.us.ct.bridgeport:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.craiovadata.us.ct.bridgeport:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.craiovadata.us.ct.bridgeport:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.craiovadata.us.ct.bridgeport:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.craiovadata.us.ct.bridgeport:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.craiovadata.us.ct.bridgeport:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.craiovadata.us.ct.bridgeport:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.craiovadata.us.ct.bridgeport:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.craiovadata.us.ct.bridgeport:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.craiovadata.us.ct.bridgeport:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.craiovadata.us.ct.bridgeport:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.craiovadata.us.ct.bridgeport:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.craiovadata.us.ct.bridgeport:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.craiovadata.us.ct.bridgeport:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.craiovadata.us.ct.bridgeport:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.craiovadata.us.ct.bridgeport:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.craiovadata.us.ct.bridgeport:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.craiovadata.us.ct.bridgeport:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.craiovadata.us.ct.bridgeport:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.craiovadata.us.ct.bridgeport:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.craiovadata.us.ct.bridgeport:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.craiovadata.us.ct.bridgeport:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.craiovadata.us.ct.bridgeport:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.craiovadata.us.ct.bridgeport:tooltipFrameBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.craiovadata.us.ct.bridgeport:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.craiovadata.us.ct.bridgeport:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.craiovadata.us.ct.bridgeport:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.craiovadata.us.ct.bridgeport:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.craiovadata.us.ct.bridgeport:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.craiovadata.us.ct.bridgeport:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.craiovadata.us.ct.bridgeport:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.craiovadata.us.ct.bridgeport:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.craiovadata.us.ct.bridgeport:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.craiovadata.us.ct.bridgeport:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.craiovadata.us.ct.bridgeport:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.craiovadata.aus.sydney:actionBarDivider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.craiovadata.aus.sydney:actionBarItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.craiovadata.aus.sydney:actionBarPopupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.craiovadata.aus.sydney:actionBarSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.craiovadata.aus.sydney:actionBarSplitStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.craiovadata.aus.sydney:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.craiovadata.aus.sydney:actionBarTabBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.craiovadata.aus.sydney:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.craiovadata.aus.sydney:actionBarTabTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.craiovadata.aus.sydney:actionBarTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.craiovadata.aus.sydney:actionBarWidgetTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.craiovadata.aus.sydney:actionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.craiovadata.aus.sydney:actionDropDownStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.craiovadata.aus.sydney:actionMenuTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.craiovadata.aus.sydney:actionMenuTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.craiovadata.aus.sydney:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.craiovadata.aus.sydney:actionModeCloseButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.craiovadata.aus.sydney:actionModeCloseDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.craiovadata.aus.sydney:actionModeCopyDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.craiovadata.aus.sydney:actionModeCutDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.craiovadata.aus.sydney:actionModeFindDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.craiovadata.aus.sydney:actionModePasteDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.craiovadata.aus.sydney:actionModePopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.craiovadata.aus.sydney:actionModeSelectAllDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.craiovadata.aus.sydney:actionModeShareDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.craiovadata.aus.sydney:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.craiovadata.aus.sydney:actionModeStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.craiovadata.aus.sydney:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.craiovadata.aus.sydney:actionOverflowButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.craiovadata.aus.sydney:actionOverflowMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.craiovadata.aus.sydney:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.craiovadata.aus.sydney:alertDialogButtonGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.craiovadata.aus.sydney:alertDialogCenterButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.craiovadata.aus.sydney:alertDialogStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.craiovadata.aus.sydney:alertDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.craiovadata.aus.sydney:autoCompleteTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.craiovadata.aus.sydney:borderlessButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.craiovadata.aus.sydney:buttonBarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.craiovadata.aus.sydney:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.craiovadata.aus.sydney:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.craiovadata.aus.sydney:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.craiovadata.aus.sydney:buttonBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.craiovadata.aus.sydney:buttonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.craiovadata.aus.sydney:buttonStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.craiovadata.aus.sydney:checkboxStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.craiovadata.aus.sydney:checkedTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.craiovadata.aus.sydney:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.craiovadata.aus.sydney:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.craiovadata.aus.sydney:colorButtonNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.craiovadata.aus.sydney:colorControlActivated}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.craiovadata.aus.sydney:colorControlHighlight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.craiovadata.aus.sydney:colorControlNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.craiovadata.aus.sydney:colorError}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.craiovadata.aus.sydney:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.craiovadata.aus.sydney:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.craiovadata.aus.sydney:colorSwitchThumbNormal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.craiovadata.aus.sydney:controlBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.craiovadata.aus.sydney:dialogCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.craiovadata.aus.sydney:dialogPreferredPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.craiovadata.aus.sydney:dialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.craiovadata.aus.sydney:dividerHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.craiovadata.aus.sydney:dividerVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.craiovadata.aus.sydney:dropDownListViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.craiovadata.aus.sydney:dropdownListPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.craiovadata.aus.sydney:editTextBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.craiovadata.aus.sydney:editTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.craiovadata.aus.sydney:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.craiovadata.aus.sydney:homeAsUpIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.craiovadata.aus.sydney:imageButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.craiovadata.aus.sydney:listChoiceBackgroundIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.craiovadata.aus.sydney:listDividerAlertDialog}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.craiovadata.aus.sydney:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.craiovadata.aus.sydney:listPopupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.craiovadata.aus.sydney:listPreferredItemHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.craiovadata.aus.sydney:listPreferredItemHeightLarge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.craiovadata.aus.sydney:listPreferredItemHeightSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.craiovadata.aus.sydney:listPreferredItemPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.craiovadata.aus.sydney:listPreferredItemPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.craiovadata.aus.sydney:panelBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.craiovadata.aus.sydney:panelMenuListTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.craiovadata.aus.sydney:panelMenuListWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.craiovadata.aus.sydney:popupMenuStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.craiovadata.aus.sydney:popupWindowStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.craiovadata.aus.sydney:radioButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.craiovadata.aus.sydney:ratingBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.craiovadata.aus.sydney:ratingBarStyleIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.craiovadata.aus.sydney:ratingBarStyleSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.craiovadata.aus.sydney:searchViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.craiovadata.aus.sydney:seekBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.craiovadata.aus.sydney:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.craiovadata.aus.sydney:selectableItemBackgroundBorderless}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.craiovadata.aus.sydney:spinnerDropDownItemStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.craiovadata.aus.sydney:spinnerStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.craiovadata.aus.sydney:switchStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.craiovadata.aus.sydney:textAppearanceLargePopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.craiovadata.aus.sydney:textAppearanceListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.craiovadata.aus.sydney:textAppearanceListItemSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.craiovadata.aus.sydney:textAppearanceListItemSmall}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.craiovadata.aus.sydney:textAppearancePopupMenuHeader}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.craiovadata.aus.sydney:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.craiovadata.aus.sydney:textAppearanceSearchResultTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.craiovadata.aus.sydney:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.craiovadata.aus.sydney:textColorAlertDialogListItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.craiovadata.aus.sydney:textColorSearchUrl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.craiovadata.aus.sydney:toolbarNavigationButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.craiovadata.aus.sydney:toolbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.craiovadata.aus.sydney:tooltipForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.craiovadata.aus.sydney:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.craiovadata.aus.sydney:viewInflaterClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.craiovadata.aus.sydney:windowActionBar}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.craiovadata.aus.sydney:windowActionBarOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.craiovadata.aus.sydney:windowActionModeOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.craiovadata.aus.sydney:windowFixedHeightMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.craiovadata.aus.sydney:windowFixedHeightMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.craiovadata.aus.sydney:windowFixedWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.craiovadata.aus.sydney:windowFixedWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.craiovadata.aus.sydney:windowMinWidthMajor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.craiovadata.aus.sydney:windowMinWidthMinor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.craiovadata.aus.sydney:windowNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -8221,7 +8229,7 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarDivider}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarDivider}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8229,11 +8237,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarDivider
+     * @attr name com.craiovadata.aus.sydney:actionBarDivider
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarItemBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8241,11 +8249,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarItemBackground
+     * @attr name com.craiovadata.aus.sydney:actionBarItemBackground
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarPopupTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarPopupTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8253,11 +8261,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarPopupTheme
+     * @attr name com.craiovadata.aus.sydney:actionBarPopupTheme
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarSize}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8274,11 +8282,11 @@ public final class R {
      * <tr><td>wrap_content</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarSize
+     * @attr name com.craiovadata.aus.sydney:actionBarSize
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarSplitStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarSplitStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8286,11 +8294,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarSplitStyle
+     * @attr name com.craiovadata.aus.sydney:actionBarSplitStyle
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8298,11 +8306,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarStyle
+     * @attr name com.craiovadata.aus.sydney:actionBarStyle
      */
     public static final int AppCompatTheme_actionBarStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarTabBarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarTabBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8310,11 +8318,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarTabBarStyle
+     * @attr name com.craiovadata.aus.sydney:actionBarTabBarStyle
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarTabStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarTabStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8322,11 +8330,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarTabStyle
+     * @attr name com.craiovadata.aus.sydney:actionBarTabStyle
      */
     public static final int AppCompatTheme_actionBarTabStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarTabTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarTabTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8334,11 +8342,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarTabTextStyle
+     * @attr name com.craiovadata.aus.sydney:actionBarTabTextStyle
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8346,11 +8354,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarTheme
+     * @attr name com.craiovadata.aus.sydney:actionBarTheme
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionBarWidgetTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionBarWidgetTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8358,11 +8366,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionBarWidgetTheme
+     * @attr name com.craiovadata.aus.sydney:actionBarWidgetTheme
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8370,11 +8378,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionButtonStyle
+     * @attr name com.craiovadata.aus.sydney:actionButtonStyle
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionDropDownStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionDropDownStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8382,11 +8390,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionDropDownStyle
+     * @attr name com.craiovadata.aus.sydney:actionDropDownStyle
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionMenuTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionMenuTextAppearance}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8394,11 +8402,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionMenuTextAppearance
+     * @attr name com.craiovadata.aus.sydney:actionMenuTextAppearance
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionMenuTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionMenuTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8409,11 +8417,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionMenuTextColor
+     * @attr name com.craiovadata.aus.sydney:actionMenuTextColor
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8421,11 +8429,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeBackground
+     * @attr name com.craiovadata.aus.sydney:actionModeBackground
      */
     public static final int AppCompatTheme_actionModeBackground=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeCloseButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeCloseButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8433,11 +8441,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeCloseButtonStyle
+     * @attr name com.craiovadata.aus.sydney:actionModeCloseButtonStyle
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeCloseDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeCloseDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8445,11 +8453,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeCloseDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeCloseDrawable
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeCopyDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeCopyDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8457,11 +8465,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeCopyDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeCopyDrawable
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeCutDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeCutDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8469,11 +8477,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeCutDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeCutDrawable
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeFindDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeFindDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8481,11 +8489,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeFindDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeFindDrawable
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModePasteDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModePasteDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8493,11 +8501,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModePasteDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModePasteDrawable
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModePopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModePopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8505,11 +8513,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModePopupWindowStyle
+     * @attr name com.craiovadata.aus.sydney:actionModePopupWindowStyle
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeSelectAllDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeSelectAllDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8517,11 +8525,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeSelectAllDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeSelectAllDrawable
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeShareDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeShareDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8529,11 +8537,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeShareDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeShareDrawable
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeSplitBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeSplitBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8541,11 +8549,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeSplitBackground
+     * @attr name com.craiovadata.aus.sydney:actionModeSplitBackground
      */
     public static final int AppCompatTheme_actionModeSplitBackground=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8553,11 +8561,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeStyle
+     * @attr name com.craiovadata.aus.sydney:actionModeStyle
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionModeWebSearchDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionModeWebSearchDrawable}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8565,11 +8573,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionModeWebSearchDrawable
+     * @attr name com.craiovadata.aus.sydney:actionModeWebSearchDrawable
      */
     public static final int AppCompatTheme_actionModeWebSearchDrawable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionOverflowButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionOverflowButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8577,11 +8585,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionOverflowButtonStyle
+     * @attr name com.craiovadata.aus.sydney:actionOverflowButtonStyle
      */
     public static final int AppCompatTheme_actionOverflowButtonStyle=30;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionOverflowMenuStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionOverflowMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8589,11 +8597,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionOverflowMenuStyle
+     * @attr name com.craiovadata.aus.sydney:actionOverflowMenuStyle
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#activityChooserViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#activityChooserViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8601,11 +8609,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:activityChooserViewStyle
+     * @attr name com.craiovadata.aus.sydney:activityChooserViewStyle
      */
     public static final int AppCompatTheme_activityChooserViewStyle=32;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#alertDialogButtonGroupStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#alertDialogButtonGroupStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8613,21 +8621,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:alertDialogButtonGroupStyle
+     * @attr name com.craiovadata.aus.sydney:alertDialogButtonGroupStyle
      */
     public static final int AppCompatTheme_alertDialogButtonGroupStyle=33;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#alertDialogCenterButtons}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#alertDialogCenterButtons}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:alertDialogCenterButtons
+     * @attr name com.craiovadata.aus.sydney:alertDialogCenterButtons
      */
     public static final int AppCompatTheme_alertDialogCenterButtons=34;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#alertDialogStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#alertDialogStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8635,11 +8643,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:alertDialogStyle
+     * @attr name com.craiovadata.aus.sydney:alertDialogStyle
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#alertDialogTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#alertDialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8647,11 +8655,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:alertDialogTheme
+     * @attr name com.craiovadata.aus.sydney:alertDialogTheme
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#autoCompleteTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#autoCompleteTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8659,11 +8667,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:autoCompleteTextViewStyle
+     * @attr name com.craiovadata.aus.sydney:autoCompleteTextViewStyle
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#borderlessButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#borderlessButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8671,11 +8679,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:borderlessButtonStyle
+     * @attr name com.craiovadata.aus.sydney:borderlessButtonStyle
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonBarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonBarButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8683,11 +8691,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonBarButtonStyle
+     * @attr name com.craiovadata.aus.sydney:buttonBarButtonStyle
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonBarNegativeButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonBarNegativeButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8695,11 +8703,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonBarNegativeButtonStyle
+     * @attr name com.craiovadata.aus.sydney:buttonBarNegativeButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonBarNeutralButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonBarNeutralButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8707,11 +8715,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonBarNeutralButtonStyle
+     * @attr name com.craiovadata.aus.sydney:buttonBarNeutralButtonStyle
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonBarPositiveButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonBarPositiveButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8719,11 +8727,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonBarPositiveButtonStyle
+     * @attr name com.craiovadata.aus.sydney:buttonBarPositiveButtonStyle
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonBarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8731,11 +8739,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonBarStyle
+     * @attr name com.craiovadata.aus.sydney:buttonBarStyle
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8743,11 +8751,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonStyle
+     * @attr name com.craiovadata.aus.sydney:buttonStyle
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonStyleSmall}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8755,11 +8763,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonStyleSmall
+     * @attr name com.craiovadata.aus.sydney:buttonStyleSmall
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkboxStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkboxStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8767,11 +8775,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkboxStyle
+     * @attr name com.craiovadata.aus.sydney:checkboxStyle
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkedTextViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkedTextViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8779,77 +8787,77 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkedTextViewStyle
+     * @attr name com.craiovadata.aus.sydney:checkedTextViewStyle
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorAccent}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorAccent
+     * @attr name com.craiovadata.aus.sydney:colorAccent
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorBackgroundFloating
+     * @attr name com.craiovadata.aus.sydney:colorBackgroundFloating
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorButtonNormal}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorButtonNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorButtonNormal
+     * @attr name com.craiovadata.aus.sydney:colorButtonNormal
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorControlActivated}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorControlActivated}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorControlActivated
+     * @attr name com.craiovadata.aus.sydney:colorControlActivated
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorControlHighlight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorControlHighlight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorControlHighlight
+     * @attr name com.craiovadata.aus.sydney:colorControlHighlight
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorControlNormal}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorControlNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorControlNormal
+     * @attr name com.craiovadata.aus.sydney:colorControlNormal
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorError}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorError}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8860,44 +8868,44 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorError
+     * @attr name com.craiovadata.aus.sydney:colorError
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorPrimary
+     * @attr name com.craiovadata.aus.sydney:colorPrimary
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorPrimaryDark
+     * @attr name com.craiovadata.aus.sydney:colorPrimaryDark
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorSwitchThumbNormal}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorSwitchThumbNormal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorSwitchThumbNormal
+     * @attr name com.craiovadata.aus.sydney:colorSwitchThumbNormal
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#controlBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#controlBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8905,11 +8913,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:controlBackground
+     * @attr name com.craiovadata.aus.sydney:controlBackground
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogCornerRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogCornerRadius}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8918,11 +8926,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogCornerRadius
+     * @attr name com.craiovadata.aus.sydney:dialogCornerRadius
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogPreferredPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogPreferredPadding}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8931,11 +8939,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogPreferredPadding
+     * @attr name com.craiovadata.aus.sydney:dialogPreferredPadding
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8943,11 +8951,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogTheme
+     * @attr name com.craiovadata.aus.sydney:dialogTheme
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dividerHorizontal}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dividerHorizontal}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8955,11 +8963,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dividerHorizontal
+     * @attr name com.craiovadata.aus.sydney:dividerHorizontal
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dividerVertical}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dividerVertical}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8967,11 +8975,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dividerVertical
+     * @attr name com.craiovadata.aus.sydney:dividerVertical
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dropDownListViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dropDownListViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -8979,11 +8987,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dropDownListViewStyle
+     * @attr name com.craiovadata.aus.sydney:dropDownListViewStyle
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dropdownListPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dropdownListPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -8992,11 +9000,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dropdownListPreferredItemHeight
+     * @attr name com.craiovadata.aus.sydney:dropdownListPreferredItemHeight
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#editTextBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#editTextBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9004,11 +9012,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:editTextBackground
+     * @attr name com.craiovadata.aus.sydney:editTextBackground
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#editTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#editTextColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9019,11 +9027,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:editTextColor
+     * @attr name com.craiovadata.aus.sydney:editTextColor
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9031,11 +9039,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:editTextStyle
+     * @attr name com.craiovadata.aus.sydney:editTextStyle
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#homeAsUpIndicator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#homeAsUpIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9043,11 +9051,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:homeAsUpIndicator
+     * @attr name com.craiovadata.aus.sydney:homeAsUpIndicator
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#imageButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#imageButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9055,11 +9063,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:imageButtonStyle
+     * @attr name com.craiovadata.aus.sydney:imageButtonStyle
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listChoiceBackgroundIndicator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listChoiceBackgroundIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9067,11 +9075,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listChoiceBackgroundIndicator
+     * @attr name com.craiovadata.aus.sydney:listChoiceBackgroundIndicator
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listDividerAlertDialog}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listDividerAlertDialog}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9079,11 +9087,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listDividerAlertDialog
+     * @attr name com.craiovadata.aus.sydney:listDividerAlertDialog
      */
     public static final int AppCompatTheme_listDividerAlertDialog=72;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listMenuViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listMenuViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9091,11 +9099,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listMenuViewStyle
+     * @attr name com.craiovadata.aus.sydney:listMenuViewStyle
      */
     public static final int AppCompatTheme_listMenuViewStyle=73;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listPopupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listPopupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9103,11 +9111,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listPopupWindowStyle
+     * @attr name com.craiovadata.aus.sydney:listPopupWindowStyle
      */
     public static final int AppCompatTheme_listPopupWindowStyle=74;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listPreferredItemHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listPreferredItemHeight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9116,11 +9124,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listPreferredItemHeight
+     * @attr name com.craiovadata.aus.sydney:listPreferredItemHeight
      */
     public static final int AppCompatTheme_listPreferredItemHeight=75;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listPreferredItemHeightLarge}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listPreferredItemHeightLarge}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9129,11 +9137,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listPreferredItemHeightLarge
+     * @attr name com.craiovadata.aus.sydney:listPreferredItemHeightLarge
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=76;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listPreferredItemHeightSmall}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listPreferredItemHeightSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9142,11 +9150,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listPreferredItemHeightSmall
+     * @attr name com.craiovadata.aus.sydney:listPreferredItemHeightSmall
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=77;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listPreferredItemPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listPreferredItemPaddingLeft}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9155,11 +9163,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listPreferredItemPaddingLeft
+     * @attr name com.craiovadata.aus.sydney:listPreferredItemPaddingLeft
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=78;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#listPreferredItemPaddingRight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#listPreferredItemPaddingRight}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9168,11 +9176,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:listPreferredItemPaddingRight
+     * @attr name com.craiovadata.aus.sydney:listPreferredItemPaddingRight
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=79;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#panelBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#panelBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9180,11 +9188,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:panelBackground
+     * @attr name com.craiovadata.aus.sydney:panelBackground
      */
     public static final int AppCompatTheme_panelBackground=80;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#panelMenuListTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#panelMenuListTheme}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9192,11 +9200,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:panelMenuListTheme
+     * @attr name com.craiovadata.aus.sydney:panelMenuListTheme
      */
     public static final int AppCompatTheme_panelMenuListTheme=81;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#panelMenuListWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#panelMenuListWidth}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9205,11 +9213,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:panelMenuListWidth
+     * @attr name com.craiovadata.aus.sydney:panelMenuListWidth
      */
     public static final int AppCompatTheme_panelMenuListWidth=82;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#popupMenuStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#popupMenuStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9217,11 +9225,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:popupMenuStyle
+     * @attr name com.craiovadata.aus.sydney:popupMenuStyle
      */
     public static final int AppCompatTheme_popupMenuStyle=83;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#popupWindowStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#popupWindowStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9229,11 +9237,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:popupWindowStyle
+     * @attr name com.craiovadata.aus.sydney:popupWindowStyle
      */
     public static final int AppCompatTheme_popupWindowStyle=84;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#radioButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#radioButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9241,11 +9249,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:radioButtonStyle
+     * @attr name com.craiovadata.aus.sydney:radioButtonStyle
      */
     public static final int AppCompatTheme_radioButtonStyle=85;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#ratingBarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#ratingBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9253,11 +9261,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:ratingBarStyle
+     * @attr name com.craiovadata.aus.sydney:ratingBarStyle
      */
     public static final int AppCompatTheme_ratingBarStyle=86;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#ratingBarStyleIndicator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#ratingBarStyleIndicator}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9265,11 +9273,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:ratingBarStyleIndicator
+     * @attr name com.craiovadata.aus.sydney:ratingBarStyleIndicator
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=87;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#ratingBarStyleSmall}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#ratingBarStyleSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9277,11 +9285,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:ratingBarStyleSmall
+     * @attr name com.craiovadata.aus.sydney:ratingBarStyleSmall
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=88;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#searchViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#searchViewStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9289,11 +9297,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:searchViewStyle
+     * @attr name com.craiovadata.aus.sydney:searchViewStyle
      */
     public static final int AppCompatTheme_searchViewStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seekBarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seekBarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9301,11 +9309,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seekBarStyle
+     * @attr name com.craiovadata.aus.sydney:seekBarStyle
      */
     public static final int AppCompatTheme_seekBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9313,11 +9321,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:selectableItemBackground
+     * @attr name com.craiovadata.aus.sydney:selectableItemBackground
      */
     public static final int AppCompatTheme_selectableItemBackground=91;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#selectableItemBackgroundBorderless}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#selectableItemBackgroundBorderless}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9325,11 +9333,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:selectableItemBackgroundBorderless
+     * @attr name com.craiovadata.aus.sydney:selectableItemBackgroundBorderless
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=92;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#spinnerDropDownItemStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#spinnerDropDownItemStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9337,11 +9345,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:spinnerDropDownItemStyle
+     * @attr name com.craiovadata.aus.sydney:spinnerDropDownItemStyle
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#spinnerStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#spinnerStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9349,11 +9357,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:spinnerStyle
+     * @attr name com.craiovadata.aus.sydney:spinnerStyle
      */
     public static final int AppCompatTheme_spinnerStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9361,11 +9369,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchStyle
+     * @attr name com.craiovadata.aus.sydney:switchStyle
      */
     public static final int AppCompatTheme_switchStyle=95;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceLargePopupMenu}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceLargePopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9373,11 +9381,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceLargePopupMenu
+     * @attr name com.craiovadata.aus.sydney:textAppearanceLargePopupMenu
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=96;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceListItem}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9385,11 +9393,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceListItem
+     * @attr name com.craiovadata.aus.sydney:textAppearanceListItem
      */
     public static final int AppCompatTheme_textAppearanceListItem=97;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceListItemSecondary}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceListItemSecondary}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9397,11 +9405,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceListItemSecondary
+     * @attr name com.craiovadata.aus.sydney:textAppearanceListItemSecondary
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=98;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceListItemSmall}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceListItemSmall}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9409,11 +9417,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceListItemSmall
+     * @attr name com.craiovadata.aus.sydney:textAppearanceListItemSmall
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=99;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearancePopupMenuHeader}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearancePopupMenuHeader}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9421,11 +9429,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearancePopupMenuHeader
+     * @attr name com.craiovadata.aus.sydney:textAppearancePopupMenuHeader
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=100;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceSearchResultSubtitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceSearchResultSubtitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9433,11 +9441,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceSearchResultSubtitle
+     * @attr name com.craiovadata.aus.sydney:textAppearanceSearchResultSubtitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=101;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceSearchResultTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceSearchResultTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9445,11 +9453,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceSearchResultTitle
+     * @attr name com.craiovadata.aus.sydney:textAppearanceSearchResultTitle
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=102;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceSmallPopupMenu}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceSmallPopupMenu}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9457,11 +9465,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceSmallPopupMenu
+     * @attr name com.craiovadata.aus.sydney:textAppearanceSmallPopupMenu
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=103;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textColorAlertDialogListItem}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textColorAlertDialogListItem}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9472,11 +9480,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textColorAlertDialogListItem
+     * @attr name com.craiovadata.aus.sydney:textColorAlertDialogListItem
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=104;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textColorSearchUrl}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textColorSearchUrl}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9487,11 +9495,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textColorSearchUrl
+     * @attr name com.craiovadata.aus.sydney:textColorSearchUrl
      */
     public static final int AppCompatTheme_textColorSearchUrl=105;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#toolbarNavigationButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#toolbarNavigationButtonStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9499,11 +9507,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:toolbarNavigationButtonStyle
+     * @attr name com.craiovadata.aus.sydney:toolbarNavigationButtonStyle
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#toolbarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#toolbarStyle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9511,11 +9519,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:toolbarStyle
+     * @attr name com.craiovadata.aus.sydney:toolbarStyle
      */
     public static final int AppCompatTheme_toolbarStyle=107;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tooltipForegroundColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tooltipForegroundColor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9526,11 +9534,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tooltipForegroundColor
+     * @attr name com.craiovadata.aus.sydney:tooltipForegroundColor
      */
     public static final int AppCompatTheme_tooltipForegroundColor=108;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tooltipFrameBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tooltipFrameBackground}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9538,51 +9546,51 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tooltipFrameBackground
+     * @attr name com.craiovadata.aus.sydney:tooltipFrameBackground
      */
     public static final int AppCompatTheme_tooltipFrameBackground=109;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#viewInflaterClass}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#viewInflaterClass}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:viewInflaterClass
+     * @attr name com.craiovadata.aus.sydney:viewInflaterClass
      */
     public static final int AppCompatTheme_viewInflaterClass=110;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowActionBar}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowActionBar}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowActionBar
+     * @attr name com.craiovadata.aus.sydney:windowActionBar
      */
     public static final int AppCompatTheme_windowActionBar=111;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowActionBarOverlay}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowActionBarOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowActionBarOverlay
+     * @attr name com.craiovadata.aus.sydney:windowActionBarOverlay
      */
     public static final int AppCompatTheme_windowActionBarOverlay=112;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowActionModeOverlay}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowActionModeOverlay}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowActionModeOverlay
+     * @attr name com.craiovadata.aus.sydney:windowActionModeOverlay
      */
     public static final int AppCompatTheme_windowActionModeOverlay=113;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowFixedHeightMajor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowFixedHeightMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9595,11 +9603,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowFixedHeightMajor
+     * @attr name com.craiovadata.aus.sydney:windowFixedHeightMajor
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=114;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowFixedHeightMinor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowFixedHeightMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9612,11 +9620,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowFixedHeightMinor
+     * @attr name com.craiovadata.aus.sydney:windowFixedHeightMinor
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=115;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowFixedWidthMajor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowFixedWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9629,11 +9637,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowFixedWidthMajor
+     * @attr name com.craiovadata.aus.sydney:windowFixedWidthMajor
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=116;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowFixedWidthMinor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowFixedWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9646,11 +9654,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowFixedWidthMinor
+     * @attr name com.craiovadata.aus.sydney:windowFixedWidthMinor
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=117;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowMinWidthMajor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowMinWidthMajor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9663,11 +9671,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowMinWidthMajor
+     * @attr name com.craiovadata.aus.sydney:windowMinWidthMajor
      */
     public static final int AppCompatTheme_windowMinWidthMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowMinWidthMinor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowMinWidthMinor}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9680,17 +9688,17 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowMinWidthMinor
+     * @attr name com.craiovadata.aus.sydney:windowMinWidthMinor
      */
     public static final int AppCompatTheme_windowMinWidthMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#windowNoTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#windowNoTitle}
      * attribute's value can be found in the {@link #AppCompatTheme} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:windowNoTitle
+     * @attr name com.craiovadata.aus.sydney:windowNoTitle
      */
     public static final int AppCompatTheme_windowNoTitle=120;
     /**
@@ -9701,7 +9709,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #BackgroundStyle_android_selectableItemBackground android:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BackgroundStyle_selectableItemBackground com.craiovadata.us.ct.bridgeport:selectableItemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BackgroundStyle_selectableItemBackground com.craiovadata.aus.sydney:selectableItemBackground}</code></td><td></td></tr>
      * </table>
      * @see #BackgroundStyle_android_selectableItemBackground
      * @see #BackgroundStyle_selectableItemBackground
@@ -9722,7 +9730,7 @@ public final class R {
      */
     public static final int BackgroundStyle_android_selectableItemBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#selectableItemBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#selectableItemBackground}
      * attribute's value can be found in the {@link #BackgroundStyle} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9730,7 +9738,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:selectableItemBackground
+     * @attr name com.craiovadata.aus.sydney:selectableItemBackground
      */
     public static final int BackgroundStyle_selectableItemBackground=1;
     /**
@@ -9740,12 +9748,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.craiovadata.us.ct.bridgeport:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.craiovadata.us.ct.bridgeport:fabAlignmentMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.craiovadata.us.ct.bridgeport:fabCradleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.craiovadata.us.ct.bridgeport:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.craiovadata.us.ct.bridgeport:fabCradleVerticalOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.craiovadata.us.ct.bridgeport:hideOnScroll}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.craiovadata.aus.sydney:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.craiovadata.aus.sydney:fabAlignmentMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.craiovadata.aus.sydney:fabCradleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.craiovadata.aus.sydney:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.craiovadata.aus.sydney:fabCradleVerticalOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.craiovadata.aus.sydney:hideOnScroll}</code></td><td></td></tr>
      * </table>
      * @see #BottomAppBar_backgroundTint
      * @see #BottomAppBar_fabAlignmentMode
@@ -9759,18 +9767,18 @@ public final class R {
       0x7f0300e2, 0x7f030102
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTint
+     * @attr name com.craiovadata.aus.sydney:backgroundTint
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fabAlignmentMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fabAlignmentMode}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9783,11 +9791,11 @@ public final class R {
      * <tr><td>end</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fabAlignmentMode
+     * @attr name com.craiovadata.aus.sydney:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fabCradleMargin}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fabCradleMargin}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9796,11 +9804,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fabCradleMargin
+     * @attr name com.craiovadata.aus.sydney:fabCradleMargin
      */
     public static final int BottomAppBar_fabCradleMargin=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fabCradleRoundedCornerRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fabCradleRoundedCornerRadius}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9809,11 +9817,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fabCradleRoundedCornerRadius
+     * @attr name com.craiovadata.aus.sydney:fabCradleRoundedCornerRadius
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fabCradleVerticalOffset}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fabCradleVerticalOffset}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9822,17 +9830,17 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fabCradleVerticalOffset
+     * @attr name com.craiovadata.aus.sydney:fabCradleVerticalOffset
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hideOnScroll}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hideOnScroll}
      * attribute's value can be found in the {@link #BottomAppBar} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hideOnScroll
+     * @attr name com.craiovadata.aus.sydney:hideOnScroll
      */
     public static final int BottomAppBar_hideOnScroll=5;
     /**
@@ -9842,16 +9850,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.craiovadata.us.ct.bridgeport:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.craiovadata.us.ct.bridgeport:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.craiovadata.us.ct.bridgeport:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.craiovadata.us.ct.bridgeport:itemIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.craiovadata.us.ct.bridgeport:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.craiovadata.us.ct.bridgeport:itemTextAppearanceActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.craiovadata.us.ct.bridgeport:itemTextAppearanceInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.craiovadata.us.ct.bridgeport:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.craiovadata.us.ct.bridgeport:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.craiovadata.us.ct.bridgeport:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.craiovadata.aus.sydney:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.craiovadata.aus.sydney:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.craiovadata.aus.sydney:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.craiovadata.aus.sydney:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.craiovadata.aus.sydney:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.craiovadata.aus.sydney:itemTextAppearanceActive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.craiovadata.aus.sydney:itemTextAppearanceInactive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.craiovadata.aus.sydney:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.craiovadata.aus.sydney:labelVisibilityMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.craiovadata.aus.sydney:menu}</code></td><td></td></tr>
      * </table>
      * @see #BottomNavigationView_elevation
      * @see #BottomNavigationView_itemBackground
@@ -9870,7 +9878,7 @@ public final class R {
       0x7f030128, 0x7f030180
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#elevation}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9879,11 +9887,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:elevation
+     * @attr name com.craiovadata.aus.sydney:elevation
      */
     public static final int BottomNavigationView_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemBackground}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9891,21 +9899,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemBackground
+     * @attr name com.craiovadata.aus.sydney:itemBackground
      */
     public static final int BottomNavigationView_itemBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemHorizontalTranslationEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemHorizontalTranslationEnabled}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemHorizontalTranslationEnabled
+     * @attr name com.craiovadata.aus.sydney:itemHorizontalTranslationEnabled
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemIconSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemIconSize}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -9914,22 +9922,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemIconSize
+     * @attr name com.craiovadata.aus.sydney:itemIconSize
      */
     public static final int BottomNavigationView_itemIconSize=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemIconTint
+     * @attr name com.craiovadata.aus.sydney:itemIconTint
      */
     public static final int BottomNavigationView_itemIconTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemTextAppearanceActive}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemTextAppearanceActive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9937,11 +9945,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemTextAppearanceActive
+     * @attr name com.craiovadata.aus.sydney:itemTextAppearanceActive
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemTextAppearanceInactive}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemTextAppearanceInactive}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9949,22 +9957,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemTextAppearanceInactive
+     * @attr name com.craiovadata.aus.sydney:itemTextAppearanceInactive
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemTextColor
+     * @attr name com.craiovadata.aus.sydney:itemTextColor
      */
     public static final int BottomNavigationView_itemTextColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#labelVisibilityMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#labelVisibilityMode}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -9979,11 +9987,11 @@ public final class R {
      * <tr><td>unlabeled</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:labelVisibilityMode
+     * @attr name com.craiovadata.aus.sydney:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#menu}
      * attribute's value can be found in the {@link #BottomNavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -9991,7 +9999,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:menu
+     * @attr name com.craiovadata.aus.sydney:menu
      */
     public static final int BottomNavigationView_menu=9;
     /**
@@ -10001,10 +10009,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.craiovadata.us.ct.bridgeport:behavior_fitToContents}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.craiovadata.us.ct.bridgeport:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.craiovadata.us.ct.bridgeport:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.craiovadata.us.ct.bridgeport:behavior_skipCollapsed}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.craiovadata.aus.sydney:behavior_fitToContents}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.craiovadata.aus.sydney:behavior_hideable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.craiovadata.aus.sydney:behavior_peekHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.craiovadata.aus.sydney:behavior_skipCollapsed}</code></td><td></td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_behavior_fitToContents
      * @see #BottomSheetBehavior_Layout_behavior_hideable
@@ -10015,27 +10023,27 @@ public final class R {
       0x7f030041, 0x7f030042, 0x7f030044, 0x7f030045
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#behavior_fitToContents}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#behavior_fitToContents}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:behavior_fitToContents
+     * @attr name com.craiovadata.aus.sydney:behavior_fitToContents
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#behavior_hideable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#behavior_hideable}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:behavior_hideable
+     * @attr name com.craiovadata.aus.sydney:behavior_hideable
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#behavior_peekHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#behavior_peekHeight}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10052,17 +10060,17 @@ public final class R {
      * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:behavior_peekHeight
+     * @attr name com.craiovadata.aus.sydney:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#behavior_skipCollapsed}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#behavior_skipCollapsed}
      * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:behavior_skipCollapsed
+     * @attr name com.craiovadata.aus.sydney:behavior_skipCollapsed
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=3;
     /**
@@ -10072,7 +10080,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.craiovadata.us.ct.bridgeport:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.craiovadata.aus.sydney:allowStacking}</code></td><td></td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -10080,13 +10088,13 @@ public final class R {
       0x7f03002d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#allowStacking}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#allowStacking}
      * attribute's value can be found in the {@link #ButtonBarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:allowStacking
+     * @attr name com.craiovadata.aus.sydney:allowStacking
      */
     public static final int ButtonBarLayout_allowStacking=0;
     /**
@@ -10098,17 +10106,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.craiovadata.us.ct.bridgeport:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.craiovadata.us.ct.bridgeport:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.craiovadata.us.ct.bridgeport:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.craiovadata.us.ct.bridgeport:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.craiovadata.us.ct.bridgeport:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.craiovadata.us.ct.bridgeport:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.craiovadata.us.ct.bridgeport:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.craiovadata.us.ct.bridgeport:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.craiovadata.us.ct.bridgeport:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.craiovadata.us.ct.bridgeport:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.craiovadata.us.ct.bridgeport:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.craiovadata.aus.sydney:cardBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.craiovadata.aus.sydney:cardCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.craiovadata.aus.sydney:cardElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.craiovadata.aus.sydney:cardMaxElevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.craiovadata.aus.sydney:cardPreventCornerOverlap}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.craiovadata.aus.sydney:cardUseCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.craiovadata.aus.sydney:contentPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.craiovadata.aus.sydney:contentPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.craiovadata.aus.sydney:contentPaddingLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.craiovadata.aus.sydney:contentPaddingRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.craiovadata.aus.sydney:contentPaddingTop}</code></td><td></td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -10157,18 +10165,18 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cardBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cardBackgroundColor}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cardBackgroundColor
+     * @attr name com.craiovadata.aus.sydney:cardBackgroundColor
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cardCornerRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cardCornerRadius}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10177,11 +10185,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cardCornerRadius
+     * @attr name com.craiovadata.aus.sydney:cardCornerRadius
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cardElevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cardElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10190,11 +10198,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cardElevation
+     * @attr name com.craiovadata.aus.sydney:cardElevation
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cardMaxElevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cardMaxElevation}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10203,31 +10211,31 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cardMaxElevation
+     * @attr name com.craiovadata.aus.sydney:cardMaxElevation
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cardPreventCornerOverlap}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cardPreventCornerOverlap}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cardPreventCornerOverlap
+     * @attr name com.craiovadata.aus.sydney:cardPreventCornerOverlap
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cardUseCompatPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cardUseCompatPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cardUseCompatPadding
+     * @attr name com.craiovadata.aus.sydney:cardUseCompatPadding
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentPadding}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10236,11 +10244,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentPadding
+     * @attr name com.craiovadata.aus.sydney:contentPadding
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentPaddingBottom}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10249,11 +10257,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentPaddingBottom
+     * @attr name com.craiovadata.aus.sydney:contentPaddingBottom
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentPaddingLeft}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentPaddingLeft}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10262,11 +10270,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentPaddingLeft
+     * @attr name com.craiovadata.aus.sydney:contentPaddingLeft
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentPaddingRight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentPaddingRight}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10275,11 +10283,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentPaddingRight
+     * @attr name com.craiovadata.aus.sydney:contentPaddingRight
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentPaddingTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentPaddingTop}
      * attribute's value can be found in the {@link #CardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10288,7 +10296,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentPaddingTop
+     * @attr name com.craiovadata.aus.sydney:contentPaddingTop
      */
     public static final int CardView_contentPaddingTop=12;
     /**
@@ -10301,9 +10309,9 @@ public final class R {
      * <tr><td><code>{@link #CheckBoxPreference_android_summaryOn android:summaryOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #CheckBoxPreference_android_summaryOff android:summaryOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #CheckBoxPreference_android_disableDependentsState android:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckBoxPreference_disableDependentsState com.craiovadata.us.ct.bridgeport:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckBoxPreference_summaryOff com.craiovadata.us.ct.bridgeport:summaryOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CheckBoxPreference_summaryOn com.craiovadata.us.ct.bridgeport:summaryOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckBoxPreference_disableDependentsState com.craiovadata.aus.sydney:disableDependentsState}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckBoxPreference_summaryOff com.craiovadata.aus.sydney:summaryOff}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CheckBoxPreference_summaryOn com.craiovadata.aus.sydney:summaryOn}</code></td><td></td></tr>
      * </table>
      * @see #CheckBoxPreference_android_summaryOn
      * @see #CheckBoxPreference_android_summaryOff
@@ -10347,33 +10355,33 @@ public final class R {
      */
     public static final int CheckBoxPreference_android_disableDependentsState=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#disableDependentsState}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#disableDependentsState}
      * attribute's value can be found in the {@link #CheckBoxPreference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:disableDependentsState
+     * @attr name com.craiovadata.aus.sydney:disableDependentsState
      */
     public static final int CheckBoxPreference_disableDependentsState=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summaryOff}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summaryOff}
      * attribute's value can be found in the {@link #CheckBoxPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summaryOff
+     * @attr name com.craiovadata.aus.sydney:summaryOff
      */
     public static final int CheckBoxPreference_summaryOff=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summaryOn}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summaryOn}
      * attribute's value can be found in the {@link #CheckBoxPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summaryOn
+     * @attr name com.craiovadata.aus.sydney:summaryOn
      */
     public static final int CheckBoxPreference_summaryOn=5;
     /**
@@ -10388,35 +10396,35 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIcon com.craiovadata.us.ct.bridgeport:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled com.craiovadata.us.ct.bridgeport:checkedIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible com.craiovadata.us.ct.bridgeport:checkedIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor com.craiovadata.us.ct.bridgeport:chipBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius com.craiovadata.us.ct.bridgeport:chipCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding com.craiovadata.us.ct.bridgeport:chipEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon com.craiovadata.us.ct.bridgeport:chipIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled com.craiovadata.us.ct.bridgeport:chipIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize com.craiovadata.us.ct.bridgeport:chipIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint com.craiovadata.us.ct.bridgeport:chipIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible com.craiovadata.us.ct.bridgeport:chipIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight com.craiovadata.us.ct.bridgeport:chipMinHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding com.craiovadata.us.ct.bridgeport:chipStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor com.craiovadata.us.ct.bridgeport:chipStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth com.craiovadata.us.ct.bridgeport:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.craiovadata.us.ct.bridgeport:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled com.craiovadata.us.ct.bridgeport:closeIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding com.craiovadata.us.ct.bridgeport:closeIconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize com.craiovadata.us.ct.bridgeport:closeIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding com.craiovadata.us.ct.bridgeport:closeIconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint com.craiovadata.us.ct.bridgeport:closeIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible com.craiovadata.us.ct.bridgeport:closeIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_hideMotionSpec com.craiovadata.us.ct.bridgeport:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding com.craiovadata.us.ct.bridgeport:iconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding com.craiovadata.us.ct.bridgeport:iconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_rippleColor com.craiovadata.us.ct.bridgeport:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_showMotionSpec com.craiovadata.us.ct.bridgeport:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding com.craiovadata.us.ct.bridgeport:textEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding com.craiovadata.us.ct.bridgeport:textStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIcon com.craiovadata.aus.sydney:checkedIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled com.craiovadata.aus.sydney:checkedIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible com.craiovadata.aus.sydney:checkedIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor com.craiovadata.aus.sydney:chipBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius com.craiovadata.aus.sydney:chipCornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding com.craiovadata.aus.sydney:chipEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon com.craiovadata.aus.sydney:chipIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled com.craiovadata.aus.sydney:chipIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize com.craiovadata.aus.sydney:chipIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint com.craiovadata.aus.sydney:chipIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible com.craiovadata.aus.sydney:chipIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight com.craiovadata.aus.sydney:chipMinHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding com.craiovadata.aus.sydney:chipStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor com.craiovadata.aus.sydney:chipStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth com.craiovadata.aus.sydney:chipStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.craiovadata.aus.sydney:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled com.craiovadata.aus.sydney:closeIconEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding com.craiovadata.aus.sydney:closeIconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize com.craiovadata.aus.sydney:closeIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding com.craiovadata.aus.sydney:closeIconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint com.craiovadata.aus.sydney:closeIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible com.craiovadata.aus.sydney:closeIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_hideMotionSpec com.craiovadata.aus.sydney:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding com.craiovadata.aus.sydney:iconEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding com.craiovadata.aus.sydney:iconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_rippleColor com.craiovadata.aus.sydney:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_showMotionSpec com.craiovadata.aus.sydney:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding com.craiovadata.aus.sydney:textEndPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding com.craiovadata.aus.sydney:textStartPadding}</code></td><td></td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_ellipsize
@@ -10530,7 +10538,7 @@ public final class R {
      */
     public static final int Chip_android_checkable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkedIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkedIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10538,42 +10546,42 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkedIcon
+     * @attr name com.craiovadata.aus.sydney:checkedIcon
      */
     public static final int Chip_checkedIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkedIconEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkedIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkedIconEnabled
+     * @attr name com.craiovadata.aus.sydney:checkedIconEnabled
      */
     public static final int Chip_checkedIconEnabled=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkedIconVisible}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkedIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkedIconVisible
+     * @attr name com.craiovadata.aus.sydney:checkedIconVisible
      */
     public static final int Chip_checkedIconVisible=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipBackgroundColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipBackgroundColor
+     * @attr name com.craiovadata.aus.sydney:chipBackgroundColor
      */
     public static final int Chip_chipBackgroundColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipCornerRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipCornerRadius}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10582,11 +10590,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipCornerRadius
+     * @attr name com.craiovadata.aus.sydney:chipCornerRadius
      */
     public static final int Chip_chipCornerRadius=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipEndPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10595,11 +10603,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipEndPadding
+     * @attr name com.craiovadata.aus.sydney:chipEndPadding
      */
     public static final int Chip_chipEndPadding=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10607,21 +10615,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipIcon
+     * @attr name com.craiovadata.aus.sydney:chipIcon
      */
     public static final int Chip_chipIcon=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipIconEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipIconEnabled
+     * @attr name com.craiovadata.aus.sydney:chipIconEnabled
      */
     public static final int Chip_chipIconEnabled=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipIconSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10630,32 +10638,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipIconSize
+     * @attr name com.craiovadata.aus.sydney:chipIconSize
      */
     public static final int Chip_chipIconSize=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipIconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipIconTint
+     * @attr name com.craiovadata.aus.sydney:chipIconTint
      */
     public static final int Chip_chipIconTint=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipIconVisible}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipIconVisible
+     * @attr name com.craiovadata.aus.sydney:chipIconVisible
      */
     public static final int Chip_chipIconVisible=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipMinHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipMinHeight}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10664,11 +10672,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipMinHeight
+     * @attr name com.craiovadata.aus.sydney:chipMinHeight
      */
     public static final int Chip_chipMinHeight=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipStartPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10677,22 +10685,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipStartPadding
+     * @attr name com.craiovadata.aus.sydney:chipStartPadding
      */
     public static final int Chip_chipStartPadding=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipStrokeColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipStrokeColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipStrokeColor
+     * @attr name com.craiovadata.aus.sydney:chipStrokeColor
      */
     public static final int Chip_chipStrokeColor=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipStrokeWidth}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10701,11 +10709,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipStrokeWidth
+     * @attr name com.craiovadata.aus.sydney:chipStrokeWidth
      */
     public static final int Chip_chipStrokeWidth=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIcon}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10713,21 +10721,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIcon
+     * @attr name com.craiovadata.aus.sydney:closeIcon
      */
     public static final int Chip_closeIcon=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIconEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIconEnabled}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIconEnabled
+     * @attr name com.craiovadata.aus.sydney:closeIconEnabled
      */
     public static final int Chip_closeIconEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIconEndPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10736,11 +10744,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIconEndPadding
+     * @attr name com.craiovadata.aus.sydney:closeIconEndPadding
      */
     public static final int Chip_closeIconEndPadding=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIconSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIconSize}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10749,11 +10757,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIconSize
+     * @attr name com.craiovadata.aus.sydney:closeIconSize
      */
     public static final int Chip_closeIconSize=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIconStartPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10762,32 +10770,32 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIconStartPadding
+     * @attr name com.craiovadata.aus.sydney:closeIconStartPadding
      */
     public static final int Chip_closeIconStartPadding=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIconTint}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIconTint
+     * @attr name com.craiovadata.aus.sydney:closeIconTint
      */
     public static final int Chip_closeIconTint=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIconVisible}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIconVisible}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIconVisible
+     * @attr name com.craiovadata.aus.sydney:closeIconVisible
      */
     public static final int Chip_closeIconVisible=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10795,11 +10803,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hideMotionSpec
+     * @attr name com.craiovadata.aus.sydney:hideMotionSpec
      */
     public static final int Chip_hideMotionSpec=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconEndPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10808,11 +10816,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconEndPadding
+     * @attr name com.craiovadata.aus.sydney:iconEndPadding
      */
     public static final int Chip_iconEndPadding=28;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconStartPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10821,22 +10829,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconStartPadding
+     * @attr name com.craiovadata.aus.sydney:iconStartPadding
      */
     public static final int Chip_iconStartPadding=29;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#rippleColor}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:rippleColor
+     * @attr name com.craiovadata.aus.sydney:rippleColor
      */
     public static final int Chip_rippleColor=30;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10844,11 +10852,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showMotionSpec
+     * @attr name com.craiovadata.aus.sydney:showMotionSpec
      */
     public static final int Chip_showMotionSpec=31;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textEndPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textEndPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10857,11 +10865,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textEndPadding
+     * @attr name com.craiovadata.aus.sydney:textEndPadding
      */
     public static final int Chip_textEndPadding=32;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textStartPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textStartPadding}
      * attribute's value can be found in the {@link #Chip} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10870,7 +10878,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textStartPadding
+     * @attr name com.craiovadata.aus.sydney:textStartPadding
      */
     public static final int Chip_textStartPadding=33;
     /**
@@ -10880,12 +10888,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip com.craiovadata.us.ct.bridgeport:checkedChip}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing com.craiovadata.us.ct.bridgeport:chipSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.craiovadata.us.ct.bridgeport:chipSpacingHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.craiovadata.us.ct.bridgeport:chipSpacingVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine com.craiovadata.us.ct.bridgeport:singleLine}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleSelection com.craiovadata.us.ct.bridgeport:singleSelection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip com.craiovadata.aus.sydney:checkedChip}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing com.craiovadata.aus.sydney:chipSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.craiovadata.aus.sydney:chipSpacingHorizontal}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.craiovadata.aus.sydney:chipSpacingVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine com.craiovadata.aus.sydney:singleLine}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleSelection com.craiovadata.aus.sydney:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
      * @see #ChipGroup_chipSpacing
@@ -10899,7 +10907,7 @@ public final class R {
       0x7f0301d0, 0x7f0301d2
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkedChip}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkedChip}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -10907,11 +10915,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkedChip
+     * @attr name com.craiovadata.aus.sydney:checkedChip
      */
     public static final int ChipGroup_checkedChip=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipSpacing}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipSpacing}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10920,11 +10928,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipSpacing
+     * @attr name com.craiovadata.aus.sydney:chipSpacing
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipSpacingHorizontal}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipSpacingHorizontal}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10933,11 +10941,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipSpacingHorizontal
+     * @attr name com.craiovadata.aus.sydney:chipSpacingHorizontal
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipSpacingVertical}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipSpacingVertical}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -10946,27 +10954,27 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipSpacingVertical
+     * @attr name com.craiovadata.aus.sydney:chipSpacingVertical
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#singleLine}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#singleLine}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:singleLine
+     * @attr name com.craiovadata.aus.sydney:singleLine
      */
     public static final int ChipGroup_singleLine=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#singleSelection}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#singleSelection}
      * attribute's value can be found in the {@link #ChipGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:singleSelection
+     * @attr name com.craiovadata.aus.sydney:singleSelection
      */
     public static final int ChipGroup_singleSelection=5;
     /**
@@ -10976,22 +10984,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.craiovadata.us.ct.bridgeport:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.craiovadata.us.ct.bridgeport:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.craiovadata.us.ct.bridgeport:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.craiovadata.us.ct.bridgeport:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.craiovadata.us.ct.bridgeport:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.craiovadata.us.ct.bridgeport:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.craiovadata.us.ct.bridgeport:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.craiovadata.us.ct.bridgeport:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.craiovadata.us.ct.bridgeport:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.craiovadata.us.ct.bridgeport:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.craiovadata.us.ct.bridgeport:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.craiovadata.us.ct.bridgeport:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.craiovadata.us.ct.bridgeport:statusBarScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.craiovadata.us.ct.bridgeport:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.craiovadata.us.ct.bridgeport:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.craiovadata.us.ct.bridgeport:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.craiovadata.aus.sydney:collapsedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.craiovadata.aus.sydney:collapsedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.craiovadata.aus.sydney:contentScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.craiovadata.aus.sydney:expandedTitleGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.craiovadata.aus.sydney:expandedTitleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.craiovadata.aus.sydney:expandedTitleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.craiovadata.aus.sydney:expandedTitleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.craiovadata.aus.sydney:expandedTitleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.craiovadata.aus.sydney:expandedTitleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.craiovadata.aus.sydney:expandedTitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.craiovadata.aus.sydney:scrimAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.craiovadata.aus.sydney:scrimVisibleHeightTrigger}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.craiovadata.aus.sydney:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_title com.craiovadata.aus.sydney:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.craiovadata.aus.sydney:titleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.craiovadata.aus.sydney:toolbarId}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -11017,7 +11025,7 @@ public final class R {
       0x7f0301e2, 0x7f030236, 0x7f030237, 0x7f030241
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#collapsedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#collapsedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11038,11 +11046,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:collapsedTitleGravity
+     * @attr name com.craiovadata.aus.sydney:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#collapsedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#collapsedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11050,22 +11058,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:collapsedTitleTextAppearance
+     * @attr name com.craiovadata.aus.sydney:collapsedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentScrim}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentScrim
+     * @attr name com.craiovadata.aus.sydney:contentScrim
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleGravity}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -11086,11 +11094,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleGravity
+     * @attr name com.craiovadata.aus.sydney:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleMargin}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleMargin}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11099,11 +11107,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleMargin
+     * @attr name com.craiovadata.aus.sydney:expandedTitleMargin
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleMarginBottom}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11112,11 +11120,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleMarginBottom
+     * @attr name com.craiovadata.aus.sydney:expandedTitleMarginBottom
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleMarginEnd}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11125,11 +11133,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleMarginEnd
+     * @attr name com.craiovadata.aus.sydney:expandedTitleMarginEnd
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleMarginStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleMarginStart}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11138,11 +11146,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleMarginStart
+     * @attr name com.craiovadata.aus.sydney:expandedTitleMarginStart
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleMarginTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleMarginTop}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11151,11 +11159,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleMarginTop
+     * @attr name com.craiovadata.aus.sydney:expandedTitleMarginTop
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#expandedTitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#expandedTitleTextAppearance}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11163,20 +11171,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:expandedTitleTextAppearance
+     * @attr name com.craiovadata.aus.sydney:expandedTitleTextAppearance
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#scrimAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#scrimAnimationDuration}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:scrimAnimationDuration
+     * @attr name com.craiovadata.aus.sydney:scrimAnimationDuration
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#scrimVisibleHeightTrigger}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#scrimVisibleHeightTrigger}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11185,42 +11193,42 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:scrimVisibleHeightTrigger
+     * @attr name com.craiovadata.aus.sydney:scrimVisibleHeightTrigger
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#statusBarScrim}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#statusBarScrim}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:statusBarScrim
+     * @attr name com.craiovadata.aus.sydney:statusBarScrim
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#title}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:title
+     * @attr name com.craiovadata.aus.sydney:title
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleEnabled}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleEnabled
+     * @attr name com.craiovadata.aus.sydney:titleEnabled
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#toolbarId}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#toolbarId}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11228,7 +11236,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:toolbarId
+     * @attr name com.craiovadata.aus.sydney:toolbarId
      */
     public static final int CollapsingToolbarLayout_toolbarId=15;
     /**
@@ -11238,8 +11246,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.craiovadata.us.ct.bridgeport:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.craiovadata.us.ct.bridgeport:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.craiovadata.aus.sydney:layout_collapseMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.craiovadata.aus.sydney:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -11248,7 +11256,7 @@ public final class R {
       0x7f03012f, 0x7f030130
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_collapseMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_collapseMode}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11262,16 +11270,16 @@ public final class R {
      * <tr><td>pin</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_collapseMode
+     * @attr name com.craiovadata.aus.sydney:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_collapseParallaxMultiplier}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_collapseParallaxMultiplier}
      * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_collapseParallaxMultiplier
+     * @attr name com.craiovadata.aus.sydney:layout_collapseParallaxMultiplier
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier=1;
     /**
@@ -11283,7 +11291,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.craiovadata.us.ct.bridgeport:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.craiovadata.aus.sydney:alpha}</code></td><td></td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -11313,12 +11321,12 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#alpha}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#alpha}
      * attribute's value can be found in the {@link #ColorStateListItem} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:alpha
+     * @attr name com.craiovadata.aus.sydney:alpha
      */
     public static final int ColorStateListItem_alpha=2;
     /**
@@ -11329,8 +11337,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.craiovadata.us.ct.bridgeport:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.craiovadata.us.ct.bridgeport:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.craiovadata.aus.sydney:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.craiovadata.aus.sydney:buttonTintMode}</code></td><td></td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonTint
@@ -11352,18 +11360,18 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonTint}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonTint
+     * @attr name com.craiovadata.aus.sydney:buttonTint
      */
     public static final int CompoundButton_buttonTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonTintMode}
      * attribute's value can be found in the {@link #CompoundButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11380,7 +11388,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonTintMode
+     * @attr name com.craiovadata.aus.sydney:buttonTintMode
      */
     public static final int CompoundButton_buttonTintMode=2;
     /**
@@ -11395,61 +11403,61 @@ public final class R {
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_maxHeight android:maxHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintLayout_Layout_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.craiovadata.us.ct.bridgeport:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.craiovadata.us.ct.bridgeport:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.craiovadata.us.ct.bridgeport:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.craiovadata.us.ct.bridgeport:constraintSet}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.craiovadata.us.ct.bridgeport:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.craiovadata.us.ct.bridgeport:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.craiovadata.us.ct.bridgeport:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.craiovadata.us.ct.bridgeport:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.craiovadata.us.ct.bridgeport:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.craiovadata.us.ct.bridgeport:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.craiovadata.us.ct.bridgeport:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.craiovadata.us.ct.bridgeport:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.craiovadata.us.ct.bridgeport:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.craiovadata.us.ct.bridgeport:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.craiovadata.us.ct.bridgeport:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.craiovadata.us.ct.bridgeport:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.craiovadata.us.ct.bridgeport:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.craiovadata.us.ct.bridgeport:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.craiovadata.us.ct.bridgeport:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.craiovadata.us.ct.bridgeport:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.craiovadata.us.ct.bridgeport:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.craiovadata.us.ct.bridgeport:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.craiovadata.us.ct.bridgeport:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.craiovadata.us.ct.bridgeport:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.craiovadata.us.ct.bridgeport:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.craiovadata.us.ct.bridgeport:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.craiovadata.us.ct.bridgeport:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.craiovadata.us.ct.bridgeport:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.craiovadata.us.ct.bridgeport:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.craiovadata.us.ct.bridgeport:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.craiovadata.us.ct.bridgeport:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.craiovadata.us.ct.bridgeport:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.craiovadata.us.ct.bridgeport:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.craiovadata.us.ct.bridgeport:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.craiovadata.us.ct.bridgeport:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.craiovadata.us.ct.bridgeport:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.craiovadata.us.ct.bridgeport:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.craiovadata.us.ct.bridgeport:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.craiovadata.us.ct.bridgeport:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.craiovadata.us.ct.bridgeport:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.craiovadata.us.ct.bridgeport:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.craiovadata.us.ct.bridgeport:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.craiovadata.us.ct.bridgeport:layout_goneMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.craiovadata.us.ct.bridgeport:layout_optimizationLevel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierAllowsGoneWidgets com.craiovadata.aus.sydney:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_barrierDirection com.craiovadata.aus.sydney:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_chainUseRtl com.craiovadata.aus.sydney:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraintSet com.craiovadata.aus.sydney:constraintSet}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_constraint_referenced_ids com.craiovadata.aus.sydney:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedHeight com.craiovadata.aus.sydney:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constrainedWidth com.craiovadata.aus.sydney:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_creator com.craiovadata.aus.sydney:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf com.craiovadata.aus.sydney:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_creator com.craiovadata.aus.sydney:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toBottomOf com.craiovadata.aus.sydney:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintBottom_toTopOf com.craiovadata.aus.sydney:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircle com.craiovadata.aus.sydney:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleAngle com.craiovadata.aus.sydney:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintCircleRadius com.craiovadata.aus.sydney:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintDimensionRatio com.craiovadata.aus.sydney:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toEndOf com.craiovadata.aus.sydney:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintEnd_toStartOf com.craiovadata.aus.sydney:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_begin com.craiovadata.aus.sydney:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_end com.craiovadata.aus.sydney:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintGuide_percent com.craiovadata.aus.sydney:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_default com.craiovadata.aus.sydney:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_max com.craiovadata.aus.sydney:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_min com.craiovadata.aus.sydney:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHeight_percent com.craiovadata.aus.sydney:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_bias com.craiovadata.aus.sydney:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle com.craiovadata.aus.sydney:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintHorizontal_weight com.craiovadata.aus.sydney:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_creator com.craiovadata.aus.sydney:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toLeftOf com.craiovadata.aus.sydney:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintLeft_toRightOf com.craiovadata.aus.sydney:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_creator com.craiovadata.aus.sydney:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toLeftOf com.craiovadata.aus.sydney:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintRight_toRightOf com.craiovadata.aus.sydney:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toEndOf com.craiovadata.aus.sydney:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintStart_toStartOf com.craiovadata.aus.sydney:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_creator com.craiovadata.aus.sydney:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toBottomOf com.craiovadata.aus.sydney:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintTop_toTopOf com.craiovadata.aus.sydney:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_bias com.craiovadata.aus.sydney:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_chainStyle com.craiovadata.aus.sydney:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintVertical_weight com.craiovadata.aus.sydney:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_default com.craiovadata.aus.sydney:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_max com.craiovadata.aus.sydney:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_min com.craiovadata.aus.sydney:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_constraintWidth_percent com.craiovadata.aus.sydney:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteX com.craiovadata.aus.sydney:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_editor_absoluteY com.craiovadata.aus.sydney:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginBottom com.craiovadata.aus.sydney:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginEnd com.craiovadata.aus.sydney:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginLeft com.craiovadata.aus.sydney:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginRight com.craiovadata.aus.sydney:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginStart com.craiovadata.aus.sydney:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_goneMarginTop com.craiovadata.aus.sydney:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_Layout_layout_optimizationLevel com.craiovadata.aus.sydney:layout_optimizationLevel}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_Layout_android_orientation
      * @see #ConstraintLayout_Layout_android_maxWidth
@@ -11599,17 +11607,17 @@ public final class R {
      */
     public static final int ConstraintLayout_Layout_android_minHeight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:barrierAllowsGoneWidgets
+     * @attr name com.craiovadata.aus.sydney:barrierAllowsGoneWidgets
      */
     public static final int ConstraintLayout_Layout_barrierAllowsGoneWidgets=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11626,21 +11634,21 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:barrierDirection
+     * @attr name com.craiovadata.aus.sydney:barrierDirection
      */
     public static final int ConstraintLayout_Layout_barrierDirection=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chainUseRtl
+     * @attr name com.craiovadata.aus.sydney:chainUseRtl
      */
     public static final int ConstraintLayout_Layout_chainUseRtl=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#constraintSet}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#constraintSet}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11648,50 +11656,50 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:constraintSet
+     * @attr name com.craiovadata.aus.sydney:constraintSet
      */
     public static final int ConstraintLayout_Layout_constraintSet=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:constraint_referenced_ids
+     * @attr name com.craiovadata.aus.sydney:constraint_referenced_ids
      */
     public static final int ConstraintLayout_Layout_constraint_referenced_ids=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constrainedHeight
+     * @attr name com.craiovadata.aus.sydney:layout_constrainedHeight
      */
     public static final int ConstraintLayout_Layout_layout_constrainedHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constrainedWidth
+     * @attr name com.craiovadata.aus.sydney:layout_constrainedWidth
      */
     public static final int ConstraintLayout_Layout_layout_constrainedWidth=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBaseline_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_creator=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11707,20 +11715,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_toBaselineOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBaseline_toBaselineOf=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBottom_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBottom_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_creator=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11736,11 +11744,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toBottomOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toBottomOf=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11756,11 +11764,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toTopOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintBottom_toTopOf=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11768,20 +11776,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintCircle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintCircle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintCircleAngle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintCircleAngle
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleAngle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11790,21 +11798,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintCircleRadius
+     * @attr name com.craiovadata.aus.sydney:layout_constraintCircleRadius
      */
     public static final int ConstraintLayout_Layout_layout_constraintCircleRadius=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintDimensionRatio
+     * @attr name com.craiovadata.aus.sydney:layout_constraintDimensionRatio
      */
     public static final int ConstraintLayout_Layout_layout_constraintDimensionRatio=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11820,11 +11828,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toEndOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toEndOf=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -11840,11 +11848,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toStartOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintEnd_toStartOf=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11853,11 +11861,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintGuide_begin
+     * @attr name com.craiovadata.aus.sydney:layout_constraintGuide_begin
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_begin=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11866,20 +11874,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintGuide_end
+     * @attr name com.craiovadata.aus.sydney:layout_constraintGuide_end
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_end=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintGuide_percent
+     * @attr name com.craiovadata.aus.sydney:layout_constraintGuide_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintGuide_percent=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11893,11 +11901,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_default
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_default=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11914,11 +11922,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_max
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_max=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -11935,29 +11943,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_min
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_min=28;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_percent
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintHeight_percent=29;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_bias
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHorizontal_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_bias=30;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -11971,29 +11979,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_chainStyle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_chainStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_weight
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHorizontal_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintHorizontal_weight=32;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintLeft_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintLeft_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12009,11 +12017,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toLeftOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toLeftOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12029,20 +12037,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toRightOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintLeft_toRightOf=35;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintRight_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintRight_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_creator=36;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12058,11 +12066,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintRight_toLeftOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toLeftOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12078,11 +12086,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintRight_toRightOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintRight_toRightOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintRight_toRightOf=38;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12098,11 +12106,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintStart_toEndOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintStart_toEndOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toEndOf=39;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12118,20 +12126,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintStart_toStartOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintStart_toStartOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintStart_toStartOf=40;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintTop_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintTop_creator
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_creator=41;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12147,11 +12155,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintTop_toBottomOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toBottomOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12167,20 +12175,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintTop_toTopOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintTop_toTopOf
      */
     public static final int ConstraintLayout_Layout_layout_constraintTop_toTopOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintVertical_bias
+     * @attr name com.craiovadata.aus.sydney:layout_constraintVertical_bias
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_bias=44;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12194,20 +12202,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintVertical_chainStyle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_chainStyle=45;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintVertical_weight
+     * @attr name com.craiovadata.aus.sydney:layout_constraintVertical_weight
      */
     public static final int ConstraintLayout_Layout_layout_constraintVertical_weight=46;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12221,11 +12229,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_default
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_default
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12242,11 +12250,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_max
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_max
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12263,20 +12271,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_min
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_min
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_percent
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_percent
      */
     public static final int ConstraintLayout_Layout_layout_constraintWidth_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12285,11 +12293,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_editor_absoluteX
+     * @attr name com.craiovadata.aus.sydney:layout_editor_absoluteX
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteX=51;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12298,11 +12306,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_editor_absoluteY
+     * @attr name com.craiovadata.aus.sydney:layout_editor_absoluteY
      */
     public static final int ConstraintLayout_Layout_layout_editor_absoluteY=52;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12311,11 +12319,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginBottom
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginBottom
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginBottom=53;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12324,11 +12332,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginEnd
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginEnd
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginEnd=54;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12337,11 +12345,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginLeft
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginLeft
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginLeft=55;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12350,11 +12358,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginRight
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginRight
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginRight=56;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12363,11 +12371,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginStart
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginStart
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginStart=57;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -12376,11 +12384,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginTop
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginTop
      */
     public static final int ConstraintLayout_Layout_layout_goneMarginTop=58;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_optimizationLevel}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_optimizationLevel}
      * attribute's value can be found in the {@link #ConstraintLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -12398,7 +12406,7 @@ public final class R {
      * <tr><td>standard</td><td>7</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_optimizationLevel
+     * @attr name com.craiovadata.aus.sydney:layout_optimizationLevel
      */
     public static final int ConstraintLayout_Layout_layout_optimizationLevel=59;
     /**
@@ -12408,8 +12416,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.craiovadata.us.ct.bridgeport:content}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.craiovadata.us.ct.bridgeport:emptyVisibility}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_content com.craiovadata.aus.sydney:content}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintLayout_placeholder_emptyVisibility com.craiovadata.aus.sydney:emptyVisibility}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintLayout_placeholder_content
      * @see #ConstraintLayout_placeholder_emptyVisibility
@@ -12418,7 +12426,7 @@ public final class R {
       0x7f03009d, 0x7f0300ce
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#content}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#content}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -12426,11 +12434,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:content
+     * @attr name com.craiovadata.aus.sydney:content
      */
     public static final int ConstraintLayout_placeholder_content=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#emptyVisibility}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#emptyVisibility}
      * attribute's value can be found in the {@link #ConstraintLayout_placeholder} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -12443,7 +12451,7 @@ public final class R {
      * <tr><td>invisible</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:emptyVisibility
+     * @attr name com.craiovadata.aus.sydney:emptyVisibility
      */
     public static final int ConstraintLayout_placeholder_emptyVisibility=1;
     /**
@@ -12480,59 +12488,59 @@ public final class R {
      * <tr><td><code>{@link #ConstraintSet_android_layout_marginEnd android:layout_marginEnd}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_translationZ android:translationZ}</code></td><td></td></tr>
      * <tr><td><code>{@link #ConstraintSet_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.craiovadata.us.ct.bridgeport:barrierAllowsGoneWidgets}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.craiovadata.us.ct.bridgeport:barrierDirection}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.craiovadata.us.ct.bridgeport:chainUseRtl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.craiovadata.us.ct.bridgeport:constraint_referenced_ids}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.craiovadata.us.ct.bridgeport:layout_constrainedHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.craiovadata.us.ct.bridgeport:layout_constrainedWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.craiovadata.us.ct.bridgeport:layout_constraintBottom_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.craiovadata.us.ct.bridgeport:layout_constraintCircle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.craiovadata.us.ct.bridgeport:layout_constraintCircleAngle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.craiovadata.us.ct.bridgeport:layout_constraintCircleRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.craiovadata.us.ct.bridgeport:layout_constraintDimensionRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.craiovadata.us.ct.bridgeport:layout_constraintGuide_begin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.craiovadata.us.ct.bridgeport:layout_constraintGuide_end}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.craiovadata.us.ct.bridgeport:layout_constraintGuide_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.craiovadata.us.ct.bridgeport:layout_constraintHeight_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.craiovadata.us.ct.bridgeport:layout_constraintHeight_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.craiovadata.us.ct.bridgeport:layout_constraintHeight_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.craiovadata.us.ct.bridgeport:layout_constraintHeight_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.craiovadata.us.ct.bridgeport:layout_constraintLeft_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.craiovadata.us.ct.bridgeport:layout_constraintRight_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.craiovadata.us.ct.bridgeport:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.craiovadata.us.ct.bridgeport:layout_constraintRight_toRightOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.craiovadata.us.ct.bridgeport:layout_constraintStart_toEndOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.craiovadata.us.ct.bridgeport:layout_constraintStart_toStartOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.craiovadata.us.ct.bridgeport:layout_constraintTop_creator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.craiovadata.us.ct.bridgeport:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.craiovadata.us.ct.bridgeport:layout_constraintTop_toTopOf}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.craiovadata.us.ct.bridgeport:layout_constraintVertical_bias}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.craiovadata.us.ct.bridgeport:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.craiovadata.us.ct.bridgeport:layout_constraintVertical_weight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.craiovadata.us.ct.bridgeport:layout_constraintWidth_default}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.craiovadata.us.ct.bridgeport:layout_constraintWidth_max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.craiovadata.us.ct.bridgeport:layout_constraintWidth_min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.craiovadata.us.ct.bridgeport:layout_constraintWidth_percent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.craiovadata.us.ct.bridgeport:layout_editor_absoluteX}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.craiovadata.us.ct.bridgeport:layout_editor_absoluteY}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.craiovadata.us.ct.bridgeport:layout_goneMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.craiovadata.us.ct.bridgeport:layout_goneMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.craiovadata.us.ct.bridgeport:layout_goneMarginLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.craiovadata.us.ct.bridgeport:layout_goneMarginRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.craiovadata.us.ct.bridgeport:layout_goneMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.craiovadata.us.ct.bridgeport:layout_goneMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierAllowsGoneWidgets com.craiovadata.aus.sydney:barrierAllowsGoneWidgets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_barrierDirection com.craiovadata.aus.sydney:barrierDirection}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_chainUseRtl com.craiovadata.aus.sydney:chainUseRtl}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_constraint_referenced_ids com.craiovadata.aus.sydney:constraint_referenced_ids}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedHeight com.craiovadata.aus.sydney:layout_constrainedHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constrainedWidth com.craiovadata.aus.sydney:layout_constrainedWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_creator com.craiovadata.aus.sydney:layout_constraintBaseline_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBaseline_toBaselineOf com.craiovadata.aus.sydney:layout_constraintBaseline_toBaselineOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_creator com.craiovadata.aus.sydney:layout_constraintBottom_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toBottomOf com.craiovadata.aus.sydney:layout_constraintBottom_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintBottom_toTopOf com.craiovadata.aus.sydney:layout_constraintBottom_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircle com.craiovadata.aus.sydney:layout_constraintCircle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleAngle com.craiovadata.aus.sydney:layout_constraintCircleAngle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintCircleRadius com.craiovadata.aus.sydney:layout_constraintCircleRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintDimensionRatio com.craiovadata.aus.sydney:layout_constraintDimensionRatio}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toEndOf com.craiovadata.aus.sydney:layout_constraintEnd_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintEnd_toStartOf com.craiovadata.aus.sydney:layout_constraintEnd_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_begin com.craiovadata.aus.sydney:layout_constraintGuide_begin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_end com.craiovadata.aus.sydney:layout_constraintGuide_end}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintGuide_percent com.craiovadata.aus.sydney:layout_constraintGuide_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_default com.craiovadata.aus.sydney:layout_constraintHeight_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_max com.craiovadata.aus.sydney:layout_constraintHeight_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_min com.craiovadata.aus.sydney:layout_constraintHeight_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHeight_percent com.craiovadata.aus.sydney:layout_constraintHeight_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_bias com.craiovadata.aus.sydney:layout_constraintHorizontal_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_chainStyle com.craiovadata.aus.sydney:layout_constraintHorizontal_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintHorizontal_weight com.craiovadata.aus.sydney:layout_constraintHorizontal_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_creator com.craiovadata.aus.sydney:layout_constraintLeft_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toLeftOf com.craiovadata.aus.sydney:layout_constraintLeft_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintLeft_toRightOf com.craiovadata.aus.sydney:layout_constraintLeft_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_creator com.craiovadata.aus.sydney:layout_constraintRight_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toLeftOf com.craiovadata.aus.sydney:layout_constraintRight_toLeftOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintRight_toRightOf com.craiovadata.aus.sydney:layout_constraintRight_toRightOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toEndOf com.craiovadata.aus.sydney:layout_constraintStart_toEndOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintStart_toStartOf com.craiovadata.aus.sydney:layout_constraintStart_toStartOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_creator com.craiovadata.aus.sydney:layout_constraintTop_creator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toBottomOf com.craiovadata.aus.sydney:layout_constraintTop_toBottomOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintTop_toTopOf com.craiovadata.aus.sydney:layout_constraintTop_toTopOf}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_bias com.craiovadata.aus.sydney:layout_constraintVertical_bias}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_chainStyle com.craiovadata.aus.sydney:layout_constraintVertical_chainStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintVertical_weight com.craiovadata.aus.sydney:layout_constraintVertical_weight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_default com.craiovadata.aus.sydney:layout_constraintWidth_default}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_max com.craiovadata.aus.sydney:layout_constraintWidth_max}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_min com.craiovadata.aus.sydney:layout_constraintWidth_min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_constraintWidth_percent com.craiovadata.aus.sydney:layout_constraintWidth_percent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteX com.craiovadata.aus.sydney:layout_editor_absoluteX}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_editor_absoluteY com.craiovadata.aus.sydney:layout_editor_absoluteY}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginBottom com.craiovadata.aus.sydney:layout_goneMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginEnd com.craiovadata.aus.sydney:layout_goneMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginLeft com.craiovadata.aus.sydney:layout_goneMarginLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginRight com.craiovadata.aus.sydney:layout_goneMarginRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginStart com.craiovadata.aus.sydney:layout_goneMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ConstraintSet_layout_goneMarginTop com.craiovadata.aus.sydney:layout_goneMarginTop}</code></td><td></td></tr>
      * </table>
      * @see #ConstraintSet_android_orientation
      * @see #ConstraintSet_android_id
@@ -12993,17 +13001,17 @@ public final class R {
      */
     public static final int ConstraintSet_android_elevation=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#barrierAllowsGoneWidgets}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#barrierAllowsGoneWidgets}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:barrierAllowsGoneWidgets
+     * @attr name com.craiovadata.aus.sydney:barrierAllowsGoneWidgets
      */
     public static final int ConstraintSet_barrierAllowsGoneWidgets=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#barrierDirection}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#barrierDirection}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13020,60 +13028,60 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:barrierDirection
+     * @attr name com.craiovadata.aus.sydney:barrierDirection
      */
     public static final int ConstraintSet_barrierDirection=28;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chainUseRtl}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chainUseRtl}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chainUseRtl
+     * @attr name com.craiovadata.aus.sydney:chainUseRtl
      */
     public static final int ConstraintSet_chainUseRtl=29;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#constraint_referenced_ids}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#constraint_referenced_ids}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:constraint_referenced_ids
+     * @attr name com.craiovadata.aus.sydney:constraint_referenced_ids
      */
     public static final int ConstraintSet_constraint_referenced_ids=30;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constrainedHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constrainedHeight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constrainedHeight
+     * @attr name com.craiovadata.aus.sydney:layout_constrainedHeight
      */
     public static final int ConstraintSet_layout_constrainedHeight=31;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constrainedWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constrainedWidth}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constrainedWidth
+     * @attr name com.craiovadata.aus.sydney:layout_constrainedWidth
      */
     public static final int ConstraintSet_layout_constrainedWidth=32;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBaseline_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBaseline_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBaseline_creator
      */
     public static final int ConstraintSet_layout_constraintBaseline_creator=33;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBaseline_toBaselineOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBaseline_toBaselineOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13089,20 +13097,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBaseline_toBaselineOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBaseline_toBaselineOf
      */
     public static final int ConstraintSet_layout_constraintBaseline_toBaselineOf=34;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBottom_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBottom_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBottom_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBottom_creator
      */
     public static final int ConstraintSet_layout_constraintBottom_creator=35;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBottom_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBottom_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13118,11 +13126,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toBottomOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBottom_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toBottomOf=36;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintBottom_toTopOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintBottom_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13138,11 +13146,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintBottom_toTopOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintBottom_toTopOf
      */
     public static final int ConstraintSet_layout_constraintBottom_toTopOf=37;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintCircle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintCircle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13150,20 +13158,20 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintCircle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintCircle
      */
     public static final int ConstraintSet_layout_constraintCircle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintCircleAngle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintCircleAngle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintCircleAngle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintCircleAngle
      */
     public static final int ConstraintSet_layout_constraintCircleAngle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintCircleRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintCircleRadius}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13172,21 +13180,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintCircleRadius
+     * @attr name com.craiovadata.aus.sydney:layout_constraintCircleRadius
      */
     public static final int ConstraintSet_layout_constraintCircleRadius=40;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintDimensionRatio}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintDimensionRatio}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintDimensionRatio
+     * @attr name com.craiovadata.aus.sydney:layout_constraintDimensionRatio
      */
     public static final int ConstraintSet_layout_constraintDimensionRatio=41;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintEnd_toEndOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintEnd_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13202,11 +13210,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toEndOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintEnd_toEndOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toEndOf=42;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintEnd_toStartOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintEnd_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13222,11 +13230,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintEnd_toStartOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintEnd_toStartOf
      */
     public static final int ConstraintSet_layout_constraintEnd_toStartOf=43;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintGuide_begin}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintGuide_begin}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13235,11 +13243,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintGuide_begin
+     * @attr name com.craiovadata.aus.sydney:layout_constraintGuide_begin
      */
     public static final int ConstraintSet_layout_constraintGuide_begin=44;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintGuide_end}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintGuide_end}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13248,20 +13256,20 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintGuide_end
+     * @attr name com.craiovadata.aus.sydney:layout_constraintGuide_end
      */
     public static final int ConstraintSet_layout_constraintGuide_end=45;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintGuide_percent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintGuide_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintGuide_percent
+     * @attr name com.craiovadata.aus.sydney:layout_constraintGuide_percent
      */
     public static final int ConstraintSet_layout_constraintGuide_percent=46;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_default}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13275,11 +13283,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_default
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_default
      */
     public static final int ConstraintSet_layout_constraintHeight_default=47;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_max}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13296,11 +13304,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_max
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_max
      */
     public static final int ConstraintSet_layout_constraintHeight_max=48;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_min}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13317,29 +13325,29 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_min
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_min
      */
     public static final int ConstraintSet_layout_constraintHeight_min=49;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHeight_percent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHeight_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHeight_percent
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHeight_percent
      */
     public static final int ConstraintSet_layout_constraintHeight_percent=50;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHorizontal_bias}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHorizontal_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_bias
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHorizontal_bias
      */
     public static final int ConstraintSet_layout_constraintHorizontal_bias=51;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHorizontal_chainStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHorizontal_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13353,29 +13361,29 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_chainStyle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHorizontal_chainStyle
      */
     public static final int ConstraintSet_layout_constraintHorizontal_chainStyle=52;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintHorizontal_weight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintHorizontal_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintHorizontal_weight
+     * @attr name com.craiovadata.aus.sydney:layout_constraintHorizontal_weight
      */
     public static final int ConstraintSet_layout_constraintHorizontal_weight=53;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintLeft_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintLeft_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintLeft_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintLeft_creator
      */
     public static final int ConstraintSet_layout_constraintLeft_creator=54;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintLeft_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintLeft_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13391,11 +13399,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toLeftOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintLeft_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toLeftOf=55;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintLeft_toRightOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintLeft_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13411,20 +13419,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintLeft_toRightOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintLeft_toRightOf
      */
     public static final int ConstraintSet_layout_constraintLeft_toRightOf=56;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintRight_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintRight_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintRight_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintRight_creator
      */
     public static final int ConstraintSet_layout_constraintRight_creator=57;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintRight_toLeftOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintRight_toLeftOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13440,11 +13448,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintRight_toLeftOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintRight_toLeftOf
      */
     public static final int ConstraintSet_layout_constraintRight_toLeftOf=58;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintRight_toRightOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintRight_toRightOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13460,11 +13468,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintRight_toRightOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintRight_toRightOf
      */
     public static final int ConstraintSet_layout_constraintRight_toRightOf=59;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintStart_toEndOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintStart_toEndOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13480,11 +13488,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintStart_toEndOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintStart_toEndOf
      */
     public static final int ConstraintSet_layout_constraintStart_toEndOf=60;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintStart_toStartOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintStart_toStartOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13500,20 +13508,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintStart_toStartOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintStart_toStartOf
      */
     public static final int ConstraintSet_layout_constraintStart_toStartOf=61;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintTop_creator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintTop_creator}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintTop_creator
+     * @attr name com.craiovadata.aus.sydney:layout_constraintTop_creator
      */
     public static final int ConstraintSet_layout_constraintTop_creator=62;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintTop_toBottomOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintTop_toBottomOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13529,11 +13537,11 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintTop_toBottomOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintTop_toBottomOf
      */
     public static final int ConstraintSet_layout_constraintTop_toBottomOf=63;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintTop_toTopOf}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintTop_toTopOf}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13549,20 +13557,20 @@ public final class R {
      * <tr><td>parent</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintTop_toTopOf
+     * @attr name com.craiovadata.aus.sydney:layout_constraintTop_toTopOf
      */
     public static final int ConstraintSet_layout_constraintTop_toTopOf=64;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintVertical_bias}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintVertical_bias}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintVertical_bias
+     * @attr name com.craiovadata.aus.sydney:layout_constraintVertical_bias
      */
     public static final int ConstraintSet_layout_constraintVertical_bias=65;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintVertical_chainStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintVertical_chainStyle}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13576,20 +13584,20 @@ public final class R {
      * <tr><td>spread_inside</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintVertical_chainStyle
+     * @attr name com.craiovadata.aus.sydney:layout_constraintVertical_chainStyle
      */
     public static final int ConstraintSet_layout_constraintVertical_chainStyle=66;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintVertical_weight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintVertical_weight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintVertical_weight
+     * @attr name com.craiovadata.aus.sydney:layout_constraintVertical_weight
      */
     public static final int ConstraintSet_layout_constraintVertical_weight=67;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_default}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_default}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13603,11 +13611,11 @@ public final class R {
      * <tr><td>wrap</td><td>1</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_default
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_default
      */
     public static final int ConstraintSet_layout_constraintWidth_default=68;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_max}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_max}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13624,11 +13632,11 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_max
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_max
      */
     public static final int ConstraintSet_layout_constraintWidth_max=69;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_min}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_min}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13645,20 +13653,20 @@ public final class R {
      * <tr><td>wrap</td><td>fffffffe</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_min
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_min
      */
     public static final int ConstraintSet_layout_constraintWidth_min=70;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_constraintWidth_percent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_constraintWidth_percent}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_constraintWidth_percent
+     * @attr name com.craiovadata.aus.sydney:layout_constraintWidth_percent
      */
     public static final int ConstraintSet_layout_constraintWidth_percent=71;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_editor_absoluteX}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_editor_absoluteX}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13667,11 +13675,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_editor_absoluteX
+     * @attr name com.craiovadata.aus.sydney:layout_editor_absoluteX
      */
     public static final int ConstraintSet_layout_editor_absoluteX=72;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_editor_absoluteY}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_editor_absoluteY}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13680,11 +13688,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_editor_absoluteY
+     * @attr name com.craiovadata.aus.sydney:layout_editor_absoluteY
      */
     public static final int ConstraintSet_layout_editor_absoluteY=73;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginBottom}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginBottom}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13693,11 +13701,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginBottom
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginBottom
      */
     public static final int ConstraintSet_layout_goneMarginBottom=74;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginEnd}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13706,11 +13714,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginEnd
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginEnd
      */
     public static final int ConstraintSet_layout_goneMarginEnd=75;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginLeft}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginLeft}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13719,11 +13727,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginLeft
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginLeft
      */
     public static final int ConstraintSet_layout_goneMarginLeft=76;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginRight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginRight}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13732,11 +13740,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginRight
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginRight
      */
     public static final int ConstraintSet_layout_goneMarginRight=77;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginStart}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13745,11 +13753,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginStart
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginStart
      */
     public static final int ConstraintSet_layout_goneMarginStart=78;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_goneMarginTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_goneMarginTop}
      * attribute's value can be found in the {@link #ConstraintSet} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -13758,7 +13766,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_goneMarginTop
+     * @attr name com.craiovadata.aus.sydney:layout_goneMarginTop
      */
     public static final int ConstraintSet_layout_goneMarginTop=79;
     /**
@@ -13768,8 +13776,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.craiovadata.us.ct.bridgeport:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.craiovadata.us.ct.bridgeport:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.craiovadata.aus.sydney:keylines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.craiovadata.aus.sydney:statusBarBackground}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -13778,7 +13786,7 @@ public final class R {
       0x7f030127, 0x7f0301e1
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#keylines}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#keylines}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13786,11 +13794,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:keylines
+     * @attr name com.craiovadata.aus.sydney:keylines
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#statusBarBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#statusBarBackground}
      * attribute's value can be found in the {@link #CoordinatorLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13801,7 +13809,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:statusBarBackground
+     * @attr name com.craiovadata.aus.sydney:statusBarBackground
      */
     public static final int CoordinatorLayout_statusBarBackground=1;
     /**
@@ -13812,12 +13820,12 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.craiovadata.us.ct.bridgeport:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.craiovadata.us.ct.bridgeport:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.craiovadata.us.ct.bridgeport:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.craiovadata.us.ct.bridgeport:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.craiovadata.us.ct.bridgeport:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.craiovadata.us.ct.bridgeport:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.craiovadata.aus.sydney:layout_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.craiovadata.aus.sydney:layout_anchorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.craiovadata.aus.sydney:layout_behavior}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.craiovadata.aus.sydney:layout_dodgeInsetEdges}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.craiovadata.aus.sydney:layout_insetEdge}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.craiovadata.aus.sydney:layout_keyline}</code></td><td></td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -13861,7 +13869,7 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_anchor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_anchor}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13869,11 +13877,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_anchor
+     * @attr name com.craiovadata.aus.sydney:layout_anchor
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_anchorGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_anchorGravity}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13898,21 +13906,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_anchorGravity
+     * @attr name com.craiovadata.aus.sydney:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_behavior}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_behavior}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_behavior
+     * @attr name com.craiovadata.aus.sydney:layout_behavior
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_dodgeInsetEdges}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_dodgeInsetEdges}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -13931,11 +13939,11 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_dodgeInsetEdges
+     * @attr name com.craiovadata.aus.sydney:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_insetEdge}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_insetEdge}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -13953,16 +13961,16 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_insetEdge
+     * @attr name com.craiovadata.aus.sydney:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout_keyline}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout_keyline}
      * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout_keyline
+     * @attr name com.craiovadata.aus.sydney:layout_keyline
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
@@ -13972,8 +13980,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.craiovadata.us.ct.bridgeport:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.craiovadata.us.ct.bridgeport:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetDialogTheme com.craiovadata.aus.sydney:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DesignTheme_bottomSheetStyle com.craiovadata.aus.sydney:bottomSheetStyle}</code></td><td></td></tr>
      * </table>
      * @see #DesignTheme_bottomSheetDialogTheme
      * @see #DesignTheme_bottomSheetStyle
@@ -13982,7 +13990,7 @@ public final class R {
       0x7f03004a, 0x7f03004b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -13990,11 +13998,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:bottomSheetDialogTheme
+     * @attr name com.craiovadata.aus.sydney:bottomSheetDialogTheme
      */
     public static final int DesignTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #DesignTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14002,7 +14010,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:bottomSheetStyle
+     * @attr name com.craiovadata.aus.sydney:bottomSheetStyle
      */
     public static final int DesignTheme_bottomSheetStyle=1;
     /**
@@ -14018,12 +14026,12 @@ public final class R {
      * <tr><td><code>{@link #DialogPreference_android_positiveButtonText android:positiveButtonText}</code></td><td></td></tr>
      * <tr><td><code>{@link #DialogPreference_android_negativeButtonText android:negativeButtonText}</code></td><td></td></tr>
      * <tr><td><code>{@link #DialogPreference_android_dialogLayout android:dialogLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogIcon com.craiovadata.us.ct.bridgeport:dialogIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogLayout com.craiovadata.us.ct.bridgeport:dialogLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogMessage com.craiovadata.us.ct.bridgeport:dialogMessage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_dialogTitle com.craiovadata.us.ct.bridgeport:dialogTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_negativeButtonText com.craiovadata.us.ct.bridgeport:negativeButtonText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DialogPreference_positiveButtonText com.craiovadata.us.ct.bridgeport:positiveButtonText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogIcon com.craiovadata.aus.sydney:dialogIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogLayout com.craiovadata.aus.sydney:dialogLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogMessage com.craiovadata.aus.sydney:dialogMessage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_dialogTitle com.craiovadata.aus.sydney:dialogTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_negativeButtonText com.craiovadata.aus.sydney:negativeButtonText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DialogPreference_positiveButtonText com.craiovadata.aus.sydney:positiveButtonText}</code></td><td></td></tr>
      * </table>
      * @see #DialogPreference_android_dialogTitle
      * @see #DialogPreference_android_dialogMessage
@@ -14108,7 +14116,7 @@ public final class R {
      */
     public static final int DialogPreference_android_dialogLayout=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogIcon}
      * attribute's value can be found in the {@link #DialogPreference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14116,11 +14124,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogIcon
+     * @attr name com.craiovadata.aus.sydney:dialogIcon
      */
     public static final int DialogPreference_dialogIcon=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogLayout}
      * attribute's value can be found in the {@link #DialogPreference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14128,47 +14136,47 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogLayout
+     * @attr name com.craiovadata.aus.sydney:dialogLayout
      */
     public static final int DialogPreference_dialogLayout=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogMessage}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogMessage}
      * attribute's value can be found in the {@link #DialogPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogMessage
+     * @attr name com.craiovadata.aus.sydney:dialogMessage
      */
     public static final int DialogPreference_dialogMessage=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogTitle}
      * attribute's value can be found in the {@link #DialogPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogTitle
+     * @attr name com.craiovadata.aus.sydney:dialogTitle
      */
     public static final int DialogPreference_dialogTitle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#negativeButtonText}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#negativeButtonText}
      * attribute's value can be found in the {@link #DialogPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:negativeButtonText
+     * @attr name com.craiovadata.aus.sydney:negativeButtonText
      */
     public static final int DialogPreference_negativeButtonText=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#positiveButtonText}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#positiveButtonText}
      * attribute's value can be found in the {@link #DialogPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:positiveButtonText
+     * @attr name com.craiovadata.aus.sydney:positiveButtonText
      */
     public static final int DialogPreference_positiveButtonText=11;
     /**
@@ -14178,14 +14186,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.craiovadata.us.ct.bridgeport:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.craiovadata.us.ct.bridgeport:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.craiovadata.us.ct.bridgeport:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.craiovadata.us.ct.bridgeport:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.craiovadata.us.ct.bridgeport:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.craiovadata.us.ct.bridgeport:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.craiovadata.us.ct.bridgeport:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.craiovadata.us.ct.bridgeport:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.craiovadata.aus.sydney:arrowHeadLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.craiovadata.aus.sydney:arrowShaftLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.craiovadata.aus.sydney:barLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.craiovadata.aus.sydney:color}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.craiovadata.aus.sydney:drawableSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.craiovadata.aus.sydney:gapBetweenBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.craiovadata.aus.sydney:spinBars}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.craiovadata.aus.sydney:thickness}</code></td><td></td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -14201,7 +14209,7 @@ public final class R {
       0x7f0300c4, 0x7f0300f9, 0x7f0301d6, 0x7f03022d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#arrowHeadLength}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#arrowHeadLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14210,11 +14218,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:arrowHeadLength
+     * @attr name com.craiovadata.aus.sydney:arrowHeadLength
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#arrowShaftLength}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#arrowShaftLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14223,11 +14231,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:arrowShaftLength
+     * @attr name com.craiovadata.aus.sydney:arrowShaftLength
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#barLength}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#barLength}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14236,22 +14244,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:barLength
+     * @attr name com.craiovadata.aus.sydney:barLength
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#color}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#color}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:color
+     * @attr name com.craiovadata.aus.sydney:color
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#drawableSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#drawableSize}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14260,11 +14268,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:drawableSize
+     * @attr name com.craiovadata.aus.sydney:drawableSize
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#gapBetweenBars}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#gapBetweenBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14273,21 +14281,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:gapBetweenBars
+     * @attr name com.craiovadata.aus.sydney:gapBetweenBars
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#spinBars}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#spinBars}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:spinBars
+     * @attr name com.craiovadata.aus.sydney:spinBars
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#thickness}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#thickness}
      * attribute's value can be found in the {@link #DrawerArrowToggle} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14296,7 +14304,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:thickness
+     * @attr name com.craiovadata.aus.sydney:thickness
      */
     public static final int DrawerArrowToggle_thickness=7;
     /**
@@ -14306,19 +14314,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.craiovadata.us.ct.bridgeport:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.craiovadata.us.ct.bridgeport:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.craiovadata.us.ct.bridgeport:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.craiovadata.us.ct.bridgeport:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.craiovadata.us.ct.bridgeport:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.craiovadata.us.ct.bridgeport:fabSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.craiovadata.us.ct.bridgeport:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.craiovadata.us.ct.bridgeport:hoveredFocusedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.craiovadata.us.ct.bridgeport:maxImageSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.craiovadata.us.ct.bridgeport:pressedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.craiovadata.us.ct.bridgeport:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.craiovadata.us.ct.bridgeport:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.craiovadata.us.ct.bridgeport:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.craiovadata.aus.sydney:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.craiovadata.aus.sydney:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.craiovadata.aus.sydney:borderWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.craiovadata.aus.sydney:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.craiovadata.aus.sydney:fabCustomSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.craiovadata.aus.sydney:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.craiovadata.aus.sydney:hideMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.craiovadata.aus.sydney:hoveredFocusedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.craiovadata.aus.sydney:maxImageSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.craiovadata.aus.sydney:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_rippleColor com.craiovadata.aus.sydney:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.craiovadata.aus.sydney:showMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.craiovadata.aus.sydney:useCompatPadding}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -14341,18 +14349,18 @@ public final class R {
       0x7f03024b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTint
+     * @attr name com.craiovadata.aus.sydney:backgroundTint
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14369,11 +14377,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTintMode
+     * @attr name com.craiovadata.aus.sydney:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#borderWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#borderWidth}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14382,11 +14390,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:borderWidth
+     * @attr name com.craiovadata.aus.sydney:borderWidth
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#elevation}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14395,11 +14403,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:elevation
+     * @attr name com.craiovadata.aus.sydney:elevation
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fabCustomSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fabCustomSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14408,11 +14416,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fabCustomSize
+     * @attr name com.craiovadata.aus.sydney:fabCustomSize
      */
     public static final int FloatingActionButton_fabCustomSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fabSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fabSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14426,11 +14434,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fabSize
+     * @attr name com.craiovadata.aus.sydney:fabSize
      */
     public static final int FloatingActionButton_fabSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hideMotionSpec}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hideMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14438,11 +14446,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hideMotionSpec
+     * @attr name com.craiovadata.aus.sydney:hideMotionSpec
      */
     public static final int FloatingActionButton_hideMotionSpec=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hoveredFocusedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hoveredFocusedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14451,11 +14459,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hoveredFocusedTranslationZ
+     * @attr name com.craiovadata.aus.sydney:hoveredFocusedTranslationZ
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#maxImageSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#maxImageSize}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14464,11 +14472,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:maxImageSize
+     * @attr name com.craiovadata.aus.sydney:maxImageSize
      */
     public static final int FloatingActionButton_maxImageSize=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#pressedTranslationZ}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#pressedTranslationZ}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14477,22 +14485,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:pressedTranslationZ
+     * @attr name com.craiovadata.aus.sydney:pressedTranslationZ
      */
     public static final int FloatingActionButton_pressedTranslationZ=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#rippleColor}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:rippleColor
+     * @attr name com.craiovadata.aus.sydney:rippleColor
      */
     public static final int FloatingActionButton_rippleColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showMotionSpec}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showMotionSpec}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14500,17 +14508,17 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showMotionSpec
+     * @attr name com.craiovadata.aus.sydney:showMotionSpec
      */
     public static final int FloatingActionButton_showMotionSpec=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#useCompatPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#useCompatPadding}
      * attribute's value can be found in the {@link #FloatingActionButton} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:useCompatPadding
+     * @attr name com.craiovadata.aus.sydney:useCompatPadding
      */
     public static final int FloatingActionButton_useCompatPadding=12;
     /**
@@ -14520,7 +14528,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.craiovadata.us.ct.bridgeport:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.craiovadata.aus.sydney:behavior_autoHide}</code></td><td></td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -14528,13 +14536,13 @@ public final class R {
       0x7f030040
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#behavior_autoHide}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#behavior_autoHide}
      * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:behavior_autoHide
+     * @attr name com.craiovadata.aus.sydney:behavior_autoHide
      */
     public static final int FloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
@@ -14544,8 +14552,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing com.craiovadata.us.ct.bridgeport:itemSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing com.craiovadata.us.ct.bridgeport:lineSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing com.craiovadata.aus.sydney:itemSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing com.craiovadata.aus.sydney:lineSpacing}</code></td><td></td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
@@ -14554,7 +14562,7 @@ public final class R {
       0x7f030121, 0x7f03016a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemSpacing}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14563,11 +14571,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemSpacing
+     * @attr name com.craiovadata.aus.sydney:itemSpacing
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#lineSpacing}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#lineSpacing}
      * attribute's value can be found in the {@link #FlowLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -14576,7 +14584,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:lineSpacing
+     * @attr name com.craiovadata.aus.sydney:lineSpacing
      */
     public static final int FlowLayout_lineSpacing=1;
     /**
@@ -14586,12 +14594,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.craiovadata.us.ct.bridgeport:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.craiovadata.us.ct.bridgeport:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.craiovadata.us.ct.bridgeport:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.craiovadata.us.ct.bridgeport:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.craiovadata.us.ct.bridgeport:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.craiovadata.us.ct.bridgeport:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.craiovadata.aus.sydney:fontProviderAuthority}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.craiovadata.aus.sydney:fontProviderCerts}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.craiovadata.aus.sydney:fontProviderFetchStrategy}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.craiovadata.aus.sydney:fontProviderFetchTimeout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.craiovadata.aus.sydney:fontProviderPackage}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.craiovadata.aus.sydney:fontProviderQuery}</code></td><td></td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -14605,17 +14613,17 @@ public final class R {
       0x7f0300f2, 0x7f0300f3
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontProviderAuthority}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontProviderAuthority}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontProviderAuthority
+     * @attr name com.craiovadata.aus.sydney:fontProviderAuthority
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontProviderCerts}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontProviderCerts}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14623,11 +14631,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontProviderCerts
+     * @attr name com.craiovadata.aus.sydney:fontProviderCerts
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontProviderFetchStrategy}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontProviderFetchStrategy}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14640,11 +14648,11 @@ public final class R {
      * <tr><td>blocking</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontProviderFetchStrategy
+     * @attr name com.craiovadata.aus.sydney:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontProviderFetchTimeout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontProviderFetchTimeout}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
@@ -14657,27 +14665,27 @@ public final class R {
      * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontProviderFetchTimeout
+     * @attr name com.craiovadata.aus.sydney:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontProviderPackage}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontProviderPackage}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontProviderPackage
+     * @attr name com.craiovadata.aus.sydney:fontProviderPackage
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontProviderQuery}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontProviderQuery}
      * attribute's value can be found in the {@link #FontFamily} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontProviderQuery
+     * @attr name com.craiovadata.aus.sydney:fontProviderQuery
      */
     public static final int FontFamily_fontProviderQuery=5;
     /**
@@ -14692,11 +14700,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.craiovadata.us.ct.bridgeport:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.craiovadata.us.ct.bridgeport:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.craiovadata.us.ct.bridgeport:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.craiovadata.us.ct.bridgeport:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.craiovadata.us.ct.bridgeport:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.craiovadata.aus.sydney:font}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.craiovadata.aus.sydney:fontStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.craiovadata.aus.sydney:fontVariationSettings}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.craiovadata.aus.sydney:fontWeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.craiovadata.aus.sydney:ttcIndex}</code></td><td></td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -14772,7 +14780,7 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#font}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#font}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -14780,11 +14788,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:font
+     * @attr name com.craiovadata.aus.sydney:font
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontStyle}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -14797,35 +14805,35 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontStyle
+     * @attr name com.craiovadata.aus.sydney:fontStyle
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontVariationSettings}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontVariationSettings}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontVariationSettings
+     * @attr name com.craiovadata.aus.sydney:fontVariationSettings
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontWeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontWeight}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontWeight
+     * @attr name com.craiovadata.aus.sydney:fontWeight
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#ttcIndex}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#ttcIndex}
      * attribute's value can be found in the {@link #FontFamilyFont} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:ttcIndex
+     * @attr name com.craiovadata.aus.sydney:ttcIndex
      */
     public static final int FontFamilyFont_ttcIndex=9;
     /**
@@ -14837,7 +14845,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foreground android:foreground}</code></td><td></td></tr>
      * <tr><td><code>{@link #ForegroundLinearLayout_android_foregroundGravity android:foregroundGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.craiovadata.us.ct.bridgeport:foregroundInsidePadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ForegroundLinearLayout_foregroundInsidePadding com.craiovadata.aus.sydney:foregroundInsidePadding}</code></td><td></td></tr>
      * </table>
      * @see #ForegroundLinearLayout_android_foreground
      * @see #ForegroundLinearLayout_android_foregroundGravity
@@ -14889,13 +14897,13 @@ public final class R {
      */
     public static final int ForegroundLinearLayout_android_foregroundGravity=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#foregroundInsidePadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#foregroundInsidePadding}
      * attribute's value can be found in the {@link #ForegroundLinearLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:foregroundInsidePadding
+     * @attr name com.craiovadata.aus.sydney:foregroundInsidePadding
      */
     public static final int ForegroundLinearLayout_foregroundInsidePadding=2;
     /**
@@ -15130,10 +15138,10 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #GraphViewXML_android_title android:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GraphViewXML_seriesColor com.craiovadata.us.ct.bridgeport:seriesColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GraphViewXML_seriesData com.craiovadata.us.ct.bridgeport:seriesData}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GraphViewXML_seriesTitle com.craiovadata.us.ct.bridgeport:seriesTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #GraphViewXML_seriesType com.craiovadata.us.ct.bridgeport:seriesType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GraphViewXML_seriesColor com.craiovadata.aus.sydney:seriesColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GraphViewXML_seriesData com.craiovadata.aus.sydney:seriesData}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GraphViewXML_seriesTitle com.craiovadata.aus.sydney:seriesTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #GraphViewXML_seriesType com.craiovadata.aus.sydney:seriesType}</code></td><td></td></tr>
      * </table>
      * @see #GraphViewXML_android_title
      * @see #GraphViewXML_seriesColor
@@ -15156,44 +15164,44 @@ public final class R {
      */
     public static final int GraphViewXML_android_title=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seriesColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seriesColor}
      * attribute's value can be found in the {@link #GraphViewXML} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seriesColor
+     * @attr name com.craiovadata.aus.sydney:seriesColor
      */
     public static final int GraphViewXML_seriesColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seriesData}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seriesData}
      * attribute's value can be found in the {@link #GraphViewXML} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seriesData
+     * @attr name com.craiovadata.aus.sydney:seriesData
      */
     public static final int GraphViewXML_seriesData=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seriesTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seriesTitle}
      * attribute's value can be found in the {@link #GraphViewXML} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seriesTitle
+     * @attr name com.craiovadata.aus.sydney:seriesTitle
      */
     public static final int GraphViewXML_seriesTitle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seriesType}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seriesType}
      * attribute's value can be found in the {@link #GraphViewXML} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seriesType
+     * @attr name com.craiovadata.aus.sydney:seriesType
      */
     public static final int GraphViewXML_seriesType=4;
     /**
@@ -15239,10 +15247,10 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.craiovadata.us.ct.bridgeport:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.craiovadata.us.ct.bridgeport:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.craiovadata.us.ct.bridgeport:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.craiovadata.us.ct.bridgeport:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.craiovadata.aus.sydney:divider}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.craiovadata.aus.sydney:dividerPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.craiovadata.aus.sydney:measureWithLargestChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.craiovadata.aus.sydney:showDividers}</code></td><td></td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -15334,7 +15342,7 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#divider}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#divider}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15342,11 +15350,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:divider
+     * @attr name com.craiovadata.aus.sydney:divider
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dividerPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dividerPadding}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15355,21 +15363,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dividerPadding
+     * @attr name com.craiovadata.aus.sydney:dividerPadding
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#measureWithLargestChild}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#measureWithLargestChild}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:measureWithLargestChild
+     * @attr name com.craiovadata.aus.sydney:measureWithLargestChild
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showDividers}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showDividers}
      * attribute's value can be found in the {@link #LinearLayoutCompat} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15384,7 +15392,7 @@ public final class R {
      * <tr><td>none</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showDividers
+     * @attr name com.craiovadata.aus.sydney:showDividers
      */
     public static final int LinearLayoutCompat_showDividers=8;
     /**
@@ -15542,8 +15550,8 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ListPreference_android_entries android:entries}</code></td><td></td></tr>
      * <tr><td><code>{@link #ListPreference_android_entryValues android:entryValues}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ListPreference_entries com.craiovadata.us.ct.bridgeport:entries}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ListPreference_entryValues com.craiovadata.us.ct.bridgeport:entryValues}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ListPreference_entries com.craiovadata.aus.sydney:entries}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ListPreference_entryValues com.craiovadata.aus.sydney:entryValues}</code></td><td></td></tr>
      * </table>
      * @see #ListPreference_android_entries
      * @see #ListPreference_android_entryValues
@@ -15578,7 +15586,7 @@ public final class R {
      */
     public static final int ListPreference_android_entryValues=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#entries}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#entries}
      * attribute's value can be found in the {@link #ListPreference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15586,11 +15594,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:entries
+     * @attr name com.craiovadata.aus.sydney:entries
      */
     public static final int ListPreference_entries=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#entryValues}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#entryValues}
      * attribute's value can be found in the {@link #ListPreference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15598,7 +15606,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:entryValues
+     * @attr name com.craiovadata.aus.sydney:entryValues
      */
     public static final int ListPreference_entryValues=3;
     /**
@@ -15612,18 +15620,18 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetRight android:insetRight}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.craiovadata.us.ct.bridgeport:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.craiovadata.us.ct.bridgeport:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius com.craiovadata.us.ct.bridgeport:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.craiovadata.us.ct.bridgeport:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity com.craiovadata.us.ct.bridgeport:iconGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding com.craiovadata.us.ct.bridgeport:iconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize com.craiovadata.us.ct.bridgeport:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.craiovadata.us.ct.bridgeport:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.craiovadata.us.ct.bridgeport:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_rippleColor com.craiovadata.us.ct.bridgeport:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeColor com.craiovadata.us.ct.bridgeport:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_strokeWidth com.craiovadata.us.ct.bridgeport:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.craiovadata.aus.sydney:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.craiovadata.aus.sydney:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius com.craiovadata.aus.sydney:cornerRadius}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.craiovadata.aus.sydney:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity com.craiovadata.aus.sydney:iconGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding com.craiovadata.aus.sydney:iconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize com.craiovadata.aus.sydney:iconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.craiovadata.aus.sydney:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.craiovadata.aus.sydney:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_rippleColor com.craiovadata.aus.sydney:rippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeColor com.craiovadata.aus.sydney:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_strokeWidth com.craiovadata.aus.sydney:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialButton_android_insetLeft
      * @see #MaterialButton_android_insetRight
@@ -15717,18 +15725,18 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTint
+     * @attr name com.craiovadata.aus.sydney:backgroundTint
      */
     public static final int MaterialButton_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15745,11 +15753,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTintMode
+     * @attr name com.craiovadata.aus.sydney:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#cornerRadius}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#cornerRadius}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15758,11 +15766,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:cornerRadius
+     * @attr name com.craiovadata.aus.sydney:cornerRadius
      */
     public static final int MaterialButton_cornerRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#icon}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -15770,11 +15778,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:icon
+     * @attr name com.craiovadata.aus.sydney:icon
      */
     public static final int MaterialButton_icon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconGravity}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -15787,11 +15795,11 @@ public final class R {
      * <tr><td>textStart</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconGravity
+     * @attr name com.craiovadata.aus.sydney:iconGravity
      */
     public static final int MaterialButton_iconGravity=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconPadding}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15800,11 +15808,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconPadding
+     * @attr name com.craiovadata.aus.sydney:iconPadding
      */
     public static final int MaterialButton_iconPadding=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconSize}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconSize}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15813,22 +15821,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconSize
+     * @attr name com.craiovadata.aus.sydney:iconSize
      */
     public static final int MaterialButton_iconSize=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconTint}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconTint
+     * @attr name com.craiovadata.aus.sydney:iconTint
      */
     public static final int MaterialButton_iconTint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -15845,33 +15853,33 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconTintMode
+     * @attr name com.craiovadata.aus.sydney:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#rippleColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#rippleColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:rippleColor
+     * @attr name com.craiovadata.aus.sydney:rippleColor
      */
     public static final int MaterialButton_rippleColor=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:strokeColor
+     * @attr name com.craiovadata.aus.sydney:strokeColor
      */
     public static final int MaterialButton_strokeColor=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialButton} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15880,7 +15888,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:strokeWidth
+     * @attr name com.craiovadata.aus.sydney:strokeWidth
      */
     public static final int MaterialButton_strokeWidth=15;
     /**
@@ -15890,8 +15898,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeColor com.craiovadata.us.ct.bridgeport:strokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.craiovadata.us.ct.bridgeport:strokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeColor com.craiovadata.aus.sydney:strokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_strokeWidth com.craiovadata.aus.sydney:strokeWidth}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCardView_strokeColor
      * @see #MaterialCardView_strokeWidth
@@ -15900,18 +15908,18 @@ public final class R {
       0x7f0301e3, 0x7f0301e4
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#strokeColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#strokeColor}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:strokeColor
+     * @attr name com.craiovadata.aus.sydney:strokeColor
      */
     public static final int MaterialCardView_strokeColor=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#strokeWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#strokeWidth}
      * attribute's value can be found in the {@link #MaterialCardView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -15920,7 +15928,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:strokeWidth
+     * @attr name com.craiovadata.aus.sydney:strokeWidth
      */
     public static final int MaterialCardView_strokeWidth=1;
     /**
@@ -15930,38 +15938,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.craiovadata.us.ct.bridgeport:bottomSheetDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.craiovadata.us.ct.bridgeport:bottomSheetStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.craiovadata.us.ct.bridgeport:chipGroupStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.craiovadata.us.ct.bridgeport:chipStandaloneStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.craiovadata.us.ct.bridgeport:chipStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.craiovadata.us.ct.bridgeport:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.craiovadata.us.ct.bridgeport:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.craiovadata.us.ct.bridgeport:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.craiovadata.us.ct.bridgeport:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.craiovadata.us.ct.bridgeport:colorSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.craiovadata.us.ct.bridgeport:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.craiovadata.us.ct.bridgeport:floatingActionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.craiovadata.us.ct.bridgeport:materialButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.craiovadata.us.ct.bridgeport:materialCardViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.craiovadata.us.ct.bridgeport:navigationViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.craiovadata.us.ct.bridgeport:scrimBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.craiovadata.us.ct.bridgeport:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.craiovadata.us.ct.bridgeport:tabStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.craiovadata.us.ct.bridgeport:textAppearanceBody1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.craiovadata.us.ct.bridgeport:textAppearanceBody2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.craiovadata.us.ct.bridgeport:textAppearanceButton}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.craiovadata.us.ct.bridgeport:textAppearanceCaption}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.craiovadata.us.ct.bridgeport:textAppearanceHeadline1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.craiovadata.us.ct.bridgeport:textAppearanceHeadline2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.craiovadata.us.ct.bridgeport:textAppearanceHeadline3}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.craiovadata.us.ct.bridgeport:textAppearanceHeadline4}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.craiovadata.us.ct.bridgeport:textAppearanceHeadline5}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.craiovadata.us.ct.bridgeport:textAppearanceHeadline6}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.craiovadata.us.ct.bridgeport:textAppearanceOverline}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.craiovadata.us.ct.bridgeport:textAppearanceSubtitle1}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.craiovadata.us.ct.bridgeport:textAppearanceSubtitle2}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.craiovadata.us.ct.bridgeport:textInputStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetDialogTheme com.craiovadata.aus.sydney:bottomSheetDialogTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_bottomSheetStyle com.craiovadata.aus.sydney:bottomSheetStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipGroupStyle com.craiovadata.aus.sydney:chipGroupStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStandaloneStyle com.craiovadata.aus.sydney:chipStandaloneStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_chipStyle com.craiovadata.aus.sydney:chipStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorAccent com.craiovadata.aus.sydney:colorAccent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorBackgroundFloating com.craiovadata.aus.sydney:colorBackgroundFloating}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimary com.craiovadata.aus.sydney:colorPrimary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorPrimaryDark com.craiovadata.aus.sydney:colorPrimaryDark}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_colorSecondary com.craiovadata.aus.sydney:colorSecondary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_editTextStyle com.craiovadata.aus.sydney:editTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_floatingActionButtonStyle com.craiovadata.aus.sydney:floatingActionButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialButtonStyle com.craiovadata.aus.sydney:materialButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_materialCardViewStyle com.craiovadata.aus.sydney:materialCardViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_navigationViewStyle com.craiovadata.aus.sydney:navigationViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_scrimBackground com.craiovadata.aus.sydney:scrimBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_snackbarButtonStyle com.craiovadata.aus.sydney:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_tabStyle com.craiovadata.aus.sydney:tabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody1 com.craiovadata.aus.sydney:textAppearanceBody1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceBody2 com.craiovadata.aus.sydney:textAppearanceBody2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceButton com.craiovadata.aus.sydney:textAppearanceButton}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceCaption com.craiovadata.aus.sydney:textAppearanceCaption}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline1 com.craiovadata.aus.sydney:textAppearanceHeadline1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline2 com.craiovadata.aus.sydney:textAppearanceHeadline2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline3 com.craiovadata.aus.sydney:textAppearanceHeadline3}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline4 com.craiovadata.aus.sydney:textAppearanceHeadline4}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline5 com.craiovadata.aus.sydney:textAppearanceHeadline5}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceHeadline6 com.craiovadata.aus.sydney:textAppearanceHeadline6}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceOverline com.craiovadata.aus.sydney:textAppearanceOverline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle1 com.craiovadata.aus.sydney:textAppearanceSubtitle1}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textAppearanceSubtitle2 com.craiovadata.aus.sydney:textAppearanceSubtitle2}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialComponentsTheme_textInputStyle com.craiovadata.aus.sydney:textInputStyle}</code></td><td></td></tr>
      * </table>
      * @see #MaterialComponentsTheme_bottomSheetDialogTheme
      * @see #MaterialComponentsTheme_bottomSheetStyle
@@ -16007,7 +16015,7 @@ public final class R {
       0x7f030220, 0x7f030225, 0x7f030226, 0x7f03022a
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#bottomSheetDialogTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#bottomSheetDialogTheme}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16015,11 +16023,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:bottomSheetDialogTheme
+     * @attr name com.craiovadata.aus.sydney:bottomSheetDialogTheme
      */
     public static final int MaterialComponentsTheme_bottomSheetDialogTheme=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#bottomSheetStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#bottomSheetStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16027,11 +16035,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:bottomSheetStyle
+     * @attr name com.craiovadata.aus.sydney:bottomSheetStyle
      */
     public static final int MaterialComponentsTheme_bottomSheetStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipGroupStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipGroupStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16039,11 +16047,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipGroupStyle
+     * @attr name com.craiovadata.aus.sydney:chipGroupStyle
      */
     public static final int MaterialComponentsTheme_chipGroupStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipStandaloneStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipStandaloneStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16051,11 +16059,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipStandaloneStyle
+     * @attr name com.craiovadata.aus.sydney:chipStandaloneStyle
      */
     public static final int MaterialComponentsTheme_chipStandaloneStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#chipStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#chipStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16063,66 +16071,66 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:chipStyle
+     * @attr name com.craiovadata.aus.sydney:chipStyle
      */
     public static final int MaterialComponentsTheme_chipStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorAccent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorAccent}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorAccent
+     * @attr name com.craiovadata.aus.sydney:colorAccent
      */
     public static final int MaterialComponentsTheme_colorAccent=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorBackgroundFloating}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorBackgroundFloating}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorBackgroundFloating
+     * @attr name com.craiovadata.aus.sydney:colorBackgroundFloating
      */
     public static final int MaterialComponentsTheme_colorBackgroundFloating=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorPrimary}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorPrimary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorPrimary
+     * @attr name com.craiovadata.aus.sydney:colorPrimary
      */
     public static final int MaterialComponentsTheme_colorPrimary=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorPrimaryDark}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorPrimaryDark}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorPrimaryDark
+     * @attr name com.craiovadata.aus.sydney:colorPrimaryDark
      */
     public static final int MaterialComponentsTheme_colorPrimaryDark=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#colorSecondary}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#colorSecondary}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:colorSecondary
+     * @attr name com.craiovadata.aus.sydney:colorSecondary
      */
     public static final int MaterialComponentsTheme_colorSecondary=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#editTextStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#editTextStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16130,11 +16138,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:editTextStyle
+     * @attr name com.craiovadata.aus.sydney:editTextStyle
      */
     public static final int MaterialComponentsTheme_editTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#floatingActionButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#floatingActionButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16160,11 +16168,11 @@ public final class R {
      * The % suffix always means a percentage of the base size;
      * the optional %p suffix provides a size relative to some parent container.
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:floatingActionButtonStyle
+     * @attr name com.craiovadata.aus.sydney:floatingActionButtonStyle
      */
     public static final int MaterialComponentsTheme_floatingActionButtonStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#materialButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#materialButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16172,11 +16180,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:materialButtonStyle
+     * @attr name com.craiovadata.aus.sydney:materialButtonStyle
      */
     public static final int MaterialComponentsTheme_materialButtonStyle=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#materialCardViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#materialCardViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16184,11 +16192,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:materialCardViewStyle
+     * @attr name com.craiovadata.aus.sydney:materialCardViewStyle
      */
     public static final int MaterialComponentsTheme_materialCardViewStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#navigationViewStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#navigationViewStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16196,11 +16204,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:navigationViewStyle
+     * @attr name com.craiovadata.aus.sydney:navigationViewStyle
      */
     public static final int MaterialComponentsTheme_navigationViewStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#scrimBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#scrimBackground}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16211,11 +16219,11 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:scrimBackground
+     * @attr name com.craiovadata.aus.sydney:scrimBackground
      */
     public static final int MaterialComponentsTheme_scrimBackground=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16223,11 +16231,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:snackbarButtonStyle
+     * @attr name com.craiovadata.aus.sydney:snackbarButtonStyle
      */
     public static final int MaterialComponentsTheme_snackbarButtonStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16235,11 +16243,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabStyle
+     * @attr name com.craiovadata.aus.sydney:tabStyle
      */
     public static final int MaterialComponentsTheme_tabStyle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceBody1}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceBody1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16247,11 +16255,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceBody1
+     * @attr name com.craiovadata.aus.sydney:textAppearanceBody1
      */
     public static final int MaterialComponentsTheme_textAppearanceBody1=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceBody2}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceBody2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16259,11 +16267,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceBody2
+     * @attr name com.craiovadata.aus.sydney:textAppearanceBody2
      */
     public static final int MaterialComponentsTheme_textAppearanceBody2=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceButton}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceButton}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16271,11 +16279,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceButton
+     * @attr name com.craiovadata.aus.sydney:textAppearanceButton
      */
     public static final int MaterialComponentsTheme_textAppearanceButton=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceCaption}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceCaption}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16283,11 +16291,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceCaption
+     * @attr name com.craiovadata.aus.sydney:textAppearanceCaption
      */
     public static final int MaterialComponentsTheme_textAppearanceCaption=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceHeadline1}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceHeadline1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16295,11 +16303,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceHeadline1
+     * @attr name com.craiovadata.aus.sydney:textAppearanceHeadline1
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline1=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceHeadline2}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceHeadline2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16307,11 +16315,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceHeadline2
+     * @attr name com.craiovadata.aus.sydney:textAppearanceHeadline2
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline2=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceHeadline3}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceHeadline3}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16319,11 +16327,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceHeadline3
+     * @attr name com.craiovadata.aus.sydney:textAppearanceHeadline3
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline3=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceHeadline4}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceHeadline4}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16331,11 +16339,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceHeadline4
+     * @attr name com.craiovadata.aus.sydney:textAppearanceHeadline4
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline4=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceHeadline5}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceHeadline5}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16343,11 +16351,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceHeadline5
+     * @attr name com.craiovadata.aus.sydney:textAppearanceHeadline5
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline5=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceHeadline6}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceHeadline6}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16355,11 +16363,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceHeadline6
+     * @attr name com.craiovadata.aus.sydney:textAppearanceHeadline6
      */
     public static final int MaterialComponentsTheme_textAppearanceHeadline6=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceOverline}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceOverline}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16367,11 +16375,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceOverline
+     * @attr name com.craiovadata.aus.sydney:textAppearanceOverline
      */
     public static final int MaterialComponentsTheme_textAppearanceOverline=28;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceSubtitle1}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceSubtitle1}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16379,11 +16387,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceSubtitle1
+     * @attr name com.craiovadata.aus.sydney:textAppearanceSubtitle1
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle1=29;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAppearanceSubtitle2}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAppearanceSubtitle2}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16391,11 +16399,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAppearanceSubtitle2
+     * @attr name com.craiovadata.aus.sydney:textAppearanceSubtitle2
      */
     public static final int MaterialComponentsTheme_textAppearanceSubtitle2=30;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textInputStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textInputStyle}
      * attribute's value can be found in the {@link #MaterialComponentsTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16403,7 +16411,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textInputStyle
+     * @attr name com.craiovadata.aus.sydney:textInputStyle
      */
     public static final int MaterialComponentsTheme_textInputStyle=31;
     /**
@@ -16529,16 +16537,16 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.craiovadata.us.ct.bridgeport:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.craiovadata.us.ct.bridgeport:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.craiovadata.us.ct.bridgeport:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.craiovadata.us.ct.bridgeport:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.craiovadata.us.ct.bridgeport:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.craiovadata.us.ct.bridgeport:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.craiovadata.us.ct.bridgeport:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.craiovadata.us.ct.bridgeport:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.craiovadata.us.ct.bridgeport:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.craiovadata.us.ct.bridgeport:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.craiovadata.aus.sydney:actionLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.craiovadata.aus.sydney:actionProviderClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.craiovadata.aus.sydney:actionViewClass}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.craiovadata.aus.sydney:alphabeticModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.craiovadata.aus.sydney:contentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.craiovadata.aus.sydney:iconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.craiovadata.aus.sydney:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.craiovadata.aus.sydney:numericModifiers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.craiovadata.aus.sydney:showAsAction}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.craiovadata.aus.sydney:tooltipText}</code></td><td></td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -16715,7 +16723,7 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionLayout}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16723,31 +16731,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionLayout
+     * @attr name com.craiovadata.aus.sydney:actionLayout
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionProviderClass}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionProviderClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionProviderClass
+     * @attr name com.craiovadata.aus.sydney:actionProviderClass
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#actionViewClass}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#actionViewClass}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:actionViewClass
+     * @attr name com.craiovadata.aus.sydney:actionViewClass
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#alphabeticModifiers}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#alphabeticModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -16764,32 +16772,32 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:alphabeticModifiers
+     * @attr name com.craiovadata.aus.sydney:alphabeticModifiers
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentDescription}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentDescription}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentDescription
+     * @attr name com.craiovadata.aus.sydney:contentDescription
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconTint}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconTint
+     * @attr name com.craiovadata.aus.sydney:iconTint
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconTintMode}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -16806,11 +16814,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconTintMode
+     * @attr name com.craiovadata.aus.sydney:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#numericModifiers}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#numericModifiers}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -16827,11 +16835,11 @@ public final class R {
      * <tr><td>SYM</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:numericModifiers
+     * @attr name com.craiovadata.aus.sydney:numericModifiers
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showAsAction}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showAsAction}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -16847,17 +16855,17 @@ public final class R {
      * <tr><td>withText</td><td>4</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showAsAction
+     * @attr name com.craiovadata.aus.sydney:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tooltipText}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tooltipText}
      * attribute's value can be found in the {@link #MenuItem} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tooltipText
+     * @attr name com.craiovadata.aus.sydney:tooltipText
      */
     public static final int MenuItem_tooltipText=22;
     /**
@@ -16874,8 +16882,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.craiovadata.us.ct.bridgeport:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.craiovadata.us.ct.bridgeport:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.craiovadata.aus.sydney:preserveIconSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.craiovadata.aus.sydney:subMenuArrow}</code></td><td></td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -16980,17 +16988,17 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preserveIconSpacing}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preserveIconSpacing}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preserveIconSpacing
+     * @attr name com.craiovadata.aus.sydney:preserveIconSpacing
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subMenuArrow}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subMenuArrow}
      * attribute's value can be found in the {@link #MenuView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -16998,7 +17006,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subMenuArrow
+     * @attr name com.craiovadata.aus.sydney:subMenuArrow
      */
     public static final int MenuView_subMenuArrow=8;
     /**
@@ -17010,8 +17018,8 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MultiSelectListPreference_android_entries android:entries}</code></td><td></td></tr>
      * <tr><td><code>{@link #MultiSelectListPreference_android_entryValues android:entryValues}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MultiSelectListPreference_entries com.craiovadata.us.ct.bridgeport:entries}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MultiSelectListPreference_entryValues com.craiovadata.us.ct.bridgeport:entryValues}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MultiSelectListPreference_entries com.craiovadata.aus.sydney:entries}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MultiSelectListPreference_entryValues com.craiovadata.aus.sydney:entryValues}</code></td><td></td></tr>
      * </table>
      * @see #MultiSelectListPreference_android_entries
      * @see #MultiSelectListPreference_android_entryValues
@@ -17046,7 +17054,7 @@ public final class R {
      */
     public static final int MultiSelectListPreference_android_entryValues=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#entries}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#entries}
      * attribute's value can be found in the {@link #MultiSelectListPreference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17054,11 +17062,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:entries
+     * @attr name com.craiovadata.aus.sydney:entries
      */
     public static final int MultiSelectListPreference_entries=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#entryValues}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#entryValues}
      * attribute's value can be found in the {@link #MultiSelectListPreference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17066,7 +17074,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:entryValues
+     * @attr name com.craiovadata.aus.sydney:entryValues
      */
     public static final int MultiSelectListPreference_entryValues=3;
     /**
@@ -17079,15 +17087,15 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.craiovadata.us.ct.bridgeport:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.craiovadata.us.ct.bridgeport:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.craiovadata.us.ct.bridgeport:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.craiovadata.us.ct.bridgeport:itemHorizontalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding com.craiovadata.us.ct.bridgeport:itemIconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconTint com.craiovadata.us.ct.bridgeport:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.craiovadata.us.ct.bridgeport:itemTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemTextColor com.craiovadata.us.ct.bridgeport:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.craiovadata.us.ct.bridgeport:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.craiovadata.aus.sydney:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.craiovadata.aus.sydney:headerLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.craiovadata.aus.sydney:itemBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.craiovadata.aus.sydney:itemHorizontalPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding com.craiovadata.aus.sydney:itemIconPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconTint com.craiovadata.aus.sydney:itemIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextAppearance com.craiovadata.aus.sydney:itemTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemTextColor com.craiovadata.aus.sydney:itemTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.craiovadata.aus.sydney:menu}</code></td><td></td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -17146,7 +17154,7 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#elevation}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17155,11 +17163,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:elevation
+     * @attr name com.craiovadata.aus.sydney:elevation
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#headerLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#headerLayout}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17167,11 +17175,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:headerLayout
+     * @attr name com.craiovadata.aus.sydney:headerLayout
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemBackground}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17179,11 +17187,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemBackground
+     * @attr name com.craiovadata.aus.sydney:itemBackground
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemHorizontalPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemHorizontalPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17192,11 +17200,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemHorizontalPadding
+     * @attr name com.craiovadata.aus.sydney:itemHorizontalPadding
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemIconPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemIconPadding}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17205,22 +17213,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemIconPadding
+     * @attr name com.craiovadata.aus.sydney:itemIconPadding
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemIconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemIconTint}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemIconTint
+     * @attr name com.craiovadata.aus.sydney:itemIconTint
      */
     public static final int NavigationView_itemIconTint=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemTextAppearance}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17228,22 +17236,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemTextAppearance
+     * @attr name com.craiovadata.aus.sydney:itemTextAppearance
      */
     public static final int NavigationView_itemTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#itemTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#itemTextColor}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:itemTextColor
+     * @attr name com.craiovadata.aus.sydney:itemTextColor
      */
     public static final int NavigationView_itemTextColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#menu}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#menu}
      * attribute's value can be found in the {@link #NavigationView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17251,7 +17259,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:menu
+     * @attr name com.craiovadata.aus.sydney:menu
      */
     public static final int NavigationView_menu=11;
     /**
@@ -17263,7 +17271,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.craiovadata.us.ct.bridgeport:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.craiovadata.aus.sydney:overlapAnchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -17300,13 +17308,13 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#overlapAnchor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#overlapAnchor}
      * attribute's value can be found in the {@link #PopupWindow} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:overlapAnchor
+     * @attr name com.craiovadata.aus.sydney:overlapAnchor
      */
     public static final int PopupWindow_overlapAnchor=2;
     /**
@@ -17316,7 +17324,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.craiovadata.us.ct.bridgeport:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.craiovadata.aus.sydney:state_above_anchor}</code></td><td></td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -17324,13 +17332,13 @@ public final class R {
       0x7f0301dc
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#state_above_anchor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#state_above_anchor}
      * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:state_above_anchor
+     * @attr name com.craiovadata.aus.sydney:state_above_anchor
      */
     public static final int PopupWindowBackgroundState_state_above_anchor=0;
     /**
@@ -17356,25 +17364,25 @@ public final class R {
      * <tr><td><code>{@link #Preference_android_fragment android:fragment}</code></td><td></td></tr>
      * <tr><td><code>{@link #Preference_android_singleLineTitle android:singleLineTitle}</code></td><td></td></tr>
      * <tr><td><code>{@link #Preference_android_iconSpaceReserved android:iconSpaceReserved}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_allowDividerAbove com.craiovadata.us.ct.bridgeport:allowDividerAbove}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_allowDividerBelow com.craiovadata.us.ct.bridgeport:allowDividerBelow}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_defaultValue com.craiovadata.us.ct.bridgeport:defaultValue}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_dependency com.craiovadata.us.ct.bridgeport:dependency}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_enabled com.craiovadata.us.ct.bridgeport:enabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_fragment com.craiovadata.us.ct.bridgeport:fragment}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_icon com.craiovadata.us.ct.bridgeport:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_iconSpaceReserved com.craiovadata.us.ct.bridgeport:iconSpaceReserved}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_isPreferenceVisible com.craiovadata.us.ct.bridgeport:isPreferenceVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_key com.craiovadata.us.ct.bridgeport:key}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_layout com.craiovadata.us.ct.bridgeport:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_order com.craiovadata.us.ct.bridgeport:order}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_persistent com.craiovadata.us.ct.bridgeport:persistent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_selectable com.craiovadata.us.ct.bridgeport:selectable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_shouldDisableView com.craiovadata.us.ct.bridgeport:shouldDisableView}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_singleLineTitle com.craiovadata.us.ct.bridgeport:singleLineTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_summary com.craiovadata.us.ct.bridgeport:summary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_title com.craiovadata.us.ct.bridgeport:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Preference_widgetLayout com.craiovadata.us.ct.bridgeport:widgetLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_allowDividerAbove com.craiovadata.aus.sydney:allowDividerAbove}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_allowDividerBelow com.craiovadata.aus.sydney:allowDividerBelow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_defaultValue com.craiovadata.aus.sydney:defaultValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_dependency com.craiovadata.aus.sydney:dependency}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_enabled com.craiovadata.aus.sydney:enabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_fragment com.craiovadata.aus.sydney:fragment}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_icon com.craiovadata.aus.sydney:icon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_iconSpaceReserved com.craiovadata.aus.sydney:iconSpaceReserved}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_isPreferenceVisible com.craiovadata.aus.sydney:isPreferenceVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_key com.craiovadata.aus.sydney:key}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_layout com.craiovadata.aus.sydney:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_order com.craiovadata.aus.sydney:order}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_persistent com.craiovadata.aus.sydney:persistent}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_selectable com.craiovadata.aus.sydney:selectable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_shouldDisableView com.craiovadata.aus.sydney:shouldDisableView}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_singleLineTitle com.craiovadata.aus.sydney:singleLineTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_summary com.craiovadata.aus.sydney:summary}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_title com.craiovadata.aus.sydney:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Preference_widgetLayout com.craiovadata.aus.sydney:widgetLayout}</code></td><td></td></tr>
      * </table>
      * @see #Preference_android_icon
      * @see #Preference_android_persistent
@@ -17597,27 +17605,27 @@ public final class R {
      */
     public static final int Preference_android_iconSpaceReserved=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#allowDividerAbove}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#allowDividerAbove}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:allowDividerAbove
+     * @attr name com.craiovadata.aus.sydney:allowDividerAbove
      */
     public static final int Preference_allowDividerAbove=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#allowDividerBelow}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#allowDividerBelow}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:allowDividerBelow
+     * @attr name com.craiovadata.aus.sydney:allowDividerBelow
      */
     public static final int Preference_allowDividerBelow=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#defaultValue}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#defaultValue}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17631,41 +17639,41 @@ public final class R {
      * "<code>false</code>".
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:defaultValue
+     * @attr name com.craiovadata.aus.sydney:defaultValue
      */
     public static final int Preference_defaultValue=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dependency}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dependency}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dependency
+     * @attr name com.craiovadata.aus.sydney:dependency
      */
     public static final int Preference_dependency=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#enabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#enabled}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:enabled
+     * @attr name com.craiovadata.aus.sydney:enabled
      */
     public static final int Preference_enabled=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fragment}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fragment}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fragment
+     * @attr name com.craiovadata.aus.sydney:fragment
      */
     public static final int Preference_fragment=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#icon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#icon}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17673,41 +17681,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:icon
+     * @attr name com.craiovadata.aus.sydney:icon
      */
     public static final int Preference_icon=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconSpaceReserved}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconSpaceReserved}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconSpaceReserved
+     * @attr name com.craiovadata.aus.sydney:iconSpaceReserved
      */
     public static final int Preference_iconSpaceReserved=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#isPreferenceVisible}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#isPreferenceVisible}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:isPreferenceVisible
+     * @attr name com.craiovadata.aus.sydney:isPreferenceVisible
      */
     public static final int Preference_isPreferenceVisible=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#key}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#key}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:key
+     * @attr name com.craiovadata.aus.sydney:key
      */
     public static final int Preference_key=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17715,80 +17723,80 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout
+     * @attr name com.craiovadata.aus.sydney:layout
      */
     public static final int Preference_layout=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#order}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#order}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:order
+     * @attr name com.craiovadata.aus.sydney:order
      */
     public static final int Preference_order=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#persistent}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#persistent}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:persistent
+     * @attr name com.craiovadata.aus.sydney:persistent
      */
     public static final int Preference_persistent=28;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#selectable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#selectable}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:selectable
+     * @attr name com.craiovadata.aus.sydney:selectable
      */
     public static final int Preference_selectable=29;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#shouldDisableView}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#shouldDisableView}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:shouldDisableView
+     * @attr name com.craiovadata.aus.sydney:shouldDisableView
      */
     public static final int Preference_shouldDisableView=30;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#singleLineTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#singleLineTitle}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:singleLineTitle
+     * @attr name com.craiovadata.aus.sydney:singleLineTitle
      */
     public static final int Preference_singleLineTitle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summary}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summary}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summary
+     * @attr name com.craiovadata.aus.sydney:summary
      */
     public static final int Preference_summary=32;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#title}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:title
+     * @attr name com.craiovadata.aus.sydney:title
      */
     public static final int Preference_title=33;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#widgetLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#widgetLayout}
      * attribute's value can be found in the {@link #Preference} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -17796,7 +17804,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:widgetLayout
+     * @attr name com.craiovadata.aus.sydney:widgetLayout
      */
     public static final int Preference_widgetLayout=34;
     /**
@@ -17809,7 +17817,7 @@ public final class R {
      * <tr><td><code>{@link #PreferenceFragment_android_layout android:layout}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragment_android_divider android:divider}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragment_android_dividerHeight android:dividerHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceFragment_allowDividerAfterLastItem com.craiovadata.us.ct.bridgeport:allowDividerAfterLastItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceFragment_allowDividerAfterLastItem com.craiovadata.aus.sydney:allowDividerAfterLastItem}</code></td><td></td></tr>
      * </table>
      * @see #PreferenceFragment_android_layout
      * @see #PreferenceFragment_android_divider
@@ -17860,13 +17868,13 @@ public final class R {
      */
     public static final int PreferenceFragment_android_dividerHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#allowDividerAfterLastItem}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#allowDividerAfterLastItem}
      * attribute's value can be found in the {@link #PreferenceFragment} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:allowDividerAfterLastItem
+     * @attr name com.craiovadata.aus.sydney:allowDividerAfterLastItem
      */
     public static final int PreferenceFragment_allowDividerAfterLastItem=3;
     /**
@@ -17879,7 +17887,7 @@ public final class R {
      * <tr><td><code>{@link #PreferenceFragmentCompat_android_layout android:layout}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragmentCompat_android_divider android:divider}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceFragmentCompat_android_dividerHeight android:dividerHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceFragmentCompat_allowDividerAfterLastItem com.craiovadata.us.ct.bridgeport:allowDividerAfterLastItem}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceFragmentCompat_allowDividerAfterLastItem com.craiovadata.aus.sydney:allowDividerAfterLastItem}</code></td><td></td></tr>
      * </table>
      * @see #PreferenceFragmentCompat_android_layout
      * @see #PreferenceFragmentCompat_android_divider
@@ -17930,13 +17938,13 @@ public final class R {
      */
     public static final int PreferenceFragmentCompat_android_dividerHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#allowDividerAfterLastItem}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#allowDividerAfterLastItem}
      * attribute's value can be found in the {@link #PreferenceFragmentCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:allowDividerAfterLastItem
+     * @attr name com.craiovadata.aus.sydney:allowDividerAfterLastItem
      */
     public static final int PreferenceFragmentCompat_allowDividerAfterLastItem=3;
     /**
@@ -17947,8 +17955,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PreferenceGroup_android_orderingFromXml android:orderingFromXml}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceGroup_initialExpandedChildrenCount com.craiovadata.us.ct.bridgeport:initialExpandedChildrenCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceGroup_orderingFromXml com.craiovadata.us.ct.bridgeport:orderingFromXml}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceGroup_initialExpandedChildrenCount com.craiovadata.aus.sydney:initialExpandedChildrenCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceGroup_orderingFromXml com.craiovadata.aus.sydney:orderingFromXml}</code></td><td></td></tr>
      * </table>
      * @see #PreferenceGroup_android_orderingFromXml
      * @see #PreferenceGroup_initialExpandedChildrenCount
@@ -17968,22 +17976,22 @@ public final class R {
      */
     public static final int PreferenceGroup_android_orderingFromXml=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#initialExpandedChildrenCount}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#initialExpandedChildrenCount}
      * attribute's value can be found in the {@link #PreferenceGroup} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:initialExpandedChildrenCount
+     * @attr name com.craiovadata.aus.sydney:initialExpandedChildrenCount
      */
     public static final int PreferenceGroup_initialExpandedChildrenCount=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#orderingFromXml}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#orderingFromXml}
      * attribute's value can be found in the {@link #PreferenceGroup} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:orderingFromXml
+     * @attr name com.craiovadata.aus.sydney:orderingFromXml
      */
     public static final int PreferenceGroup_orderingFromXml=2;
     /**
@@ -17995,8 +18003,8 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PreferenceImageView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #PreferenceImageView_android_maxHeight android:maxHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceImageView_maxHeight com.craiovadata.us.ct.bridgeport:maxHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceImageView_maxWidth com.craiovadata.us.ct.bridgeport:maxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceImageView_maxHeight com.craiovadata.aus.sydney:maxHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceImageView_maxWidth com.craiovadata.aus.sydney:maxWidth}</code></td><td></td></tr>
      * </table>
      * @see #PreferenceImageView_android_maxWidth
      * @see #PreferenceImageView_android_maxHeight
@@ -18033,7 +18041,7 @@ public final class R {
      */
     public static final int PreferenceImageView_android_maxHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#maxHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#maxHeight}
      * attribute's value can be found in the {@link #PreferenceImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18042,11 +18050,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:maxHeight
+     * @attr name com.craiovadata.aus.sydney:maxHeight
      */
     public static final int PreferenceImageView_maxHeight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#maxWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#maxWidth}
      * attribute's value can be found in the {@link #PreferenceImageView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18055,7 +18063,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:maxWidth
+     * @attr name com.craiovadata.aus.sydney:maxWidth
      */
     public static final int PreferenceImageView_maxWidth=3;
     /**
@@ -18065,29 +18073,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PreferenceTheme_checkBoxPreferenceStyle com.craiovadata.us.ct.bridgeport:checkBoxPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_dialogPreferenceStyle com.craiovadata.us.ct.bridgeport:dialogPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_dropdownPreferenceStyle com.craiovadata.us.ct.bridgeport:dropdownPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_editTextPreferenceStyle com.craiovadata.us.ct.bridgeport:editTextPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceActivityStyle com.craiovadata.us.ct.bridgeport:preferenceActivityStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceCategoryStyle com.craiovadata.us.ct.bridgeport:preferenceCategoryStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentCompatStyle com.craiovadata.us.ct.bridgeport:preferenceFragmentCompatStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentListStyle com.craiovadata.us.ct.bridgeport:preferenceFragmentListStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentPaddingSide com.craiovadata.us.ct.bridgeport:preferenceFragmentPaddingSide}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentStyle com.craiovadata.us.ct.bridgeport:preferenceFragmentStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceHeaderPanelStyle com.craiovadata.us.ct.bridgeport:preferenceHeaderPanelStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceInformationStyle com.craiovadata.us.ct.bridgeport:preferenceInformationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceLayoutChild com.craiovadata.us.ct.bridgeport:preferenceLayoutChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceListStyle com.craiovadata.us.ct.bridgeport:preferenceListStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferencePanelStyle com.craiovadata.us.ct.bridgeport:preferencePanelStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceScreenStyle com.craiovadata.us.ct.bridgeport:preferenceScreenStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceStyle com.craiovadata.us.ct.bridgeport:preferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_preferenceTheme com.craiovadata.us.ct.bridgeport:preferenceTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_ringtonePreferenceStyle com.craiovadata.us.ct.bridgeport:ringtonePreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_seekBarPreferenceStyle com.craiovadata.us.ct.bridgeport:seekBarPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceCompatStyle com.craiovadata.us.ct.bridgeport:switchPreferenceCompatStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceStyle com.craiovadata.us.ct.bridgeport:switchPreferenceStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PreferenceTheme_yesNoPreferenceStyle com.craiovadata.us.ct.bridgeport:yesNoPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_checkBoxPreferenceStyle com.craiovadata.aus.sydney:checkBoxPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_dialogPreferenceStyle com.craiovadata.aus.sydney:dialogPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_dropdownPreferenceStyle com.craiovadata.aus.sydney:dropdownPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_editTextPreferenceStyle com.craiovadata.aus.sydney:editTextPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceActivityStyle com.craiovadata.aus.sydney:preferenceActivityStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceCategoryStyle com.craiovadata.aus.sydney:preferenceCategoryStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentCompatStyle com.craiovadata.aus.sydney:preferenceFragmentCompatStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentListStyle com.craiovadata.aus.sydney:preferenceFragmentListStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentPaddingSide com.craiovadata.aus.sydney:preferenceFragmentPaddingSide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceFragmentStyle com.craiovadata.aus.sydney:preferenceFragmentStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceHeaderPanelStyle com.craiovadata.aus.sydney:preferenceHeaderPanelStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceInformationStyle com.craiovadata.aus.sydney:preferenceInformationStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceLayoutChild com.craiovadata.aus.sydney:preferenceLayoutChild}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceListStyle com.craiovadata.aus.sydney:preferenceListStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferencePanelStyle com.craiovadata.aus.sydney:preferencePanelStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceScreenStyle com.craiovadata.aus.sydney:preferenceScreenStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceStyle com.craiovadata.aus.sydney:preferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_preferenceTheme com.craiovadata.aus.sydney:preferenceTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_ringtonePreferenceStyle com.craiovadata.aus.sydney:ringtonePreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_seekBarPreferenceStyle com.craiovadata.aus.sydney:seekBarPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceCompatStyle com.craiovadata.aus.sydney:switchPreferenceCompatStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_switchPreferenceStyle com.craiovadata.aus.sydney:switchPreferenceStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PreferenceTheme_yesNoPreferenceStyle com.craiovadata.aus.sydney:yesNoPreferenceStyle}</code></td><td></td></tr>
      * </table>
      * @see #PreferenceTheme_checkBoxPreferenceStyle
      * @see #PreferenceTheme_dialogPreferenceStyle
@@ -18122,7 +18130,7 @@ public final class R {
       0x7f0301f1, 0x7f0301f2, 0x7f030259
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#checkBoxPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#checkBoxPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18130,11 +18138,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:checkBoxPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:checkBoxPreferenceStyle
      */
     public static final int PreferenceTheme_checkBoxPreferenceStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dialogPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dialogPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18142,11 +18150,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dialogPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:dialogPreferenceStyle
      */
     public static final int PreferenceTheme_dialogPreferenceStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#dropdownPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#dropdownPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18154,11 +18162,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:dropdownPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:dropdownPreferenceStyle
      */
     public static final int PreferenceTheme_dropdownPreferenceStyle=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#editTextPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#editTextPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18166,11 +18174,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:editTextPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:editTextPreferenceStyle
      */
     public static final int PreferenceTheme_editTextPreferenceStyle=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceActivityStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceActivityStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18178,11 +18186,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceActivityStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceActivityStyle
      */
     public static final int PreferenceTheme_preferenceActivityStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceCategoryStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceCategoryStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18190,11 +18198,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceCategoryStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceCategoryStyle
      */
     public static final int PreferenceTheme_preferenceCategoryStyle=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceFragmentCompatStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceFragmentCompatStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18202,11 +18210,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceFragmentCompatStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceFragmentCompatStyle
      */
     public static final int PreferenceTheme_preferenceFragmentCompatStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceFragmentListStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceFragmentListStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18214,11 +18222,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceFragmentListStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceFragmentListStyle
      */
     public static final int PreferenceTheme_preferenceFragmentListStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceFragmentPaddingSide}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceFragmentPaddingSide}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18227,11 +18235,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceFragmentPaddingSide
+     * @attr name com.craiovadata.aus.sydney:preferenceFragmentPaddingSide
      */
     public static final int PreferenceTheme_preferenceFragmentPaddingSide=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceFragmentStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceFragmentStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18239,11 +18247,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceFragmentStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceFragmentStyle
      */
     public static final int PreferenceTheme_preferenceFragmentStyle=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceHeaderPanelStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceHeaderPanelStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18251,11 +18259,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceHeaderPanelStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceHeaderPanelStyle
      */
     public static final int PreferenceTheme_preferenceHeaderPanelStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceInformationStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceInformationStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18263,11 +18271,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceInformationStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceInformationStyle
      */
     public static final int PreferenceTheme_preferenceInformationStyle=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceLayoutChild}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceLayoutChild}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18275,11 +18283,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceLayoutChild
+     * @attr name com.craiovadata.aus.sydney:preferenceLayoutChild
      */
     public static final int PreferenceTheme_preferenceLayoutChild=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceListStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceListStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18287,11 +18295,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceListStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceListStyle
      */
     public static final int PreferenceTheme_preferenceListStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferencePanelStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferencePanelStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18299,11 +18307,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferencePanelStyle
+     * @attr name com.craiovadata.aus.sydney:preferencePanelStyle
      */
     public static final int PreferenceTheme_preferencePanelStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceScreenStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceScreenStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18311,11 +18319,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceScreenStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceScreenStyle
      */
     public static final int PreferenceTheme_preferenceScreenStyle=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18323,11 +18331,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceStyle
+     * @attr name com.craiovadata.aus.sydney:preferenceStyle
      */
     public static final int PreferenceTheme_preferenceStyle=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#preferenceTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#preferenceTheme}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18335,11 +18343,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:preferenceTheme
+     * @attr name com.craiovadata.aus.sydney:preferenceTheme
      */
     public static final int PreferenceTheme_preferenceTheme=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#ringtonePreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#ringtonePreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18347,11 +18355,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:ringtonePreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:ringtonePreferenceStyle
      */
     public static final int PreferenceTheme_ringtonePreferenceStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seekBarPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seekBarPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18359,11 +18367,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seekBarPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:seekBarPreferenceStyle
      */
     public static final int PreferenceTheme_seekBarPreferenceStyle=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchPreferenceCompatStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchPreferenceCompatStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18371,11 +18379,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchPreferenceCompatStyle
+     * @attr name com.craiovadata.aus.sydney:switchPreferenceCompatStyle
      */
     public static final int PreferenceTheme_switchPreferenceCompatStyle=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18383,11 +18391,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:switchPreferenceStyle
      */
     public static final int PreferenceTheme_switchPreferenceStyle=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#yesNoPreferenceStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#yesNoPreferenceStyle}
      * attribute's value can be found in the {@link #PreferenceTheme} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18395,7 +18403,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:yesNoPreferenceStyle
+     * @attr name com.craiovadata.aus.sydney:yesNoPreferenceStyle
      */
     public static final int PreferenceTheme_yesNoPreferenceStyle=22;
     /**
@@ -18405,8 +18413,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.craiovadata.us.ct.bridgeport:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.craiovadata.us.ct.bridgeport:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.craiovadata.aus.sydney:paddingBottomNoButtons}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.craiovadata.aus.sydney:paddingTopNoTitle}</code></td><td></td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -18415,7 +18423,7 @@ public final class R {
       0x7f03018c, 0x7f03018f
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#paddingBottomNoButtons}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#paddingBottomNoButtons}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18424,11 +18432,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:paddingBottomNoButtons
+     * @attr name com.craiovadata.aus.sydney:paddingBottomNoButtons
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#paddingTopNoTitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#paddingTopNoTitle}
      * attribute's value can be found in the {@link #RecycleListView} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18437,7 +18445,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:paddingTopNoTitle
+     * @attr name com.craiovadata.aus.sydney:paddingTopNoTitle
      */
     public static final int RecycleListView_paddingTopNoTitle=1;
     /**
@@ -18449,15 +18457,15 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #RecyclerView_android_orientation android:orientation}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_android_descendantFocusability android:descendantFocusability}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.craiovadata.us.ct.bridgeport:fastScrollEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.craiovadata.us.ct.bridgeport:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.craiovadata.us.ct.bridgeport:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.craiovadata.us.ct.bridgeport:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.craiovadata.us.ct.bridgeport:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.craiovadata.us.ct.bridgeport:layoutManager}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_reverseLayout com.craiovadata.us.ct.bridgeport:reverseLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_spanCount com.craiovadata.us.ct.bridgeport:spanCount}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.craiovadata.us.ct.bridgeport:stackFromEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollEnabled com.craiovadata.aus.sydney:fastScrollEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalThumbDrawable com.craiovadata.aus.sydney:fastScrollHorizontalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.craiovadata.aus.sydney:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.craiovadata.aus.sydney:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.craiovadata.aus.sydney:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.craiovadata.aus.sydney:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_reverseLayout com.craiovadata.aus.sydney:reverseLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_spanCount com.craiovadata.aus.sydney:spanCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_stackFromEnd com.craiovadata.aus.sydney:stackFromEnd}</code></td><td></td></tr>
      * </table>
      * @see #RecyclerView_android_orientation
      * @see #RecyclerView_android_descendantFocusability
@@ -18512,17 +18520,17 @@ public final class R {
      */
     public static final int RecyclerView_android_descendantFocusability=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fastScrollEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fastScrollEnabled}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fastScrollEnabled
+     * @attr name com.craiovadata.aus.sydney:fastScrollEnabled
      */
     public static final int RecyclerView_fastScrollEnabled=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fastScrollHorizontalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fastScrollHorizontalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18530,11 +18538,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fastScrollHorizontalThumbDrawable
+     * @attr name com.craiovadata.aus.sydney:fastScrollHorizontalThumbDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalThumbDrawable=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fastScrollHorizontalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fastScrollHorizontalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18542,11 +18550,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fastScrollHorizontalTrackDrawable
+     * @attr name com.craiovadata.aus.sydney:fastScrollHorizontalTrackDrawable
      */
     public static final int RecyclerView_fastScrollHorizontalTrackDrawable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fastScrollVerticalThumbDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fastScrollVerticalThumbDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18554,11 +18562,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fastScrollVerticalThumbDrawable
+     * @attr name com.craiovadata.aus.sydney:fastScrollVerticalThumbDrawable
      */
     public static final int RecyclerView_fastScrollVerticalThumbDrawable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fastScrollVerticalTrackDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fastScrollVerticalTrackDrawable}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18566,46 +18574,46 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fastScrollVerticalTrackDrawable
+     * @attr name com.craiovadata.aus.sydney:fastScrollVerticalTrackDrawable
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layoutManager}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layoutManager}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layoutManager
+     * @attr name com.craiovadata.aus.sydney:layoutManager
      */
     public static final int RecyclerView_layoutManager=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#reverseLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#reverseLayout}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:reverseLayout
+     * @attr name com.craiovadata.aus.sydney:reverseLayout
      */
     public static final int RecyclerView_reverseLayout=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#spanCount}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#spanCount}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:spanCount
+     * @attr name com.craiovadata.aus.sydney:spanCount
      */
     public static final int RecyclerView_spanCount=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#stackFromEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#stackFromEnd}
      * attribute's value can be found in the {@link #RecyclerView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:stackFromEnd
+     * @attr name com.craiovadata.aus.sydney:stackFromEnd
      */
     public static final int RecyclerView_stackFromEnd=10;
     /**
@@ -18615,7 +18623,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.craiovadata.us.ct.bridgeport:insetForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrimInsetsFrameLayout_insetForeground com.craiovadata.aus.sydney:insetForeground}</code></td><td></td></tr>
      * </table>
      * @see #ScrimInsetsFrameLayout_insetForeground
      */
@@ -18623,7 +18631,7 @@ public final class R {
       0x7f030117
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#insetForeground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#insetForeground}
      * attribute's value can be found in the {@link #ScrimInsetsFrameLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18634,7 +18642,7 @@ public final class R {
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:insetForeground
+     * @attr name com.craiovadata.aus.sydney:insetForeground
      */
     public static final int ScrimInsetsFrameLayout_insetForeground=0;
     /**
@@ -18644,7 +18652,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.craiovadata.us.ct.bridgeport:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.craiovadata.aus.sydney:behavior_overlapTop}</code></td><td></td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -18652,7 +18660,7 @@ public final class R {
       0x7f030043
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#behavior_overlapTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#behavior_overlapTop}
      * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -18661,7 +18669,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:behavior_overlapTop
+     * @attr name com.craiovadata.aus.sydney:behavior_overlapTop
      */
     public static final int ScrollingViewBehavior_Layout_behavior_overlapTop=0;
     /**
@@ -18675,19 +18683,19 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.craiovadata.us.ct.bridgeport:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.craiovadata.us.ct.bridgeport:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.craiovadata.us.ct.bridgeport:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.craiovadata.us.ct.bridgeport:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.craiovadata.us.ct.bridgeport:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.craiovadata.us.ct.bridgeport:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.craiovadata.us.ct.bridgeport:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.craiovadata.us.ct.bridgeport:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.craiovadata.us.ct.bridgeport:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.craiovadata.us.ct.bridgeport:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.craiovadata.us.ct.bridgeport:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.craiovadata.us.ct.bridgeport:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.craiovadata.us.ct.bridgeport:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.craiovadata.aus.sydney:closeIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.craiovadata.aus.sydney:commitIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.craiovadata.aus.sydney:defaultQueryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.craiovadata.aus.sydney:goIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.craiovadata.aus.sydney:iconifiedByDefault}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.craiovadata.aus.sydney:layout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.craiovadata.aus.sydney:queryBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.craiovadata.aus.sydney:queryHint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.craiovadata.aus.sydney:searchHintIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.craiovadata.aus.sydney:searchIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.craiovadata.aus.sydney:submitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.craiovadata.aus.sydney:suggestionRowLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.craiovadata.aus.sydney:voiceIcon}</code></td><td></td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -18825,7 +18833,7 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#closeIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#closeIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18833,11 +18841,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:closeIcon
+     * @attr name com.craiovadata.aus.sydney:closeIcon
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#commitIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#commitIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18845,21 +18853,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:commitIcon
+     * @attr name com.craiovadata.aus.sydney:commitIcon
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#defaultQueryHint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#defaultQueryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:defaultQueryHint
+     * @attr name com.craiovadata.aus.sydney:defaultQueryHint
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#goIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#goIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18867,21 +18875,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:goIcon
+     * @attr name com.craiovadata.aus.sydney:goIcon
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#iconifiedByDefault}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#iconifiedByDefault}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:iconifiedByDefault
+     * @attr name com.craiovadata.aus.sydney:iconifiedByDefault
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#layout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#layout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18889,11 +18897,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:layout
+     * @attr name com.craiovadata.aus.sydney:layout
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#queryBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#queryBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18901,21 +18909,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:queryBackground
+     * @attr name com.craiovadata.aus.sydney:queryBackground
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#queryHint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#queryHint}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:queryHint
+     * @attr name com.craiovadata.aus.sydney:queryHint
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#searchHintIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#searchHintIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18923,11 +18931,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:searchHintIcon
+     * @attr name com.craiovadata.aus.sydney:searchHintIcon
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#searchIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#searchIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18935,11 +18943,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:searchIcon
+     * @attr name com.craiovadata.aus.sydney:searchIcon
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#submitBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#submitBackground}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18947,11 +18955,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:submitBackground
+     * @attr name com.craiovadata.aus.sydney:submitBackground
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#suggestionRowLayout}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#suggestionRowLayout}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18959,11 +18967,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:suggestionRowLayout
+     * @attr name com.craiovadata.aus.sydney:suggestionRowLayout
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#voiceIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#voiceIcon}
      * attribute's value can be found in the {@link #SearchView} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -18971,7 +18979,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:voiceIcon
+     * @attr name com.craiovadata.aus.sydney:voiceIcon
      */
     public static final int SearchView_voiceIcon=16;
     /**
@@ -18983,10 +18991,10 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SeekBarPreference_android_layout android:layout}</code></td><td></td></tr>
      * <tr><td><code>{@link #SeekBarPreference_android_max android:max}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_adjustable com.craiovadata.us.ct.bridgeport:adjustable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_min com.craiovadata.us.ct.bridgeport:min}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_seekBarIncrement com.craiovadata.us.ct.bridgeport:seekBarIncrement}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SeekBarPreference_showSeekBarValue com.craiovadata.us.ct.bridgeport:showSeekBarValue}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_adjustable com.craiovadata.aus.sydney:adjustable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_min com.craiovadata.aus.sydney:min}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_seekBarIncrement com.craiovadata.aus.sydney:seekBarIncrement}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SeekBarPreference_showSeekBarValue com.craiovadata.aus.sydney:showSeekBarValue}</code></td><td></td></tr>
      * </table>
      * @see #SeekBarPreference_android_layout
      * @see #SeekBarPreference_android_max
@@ -19021,41 +19029,41 @@ public final class R {
      */
     public static final int SeekBarPreference_android_max=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#adjustable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#adjustable}
      * attribute's value can be found in the {@link #SeekBarPreference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:adjustable
+     * @attr name com.craiovadata.aus.sydney:adjustable
      */
     public static final int SeekBarPreference_adjustable=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#min}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#min}
      * attribute's value can be found in the {@link #SeekBarPreference} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:min
+     * @attr name com.craiovadata.aus.sydney:min
      */
     public static final int SeekBarPreference_min=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#seekBarIncrement}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#seekBarIncrement}
      * attribute's value can be found in the {@link #SeekBarPreference} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:seekBarIncrement
+     * @attr name com.craiovadata.aus.sydney:seekBarIncrement
      */
     public static final int SeekBarPreference_seekBarIncrement=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showSeekBarValue}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showSeekBarValue}
      * attribute's value can be found in the {@link #SeekBarPreference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showSeekBarValue
+     * @attr name com.craiovadata.aus.sydney:showSeekBarValue
      */
     public static final int SeekBarPreference_showSeekBarValue=5;
     /**
@@ -19065,8 +19073,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.craiovadata.us.ct.bridgeport:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle com.craiovadata.us.ct.bridgeport:snackbarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.craiovadata.aus.sydney:snackbarButtonStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle com.craiovadata.aus.sydney:snackbarStyle}</code></td><td></td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
@@ -19075,7 +19083,7 @@ public final class R {
       0x7f0301d3, 0x7f0301d4
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#snackbarButtonStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#snackbarButtonStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19083,11 +19091,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:snackbarButtonStyle
+     * @attr name com.craiovadata.aus.sydney:snackbarButtonStyle
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#snackbarStyle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#snackbarStyle}
      * attribute's value can be found in the {@link #Snackbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19095,7 +19103,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:snackbarStyle
+     * @attr name com.craiovadata.aus.sydney:snackbarStyle
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
@@ -19106,8 +19114,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.craiovadata.us.ct.bridgeport:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.craiovadata.us.ct.bridgeport:maxActionInlineWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.craiovadata.aus.sydney:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.craiovadata.aus.sydney:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
      * @see #SnackbarLayout_elevation
@@ -19130,7 +19138,7 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#elevation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#elevation}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19139,11 +19147,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:elevation
+     * @attr name com.craiovadata.aus.sydney:elevation
      */
     public static final int SnackbarLayout_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#maxActionInlineWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#maxActionInlineWidth}
      * attribute's value can be found in the {@link #SnackbarLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19152,7 +19160,7 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:maxActionInlineWidth
+     * @attr name com.craiovadata.aus.sydney:maxActionInlineWidth
      */
     public static final int SnackbarLayout_maxActionInlineWidth=2;
     /**
@@ -19166,7 +19174,7 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.craiovadata.us.ct.bridgeport:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.craiovadata.aus.sydney:popupTheme}</code></td><td></td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -19241,7 +19249,7 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Spinner} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19249,7 +19257,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:popupTheme
+     * @attr name com.craiovadata.aus.sydney:popupTheme
      */
     public static final int Spinner_popupTheme=4;
     /**
@@ -19371,17 +19379,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.craiovadata.us.ct.bridgeport:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.craiovadata.us.ct.bridgeport:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.craiovadata.us.ct.bridgeport:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.craiovadata.us.ct.bridgeport:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.craiovadata.us.ct.bridgeport:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.craiovadata.us.ct.bridgeport:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.craiovadata.us.ct.bridgeport:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.craiovadata.us.ct.bridgeport:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.craiovadata.us.ct.bridgeport:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.craiovadata.us.ct.bridgeport:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.craiovadata.us.ct.bridgeport:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.craiovadata.aus.sydney:showText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.craiovadata.aus.sydney:splitTrack}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.craiovadata.aus.sydney:switchMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.craiovadata.aus.sydney:switchPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.craiovadata.aus.sydney:switchTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.craiovadata.aus.sydney:thumbTextPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.craiovadata.aus.sydney:thumbTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.craiovadata.aus.sydney:thumbTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.craiovadata.aus.sydney:track}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.craiovadata.aus.sydney:trackTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.craiovadata.aus.sydney:trackTintMode}</code></td><td></td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -19437,27 +19445,27 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#showText}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#showText}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:showText
+     * @attr name com.craiovadata.aus.sydney:showText
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#splitTrack}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#splitTrack}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:splitTrack
+     * @attr name com.craiovadata.aus.sydney:splitTrack
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchMinWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchMinWidth}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19466,11 +19474,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchMinWidth
+     * @attr name com.craiovadata.aus.sydney:switchMinWidth
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19479,11 +19487,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchPadding
+     * @attr name com.craiovadata.aus.sydney:switchPadding
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchTextAppearance}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19491,11 +19499,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchTextAppearance
+     * @attr name com.craiovadata.aus.sydney:switchTextAppearance
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#thumbTextPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#thumbTextPadding}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19504,22 +19512,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:thumbTextPadding
+     * @attr name com.craiovadata.aus.sydney:thumbTextPadding
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#thumbTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#thumbTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:thumbTint
+     * @attr name com.craiovadata.aus.sydney:thumbTint
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#thumbTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#thumbTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19536,11 +19544,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:thumbTintMode
+     * @attr name com.craiovadata.aus.sydney:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#track}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#track}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19548,22 +19556,22 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:track
+     * @attr name com.craiovadata.aus.sydney:track
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#trackTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#trackTint}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:trackTint
+     * @attr name com.craiovadata.aus.sydney:trackTint
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#trackTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#trackTintMode}
      * attribute's value can be found in the {@link #SwitchCompat} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -19580,7 +19588,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:trackTintMode
+     * @attr name com.craiovadata.aus.sydney:trackTintMode
      */
     public static final int SwitchCompat_trackTintMode=13;
     /**
@@ -19595,11 +19603,11 @@ public final class R {
      * <tr><td><code>{@link #SwitchPreference_android_disableDependentsState android:disableDependentsState}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreference_android_switchTextOn android:switchTextOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreference_android_switchTextOff android:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_disableDependentsState com.craiovadata.us.ct.bridgeport:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_summaryOff com.craiovadata.us.ct.bridgeport:summaryOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_summaryOn com.craiovadata.us.ct.bridgeport:summaryOn}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_switchTextOff com.craiovadata.us.ct.bridgeport:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreference_switchTextOn com.craiovadata.us.ct.bridgeport:switchTextOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreference_disableDependentsState com.craiovadata.aus.sydney:disableDependentsState}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreference_summaryOff com.craiovadata.aus.sydney:summaryOff}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreference_summaryOn com.craiovadata.aus.sydney:summaryOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreference_switchTextOff com.craiovadata.aus.sydney:switchTextOff}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreference_switchTextOn com.craiovadata.aus.sydney:switchTextOn}</code></td><td></td></tr>
      * </table>
      * @see #SwitchPreference_android_summaryOn
      * @see #SwitchPreference_android_summaryOff
@@ -19668,53 +19676,53 @@ public final class R {
      */
     public static final int SwitchPreference_android_switchTextOff=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#disableDependentsState}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#disableDependentsState}
      * attribute's value can be found in the {@link #SwitchPreference} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:disableDependentsState
+     * @attr name com.craiovadata.aus.sydney:disableDependentsState
      */
     public static final int SwitchPreference_disableDependentsState=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summaryOff}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summaryOff}
      * attribute's value can be found in the {@link #SwitchPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summaryOff
+     * @attr name com.craiovadata.aus.sydney:summaryOff
      */
     public static final int SwitchPreference_summaryOff=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summaryOn}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summaryOn}
      * attribute's value can be found in the {@link #SwitchPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summaryOn
+     * @attr name com.craiovadata.aus.sydney:summaryOn
      */
     public static final int SwitchPreference_summaryOn=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchTextOff}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchTextOff}
      * attribute's value can be found in the {@link #SwitchPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchTextOff
+     * @attr name com.craiovadata.aus.sydney:switchTextOff
      */
     public static final int SwitchPreference_switchTextOff=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchTextOn}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchTextOn}
      * attribute's value can be found in the {@link #SwitchPreference} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchTextOn
+     * @attr name com.craiovadata.aus.sydney:switchTextOn
      */
     public static final int SwitchPreference_switchTextOn=9;
     /**
@@ -19729,11 +19737,11 @@ public final class R {
      * <tr><td><code>{@link #SwitchPreferenceCompat_android_disableDependentsState android:disableDependentsState}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreferenceCompat_android_switchTextOn android:switchTextOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchPreferenceCompat_android_switchTextOff android:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_disableDependentsState com.craiovadata.us.ct.bridgeport:disableDependentsState}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOff com.craiovadata.us.ct.bridgeport:summaryOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOn com.craiovadata.us.ct.bridgeport:summaryOn}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOff com.craiovadata.us.ct.bridgeport:switchTextOff}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOn com.craiovadata.us.ct.bridgeport:switchTextOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_disableDependentsState com.craiovadata.aus.sydney:disableDependentsState}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOff com.craiovadata.aus.sydney:summaryOff}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_summaryOn com.craiovadata.aus.sydney:summaryOn}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOff com.craiovadata.aus.sydney:switchTextOff}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchPreferenceCompat_switchTextOn com.craiovadata.aus.sydney:switchTextOn}</code></td><td></td></tr>
      * </table>
      * @see #SwitchPreferenceCompat_android_summaryOn
      * @see #SwitchPreferenceCompat_android_summaryOff
@@ -19802,53 +19810,53 @@ public final class R {
      */
     public static final int SwitchPreferenceCompat_android_switchTextOff=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#disableDependentsState}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#disableDependentsState}
      * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:disableDependentsState
+     * @attr name com.craiovadata.aus.sydney:disableDependentsState
      */
     public static final int SwitchPreferenceCompat_disableDependentsState=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summaryOff}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summaryOff}
      * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summaryOff
+     * @attr name com.craiovadata.aus.sydney:summaryOff
      */
     public static final int SwitchPreferenceCompat_summaryOff=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#summaryOn}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#summaryOn}
      * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:summaryOn
+     * @attr name com.craiovadata.aus.sydney:summaryOn
      */
     public static final int SwitchPreferenceCompat_summaryOn=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchTextOff}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchTextOff}
      * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchTextOff
+     * @attr name com.craiovadata.aus.sydney:switchTextOff
      */
     public static final int SwitchPreferenceCompat_switchTextOff=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#switchTextOn}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#switchTextOn}
      * attribute's value can be found in the {@link #SwitchPreferenceCompat} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:switchTextOn
+     * @attr name com.craiovadata.aus.sydney:switchTextOn
      */
     public static final int SwitchPreferenceCompat_switchTextOn=9;
     /**
@@ -19910,31 +19918,31 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.craiovadata.us.ct.bridgeport:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.craiovadata.us.ct.bridgeport:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.craiovadata.us.ct.bridgeport:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint com.craiovadata.us.ct.bridgeport:tabIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.craiovadata.us.ct.bridgeport:tabIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator com.craiovadata.us.ct.bridgeport:tabIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.craiovadata.us.ct.bridgeport:tabIndicatorAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.craiovadata.us.ct.bridgeport:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.craiovadata.us.ct.bridgeport:tabIndicatorFullWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.craiovadata.us.ct.bridgeport:tabIndicatorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.craiovadata.us.ct.bridgeport:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.craiovadata.us.ct.bridgeport:tabInlineLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.craiovadata.us.ct.bridgeport:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.craiovadata.us.ct.bridgeport:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.craiovadata.us.ct.bridgeport:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.craiovadata.us.ct.bridgeport:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.craiovadata.us.ct.bridgeport:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.craiovadata.us.ct.bridgeport:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.craiovadata.us.ct.bridgeport:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.craiovadata.us.ct.bridgeport:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor com.craiovadata.us.ct.bridgeport:tabRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.craiovadata.us.ct.bridgeport:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.craiovadata.us.ct.bridgeport:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.craiovadata.us.ct.bridgeport:tabTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.craiovadata.us.ct.bridgeport:tabUnboundedRipple}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.craiovadata.aus.sydney:tabBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.craiovadata.aus.sydney:tabContentStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.craiovadata.aus.sydney:tabGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint com.craiovadata.aus.sydney:tabIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.craiovadata.aus.sydney:tabIconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator com.craiovadata.aus.sydney:tabIndicator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.craiovadata.aus.sydney:tabIndicatorAnimationDuration}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.craiovadata.aus.sydney:tabIndicatorColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.craiovadata.aus.sydney:tabIndicatorFullWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.craiovadata.aus.sydney:tabIndicatorGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.craiovadata.aus.sydney:tabIndicatorHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.craiovadata.aus.sydney:tabInlineLabel}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.craiovadata.aus.sydney:tabMaxWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.craiovadata.aus.sydney:tabMinWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.craiovadata.aus.sydney:tabMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.craiovadata.aus.sydney:tabPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.craiovadata.aus.sydney:tabPaddingBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.craiovadata.aus.sydney:tabPaddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.craiovadata.aus.sydney:tabPaddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.craiovadata.aus.sydney:tabPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor com.craiovadata.aus.sydney:tabRippleColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.craiovadata.aus.sydney:tabSelectedTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.craiovadata.aus.sydney:tabTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.craiovadata.aus.sydney:tabTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.craiovadata.aus.sydney:tabUnboundedRipple}</code></td><td></td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -19972,7 +19980,7 @@ public final class R {
       0x7f030210
     };
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabBackground}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabBackground}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -19980,11 +19988,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabBackground
+     * @attr name com.craiovadata.aus.sydney:tabBackground
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabContentStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabContentStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -19993,11 +20001,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabContentStart
+     * @attr name com.craiovadata.aus.sydney:tabContentStart
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20010,22 +20018,22 @@ public final class R {
      * <tr><td>fill</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabGravity
+     * @attr name com.craiovadata.aus.sydney:tabGravity
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIconTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIconTint}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIconTint
+     * @attr name com.craiovadata.aus.sydney:tabIconTint
      */
     public static final int TabLayout_tabIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIconTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIconTintMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20042,11 +20050,11 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIconTintMode
+     * @attr name com.craiovadata.aus.sydney:tabIconTintMode
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIndicator}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIndicator}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20054,41 +20062,41 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIndicator
+     * @attr name com.craiovadata.aus.sydney:tabIndicator
      */
     public static final int TabLayout_tabIndicator=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIndicatorAnimationDuration}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIndicatorAnimationDuration}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIndicatorAnimationDuration
+     * @attr name com.craiovadata.aus.sydney:tabIndicatorAnimationDuration
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIndicatorColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIndicatorColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIndicatorColor
+     * @attr name com.craiovadata.aus.sydney:tabIndicatorColor
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIndicatorFullWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIndicatorFullWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIndicatorFullWidth
+     * @attr name com.craiovadata.aus.sydney:tabIndicatorFullWidth
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIndicatorGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIndicatorGravity}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20103,11 +20111,11 @@ public final class R {
      * <tr><td>top</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIndicatorGravity
+     * @attr name com.craiovadata.aus.sydney:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabIndicatorHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabIndicatorHeight}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20116,21 +20124,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabIndicatorHeight
+     * @attr name com.craiovadata.aus.sydney:tabIndicatorHeight
      */
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabInlineLabel}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabInlineLabel}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabInlineLabel
+     * @attr name com.craiovadata.aus.sydney:tabInlineLabel
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabMaxWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabMaxWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20139,11 +20147,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabMaxWidth
+     * @attr name com.craiovadata.aus.sydney:tabMaxWidth
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabMinWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabMinWidth}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20152,11 +20160,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabMinWidth
+     * @attr name com.craiovadata.aus.sydney:tabMinWidth
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabMode}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20169,11 +20177,11 @@ public final class R {
      * <tr><td>scrollable</td><td>0</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabMode
+     * @attr name com.craiovadata.aus.sydney:tabMode
      */
     public static final int TabLayout_tabMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabPadding}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabPadding}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20182,11 +20190,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabPadding
+     * @attr name com.craiovadata.aus.sydney:tabPadding
      */
     public static final int TabLayout_tabPadding=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabPaddingBottom}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabPaddingBottom}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20195,11 +20203,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabPaddingBottom
+     * @attr name com.craiovadata.aus.sydney:tabPaddingBottom
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabPaddingEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabPaddingEnd}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20208,11 +20216,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabPaddingEnd
+     * @attr name com.craiovadata.aus.sydney:tabPaddingEnd
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabPaddingStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabPaddingStart}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20221,11 +20229,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabPaddingStart
+     * @attr name com.craiovadata.aus.sydney:tabPaddingStart
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabPaddingTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabPaddingTop}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20234,33 +20242,33 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabPaddingTop
+     * @attr name com.craiovadata.aus.sydney:tabPaddingTop
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabRippleColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabRippleColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabRippleColor
+     * @attr name com.craiovadata.aus.sydney:tabRippleColor
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabSelectedTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabSelectedTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabSelectedTextColor
+     * @attr name com.craiovadata.aus.sydney:tabSelectedTextColor
      */
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabTextAppearance}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20268,28 +20276,28 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabTextAppearance
+     * @attr name com.craiovadata.aus.sydney:tabTextAppearance
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabTextColor}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabTextColor
+     * @attr name com.craiovadata.aus.sydney:tabTextColor
      */
     public static final int TabLayout_tabTextColor=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#tabUnboundedRipple}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#tabUnboundedRipple}
      * attribute's value can be found in the {@link #TabLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:tabUnboundedRipple
+     * @attr name com.craiovadata.aus.sydney:tabUnboundedRipple
      */
     public static final int TabLayout_tabUnboundedRipple=24;
     /**
@@ -20310,8 +20318,8 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowDy android:shadowDy}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.craiovadata.us.ct.bridgeport:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.craiovadata.us.ct.bridgeport:textAllCaps}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.craiovadata.aus.sydney:fontFamily}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.craiovadata.aus.sydney:textAllCaps}</code></td><td></td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -20477,17 +20485,17 @@ public final class R {
      */
     public static final int TextAppearance_android_fontFamily=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#fontFamily}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#fontFamily}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:fontFamily
+     * @attr name com.craiovadata.aus.sydney:fontFamily
      */
     public static final int TextAppearance_fontFamily=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#textAllCaps}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#textAllCaps}
      * attribute's value can be found in the {@link #TextAppearance} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20497,7 +20505,7 @@ public final class R {
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:textAllCaps
+     * @attr name com.craiovadata.aus.sydney:textAllCaps
      */
     public static final int TextAppearance_textAllCaps=12;
     /**
@@ -20509,32 +20517,32 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.craiovadata.us.ct.bridgeport:boxBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.craiovadata.us.ct.bridgeport:boxBackgroundMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.craiovadata.us.ct.bridgeport:boxCollapsedPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.craiovadata.us.ct.bridgeport:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.craiovadata.us.ct.bridgeport:boxCornerRadiusBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.craiovadata.us.ct.bridgeport:boxCornerRadiusTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.craiovadata.us.ct.bridgeport:boxCornerRadiusTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.craiovadata.us.ct.bridgeport:boxStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.craiovadata.us.ct.bridgeport:boxStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.craiovadata.us.ct.bridgeport:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.craiovadata.us.ct.bridgeport:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.craiovadata.us.ct.bridgeport:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.craiovadata.us.ct.bridgeport:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.craiovadata.us.ct.bridgeport:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.craiovadata.us.ct.bridgeport:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText com.craiovadata.us.ct.bridgeport:helperText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.craiovadata.us.ct.bridgeport:helperTextEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.craiovadata.us.ct.bridgeport:helperTextTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.craiovadata.us.ct.bridgeport:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.craiovadata.us.ct.bridgeport:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.craiovadata.us.ct.bridgeport:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.craiovadata.us.ct.bridgeport:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.craiovadata.us.ct.bridgeport:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.craiovadata.us.ct.bridgeport:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.craiovadata.us.ct.bridgeport:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.craiovadata.us.ct.bridgeport:passwordToggleTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.craiovadata.aus.sydney:boxBackgroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.craiovadata.aus.sydney:boxBackgroundMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.craiovadata.aus.sydney:boxCollapsedPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.craiovadata.aus.sydney:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.craiovadata.aus.sydney:boxCornerRadiusBottomStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.craiovadata.aus.sydney:boxCornerRadiusTopEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.craiovadata.aus.sydney:boxCornerRadiusTopStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.craiovadata.aus.sydney:boxStrokeColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.craiovadata.aus.sydney:boxStrokeWidth}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.craiovadata.aus.sydney:counterEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.craiovadata.aus.sydney:counterMaxLength}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.craiovadata.aus.sydney:counterOverflowTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.craiovadata.aus.sydney:counterTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.craiovadata.aus.sydney:errorEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.craiovadata.aus.sydney:errorTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText com.craiovadata.aus.sydney:helperText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.craiovadata.aus.sydney:helperTextEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.craiovadata.aus.sydney:helperTextTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.craiovadata.aus.sydney:hintAnimationEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.craiovadata.aus.sydney:hintEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.craiovadata.aus.sydney:hintTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.craiovadata.aus.sydney:passwordToggleContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.craiovadata.aus.sydney:passwordToggleDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.craiovadata.aus.sydney:passwordToggleEnabled}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.craiovadata.aus.sydney:passwordToggleTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.craiovadata.aus.sydney:passwordToggleTintMode}</code></td><td></td></tr>
      * </table>
      * @see #TextInputLayout_android_textColorHint
      * @see #TextInputLayout_android_hint
@@ -20600,18 +20608,18 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxBackgroundColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxBackgroundColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxBackgroundColor
+     * @attr name com.craiovadata.aus.sydney:boxBackgroundColor
      */
     public static final int TextInputLayout_boxBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxBackgroundMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxBackgroundMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20625,11 +20633,11 @@ public final class R {
      * <tr><td>outline</td><td>2</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxBackgroundMode
+     * @attr name com.craiovadata.aus.sydney:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxCollapsedPaddingTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxCollapsedPaddingTop}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20638,11 +20646,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxCollapsedPaddingTop
+     * @attr name com.craiovadata.aus.sydney:boxCollapsedPaddingTop
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxCornerRadiusBottomEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxCornerRadiusBottomEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20651,11 +20659,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxCornerRadiusBottomEnd
+     * @attr name com.craiovadata.aus.sydney:boxCornerRadiusBottomEnd
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxCornerRadiusBottomStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxCornerRadiusBottomStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20664,11 +20672,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxCornerRadiusBottomStart
+     * @attr name com.craiovadata.aus.sydney:boxCornerRadiusBottomStart
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxCornerRadiusTopEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxCornerRadiusTopEnd}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20677,11 +20685,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxCornerRadiusTopEnd
+     * @attr name com.craiovadata.aus.sydney:boxCornerRadiusTopEnd
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxCornerRadiusTopStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxCornerRadiusTopStart}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20690,22 +20698,22 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxCornerRadiusTopStart
+     * @attr name com.craiovadata.aus.sydney:boxCornerRadiusTopStart
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxStrokeColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxStrokeColor}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxStrokeColor
+     * @attr name com.craiovadata.aus.sydney:boxStrokeColor
      */
     public static final int TextInputLayout_boxStrokeColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#boxStrokeWidth}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#boxStrokeWidth}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -20714,30 +20722,30 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:boxStrokeWidth
+     * @attr name com.craiovadata.aus.sydney:boxStrokeWidth
      */
     public static final int TextInputLayout_boxStrokeWidth=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#counterEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#counterEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:counterEnabled
+     * @attr name com.craiovadata.aus.sydney:counterEnabled
      */
     public static final int TextInputLayout_counterEnabled=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#counterMaxLength}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#counterMaxLength}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:counterMaxLength
+     * @attr name com.craiovadata.aus.sydney:counterMaxLength
      */
     public static final int TextInputLayout_counterMaxLength=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#counterOverflowTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#counterOverflowTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20745,11 +20753,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:counterOverflowTextAppearance
+     * @attr name com.craiovadata.aus.sydney:counterOverflowTextAppearance
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#counterTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#counterTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20757,21 +20765,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:counterTextAppearance
+     * @attr name com.craiovadata.aus.sydney:counterTextAppearance
      */
     public static final int TextInputLayout_counterTextAppearance=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#errorEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#errorEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:errorEnabled
+     * @attr name com.craiovadata.aus.sydney:errorEnabled
      */
     public static final int TextInputLayout_errorEnabled=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#errorTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#errorTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20779,31 +20787,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:errorTextAppearance
+     * @attr name com.craiovadata.aus.sydney:errorTextAppearance
      */
     public static final int TextInputLayout_errorTextAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#helperText}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#helperText}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:helperText
+     * @attr name com.craiovadata.aus.sydney:helperText
      */
     public static final int TextInputLayout_helperText=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#helperTextEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#helperTextEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:helperTextEnabled
+     * @attr name com.craiovadata.aus.sydney:helperTextEnabled
      */
     public static final int TextInputLayout_helperTextEnabled=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#helperTextTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#helperTextTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20811,31 +20819,31 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:helperTextTextAppearance
+     * @attr name com.craiovadata.aus.sydney:helperTextTextAppearance
      */
     public static final int TextInputLayout_helperTextTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hintAnimationEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hintAnimationEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hintAnimationEnabled
+     * @attr name com.craiovadata.aus.sydney:hintAnimationEnabled
      */
     public static final int TextInputLayout_hintAnimationEnabled=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hintEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hintEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hintEnabled
+     * @attr name com.craiovadata.aus.sydney:hintEnabled
      */
     public static final int TextInputLayout_hintEnabled=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#hintTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#hintTextAppearance}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20843,21 +20851,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:hintTextAppearance
+     * @attr name com.craiovadata.aus.sydney:hintTextAppearance
      */
     public static final int TextInputLayout_hintTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#passwordToggleContentDescription}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#passwordToggleContentDescription}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:passwordToggleContentDescription
+     * @attr name com.craiovadata.aus.sydney:passwordToggleContentDescription
      */
     public static final int TextInputLayout_passwordToggleContentDescription=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#passwordToggleDrawable}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#passwordToggleDrawable}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -20865,32 +20873,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:passwordToggleDrawable
+     * @attr name com.craiovadata.aus.sydney:passwordToggleDrawable
      */
     public static final int TextInputLayout_passwordToggleDrawable=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#passwordToggleEnabled}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#passwordToggleEnabled}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:passwordToggleEnabled
+     * @attr name com.craiovadata.aus.sydney:passwordToggleEnabled
      */
     public static final int TextInputLayout_passwordToggleEnabled=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#passwordToggleTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#passwordToggleTint}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:passwordToggleTint
+     * @attr name com.craiovadata.aus.sydney:passwordToggleTint
      */
     public static final int TextInputLayout_passwordToggleTint=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#passwordToggleTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#passwordToggleTintMode}
      * attribute's value can be found in the {@link #TextInputLayout} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -20906,7 +20914,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:passwordToggleTintMode
+     * @attr name com.craiovadata.aus.sydney:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=27;
     /**
@@ -20917,8 +20925,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.craiovadata.us.ct.bridgeport:enforceMaterialTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.craiovadata.us.ct.bridgeport:enforceTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.craiovadata.aus.sydney:enforceMaterialTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.craiovadata.aus.sydney:enforceTextAppearance}</code></td><td></td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
      * @see #ThemeEnforcement_enforceMaterialTheme
@@ -20940,23 +20948,23 @@ public final class R {
      */
     public static final int ThemeEnforcement_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#enforceMaterialTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#enforceMaterialTheme}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:enforceMaterialTheme
+     * @attr name com.craiovadata.aus.sydney:enforceMaterialTheme
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#enforceTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#enforceTextAppearance}
      * attribute's value can be found in the {@link #ThemeEnforcement} array.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:enforceTextAppearance
+     * @attr name com.craiovadata.aus.sydney:enforceTextAppearance
      */
     public static final int ThemeEnforcement_enforceTextAppearance=2;
     /**
@@ -20968,33 +20976,33 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_buttonGravity com.craiovadata.us.ct.bridgeport:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.craiovadata.us.ct.bridgeport:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.craiovadata.us.ct.bridgeport:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.craiovadata.us.ct.bridgeport:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.craiovadata.us.ct.bridgeport:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.craiovadata.us.ct.bridgeport:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.craiovadata.us.ct.bridgeport:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.craiovadata.us.ct.bridgeport:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.craiovadata.us.ct.bridgeport:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.craiovadata.us.ct.bridgeport:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.craiovadata.us.ct.bridgeport:logoDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.craiovadata.us.ct.bridgeport:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.craiovadata.us.ct.bridgeport:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.craiovadata.us.ct.bridgeport:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.craiovadata.us.ct.bridgeport:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.craiovadata.us.ct.bridgeport:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.craiovadata.us.ct.bridgeport:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.craiovadata.us.ct.bridgeport:subtitleTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_title com.craiovadata.us.ct.bridgeport:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.craiovadata.us.ct.bridgeport:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.craiovadata.us.ct.bridgeport:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.craiovadata.us.ct.bridgeport:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.craiovadata.us.ct.bridgeport:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.craiovadata.us.ct.bridgeport:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.craiovadata.us.ct.bridgeport:titleMargins}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.craiovadata.us.ct.bridgeport:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.craiovadata.us.ct.bridgeport:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_buttonGravity com.craiovadata.aus.sydney:buttonGravity}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.craiovadata.aus.sydney:collapseContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.craiovadata.aus.sydney:collapseIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.craiovadata.aus.sydney:contentInsetEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.craiovadata.aus.sydney:contentInsetEndWithActions}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.craiovadata.aus.sydney:contentInsetLeft}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.craiovadata.aus.sydney:contentInsetRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.craiovadata.aus.sydney:contentInsetStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.craiovadata.aus.sydney:contentInsetStartWithNavigation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.craiovadata.aus.sydney:logo}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.craiovadata.aus.sydney:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_maxButtonHeight com.craiovadata.aus.sydney:maxButtonHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.craiovadata.aus.sydney:navigationContentDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.craiovadata.aus.sydney:navigationIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.craiovadata.aus.sydney:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.craiovadata.aus.sydney:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.craiovadata.aus.sydney:subtitleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.craiovadata.aus.sydney:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_title com.craiovadata.aus.sydney:title}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.craiovadata.aus.sydney:titleMargin}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.craiovadata.aus.sydney:titleMarginBottom}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.craiovadata.aus.sydney:titleMarginEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.craiovadata.aus.sydney:titleMarginStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.craiovadata.aus.sydney:titleMarginTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.craiovadata.aus.sydney:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextAppearance com.craiovadata.aus.sydney:titleTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.craiovadata.aus.sydney:titleTextColor}</code></td><td></td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -21079,7 +21087,7 @@ public final class R {
      */
     public static final int Toolbar_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#buttonGravity}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#buttonGravity}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
@@ -21092,21 +21100,21 @@ public final class R {
      * <tr><td>top</td><td>30</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:buttonGravity
+     * @attr name com.craiovadata.aus.sydney:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#collapseContentDescription}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#collapseContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:collapseContentDescription
+     * @attr name com.craiovadata.aus.sydney:collapseContentDescription
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#collapseIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#collapseIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21114,11 +21122,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:collapseIcon
+     * @attr name com.craiovadata.aus.sydney:collapseIcon
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21127,11 +21135,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetEnd
+     * @attr name com.craiovadata.aus.sydney:contentInsetEnd
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetEndWithActions}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetEndWithActions}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21140,11 +21148,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetEndWithActions
+     * @attr name com.craiovadata.aus.sydney:contentInsetEndWithActions
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetLeft}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetLeft}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21153,11 +21161,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetLeft
+     * @attr name com.craiovadata.aus.sydney:contentInsetLeft
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetRight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetRight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21166,11 +21174,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetRight
+     * @attr name com.craiovadata.aus.sydney:contentInsetRight
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21179,11 +21187,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetStart
+     * @attr name com.craiovadata.aus.sydney:contentInsetStart
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#contentInsetStartWithNavigation}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#contentInsetStartWithNavigation}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21192,11 +21200,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:contentInsetStartWithNavigation
+     * @attr name com.craiovadata.aus.sydney:contentInsetStartWithNavigation
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#logo}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#logo}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21204,21 +21212,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:logo
+     * @attr name com.craiovadata.aus.sydney:logo
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#logoDescription}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#logoDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:logoDescription
+     * @attr name com.craiovadata.aus.sydney:logoDescription
      */
     public static final int Toolbar_logoDescription=12;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#maxButtonHeight}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#maxButtonHeight}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21227,21 +21235,21 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:maxButtonHeight
+     * @attr name com.craiovadata.aus.sydney:maxButtonHeight
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#navigationContentDescription}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#navigationContentDescription}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:navigationContentDescription
+     * @attr name com.craiovadata.aus.sydney:navigationContentDescription
      */
     public static final int Toolbar_navigationContentDescription=14;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#navigationIcon}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#navigationIcon}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21249,11 +21257,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:navigationIcon
+     * @attr name com.craiovadata.aus.sydney:navigationIcon
      */
     public static final int Toolbar_navigationIcon=15;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#popupTheme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#popupTheme}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21261,21 +21269,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:popupTheme
+     * @attr name com.craiovadata.aus.sydney:popupTheme
      */
     public static final int Toolbar_popupTheme=16;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subtitle}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subtitle}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subtitle
+     * @attr name com.craiovadata.aus.sydney:subtitle
      */
     public static final int Toolbar_subtitle=17;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subtitleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subtitleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21283,32 +21291,32 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subtitleTextAppearance
+     * @attr name com.craiovadata.aus.sydney:subtitleTextAppearance
      */
     public static final int Toolbar_subtitleTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#subtitleTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#subtitleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:subtitleTextColor
+     * @attr name com.craiovadata.aus.sydney:subtitleTextColor
      */
     public static final int Toolbar_subtitleTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#title}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#title}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:title
+     * @attr name com.craiovadata.aus.sydney:title
      */
     public static final int Toolbar_title=20;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleMargin}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleMargin}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21317,11 +21325,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleMargin
+     * @attr name com.craiovadata.aus.sydney:titleMargin
      */
     public static final int Toolbar_titleMargin=21;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleMarginBottom}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleMarginBottom}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21330,11 +21338,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleMarginBottom
+     * @attr name com.craiovadata.aus.sydney:titleMarginBottom
      */
     public static final int Toolbar_titleMarginBottom=22;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleMarginEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleMarginEnd}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21343,11 +21351,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleMarginEnd
+     * @attr name com.craiovadata.aus.sydney:titleMarginEnd
      */
     public static final int Toolbar_titleMarginEnd=23;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleMarginStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleMarginStart}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21356,11 +21364,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleMarginStart
+     * @attr name com.craiovadata.aus.sydney:titleMarginStart
      */
     public static final int Toolbar_titleMarginStart=24;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleMarginTop}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleMarginTop}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21369,11 +21377,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleMarginTop
+     * @attr name com.craiovadata.aus.sydney:titleMarginTop
      */
     public static final int Toolbar_titleMarginTop=25;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleMargins}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleMargins}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21382,11 +21390,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleMargins
+     * @attr name com.craiovadata.aus.sydney:titleMargins
      */
     public static final int Toolbar_titleMargins=26;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleTextAppearance}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleTextAppearance}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21394,18 +21402,18 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleTextAppearance
+     * @attr name com.craiovadata.aus.sydney:titleTextAppearance
      */
     public static final int Toolbar_titleTextAppearance=27;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#titleTextColor}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#titleTextColor}
      * attribute's value can be found in the {@link #Toolbar} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:titleTextColor
+     * @attr name com.craiovadata.aus.sydney:titleTextColor
      */
     public static final int Toolbar_titleTextColor=28;
     /**
@@ -21417,9 +21425,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.craiovadata.us.ct.bridgeport:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.craiovadata.us.ct.bridgeport:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.craiovadata.us.ct.bridgeport:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.craiovadata.aus.sydney:paddingEnd}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.craiovadata.aus.sydney:paddingStart}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_theme com.craiovadata.aus.sydney:theme}</code></td><td></td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -21462,7 +21470,7 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#paddingEnd}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#paddingEnd}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21471,11 +21479,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:paddingEnd
+     * @attr name com.craiovadata.aus.sydney:paddingEnd
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#paddingStart}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#paddingStart}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -21484,11 +21492,11 @@ public final class R {
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:paddingStart
+     * @attr name com.craiovadata.aus.sydney:paddingStart
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#theme}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#theme}
      * attribute's value can be found in the {@link #View} array.
      *
      * <p>May be a reference to another resource, in the form
@@ -21496,7 +21504,7 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:theme
+     * @attr name com.craiovadata.aus.sydney:theme
      */
     public static final int View_theme=4;
     /**
@@ -21507,8 +21515,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.craiovadata.us.ct.bridgeport:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.craiovadata.us.ct.bridgeport:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.craiovadata.aus.sydney:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.craiovadata.aus.sydney:backgroundTintMode}</code></td><td></td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -21533,18 +21541,18 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTint}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTint}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTint
+     * @attr name com.craiovadata.aus.sydney:backgroundTint
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.craiovadata.us.ct.bridgeport.R.attr#backgroundTintMode}
+     * <p>This symbol is the offset where the {@link com.craiovadata.aus.sydney.R.attr#backgroundTintMode}
      * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
      *
      * <p>Must be one of the following constant values.</p>
@@ -21561,7 +21569,7 @@ public final class R {
      * <tr><td>src_over</td><td>3</td><td></td></tr>
      * </table>
      *
-     * @attr name com.craiovadata.us.ct.bridgeport:backgroundTintMode
+     * @attr name com.craiovadata.aus.sydney:backgroundTintMode
      */
     public static final int ViewBackgroundHelper_backgroundTintMode=2;
     /**

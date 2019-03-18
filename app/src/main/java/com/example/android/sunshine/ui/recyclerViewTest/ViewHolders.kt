@@ -2,16 +2,16 @@ package com.example.android.sunshine.ui.recyclerViewTest
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android.sunshine.ui.cards.CurrentWeatherCardUtils
-import com.example.android.sunshine.ui.cards.WeatherDetailsCardUtils
+import com.example.android.sunshine.ui.cards.*
 
-class CardsViewHolders {
+
+class ViewHolders {
 
     interface UpdateViewHolder {
         fun bindViews(update: Update)
     }
 
-    class WeatherViewHolder(itemView: View, private val onWeatherImageClicked: Unit)
+    class WeatherViewHolder(itemView: View, private val onImgClicked: Unit)
         : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Update) {
@@ -33,13 +33,38 @@ class CardsViewHolders {
         }
     }
 
-    class MapViewHolder(itemView: View, onMapClicked: Unit)
+    class GraphViewHolder(itemView: View)
         : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Update) {
-            val mapCard = update as MapUpdate
+            val forecastUpdate = update as GraphForecastUpdate
+            val list = forecastUpdate.list
+            TemperatureGraphCardUtils.bindForecastToUI(list, itemView)
 
             // bind update values to views
         }
     }
+
+    class MapViewHolder(itemView: View)
+        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+        // get the views reference from itemView...
+        override fun bindViews(update: Update) {
+            val mapUpdate = update as MapUpdate
+            val entry = mapUpdate.weatherEntry
+            MapCardUtils.bindMapToUI(entry.lat, entry.lon, itemView)
+        }
+    }
+
+    class AdsViewHolder(itemView: View)
+        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+        // get the views reference from itemView...
+        override fun bindViews(update: Update) {
+            val adsUpdate = update as AdsUpdate
+            val adView = adsUpdate.adView
+            AdsCardUtils.bindAdsToUI(itemView, adView)
+            // bind update values to views
+        }
+    }
+
+
 }

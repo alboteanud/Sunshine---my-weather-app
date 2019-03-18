@@ -131,7 +131,7 @@ final class WeatherJsonParser {
 
         // Create the weather entry object
         return new WeatherEntry(weatherId, new Date(dateTimeMillis), max,
-                humidity, pressure, windSpeed, windDirection, "_" );
+                humidity, pressure, windSpeed, windDirection, "_", 1, 0, 0);
     }
 
     // OWM 5days c3 hours
@@ -146,12 +146,16 @@ final class WeatherJsonParser {
          * Since this data is also sent in-order and the first day is always the current day, we're
          * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
          */
-        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
+//        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
+
+        JSONObject coordObj = forecastJson.getJSONObject("city").getJSONObject("coord");
+        double lat = coordObj.getDouble("lat");
+        double lon = coordObj.getDouble("lon");
 
         for (int i = 0; i < jsonWeatherArray.length(); i++) {
             // Get the JSON object representing the day
             JSONObject dayForecast = jsonWeatherArray.getJSONObject(i);
-            WeatherEntry weather = fromJson5Days(dayForecast);
+            WeatherEntry weather = fromJson5Days(dayForecast, lat, lon);
 
             weatherEntries[i] = weather;
         }
@@ -159,7 +163,7 @@ final class WeatherJsonParser {
     }
 
     // OWM 5days c3 hours
-    private static WeatherEntry fromJson5Days(final JSONObject dayForecast) throws JSONException {
+    private static WeatherEntry fromJson5Days(final JSONObject dayForecast, double lat, double lon) throws JSONException {
         // We ignore all the datetime values embedded in the JSON and assume that
         // the values are returned in-order by day (which is not guaranteed to be correct).
 
@@ -186,7 +190,7 @@ final class WeatherJsonParser {
 
         // Create the weather entry object
         return new WeatherEntry(weatherId, new Date(dateTimeMillis), max,
-                humidity, pressure, windSpeed, windDirection, icon);
+                humidity, pressure, windSpeed, windDirection, icon, 1, lat, lon);
     }
 
     // OWM current weather
@@ -229,9 +233,13 @@ final class WeatherJsonParser {
         long dateTimeMillis = jsonObject.getLong(OWM_DAY_TIME) * 1000;
         Date wDate = new Date(dateTimeMillis);
 
+        JSONObject coordObj = jsonObject.getJSONObject("coord");
+        double lat = coordObj.getDouble("lat");
+        double lon = coordObj.getDouble("lon");
+
         // Create the weather entry object
         return new WeatherEntry(weatherId, wDate, temp,
-                humidity, pressure, windSpeed, windDirection, iconCode, 1);
+                humidity, pressure, windSpeed, windDirection, iconCode, 1, lat, lon);
     }
 
 

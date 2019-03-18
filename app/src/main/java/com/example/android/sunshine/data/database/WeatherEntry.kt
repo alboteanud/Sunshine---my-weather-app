@@ -12,23 +12,16 @@ class WeatherEntry {
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0
     var weatherIconId: Int = 0
-        private set
     var date: Date = Date()
-        private set
     var temp: Double = 0.toDouble()
-        private set
     var humidity: Double = 0.toDouble()
-        private set
     var pressure: Double = 0.toDouble()
-        private set
     var wind: Double = 0.toDouble()
-        private set
     var degrees: Double = 0.toDouble()
-        private set
+    var lat: Double = 0.toDouble()
+    var lon: Double = 0.toDouble()
     var icon: String = ""
-        private set
     var isCurrentWeather: Int = 0
-        private set
 
     /**
      * This constructor is used by OpenWeatherJsonParser. When the network fetch has JSON data, it
@@ -44,7 +37,9 @@ class WeatherEntry {
      * @param icon          Icon code OWM
      */
     @Ignore
-    constructor(weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double, wind: Double, degrees: Double, icon: String, isCurrentWeather: Int) {
+    constructor(
+            weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double,
+            wind: Double, degrees: Double, icon: String, isCurrentWeather: Int, lat: Double, lon: Double) {
         this.weatherIconId = weatherIconId
         this.date = date
         this.temp = temp
@@ -54,7 +49,10 @@ class WeatherEntry {
         this.degrees = degrees
         this.icon = icon
         this.isCurrentWeather = isCurrentWeather
+        this.lat = lat
+        this.lon = lon
     }
+/*
 
     @Ignore
     constructor(weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double, wind: Double, degrees: Double, icon: String) {
@@ -67,8 +65,11 @@ class WeatherEntry {
         this.degrees = degrees
         this.icon = icon
     }
+*/
 
-    constructor(id: Int, weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double, wind: Double, degrees: Double, icon: String, isCurrentWeather: Int) {
+    constructor(id: Int,
+                weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double,
+                wind: Double, degrees: Double, icon: String, isCurrentWeather: Int, lat: Double, lon: Double) {
         this.id = id
         this.weatherIconId = weatherIconId
         this.date = date
@@ -79,5 +80,7 @@ class WeatherEntry {
         this.degrees = degrees
         this.icon = icon
         this.isCurrentWeather = isCurrentWeather
+        this.lat = lat
+        this.lon = lon
     }
 }

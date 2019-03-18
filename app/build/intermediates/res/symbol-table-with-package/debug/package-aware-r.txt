@@ -1,4 +1,4 @@
-com.craiovadata.us.ct.bridgeport
+com.craiovadata.aus.sydney
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom
@@ -1199,6 +1199,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id adsContainer
 id alertTitle
 id all
 id always
@@ -1216,6 +1217,7 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id buttonPanel
 id cancel_action
+id cardAds
 id cardDetailsWeather
 id cardGraph
 id cardMap
@@ -1286,6 +1288,7 @@ id line1
 id line3
 id listMode
 id list_item
+id mapImageView
 id masked
 id media_actions
 id menu_test_1
@@ -1348,6 +1351,7 @@ id seekbar
 id seekbar_value
 id select_dialog_listview
 id selected
+id separator
 id shortcut
 id showCustom
 id showHome
@@ -1376,12 +1380,14 @@ id tabMode
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id temperature_main
+id temperatureText
 id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textViewCelsius
+id textViewFarenheit
 id textWatcher
 id text_input_password_toggle
 id textinput_counter
@@ -1427,6 +1433,7 @@ integer mtrl_btn_anim_delay_ms
 integer mtrl_btn_anim_duration_ms
 integer mtrl_chip_anim_duration
 integer mtrl_tab_indicator_anim_duration_ms
+integer scale_static_map
 integer show_password_duration
 integer status_bar_notification_info_maxnum
 interpolator mtrl_fast_out_linear_in
@@ -1462,8 +1469,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout ads_card
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout current_weather_card
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -1519,7 +1528,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-layout weather_card
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground

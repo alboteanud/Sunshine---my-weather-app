@@ -43,7 +43,7 @@ class DetailActivity : AppCompatActivity() {
 
         mViewModel.weather.observe(this, androidx.lifecycle.Observer { weatherEntry ->
             // Update the UI
-//            if (weatherEntry != null) bindWeatherToUI(weatherEntry)
+//            if (list != null) bindWeatherToUI(list)
         })
 
         InjectorUtils.provideRepository(this).initializeData()
@@ -58,14 +58,14 @@ class DetailActivity : AppCompatActivity() {
 
    /*
 
-    private fun bindWeatherToUI(weatherEntry: WeatherEntry) {
+    private fun bindWeatherToUI(list: WeatherEntry) {
         /****************
          * Weather Icon *
          */
 
-        val weatherId = weatherEntry.weatherIconId
+        val weatherId = list.weatherIconId
         //        int weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForWeatherCondition(weatherId);
-        val iconId = weatherEntry.icon
+        val iconId = list.icon
         val weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(iconId)
 
         /* Set the resource ID on the icon to display the art */
@@ -82,7 +82,7 @@ class DetailActivity : AppCompatActivity() {
          * the _date representation for the local _date in local time.
          * SunshineDateUtils#getFriendlyDateString takes care of this for us.
          */
-        val localDateMidnightGmt = weatherEntry._date!!.time
+        val localDateMidnightGmt = list._date!!.time
         val dateText = SunshineDateUtils.getFriendlyDateString(this@DetailActivity, localDateMidnightGmt, true)
         date_detail.text = dateText
 
@@ -106,7 +106,7 @@ class DetailActivity : AppCompatActivity() {
          * High (max) temperature *
          */
 
-        val maxInCelsius = weatherEntry.temp
+        val maxInCelsius = list.temp
 
         /*
          * If the user's preference for weather is fahrenheit, formatTemperature will convert
@@ -126,7 +126,7 @@ class DetailActivity : AppCompatActivity() {
          * Low (min) temperature *
          */
 
-        //        double minInCelsius = weatherEntry.getMin();
+        //        double minInCelsius = list.getMin();
         /*
          * If the user's preference for weather is fahrenheit, formatTemperature will convert
          * the temperature. This method will also append either °C or °F to the temperature
@@ -144,7 +144,7 @@ class DetailActivity : AppCompatActivity() {
          * Humidity *
          */
 
-        val humidity = weatherEntry.humidity
+        val humidity = list.humidity
         val humidityString = getString(R.string.format_humidity, humidity)
         val humidityA11y = getString(R.string.a11y_humidity, humidityString)
 
@@ -158,8 +158,8 @@ class DetailActivity : AppCompatActivity() {
          * Wind speed and direction *
          */
         /* Read wind speed (in MPH) and direction (in compass degrees)*/
-        val windSpeed = weatherEntry.wind
-        val windDirection = weatherEntry.degrees
+        val windSpeed = list.wind
+        val windDirection = list.degrees
         val windString = SunshineWeatherUtils.getFormattedWind(this@DetailActivity, windSpeed, windDirection)
         val windA11y = getString(R.string.a11y_wind, windString)
 
@@ -171,7 +171,7 @@ class DetailActivity : AppCompatActivity() {
         /************
          * Pressure *
          */
-        val pressure = weatherEntry.pressure
+        val pressure = list.pressure
 
         /*
          * Format the pressure text using string resources. The reason we directly access

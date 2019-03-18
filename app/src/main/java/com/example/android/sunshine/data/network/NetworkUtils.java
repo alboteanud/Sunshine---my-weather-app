@@ -132,6 +132,29 @@ final class NetworkUtils {
         }
     }
 
+      private static final String GOOGLE_STATIC_MAP_API_KEY = "AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0" ;
+    // proiect Sunshine 2019 - anca.scobaru@gmail.com
+
+    private static final String BASE_STATIC_MAP_URL = "https://maps.googleapis.com/maps/api/staticmap?";
+
+    public static URL buildUrlGoogleStaticMap(long lat, long lng) {
+        Uri staticMapUri = Uri.parse(BASE_STATIC_MAP_URL).buildUpon()
+                .appendQueryParameter("center", Long.toString(lat) + "%2c%20" + Long.toString(lng))
+                .appendQueryParameter("zoom", "12")
+//                .appendQueryParameter("size", "400x400")
+                .appendQueryParameter("key", GOOGLE_STATIC_MAP_API_KEY)
+                .build();
+
+        try {
+            URL url = new URL(staticMapUri.toString());
+            Log.v(TAG, "static map URL: " + url);
+            return url;
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     private static URL buildUrlWithLocationId(String locationID) {
         Uri weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
                 .appendQueryParameter(ID_PARAM, locationID)

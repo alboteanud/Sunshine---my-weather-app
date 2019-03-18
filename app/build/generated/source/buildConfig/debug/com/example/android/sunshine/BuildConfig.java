@@ -5,7 +5,7 @@ package com.example.android.sunshine;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "com.craiovadata.us.ct.bridgeport";
+  public static final String APPLICATION_ID = "com.craiovadata.aus.sydney";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
   public static final int VERSION_CODE = 1;

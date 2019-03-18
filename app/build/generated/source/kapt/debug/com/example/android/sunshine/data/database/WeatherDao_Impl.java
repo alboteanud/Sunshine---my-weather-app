@@ -32,7 +32,7 @@ public final class WeatherDao_Impl implements WeatherDao {
     this.__insertionAdapterOfWeatherEntry = new EntityInsertionAdapter<WeatherEntry>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`temp`,`humidity`,`pressure`,`wind`,`degrees`,`icon`,`isCurrentWeather`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`temp`,`humidity`,`pressure`,`wind`,`degrees`,`lat`,`lon`,`icon`,`isCurrentWeather`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -51,12 +51,14 @@ public final class WeatherDao_Impl implements WeatherDao {
         stmt.bindDouble(6, value.getPressure());
         stmt.bindDouble(7, value.getWind());
         stmt.bindDouble(8, value.getDegrees());
+        stmt.bindDouble(9, value.getLat());
+        stmt.bindDouble(10, value.getLon());
         if (value.getIcon() == null) {
-          stmt.bindNull(9);
+          stmt.bindNull(11);
         } else {
-          stmt.bindString(9, value.getIcon());
+          stmt.bindString(11, value.getIcon());
         }
-        stmt.bindLong(10, value.isCurrentWeather());
+        stmt.bindLong(12, value.isCurrentWeather());
       }
     };
     this.__preparedStmtOfDeleteOldWeather = new SharedSQLiteStatement(__db) {
@@ -231,6 +233,8 @@ public final class WeatherDao_Impl implements WeatherDao {
           final int _cursorIndexOfPressure = _cursor.getColumnIndexOrThrow("pressure");
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
+          final int _cursorIndexOfLat = _cursor.getColumnIndexOrThrow("lat");
+          final int _cursorIndexOfLon = _cursor.getColumnIndexOrThrow("lon");
           final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
           final int _cursorIndexOfIsCurrentWeather = _cursor.getColumnIndexOrThrow("isCurrentWeather");
           final WeatherEntry _result;
@@ -257,11 +261,15 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
+            final double _tmpLat;
+            _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
+            final double _tmpLon;
+            _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
             final String _tmpIcon;
             _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
+            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather,_tmpLat,_tmpLon);
           } else {
             _result = null;
           }
@@ -347,6 +355,8 @@ public final class WeatherDao_Impl implements WeatherDao {
           final int _cursorIndexOfPressure = _cursor.getColumnIndexOrThrow("pressure");
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
+          final int _cursorIndexOfLat = _cursor.getColumnIndexOrThrow("lat");
+          final int _cursorIndexOfLon = _cursor.getColumnIndexOrThrow("lon");
           final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
           final int _cursorIndexOfIsCurrentWeather = _cursor.getColumnIndexOrThrow("isCurrentWeather");
           final WeatherEntry _result;
@@ -373,11 +383,15 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
+            final double _tmpLat;
+            _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
+            final double _tmpLon;
+            _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
             final String _tmpIcon;
             _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
+            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather,_tmpLat,_tmpLon);
           } else {
             _result = null;
           }

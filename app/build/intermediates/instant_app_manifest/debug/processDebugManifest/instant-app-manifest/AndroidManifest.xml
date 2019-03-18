@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.craiovadata.us.ct.bridgeport"
+    package="com.craiovadata.aus.sydney"
     android:targetSandboxVersion="2"
     android:versionCode="1"
     android:versionName="1.0" >
@@ -84,7 +84,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.craiovadata.us.ct.bridgeport.mobileadsinitprovider"
+            android:authorities="com.craiovadata.aus.sydney.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -94,12 +94,12 @@
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.craiovadata.us.ct.bridgeport.lifecycle-process"
+            android:authorities="com.craiovadata.aus.sydney.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.craiovadata.us.ct.bridgeport.com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.craiovadata.aus.sydney.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 

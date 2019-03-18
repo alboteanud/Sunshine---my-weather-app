@@ -12,7 +12,6 @@ import com.example.android.sunshine.BuildConfig
 import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.WeatherEntry
 import com.example.android.sunshine.ui.list.MainActivity
-import java.text.DateFormat
 
 object NotifUtils {
 
@@ -67,12 +66,13 @@ object NotifUtils {
         val highString = SunshineWeatherUtils.formatTemperature(context, entry.temp)
 
         val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherIconId)
-        val weatherTimeMills = SunshineDateUtils.getCityTimeMills(context, entry.date!!.time)
+        val weatherTimeMills = SunshineDateUtils.getCityTimeMills(context, entry.date.time)
 //        val weatherDate = SimpleDateFormat("HH mm", Locale.getDefault()).format(weatherTimeMills)
-        val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
+//        val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
+
         val cityName = context.getString(R.string.notif_city_name)
         val titleTxt = String.format(context.getString(R.string.notification_title_text), highString, cityName)
-        val contentTxt = String.format(context.getString(R.string.notification_content_text), description, weatherDate)
+        val contentTxt = String.format(context.getString(R.string.notification_content_text), description, "")
 
         val builder = NotificationCompat.Builder(context, chanel_id)
                 .setSmallIcon(smallIconId)

@@ -15,8 +15,6 @@ public class MainActivityViewModel extends ViewModel {
     private final LiveData<List<ListWeatherEntry>> mForecast;
     private final LiveData<WeatherEntry> currentWeather;
 
-
-
     public MainActivityViewModel(RepositoryWeather repository) {
         mRepository = repository;
         mForecast = mRepository.getWeatherForecasts();

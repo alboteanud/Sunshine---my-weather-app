@@ -1,7 +1,6 @@
 package com.example.android.sunshine.ui.recyclerViewTest
 
-import java.util.*
+import com.example.android.sunshine.data.database.WeatherEntry
 
-data class MapUpdate
-(val date_: Date, val lat: Double, val long: Double)
-    : Update(Update.TYPE.MAP)
+data class MapUpdate(val weatherEntry: WeatherEntry)
+    : Update(weatherEntry.id, Update.TYPE.MAP, weatherEntry.date)

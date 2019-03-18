@@ -6,37 +6,35 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.RecyclerView
-import com.example.android.sunshine.R
-import com.example.android.sunshine.ui.recyclerViewTest.CardsAdapter
-import com.example.android.sunshine.ui.recyclerViewTest.CurrentWeatherUpdate
-import com.example.android.sunshine.ui.recyclerViewTest.DetailsUpdate
+import com.example.android.sunshine.ui.recyclerViewTest.*
 import com.example.android.sunshine.utilities.InjectorUtils
-import com.example.android.sunshine.utilities.Utils.getAdBannerId
+import com.example.android.sunshine.utilities.Utils
 import com.example.android.sunshine.utilities.Utils.getBackResId
 import com.example.android.sunshine.utilities.Utils.logDBvalues
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import java.text.SimpleDateFormat
+import java.util.*
 
-class MainActivity : AppCompatActivity(), CardsAdapter.onItemClickListener {
 
-    override fun onWeatherImageClicked() {
-    }
+class MainActivity : AppCompatActivity(), Adapter.onItemClickListener {
 
-    override fun onMapClicked() {
-    }
 
     private lateinit var viewModel: MainActivityViewModel
     private var mPosition = RecyclerView.NO_POSITION
+    private var currentWeatherUpdate: CurrentWeatherUpdate? = null
+    private var detailsUpdate: DetailsUpdate? = null
+    private var graphForecastUpdate: GraphForecastUpdate? = null
+    private var mapUpdate: MapUpdate? = null
+    private var adsUpdate: AdsUpdate? = null
+    private var adView: AdView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(com.example.android.sunshine.R.layout.activity_main)
 
         recyclerView.setHasFixedSize(true)
-        val adapter = CardsAdapter(this, listOf(), this)
+        val adapter = Adapter(this, listOf(), this)
         recyclerView.adapter = adapter
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
@@ -48,15 +46,11 @@ class MainActivity : AppCompatActivity(), CardsAdapter.onItemClickListener {
         viewModel.currentWeather.observe(this, androidx.lifecycle.Observer { entry ->
             if (entry != null) {
                 showRecyclerView()
-                val currentWeatherUpdate = CurrentWeatherUpdate(entry)
-                val detailsUpdate = DetailsUpdate(entry)
-                val list = listOf(
-                        currentWeatherUpdate,
-                        detailsUpdate
-                )
-                adapter.swapForecast(list)
-                Log.d(MainActivity.TAG, "DB entry CW: " + SimpleDateFormat(" dd MMM HH:mm").format(entry.date) + "  temp " + entry.temp)
-//                logDBvalues(this, weatherEntries)
+                currentWeatherUpdate = CurrentWeatherUpdate(entry)
+                detailsUpdate = DetailsUpdate(entry)
+                mapUpdate = MapUpdate(entry)
+                updateAdapter(adapter)
+                Log.d(TAG, "DB entry CW " + SimpleDateFormat("dd MMM HH:mm").format(entry.date) + "  temp " + entry.temp)
             } else showLoading()
         })
 
@@ -65,29 +59,61 @@ class MainActivity : AppCompatActivity(), CardsAdapter.onItemClickListener {
             recyclerView.smoothScrollToPosition(mPosition)
             if (listWeatherEntries != null && listWeatherEntries.size > 0) {
                 showRecyclerView()
-//                TemperatureGraphCardUtils.initGraph(weatherEntries, my_graph)
                 logDBvalues(this, listWeatherEntries)
-
-//                adapter.swapForecast(listOf(wt))
+                graphForecastUpdate = GraphForecastUpdate(listWeatherEntries)
+                updateAdapter(adapter)
             } // else showLoading()
         })
 
 
-
-        initAdBanner()
-        val imgId = getBackResId(this)
-        backgroundImageView.setImageResource(imgId)
-
+        initAdBanner(adapter)
+        setBackgroundImg()
     }
 
-    private fun initAdBanner() {
-        MobileAds.initialize(this, getString(R.string.admob_app_id))
-        AdView(this).apply {
-            adUnitId = getAdBannerId(this@MainActivity)
-            adSize = AdSize.SMART_BANNER
-//            adContainer.addView(this)
-//            loadAd(AdRequest.Builder().build())
+    private fun setBackgroundImg(){
+        val imgId = getBackResId(this)
+        backgroundImageView.setImageResource(imgId)
+    }
+
+    private fun initAdBanner(adapter: Adapter) {
+        MobileAds.initialize(this, getString(com.example.android.sunshine.R.string.admob_app_id))
+        adView = AdView(this)
+        adView?.adSize = AdSize.MEDIUM_RECTANGLE
+        adView?.adUnitId = Utils.getAdBannerId(this)
+        adView?.loadAd(AdRequest.Builder().build())
+        adView?.adListener = object : AdListener() {
+            override fun onAdLoaded() {
+                super.onAdLoaded()
+                adsUpdate = AdsUpdate(-2, Date(), adView)
+                updateAdapter(adapter)
+            }
         }
+    }
+
+    override fun onResume() {
+        adView?.resume()
+        super.onResume()
+    }
+
+    override fun onPause() {
+        adView?.pause()
+        super.onPause()
+    }
+
+    override fun onDestroy() {
+        adView?.removeAllViews();
+        adView?.destroy()
+        super.onDestroy()
+    }
+
+    private fun updateAdapter(adapter: Adapter) {
+        val list = mutableListOf<Update>()
+        currentWeatherUpdate?.let { list.add(it) }
+        detailsUpdate?.let { list.add(it) }
+        graphForecastUpdate?.let { list.add(it) }
+        adsUpdate?.let { list.add(it) }
+        mapUpdate?.let { list.add(it) }
+        adapter.setUpdates(list)
     }
 
     private fun showRecyclerView() {
@@ -113,7 +139,13 @@ class MainActivity : AppCompatActivity(), CardsAdapter.onItemClickListener {
     }
 
     companion object {
-        val TAG = "MainActivity"
+        const val TAG = "MainActivity"
     }
+
+    override fun onWeatherImageClicked() {
+    }
+
+
+
 
 }

@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context=".ui.list.MainActivity"
-    tools:ignore="MergeRootFrame"
-    >
+    tools:ignore="MergeRootFrame">
 
     <ImageView
         android:id="@+id/backgroundImageView"
@@ -16,46 +15,11 @@
         android:scaleType="centerCrop"
         tools:src="@drawable/c1" />
 
-<!--
-
-    <androidx.core.widget.NestedScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:fillViewport="true"
-        android:_id="@+_id/nestedScrollView"
-        >
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp"
-            >
-
-            <View
-                android:layout_width="0dp"
-                android:layout_height="300dp"/>
-
-
-            <include layout="@layout/weather_card" />
-
-            <include layout="@layout/graph_card" />
-
-            <include layout="@layout/details_weather_card" />
-
-            <include layout="@layout/map_card" />
-
-        </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
--->
-
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@drawable/toolbar_background_gradient"
-        android:padding="8dp"
-       >
+        android:padding="8dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,18 +32,16 @@
     </RelativeLayout>
 
 
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/recyclerView"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:context=".MainActivity"
-        tools:listitem="@layout/weather_card"
-       android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        />
+        tools:listitem="@layout/current_weather_card" />
 
     <ProgressBar
         android:id="@+id/pb_loading_indicator"

@@ -2,9 +2,8 @@ package com.example.android.sunshine.ui.cards
 import android.view.View
 import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.WeatherEntry
-import com.example.android.sunshine.utilities.SunshineDateUtils
 import com.example.android.sunshine.utilities.SunshineWeatherUtils
-import kotlinx.android.synthetic.main.weather_card.view.*
+import kotlinx.android.synthetic.main.current_weather_card.view.*
 
 object CurrentWeatherCardUtils {
 
@@ -31,9 +30,9 @@ object CurrentWeatherCardUtils {
          * the _date representation for the local _date in local time.
          * SunshineDateUtils#getFriendlyDateString takes care of this for us.
          */
-        val localDateMidnightGmt = entry.date.time
-        val dateText = SunshineDateUtils.getFriendlyDateString(cardView.context, localDateMidnightGmt, true)
-        cardView.weatherDate.text = dateText
+//        val localDateMidnightGmt = entry.date.time
+//        val dateText = SunshineDateUtils.getFriendlyDateString(cardView.context, localDateMidnightGmt, true)
+//        cardView.weatherDate.text = dateText
 
         /***********************
          * Weather Description *
@@ -68,8 +67,8 @@ object CurrentWeatherCardUtils {
         val highA11y = cardView.context.getString(R.string.a11y_high_temp, highString)
 
         /* Set the text and content description (for accessibility purposes) */
-        cardView.temperature_main.text = highString
-        cardView.temperature_main.contentDescription = highA11y
+        cardView.temperatureText.text = highString
+        cardView.temperatureText.contentDescription = highA11y
 
         /*************************
          * Low (min) temperature *

@@ -9,7 +9,8 @@
     android:id="@+id/cardDetailsWeather"
     card_view:cardBackgroundColor="@color/blackSemi"
     card_view:cardElevation="2sp"
-    card_view:cardUseCompatPadding="true">
+    card_view:cardUseCompatPadding="true"
+>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/extra_details_"
