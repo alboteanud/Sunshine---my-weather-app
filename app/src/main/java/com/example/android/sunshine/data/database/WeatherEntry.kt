@@ -39,6 +39,23 @@ class WeatherEntry {
     @Ignore
     constructor(
             weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double,
+            wind: Double, degrees: Double, icon: String, isCurrentWeather: Int) {
+        this.weatherIconId = weatherIconId
+        this.date = date
+        this.temp = temp
+        this.humidity = humidity
+        this.pressure = pressure
+        this.wind = wind
+        this.degrees = degrees
+        this.icon = icon
+        this.isCurrentWeather = isCurrentWeather
+//        this.lat = lat
+//        this.lon = lon
+    }
+
+  @Ignore
+    constructor(
+            weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double,
             wind: Double, degrees: Double, icon: String, isCurrentWeather: Int, lat: Double, lon: Double) {
         this.weatherIconId = weatherIconId
         this.date = date
@@ -52,24 +69,10 @@ class WeatherEntry {
         this.lat = lat
         this.lon = lon
     }
-/*
-
-    @Ignore
-    constructor(weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double, wind: Double, degrees: Double, icon: String) {
-        this.weatherIconId = weatherIconId
-        this.date = date
-        this.temp = temp
-        this.humidity = humidity
-        this.pressure = pressure
-        this.wind = wind
-        this.degrees = degrees
-        this.icon = icon
-    }
-*/
 
     constructor(id: Int,
                 weatherIconId: Int, date: Date, temp: Double, humidity: Double, pressure: Double,
-                wind: Double, degrees: Double, icon: String, isCurrentWeather: Int, lat: Double, lon: Double) {
+                wind: Double, degrees: Double, icon: String, isCurrentWeather: Int) {
         this.id = id
         this.weatherIconId = weatherIconId
         this.date = date
@@ -80,7 +83,5 @@ class WeatherEntry {
         this.degrees = degrees
         this.icon = icon
         this.isCurrentWeather = isCurrentWeather
-        this.lat = lat
-        this.lon = lon
     }
 }

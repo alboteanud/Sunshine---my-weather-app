@@ -11,7 +11,7 @@ import androidx.core.app.NotificationCompat
 import com.example.android.sunshine.BuildConfig
 import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.WeatherEntry
-import com.example.android.sunshine.ui.list.MainActivity
+import com.example.android.sunshine.ui.main.MainActivity
 
 object NotifUtils {
 
@@ -66,7 +66,7 @@ object NotifUtils {
         val highString = SunshineWeatherUtils.formatTemperature(context, entry.temp)
 
         val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherIconId)
-        val weatherTimeMills = SunshineDateUtils.getCityTimeMills(context, entry.date.time)
+//        val weatherTimeMills = SunshineDateUtils.getCityDate(context, entry.date.time)
 //        val weatherDate = SimpleDateFormat("HH mm", Locale.getDefault()).format(weatherTimeMills)
 //        val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
 

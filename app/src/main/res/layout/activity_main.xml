@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".ui.list.MainActivity"
+    tools:context=".ui.main.MainActivity"
     tools:ignore="MergeRootFrame">
 
     <ImageView
@@ -27,24 +27,24 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
             android:text="@string/app_name"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            style="@style/TitleStyle"/>
 
     </RelativeLayout>
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
         android:orientation="vertical"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:context=".MainActivity"
         tools:listitem="@layout/current_weather_card" />
 
     <ProgressBar
-        android:id="@+id/pb_loading_indicator"
+        android:id="@+id/loading_indicator"
         android:layout_width="42dp"
         android:layout_height="42dp"
         android:layout_centerInParent="true" />

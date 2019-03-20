@@ -106,7 +106,6 @@ public final class SunshineDateUtils {
     }
 
 
-
     /**
      * This method returns the number of days since the epoch (January 01, 1970, 12:00 Midnight UTC)
      * in UTC time from the current _date.
@@ -136,15 +135,24 @@ public final class SunshineDateUtils {
         return normalizedUtcDate - gmtOffset;
     }
 
-    public static long getCityTimeMills(Context context, long timeInMills){
-        TimeZone tz = TimeZone.getDefault();
-        Calendar cal = GregorianCalendar.getInstance(tz);
-        long deviceOffset = tz.getOffset(cal.getTimeInMillis());
-        long cityOffset = getCityOffsetMillis(context);
+    public static Date getCityDate(Context context, long timeInMills) {
+//        TimeZone tz = TimeZone.getDefault();
+//        Calendar cal = GregorianCalendar.getInstance(tz);
+//        long deviceOffset = tz.getOffset(cal.getTimeInMillis());
+//        long cityOffset = getCityOffsetMillis(context);
+//        long result = timeInMills + cityOffset - deviceOffset;
+//        return result;
 
-        long result = timeInMills + cityOffset - deviceOffset;
-
-        return result;
+        String timeZoneID = TimeZone.getAvailableIDs()[358];
+        TimeZone tz_city = TimeZone.getTimeZone(timeZoneID);
+        Calendar cal = GregorianCalendar.getInstance(tz_city);
+        long dt15 = 1553094000000L;
+        cal.setTimeInMillis(dt15);
+        long result = cal.getTimeInMillis();
+        TimeZone setTZ = cal.getTimeZone();
+        TimeZone tz_loc = new GregorianCalendar().getTimeZone();
+        long offset = setTZ.getOffset(new GregorianCalendar().getTimeInMillis());
+        return cal.getTime();
 
     }
 
@@ -169,7 +177,7 @@ public final class SunshineDateUtils {
     public static String getFriendlyDateString(Context context, long normalizedUtcMidnight, boolean showFullDate) {
 
         // START DAN
-        if (normalizedUtcMidnight > 1){
+        if (normalizedUtcMidnight > 1) {
 
             TimeZone tz = TimeZone.getDefault();
             Calendar cal = GregorianCalendar.getInstance(tz);
@@ -178,7 +186,7 @@ public final class SunshineDateUtils {
 
             String localizedDayName = new SimpleDateFormat("dd MMM  HH:mm").format(
                     normalizedUtcMidnight + cityOffset - deviceOffset);
-            return localizedDayName ;  //  + "  " + normalizedUtcMidnight/(1000*1000);
+            return localizedDayName;  //  + "  " + normalizedUtcMidnight/(1000*1000);
         }
         // END DAN
 
@@ -291,8 +299,16 @@ public final class SunshineDateUtils {
         }
     }
 
-    public static long getCityOffsetMillis(Context context) {
+    private static long getCityOffsetMillis(Context context) {
         String zone = context.getString(R.string.time_zone);
+//        zone = TimeZone.getAvailableIDs()[0];
+
+//        for (int i = 0; i< TimeZone.getAvailableIDs().length; i++){
+//            String id = TimeZone.getAvailableIDs()[i];
+//            Log.d("tag", "time zone id: " + id);
+////            TimeZone.getTimeZone(ZoneId.SHORT_IDS.get("u"))
+//        }
+
         TimeZone timeZone = TimeZone.getTimeZone(zone);
         long now = System.currentTimeMillis();
 

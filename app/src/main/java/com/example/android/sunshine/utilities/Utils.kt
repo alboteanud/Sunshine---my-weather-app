@@ -5,13 +5,12 @@ import android.util.Log
 import com.example.android.sunshine.BuildConfig
 import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.ListWeatherEntry
-import com.example.android.sunshine.ui.list.MainActivity
+import com.example.android.sunshine.ui.main.MainActivity
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.TimeUnit
 
 object Utils {
-
     private val limit: Int
         get() {
             val dtMar = 1551458576000L
@@ -37,9 +36,15 @@ object Utils {
 
 
     fun getBackResId(context: Context): Int {
-        val imgs = intArrayOf(R.drawable.c1, R.drawable.stabil1, R.drawable.c2, R.drawable.stabil2, R.drawable.c3, R.drawable.stabil3, R.drawable.c4, R.drawable.stabil4, R.drawable.c5, R.drawable.stabil5, R.drawable.c6, R.drawable.stabil6)
+        val imgs = intArrayOf(R.drawable.c1, R.drawable.stabil1, R.drawable.c2, R.drawable.stabil2, R.drawable.c3, R.drawable.stabil3, R.drawable.c4,
+                R.drawable.stabil4, R.drawable.c5, R.drawable.stabil5, R.drawable.c6, R.drawable.stabil6)
         val pref = context.getSharedPreferences("_", Context.MODE_PRIVATE)
         val wasInit = pref.getBoolean("init", false)
+        if (BuildConfig.DEBUG){
+            val r = Random().nextInt(6)
+            val pictNo = r * 2
+            return imgs[pictNo]
+        }
         if (!wasInit) {
             pref.edit().putBoolean("init", true).apply()
             return imgs[0]
@@ -56,7 +61,7 @@ object Utils {
         Log.d(MainActivity.TAG, "Total values: " + weatherEntries.size)
         if (!BuildConfig.DEBUG) return
         weatherEntries.forEach {
-            val mills = SunshineDateUtils.getCityTimeMills(context, it.date.time)
+            val mills = SunshineDateUtils.getCityDate(context, it.date.time)
             val utcDt = SimpleDateFormat(" dd MMM HH:mm").format(it.date)
             val cityDt = SimpleDateFormat(" dd MMM HH:mm").format(mills)
             val temperature = SunshineWeatherUtils.formatTemperature(context, it.temp)

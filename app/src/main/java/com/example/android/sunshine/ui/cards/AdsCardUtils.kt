@@ -9,9 +9,6 @@ import kotlinx.android.synthetic.main.ads_card.view.*
 object AdsCardUtils {
 
     fun bindAdsToUI(itemView: View, adView: AdView?) {
-//            val bannerHolder = holder as AdViewHolder
-//            val adView = recyclerViewItems.get(position) as AdView
-//            val adCardView = bannerHolder.itemView as ViewGroup
         // The AdViewHolder recycled by the RecyclerView may be a different
         // instance than the one used previously for this position. Clear the
         // AdViewHolder of any subviews in case it has a different

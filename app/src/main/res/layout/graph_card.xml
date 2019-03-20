@@ -17,14 +17,12 @@
             android:id="@+id/textViewCelsius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:minWidth="40dp"
-            android:minHeight="40dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:text="°C"
-            android:textSize="20sp"
-            card_view:layout_constraintBottom_toTopOf="@+id/my_graph"
+            android:focusable="true"
+            android:textSize="18sp"
             card_view:layout_constraintEnd_toStartOf="@+id/separator"
             card_view:layout_constraintTop_toTopOf="parent" />
 
@@ -32,9 +30,8 @@
             android:id="@+id/separator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="0dp"
             android:text="|"
-            android:textSize="20sp"
+            android:textSize="18sp"
             card_view:layout_constraintBottom_toBottomOf="@+id/textViewCelsius"
             card_view:layout_constraintEnd_toStartOf="@+id/textViewFarenheit"
             card_view:layout_constraintTop_toTopOf="@+id/textViewCelsius" />
@@ -43,41 +40,36 @@
             android:id="@+id/textViewFarenheit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="0dp"
             android:gravity="center"
-            android:minWidth="40dp"
-            android:minHeight="40dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
             android:text="°F"
-            android:textSize="20sp"
+            android:textSize="18sp"
+            android:focusable="true"
             card_view:layout_constraintBottom_toBottomOf="@+id/separator"
-            card_view:layout_constraintEnd_toEndOf="@+id/my_graph"
+            card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintTop_toTopOf="@+id/separator" />
 
 
         <com.jjoe64.graphview.GraphView
-            android:id="@+id/my_graph"
-            android:layout_width="match_parent"
-            android:layout_height="160dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            card_view:layout_constraintBottom_toTopOf="@id/temperatureText"
+            android:id="@+id/graphView"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            card_view:layout_constraintBottom_toTopOf="@+id/temperatureText"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toBottomOf="@id/textViewCelsius" />
+            card_view:layout_constraintTop_toBottomOf="@+id/textViewCelsius" />
 
         <TextView
             android:id="@+id/temperatureText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/my_graph"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_below="@+id/graphView"
+            android:layout_marginEnd="8dp"
             android:text="Hour"
-            android:textColor="@android:color/white"
             card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="@+id/my_graph"
-            card_view:layout_constraintTop_toBottomOf="@+id/my_graph" />
+            card_view:layout_constraintEnd_toEndOf="@+id/graphView"
+            android:layout_marginBottom="8dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

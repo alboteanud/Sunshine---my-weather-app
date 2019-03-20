@@ -631,7 +631,7 @@ bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
 bool config_materialPreferenceIconSpaceReserved
-bool default_units_imperial
+bool is_imperial_default
 bool mtrl_btn_textappearance_all_caps
 bool use_today_layout
 color abc_background_cache_hint_selector_material_dark
@@ -771,6 +771,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color semitransparentWhite
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -779,6 +780,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color transparent
 color white
 color whiteSemi
 dimen abc_action_bar_content_inset_material
@@ -1163,6 +1165,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable preference_list_divider_material
+drawable selector
 drawable stabil1
 drawable stabil2
 drawable stabil3
@@ -1265,6 +1268,7 @@ id forever
 id ghost_view
 id glide_custom_view_target_tag
 id gone
+id graphView
 id group_divider
 id groups
 id home
@@ -1288,6 +1292,7 @@ id line1
 id line3
 id listMode
 id list_item
+id loading_indicator
 id mapImageView
 id masked
 id media_actions
@@ -1299,7 +1304,6 @@ id mini
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
-id my_graph
 id navigation_header_container
 id never
 id none
@@ -1315,7 +1319,6 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
-id pb_loading_indicator
 id percent
 id pin
 id pressure_details
@@ -1532,6 +1535,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
+string GOOGLE_STATIC_MAP_API_KEY
 string a11y_forecast
 string a11y_forecast_icon
 string a11y_high_temp
@@ -1688,7 +1692,6 @@ string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
 string time_zone
 string title_activity_detail
-string title_activity_test
 string today
 string tomorrow
 string v7_preference_off
@@ -1896,8 +1899,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
-style DetailLabel
-style ExtraWeatherMeasurement
+style HeadlineTextStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -2112,6 +2114,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
+style TitleStyle
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

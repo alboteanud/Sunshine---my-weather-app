@@ -15,8 +15,9 @@
  */
 package com.example.android.sunshine.data.network;
 
+import android.content.Context;
+
 import com.example.android.sunshine.data.database.WeatherEntry;
-import com.example.android.sunshine.utilities.SunshineDateUtils;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -73,71 +74,9 @@ final class WeatherJsonParser {
         return false;
     }
 
-
-    // original - for testing server
-    private static WeatherEntry[] fromJson_for_test_orig(final JSONObject forecastJson) throws JSONException {
+    // OWM 5days 3 hours
+    private static WeatherEntry[] fromJsonForecast(Context context, final JSONObject forecastJson) throws JSONException {
         JSONArray jsonWeatherArray = forecastJson.getJSONArray(OWM_LIST);
-
-        WeatherEntry[] weatherEntries = new WeatherEntry[jsonWeatherArray.length()];
-
-        /*
-         * OWM returns daily forecasts based upon the local time of the city that is being asked
-         * for, which means that we need to know the GMT offset to translate this data properly.
-         * Since this data is also sent in-order and the first day is always the current day, we're
-         * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
-         */
-        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
-
-        for (int i = 0; i < jsonWeatherArray.length(); i++) {
-            // Get the JSON object representing the day
-            JSONObject dayForecast = jsonWeatherArray.getJSONObject(i);
-
-            // Create the weather entry object
-//            WeatherEntry weather = fromJsonOWM(dayForecast);
-
-            //  for fake server data format
-            long dateTimeMillis = normalizedUtcStartDay + SunshineDateUtils.DAY_IN_MILLIS * i;
-            WeatherEntry weather = fromJson_for_test_orig(dayForecast, dateTimeMillis);
-
-            weatherEntries[i] = weather;
-        }
-        return weatherEntries;
-    }
-
-    // original - for testing server
-    private static WeatherEntry fromJson_for_test_orig(final JSONObject dayForecast,
-                                                       long dateTimeMillis) throws JSONException {
-        // We ignore all the datetime values embedded in the JSON and assume that
-        // the values are returned in-order by day (which is not guaranteed to be correct).
-
-        double pressure = dayForecast.getDouble(OWM_PRESSURE);
-        int humidity = dayForecast.getInt(OWM_HUMIDITY);
-        double windSpeed = dayForecast.getDouble(OWM_WINDSPEED);
-        double windDirection = dayForecast.getDouble(OWM_WIND_DIRECTION);
-
-
-        // Description is in a child array called "weather", which is c1 element long.
-        // That element also contains a weather code.
-        JSONObject weatherObject =
-                dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0);
-
-        int weatherId = weatherObject.getInt(OWM_WEATHER_ID);
-
-
-        //  Temperatures are sent by Open Weather Map in a child object called "temp".
-        JSONObject temperatureObject = dayForecast.getJSONObject(OWM_TEMP);
-        double max = temperatureObject.getDouble("max");
-        double min = temperatureObject.getDouble("min");
-
-        // Create the weather entry object
-        return new WeatherEntry(weatherId, new Date(dateTimeMillis), max,
-                humidity, pressure, windSpeed, windDirection, "_", 1, 0, 0);
-    }
-
-    // OWM 5days c3 hours
-    private static WeatherEntry[] fromJson5Days_(final JSONObject forecastJson) throws JSONException {
-        JSONArray jsonWeatherArray = forecastJson.getJSONArray(OWM_LIST);
-
         WeatherEntry[] weatherEntries = new WeatherEntry[jsonWeatherArray.length()];
 
         /*
@@ -147,23 +86,22 @@ final class WeatherJsonParser {
          * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
          */
 //        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
-
         JSONObject coordObj = forecastJson.getJSONObject("city").getJSONObject("coord");
-        double lat = coordObj.getDouble("lat");
-        double lon = coordObj.getDouble("lon");
+        float lat = (float) coordObj.getDouble("lat");
+        float lon = (float) coordObj.getDouble("lon");
 
         for (int i = 0; i < jsonWeatherArray.length(); i++) {
             // Get the JSON object representing the day
             JSONObject dayForecast = jsonWeatherArray.getJSONObject(i);
-            WeatherEntry weather = fromJson5Days(dayForecast, lat, lon);
+            WeatherEntry weather = fromJsonForecast(dayForecast, lat, lon);
 
             weatherEntries[i] = weather;
         }
         return weatherEntries;
     }
 
-    // OWM 5days c3 hours
-    private static WeatherEntry fromJson5Days(final JSONObject dayForecast, double lat, double lon) throws JSONException {
+    // OWM 5days 3 hours
+    private static WeatherEntry fromJsonForecast(final JSONObject dayForecast, float lat, float lon) throws JSONException {
         // We ignore all the datetime values embedded in the JSON and assume that
         // the values are returned in-order by day (which is not guaranteed to be correct).
 
@@ -194,26 +132,24 @@ final class WeatherJsonParser {
     }
 
     // OWM current weather
-    private static WeatherEntry[] fromJsonNow(final JSONObject weatherNow) throws JSONException {
-        WeatherEntry weather = fromJsonNow_(weatherNow);
-        return new WeatherEntry[]{weather};
-    }
+    private static WeatherEntry[] fromJsonCW(final JSONObject jsonCurrentWeather) throws JSONException {
 
-    // OWM current weather
-    private static WeatherEntry fromJsonNow_(final JSONObject jsonObject) throws JSONException {
+        JSONObject mainObject = jsonCurrentWeather.getJSONObject(OWM_MAIN);
 
-        JSONObject mainObject = jsonObject.getJSONObject(OWM_MAIN);
+        JSONObject coordObj = jsonCurrentWeather.getJSONObject("coord");
+        float lat = (float) coordObj.getDouble("lat");
+        float lon = (float) coordObj.getDouble("lon");
+
         double pressure = mainObject.getDouble(OWM_PRESSURE);
         int humidity = mainObject.getInt(OWM_HUMIDITY);
         double temp = mainObject.getDouble(OWM_TEMP);
-//        temp = - temp;  // for debug
 
-        JSONArray weatherArray = jsonObject.getJSONArray(OWM_WEATHER);
+        JSONArray weatherArray = jsonCurrentWeather.getJSONArray(OWM_WEATHER);
         // Get the first weather obj - multiple objects for one location can arrive
         JSONObject weatherObj = weatherArray.getJSONObject(0);
         int weatherId = weatherObj.getInt(OWM_WEATHER_ID);
 
-        JSONObject windObj = jsonObject.getJSONObject(OWM_WIND);
+        JSONObject windObj = jsonCurrentWeather.getJSONObject(OWM_WIND);
         double windSpeed = 0;
         try {
             windObj.getDouble(OWM_WINDSPEED);
@@ -230,24 +166,16 @@ final class WeatherJsonParser {
 
         String iconCode = weatherObj.getString(OWM_ICON);
 
-        long dateTimeMillis = jsonObject.getLong(OWM_DAY_TIME) * 1000;
+        long dateTimeMillis = jsonCurrentWeather.getLong(OWM_DAY_TIME) * 1000;
         Date wDate = new Date(dateTimeMillis);
 
-        JSONObject coordObj = jsonObject.getJSONObject("coord");
-        double lat = coordObj.getDouble("lat");
-        double lon = coordObj.getDouble("lon");
-
-        // Create the weather entry object
-        return new WeatherEntry(weatherId, wDate, temp,
+        WeatherEntry weather = new WeatherEntry(weatherId, wDate, temp,
                 humidity, pressure, windSpeed, windDirection, iconCode, 1, lat, lon);
+        return new WeatherEntry[]{weather};
     }
 
-
-    /**
-     * for testing sever
-     */
     @Nullable
-    WeatherResponse parse_for_test_orig(final String forecastJsonStr) throws JSONException {
+    WeatherResponse parseForecastWeather(Context context, final String forecastJsonStr) throws JSONException {
         JSONObject forecastJson = new JSONObject(forecastJsonStr);
 
         // Is there an error?
@@ -255,30 +183,7 @@ final class WeatherJsonParser {
             return null;
         }
 
-        WeatherEntry[] weatherForecast = fromJson_for_test_orig(forecastJson);
-
-        return new WeatherResponse(weatherForecast);
-    }
-
-
-    /**
-     * This method parses JSON from a web response and returns an array of Strings
-     * describing the weather over various days from the forecast.
-     *
-     * @param forecastJsonStr JSON response from server
-     * @return Array of Strings describing weather data
-     * @throws JSONException If JSON data cannot be properly parsed
-     */
-    @Nullable
-    WeatherResponse parse(final String forecastJsonStr) throws JSONException {
-        JSONObject forecastJson = new JSONObject(forecastJsonStr);
-
-        // Is there an error?
-        if (hasHttpError(forecastJson)) {
-            return null;
-        }
-
-        WeatherEntry[] weatherForecast = fromJson5Days_(forecastJson);
+        WeatherEntry[] weatherForecast = fromJsonForecast(context, forecastJson);
 
         return new WeatherResponse(weatherForecast);
     }
@@ -293,7 +198,7 @@ final class WeatherJsonParser {
             return null;
         }
 
-        WeatherEntry[] weatherForecast = fromJsonNow(forecastJson);
+        WeatherEntry[] weatherForecast = fromJsonCW(forecastJson);
 
         return new WeatherResponse(weatherForecast);
     }

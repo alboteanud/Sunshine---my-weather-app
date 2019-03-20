@@ -65,7 +65,7 @@ public final class SunshineWeatherUtils {
     public static boolean isImperialSystem(Context context) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         String key = context.getString(R.string.pref_units_key);
-        boolean defaultImperial = context.getResources().getBoolean(R.bool.default_units_imperial);
+        boolean defaultImperial = context.getResources().getBoolean(R.bool.is_imperial_default);
         return sp.getBoolean(key, defaultImperial);
     }
 

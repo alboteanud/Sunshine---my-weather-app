@@ -153,7 +153,7 @@ MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalb
 		ADDED from /Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/AndroidManifest.xml:17:9-44
 	android:name
 		ADDED from /Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/AndroidManifest.xml:11:9-43
-activity#com.example.android.sunshine.ui.list.MainActivity
+activity#com.example.android.sunshine.ui.main.MainActivity
 ADDED from /Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/AndroidManifest.xml:20:9-30:20
 	android:label
 		ADDED from /Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/AndroidManifest.xml:22:13-45

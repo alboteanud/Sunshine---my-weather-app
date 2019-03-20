@@ -34,7 +34,7 @@
             <!-- Humidity label -->
             <TextView
                 android:id="@+id/humidity_label"
-                style="@style/DetailLabel"
+                style="@style/TitleStyle"
                 android:text="@string/humidity_label"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -42,7 +42,7 @@
             <!-- Humidity measurement -->
             <TextView
                 android:id="@+id/humidity_measurement"
-                style="@style/ExtraWeatherMeasurement"
+                style="@style/HeadlineTextStyle"
                 app:layout_constraintBottom_toBottomOf="@+id/humidity_label"
                 app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle2"
                 tools:text="38%"/>
@@ -50,7 +50,7 @@
             <!-- Pressure label -->
             <TextView
                 android:id="@+id/pressure_label"
-                style="@style/DetailLabel"
+                style="@style/TitleStyle"
                 android:layout_marginTop="8dp"
                 android:text="@string/pressure_label"
                 app:layout_constraintStart_toStartOf="@+id/humidity_label"
@@ -59,7 +59,7 @@
             <!-- Pressure measurement -->
             <TextView
                 android:id="@+id/pressure_details"
-                style="@style/ExtraWeatherMeasurement"
+                style="@style/HeadlineTextStyle"
                 app:layout_constraintBottom_toBottomOf="@+id/pressure_label"
                 app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle2"
                 tools:text="995 hPa"/>
@@ -67,7 +67,7 @@
             <!-- Wind label -->
             <TextView
                 android:id="@+id/wind_label"
-                style="@style/DetailLabel"
+                style="@style/TitleStyle"
                 android:layout_marginTop="8dp"
                 android:text="@string/wind_label"
                 app:layout_constraintStart_toStartOf="@+id/pressure_label"
@@ -76,7 +76,7 @@
             <!-- Wind measurement -->
             <TextView
                 android:id="@+id/wind_measurement"
-                style="@style/ExtraWeatherMeasurement"
+                style="@style/HeadlineTextStyle"
                 app:layout_constraintBottom_toBottomOf="@+id/wind_label"
                 app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle2"
                 tools:text="4km/h NW"/>

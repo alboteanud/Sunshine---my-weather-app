@@ -261,15 +261,17 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
-            final double _tmpLat;
-            _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
-            final double _tmpLon;
-            _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
             final String _tmpIcon;
             _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather,_tmpLat,_tmpLon);
+            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
+            final double _tmpLat;
+            _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
+            _result.setLat(_tmpLat);
+            final double _tmpLon;
+            _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
+            _result.setLon(_tmpLon);
           } else {
             _result = null;
           }
@@ -383,15 +385,17 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
-            final double _tmpLat;
-            _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
-            final double _tmpLon;
-            _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
             final String _tmpIcon;
             _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather,_tmpLat,_tmpLon);
+            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
+            final double _tmpLat;
+            _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
+            _result.setLat(_tmpLat);
+            final double _tmpLon;
+            _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
+            _result.setLon(_tmpLon);
           } else {
             _result = null;
           }

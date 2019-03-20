@@ -15,9 +15,10 @@ object LogUtils {
         var txt = prefs.getString("txt", "")
         val now = System.currentTimeMillis()
         val date = SimpleDateFormat("HH:mm  dd MMM", Locale.getDefault()).format(now)
-        txt += date + "\n"
-        prefs.edit().putString("txt", txt).apply()
-
+        txt?.let {
+            txt += date + "\n"
+            prefs.edit().putString("txt", txt).apply()
+        }
     }
 
     @JvmStatic
