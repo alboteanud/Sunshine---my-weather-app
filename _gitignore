@@ -27,6 +27,7 @@ project.properties
 *.iml
 *.ipr
 *.iws
+strings.xml
 
 # Gradle-based build
 .gradle
