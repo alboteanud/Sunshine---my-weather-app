@@ -86,7 +86,9 @@ object GraphCardUtils {
                 gridStyle = GridLabelRenderer.GridStyle.NONE
                 numVerticalLabels = 4
                 setHumanRounding(false, true)
-                labelFormatter = object : DateAsXAxisLabelFormatter(context, SimpleDateFormat("HH", Locale.getDefault())) {
+                val simpleDateFormat = SimpleDateFormat("HH", Locale.getDefault())
+                simpleDateFormat.setTimeZone(TimeZone.getDefault())
+                labelFormatter = object : DateAsXAxisLabelFormatter(context, simpleDateFormat) {
                     override fun formatLabel(value: Double, isValueX: Boolean): String {
                         return if (isValueX) {
                             super.formatLabel(value, isValueX)

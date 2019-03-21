@@ -22,7 +22,7 @@ object MapCardUtils {
     private const val BASE_STATIC_MAP_URL = "https://maps.googleapis.com/maps/api/staticmap?"
 
     private fun buildUrlGoogleStaticMap(context: Context, weatherEntry: WeatherEntry): String {
-        val GOOGLE_STATIC_MAP_API_KEY = context.getString(R.string.GOOGLE_STATIC_MAP_API_KEY)
+        val GOOGLE_STATIC_MAP_API_KEY = context.getString(R.string.STATIC_MAP_KEY)
         val scale = context.resources.getInteger(R.integer.scale_static_map).toString()
         val staticMapUri = Uri.parse(BASE_STATIC_MAP_URL).buildUpon()
                 .appendQueryParameter("center", "${weatherEntry.lat}, ${weatherEntry.lon}")
