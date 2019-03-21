@@ -156,8 +156,7 @@
     <string name="pref_units_label_imperial">Imperial</string>
     <string name="pref_units_key" translatable="false">units_system</string>
 
-    <!--proiect Sunshine 2019 - anca.scobaru@gmail.com-->
-    <string name="STATIC_MAP_KEY">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>
+
 
 
 </resources>
