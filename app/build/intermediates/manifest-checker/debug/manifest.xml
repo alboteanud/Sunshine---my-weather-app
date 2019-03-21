@@ -36,16 +36,7 @@
             </intent-filter>
         </activity>
 
-        <!-- The manifest entry for our DetailActivity. Each Activity requires a manifest entry -->
-        <activity
-            android:name="com.example.android.sunshine.ui.detail.DetailActivity"
-            android:label="@string/title_activity_detail"
-            android:parentActivityName="com.example.android.sunshine.ui.main.MainActivity"
-            android:theme="@style/AppTheme" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ui.main.MainActivity" />
-        </activity> <!-- This is required for immediate syncs -->
+        <!-- This is required for immediate syncs -->
         <service
             android:name="com.example.android.sunshine.data.network.SyncIntentService"
             android:exported="false" />

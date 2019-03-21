@@ -145,6 +145,12 @@ public final class SunshineDateUtils {
 
         String timeZoneID = TimeZone.getAvailableIDs()[358];
         TimeZone tz_city = TimeZone.getTimeZone(timeZoneID);
+
+
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH.mm   dd.MMM.yyyy", Locale.getDefault());
+//        simpleDateFormat.setTimeZone(tz_city);
+//         String result = simpleDateFormat.format(timeInMills);
+
         Calendar cal = GregorianCalendar.getInstance(tz_city);
         long dt15 = 1553094000000L;
         cal.setTimeInMillis(dt15);

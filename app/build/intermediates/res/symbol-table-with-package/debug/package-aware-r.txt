@@ -1535,7 +1535,7 @@ menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
-string GOOGLE_STATIC_MAP_API_KEY
+string STATIC_MAP_KEY
 string a11y_forecast
 string a11y_forecast_icon
 string a11y_high_temp

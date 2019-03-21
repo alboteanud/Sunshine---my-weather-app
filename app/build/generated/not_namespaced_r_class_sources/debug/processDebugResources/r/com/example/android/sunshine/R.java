@@ -5532,7 +5532,7 @@ public final class R {
     public static final int ic_launcher_round=0x7f0d0002;
   }
   public static final class string {
-    public static final int GOOGLE_STATIC_MAP_API_KEY=0x7f0e0000;
+    public static final int STATIC_MAP_KEY=0x7f0e0000;
     public static final int a11y_forecast=0x7f0e0001;
     public static final int a11y_forecast_icon=0x7f0e0002;
     public static final int a11y_high_temp=0x7f0e0003;

@@ -5,7 +5,6 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import com.example.android.sunshine.data.database.ListWeatherEntry
 import com.example.android.sunshine.ui.main.Adapter
-import com.example.android.sunshine.utilities.SunshineDateUtils.getCityDate
 import com.example.android.sunshine.utilities.SunshineWeatherUtils.adaptTemperature
 import com.jjoe64.graphview.GraphView
 import com.jjoe64.graphview.GridLabelRenderer
@@ -62,9 +61,9 @@ object GraphCardUtils {
         //        for (i in 0 until entries.size) { }
         entries.forEach { entry ->
 //            val date = Date(getCityDate(context, entry.date.time))
-            val date = getCityDate(context, entry.date.time)
+//            val date = getCityDate(context, entry.date.time)
             val temperature = adaptTemperature(context, entry.temp)
-            val dataPoint = DataPoint(date, temperature)
+            val dataPoint = DataPoint(entry.date, temperature)
             series.appendData(dataPoint, false, entries.size)
         }
 
@@ -87,7 +86,11 @@ object GraphCardUtils {
                 numVerticalLabels = 4
                 setHumanRounding(false, true)
                 val simpleDateFormat = SimpleDateFormat("HH", Locale.getDefault())
-                simpleDateFormat.setTimeZone(TimeZone.getDefault())
+
+                val timeZoneID = TimeZone.getAvailableIDs()[358]
+                val tz_city = TimeZone.getTimeZone(timeZoneID)
+                simpleDateFormat.setTimeZone(tz_city)
+
                 labelFormatter = object : DateAsXAxisLabelFormatter(context, simpleDateFormat) {
                     override fun formatLabel(value: Double, isValueX: Boolean): String {
                         return if (isValueX) {
