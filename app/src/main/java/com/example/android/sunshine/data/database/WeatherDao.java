@@ -25,8 +25,10 @@ public interface WeatherDao {
      * +     * @return {@link LiveData} list of all {@link ListWeatherEntry} objects after _date
      * +
      */
-    @Query("SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= :date LIMIT 6")
-    LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date);
+    @Query("SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= :date " +
+            "ORDER BY date ASC " +
+            "LIMIT 5 ")
+    LiveData<List<ListWeatherEntry>> getCurrentForecast(Date date);
 
     /**
      * Selects all ids entries after a give _date, inclusive. This is for easily seeing
@@ -35,15 +37,11 @@ public interface WeatherDao {
      * @param date The _date to select after (inclusive)
      * @return Number of future weather forecasts stored in the database
      */
-    @Query("SELECT * FROM weather WHERE date = :date")
-    int countAllFutureWeather(Date date);
+    @Query("SELECT * FROM weather WHERE date > :date")
+    int countAllFutureWeatherEntries(Date date);
 
-    //    Gets the weather for a single day
-    @Query("SELECT * FROM weather WHERE date = :date")
-    LiveData<WeatherEntry> getWeatherByDate(Date date);
-
-    @Query("SELECT date FROM weather WHERE date > :date AND isCurrentWeather = 1")
-    Date getLastUpdatedDateCW(Date date);
+    @Query("SELECT * FROM weather WHERE date >= :recently AND isCurrentWeather = 1")
+    int countCurrentWeather(Date recently);
 
     /**
      * Inserts a list of {@link WeatherEntry} into the weather table. If there is a conflicting _id
@@ -56,18 +54,27 @@ public interface WeatherDao {
     void bulkInsert(WeatherEntry... weather);
 
     /**
-     * +     * Deletes any weather data older than the given day
-     * +     *
-     * +     * @param _date The _date to delete all prior weather from (exclusive)
-     * +
+     * Deletes any weather data older than the given day
+     *
+     * @param recently The _date to delete all prior weather from (exclusive)
      */
-    @Query("DELETE FROM weather WHERE date < :date")
-    void deleteOldWeather(Date date);
+    @Query("DELETE FROM weather WHERE date < :recently")
+    void deleteOldWeather(Date recently);
 
-//    @Query("SELECT id, weatherIconId, date, `temp`, icon, humidity, pressure, wind, degrees, isCurrentWeather FROM weather WHERE date >= :date " +
-    @Query("SELECT * FROM weather WHERE date >= :date " +
-            "ORDER BY isCurrentWeather DESC " +
+    @Query("SELECT * FROM weather WHERE date  >= :recentlyDate " +
+            "ORDER BY isCurrentWeather DESC, ABS(:nowDate - date) ASC " +
             "LIMIT 1")
-    LiveData<WeatherEntry>getCurrentWeather(Date date);
+    LiveData<List<WeatherEntry>> getCurrentWeather(Date nowDate, Date recentlyDate);
+
+
+    @Query("SELECT * FROM weather")
+    LiveData<List<WeatherEntry>> getAllEntries();
+
+
+    @Query("SELECT * FROM weather WHERE date > :tomorrowCityNoonUtc " +
+            "AND (date + :offset) % (24 * :hourInMillis) " +
+            "BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
+    LiveData<List<ListWeatherEntry>> getDaysForecast(Date tomorrowCityNoonUtc, long offset, long hourInMillis);
+
 
 }

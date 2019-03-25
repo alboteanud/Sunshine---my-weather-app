@@ -12,20 +12,32 @@ import androidx.lifecycle.ViewModel;
 public class MainActivityViewModel extends ViewModel {
 
     private final RepositoryWeather mRepository;
-    private final LiveData<List<ListWeatherEntry>> mForecast;
-    private final LiveData<WeatherEntry> currentWeather;
+    private final LiveData<List<ListWeatherEntry>> forecast;
+    private final LiveData<List<ListWeatherEntry>> forecastDays;
+    private final LiveData<List<WeatherEntry>> allForecast;
+    private final LiveData<List<WeatherEntry>> currentWeather;
+
 
     public MainActivityViewModel(RepositoryWeather repository) {
         mRepository = repository;
-        mForecast = mRepository.getWeatherForecasts();
+        forecast = mRepository.getWeatherForecast();
+        forecastDays = mRepository.getWeatherForecastDays();
+        allForecast = mRepository.getAllWeatherEntries();
         currentWeather = mRepository.getCurrentWeather();
     }
 
     public LiveData<List<ListWeatherEntry>> getForecast() {
-        return mForecast;
+        return forecast;
+    }
+    public LiveData<List<ListWeatherEntry>> getForecastDays() {
+        return forecastDays;
     }
 
-    public LiveData<WeatherEntry> getCurrentWeather() {
+    public LiveData<List<WeatherEntry>> getAllForecast() {
+        return allForecast;
+    }
+
+    public LiveData<List<WeatherEntry>> getCurrentWeather() {
         return currentWeather;
     }
 

@@ -90,7 +90,7 @@ public final class SunshineWeatherUtils {
         float windSpeed = (float) (windSpeed_m_s * 3.6f); // transf in km/h
         if (isImperialSystem(context)) {
             windFormat = R.string.format_wind_mph;
-            windSpeed = .621371192237334f * windSpeed;  // transf in miles/hour
+            windSpeed = .6213f * windSpeed;  // transf in miles/hour
         }
 
         String direction = "Unknown";
@@ -295,7 +295,7 @@ public final class SunshineWeatherUtils {
     }
 
     /**
-     * Helper method to provide the icon resource _id according to the weather condition _id returned
+     * Helper method to provide the iconCodeOWM resource _id according to the weather condition _id returned
      * by the OpenWeatherMap call. This method is very similar to
      * <p>
      * {@link #getLargeArtResourceIdForWeatherCondition(int)}.
@@ -305,7 +305,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource _id for the corresponding icon. -c1 if no relation is found.
+     * @return resource _id for the corresponding iconCodeOWM. -c1 if no relation is found.
      */
     public static int getSmallArtResourceIdForWeatherCondition(int weatherId) {
 
@@ -431,7 +431,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource ID for the corresponding icon. -c1 if no relation is found.
+     * @return resource ID for the corresponding iconCodeOWM. -c1 if no relation is found.
      */
     public static int getLargeArtResourceIdForWeatherCondition(int weatherId) {
 

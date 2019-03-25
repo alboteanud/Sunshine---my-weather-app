@@ -178,7 +178,7 @@ public class NetworkDataSource {
                 String jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl);
 
                 // Parse the JSON into a list of weather forecasts
-                WeatherResponse response = new WeatherJsonParser().parseForecastWeather(context, jsonWeatherResponse);
+                WeatherResponse response = new WeatherJsonParser().parseForecastWeather(jsonWeatherResponse);
                 Log.d(LOG_TAG, "JSON Parsing finished");
 
 

@@ -32,13 +32,13 @@ public final class WeatherDao_Impl implements WeatherDao {
     this.__insertionAdapterOfWeatherEntry = new EntityInsertionAdapter<WeatherEntry>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherIconId`,`date`,`temp`,`humidity`,`pressure`,`wind`,`degrees`,`lat`,`lon`,`icon`,`isCurrentWeather`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `weather`(`id`,`weatherId`,`date`,`temperature`,`humidity`,`pressure`,`wind`,`degrees`,`lat`,`lon`,`iconCodeOWM`,`isCurrentWeather`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, WeatherEntry value) {
         stmt.bindLong(1, value.getId());
-        stmt.bindLong(2, value.getWeatherIconId());
+        stmt.bindLong(2, value.getWeatherId());
         final Long _tmp;
         _tmp = DateConverter.toTimestamp(value.getDate());
         if (_tmp == null) {
@@ -46,17 +46,17 @@ public final class WeatherDao_Impl implements WeatherDao {
         } else {
           stmt.bindLong(3, _tmp);
         }
-        stmt.bindDouble(4, value.getTemp());
+        stmt.bindDouble(4, value.getTemperature());
         stmt.bindDouble(5, value.getHumidity());
         stmt.bindDouble(6, value.getPressure());
         stmt.bindDouble(7, value.getWind());
         stmt.bindDouble(8, value.getDegrees());
         stmt.bindDouble(9, value.getLat());
         stmt.bindDouble(10, value.getLon());
-        if (value.getIcon() == null) {
+        if (value.getIconCodeOWM() == null) {
           stmt.bindNull(11);
         } else {
-          stmt.bindString(11, value.getIcon());
+          stmt.bindString(11, value.getIconCodeOWM());
         }
         stmt.bindLong(12, value.isCurrentWeather());
       }
@@ -82,13 +82,13 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public void deleteOldWeather(Date date) {
+  public void deleteOldWeather(Date recently) {
     final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteOldWeather.acquire();
     __db.beginTransaction();
     try {
       int _argIndex = 1;
       final Long _tmp;
-      _tmp = DateConverter.toTimestamp(date);
+      _tmp = DateConverter.toTimestamp(recently);
       if (_tmp == null) {
         _stmt.bindNull(_argIndex);
       } else {
@@ -103,8 +103,8 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<List<ListWeatherEntry>> getCurrentWeatherForecasts(Date date) {
-    final String _sql = "SELECT id, weatherIconId, date, `temp`, icon FROM weather WHERE date >= ? LIMIT 6";
+  public LiveData<List<ListWeatherEntry>> getCurrentForecast(Date date) {
+    final String _sql = "SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= ? ORDER BY date ASC LIMIT 5 ";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -131,17 +131,17 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = __db.query(_statement);
         try {
           final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-          final int _cursorIndexOfWeatherIconId = _cursor.getColumnIndexOrThrow("weatherIconId");
+          final int _cursorIndexOfWeatherId = _cursor.getColumnIndexOrThrow("weatherId");
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
-          final int _cursorIndexOfTemp = _cursor.getColumnIndexOrThrow("temp");
-          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
+          final int _cursorIndexOfTemperature = _cursor.getColumnIndexOrThrow("temperature");
+          final int _cursorIndexOfIconCodeOWM = _cursor.getColumnIndexOrThrow("iconCodeOWM");
           final List<ListWeatherEntry> _result = new ArrayList<ListWeatherEntry>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final ListWeatherEntry _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final int _tmpWeatherIconId;
-            _tmpWeatherIconId = _cursor.getInt(_cursorIndexOfWeatherIconId);
+            final int _tmpWeatherId;
+            _tmpWeatherId = _cursor.getInt(_cursorIndexOfWeatherId);
             final Date _tmpDate;
             final Long _tmp_1;
             if (_cursor.isNull(_cursorIndexOfDate)) {
@@ -150,11 +150,11 @@ public final class WeatherDao_Impl implements WeatherDao {
               _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
             }
             _tmpDate = DateConverter.toDate(_tmp_1);
-            final double _tmpTemp;
-            _tmpTemp = _cursor.getDouble(_cursorIndexOfTemp);
-            final String _tmpIcon;
-            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
-            _item = new ListWeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpIcon);
+            final double _tmpTemperature;
+            _tmpTemperature = _cursor.getDouble(_cursorIndexOfTemperature);
+            final String _tmpIconCodeOWM;
+            _tmpIconCodeOWM = _cursor.getString(_cursorIndexOfIconCodeOWM);
+            _item = new ListWeatherEntry(_tmpId,_tmpWeatherId,_tmpDate,_tmpTemperature,_tmpIconCodeOWM);
             _result.add(_item);
           }
           return _result;
@@ -171,8 +171,8 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public int countAllFutureWeather(Date date) {
-    final String _sql = "SELECT * FROM weather WHERE date = ?";
+  public int countAllFutureWeatherEntries(Date date) {
+    final String _sql = "SELECT * FROM weather WHERE date > ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -198,22 +198,57 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<WeatherEntry> getWeatherByDate(Date date) {
-    final String _sql = "SELECT * FROM weather WHERE date = ?";
+  public int countCurrentWeather(Date recently) {
+    final String _sql = "SELECT * FROM weather WHERE date >= ? AND isCurrentWeather = 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(date);
+    _tmp = DateConverter.toTimestamp(recently);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
       _statement.bindLong(_argIndex, _tmp);
     }
-    return new ComputableLiveData<WeatherEntry>(__db.getQueryExecutor()) {
+    final Cursor _cursor = __db.query(_statement);
+    try {
+      final int _result;
+      if(_cursor.moveToFirst()) {
+        _result = _cursor.getInt(0);
+      } else {
+        _result = 0;
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
+  @Override
+  public LiveData<List<WeatherEntry>> getCurrentWeather(Date nowDate, Date recentlyDate) {
+    final String _sql = "SELECT * FROM weather WHERE date  >= ? ORDER BY isCurrentWeather DESC, ABS(? - date) ASC LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
+    int _argIndex = 1;
+    final Long _tmp;
+    _tmp = DateConverter.toTimestamp(recentlyDate);
+    if (_tmp == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp);
+    }
+    _argIndex = 2;
+    final Long _tmp_1;
+    _tmp_1 = DateConverter.toTimestamp(nowDate);
+    if (_tmp_1 == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp_1);
+    }
+    return new ComputableLiveData<List<WeatherEntry>>(__db.getQueryExecutor()) {
       private Observer _observer;
 
       @Override
-      protected WeatherEntry compute() {
+      protected List<WeatherEntry> compute() {
         if (_observer == null) {
           _observer = new Observer("weather") {
             @Override
@@ -226,33 +261,34 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = __db.query(_statement);
         try {
           final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-          final int _cursorIndexOfWeatherIconId = _cursor.getColumnIndexOrThrow("weatherIconId");
+          final int _cursorIndexOfWeatherId = _cursor.getColumnIndexOrThrow("weatherId");
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
-          final int _cursorIndexOfTemp = _cursor.getColumnIndexOrThrow("temp");
+          final int _cursorIndexOfTemperature = _cursor.getColumnIndexOrThrow("temperature");
           final int _cursorIndexOfHumidity = _cursor.getColumnIndexOrThrow("humidity");
           final int _cursorIndexOfPressure = _cursor.getColumnIndexOrThrow("pressure");
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
           final int _cursorIndexOfLat = _cursor.getColumnIndexOrThrow("lat");
           final int _cursorIndexOfLon = _cursor.getColumnIndexOrThrow("lon");
-          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
+          final int _cursorIndexOfIconCodeOWM = _cursor.getColumnIndexOrThrow("iconCodeOWM");
           final int _cursorIndexOfIsCurrentWeather = _cursor.getColumnIndexOrThrow("isCurrentWeather");
-          final WeatherEntry _result;
-          if(_cursor.moveToFirst()) {
+          final List<WeatherEntry> _result = new ArrayList<WeatherEntry>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final WeatherEntry _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final int _tmpWeatherIconId;
-            _tmpWeatherIconId = _cursor.getInt(_cursorIndexOfWeatherIconId);
+            final int _tmpWeatherId;
+            _tmpWeatherId = _cursor.getInt(_cursorIndexOfWeatherId);
             final Date _tmpDate;
-            final Long _tmp_1;
+            final Long _tmp_2;
             if (_cursor.isNull(_cursorIndexOfDate)) {
-              _tmp_1 = null;
+              _tmp_2 = null;
             } else {
-              _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
+              _tmp_2 = _cursor.getLong(_cursorIndexOfDate);
             }
-            _tmpDate = DateConverter.toDate(_tmp_1);
-            final double _tmpTemp;
-            _tmpTemp = _cursor.getDouble(_cursorIndexOfTemp);
+            _tmpDate = DateConverter.toDate(_tmp_2);
+            final double _tmpTemperature;
+            _tmpTemperature = _cursor.getDouble(_cursorIndexOfTemperature);
             final double _tmpHumidity;
             _tmpHumidity = _cursor.getDouble(_cursorIndexOfHumidity);
             final double _tmpPressure;
@@ -261,19 +297,18 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
-            final String _tmpIcon;
-            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
+            final String _tmpIconCodeOWM;
+            _tmpIconCodeOWM = _cursor.getString(_cursorIndexOfIconCodeOWM);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
+            _item = new WeatherEntry(_tmpId,_tmpWeatherId,_tmpDate,_tmpTemperature,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIconCodeOWM,_tmpIsCurrentWeather);
             final double _tmpLat;
             _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
-            _result.setLat(_tmpLat);
+            _item.setLat(_tmpLat);
             final double _tmpLon;
             _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
-            _result.setLon(_tmpLon);
-          } else {
-            _result = null;
+            _item.setLon(_tmpLon);
+            _result.add(_item);
           }
           return _result;
         } finally {
@@ -289,55 +324,14 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public Date getLastUpdatedDateCW(Date date) {
-    final String _sql = "SELECT date FROM weather WHERE date > ? AND isCurrentWeather = 1";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
-    int _argIndex = 1;
-    final Long _tmp;
-    _tmp = DateConverter.toTimestamp(date);
-    if (_tmp == null) {
-      _statement.bindNull(_argIndex);
-    } else {
-      _statement.bindLong(_argIndex, _tmp);
-    }
-    final Cursor _cursor = __db.query(_statement);
-    try {
-      final Date _result;
-      if(_cursor.moveToFirst()) {
-        final Long _tmp_1;
-        if (_cursor.isNull(0)) {
-          _tmp_1 = null;
-        } else {
-          _tmp_1 = _cursor.getLong(0);
-        }
-        _result = DateConverter.toDate(_tmp_1);
-      } else {
-        _result = null;
-      }
-      return _result;
-    } finally {
-      _cursor.close();
-      _statement.release();
-    }
-  }
-
-  @Override
-  public LiveData<WeatherEntry> getCurrentWeather(Date date) {
-    final String _sql = "SELECT * FROM weather WHERE date >= ? ORDER BY isCurrentWeather DESC LIMIT 1";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
-    int _argIndex = 1;
-    final Long _tmp;
-    _tmp = DateConverter.toTimestamp(date);
-    if (_tmp == null) {
-      _statement.bindNull(_argIndex);
-    } else {
-      _statement.bindLong(_argIndex, _tmp);
-    }
-    return new ComputableLiveData<WeatherEntry>(__db.getQueryExecutor()) {
+  public LiveData<List<WeatherEntry>> getAllEntries() {
+    final String _sql = "SELECT * FROM weather";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+    return new ComputableLiveData<List<WeatherEntry>>(__db.getQueryExecutor()) {
       private Observer _observer;
 
       @Override
-      protected WeatherEntry compute() {
+      protected List<WeatherEntry> compute() {
         if (_observer == null) {
           _observer = new Observer("weather") {
             @Override
@@ -350,33 +344,34 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = __db.query(_statement);
         try {
           final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-          final int _cursorIndexOfWeatherIconId = _cursor.getColumnIndexOrThrow("weatherIconId");
+          final int _cursorIndexOfWeatherId = _cursor.getColumnIndexOrThrow("weatherId");
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
-          final int _cursorIndexOfTemp = _cursor.getColumnIndexOrThrow("temp");
+          final int _cursorIndexOfTemperature = _cursor.getColumnIndexOrThrow("temperature");
           final int _cursorIndexOfHumidity = _cursor.getColumnIndexOrThrow("humidity");
           final int _cursorIndexOfPressure = _cursor.getColumnIndexOrThrow("pressure");
           final int _cursorIndexOfWind = _cursor.getColumnIndexOrThrow("wind");
           final int _cursorIndexOfDegrees = _cursor.getColumnIndexOrThrow("degrees");
           final int _cursorIndexOfLat = _cursor.getColumnIndexOrThrow("lat");
           final int _cursorIndexOfLon = _cursor.getColumnIndexOrThrow("lon");
-          final int _cursorIndexOfIcon = _cursor.getColumnIndexOrThrow("icon");
+          final int _cursorIndexOfIconCodeOWM = _cursor.getColumnIndexOrThrow("iconCodeOWM");
           final int _cursorIndexOfIsCurrentWeather = _cursor.getColumnIndexOrThrow("isCurrentWeather");
-          final WeatherEntry _result;
-          if(_cursor.moveToFirst()) {
+          final List<WeatherEntry> _result = new ArrayList<WeatherEntry>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final WeatherEntry _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final int _tmpWeatherIconId;
-            _tmpWeatherIconId = _cursor.getInt(_cursorIndexOfWeatherIconId);
+            final int _tmpWeatherId;
+            _tmpWeatherId = _cursor.getInt(_cursorIndexOfWeatherId);
             final Date _tmpDate;
-            final Long _tmp_1;
+            final Long _tmp;
             if (_cursor.isNull(_cursorIndexOfDate)) {
-              _tmp_1 = null;
+              _tmp = null;
             } else {
-              _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
+              _tmp = _cursor.getLong(_cursorIndexOfDate);
             }
-            _tmpDate = DateConverter.toDate(_tmp_1);
-            final double _tmpTemp;
-            _tmpTemp = _cursor.getDouble(_cursorIndexOfTemp);
+            _tmpDate = DateConverter.toDate(_tmp);
+            final double _tmpTemperature;
+            _tmpTemperature = _cursor.getDouble(_cursorIndexOfTemperature);
             final double _tmpHumidity;
             _tmpHumidity = _cursor.getDouble(_cursorIndexOfHumidity);
             final double _tmpPressure;
@@ -385,19 +380,95 @@ public final class WeatherDao_Impl implements WeatherDao {
             _tmpWind = _cursor.getDouble(_cursorIndexOfWind);
             final double _tmpDegrees;
             _tmpDegrees = _cursor.getDouble(_cursorIndexOfDegrees);
-            final String _tmpIcon;
-            _tmpIcon = _cursor.getString(_cursorIndexOfIcon);
+            final String _tmpIconCodeOWM;
+            _tmpIconCodeOWM = _cursor.getString(_cursorIndexOfIconCodeOWM);
             final int _tmpIsCurrentWeather;
             _tmpIsCurrentWeather = _cursor.getInt(_cursorIndexOfIsCurrentWeather);
-            _result = new WeatherEntry(_tmpId,_tmpWeatherIconId,_tmpDate,_tmpTemp,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIcon,_tmpIsCurrentWeather);
+            _item = new WeatherEntry(_tmpId,_tmpWeatherId,_tmpDate,_tmpTemperature,_tmpHumidity,_tmpPressure,_tmpWind,_tmpDegrees,_tmpIconCodeOWM,_tmpIsCurrentWeather);
             final double _tmpLat;
             _tmpLat = _cursor.getDouble(_cursorIndexOfLat);
-            _result.setLat(_tmpLat);
+            _item.setLat(_tmpLat);
             final double _tmpLon;
             _tmpLon = _cursor.getDouble(_cursorIndexOfLon);
-            _result.setLon(_tmpLon);
-          } else {
-            _result = null;
+            _item.setLon(_tmpLon);
+            _result.add(_item);
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+        }
+      }
+
+      @Override
+      protected void finalize() {
+        _statement.release();
+      }
+    }.getLiveData();
+  }
+
+  @Override
+  public LiveData<List<ListWeatherEntry>> getDaysForecast(Date tomorrowCityNoonUtc, long offset,
+      long hourInMillis) {
+    final String _sql = "SELECT * FROM weather WHERE date > ? AND (date + ?) % (24 * ?) BETWEEN (11 * ? +1) AND 14 * ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 5);
+    int _argIndex = 1;
+    final Long _tmp;
+    _tmp = DateConverter.toTimestamp(tomorrowCityNoonUtc);
+    if (_tmp == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindLong(_argIndex, _tmp);
+    }
+    _argIndex = 2;
+    _statement.bindLong(_argIndex, offset);
+    _argIndex = 3;
+    _statement.bindLong(_argIndex, hourInMillis);
+    _argIndex = 4;
+    _statement.bindLong(_argIndex, hourInMillis);
+    _argIndex = 5;
+    _statement.bindLong(_argIndex, hourInMillis);
+    return new ComputableLiveData<List<ListWeatherEntry>>(__db.getQueryExecutor()) {
+      private Observer _observer;
+
+      @Override
+      protected List<ListWeatherEntry> compute() {
+        if (_observer == null) {
+          _observer = new Observer("weather") {
+            @Override
+            public void onInvalidated(@NonNull Set<String> tables) {
+              invalidate();
+            }
+          };
+          __db.getInvalidationTracker().addWeakObserver(_observer);
+        }
+        final Cursor _cursor = __db.query(_statement);
+        try {
+          final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
+          final int _cursorIndexOfWeatherId = _cursor.getColumnIndexOrThrow("weatherId");
+          final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
+          final int _cursorIndexOfTemperature = _cursor.getColumnIndexOrThrow("temperature");
+          final int _cursorIndexOfIconCodeOWM = _cursor.getColumnIndexOrThrow("iconCodeOWM");
+          final List<ListWeatherEntry> _result = new ArrayList<ListWeatherEntry>(_cursor.getCount());
+          while(_cursor.moveToNext()) {
+            final ListWeatherEntry _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final int _tmpWeatherId;
+            _tmpWeatherId = _cursor.getInt(_cursorIndexOfWeatherId);
+            final Date _tmpDate;
+            final Long _tmp_1;
+            if (_cursor.isNull(_cursorIndexOfDate)) {
+              _tmp_1 = null;
+            } else {
+              _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
+            }
+            _tmpDate = DateConverter.toDate(_tmp_1);
+            final double _tmpTemperature;
+            _tmpTemperature = _cursor.getDouble(_cursorIndexOfTemperature);
+            final String _tmpIconCodeOWM;
+            _tmpIconCodeOWM = _cursor.getString(_cursorIndexOfIconCodeOWM);
+            _item = new ListWeatherEntry(_tmpId,_tmpWeatherId,_tmpDate,_tmpTemperature,_tmpIconCodeOWM);
+            _result.add(_item);
           }
           return _result;
         } finally {

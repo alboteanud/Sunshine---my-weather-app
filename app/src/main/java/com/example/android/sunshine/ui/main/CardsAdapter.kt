@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.android.sunshine.R
-import com.example.android.sunshine.ui.update_models.BaseUpdate
+import com.example.android.sunshine.ui.models.Base
 
-class Adapter(val context: Context,
-              var listUpdates: List<BaseUpdate>,
-              val listener: onItemClickListener)
+class CardsAdapter(val context: Context,
+                   var listUpdates: List<Base>,
+                   private val listener: Listener)
     : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     companion object {
@@ -20,50 +20,52 @@ class Adapter(val context: Context,
         const val VIEW_TYPE_DETAILS = 2
         const val VIEW_TYPE_MAP = 3
         const val VIEW_TYPE_ADS = 4
+        const val VIEW_TYPE_DAYS = 5
     }
 
     override fun getItemViewType(position: Int): Int {
-        val type = when (listUpdates[position]._type) {
-            BaseUpdate.TYPE.WEATHER -> VIEW_TYPE_WEATHER
-            BaseUpdate.TYPE.DETAILS -> VIEW_TYPE_DETAILS
-            BaseUpdate.TYPE.GRAPH -> VIEW_TYPE_GRAPH
-            BaseUpdate.TYPE.MAP -> VIEW_TYPE_MAP
-//            BaseUpdate.TYPE.ADS -> VIEW_TYPE_ADS
+        return when (listUpdates[position]._type) {
+            Base.TYPE.WEATHER -> VIEW_TYPE_WEATHER
+            Base.TYPE.DETAILS -> VIEW_TYPE_DETAILS
+            Base.TYPE.GRAPH -> VIEW_TYPE_GRAPH
+            Base.TYPE.MAP -> VIEW_TYPE_MAP
+            Base.TYPE.DAYS -> VIEW_TYPE_DAYS
             else -> VIEW_TYPE_ADS
         }
-        return type
     }
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-        val viewHolder: RecyclerView.ViewHolder = when (viewType) {
-            VIEW_TYPE_WEATHER -> ViewHolders.WeatherViewHolder(
+        return when (viewType) {
+            VIEW_TYPE_WEATHER -> CardsViewHolders.WeatherViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.current_weather_card, viewGroup, false))
 
-            VIEW_TYPE_GRAPH -> ViewHolders.GraphViewHolder(
+            VIEW_TYPE_GRAPH -> CardsViewHolders.GraphViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.graph_card, viewGroup, false),
                     listener)
 
-            VIEW_TYPE_DETAILS -> ViewHolders.DetailsViewHolder(
+            VIEW_TYPE_DETAILS -> CardsViewHolders.DetailsViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.details_weather_card, viewGroup, false))
 
-            VIEW_TYPE_MAP -> ViewHolders.MapViewHolder(
+            VIEW_TYPE_MAP -> CardsViewHolders.MapViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.map_card, viewGroup, false))
 
-            else -> ViewHolders.AdsViewHolder(
+            VIEW_TYPE_DAYS -> CardsViewHolders.MultyDayViewHolder(
+                    LayoutInflater.from(viewGroup.context).inflate(R.layout.multi_day_card, viewGroup, false))
+
+            else -> CardsViewHolders.AdsViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.ads_card, viewGroup, false))
         }
-        return viewHolder
     }
 
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-        (holder as ViewHolders.UpdateViewHolder).bindViews(listUpdates.get(position))
+        (holder as CardsViewHolders.UpdateViewHolder).bindViews(listUpdates[position])
     }
 
     override fun getItemCount() = listUpdates.size
 
-    interface onItemClickListener {
-//        fun onWeatherImageClicked()
+    interface Listener {
+        //        fun onWeatherImageClicked()
         fun onCelsiusFarClicked(view: View)
 //        fun onMapClicked()
     }
@@ -75,7 +77,7 @@ class Adapter(val context: Context,
      *
      * @param newUpdates the new list of forecasts to use as ForecastAdapter's data source
      */
-    fun setUpdates(newUpdates: List<BaseUpdate>) {
+    fun setUpdates(newUpdates: List<Base>) {
         // If there was no forecast data, then recreate all of the list
         if (listUpdates.isEmpty()) {
             listUpdates = newUpdates
@@ -98,7 +100,7 @@ class Adapter(val context: Context,
                 }
 
                 override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-                    return listUpdates.get(oldItemPosition)._id == newUpdates[newItemPosition]._id
+                    return listUpdates[oldItemPosition]._id == newUpdates[newItemPosition]._id
                 }
 
                 override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {

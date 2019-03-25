@@ -20,12 +20,12 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-xhdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-v21_avd_hide_password.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1496c7f90ef041b7e6ae7903e74ae1e3/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_notif.png.flat",
@@ -62,6 +62,10 @@
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/adcb897ee8c6925920629b057fadb0cd/res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/layout_multi_day_card.xml.flat",
+        "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/layout/multi_day_card.xml"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_light_clouds_n.png.flat",
@@ -136,12 +140,12 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1496c7f90ef041b7e6ae7903e74ae1e3/res/anim/design_snackbar_out.xml"
-    },
-    {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable_stabil1.jpg.flat",
         "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/drawable/stabil1.jpg"
+    },
+    {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/anim_design_snackbar_out.xml.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1496c7f90ef041b7e6ae7903e74ae1e3/res/anim/design_snackbar_out.xml"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
@@ -364,12 +368,12 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-xxhdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1496c7f90ef041b7e6ae7903e74ae1e3/res/color/mtrl_chip_close_icon_tint.xml"
-    },
-    {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_layout.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/color_mtrl_chip_close_icon_tint.xml.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/1496c7f90ef041b7e6ae7903e74ae1e3/res/color/mtrl_chip_close_icon_tint.xml"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_track_mtrl_alpha.9.png.flat",
@@ -462,6 +466,10 @@
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-mdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/layout_item_multi_day.xml.flat",
+        "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/layout/item_multi_day.xml"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/interpolator-v21_mtrl_fast_out_slow_in.xml.flat",
@@ -1312,12 +1320,12 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/b297134a85433e14ee812c67b3ebadbe/res/layout/notification_media_cancel_action.xml"
     },
     {
-        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable_c2.jpg.flat",
         "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/drawable/c2.jpg"
+    },
+    {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -2260,6 +2268,10 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/color/abc_secondary_text_material_light.xml"
     },
     {
+        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable_c1.jpg.flat",
+        "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/drawable/c1.jpg"
+    },
+    {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
     },
@@ -2270,10 +2282,6 @@
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/layout_notification_template_big_media.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/b297134a85433e14ee812c67b3ebadbe/res/layout/notification_template_big_media.xml"
-    },
-    {
-        "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable_c1.jpg.flat",
-        "source": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/src/main/res/drawable/c1.jpg"
     },
     {
         "merged": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_fog.png.flat",

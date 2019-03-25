@@ -771,6 +771,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color semitransparentGray
 color semitransparentWhite
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
@@ -1208,7 +1209,7 @@ id all
 id always
 id async
 id auto
-id backgroundImageView
+id backImage
 id barrier
 id beginning
 id blocking
@@ -1240,6 +1241,7 @@ id coordinator
 id custom
 id customPanel
 id dataBinding
+id daysLayout
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1386,6 +1388,7 @@ id tag_unhandled_key_listeners
 id temperatureText
 id text
 id text2
+id textLabel
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1493,9 +1496,11 @@ layout design_text_input_password_icon
 layout details_weather_card
 layout expand_button
 layout graph_card
+layout item_multi_day
 layout map_card
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout multi_day_card
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1661,7 +1666,6 @@ string humidity_label
 string mtrl_chip_close_icon_content_description
 string norif_channel_id
 string notif_channel_name
-string notif_city_name
 string notification_content_text
 string notification_title_text
 string owm_city_id
@@ -1690,8 +1694,6 @@ string search_menu_title
 string settings
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
-string time_zone
-string title_activity_detail
 string today
 string tomorrow
 string v7_preference_off
@@ -1899,7 +1901,6 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
-style HeadlineTextStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -1962,6 +1963,7 @@ style RtlOverlay_Widget_AppCompat_Search_DropDown_Text
 style RtlOverlay_Widget_AppCompat_SearchView_MagIcon
 style RtlUnderlay_Widget_AppCompat_ActionButton
 style RtlUnderlay_Widget_AppCompat_ActionButton_Overflow
+style SubheadWhiteTextStyle
 style TextAppearance_AppCompat
 style TextAppearance_AppCompat_Body1
 style TextAppearance_AppCompat_Body2
@@ -2114,7 +2116,8 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
-style TitleStyle
+style TitleStyleBig
+style TitleWhiteTextStyle
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

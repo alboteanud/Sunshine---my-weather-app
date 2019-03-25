@@ -9,11 +9,11 @@
     tools:ignore="MergeRootFrame">
 
     <ImageView
-        android:id="@+id/backgroundImageView"
+        android:id="@+id/backImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        tools:src="@drawable/c1" />
+        android:src="@drawable/c1" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -27,8 +27,7 @@
             android:layout_centerVertical="true"
             android:layout_marginStart="8dp"
             android:text="@string/app_name"
-            android:textSize="20sp"
-            style="@style/TitleStyle"/>
+            style="@style/TitleStyleBig"/>
 
     </RelativeLayout>
 

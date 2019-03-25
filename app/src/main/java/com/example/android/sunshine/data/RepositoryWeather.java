@@ -20,15 +20,21 @@ import android.text.format.DateUtils;
 import android.util.Log;
 
 import com.example.android.sunshine.AppExecutors;
+import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.data.database.ListWeatherEntry;
 import com.example.android.sunshine.data.database.WeatherDao;
 import com.example.android.sunshine.data.database.WeatherEntry;
 import com.example.android.sunshine.data.network.NetworkDataSource;
+import com.example.android.sunshine.utilities.Utils;
 
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import androidx.lifecycle.LiveData;
+
+import static android.text.format.DateUtils.DAY_IN_MILLIS;
+import static android.text.format.DateUtils.HOUR_IN_MILLIS;
 
 /**
  * Handles data operations in Sunshine. Acts as a mediator between {@link NetworkDataSource}
@@ -126,32 +132,35 @@ public class RepositoryWeather {
         });
     }
 
-    public void resetInitializedCW(){
+    public void resetInitializedCW() {
         mInitializedCW = false;
     }
 
     /**
      * Database related operations
      **/
-    public LiveData<List<ListWeatherEntry>> getWeatherForecasts() {
+    public LiveData<List<ListWeatherEntry>> getWeatherForecast() {
         initializeData();
         long utcNowMillis = System.currentTimeMillis();
         Date date = new Date(utcNowMillis);
-        return mWeatherDao.getCurrentWeatherForecasts(date);
+        return mWeatherDao.getCurrentForecast(date);
     }
 
-    public LiveData<WeatherEntry> getCurrentWeather() {
+    public LiveData<List<WeatherEntry>> getCurrentWeather() {
         initializeDataCW();
-        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 25;
-        Date date = new Date(recentlyMills);
 
-        LiveData<WeatherEntry> resultWeather = mWeatherDao.getCurrentWeather(date);
-        return resultWeather;
+        long nowMills = System.currentTimeMillis();
+        Date nowDate = new Date(nowMills);
+
+        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * 30;
+        Date recentDate = new Date(recentlyMills);
+
+        return mWeatherDao.getCurrentWeather(nowDate, recentDate);
     }
 
     private void deleteOldData() {
 //        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
-        long oldTime = System.currentTimeMillis() - DateUtils.HOUR_IN_MILLIS;
+        long oldTime = System.currentTimeMillis() - HOUR_IN_MILLIS;
         Date date = new Date(oldTime);
         mWeatherDao.deleteOldWeather(date);
     }
@@ -164,15 +173,16 @@ public class RepositoryWeather {
     private boolean isFetchNeeded() {
 //        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
         Date now = new Date(System.currentTimeMillis());
-        int count = mWeatherDao.countAllFutureWeather(now);
+        int count = mWeatherDao.countAllFutureWeatherEntries(now);
         return (count < NetworkDataSource.NUM_MIN_DATA_COUNTS);
     }
 
     private boolean isFetchNeededCW() {
-        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 25;
+        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 30;
         Date dateRecently = new Date(recentlyMills);
-        Date result = mWeatherDao.getLastUpdatedDateCW(dateRecently);
-        return result == null;
+        int count = mWeatherDao.countCurrentWeather(dateRecently);
+        if (BuildConfig.DEBUG) return true;
+        return count <= 0;
     }
 
     private void startFetchWeatherService() {
@@ -183,10 +193,19 @@ public class RepositoryWeather {
         mNetworkDataSource.startFetchCurrentWeatherService();
     }
 
-    public LiveData<WeatherEntry> getWeatherByDate(Date date) {
-        initializeData();
-        return mWeatherDao.getWeatherByDate(date);
+    public LiveData<List<WeatherEntry>> getAllWeatherEntries() {
+        return mWeatherDao.getAllEntries();
     }
 
+    public LiveData<List<ListWeatherEntry>> getWeatherForecastDays() {
+        long offset = Utils.getCityOffset();
 
+        long daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(System.currentTimeMillis());
+        long tomorrowMidnightNormalizedUtc = (daysSinceEpoch + 1) * DAY_IN_MILLIS;
+
+        long tomorrowCityNoonUtc = tomorrowMidnightNormalizedUtc;  //+ 11*HOUR_IN_MILLIS; // + offset
+     ;
+
+        return mWeatherDao.getDaysForecast(new Date(tomorrowCityNoonUtc), offset, HOUR_IN_MILLIS);
+    }
 }

@@ -21,9 +21,7 @@ import android.text.format.DateUtils;
 import com.example.android.sunshine.R;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
@@ -135,33 +133,6 @@ public final class SunshineDateUtils {
         return normalizedUtcDate - gmtOffset;
     }
 
-    public static Date getCityDate(Context context, long timeInMills) {
-//        TimeZone tz = TimeZone.getDefault();
-//        Calendar cal = GregorianCalendar.getInstance(tz);
-//        long deviceOffset = tz.getOffset(cal.getTimeInMillis());
-//        long cityOffset = getCityOffsetMillis(context);
-//        long result = timeInMills + cityOffset - deviceOffset;
-//        return result;
-
-        String timeZoneID = TimeZone.getAvailableIDs()[358];
-        TimeZone tz_city = TimeZone.getTimeZone(timeZoneID);
-
-
-//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("HH.mm   dd.MMM.yyyy", Locale.getDefault());
-//        simpleDateFormat.setTimeZone(tz_city);
-//         String result = simpleDateFormat.format(timeInMills);
-
-        Calendar cal = GregorianCalendar.getInstance(tz_city);
-        long dt15 = 1553094000000L;
-        cal.setTimeInMillis(dt15);
-        long result = cal.getTimeInMillis();
-        TimeZone setTZ = cal.getTimeZone();
-        TimeZone tz_loc = new GregorianCalendar().getTimeZone();
-        long offset = setTZ.getOffset(new GregorianCalendar().getTimeInMillis());
-        return cal.getTime();
-
-    }
-
     /**
      * Helper method to convert the database representation of the _date into something to display
      * to users. As classy and polished a user experience as "1474061664" is, we can do better.
@@ -181,21 +152,6 @@ public final class SunshineDateUtils {
      * or "Friday"
      */
     public static String getFriendlyDateString(Context context, long normalizedUtcMidnight, boolean showFullDate) {
-
-        // START DAN
-        if (normalizedUtcMidnight > 1) {
-
-            TimeZone tz = TimeZone.getDefault();
-            Calendar cal = GregorianCalendar.getInstance(tz);
-            long deviceOffset = tz.getOffset(cal.getTimeInMillis());
-            long cityOffset = getCityOffsetMillis(context);
-
-            String localizedDayName = new SimpleDateFormat("dd MMM  HH:mm").format(
-                    normalizedUtcMidnight + cityOffset - deviceOffset);
-            return localizedDayName;  //  + "  " + normalizedUtcMidnight/(1000*1000);
-        }
-        // END DAN
-
         /*
          * NOTE: localDate should be localDateMidnightMillis and should be straight from the
          * database
@@ -305,23 +261,6 @@ public final class SunshineDateUtils {
         }
     }
 
-    private static long getCityOffsetMillis(Context context) {
-        String zone = context.getString(R.string.time_zone);
-//        zone = TimeZone.getAvailableIDs()[0];
-
-//        for (int i = 0; i< TimeZone.getAvailableIDs().length; i++){
-//            String id = TimeZone.getAvailableIDs()[i];
-//            Log.d("tag", "time zone id: " + id);
-////            TimeZone.getTimeZone(ZoneId.SHORT_IDS.get("u"))
-//        }
-
-        TimeZone timeZone = TimeZone.getTimeZone(zone);
-        long now = System.currentTimeMillis();
-
-        long offset = timeZone.getOffset(now);
-//        Log.d("TAG", "time_zone ID  " + timeZone.getID() + "   offset: " + offset);
-        return offset;
-    }
 
 
 }

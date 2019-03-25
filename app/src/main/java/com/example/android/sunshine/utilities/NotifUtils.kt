@@ -7,15 +7,16 @@ import android.graphics.BitmapFactory
 import android.os.Build
 import android.preference.PreferenceManager
 import android.text.format.DateUtils
+import android.text.format.DateUtils.HOUR_IN_MILLIS
 import androidx.core.app.NotificationCompat
-import com.example.android.sunshine.BuildConfig
 import com.example.android.sunshine.R
 import com.example.android.sunshine.data.database.WeatherEntry
 import com.example.android.sunshine.ui.main.MainActivity
+import com.example.android.sunshine.utilities.Utils.getBackResId
 
 object NotifUtils {
 
-    fun areNotificationsEnabled(context: Context): Boolean {
+    private fun areNotificationsEnabled(context: Context): Boolean {
         val displayNotificationsKey = context.getString(R.string.pref_enable_notifications_key)
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
         return sp.getBoolean(displayNotificationsKey, true)
@@ -27,7 +28,7 @@ object NotifUtils {
         return sp.getLong(lastNotificationKey, 0)
     }
 
-    fun getEllapsedTimeSinceLastNotification(context: Context): Long {
+    private fun getEllapsedTimeSinceLastNotification(context: Context): Long {
         val lastNotificationTimeMillis = getLastNotificationTimeInMillis(context)
         return System.currentTimeMillis() - lastNotificationTimeMillis
     }
@@ -40,12 +41,12 @@ object NotifUtils {
         editor.apply()
     }
 
-    fun notifyUserOfNewWeather(context: Context, entry: WeatherEntry) {
-        val chanel_id = context.getString(R.string.norif_channel_id)
+    private fun notifyUserOfNewWeather(context: Context, entry: WeatherEntry) {
+        val chanelId = context.getString(R.string.norif_channel_id)
         val notificationManager = context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
-                    chanel_id,
+                    chanelId,
                     context.getString(R.string.notif_channel_name),
                     NotificationManager.IMPORTANCE_DEFAULT)
             notificationManager.createNotificationChannel(channel)
@@ -57,31 +58,32 @@ object NotifUtils {
     }
 
     private fun buildNotif(context: Context, entry: WeatherEntry): Notification {
-        val backgrResourceId = Utils.getBackResId(context)
+        val backgrResourceId = getBackResId()
         val largeIcon = BitmapFactory.decodeResource(context.resources, backgrResourceId)
 
-        val smallIconId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(entry.icon)
-        val chanel_id = context.getString(R.string.norif_channel_id)
+        val smallIconId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(entry.iconCodeOWM)
+        val chanelId = context.getString(R.string.norif_channel_id)
 
-        val highString = SunshineWeatherUtils.formatTemperature(context, entry.temp)
+        val highString = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
 
-        val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherIconId)
+        val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherId)
 //        val weatherTimeMills = SunshineDateUtils.getCityDate(context, entry.date.time)
 //        val weatherDate = SimpleDateFormat("HH mm", Locale.getDefault()).format(weatherTimeMills)
 //        val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
 
-        val cityName = context.getString(R.string.notif_city_name)
+        val cityName = context.getString(R.string.app_name)
         val titleTxt = String.format(context.getString(R.string.notification_title_text), highString, cityName)
         val contentTxt = String.format(context.getString(R.string.notification_content_text), description, "")
+        val color = context.getColor(R.color.colorPrimary)
 
-        val builder = NotificationCompat.Builder(context, chanel_id)
+        val builder = NotificationCompat.Builder(context, chanelId)
                 .setSmallIcon(smallIconId)
                 .setLargeIcon(largeIcon)
                 .setContentTitle(titleTxt)
                 .setContentText(contentTxt)
-                .setColor(context.getColor(R.color.colorPrimary))
+                .setColor(color)
                 .setAutoCancel(true)
-                .setTimeoutAfter(2 * DateUtils.HOUR_IN_MILLIS)
+                .setTimeoutAfter(HOUR_IN_MILLIS)
                 //            .setOngoing(true)
                 .setContentIntent(getPendingIntentMA(context))
         //                .addAction(
@@ -111,10 +113,10 @@ object NotifUtils {
             oneDayPassedSinceLastNotification = true
         }
 
-        if (notificationsEnabled && oneDayPassedSinceLastNotification && !ForegroundListener.isForeground()) {
+        if (notificationsEnabled && oneDayPassedSinceLastNotification
+                && !ForegroundListener.isForeground()) {
             NotifUtils.notifyUserOfNewWeather(context, weatherEntry)
         }
-        if (BuildConfig.DEBUG) NotifUtils.notifyUserOfNewWeather(context, weatherEntry)
     }
 
 

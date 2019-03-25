@@ -15,8 +15,6 @@
  */
 package com.example.android.sunshine.data.network;
 
-import android.content.Context;
-
 import com.example.android.sunshine.data.database.WeatherEntry;
 
 import org.json.JSONArray;
@@ -44,12 +42,8 @@ final class WeatherJsonParser {
     private static final String OWM_WINDSPEED = "speed";
     private static final String OWM_WIND_DIRECTION = "deg";
 
-    // All temperatures are children of the "temp" object
+    // All temperatures are children of the "temperature" object
     private static final String OWM_TEMP = "temp";
-
-    // Max temperature for the day
-    private static final String OWM_MAX = "temp_max";
-    private static final String OWM_MIN = "temp_min";
 
     private static final String OWM_WEATHER = "weather";
     private static final String OWM_WEATHER_ID = "id";
@@ -75,7 +69,7 @@ final class WeatherJsonParser {
     }
 
     // OWM 5days 3 hours
-    private static WeatherEntry[] fromJsonForecast(Context context, final JSONObject forecastJson) throws JSONException {
+    private static WeatherEntry[] fromJsonForecast( final JSONObject forecastJson) throws JSONException {
         JSONArray jsonWeatherArray = forecastJson.getJSONArray(OWM_LIST);
         WeatherEntry[] weatherEntries = new WeatherEntry[jsonWeatherArray.length()];
 
@@ -124,11 +118,11 @@ final class WeatherJsonParser {
 
         int weatherId = weatherObject.getInt(OWM_WEATHER_ID);
         String icon = weatherObject.getString(OWM_ICON);
-//        Log.d("TAG", icon);
+//        Log.d("TAG", iconCodeOWM);
 
         // Create the weather entry object
         return new WeatherEntry(weatherId, new Date(dateTimeMillis), max,
-                humidity, pressure, windSpeed, windDirection, icon, 1, lat, lon);
+                humidity, pressure, windSpeed, windDirection, icon, lat, lon);
     }
 
     // OWM current weather
@@ -150,9 +144,9 @@ final class WeatherJsonParser {
         int weatherId = weatherObj.getInt(OWM_WEATHER_ID);
 
         JSONObject windObj = jsonCurrentWeather.getJSONObject(OWM_WIND);
-        double windSpeed = 0;
+        double windSpeed = 0;  // m/s
         try {
-            windObj.getDouble(OWM_WINDSPEED);
+            windSpeed = windObj.getDouble(OWM_WINDSPEED);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -175,7 +169,7 @@ final class WeatherJsonParser {
     }
 
     @Nullable
-    WeatherResponse parseForecastWeather(Context context, final String forecastJsonStr) throws JSONException {
+    WeatherResponse parseForecastWeather(final String forecastJsonStr) throws JSONException {
         JSONObject forecastJson = new JSONObject(forecastJsonStr);
 
         // Is there an error?
@@ -183,7 +177,7 @@ final class WeatherJsonParser {
             return null;
         }
 
-        WeatherEntry[] weatherForecast = fromJsonForecast(context, forecastJson);
+        WeatherEntry[] weatherForecast = fromJsonForecast(forecastJson);
 
         return new WeatherResponse(weatherForecast);
     }

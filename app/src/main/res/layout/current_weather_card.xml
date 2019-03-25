@@ -73,7 +73,6 @@
                 android:gravity="center_horizontal"
                 android:maxLines="3"
                 android:textColor="@android:color/white"
-                android:textSize="15sp"
                 app:layout_constraintBottom_toBottomOf="@id/weatherIcon"
                 app:layout_constraintEnd_toStartOf="@id/temperatureText"
                 app:layout_constraintStart_toStartOf="parent"

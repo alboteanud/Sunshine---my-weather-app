@@ -2,18 +2,14 @@
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
     <string name="app_name" translatable="false">Sydney</string>
-    <string name="notif_city_name" translatable="false">Sydney</string>
 
     <string name="owm_city_id" translatable="false">2147714</string>
+    <!--<string name="owm_city_id" translatable="false">680332</string>  Craiova -->
 
-    <string name="time_zone">Australia/Sydney</string>
-    <!--  https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/   -->
+
+
 
     <string name="banner_id_Petru">ca-app-pub-2035789438833504/3764321861</string>
-
-    <!-- Title of the DetailActivity -->
-    <string name="title_activity_detail">Details</string>
-
 
     <!-- - - - - - - - - - - - - - -
       - Used by SunshineDateUtils  -
