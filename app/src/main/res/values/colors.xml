@@ -18,7 +18,7 @@
     <!-- the activated state color for a forecast list item -->
     <color name="activated">#E0E0E0</color>
     <color name="semitransparentWhite">#60ffffff</color>
-    <color name="semitransparentGray">#70777777</color>
+    <color name="semitransparentGray">#80aaaaaa</color>
     <color name="transparent">#00000000</color>
 
     <color name="blackSemi">#80000000</color>

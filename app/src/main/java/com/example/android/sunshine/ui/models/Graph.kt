@@ -43,7 +43,7 @@ data class Graph(val list: MutableList<ListWeatherEntry>?)
 //            backgroundColor = Color.TRANSPARENT
                 isDrawBackground = true
                 setAnimated(true)
-                thickness = 2
+                thickness = 3
                 isDrawDataPoints = false
             }
 
