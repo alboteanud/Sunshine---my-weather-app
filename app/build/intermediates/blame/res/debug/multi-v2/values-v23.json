@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine_ArchitectureComponents\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\54d0160f9f0707b3a3b34d8ecaedf2cd\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/933d1b9e70766adb7b90b296bd1553bd/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-1.0.0.aar\\94838d80f0c9d59b9d32e2db731ff980\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

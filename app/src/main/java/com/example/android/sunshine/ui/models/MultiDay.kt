@@ -51,7 +51,7 @@ data class MultiDay(val list: MutableList<ListWeatherEntry>?)
              * Weather Date *
              */
             var pattern = "EEEE"
-            if (BuildConfig.DEBUG) pattern = "EEE dd HH.mm"
+//            if (BuildConfig.DEBUG) pattern = "EEE dd HH.mm"
             val simpleDateFormat = Utils.getFormatterCityTZ(pattern)
             val dateTxt = simpleDateFormat.format(entry.date.time)
             dayView.weatherDate.text = dateTxt

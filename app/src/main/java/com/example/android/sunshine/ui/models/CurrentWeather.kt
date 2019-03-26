@@ -23,6 +23,7 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?)
             val weatherId = entry.weatherId
             //        int weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForWeatherCondition(weatherId);
             val iconId = entry.iconCodeOWM
+//            val iconId = "01n"
             val weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(iconId)
 
             /* Set the resource ID on the iconCodeOWM to display the art */

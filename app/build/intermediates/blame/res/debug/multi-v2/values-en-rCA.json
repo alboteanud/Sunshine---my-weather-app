@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml",
+            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine_ArchitectureComponents\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-en-rCA\\values-en-rCA.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/e0e9a9e0031a2c746caaa1fa757ef9e4/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\703fb687279ee3e6202a663bc823b363\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "105,192,361,441",
-                        "endColumns": "86,168,79,77",
-                        "endOffsets": "187,356,436,514"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
                     },
                     "to": {
-                        "startLines": "29,32,33,34",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "2764,3034,3203,3283",
-                        "endColumns": "86,168,79,77",
-                        "endOffsets": "2846,3198,3278,3356"
+                        "startLines": "31",
+                        "startColumns": "4",
+                        "startOffsets": "2933",
+                        "endColumns": "100",
+                        "endOffsets": "3029"
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\54d0160f9f0707b3a3b34d8ecaedf2cd\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,20 +38,20 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/adcb897ee8c6925920629b057fadb0cd/res/values-en-rCA/values-en-rCA.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\preference-1.0.0.aar\\ed0b7f9734047d40ae0cc9b1803ff2eb\\res\\values-en-rCA\\values-en-rCA.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "105,192,361,441",
+                        "endColumns": "86,168,79,77",
+                        "endOffsets": "187,356,436,514"
                     },
                     "to": {
-                        "startLines": "31",
-                        "startColumns": "4",
-                        "startOffsets": "2933",
-                        "endColumns": "100",
-                        "endOffsets": "3029"
+                        "startLines": "29,32,33,34",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2764,3034,3203,3283",
+                        "endColumns": "86,168,79,77",
+                        "endOffsets": "2846,3198,3278,3356"
                     }
                 }
             ]
