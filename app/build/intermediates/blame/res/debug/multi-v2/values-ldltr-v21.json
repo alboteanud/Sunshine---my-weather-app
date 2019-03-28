@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine_ArchitectureComponents\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-ldltr-v21\\values-ldltr-v21.xml",
+            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\54d0160f9f0707b3a3b34d8ecaedf2cd\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/ce11e6b1c5114117462a7f65b75a6323/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

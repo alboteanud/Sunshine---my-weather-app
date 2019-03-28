@@ -14,7 +14,7 @@
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
-        android:name="com.example.android.sunshine.utilities.DummyApp"
+        android:name="com.craiovadata.android.sunshine.utilities.DummyApp"
         android:allowBackup="false"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
@@ -25,7 +25,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.android.sunshine.ui.main.MainActivity"
+            android:name="com.craiovadata.android.sunshine.ui.main.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -38,13 +38,13 @@
 
         <!-- This is required for immediate syncs -->
         <service
-            android:name="com.example.android.sunshine.data.network.SyncIntentService"
+            android:name="com.craiovadata.android.sunshine.data.network.SyncIntentService"
             android:exported="false" />
         <service
-            android:name="com.example.android.sunshine.data.network.SyncIntentServiceCW"
+            android:name="com.craiovadata.android.sunshine.data.network.SyncIntentServiceCW"
             android:exported="false" /> <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
         <service
-            android:name="com.example.android.sunshine.data.network.MyJobService"
+            android:name="com.craiovadata.android.sunshine.data.network.MyJobService"
             android:exported="false" >
             <intent-filter>
                 <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
@@ -54,6 +54,17 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="@string/admob_app_id" />
+
+        <receiver android:name="com.craiovadata.android.sunshine.ui.widget.MyAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_provider_info" />
+        </receiver>
+
         <!--
              Receives GooglePlay execution requests and forwards them to the
              appropriate internal service.

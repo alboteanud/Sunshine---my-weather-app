@@ -1420,6 +1420,7 @@ id visible
 id weatherDate
 id weatherDescription
 id weatherIcon
+id widgetTextViewTemperature
 id wind_label
 id wind_measurement
 id withText
@@ -1501,6 +1502,7 @@ layout map_card
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout multi_day_card
+layout my_widget_layout
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -2118,6 +2120,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
 style TitleStyleBig
 style TitleWhiteTextStyle
+style WhiteTextWithShadow
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -2332,3 +2335,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml app_widget_provider_info
