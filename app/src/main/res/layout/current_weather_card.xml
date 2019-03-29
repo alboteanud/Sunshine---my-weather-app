@@ -36,7 +36,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="spread_inside"
-                tools:src="@drawable/ic_clear" />
+                tools:src="@drawable/ic_clear"
+                android:contentDescription="@string/a11y_forecast_icon"/>
 
             <TextView
                 android:id="@+id/temperatureText"

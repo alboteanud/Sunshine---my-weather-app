@@ -42,7 +42,7 @@ import androidx.lifecycle.MutableLiveData;
  */
 public class NetworkDataSource {
     // The number of days we want our API to return, set to 14 days or two weeks
-    public static final int NUM_DAYS = 5;
+    private static final int NUM_DAYS = 5;
     public static final int NUM_MIN_DATA_COUNTS = (NUM_DAYS - 1) * (24 / 3);
     private static final String LOG_TAG = NetworkDataSource.class.getSimpleName();
 
@@ -67,8 +67,8 @@ public class NetworkDataSource {
     private NetworkDataSource(Context context, AppExecutors executors) {
         this.context = context;
         mExecutors = executors;
-        mDownloadedWeatherForecasts = new MutableLiveData<WeatherEntry[]>();
-        mDownloadedCurrentWeather = new MutableLiveData<WeatherEntry[]>();
+        mDownloadedWeatherForecasts = new MutableLiveData<>();
+        mDownloadedCurrentWeather = new MutableLiveData<>();
     }
 
     public LiveData<WeatherEntry[]> getCurrentWeatherForecasts() {

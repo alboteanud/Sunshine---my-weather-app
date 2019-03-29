@@ -25,9 +25,11 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?)
             val iconId = entry.iconCodeOWM
 //            val iconId = "01n"
             val weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(iconId)
+            val weatherDescription = SunshineWeatherUtils.getStringForWeatherCondition(cardView.context, weatherId)
+            val weatherIconDescription = cardView.context.getString(R.string.a11y_forecast_icon, weatherDescription)
 
-            /* Set the resource ID on the iconCodeOWM to display the art */
             cardView.weatherIcon.setImageResource(weatherImageId)
+            cardView.weatherIcon.contentDescription = weatherIconDescription
 
             /****************
              * Weather Date *

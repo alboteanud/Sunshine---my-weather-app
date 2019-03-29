@@ -36,7 +36,7 @@ final class NetworkUtils {
     private static final String TAG = NetworkUtils.class.getSimpleName();
     private static final String BASE_OWM_WEATHER_URL = "http://api.openweathermap.org/data/2.5/forecast?";
     private static final String BASE_OWM_WEATHER_NOW_URL = "http://api.openweathermap.org/data/2.5/weather?";
-    public static final String OWM_USER_ID = "fa5d8273d9b9f6123bdeb94d0a05c9aa"; // OWM cont Anca Scobaru
+    private static final String OWM_USER_ID = "fa5d8273d9b9f6123bdeb94d0a05c9aa"; // OWM cont Anca Scobaru
     private static final String ID_PARAM = "id";
     private static final String APPID_PARAM = "APPID";
 

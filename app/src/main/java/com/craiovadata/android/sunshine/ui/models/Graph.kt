@@ -101,7 +101,7 @@ data class Graph(val list: MutableList<ListWeatherEntry>?)
                 listener.onCelsiusFarClicked(it)
             }
             blueView.isClickable = true
-            blueView.background = context.getDrawable(com.craiovadata.android.sunshine.R.drawable.selector)
+            blueView.background = context.getDrawable(com.craiovadata.android.sunshine.R.drawable.selector_transp)
 
             whiteView.isClickable = false
             whiteView.setTextColor(ContextCompat.getColor(context, android.R.color.white))

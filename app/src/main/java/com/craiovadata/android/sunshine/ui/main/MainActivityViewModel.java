@@ -11,31 +11,29 @@ import androidx.lifecycle.ViewModel;
 
 public class MainActivityViewModel extends ViewModel {
 
-    private final RepositoryWeather repository;
-    private final LiveData<List<ListWeatherEntry>> forecast;
-    private final LiveData<List<ListWeatherEntry>> forecastDays;
-    private final LiveData<List<WeatherEntry>> allForecast;
+    private final LiveData<List<ListWeatherEntry>> nextHoursWeather;
+    private final LiveData<List<ListWeatherEntry>> midDayWeather;
+//    private final LiveData<List<WeatherEntry>> allForecast;
     private final LiveData<List<WeatherEntry>> currentWeather;
 
 
-    public MainActivityViewModel(RepositoryWeather repository) {
-        this.repository = repository;
-        forecast = this.repository.getWeatherForecast();
-        forecastDays = this.repository.getWeatherForecastDays();
-        allForecast = this.repository.getAllWeatherEntries();
-        currentWeather = this.repository.getCurrentWeather();
+    MainActivityViewModel(RepositoryWeather repository) {
+        nextHoursWeather = repository.getNextHoursWeather();
+        midDayWeather = repository.getMidDayWeatherEntries();
+//        allForecast = repository.getAllWeatherEntries();
+        currentWeather = repository.getCurrentWeather();
     }
 
-    public LiveData<List<ListWeatherEntry>> getForecast() {
-        return forecast;
+    public LiveData<List<ListWeatherEntry>> getNextHoursWeather() {
+        return nextHoursWeather;
     }
-    public LiveData<List<ListWeatherEntry>> getForecastDays() {
-        return forecastDays;
+    public LiveData<List<ListWeatherEntry>> getMidDayWeather() {
+        return midDayWeather;
     }
 
-    public LiveData<List<WeatherEntry>> getAllForecast() {
-        return allForecast;
-    }
+//    public LiveData<List<WeatherEntry>> getAllForecast() {
+//        return allForecast;
+//    }
 
     public LiveData<List<WeatherEntry>> getCurrentWeather() {
         return currentWeather;

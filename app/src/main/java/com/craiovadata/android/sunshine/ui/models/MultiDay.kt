@@ -38,13 +38,17 @@ data class MultiDay(val list: MutableList<ListWeatherEntry>?)
             /****************
              * Weather Icon *
              */
-//        val weatherId = entry.weatherId
+        val weatherId = entry.weatherId
             //        int weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForWeatherCondition(weatherId);
             val iconId = entry.iconCodeOWM
             val weatherImageId = SunshineWeatherUtils.getSmallArtResourceIdForIconCode(iconId)
 
             /* Set the resource ID on the iconCodeOWM to display the art */
             dayView.weatherIcon.setImageResource(weatherImageId)
+
+            val weatherDescription = SunshineWeatherUtils.getStringForWeatherCondition(dayView.context, weatherId)
+            val weatherIconDescription = dayView.context.getString(R.string.a11y_forecast_icon, weatherDescription)
+            dayView.weatherIcon.contentDescription = weatherIconDescription
 
             /****************
              * Weather Date *

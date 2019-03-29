@@ -22,6 +22,6 @@
     <color name="transparent">#00000000</color>
 
     <color name="blackSemi">#80000000</color>
-    <color name="blackSemiDark">#90000000</color>
+    <color name="blackSemi7">#70000000</color>
     <color name="whiteSemi">#7fff</color>
 </resources>

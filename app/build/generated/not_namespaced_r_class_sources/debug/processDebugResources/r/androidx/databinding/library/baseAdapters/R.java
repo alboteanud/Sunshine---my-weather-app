@@ -12,9 +12,9 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int dataBinding = 0x7f080040;
-        public static final int onAttachStateChangeListener = 0x7f080089;
-        public static final int onDateChanged = 0x7f08008a;
-        public static final int textWatcher = 0x7f0800da;
+        public static final int dataBinding = 0x7f080045;
+        public static final int onAttachStateChangeListener = 0x7f080090;
+        public static final int onDateChanged = 0x7f080091;
+        public static final int textWatcher = 0x7f0800e1;
     }
 }

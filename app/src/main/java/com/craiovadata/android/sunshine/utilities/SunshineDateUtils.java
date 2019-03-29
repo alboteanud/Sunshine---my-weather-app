@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Class for handling _date conversions that are useful for Sunshine.
  */
-public final class SunshineDateUtils {
+final class SunshineDateUtils {
 
     /* Milliseconds in a day */
     public static final long DAY_IN_MILLIS = TimeUnit.DAYS.toMillis(1);

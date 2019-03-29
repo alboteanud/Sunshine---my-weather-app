@@ -48,19 +48,21 @@ class MyAppWidgetProvider : AppWidgetProvider() {
             // Get the layout for the App Widget and attach an on-click listener
             // to the button
             val views = RemoteViews(context.packageName, R.layout.my_widget_layout)
-//            views.setOnClickPendingIntent(R.id.button, pendingIntent)
-
+            views.setOnClickPendingIntent(R.id.widgetView, pendingIntent)
 
             /****************
              * Weather Icon *
              */
             val weatherId = currentWeather.weatherId
             //        int weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForWeatherCondition(weatherId);
+                  val weatherDescription = SunshineWeatherUtils.getStringForWeatherCondition(context, weatherId)
             val iconId = currentWeather.iconCodeOWM
 //            val iconId = "01n"
             val weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(iconId)
+            val weatherIconDescription = context.getString(R.string.a11y_forecast_icon, weatherDescription)
             /* Set the resource ID on the iconCodeOWM to display the art */
-            views.setImageViewResource(R.id.widget_icon_weather, weatherId)
+            views.setImageViewResource(R.id.widget_icon_weather, weatherImageId)
+            views.setContentDescription(R.id.widget_icon_weather, weatherIconDescription)
 
 
 

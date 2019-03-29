@@ -32,7 +32,8 @@ app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintHorizontal_bias="0.55"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_clear" />
+        tools:src="@drawable/ic_clear"
+        android:contentDescription="@string/a11y_forecast_icon"/>
 
     <TextView
         android:id="@+id/temperatureText"

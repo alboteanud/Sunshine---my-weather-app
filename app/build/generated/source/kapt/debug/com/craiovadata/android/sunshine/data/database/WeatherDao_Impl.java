@@ -486,9 +486,9 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<List<ListWeatherEntry>> getDaysForecast(Date tomorrowCityNoonUtc, long offset,
+  public LiveData<List<ListWeatherEntry>> getMidDayForecast(Date tomorrowCityNoonUtc, long offset,
       long hourInMillis) {
-    final String _sql = "SELECT * FROM weather WHERE date > ? AND (date + ?) % (24 * ?) BETWEEN (11 * ? +1) AND 14 * ?";
+    final String _sql = "SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > ? AND (date + ?) % (24 * ?) BETWEEN (11 * ? +1) AND 14 * ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 5);
     int _argIndex = 1;
     final Long _tmp;
@@ -523,17 +523,15 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = __db.query(_statement);
         try {
           final int _cursorIndexOfId = _cursor.getColumnIndexOrThrow("id");
-          final int _cursorIndexOfWeatherId = _cursor.getColumnIndexOrThrow("weatherId");
           final int _cursorIndexOfDate = _cursor.getColumnIndexOrThrow("date");
-          final int _cursorIndexOfTemperature = _cursor.getColumnIndexOrThrow("temperature");
+          final int _cursorIndexOfWeatherId = _cursor.getColumnIndexOrThrow("weatherId");
           final int _cursorIndexOfIconCodeOWM = _cursor.getColumnIndexOrThrow("iconCodeOWM");
+          final int _cursorIndexOfTemperature = _cursor.getColumnIndexOrThrow("temperature");
           final List<ListWeatherEntry> _result = new ArrayList<ListWeatherEntry>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final ListWeatherEntry _item;
             final int _tmpId;
             _tmpId = _cursor.getInt(_cursorIndexOfId);
-            final int _tmpWeatherId;
-            _tmpWeatherId = _cursor.getInt(_cursorIndexOfWeatherId);
             final Date _tmpDate;
             final Long _tmp_1;
             if (_cursor.isNull(_cursorIndexOfDate)) {
@@ -542,10 +540,12 @@ public final class WeatherDao_Impl implements WeatherDao {
               _tmp_1 = _cursor.getLong(_cursorIndexOfDate);
             }
             _tmpDate = DateConverter.toDate(_tmp_1);
-            final double _tmpTemperature;
-            _tmpTemperature = _cursor.getDouble(_cursorIndexOfTemperature);
+            final int _tmpWeatherId;
+            _tmpWeatherId = _cursor.getInt(_cursorIndexOfWeatherId);
             final String _tmpIconCodeOWM;
             _tmpIconCodeOWM = _cursor.getString(_cursorIndexOfIconCodeOWM);
+            final double _tmpTemperature;
+            _tmpTemperature = _cursor.getDouble(_cursorIndexOfTemperature);
             _item = new ListWeatherEntry(_tmpId,_tmpWeatherId,_tmpDate,_tmpTemperature,_tmpIconCodeOWM);
             _result.add(_item);
           }

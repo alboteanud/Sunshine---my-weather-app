@@ -138,7 +138,7 @@ public class RepositoryWeather {
     /**
      * Database related operations
      **/
-    public LiveData<List<ListWeatherEntry>> getWeatherForecast() {
+    public LiveData<List<ListWeatherEntry>> getNextHoursWeather() {
         initializeData();
         long utcNowMillis = System.currentTimeMillis();
         Date date = new Date(utcNowMillis);
@@ -158,7 +158,7 @@ public class RepositoryWeather {
     }
 
  public List<WeatherEntry> getCurrentWeatherList() {
-        initializeDataCW();
+//        initializeDataCW();
 
         long nowMills = System.currentTimeMillis();
         Date nowDate = new Date(nowMills);
@@ -208,15 +208,15 @@ public class RepositoryWeather {
         return mWeatherDao.getAllEntries();
     }
 
-    public LiveData<List<ListWeatherEntry>> getWeatherForecastDays() {
+    public LiveData<List<ListWeatherEntry>> getMidDayWeatherEntries() {
         long offset = Utils.getCityOffset();
 
         long daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(System.currentTimeMillis());
         long tomorrowMidnightNormalizedUtc = (daysSinceEpoch + 1) * DAY_IN_MILLIS;
 
-        long tomorrowCityNoonUtc = tomorrowMidnightNormalizedUtc + 10 * HOUR_IN_MILLIS; // + offset
-     ;
+//        long tomorrowCityNoonUtc = tomorrowMidnightNormalizedUtc + 10 * HOUR_IN_MILLIS + offset
 
-        return mWeatherDao.getDaysForecast(new Date(tomorrowCityNoonUtc), offset, HOUR_IN_MILLIS);
+
+        return mWeatherDao.getMidDayForecast(new Date(tomorrowMidnightNormalizedUtc), offset, HOUR_IN_MILLIS);
     }
 }
