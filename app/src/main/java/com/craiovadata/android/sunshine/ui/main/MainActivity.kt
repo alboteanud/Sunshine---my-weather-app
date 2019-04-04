@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     override fun onResume() {
         InjectorUtils.provideRepository(this).initializeDataCW()
         adView?.resume()
-        setBackgroundDelayed(9 * 1000)
+        setBackgroundDelayed(3 * 1000)
         super.onResume()
     }
 

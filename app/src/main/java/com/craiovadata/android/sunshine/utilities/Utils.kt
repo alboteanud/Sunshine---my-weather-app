@@ -29,7 +29,8 @@ object Utils {
 
     @JvmStatic
     fun getCityTimeZone(): TimeZone? {
-        return getTimeZone(TIME_ZONE)
+        val tz =  getTimeZone(TIME_ZONE)
+        return tz
     }
 
     @JvmStatic
