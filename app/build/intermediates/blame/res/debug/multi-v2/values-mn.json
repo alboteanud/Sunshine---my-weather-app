@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine_ArchitectureComponents\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/f5932ae4f6a472bb864cbbe1f4004939/res/values-mn/values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "199,270,379,446,513,596,702",
-                        "endColumns": "70,108,66,66,82,105,65",
-                        "endOffsets": "269,378,445,512,595,701,767"
-                    },
-                    "to": {
-                        "startLines": "48,49,50,51,52,53,54",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "5589,5664,5777,5848,5919,6006,6116",
-                        "endColumns": "74,112,70,70,86,109,69",
-                        "endOffsets": "5659,5772,5843,5914,6001,6111,6181"
-                    }
-                },
-                {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.2.0.aar/2b811349c52b01be0251f16562efbcf6/res/values-mn/values.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-basement-16.2.0.aar\\8d25491f3fd62f4043e4a5d35187ef5f\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/e29ec8f1baa297aa5263568197a6e005/res/values-mn/values-mn.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\preference-1.0.0.aar\\1bbd7bde70c8750957d9c25d9ee827ec\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -55,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/30f441e0ad4b6e58ddded876d7d6f152/res/values-mn/values-mn.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "56",
-                        "startColumns": "4",
-                        "startOffsets": "6267",
-                        "endColumns": "100",
-                        "endOffsets": "6363"
-                    }
-                },
-                {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/03d8fce829a53ebf3487925ac26781e2/res/values-mn/values-mn.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\f4792e00686d5be34a2bee1399140575\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -89,7 +55,24 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-base-16.0.1.aar/8843f0759f2dddf2d101892ed618f55f/res/values-mn/values.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-ads-17.2.0.aar\\9e6e5582db371ffa3294db905c57c1db\\res\\values-mn\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "199,270,379,446,513,596,702",
+                        "endColumns": "70,108,66,66,82,105,65",
+                        "endOffsets": "269,378,445,512,595,701,767"
+                    },
+                    "to": {
+                        "startLines": "48,49,50,51,52,53,54",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5589,5664,5777,5848,5919,6006,6116",
+                        "endColumns": "74,112,70,70,86,109,69",
+                        "endOffsets": "5659,5772,5843,5914,6001,6111,6181"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\jetified-play-services-base-16.0.1.aar\\2909f5c3f15acc9505d4352ab4aaab29\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -103,6 +86,23 @@
                         "startOffsets": "2795,2907,3096,3230,3339,3535,3663,3822,4170,4373,4482,4681,4812,5012,5210,5301,5393",
                         "endColumns": "111,188,133,108,195,127,158,138,202,108,198,130,199,197,90,91,105",
                         "endOffsets": "2902,3091,3225,3334,3530,3658,3817,3956,4368,4477,4676,4807,5007,5205,5296,5388,5494"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\716a8e9275feb0f7bf6e39b9fd00bf75\\res\\values-mn\\values-mn.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "56",
+                        "startColumns": "4",
+                        "startOffsets": "6267",
+                        "endColumns": "100",
+                        "endOffsets": "6363"
                     }
                 }
             ]

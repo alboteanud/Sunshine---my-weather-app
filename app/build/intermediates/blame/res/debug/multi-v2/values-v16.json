@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine_ArchitectureComponents\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/30f441e0ad4b6e58ddded876d7d6f152/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\716a8e9275feb0f7bf6e39b9fd00bf75\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/03d8fce829a53ebf3487925ac26781e2/res/values-v16/values-v16.xml",
+                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.0.0.aar\\f4792e00686d5be34a2bee1399140575\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

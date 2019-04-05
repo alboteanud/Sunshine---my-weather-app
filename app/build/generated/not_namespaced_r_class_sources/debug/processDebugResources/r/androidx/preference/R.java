@@ -928,12 +928,12 @@ public final class R {
         public static final int abc_shareactionprovider_share_with = 0x7f0e002c;
         public static final int abc_shareactionprovider_share_with_application = 0x7f0e002d;
         public static final int abc_toolbar_collapse_description = 0x7f0e002e;
-        public static final int expand_button_title = 0x7f0e0083;
-        public static final int search_menu_title = 0x7f0e00b3;
-        public static final int status_bar_notification_info_overflow = 0x7f0e00b5;
-        public static final int summary_collapsed_preference_list = 0x7f0e00b6;
-        public static final int v7_preference_off = 0x7f0e00b9;
-        public static final int v7_preference_on = 0x7f0e00ba;
+        public static final int expand_button_title = 0x7f0e0082;
+        public static final int search_menu_title = 0x7f0e00ab;
+        public static final int status_bar_notification_info_overflow = 0x7f0e00ad;
+        public static final int summary_collapsed_preference_list = 0x7f0e00ae;
+        public static final int v7_preference_off = 0x7f0e00b1;
+        public static final int v7_preference_on = 0x7f0e00b2;
     }
     public static final class style {
         private style() {}

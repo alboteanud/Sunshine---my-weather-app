@@ -13,10 +13,7 @@ import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.Utils
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdSize
-import com.google.android.gms.ads.AdView
-import com.google.android.gms.ads.MobileAds
+import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 //adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
@@ -26,7 +23,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
     private var multiDayEntries: MutableList<ListWeatherEntry>? = null
-//    private var listPosition = RecyclerView.NO_POSITION
+    //    private var listPosition = RecyclerView.NO_POSITION
     private val handler = Handler()
 
 
@@ -111,6 +108,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                         Ads(adView),
                         Map(currentWeatherEntry)
                 ))
+//        adView?.let { updates.add(4, Ads(adView)) }
         adapter.setUpdates(updates)
 //        recyclerView.scrollToPosition(0)
     }
@@ -119,13 +117,22 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         adView = AdView(this)
         adView?.adSize = AdSize.MEDIUM_RECTANGLE
         adView?.adUnitId = Utils.getAdBannerId(this)
+//        newAdView.adListener = object : AdListener() {
+//
+//            override fun onAdLoaded() {
+//                super.onAdLoaded()
+//                adView = newAdView
+//                updateAdapter()
+//
+//            }
+//        }
         adView?.loadAd(AdRequest.Builder().build())
     }
 
     override fun onResume() {
         InjectorUtils.provideRepository(this).initializeDataCW()
         adView?.resume()
-        setBackgroundDelayed(3 * 1000)
+        setBackgroundDelayed(2 * 1000)
         super.onResume()
     }
 

@@ -1,6 +1,6 @@
 package com.craiovadata.android.sunshine
 
-object TimeZone {
+object MyTimeZone {
 
     // lista completa la https://garygregory.wordpress.com/2013/06/18/what-are-the-java-timezone-ids/
     const val TIME_ZONE = "US/Arizona"
@@ -9,4 +9,5 @@ object TimeZone {
 //    US/Mountain
 //    US/Pacific
 
+    const val DEFAULT_ZOOM_LEVEL: Int = 12
 }

@@ -3,7 +3,7 @@ package com.craiovadata.android.sunshine.utilities
 import android.content.Context
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.TimeZone.TIME_ZONE
+import com.craiovadata.android.sunshine.MyTimeZone.TIME_ZONE
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Calendar.DST_OFFSET

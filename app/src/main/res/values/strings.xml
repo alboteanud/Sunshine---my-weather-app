@@ -81,7 +81,8 @@
     <string name="condition_601">Snow</string>
     <string name="condition_602">Heavy Snow</string>
     <string name="condition_611">Sleet</string>
-    <string name="condition_612">Shower Sleet</string>
+    <string name="condition_612">Light shower Sleet</string>
+    <string name="condition_613">Shower Sleet</string>
     <string name="condition_615">Rain and Snow</string>
     <string name="condition_616">Rain and Snow</string>
     <string name="condition_620">Shower Snow</string>
@@ -159,6 +160,7 @@
     <string name="STATIC_MAP_KEY">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>
     <string name="map_content_description">map city</string>
     <string name="labelOurAd">This is our ad</string>
+    <string name="image_description">photo</string>
 
 
 </resources>

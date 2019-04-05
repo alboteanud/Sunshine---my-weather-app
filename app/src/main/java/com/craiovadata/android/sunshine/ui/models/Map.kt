@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.craiovadata.android.sunshine.R
+import com.craiovadata.android.sunshine.MyTimeZone
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import kotlinx.android.synthetic.main.map_card.view.*
 import java.util.*
@@ -26,7 +27,8 @@ data class Map(val weatherEntry: WeatherEntry?)
             val lon = weatherEntry.lon
             val prefs = itemView.context.getSharedPreferences("_", MODE_PRIVATE)
             val key = "key_zoom_level"
-            var zoomLevel = prefs.getInt(key, 12)
+            val defaultZoomLevel = MyTimeZone.DEFAULT_ZOOM_LEVEL
+            var zoomLevel = prefs.getInt(key, defaultZoomLevel)
             var url = buildUrlGoogleStaticMap(itemView.context, lat, lon, zoomLevel)
             loadMap(url, itemView.mapImageView)
 
