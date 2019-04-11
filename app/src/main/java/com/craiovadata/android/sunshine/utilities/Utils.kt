@@ -2,8 +2,8 @@ package com.craiovadata.android.sunshine.utilities
 
 import android.content.Context
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.MyTimeZone.TIME_ZONE
+import com.craiovadata.android.sunshine.R
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Calendar.DST_OFFSET
@@ -72,7 +72,7 @@ object Utils {
         val r = Random().nextInt(max)
 //        Log.d("tag", "limit: $limit r: $r \n$id")
         if (BuildConfig.DEBUG) return "ca-app-pub-3940256099942544/6300978111"
-//        if (r < 2) return context.getString(R.string.banner_id_Petru)
+        if (r < 2) return context.getString(R.string.banner_id_Petru)
         return "ca-app-pub-3931793949981809/9792691746" // default
     }
 
