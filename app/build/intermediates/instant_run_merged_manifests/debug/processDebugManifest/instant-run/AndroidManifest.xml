@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.craiovadata.android.sunshine.US.AZ.Scottsdale"
-    android:versionCode="2"
+    package="com.craiovadata.aus.sydney"
+    android:versionCode="5"
     android:versionName="1.0" >
 
     <uses-sdk
@@ -122,7 +122,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.craiovadata.android.sunshine.US.AZ.Scottsdale.mobileadsinitprovider"
+            android:authorities="com.craiovadata.aus.sydney.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -148,7 +148,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.craiovadata.android.sunshine.US.AZ.Scottsdale.firebaseinitprovider"
+            android:authorities="com.craiovadata.aus.sydney.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -163,12 +163,12 @@
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.craiovadata.android.sunshine.US.AZ.Scottsdale.lifecycle-process"
+            android:authorities="com.craiovadata.aus.sydney.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
-            android:authorities="com.craiovadata.android.sunshine.US.AZ.Scottsdale.com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.craiovadata.aus.sydney.com.android.tools.ir.server.InstantRunContentProvider"
             android:multiprocess="true" />
     </application>
 
