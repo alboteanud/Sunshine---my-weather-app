@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardGraph"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/blackSemi"
+    card_view:cardElevation="2sp"
+    card_view:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textViewCelsius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="°C"
+            android:focusable="true"
+            android:textSize="18sp"
+            card_view:layout_constraintEnd_toStartOf="@+id/separator"
+            card_view:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="|"
+            android:textSize="18sp"
+            card_view:layout_constraintBottom_toBottomOf="@+id/textViewCelsius"
+            card_view:layout_constraintEnd_toStartOf="@+id/textViewFarenheit"
+            card_view:layout_constraintTop_toTopOf="@+id/textViewCelsius" />
+
+        <TextView
+            android:id="@+id/textViewFarenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:text="°F"
+            android:textSize="18sp"
+            android:focusable="true"
+            card_view:layout_constraintBottom_toBottomOf="@+id/separator"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintTop_toTopOf="@+id/separator" />
+
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graphView"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            card_view:layout_constraintBottom_toTopOf="@+id/textLabel"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toBottomOf="@+id/textViewCelsius" />
+
+        <TextView
+            android:id="@+id/textLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/graphView"
+            android:layout_marginEnd="8dp"
+            android:text="Time"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="@+id/graphView"
+            android:layout_marginBottom="8dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
