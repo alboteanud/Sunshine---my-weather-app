@@ -1,12 +1,15 @@
 
-package com.example.android.sunshine;
+package com.craiovadata.android.sunshine;
 
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.NonNull;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
+
+import androidx.annotation.NonNull;
+
+//import android.support.annotation.NonNull;
 
 /**
  * Global executor pools for the whole application.

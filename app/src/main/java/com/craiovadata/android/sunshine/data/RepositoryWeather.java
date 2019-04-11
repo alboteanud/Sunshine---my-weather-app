@@ -35,6 +35,8 @@ import androidx.lifecycle.LiveData;
 import static android.text.format.DateUtils.DAY_IN_MILLIS;
 import static android.text.format.DateUtils.HOUR_IN_MILLIS;
 
+//import com.craiovadata.android.sunshine.AppExecutors;
+
 /**
  * Handles data operations in Sunshine. Acts as a mediator between {@link NetworkDataSource}
  * and {@link WeatherDao}
@@ -83,7 +85,7 @@ public class RepositoryWeather {
 
     public synchronized static RepositoryWeather getInstance(
             WeatherDao weatherDao, NetworkDataSource networkDataSource,
-            AppExecutors executors) {
+           AppExecutors executors) {
         Log.d(LOG_TAG, "Getting the repository");
         if (sInstance == null) {
             synchronized (LOCK) {
