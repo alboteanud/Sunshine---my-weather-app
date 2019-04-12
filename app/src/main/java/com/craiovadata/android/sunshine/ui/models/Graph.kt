@@ -42,7 +42,7 @@ data class Graph(val list: MutableList<ListWeatherEntry>?)
                 color = view.context.getColor(R.color.semitransparentGray)
 //            backgroundColor = Color.TRANSPARENT
                 isDrawBackground = true
-                setAnimated(true)
+                setAnimated(false)
                 thickness = 3
                 isDrawDataPoints = false
             }
@@ -65,26 +65,33 @@ data class Graph(val list: MutableList<ListWeatherEntry>?)
                 }
             }
 
-            verifyTimeZone(view)
+
+            setLabelTime(view)
         }
 
-        private fun verifyTimeZone(view: View) {
-            if (!BuildConfig.DEBUG) return
-
+        private fun setLabelTime(view: View) {
             val cityTimeZone = Utils.getCityTimeZone()
             var text = cityTimeZone?.displayName
             if (cityTimeZone == null && cityTimeZone?.id == "GMT") {
                 text = "TIME_ZONE error: $cityTimeZone"
                 view.textLabel.setTextColor(Color.RED)
             }
+
+            if (BuildConfig.DEBUG) {
+                if (cityTimeZone == null && cityTimeZone?.id == "GMT") {
+                    text = "TIME_ZONE error: $cityTimeZone"
+                    view.textLabel.setTextColor(Color.RED)
+                }
+            }
             view.textLabel.text = text
+
         }
 
         private fun setTextCelsiusFarStates(view: View, listener: CardsAdapter.Listener) {
             val context = view.context
             val sp = PreferenceManager.getDefaultSharedPreferences(context)
             val key = context.getString(R.string.pref_units_key)
-            val isImperialDefault = context.resources.getBoolean(com.craiovadata.android.sunshine.R.bool.is_imperial_default)
+            val isImperialDefault = context.resources.getBoolean(R.bool.is_imperial_default)
             val isImperial = sp.getBoolean(key, isImperialDefault)
 
             var blueView = view.textViewFarenheit
@@ -101,7 +108,7 @@ data class Graph(val list: MutableList<ListWeatherEntry>?)
                 listener.onCelsiusFarClicked(it)
             }
             blueView.isClickable = true
-            blueView.background = context.getDrawable(com.craiovadata.android.sunshine.R.drawable.selector_transp)
+            blueView.background = context.getDrawable(R.drawable.selector_transp)
 
             whiteView.isClickable = false
             whiteView.setTextColor(ContextCompat.getColor(context, android.R.color.white))
