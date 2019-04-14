@@ -8,6 +8,7 @@ import android.os.Build
 import android.preference.PreferenceManager
 import android.text.format.DateUtils
 import android.text.format.DateUtils.HOUR_IN_MILLIS
+import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry

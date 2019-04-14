@@ -118,7 +118,6 @@ attr buttonBarStyle
 attr buttonGravity
 attr buttonIconDimen
 attr buttonPanelSideLayout
-attr buttonSize
 attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
@@ -156,7 +155,6 @@ attr chipStartPadding
 attr chipStrokeColor
 attr chipStrokeWidth
 attr chipStyle
-attr circleCrop
 attr closeIcon
 attr closeIconEnabled
 attr closeIconEndPadding
@@ -179,7 +177,6 @@ attr colorControlNormal
 attr colorError
 attr colorPrimary
 attr colorPrimaryDark
-attr colorScheme
 attr colorSecondary
 attr colorSwitchThumbNormal
 attr commitIcon
@@ -303,8 +300,6 @@ attr iconStartPadding
 attr iconTint
 attr iconTintMode
 attr iconifiedByDefault
-attr imageAspectRatio
-attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr indeterminateProgressStyle
 attr initialActivityCount
@@ -470,7 +465,6 @@ attr ratingBarStyleSmall
 attr reverseLayout
 attr ringtonePreferenceStyle
 attr rippleColor
-attr scopeUris
 attr scrimAnimationDuration
 attr scrimBackground
 attr scrimVisibleHeightTrigger
@@ -639,7 +633,6 @@ bool abc_config_actionMenuItemAllCaps
 bool config_materialPreferenceIconSpaceReserved
 bool is_imperial_default
 bool mtrl_btn_textappearance_all_caps
-bool use_today_layout
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -666,7 +659,6 @@ color abc_tint_spinner
 color abc_tint_switch_track
 color accent_material_dark
 color accent_material_light
-color activated
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -692,18 +684,6 @@ color cardview_shadow_start_color
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
-color colorPrimaryLight
-color common_google_signin_btn_text_dark
-color common_google_signin_btn_text_dark_default
-color common_google_signin_btn_text_dark_disabled
-color common_google_signin_btn_text_dark_focused
-color common_google_signin_btn_text_dark_pressed
-color common_google_signin_btn_text_light
-color common_google_signin_btn_text_light_default
-color common_google_signin_btn_text_light_disabled
-color common_google_signin_btn_text_light_focused
-color common_google_signin_btn_text_light_pressed
-color common_google_signin_btn_tint
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -717,8 +697,6 @@ color design_fab_stroke_top_inner_color
 color design_fab_stroke_top_outer_color
 color design_snackbar_background_color
 color design_tint_password_toggle
-color detail_accent_label
-color detail_accent_pane_background
 color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
@@ -776,14 +754,12 @@ color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
 color primary_material_light
-color primary_text
 color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
 color ripple_material_dark
 color ripple_material_light
-color secondary_text
 color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
@@ -799,8 +775,6 @@ color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
 color transparent
-color white
-color whiteSemi
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -935,14 +909,11 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
-dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
 dimen forecast_detail_horizontal_padding
 dimen forecast_detail_vertical_padding
-dimen forecast_temperature_space
-dimen forecast_text_size
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -953,13 +924,6 @@ dimen hint_pressed_alpha_material_light
 dimen item_touch_helper_max_drag_scroll_per_frame
 dimen item_touch_helper_swipe_escape_max_velocity
 dimen item_touch_helper_swipe_escape_velocity
-dimen item_width
-dimen list_icon
-dimen list_item_date_left_margin
-dimen list_item_date_start_margin
-dimen list_item_icon_margin_right
-dimen list_item_padding_horizontal
-dimen list_item_padding_vertical
 dimen mtrl_bottomappbar_fabOffsetEndMode
 dimen mtrl_bottomappbar_fab_cradle_margin
 dimen mtrl_bottomappbar_fab_cradle_rounded_corner_radius
@@ -1033,8 +997,6 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
-dimen text_margin
-dimen today_forecast_list_item_vertical_padding
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -1145,33 +1107,12 @@ drawable c3
 drawable c4
 drawable c5
 drawable c6
-drawable common_full_open_on_phone
-drawable common_google_signin_btn_icon_dark
-drawable common_google_signin_btn_icon_dark_focused
-drawable common_google_signin_btn_icon_dark_normal
-drawable common_google_signin_btn_icon_dark_normal_background
-drawable common_google_signin_btn_icon_disabled
-drawable common_google_signin_btn_icon_light
-drawable common_google_signin_btn_icon_light_focused
-drawable common_google_signin_btn_icon_light_normal
-drawable common_google_signin_btn_icon_light_normal_background
-drawable common_google_signin_btn_text_dark
-drawable common_google_signin_btn_text_dark_focused
-drawable common_google_signin_btn_text_dark_normal
-drawable common_google_signin_btn_text_dark_normal_background
-drawable common_google_signin_btn_text_disabled
-drawable common_google_signin_btn_text_light
-drawable common_google_signin_btn_text_light_focused
-drawable common_google_signin_btn_text_light_normal
-drawable common_google_signin_btn_text_light_normal_background
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable googleg_disabled_color_18
-drawable googleg_standard_color_18
 drawable ic_arrow_down_24dp
 drawable ic_clear
 drawable ic_clear_n
@@ -1180,11 +1121,9 @@ drawable ic_fog
 drawable ic_light_clouds
 drawable ic_light_clouds_n
 drawable ic_light_rain
-drawable ic_logo
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_notif
 drawable ic_rain
 drawable ic_snow
 drawable ic_storm
@@ -1242,16 +1181,17 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_privacy_policy
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
 id add
-id adjust_height
-id adjust_width
 id adsContainer
 id alertTitle
 id all
 id always
+id app_bar
 id async
 id auto
 id backImage
@@ -1287,7 +1227,6 @@ id contentPanel
 id coordinator
 id custom
 id customPanel
-id dark
 id dataBinding
 id daysLayout
 id decor_content_parent
@@ -1329,7 +1268,6 @@ id humidity_measurement
 id icon
 id icon_frame
 id icon_group
-id icon_only
 id ifRoom
 id image
 id info
@@ -1339,7 +1277,6 @@ id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
 id left
-id light
 id line1
 id line3
 id listMode
@@ -1348,8 +1285,6 @@ id loading_indicator
 id mapImageView
 id masked
 id media_actions
-id menu_test_1
-id menu_test_2
 id message
 id middle
 id mini
@@ -1373,6 +1308,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id policy_toolbar
 id pressure_details
 id pressure_label
 id progress_circular
@@ -1407,6 +1343,8 @@ id seekbar_value
 id select_dialog_listview
 id selected
 id separator
+id settings_container
+id settings_toolbar
 id shortcut
 id showCustom
 id showHome
@@ -1439,6 +1377,7 @@ id temperatureText
 id text
 id text2
 id textLabel
+id textPrivacyPolicy
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -1453,6 +1392,8 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar
+id toolbar_layout
 id top
 id topPanel
 id touch_outside
@@ -1470,7 +1411,6 @@ id visible
 id weatherDate
 id weatherDescription
 id weatherIcon
-id wide
 id widgetTextViewTemperature
 id widgetView
 id widget_icon_weather
@@ -1529,9 +1469,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_policy
+layout activity_settings
 layout ads_card
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
+layout content_main
 layout current_weather_card
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1594,13 +1537,11 @@ layout support_simple_spinner_dropdown_item
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
-mipmap ic_launcher_round
 string STATIC_MAP_KEY
 string a11y_forecast
 string a11y_forecast_icon
 string a11y_high_temp
 string a11y_humidity
-string a11y_low_temp
 string a11y_pressure
 string a11y_wind
 string abc_action_bar_home_description
@@ -1642,6 +1583,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
 string admob_app_id
 string app_name
 string appbar_scrolling_view_behavior
@@ -1649,24 +1591,7 @@ string banner_id_Petru
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
-string common_google_play_services_enable_button
-string common_google_play_services_enable_text
-string common_google_play_services_enable_title
-string common_google_play_services_install_button
-string common_google_play_services_install_text
-string common_google_play_services_install_title
-string common_google_play_services_notification_channel_name
-string common_google_play_services_notification_ticker
 string common_google_play_services_unknown_issue
-string common_google_play_services_unsupported_text
-string common_google_play_services_update_button
-string common_google_play_services_update_text
-string common_google_play_services_update_title
-string common_google_play_services_updating_text
-string common_google_play_services_wear_update_text
-string common_open_on_phone
-string common_signin_button_text
-string common_signin_button_text_long
 string condition_2xx
 string condition_3xx
 string condition_500
@@ -1728,7 +1653,6 @@ string condition_unknown
 string expand_button_title
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string format_full_friendly_date
 string format_humidity
 string format_pressure
 string format_temperature
@@ -1736,9 +1660,12 @@ string format_wind_kmh
 string format_wind_mph
 string hide_bottom_view_on_scroll_behavior
 string humidity_label
-string image_description
 string labelOurAd
+string label_screen_policy
+string link_privacy_policy
+string link_terms_of_use
 string map_content_description
+string menu_label_privacy_policy
 string mtrl_chip_close_icon_content_description
 string norif_channel_id
 string notif_channel_name
@@ -1753,12 +1680,9 @@ string path_password_strike_through
 string pref_enable_notifications_key
 string pref_enable_notifications_label
 string pref_last_notification
-string pref_location_key
 string pref_units_key
-string pref_units_label
-string pref_units_label_imperial
-string pref_units_label_metric
 string pressure_label
+string privacy_policy
 string s1
 string s2
 string s3
@@ -1767,15 +1691,16 @@ string s5
 string s6
 string s7
 string search_menu_title
-string settings
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string title_activity_settings
 string today
 string tomorrow
 string v7_preference_off
 string v7_preference_on
 string wind_label
-style ActionBar_Solid_Sunshine_NoTitle
+string word_to_linkify_privacy_policy
+string word_to_linkify_terms_of_use
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -1783,9 +1708,10 @@ style Animation_AppCompat_DropDownUp
 style Animation_AppCompat_Tooltip
 style Animation_Design_BottomSheetDialog
 style AppTheme
-style AppTheme_Forecast
-style AppTheme_Forecast_orig
+style AppTheme_AppBarOverlay
 style AppTheme_NoActionBar
+style AppTheme_PopupOverlay
+style AppTheme_SettingsTheme
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog
@@ -2192,9 +2118,7 @@ style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox
 style ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense
-style TitleStyleBig
 style TitleWhiteTextStyle
-style WhiteTextWithShadow
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -2370,7 +2294,6 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable ListPreference android_entries android_entryValues entries entryValues
-styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
 styleable MaterialButton android_insetLeft android_insetRight android_insetTop android_insetBottom backgroundTint backgroundTintMode cornerRadius icon iconGravity iconPadding iconSize iconTint iconTintMode rippleColor strokeColor strokeWidth
 styleable MaterialCardView strokeColor strokeWidth
 styleable MaterialComponentsTheme bottomSheetDialogTheme bottomSheetStyle chipGroupStyle chipStandaloneStyle chipStyle colorAccent colorBackgroundFloating colorPrimary colorPrimaryDark colorSecondary editTextStyle floatingActionButtonStyle materialButtonStyle materialCardViewStyle navigationViewStyle scrimBackground snackbarButtonStyle tabStyle textAppearanceBody1 textAppearanceBody2 textAppearanceButton textAppearanceCaption textAppearanceHeadline1 textAppearanceHeadline2 textAppearanceHeadline3 textAppearanceHeadline4 textAppearanceHeadline5 textAppearanceHeadline6 textAppearanceOverline textAppearanceSubtitle1 textAppearanceSubtitle2 textInputStyle
@@ -2393,7 +2316,6 @@ styleable ScrimInsetsFrameLayout insetForeground
 styleable ScrollingViewBehavior_Layout behavior_overlapTop
 styleable SearchView android_focusable android_maxWidth android_inputType android_imeOptions closeIcon commitIcon defaultQueryHint goIcon iconifiedByDefault layout queryBackground queryHint searchHintIcon searchIcon submitBackground suggestionRowLayout voiceIcon
 styleable SeekBarPreference android_layout android_max adjustable min seekBarIncrement showSeekBarValue
-styleable SignInButton buttonSize colorScheme scopeUris
 styleable Snackbar snackbarButtonStyle snackbarStyle
 styleable SnackbarLayout android_maxWidth elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
@@ -2412,3 +2334,4 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
 xml app_widget_provider_info
+xml prefs
