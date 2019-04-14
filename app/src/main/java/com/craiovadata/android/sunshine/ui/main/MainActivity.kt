@@ -1,20 +1,26 @@
 package com.craiovadata.android.sunshine.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
+import com.craiovadata.android.sunshine.ui.policy.PolicyActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.Utils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 //adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
 
@@ -33,6 +39,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        setSupportActionBar(toolbar)
 
         recyclerView.setHasFixedSize(true)
         adapter = CardsAdapter(this, listOf(), this)
@@ -52,6 +59,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         observeForecastData(viewModel)
         observeDaysForecastData(viewModel)
 //        observeAllEntriesData(viewModel)
+
+
 
     }
 
@@ -132,8 +141,9 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     override fun onResume() {
         InjectorUtils.provideRepository(this).initializeDataCW()
         adView?.resume()
-        setBackgroundDelayed(3 * 1000)
+        setBackgroundDelayed(3000)
         super.onResume()
+
     }
 
     override fun onPause() {
@@ -178,5 +188,27 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 //        })
 //    }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        return when (item.itemId) {
+            R.id.action_settings -> {
+                startActivity(Intent(this, SettingsActivity::class.java))
+                return true
+            }
+            R.id.action_privacy_policy -> {
+                startActivity(Intent(this, PolicyActivity::class.java))
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 
 }

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
                     "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/res/values-v24/values-v24.xml",

@@ -1,6 +1,8 @@
 package com.craiovadata.android.sunshine.utilities
 
 import android.content.Context
+import android.text.util.Linkify
+import android.widget.TextView
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.MyTimeZone.TIME_ZONE
 import com.craiovadata.android.sunshine.R
@@ -10,6 +12,7 @@ import java.util.Calendar.DST_OFFSET
 import java.util.Calendar.ZONE_OFFSET
 import java.util.TimeZone.getTimeZone
 import java.util.concurrent.TimeUnit
+import java.util.regex.Pattern
 
 object Utils {
 
@@ -74,6 +77,11 @@ object Utils {
         if (BuildConfig.DEBUG) return "ca-app-pub-3940256099942544/6300978111"
         if (r < 2) return context.getString(R.string.banner_id_Petru)
         return "ca-app-pub-3931793949981809/9792691746" // default
+    }
+
+
+    fun addLinks(textView: TextView, pattern: String, urlString: String) {
+        Linkify.addLinks(textView, Pattern.compile(pattern), urlString, { s, start, end -> true }, { match, url -> "" })
     }
 
 }
