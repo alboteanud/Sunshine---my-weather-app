@@ -17,6 +17,7 @@ import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
+import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.policy.PolicyActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils
@@ -30,6 +31,8 @@ import kotlinx.android.synthetic.main.content_main.*
 //adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
 
 class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
+
+
     private var adView: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
@@ -122,8 +125,9 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                         Details(currentWeatherEntry),
                         MultiDay(multiDayEntries),
                         Ads(adView),
-//                        News("Craiova"),
-                        Map(currentWeatherEntry)
+                        Map(currentWeatherEntry),
+                        News("")
+
                 ))
 //        adView?.let { updates.add(4, Ads(adView)) }
         adapter.setUpdates(updates)
@@ -185,6 +189,11 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     override fun onCelsiusFarClicked(view: View) {
         recyclerView.adapter?.notifyItemRangeChanged(0, 4)
+    }
+
+    override fun onNewsClicked(view: View) {
+
+        startActivity(Intent(this, NewsActivity::class.java))
     }
 
     private fun observeAllEntriesData(viewModel: MainActivityViewModel) {

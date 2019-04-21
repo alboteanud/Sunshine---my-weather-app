@@ -27,6 +27,15 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.craiovadata.android.sunshine.ui.news.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+        </activity>
+        <activity
             android:name="com.craiovadata.android.sunshine.ui.settings.SettingsActivity"
             android:label="@string/title_activity_settings"
             android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"

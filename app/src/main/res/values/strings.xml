@@ -151,6 +151,7 @@
     <string name="sent_feedback_label">sent</string>
     <string name="feedback_pref_summary">Report technical issues or suggest new features</string>
     <string name="feedback_pref_title">Send feedback</string>
+    <string name="title_activity_news">NewsActivity</string>
 
 
 </resources>

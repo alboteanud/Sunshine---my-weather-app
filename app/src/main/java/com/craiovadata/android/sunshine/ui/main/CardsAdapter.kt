@@ -55,7 +55,7 @@ class CardsAdapter(val context: Context,
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.multi_day_card, viewGroup, false))
 
             VIEW_TYPE_NEWS -> CardsViewHolders.NewsViewHolder(
-                    LayoutInflater.from(viewGroup.context).inflate(R.layout.news_card, viewGroup, false))
+                    LayoutInflater.from(viewGroup.context).inflate(R.layout.news_card, viewGroup, false), listener)
 
             else -> CardsViewHolders.AdsViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.ads_card, viewGroup, false))
@@ -72,6 +72,7 @@ class CardsAdapter(val context: Context,
     interface Listener {
         //        fun onWeatherImageClicked()
         fun onCelsiusFarClicked(view: View)
+        fun onNewsClicked(view: View)
 //        fun onMapClicked()
     }
 

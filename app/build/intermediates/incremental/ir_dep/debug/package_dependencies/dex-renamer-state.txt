@@ -1,4 +1,4 @@
-#Sun Apr 21 12:03:17 EEST 2019
+#Sun Apr 21 22:51:12 EEST 2019
 base.0=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/10
 path.1=classes2.dex
 renamed.1=classes2.dex
