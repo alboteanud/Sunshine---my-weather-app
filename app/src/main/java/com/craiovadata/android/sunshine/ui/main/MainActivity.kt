@@ -3,11 +3,14 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.RecyclerView
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
@@ -16,7 +19,9 @@ import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.policy.PolicyActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
+import com.craiovadata.android.sunshine.utilities.NotifUtils.areNotificationsEnabled
 import com.craiovadata.android.sunshine.utilities.Utils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -29,8 +34,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
     private var multiDayEntries: MutableList<ListWeatherEntry>? = null
-    //    private var listPosition = RecyclerView.NO_POSITION
-    private val handler = Handler()
+    private var listPosition = RecyclerView.NO_POSITION
 
 
     private lateinit var adapter: CardsAdapter
@@ -58,14 +62,13 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         observeCurrentWeather(viewModel)
         observeForecastData(viewModel)
         observeDaysForecastData(viewModel)
-//        observeAllEntriesData(viewModel)
-
+        observeAllEntriesData(viewModel)
 
 
     }
 
     private fun setBackgroundDelayed(delay: Long) {
-        handler.postDelayed({
+        Handler().postDelayed({
             val resId = Utils.getBackResId()
             backImage.setImageResource(resId)
         }, delay)
@@ -91,6 +94,10 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 graphWeatherEntries = listEntries
                 updateAdapter()
                 logDBvalues(this, listEntries, mutableListOf())
+                if (listPosition == RecyclerView.NO_POSITION) {
+                    listPosition = 0
+                    recyclerView.smoothScrollToPosition(listPosition)
+                }
             }
         })
     }
@@ -115,6 +122,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                         Details(currentWeatherEntry),
                         MultiDay(multiDayEntries),
                         Ads(adView),
+//                        News("Craiova"),
                         Map(currentWeatherEntry)
                 ))
 //        adView?.let { updates.add(4, Ads(adView)) }
@@ -179,14 +187,14 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         recyclerView.adapter?.notifyItemRangeChanged(0, 4)
     }
 
-//    private fun observeAllEntriesData(viewModel: MainActivityViewModel) {
-//        if (!BuildConfig.DEBUG) return
-//        viewModel.allForecast.observe(this, androidx.lifecycle.Observer { entries ->
-//            if (entries != null && !entries.isEmpty()) {
-//                entries.forEach { LogUtils.logEntry(this@MainActivity, it) }
-//            }
-//        })
-//    }
+    private fun observeAllEntriesData(viewModel: MainActivityViewModel) {
+        if (!BuildConfig.DEBUG) return
+        viewModel.allForecast.observe(this, androidx.lifecycle.Observer { entries ->
+            if (entries != null && entries.isNotEmpty()) {
+                entries.forEach { LogUtils.logEntry(this@MainActivity, it) }
+            }
+        })
+    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.

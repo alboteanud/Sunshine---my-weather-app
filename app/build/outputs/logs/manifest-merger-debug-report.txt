@@ -4,62 +4,85 @@ ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/Andro
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:1-73:12
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:1-73:12
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:1-73:12
-MERGED from [androidx.databinding:databinding-adapters:3.3.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.3.2.aar/bb6bb6bb28192f1aecbbcd3e94080d20/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.databinding:databinding-runtime:3.3.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.3.2.aar/db9ea2d87d2f0f762cce5200bcb61f8c/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.preference:preference:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/6aa69f68878f4f7a4cb85c2d36d9ea46/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/86e0b9504ae1700e379276c9d78fe1a2/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-ktx-1.0.0.aar/ae0e2c5c01c7101d2c767d6ad3b07242/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/a1eb8675a811cb6ccff8c08e63296699/AndroidManifest.xml:2:1-11:12
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:17:1-42:12
-MERGED from [androidx.room:room-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/room-runtime-2.0.0.aar/635daf2c09ec9aa5f0c21549dd599f32/AndroidManifest.xml:17:1-22:12
-MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-graphview-4.2.2.aar/cdcaa83ff4d117ba0467cde40df27595/AndroidManifest.xml:2:1-14:12
-MERGED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/d7d00136ba68aab5ae99e27aef61a501/AndroidManifest.xml:17:1-25:12
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/22adc1269cdd526b3fbc6f18395b1874/AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:17:1-42:12
-MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gass-17.2.0.aar/0246c01483e48d9e6fed4ddf81a8f7fc/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:17:1-30:12
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.3.0.aar/532622f565db0b9c41d09a4239992654/AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/ccf3008d7d1968f0c08be18699413eac/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/91a93c5eeda07a22b219406a32a0c0a9/AndroidManifest.xml:17:1-25:12
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/b71dd2f57673e2a0db1c1a9acf6be329/AndroidManifest.xml:2:1-12:12
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/8f10dea2175882036e34c0ce309b44eb/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/1fffa8fe6c5c8e41844e3ef2558b9480/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.browser:browser:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/458eb3add5da001ea3a543b61a34266c/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/b18f02481615d198a308eeba0296b005/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/3183539e82feee0053125182ed403611/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/d5f7f2f9900cc3a5f80f458fd5d77bd3/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/0bd7dbc4782d9cfe68e24d11db76f717/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/31898647753c088d80f35eb66e1d9acd/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/9be7bbcafce1e6ee59feca32b8d90ebf/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/83bc510aa9a0f8fe927a3816281adecd/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/d40685b493af8c10236c4da5b484f71b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/7109349d76936952cae7c480e391c9ec/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/05c5a10ea20ad8a9995e2fe73ab0540f/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/fbc6393d33a1263981696dcd26bd0899/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/b36d1f512ff0061c15d108efb1bacab5/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/b4731abdd628d255562dc67e1b98ce66/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/7de03d5e0027024b9f4fc0ebf007b5eb/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:17:1-30:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.0.0.aar/c3734d0f2c807bfcb2ea765bae7d2014/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/1886aced0ae7b351af883ba857294217/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/3d305b40dea5f2b23cc005127fedb22b/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/70f9a31a385a6d7b654ffadf258a0251/AndroidManifest.xml:17:1-25:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/d3c123888d876e74adbaf6f310cbfcac/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/sqlite-framework-2.0.0.aar/a4e85aa42b03e63825bb5f62ea567518/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/sqlite-2.0.0.aar/2872566c80a9a2ba58ef51cf3bc49411/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8e707b5ac6adac2d417df0249d421110/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/2ef7b06ce0465444261e1ec35289e58d/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/03606665773a76f37749ce678f815616/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e39a396bd1047ef5d87252c974d77501/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/4d9818a15fa88eb1d42dbb44be184ce4/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/14427f648a97bff15a067efcaed4575a/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/fe3d962f1ab97a99623206d09b235b60/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/921cd6407b21227d5c46c51880db388c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/295cf4fd8fb2a767b3a4e6d29e8a2abc/AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-17.2.0.aar/8ac56429ddb1a9bdfe2dd3a11707d7b8/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.databinding:databinding-adapters:3.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/665c2fc17b4e9b62a3a6d64b29a2c413/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:3.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e8876e89f6575fcb50eb2e2edad1fa0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.preference:preference:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e48937f2369451d56bce8d3b65756ae/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b1bd1621328b63646e5b3ac2fbfca0fd/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f24758d4473fdc29fc32d18b1d1ac088/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/edb0d3cb035620e77820c95d04237948/AndroidManifest.xml:2:1-11:12
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:17:1-42:12
+MERGED from [androidx.room:room-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/151759eba23892876bd5f8cc43416012/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bdd8b505cb9c9e05daedfda3665f4218/AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/afdad6af082ab73324657a1b26eea709/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/eef1af64b1cbf2e932f1a8e8c8418b25/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4f49bc388f45e7b23bb64e6951b6b977/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c0d69c291b557f0b475ec58a07e1d338/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c20099415293d141442a57ca12a3c1d4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:17:1-42:12
+MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f8cd4a8dc9d20af9132464fbb5ae650f/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6c8c3351b4caf8285f2363efa2eafba5/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c86bef792983839dafa5a4b34cc5f62a/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:2:1-19:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c1c312ae5920a4bb251d6c3ad35ae68b/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2e0221d7b46a010f5129c294c6e5e8d0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f291011d4d1a33f21d88228903cd04d5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/24697d1f3ee11492d6faf5986e5b32de/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1f71a8229ccd2bdc417944a3328c9251/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/39843366bd82669881eed58fc518a33d/AndroidManifest.xml:17:1-25:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/238170dd5c784c179a5b1c21804f0276/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4e50a132b50d49e88ff54e7ace79e2f2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/111d5744ec6d7c53fc755ff5c7ec583c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2fa7f9cacc08aeef3b722547b3656db1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a6dbbbbe524ce85765e62a6bce74b419/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/295b751aa4d8371e0135e6f2cbf9a7de/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/90ed35f42af515c48bb1e2064dcb5f48/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/720fe8ed6739a926d26b31132e362058/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/94e0fa3aa2ddcf09cae1cec670b58781/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3fb5ce8bddd6fc49ea38d4a44e0e9ef8/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e4bd33275f9f5e1165f984ecd2d4fca7/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/cf59e141c95facf168a8478b4fde7390/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e1d7f2be60745f96457128c92eaf9cc/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/71e98abcfa0cec7fbcd15863e056820c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/9fbc6a50291f79f3fe65f29e1571f26c/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/fffe38f0c13795758cfade9c762e83ee/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/9e308283c76826dfc09885563ed2a5ff/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/145ac915639fc1bbfd88c80f030d20ce/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6bf15e40e7e684e5433818cf10013bac/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/38683585fe04335f14636479e76cbbb6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:2:1-19:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f018ad9833638c3d14d1f9063f5c2f1c/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bd7e2fae24e86c5d2dc544468c44915f/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a4e36322f79fb48a1adefd059e977dd3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/967df0a7f2ee921ceb56893bdd03b2ee/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/38048b5cdf654beb14c9ca0f34b69797/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/dd3cddf6167b76563aae3c8f221edf43/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b76ec35f4445bf713d97fd1589e2e240/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e5a10cddec3ffe92ec2471ffc1b13d6b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7993f7244aea702b0ba5623118c6f487/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/42b011fdd28a2ccd1da59aef04bf1f55/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/8e44225d040ca3a17b1b25ca0a16d37e/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/420e3ad742577479d8f08c01ddb4b4ad/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/14c9754f004e380826a167e4d066395e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/06e00b8d84f77ad13c64884e5208d6d6/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a2803a99f3daac4d0a0e4a07132f31e/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4e9e8587188e625055d7422f085b9759/AndroidManifest.xml:2:1-11:12
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a70ddd17d2dd19431a0dfdcbc86f44b6/AndroidManifest.xml:2:1-13:12
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:45:1-56:12
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:2:1-13:12
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:22:1-33:12
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:2:1-13:12
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:1-73:12
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:1-73:12
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:1-73:12
@@ -81,10 +104,30 @@ INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/An
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
 ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:6:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:14:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:23:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:52:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:9:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:29:5-67
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:29:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:9:5-67
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:9:5-67
 	android:name
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:6:22-64
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
@@ -93,50 +136,102 @@ ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/Andro
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:7:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:8:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:13:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a70ddd17d2dd19431a0dfdcbc86f44b6/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a70ddd17d2dd19431a0dfdcbc86f44b6/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:8:22-76
 application
 ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:10:5-71:19
-MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/a1eb8675a811cb6ccff8c08e63296699/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/a1eb8675a811cb6ccff8c08e63296699/AndroidManifest.xml:9:5-20
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:26:5-40:19
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:26:5-40:19
-MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-graphview-4.2.2.aar/cdcaa83ff4d117ba0467cde40df27595/AndroidManifest.xml:11:5-12:19
-MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-graphview-4.2.2.aar/cdcaa83ff4d117ba0467cde40df27595/AndroidManifest.xml:11:5-12:19
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/22adc1269cdd526b3fbc6f18395b1874/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/22adc1269cdd526b3fbc6f18395b1874/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:26:5-40:19
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:26:5-40:19
-MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gass-17.2.0.aar/0246c01483e48d9e6fed4ddf81a8f7fc/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gass-17.2.0.aar/0246c01483e48d9e6fed4ddf81a8f7fc/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:27:5-28:19
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:27:5-28:19
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.3.0.aar/532622f565db0b9c41d09a4239992654/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.3.0.aar/532622f565db0b9c41d09a4239992654/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/91a93c5eeda07a22b219406a32a0c0a9/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/91a93c5eeda07a22b219406a32a0c0a9/AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/b71dd2f57673e2a0db1c1a9acf6be329/AndroidManifest.xml:10:5-20
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/b71dd2f57673e2a0db1c1a9acf6be329/AndroidManifest.xml:10:5-20
-MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/7de03d5e0027024b9f4fc0ebf007b5eb/AndroidManifest.xml:22:5-89
-MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/7de03d5e0027024b9f4fc0ebf007b5eb/AndroidManifest.xml:22:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:22:5-28:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/70f9a31a385a6d7b654ffadf258a0251/AndroidManifest.xml:22:5-23:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/70f9a31a385a6d7b654ffadf258a0251/AndroidManifest.xml:22:5-23:19
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/295cf4fd8fb2a767b3a4e6d29e8a2abc/AndroidManifest.xml:9:5-20
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/295cf4fd8fb2a767b3a4e6d29e8a2abc/AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-17.2.0.aar/8ac56429ddb1a9bdfe2dd3a11707d7b8/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-17.2.0.aar/8ac56429ddb1a9bdfe2dd3a11707d7b8/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/edb0d3cb035620e77820c95d04237948/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/edb0d3cb035620e77820c95d04237948/AndroidManifest.xml:9:5-20
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:26:5-40:19
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:26:5-40:19
+MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bdd8b505cb9c9e05daedfda3665f4218/AndroidManifest.xml:11:5-12:19
+MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bdd8b505cb9c9e05daedfda3665f4218/AndroidManifest.xml:11:5-12:19
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:16:5-22:19
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:16:5-22:19
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/eef1af64b1cbf2e932f1a8e8c8418b25/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/eef1af64b1cbf2e932f1a8e8c8418b25/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4f49bc388f45e7b23bb64e6951b6b977/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4f49bc388f45e7b23bb64e6951b6b977/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c0d69c291b557f0b475ec58a07e1d338/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c0d69c291b557f0b475ec58a07e1d338/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c20099415293d141442a57ca12a3c1d4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c20099415293d141442a57ca12a3c1d4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:26:5-40:19
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:26:5-40:19
+MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f8cd4a8dc9d20af9132464fbb5ae650f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f8cd4a8dc9d20af9132464fbb5ae650f/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6c8c3351b4caf8285f2363efa2eafba5/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6c8c3351b4caf8285f2363efa2eafba5/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c86bef792983839dafa5a4b34cc5f62a/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c86bef792983839dafa5a4b34cc5f62a/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:11:5-17:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c1c312ae5920a4bb251d6c3ad35ae68b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c1c312ae5920a4bb251d6c3ad35ae68b/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:27:5-28:19
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2e0221d7b46a010f5129c294c6e5e8d0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2e0221d7b46a010f5129c294c6e5e8d0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f291011d4d1a33f21d88228903cd04d5/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f291011d4d1a33f21d88228903cd04d5/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/24697d1f3ee11492d6faf5986e5b32de/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/24697d1f3ee11492d6faf5986e5b32de/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/39843366bd82669881eed58fc518a33d/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/39843366bd82669881eed58fc518a33d/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/238170dd5c784c179a5b1c21804f0276/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/238170dd5c784c179a5b1c21804f0276/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/AndroidManifest.xml:22:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:22:5-28:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:11:5-17:19
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:11:5-17:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f018ad9833638c3d14d1f9063f5c2f1c/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f018ad9833638c3d14d1f9063f5c2f1c/AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7993f7244aea702b0ba5623118c6f487/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7993f7244aea702b0ba5623118c6f487/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/06e00b8d84f77ad13c64884e5208d6d6/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/06e00b8d84f77ad13c64884e5208d6d6/AndroidManifest.xml:7:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:54:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:11:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:31:5-20
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:31:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:11:5-20
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:11:5-20
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/7de03d5e0027024b9f4fc0ebf007b5eb/AndroidManifest.xml:22:18-86
+		ADDED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/AndroidManifest.xml:22:18-86
 	android:supportsRtl
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml:15:9-35
 	android:label
@@ -249,122 +344,168 @@ uses-sdk
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
-MERGED from [androidx.databinding:databinding-adapters:3.3.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.3.2.aar/bb6bb6bb28192f1aecbbcd3e94080d20/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-adapters:3.3.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/databinding-adapters-3.3.2.aar/bb6bb6bb28192f1aecbbcd3e94080d20/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.3.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.3.2.aar/db9ea2d87d2f0f762cce5200bcb61f8c/AndroidManifest.xml:22:5-44
-MERGED from [androidx.databinding:databinding-runtime:3.3.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/databinding-runtime-3.3.2.aar/db9ea2d87d2f0f762cce5200bcb61f8c/AndroidManifest.xml:22:5-44
-MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.preference:preference:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/6aa69f68878f4f7a4cb85c2d36d9ea46/AndroidManifest.xml:20:5-44
-MERGED from [androidx.preference:preference:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/6aa69f68878f4f7a4cb85c2d36d9ea46/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/86e0b9504ae1700e379276c9d78fe1a2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/recyclerview-1.0.0.aar/86e0b9504ae1700e379276c9d78fe1a2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-ktx-1.0.0.aar/ae0e2c5c01c7101d2c767d6ad3b07242/AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-ktx-1.0.0.aar/ae0e2c5c01c7101d2c767d6ad3b07242/AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/a1eb8675a811cb6ccff8c08e63296699/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/constraintlayout-1.1.3.aar/a1eb8675a811cb6ccff8c08e63296699/AndroidManifest.xml:5:5-7:41
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:22:5-24:41
-MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:22:5-24:41
-MERGED from [androidx.room:room-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/room-runtime-2.0.0.aar/635daf2c09ec9aa5f0c21549dd599f32/AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/room-runtime-2.0.0.aar/635daf2c09ec9aa5f0c21549dd599f32/AndroidManifest.xml:20:5-44
-MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-graphview-4.2.2.aar/cdcaa83ff4d117ba0467cde40df27595/AndroidManifest.xml:7:5-9:41
-MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-graphview-4.2.2.aar/cdcaa83ff4d117ba0467cde40df27595/AndroidManifest.xml:7:5-9:41
-MERGED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/d7d00136ba68aab5ae99e27aef61a501/AndroidManifest.xml:21:5-23:52
-MERGED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/d7d00136ba68aab5ae99e27aef61a501/AndroidManifest.xml:21:5-23:52
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/22adc1269cdd526b3fbc6f18395b1874/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-identifier-16.0.0.aar/22adc1269cdd526b3fbc6f18395b1874/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gass-17.2.0.aar/0246c01483e48d9e6fed4ddf81a8f7fc/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-gass-17.2.0.aar/0246c01483e48d9e6fed4ddf81a8f7fc/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.3.0.aar/532622f565db0b9c41d09a4239992654/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-measurement-base:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-base-16.3.0.aar/532622f565db0b9c41d09a4239992654/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/ccf3008d7d1968f0c08be18699413eac/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-v4-1.0.0.aar/ccf3008d7d1968f0c08be18699413eac/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/91a93c5eeda07a22b219406a32a0c0a9/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-extensions-2.0.0.aar/91a93c5eeda07a22b219406a32a0c0a9/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/b71dd2f57673e2a0db1c1a9acf6be329/AndroidManifest.xml:6:5-8:41
-MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-glide-4.9.0.aar/b71dd2f57673e2a0db1c1a9acf6be329/AndroidManifest.xml:6:5-8:41
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/8f10dea2175882036e34c0ce309b44eb/AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/fragment-1.0.0.aar/8f10dea2175882036e34c0ce309b44eb/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/1fffa8fe6c5c8e41844e3ef2558b9480/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/vectordrawable-animated-1.0.0.aar/1fffa8fe6c5c8e41844e3ef2558b9480/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/458eb3add5da001ea3a543b61a34266c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.browser:browser:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/browser-1.0.0.aar/458eb3add5da001ea3a543b61a34266c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/b18f02481615d198a308eeba0296b005/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-ui-1.0.0.aar/b18f02481615d198a308eeba0296b005/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/3183539e82feee0053125182ed403611/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/legacy-support-core-utils-1.0.0.aar/3183539e82feee0053125182ed403611/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/d5f7f2f9900cc3a5f80f458fd5d77bd3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/vectordrawable-1.0.0.aar/d5f7f2f9900cc3a5f80f458fd5d77bd3/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/0bd7dbc4782d9cfe68e24d11db76f717/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/transition-1.0.0.aar/0bd7dbc4782d9cfe68e24d11db76f717/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/31898647753c088d80f35eb66e1d9acd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/31898647753c088d80f35eb66e1d9acd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/9be7bbcafce1e6ee59feca32b8d90ebf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/loader-1.0.0.aar/9be7bbcafce1e6ee59feca32b8d90ebf/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/83bc510aa9a0f8fe927a3816281adecd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/viewpager-1.0.0.aar/83bc510aa9a0f8fe927a3816281adecd/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/d40685b493af8c10236c4da5b484f71b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-1.0.0.aar/d40685b493af8c10236c4da5b484f71b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/7109349d76936952cae7c480e391c9ec/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/drawerlayout-1.0.0.aar/7109349d76936952cae7c480e391c9ec/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/05c5a10ea20ad8a9995e2fe73ab0540f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-1.0.0.aar/05c5a10ea20ad8a9995e2fe73ab0540f/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/fbc6393d33a1263981696dcd26bd0899/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/customview-1.0.0.aar/fbc6393d33a1263981696dcd26bd0899/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/b36d1f512ff0061c15d108efb1bacab5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-1.0.0.aar/b36d1f512ff0061c15d108efb1bacab5/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/b4731abdd628d255562dc67e1b98ce66/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-1.0.0.aar/b4731abdd628d255562dc67e1b98ce66/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/7de03d5e0027024b9f4fc0ebf007b5eb/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-1.0.0.aar/7de03d5e0027024b9f4fc0ebf007b5eb/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.0.0.aar/c3734d0f2c807bfcb2ea765bae7d2014/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-service-2.0.0.aar/c3734d0f2c807bfcb2ea765bae7d2014/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/1886aced0ae7b351af883ba857294217/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-runtime-2.0.0.aar/1886aced0ae7b351af883ba857294217/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/3d305b40dea5f2b23cc005127fedb22b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cardview-1.0.0.aar/3d305b40dea5f2b23cc005127fedb22b/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/70f9a31a385a6d7b654ffadf258a0251/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/versionedparcelable-1.0.0.aar/70f9a31a385a6d7b654ffadf258a0251/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/d3c123888d876e74adbaf6f310cbfcac/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/cursoradapter-1.0.0.aar/d3c123888d876e74adbaf6f310cbfcac/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/sqlite-framework-2.0.0.aar/a4e85aa42b03e63825bb5f62ea567518/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/sqlite-framework-2.0.0.aar/a4e85aa42b03e63825bb5f62ea567518/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/sqlite-2.0.0.aar/2872566c80a9a2ba58ef51cf3bc49411/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/sqlite-2.0.0.aar/2872566c80a9a2ba58ef51cf3bc49411/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8e707b5ac6adac2d417df0249d421110/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-2.0.0.aar/8e707b5ac6adac2d417df0249d421110/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/2ef7b06ce0465444261e1ec35289e58d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-livedata-core-2.0.0.aar/2ef7b06ce0465444261e1ec35289e58d/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/03606665773a76f37749ce678f815616/AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/core-runtime-2.0.0.aar/03606665773a76f37749ce678f815616/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e39a396bd1047ef5d87252c974d77501/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-viewmodel-2.0.0.aar/e39a396bd1047ef5d87252c974d77501/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/4d9818a15fa88eb1d42dbb44be184ce4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/documentfile-1.0.0.aar/4d9818a15fa88eb1d42dbb44be184ce4/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/14427f648a97bff15a067efcaed4575a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-1.0.0.aar/14427f648a97bff15a067efcaed4575a/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/fe3d962f1ab97a99623206d09b235b60/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/print-1.0.0.aar/fe3d962f1ab97a99623206d09b235b60/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/921cd6407b21227d5c46c51880db388c/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/921cd6407b21227d5c46c51880db388c/AndroidManifest.xml:20:5-44
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/295cf4fd8fb2a767b3a4e6d29e8a2abc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-gifdecoder-4.9.0.aar/295cf4fd8fb2a767b3a4e6d29e8a2abc/AndroidManifest.xml:5:5-7:41
-MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-17.2.0.aar/8ac56429ddb1a9bdfe2dd3a11707d7b8/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/play-services-ads-base-17.2.0.aar/8ac56429ddb1a9bdfe2dd3a11707d7b8/AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/665c2fc17b4e9b62a3a6d64b29a2c413/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:3.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/665c2fc17b4e9b62a3a6d64b29a2c413/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e8876e89f6575fcb50eb2e2edad1fa0/AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:3.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e8876e89f6575fcb50eb2e2edad1fa0/AndroidManifest.xml:22:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e48937f2369451d56bce8d3b65756ae/AndroidManifest.xml:20:5-44
+MERGED from [androidx.preference:preference:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e48937f2369451d56bce8d3b65756ae/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b1bd1621328b63646e5b3ac2fbfca0fd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b1bd1621328b63646e5b3ac2fbfca0fd/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f24758d4473fdc29fc32d18b1d1ac088/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f24758d4473fdc29fc32d18b1d1ac088/AndroidManifest.xml:5:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/edb0d3cb035620e77820c95d04237948/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/edb0d3cb035620e77820c95d04237948/AndroidManifest.xml:5:5-7:41
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:22:5-24:41
+MERGED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:22:5-24:41
+MERGED from [androidx.room:room-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/151759eba23892876bd5f8cc43416012/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/151759eba23892876bd5f8cc43416012/AndroidManifest.xml:20:5-44
+MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bdd8b505cb9c9e05daedfda3665f4218/AndroidManifest.xml:7:5-9:41
+MERGED from [com.jjoe64:graphview:4.2.2] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bdd8b505cb9c9e05daedfda3665f4218/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/afdad6af082ab73324657a1b26eea709/AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/afdad6af082ab73324657a1b26eea709/AndroidManifest.xml:21:5-23:52
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/eef1af64b1cbf2e932f1a8e8c8418b25/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/eef1af64b1cbf2e932f1a8e8c8418b25/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4f49bc388f45e7b23bb64e6951b6b977/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4f49bc388f45e7b23bb64e6951b6b977/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c0d69c291b557f0b475ec58a07e1d338/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c0d69c291b557f0b475ec58a07e1d338/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c20099415293d141442a57ca12a3c1d4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c20099415293d141442a57ca12a3c1d4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f8cd4a8dc9d20af9132464fbb5ae650f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f8cd4a8dc9d20af9132464fbb5ae650f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6c8c3351b4caf8285f2363efa2eafba5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6c8c3351b4caf8285f2363efa2eafba5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c86bef792983839dafa5a4b34cc5f62a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c86bef792983839dafa5a4b34cc5f62a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c1c312ae5920a4bb251d6c3ad35ae68b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c1c312ae5920a4bb251d6c3ad35ae68b/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2e0221d7b46a010f5129c294c6e5e8d0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2e0221d7b46a010f5129c294c6e5e8d0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f291011d4d1a33f21d88228903cd04d5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f291011d4d1a33f21d88228903cd04d5/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/24697d1f3ee11492d6faf5986e5b32de/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/24697d1f3ee11492d6faf5986e5b32de/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1f71a8229ccd2bdc417944a3328c9251/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1f71a8229ccd2bdc417944a3328c9251/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/39843366bd82669881eed58fc518a33d/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/39843366bd82669881eed58fc518a33d/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/238170dd5c784c179a5b1c21804f0276/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/238170dd5c784c179a5b1c21804f0276/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4e50a132b50d49e88ff54e7ace79e2f2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4e50a132b50d49e88ff54e7ace79e2f2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/111d5744ec6d7c53fc755ff5c7ec583c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/111d5744ec6d7c53fc755ff5c7ec583c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2fa7f9cacc08aeef3b722547b3656db1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2fa7f9cacc08aeef3b722547b3656db1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a6dbbbbe524ce85765e62a6bce74b419/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a6dbbbbe524ce85765e62a6bce74b419/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/295b751aa4d8371e0135e6f2cbf9a7de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/295b751aa4d8371e0135e6f2cbf9a7de/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/90ed35f42af515c48bb1e2064dcb5f48/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/90ed35f42af515c48bb1e2064dcb5f48/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/720fe8ed6739a926d26b31132e362058/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/720fe8ed6739a926d26b31132e362058/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/94e0fa3aa2ddcf09cae1cec670b58781/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/94e0fa3aa2ddcf09cae1cec670b58781/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3fb5ce8bddd6fc49ea38d4a44e0e9ef8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3fb5ce8bddd6fc49ea38d4a44e0e9ef8/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e4bd33275f9f5e1165f984ecd2d4fca7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e4bd33275f9f5e1165f984ecd2d4fca7/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/cf59e141c95facf168a8478b4fde7390/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/cf59e141c95facf168a8478b4fde7390/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e1d7f2be60745f96457128c92eaf9cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3e1d7f2be60745f96457128c92eaf9cc/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/71e98abcfa0cec7fbcd15863e056820c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/71e98abcfa0cec7fbcd15863e056820c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/9fbc6a50291f79f3fe65f29e1571f26c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/9fbc6a50291f79f3fe65f29e1571f26c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/fffe38f0c13795758cfade9c762e83ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/fffe38f0c13795758cfade9c762e83ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/9e308283c76826dfc09885563ed2a5ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/9e308283c76826dfc09885563ed2a5ff/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/145ac915639fc1bbfd88c80f030d20ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/145ac915639fc1bbfd88c80f030d20ce/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6bf15e40e7e684e5433818cf10013bac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/6bf15e40e7e684e5433818cf10013bac/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/38683585fe04335f14636479e76cbbb6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/38683585fe04335f14636479e76cbbb6/AndroidManifest.xml:20:5-44
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:7:5-43
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f018ad9833638c3d14d1f9063f5c2f1c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f018ad9833638c3d14d1f9063f5c2f1c/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bd7e2fae24e86c5d2dc544468c44915f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/bd7e2fae24e86c5d2dc544468c44915f/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a4e36322f79fb48a1adefd059e977dd3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a4e36322f79fb48a1adefd059e977dd3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/967df0a7f2ee921ceb56893bdd03b2ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/967df0a7f2ee921ceb56893bdd03b2ee/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/38048b5cdf654beb14c9ca0f34b69797/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/38048b5cdf654beb14c9ca0f34b69797/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/dd3cddf6167b76563aae3c8f221edf43/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/dd3cddf6167b76563aae3c8f221edf43/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b76ec35f4445bf713d97fd1589e2e240/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b76ec35f4445bf713d97fd1589e2e240/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e5a10cddec3ffe92ec2471ffc1b13d6b/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e5a10cddec3ffe92ec2471ffc1b13d6b/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7993f7244aea702b0ba5623118c6f487/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7993f7244aea702b0ba5623118c6f487/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/42b011fdd28a2ccd1da59aef04bf1f55/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/42b011fdd28a2ccd1da59aef04bf1f55/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/8e44225d040ca3a17b1b25ca0a16d37e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/8e44225d040ca3a17b1b25ca0a16d37e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/420e3ad742577479d8f08c01ddb4b4ad/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/420e3ad742577479d8f08c01ddb4b4ad/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/14c9754f004e380826a167e4d066395e/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/14c9754f004e380826a167e4d066395e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/06e00b8d84f77ad13c64884e5208d6d6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-base:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/06e00b8d84f77ad13c64884e5208d6d6/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a2803a99f3daac4d0a0e4a07132f31e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a2803a99f3daac4d0a0e4a07132f31e/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4e9e8587188e625055d7422f085b9759/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4e9e8587188e625055d7422f085b9759/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a70ddd17d2dd19431a0dfdcbc86f44b6/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.16.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a70ddd17d2dd19431a0dfdcbc86f44b6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:crashlytics-core:2.6.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3f332a9570346a700db90a6eedad1996/AndroidManifest.xml:50:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:answers:1.4.7] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ea4a31dcdfd2c8097feb94bead79226a/AndroidManifest.xml:7:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:27:5-43
+MERGED from [io.fabric.sdk.android:fabric:1.4.8] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5bd443fa97a91b33274643182a19311a/AndroidManifest.xml:27:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:7:5-43
+MERGED from [com.crashlytics.sdk.android:beta:1.2.10] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a545319e4fe6cd15c50fc4f411361165/AndroidManifest.xml:7:5-43
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
 INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-17.2.0.aar/d7d00136ba68aab5ae99e27aef61a501/AndroidManifest.xml:23:9-49
+		ADDED from [com.google.android.gms:play-services-ads:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/afdad6af082ab73324657a1b26eea709/AndroidManifest.xml:23:9-49
 	android:targetSdkVersion
 		INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
@@ -374,56 +515,202 @@ INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/An
 		ADDED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/AndroidManifest.xml
 service#com.firebase.jobdispatcher.GooglePlayReceiver
-ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:32:9-39:19
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:32:9-39:19
 	android:exported
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:34:13-36
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:34:13-36
 	android:permission
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:35:13-93
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:35:13-93
 	android:name
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:33:13-73
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:33:13-73
 intent-filter#action:name:com.google.android.gms.gcm.ACTION_TASK_READY
-ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:36:13-38:29
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:36:13-38:29
 action#com.google.android.gms.gcm.ACTION_TASK_READY
-ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:37:17-87
+ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:37:17-87
 	android:name
-		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-firebase-jobdispatcher-0.8.5.aar/a8575e9236c10e76e76b7b717cc144f3/AndroidManifest.xml:37:25-84
-activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:29:9-33:64
+		ADDED from [com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3500ef034ff045aaade8df50f5cbdef0/AndroidManifest.xml:37:25-84
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:17:9-21:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:32:13-37
-	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:31:13-122
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:33:13-61
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:29:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:30:13-65
-provider#com.google.android.gms.ads.MobileAdsInitProvider
-ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:35:9-39:39
-	android:authorities
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:37:13-73
-	android:exported
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:38:13-37
-	android:initOrder
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:39:13-36
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-ads-lite-17.2.0.aar/7c7c292a182139856cfa687639cc6035/AndroidManifest.xml:36:13-76
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:25:5-68
-	android:name
-		ADDED from [com.google.android.gms:play-services-measurement-sdk-api:16.3.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.3.0.aar/91795e97e09f0164f7fb469001a3c0cb/AndroidManifest.xml:25:22-65
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:23:9-25:69
+		ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:17:18-89
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:18:13-20:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:25:13-66
+		ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:20:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/jetified-play-services-basement-16.0.1.aar/585d4c9f2210822a633dcc5bc91b3d0b/AndroidManifest.xml:24:13-58
-provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:23:9-27:43
-	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:25:13-69
-	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:27:13-40
+		ADDED from [com.google.firebase:firebase-firestore:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3a676b9230bc0db846dcf84610ddd20b/AndroidManifest.xml:19:17-111
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5dae0f0acee110e2167de26e5eb97b0f/AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:25:22-65
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:31:13-35
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:26:13-37
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/lifecycle-process-2.0.0.aar/680c4b7d3ef5b1bba8b8de60701d6296/AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/e69b25b66c53d8d615e8a738bb48764e/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08df770eb08f59c27f8182a7180b3f1a/AndroidManifest.xml:49:13-87
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:16.4.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/f74f26ce33ddd93f40cc890f9290429f/AndroidManifest.xml:31:17-139
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:32:13-37
+	android:configChanges
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:31:13-122
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:33:13-61
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:30:13-65
+provider#com.google.android.gms.ads.MobileAdsInitProvider
+ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:35:9-39:39
+	android:authorities
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:37:13-73
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:38:13-37
+	android:initOrder
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/7fe07e0bf621920c03b3e597a4e153e4/AndroidManifest.xml:36:13-76
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/390f6932a859070991d0ae66d95f2511/AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/732a143173a889d8235082190ed973df/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:12:9-16:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:14:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:16:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0a3201a7e3444efe3b1c1179ee373af2/AndroidManifest.xml:13:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/465e385b1991c2a841f2badd272d5e13/AndroidManifest.xml:24:13-58
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/ad9878ef24f50df7e140778ad331b616/AndroidManifest.xml:24:13-79
+provider#com.crashlytics.android.CrashlyticsInitProvider
+ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:12:9-16:38
+	android:authorities
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:14:13-75
+	android:exported
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:15:13-37
+	android:initOrder
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:16:13-35
+	android:name
+		ADDED from [com.crashlytics.sdk.android:crashlytics:2.9.9] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/3dd22d799b6d137008e83b46bb546e5e/AndroidManifest.xml:13:13-75

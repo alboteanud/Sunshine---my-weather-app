@@ -4,17 +4,7 @@
             "outputFile": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
-                    }
-                },
-                {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/31898647753c088d80f35eb66e1d9acd/res/values-v24/values-v24.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/94e0fa3aa2ddcf09cae1cec670b58781/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -28,6 +18,16 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
+                    }
+                },
+                {
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
                     }
                 }
             ]

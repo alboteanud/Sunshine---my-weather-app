@@ -68,6 +68,16 @@ class CardsViewHolders {
         }
     }
 
+ class NewsViewHolder(itemView: View)
+        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+        // get the views reference from itemView...
+        override fun bindViews(update: Base) {
+            val newsUpdate = update as com.craiovadata.android.sunshine.ui.models.News
+            val string = newsUpdate.queryString
+            News.bindNewsToUI(string, itemView)
+        }
+    }
+
     class AdsViewHolder(itemView: View)
         : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...

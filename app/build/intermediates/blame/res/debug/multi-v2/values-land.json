@@ -4,17 +4,7 @@
             "outputFile": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
-                    }
-                },
-                {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/res/values-land/values-land.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "8",
                         "endColumns": "10",
                         "endOffsets": "431"
+                    }
+                },
+                {
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
                     }
                 }
             ]

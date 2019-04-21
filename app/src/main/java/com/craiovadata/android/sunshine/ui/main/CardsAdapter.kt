@@ -21,6 +21,7 @@ class CardsAdapter(val context: Context,
         const val VIEW_TYPE_MAP = 3
         const val VIEW_TYPE_ADS = 4
         const val VIEW_TYPE_DAYS = 5
+        const val VIEW_TYPE_NEWS = 6
     }
 
     override fun getItemViewType(position: Int): Int {
@@ -30,6 +31,7 @@ class CardsAdapter(val context: Context,
             Base.TYPE.GRAPH -> VIEW_TYPE_GRAPH
             Base.TYPE.MAP -> VIEW_TYPE_MAP
             Base.TYPE.DAYS -> VIEW_TYPE_DAYS
+            Base.TYPE.NEWS -> VIEW_TYPE_NEWS
             else -> VIEW_TYPE_ADS
         }
     }
@@ -51,6 +53,9 @@ class CardsAdapter(val context: Context,
 
             VIEW_TYPE_DAYS -> CardsViewHolders.MultyDayViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.multi_day_card, viewGroup, false))
+
+            VIEW_TYPE_NEWS -> CardsViewHolders.NewsViewHolder(
+                    LayoutInflater.from(viewGroup.context).inflate(R.layout.news_card, viewGroup, false))
 
             else -> CardsViewHolders.AdsViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.ads_card, viewGroup, false))
