@@ -17,10 +17,19 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".ui.news.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+        </activity>
+        <activity
             android:name=".ui.settings.SettingsActivity"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.SettingsTheme"
-            android:parentActivityName=".ui.main.MainActivity">
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.SettingsTheme">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
@@ -40,7 +49,7 @@
             android:name=".ui.policy.PolicyActivity"
             android:label="@string/label_screen_policy"
             android:parentActivityName=".ui.main.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity> <!-- This is required for immediate syncs -->
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- This is required for immediate syncs -->
         <service
             android:name=".data.network.SyncIntentService"
             android:exported="false" />
