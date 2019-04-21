@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "703102845257",
+    "firebase_url": "https://sunshine-2019-02.firebaseio.com",
+    "project_id": "sunshine-2019-02",
+    "storage_bucket": "sunshine-2019-02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703102845257:android:731a9371fa8d6d33",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.LosAngeles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703102845257-037jgqhvd0ffp2vgrftce2bihfjf9m8n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.LosAngeles",
+            "certificate_hash": "4d843560e44c0d4ecdcc913ac7f7dfcdacd66a3c"
+          }
+        },
+        {
+          "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT2bhJPoshjjik3hxbsamP7F_bAdBbNsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703102845257:android:9f2e51197c1b15c8",
+        "android_client_info": {
+          "package_name": "com.craiovadata.aus.sydney"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "703102845257-2jl9o4ab6kljsha2occvm0tosu3bv5p3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.aus.sydney",
+            "certificate_hash": "4d843560e44c0d4ecdcc913ac7f7dfcdacd66a3c"
+          }
+        },
+        {
+          "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAT2bhJPoshjjik3hxbsamP7F_bAdBbNsI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

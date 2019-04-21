@@ -43,14 +43,13 @@ import androidx.lifecycle.MutableLiveData;
  * Provides an API for doing all operations with the server data
  */
 public class NetworkDataSource {
-    // The number of days we want our API to return, set to 14 days or two weeks
-    private static final int NUM_DAYS = 5;
-    public static final int NUM_MIN_DATA_COUNTS = (NUM_DAYS - 1) * (24 / 3);
+
     private static final String LOG_TAG = NetworkDataSource.class.getSimpleName();
 
     // Interval at which to sync with the weather. Use TimeUnit for convenience, rather than
     // writing out a bunch of multiplication ourselves and risk making a silly mistake.
     private static final int SYNC_INTERVAL_HOURS = 6;
+    public static final int NUM_MIN_DATA_COUNTS = (5 - 1) * 8;
     private static final int SYNC_INTERVAL_SECONDS = (int) TimeUnit.HOURS.toSeconds(SYNC_INTERVAL_HOURS);
     //    private static final int SYNC_INTERVAL_SECONDS = 5 * 60;
     private static final int SYNC_FLEXTIME_SECONDS = SYNC_INTERVAL_SECONDS / 3;

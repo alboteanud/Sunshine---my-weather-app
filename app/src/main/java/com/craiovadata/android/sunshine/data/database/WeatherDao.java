@@ -37,10 +37,10 @@ public interface WeatherDao {
      * @param date The _date to select after (inclusive)
      * @return Number of future weather forecasts stored in the database
      */
-    @Query("SELECT * FROM weather WHERE date > :date")
+    @Query("SELECT COUNT(*) FROM weather WHERE date > :date")
     int countAllFutureWeatherEntries(Date date);
 
-    @Query("SELECT * FROM weather WHERE date >= :recently AND isCurrentWeather = 1")
+    @Query("SELECT COUNT(*) FROM weather WHERE date >= :recently AND isCurrentWeather = 1")
     int countCurrentWeather(Date recently);
 
     /**

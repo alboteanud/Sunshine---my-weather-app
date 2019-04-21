@@ -13,14 +13,14 @@ public class MainActivityViewModel extends ViewModel {
 
     private final LiveData<List<ListWeatherEntry>> nextHoursWeather;
     private final LiveData<List<ListWeatherEntry>> midDayWeather;
-//    private final LiveData<List<WeatherEntry>> allForecast;
+    private final LiveData<List<WeatherEntry>> allForecast;
     private final LiveData<List<WeatherEntry>> currentWeather;
 
 
     MainActivityViewModel(RepositoryWeather repository) {
         nextHoursWeather = repository.getNextHoursWeather();
         midDayWeather = repository.getMidDayWeatherEntries();
-//        allForecast = repository.getAllWeatherEntries();
+        allForecast = repository.getAllWeatherEntries();
         currentWeather = repository.getCurrentWeather();
     }
 
@@ -31,9 +31,9 @@ public class MainActivityViewModel extends ViewModel {
         return midDayWeather;
     }
 
-//    public LiveData<List<WeatherEntry>> getAllForecast() {
-//        return allForecast;
-//    }
+    public LiveData<List<WeatherEntry>> getAllForecast() {
+        return allForecast;
+    }
 
     public LiveData<List<WeatherEntry>> getCurrentWeather() {
         return currentWeather;

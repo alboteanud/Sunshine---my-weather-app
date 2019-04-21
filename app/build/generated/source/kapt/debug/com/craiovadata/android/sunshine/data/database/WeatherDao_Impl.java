@@ -172,7 +172,7 @@ public final class WeatherDao_Impl implements WeatherDao {
 
   @Override
   public int countAllFutureWeatherEntries(Date date) {
-    final String _sql = "SELECT * FROM weather WHERE date > ?";
+    final String _sql = "SELECT COUNT(*) FROM weather WHERE date > ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
@@ -199,7 +199,7 @@ public final class WeatherDao_Impl implements WeatherDao {
 
   @Override
   public int countCurrentWeather(Date recently) {
-    final String _sql = "SELECT * FROM weather WHERE date >= ? AND isCurrentWeather = 1";
+    final String _sql = "SELECT COUNT(*) FROM weather WHERE date >= ? AND isCurrentWeather = 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;

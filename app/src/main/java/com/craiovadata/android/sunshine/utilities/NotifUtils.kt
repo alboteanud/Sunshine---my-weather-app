@@ -17,7 +17,7 @@ import com.craiovadata.android.sunshine.utilities.Utils.getBackResId
 
 object NotifUtils {
 
-    private fun areNotificationsEnabled(context: Context): Boolean {
+   fun areNotificationsEnabled(context: Context): Boolean {
         val displayNotificationsKey = context.getString(R.string.pref_enable_notifications_key)
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
         return sp.getBoolean(displayNotificationsKey, true)
