@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Apr 14 22:35:52 EEST 2019
+#Sun Apr 21 23:49:36 EEST 2019
 4.path=classes.dex
 8.set=DEX
 6.path=classes.dex
@@ -12,8 +12,10 @@
 4.set=DEX
 5.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/16
 7.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/18
-9.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/17
+11.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/19
+9.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/merged_assets/debug/out
 1.baseType=DIRECTORY
+11.set=DEX
 0.set=DEX
 6.baseType=DIRECTORY
 7.set=DEX
@@ -27,18 +29,20 @@
 5.path=classes.dex
 0.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/21
 7.path=classes.dex
-9.path=classes.dex
+11.path=classes.dex
+9.path=crashlytics-build.properties
 6.set=DEX
 2.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/20
+11.baseType=DIRECTORY
 4.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/11
 3.baseType=DIRECTORY
 6.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/13
-10.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/19
+10.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/17
 8.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/transforms/dexMerger/debug/15
 2.set=DEX
 8.baseType=DIRECTORY
-9.set=DEX
-count=11
+9.set=ASSET
+count=12
 4.baseType=DIRECTORY
 5.set=DEX
 9.baseType=DIRECTORY
