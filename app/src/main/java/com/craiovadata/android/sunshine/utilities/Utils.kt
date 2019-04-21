@@ -64,7 +64,7 @@ object Utils {
 
 
     fun addLinks(textView: TextView, pattern: String, urlString: String) {
-        Linkify.addLinks(textView, Pattern.compile(pattern), urlString, { s, start, end -> true }, { match, url -> "" })
+        Linkify.addLinks(textView, Pattern.compile(pattern), urlString, { _, _, _ -> true }, { _, _ -> "" })
     }
 
 }
