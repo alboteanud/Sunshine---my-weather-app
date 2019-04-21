@@ -926,6 +926,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -1252,6 +1253,7 @@ id cardAds
 id cardDetailsWeather
 id cardGraph
 id cardMap
+id cardNews
 id center
 id center_horizontal
 id center_vertical
@@ -1514,12 +1516,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_news
 layout activity_policy
 layout activity_settings
 layout ads_card
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout content_main
+layout content_news
 layout current_weather_card
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -1771,6 +1775,7 @@ string search_menu_title
 string sent_feedback_label
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string title_activity_news
 string title_activity_settings
 string today
 string tomorrow
