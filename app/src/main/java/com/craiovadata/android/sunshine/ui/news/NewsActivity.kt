@@ -1,9 +1,12 @@
 package com.craiovadata.android.sunshine.ui.news
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.NavUtils
 import com.craiovadata.android.sunshine.R
+import kotlinx.android.synthetic.main.activity_news.*
 
 import kotlinx.android.synthetic.main.content_news.*
 
@@ -28,6 +31,11 @@ class NewsActivity : AppCompatActivity() {
         webview.loadUrl(urlNews)
         webview.webViewClient = WebViewClient()
         webview.settings.javaScriptEnabled = true
+
+//        fab.backgroundTintList = ColorStateList.valueOf(getColor(R.color.blackSemi7));
+//        fab.setOnClickListener{
+//            NavUtils.navigateUpFromSameTask(this);
+//        }
     }
 
 

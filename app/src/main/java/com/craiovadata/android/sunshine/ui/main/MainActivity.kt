@@ -32,12 +32,12 @@ import kotlinx.android.synthetic.main.content_main.*
 
 class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
-
     private var adView: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
     private var multiDayEntries: MutableList<ListWeatherEntry>? = null
     private var listPosition = RecyclerView.NO_POSITION
+    private val myHandler = Handler()
 
 
     private lateinit var adapter: CardsAdapter
@@ -67,11 +67,17 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         observeDaysForecastData(viewModel)
         observeAllEntriesData(viewModel)
 
+        myHandler.postDelayed({
+            if (listPosition == RecyclerView.NO_POSITION) {
+                listPosition = 0
+                recyclerView.smoothScrollToPosition(listPosition)
+            }
+        }, 1800)
 
     }
 
     private fun setBackgroundDelayed(delay: Long) {
-        Handler().postDelayed({
+        myHandler.postDelayed({
             val resId = Utils.getBackResId()
             backImage.setImageResource(resId)
         }, delay)
@@ -97,10 +103,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 graphWeatherEntries = listEntries
                 updateAdapter()
                 logDBvalues(this, listEntries, mutableListOf())
-                if (listPosition == RecyclerView.NO_POSITION) {
-                    listPosition = 0
-                    recyclerView.smoothScrollToPosition(listPosition)
-                }
+
             }
         })
     }
@@ -153,7 +156,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     override fun onResume() {
         InjectorUtils.provideRepository(this).initializeDataCW()
         adView?.resume()
-        setBackgroundDelayed(3000)
+        setBackgroundDelayed(2500)
         super.onResume()
 
     }

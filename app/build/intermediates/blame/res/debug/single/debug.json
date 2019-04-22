@@ -4,44 +4,44 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/anim/abc_popup_exit.xml"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_light_clouds_n.png.flat",
-        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable-xhdpi/ic_light_clouds_n.png"
-    },
-    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/color-v23_design_tint_password_toggle.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_light_clouds_n.png.flat",
+        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable-xhdpi/ic_light_clouds_n.png"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_selector_blacksemi.xml.flat",
         "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable/selector_blacksemi.xml"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_checked_black.xml.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/drawable/ic_mtrl_chip_checked_black.xml"
-    },
-    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_abc_vector_test.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable/abc_vector_test.xml"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/drawable-v21/design_bottom_navigation_item_background.xml"
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_ic_mtrl_chip_checked_black.xml.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/drawable/ic_mtrl_chip_checked_black.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_c1.jpg.flat",
         "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable/c1.jpg"
     },
     {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-v21_design_bottom_navigation_item_background.xml.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/layout/abc_action_menu_item_layout.xml"
-    },
-    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_abc_action_menu_item_layout.xml.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/layout/abc_action_menu_item_layout.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -84,12 +84,12 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_current_weather_card.xml.flat",
-        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/layout/current_weather_card.xml"
-    },
-    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_current_weather_card.xml.flat",
+        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/layout/current_weather_card.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_menu_hardkey_panel_mtrl_mult.9.png.flat",
@@ -168,20 +168,20 @@
         "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable/art_light_rain.xml"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_art_clear_n.xml.flat",
-        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable/art_clear_n.xml"
-    },
-    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-v21_notification_action_background.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9f37909d6db6fea56bb894a8e7d2ddf/res/drawable-v21/notification_action_background.xml"
     },
     {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
-        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/layout/abc_list_menu_item_icon.xml"
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_art_clear_n.xml.flat",
+        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable/art_clear_n.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_abc_list_menu_item_icon.xml.flat",
+        "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/layout/abc_list_menu_item_icon.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -504,6 +504,10 @@
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_ic_arrow_black.xml.flat",
+        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/drawable/ic_arrow_black.xml"
+    },
+    {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_design_navigation_menu.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/layout/design_navigation_menu.xml"
     },
@@ -730,6 +734,10 @@
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/91e0708d7335d40a4f6e5a5afaae93c3/res/drawable-v23/abc_control_background_material.xml"
+    },
+    {
+        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_days_weather_item.xml.flat",
+        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/layout/days_weather_item.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
@@ -1810,10 +1818,6 @@
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable_navigation_empty_icon.xml.flat",
         "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d99eb25f527b96768a88bc94bfb5974a/res/drawable/navigation_empty_icon.xml"
-    },
-    {
-        "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/layout_item_multi_day.xml.flat",
-        "source": "/Users/danalboteanu/Android projects/Sunshine_2019/app/src/main/res/layout/item_multi_day.xml"
     },
     {
         "merged": "/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",

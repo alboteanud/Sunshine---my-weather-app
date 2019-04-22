@@ -26,7 +26,7 @@ data class MultiDay(val list: MutableList<ListWeatherEntry>?)
 //        if (adView?.parent != null) (adView.parent as ViewGroup).removeView(adView)
 
             weatherEntries.forEach { entry ->
-                val dayView = LayoutInflater.from(view.context).inflate(R.layout.item_multi_day, container, false)
+                val dayView = LayoutInflater.from(view.context).inflate(R.layout.days_weather_item, container, false)
                 dayView?.let {
                     bindDayToUI(entry, dayView)
                     container.addView(dayView)
