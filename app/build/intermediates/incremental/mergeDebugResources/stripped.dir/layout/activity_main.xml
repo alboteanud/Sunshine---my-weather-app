@@ -40,9 +40,9 @@
         android:layout_marginStart="6dp"
         android:layout_marginEnd="6dp"
         android:orientation="vertical"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:context=".MainActivity"
         tools:listitem="@layout/current_weather_card" />
+<!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
 
     <ProgressBar
         android:id="@+id/loading_indicator"

@@ -1,10 +1,13 @@
 package com.craiovadata.android.sunshine.ui.main
 
+import android.content.Context
 import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
@@ -13,7 +16,11 @@ import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.Utils
-import com.google.android.gms.ads.*
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdSize
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
+//import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 //adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
@@ -27,17 +34,20 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     private val handler = Handler()
 
 
-    private lateinit var adapter: CardsAdapter
+    private lateinit var mAdapter: CardsAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        recyclerView.setHasFixedSize(true)
-        adapter = CardsAdapter(this, listOf(), this)
-        recyclerView.adapter = adapter
-//        recyclerView.layoutManager = LinearLayoutManager(this)
+        recyclerView.apply {
+            setHasFixedSize(true)
+            layoutManager = MyLinearLayoutManager(this@MainActivity)
+
+            mAdapter = CardsAdapter(this@MainActivity, listOf(), this@MainActivity)
+            adapter = mAdapter
+        }
 
         MobileAds.initialize(this, getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
         loadAdBanner() // before observers
@@ -55,11 +65,22 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     }
 
-    private fun setBackgroundDelayed(delay: Long) {
+
+    private class MyLinearLayoutManager(private val context: Context) : LinearLayoutManager(context) {
+
+        // Force new items appear at the top
+        override fun onItemsAdded(recyclerView: RecyclerView, positionStart: Int, itemCount: Int) {
+            super.onItemsAdded(recyclerView, positionStart, itemCount)
+            scrollToPosition(0)
+        }
+
+    }
+
+    private fun setBackgroundDelayed() {
         handler.postDelayed({
             val resId = Utils.getBackResId()
             backImage.setImageResource(resId)
-        }, delay)
+        }, 2000)
     }
 
     private fun observeCurrentWeather(viewModel: MainActivityViewModel) {
@@ -109,7 +130,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                         Map(currentWeatherEntry)
                 ))
 //        adView?.let { updates.add(4, Ads(adView)) }
-        adapter.setUpdates(updates)
+        mAdapter.setUpdates(updates)
 //        recyclerView.scrollToPosition(0)
     }
 
@@ -132,7 +153,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     override fun onResume() {
         InjectorUtils.provideRepository(this).initializeDataCW()
         adView?.resume()
-        setBackgroundDelayed(2 * 1000)
+        setBackgroundDelayed()
         super.onResume()
     }
 

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/preference-1.0.0.aar/6aa69f68878f4f7a4cb85c2d36d9ea46/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/16cc8dfb3beca1936f2bb57069d23cb7/preference-1.0.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

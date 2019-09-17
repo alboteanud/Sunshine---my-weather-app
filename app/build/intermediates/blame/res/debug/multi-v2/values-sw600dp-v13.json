@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_ArchitectureComponents/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/material-1.0.0.aar/cd9b8b80416aac51edd92414c2549c2b/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/98dbe775de4c8e72d8c36dd9eb66bfd8/material-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,10,11,12",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/danalboteanu/.gradle/caches/transforms-1/files-1.1/appcompat-1.0.0.aar/fd2d800a8197ebc4099b42299249615f/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4771de8fa7a73714bf6aa2f38e96331f/appcompat-1.0.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
