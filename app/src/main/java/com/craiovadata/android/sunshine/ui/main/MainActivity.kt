@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         val adRequest = AdRequest.Builder().build()
         bannerAdView.loadAd(adRequest)
 
+
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
         val viewModel = ViewModelProviders.of(this, factory).get(MainActivityViewModel::class.java)
 
