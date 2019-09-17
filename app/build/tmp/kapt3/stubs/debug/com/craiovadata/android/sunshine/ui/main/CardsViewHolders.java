@@ -2,7 +2,7 @@ package com.craiovadata.android.sunshine.ui.main;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\t\u0018\u00002\u00020\u0001:\u0007\u0003\u0004\u0005\u0006\u0007\b\tB\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\n"}, d2 = {"Lcom/craiovadata/android/sunshine/ui/main/CardsViewHolders;", "", "()V", "AdsViewHolder", "DetailsViewHolder", "GraphViewHolder", "MapViewHolder", "MultyDayViewHolder", "UpdateViewHolder", "WeatherViewHolder", "app_debug"})
+@kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\n\u0018\u00002\u00020\u0001:\b\u0003\u0004\u0005\u0006\u0007\b\t\nB\u0005\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u000b"}, d2 = {"Lcom/craiovadata/android/sunshine/ui/main/CardsViewHolders;", "", "()V", "AdsViewHolder", "DetailsViewHolder", "GraphViewHolder", "MapViewHolder", "MultyDayViewHolder", "NewsViewHolder", "UpdateViewHolder", "WeatherViewHolder", "app_debug"})
 public final class CardsViewHolders {
     
     public CardsViewHolders() {
@@ -84,6 +84,22 @@ public final class CardsViewHolders {
         
         public MapViewHolder(@org.jetbrains.annotations.NotNull()
         android.view.View itemView) {
+            super(null);
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0015\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u00a2\u0006\u0002\u0010\u0007J\u0010\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\f"}, d2 = {"Lcom/craiovadata/android/sunshine/ui/main/CardsViewHolders$NewsViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "Lcom/craiovadata/android/sunshine/ui/main/CardsViewHolders$UpdateViewHolder;", "itemView", "Landroid/view/View;", "listener", "Lcom/craiovadata/android/sunshine/ui/main/CardsAdapter$Listener;", "(Landroid/view/View;Lcom/craiovadata/android/sunshine/ui/main/CardsAdapter$Listener;)V", "bindViews", "", "update", "Lcom/craiovadata/android/sunshine/ui/models/Base;", "app_debug"})
+    public static final class NewsViewHolder extends androidx.recyclerview.widget.RecyclerView.ViewHolder implements com.craiovadata.android.sunshine.ui.main.CardsViewHolders.UpdateViewHolder {
+        private final com.craiovadata.android.sunshine.ui.main.CardsAdapter.Listener listener = null;
+        
+        @java.lang.Override()
+        public void bindViews(@org.jetbrains.annotations.NotNull()
+        com.craiovadata.android.sunshine.ui.models.Base update) {
+        }
+        
+        public NewsViewHolder(@org.jetbrains.annotations.NotNull()
+        android.view.View itemView, @org.jetbrains.annotations.NotNull()
+        com.craiovadata.android.sunshine.ui.main.CardsAdapter.Listener listener) {
             super(null);
         }
     }

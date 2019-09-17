@@ -1636,9 +1636,9 @@ string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
 string admob_app_id
+string admob_banner_id
 string app_name
 string appbar_scrolling_view_behavior
-string banner_id_Petru
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern

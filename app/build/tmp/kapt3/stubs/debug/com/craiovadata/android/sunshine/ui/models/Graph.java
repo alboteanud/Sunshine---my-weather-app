@@ -52,7 +52,7 @@ public final class Graph extends com.craiovadata.android.sunshine.ui.models.Base
     com.craiovadata.android.sunshine.ui.main.CardsAdapter.Listener listener) {
     }
     
-    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u00042\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u00062\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0007J\u001e\u0010\f\u001a\u00020\u00042\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010\b\u001a\u00020\tH\u0002J\u0018\u0010\u000e\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0002J\u0010\u0010\u000f\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\tH\u0002\u00a8\u0006\u0010"}, d2 = {"Lcom/craiovadata/android/sunshine/ui/models/Graph$Companion;", "", "()V", "bindForecastToUI", "", "weatherEntries", "", "Lcom/craiovadata/android/sunshine/data/database/ListWeatherEntry;", "view", "Landroid/view/View;", "listener", "Lcom/craiovadata/android/sunshine/ui/main/CardsAdapter$Listener;", "drawGraph", "entries", "setTextCelsiusFarStates", "verifyTimeZone", "app_debug"})
+    @kotlin.Metadata(mv = {1, 1, 15}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u00042\u000e\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u00062\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0007J\u001e\u0010\f\u001a\u00020\u00042\f\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010\b\u001a\u00020\tH\u0002J\u0010\u0010\u000e\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\tH\u0002J\u0018\u0010\u000f\u001a\u00020\u00042\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0002\u00a8\u0006\u0010"}, d2 = {"Lcom/craiovadata/android/sunshine/ui/models/Graph$Companion;", "", "()V", "bindForecastToUI", "", "weatherEntries", "", "Lcom/craiovadata/android/sunshine/data/database/ListWeatherEntry;", "view", "Landroid/view/View;", "listener", "Lcom/craiovadata/android/sunshine/ui/main/CardsAdapter$Listener;", "drawGraph", "entries", "setLabelTime", "setTextCelsiusFarStates", "app_debug"})
     public static final class Companion {
         
         public final void bindForecastToUI(@org.jetbrains.annotations.Nullable()
@@ -64,7 +64,7 @@ public final class Graph extends com.craiovadata.android.sunshine.ui.models.Base
         private final void drawGraph(java.util.List<com.craiovadata.android.sunshine.data.database.ListWeatherEntry> entries, android.view.View view) {
         }
         
-        private final void verifyTimeZone(android.view.View view) {
+        private final void setLabelTime(android.view.View view) {
         }
         
         private final void setTextCelsiusFarStates(android.view.View view, com.craiovadata.android.sunshine.ui.main.CardsAdapter.Listener listener) {

@@ -27,6 +27,24 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="com.craiovadata.android.sunshine.ui.news.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.craiovadata.android.sunshine.ui.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+            android:theme="@style/AppTheme.SettingsTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+        </activity>
+        <activity
             android:name="com.craiovadata.android.sunshine.ui.main.MainActivity"
             android:label="@string/app_name"
             android:launchMode="singleTop"
@@ -37,8 +55,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- This is required for immediate syncs -->
+        <activity
+            android:name="com.craiovadata.android.sunshine.ui.policy.PolicyActivity"
+            android:label="@string/label_screen_policy"
+            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" /> <!-- This is required for immediate syncs -->
         <service
             android:name="com.craiovadata.android.sunshine.data.network.SyncIntentService"
             android:exported="false" />
@@ -67,6 +88,9 @@
                 android:resource="@xml/app_widget_provider_info" />
         </receiver>
 
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="false" />
         <!--
              Receives GooglePlay execution requests and forwards them to the
              appropriate internal service.
@@ -81,7 +105,21 @@
         </service>
         <service
             android:name="androidx.room.MultiInstanceInvalidationService"
-            android:exported="false" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+            android:exported="false" />
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
@@ -118,16 +156,6 @@
             android:enabled="true"
             android:exported="false"
             android:permission="android.permission.BIND_JOB_SERVICE" />
-        <service
-            android:name="com.google.firebase.components.ComponentDiscoveryService"
-            android:exported="false" >
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-            <meta-data
-                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-                android:value="com.google.firebase.components.ComponentRegistrar" />
-        </service>
 
         <receiver
             android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
@@ -138,16 +166,16 @@
             </intent-filter>
         </receiver>
 
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
             android:authorities="com.craiovadata.aus.sydney.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
-
-        <activity
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <meta-data
             android:name="com.google.android.gms.version"
@@ -158,6 +186,11 @@
             android:authorities="com.craiovadata.aus.sydney.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="com.craiovadata.aus.sydney.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="90" />
     </application>
 
 </manifest>

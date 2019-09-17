@@ -1635,9 +1635,9 @@ int string abc_shareactionprovider_share_with_application 0x7f0e002c
 int string abc_toolbar_collapse_description 0x7f0e002d
 int string action_settings 0x7f0e002e
 int string admob_app_id 0x7f0e002f
-int string app_name 0x7f0e0030
-int string appbar_scrolling_view_behavior 0x7f0e0031
-int string banner_id_Petru 0x7f0e0032
+int string admob_banner_id 0x7f0e0030
+int string app_name 0x7f0e0031
+int string appbar_scrolling_view_behavior 0x7f0e0032
 int string bottom_sheet_behavior 0x7f0e0033
 int string character_counter_content_description 0x7f0e0034
 int string character_counter_pattern 0x7f0e0035

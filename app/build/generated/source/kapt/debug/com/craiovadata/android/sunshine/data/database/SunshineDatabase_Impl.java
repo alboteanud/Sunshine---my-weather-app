@@ -4,6 +4,7 @@ import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
 import androidx.room.RoomOpenHelper;
 import androidx.room.RoomOpenHelper.Delegate;
+import androidx.room.util.DBUtil;
 import androidx.room.util.TableInfo;
 import androidx.room.util.TableInfo.Column;
 import androidx.room.util.TableInfo.ForeignKey;
@@ -19,8 +20,9 @@ import java.lang.SuppressWarnings;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Set;
 
-@SuppressWarnings("unchecked")
+@SuppressWarnings({"unchecked", "deprecation"})
 public final class SunshineDatabase_Impl extends SunshineDatabase {
   private volatile WeatherDao _weatherDao;
 
@@ -32,7 +34,7 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weatherId` INTEGER NOT NULL, `date` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL)");
         _db.execSQL("CREATE UNIQUE INDEX `index_weather_date` ON `weather` (`date`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"a0e47c89acff45a206c7d49a61d1f173\")");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a0e47c89acff45a206c7d49a61d1f173')");
       }
 
       @Override
@@ -58,6 +60,15 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
             mCallbacks.get(_i).onOpen(_db);
           }
         }
+      }
+
+      @Override
+      public void onPreMigrate(SupportSQLiteDatabase _db) {
+        DBUtil.dropFtsSyncTriggers(_db);
+      }
+
+      @Override
+      public void onPostMigrate(SupportSQLiteDatabase _db) {
       }
 
       @Override
@@ -97,7 +108,9 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
 
   @Override
   protected InvalidationTracker createInvalidationTracker() {
-    return new InvalidationTracker(this, "weather");
+    final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
+    HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "weather");
   }
 
   @Override
