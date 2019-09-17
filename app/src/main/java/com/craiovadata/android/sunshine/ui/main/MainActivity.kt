@@ -56,6 +56,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         MobileAds.initialize(this, getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
         loadAdBanner() // before observers
 
+
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
         val viewModel = ViewModelProviders.of(this, factory).get(MainActivityViewModel::class.java)
 

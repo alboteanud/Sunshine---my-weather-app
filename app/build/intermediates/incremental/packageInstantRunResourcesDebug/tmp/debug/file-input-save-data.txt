@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sun Apr 21 12:09:56 EEST 2019
+0.baseType=DIRECTORY
+0.base=/Users/danalboteanu/Android projects/Sunshine_2019/app/build/intermediates/merged_assets/debug/out
+0.path=crashlytics-build.properties
+0.set=ASSET
+count=1
