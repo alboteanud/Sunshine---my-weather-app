@@ -3,7 +3,8 @@
 
     <SwitchPreferenceCompat
         app:key="@string/pref_enable_notifications_key"
-        app:title="@string/pref_enable_notifications_label" />
+        app:title="@string/pref_enable_notifications_label"
+        app:defaultValue="true"/>
 
     <EditTextPreference
         app:key="@string/key_pref_feedback"

@@ -71,12 +71,13 @@ object Utils {
     }
 
     fun getAdBannerId(context: Context): String {
-        val max = getAdDaysLimit()
-        val r = Random().nextInt(max)
+//        val max = getAdDaysLimit()
+//        val r = Random().nextInt(max)
 //        Log.d("tag", "limit: $limit r: $r \n$id")
-        if (BuildConfig.DEBUG) return "ca-app-pub-3940256099942544/6300978111"
-        if (r < 2) return context.getString(R.string.banner_id_Petru)
-        return "ca-app-pub-3931793949981809/9792691746" // default
+//        if (BuildConfig.DEBUG) return "ca-app-pub-3940256099942544/6300978111"
+//        if (r < 2) return context.getString(R.string.banner_id_Petru)
+//        return "ca-app-pub-3931793949981809/9792691746" // default
+        return context.getString(R.string.admob_banner_id)
     }
 
 

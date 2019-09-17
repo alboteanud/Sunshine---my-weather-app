@@ -27,6 +27,7 @@ class MySettingsFragment : PreferenceFragmentCompat() {
 
     }
 
+
     private fun sendFeedbackToFirebase(stringValue: String) {
         if (stringValue.isEmpty()) return
 
@@ -39,16 +40,12 @@ class MySettingsFragment : PreferenceFragmentCompat() {
 // Add a new document with a generated ID
         db.collection("SunshineApps").document(BuildConfig.APPLICATION_ID).collection("reviews")
                 .add(review)
-                .addOnSuccessListener { documentReference ->
-                    Log.d(TAG, "DocumentSnapshot added with ID: ${documentReference.id}")
+                .addOnCompleteListener {
                     Toast.makeText(activity, getString(R.string.feedback_review_sent), Toast.LENGTH_LONG).show()
                     clearFeedbackPref()
                 }
-                .addOnFailureListener { e ->
-                    Log.w(TAG, "Error adding document", e)
-                    Toast.makeText(activity, getString(R.string.feedback_review_sent_unsuccesfully), Toast.LENGTH_SHORT).show()
-                }
     }
+
 
     private fun clearFeedbackPref() {
         val feedbackPref = findPreference(getString(R.string.key_pref_feedback)) as EditTextPreference

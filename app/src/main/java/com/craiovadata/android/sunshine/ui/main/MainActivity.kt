@@ -1,8 +1,14 @@
 package com.craiovadata.android.sunshine.ui.main
 
 import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.content.pm.ResolveInfo
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
@@ -13,6 +19,7 @@ import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
+import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.Utils
@@ -20,27 +27,27 @@ import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdSize
 import com.google.android.gms.ads.AdView
 import com.google.android.gms.ads.MobileAds
-//import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 //adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
 
 class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
+
     private var adView: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
     private var multiDayEntries: MutableList<ListWeatherEntry>? = null
     //    private var listPosition = RecyclerView.NO_POSITION
     private val handler = Handler()
-
-
     private lateinit var mAdapter: CardsAdapter
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        setSupportActionBar(toolbar
+        )
         recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = MyLinearLayoutManager(this@MainActivity)
@@ -63,6 +70,42 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         observeDaysForecastData(viewModel)
 //        observeAllEntriesData(viewModel)
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        return when (item.itemId) {
+            R.id.action_settings -> {
+                startActivity(Intent(this, SettingsActivity::class.java))
+                return true
+            }
+            R.id.action_privacy_policy -> {
+                goToPrivacyPolicy()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+
+    private fun goToPrivacyPolicy() {
+        val myLink = Uri.parse(getString(R.string.link_privacy_policy))
+        val intent = Intent(Intent.ACTION_VIEW, myLink)
+        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
+                intent,
+                PackageManager.MATCH_DEFAULT_ONLY
+        )
+        val isIntentSafe: Boolean = activities.isNotEmpty()
+        if (isIntentSafe)
+            startActivity(intent)
     }
 
 
@@ -198,6 +241,11 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 //            }
 //        })
 //    }
+
+
+    override fun onNewsClicked(view: View) {
+
+    }
 
 
 }
