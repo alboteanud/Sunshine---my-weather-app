@@ -11,6 +11,5 @@ object MyTimeZone {
 //    US/Mountain
 //    US/Pacific
     //Europe/Bucharest
-
     const val DEFAULT_ZOOM_LEVEL: Int = 12
 }
