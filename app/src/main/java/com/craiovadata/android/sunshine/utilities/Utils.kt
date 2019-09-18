@@ -19,20 +19,17 @@ object Utils {
     private val images = intArrayOf(
             R.drawable.c1,
             R.drawable.c2,
-            R.drawable.c3,
-            R.drawable.c4,
-            R.drawable.c5,
-            R.drawable.c6,
             R.drawable.stabil1,
             R.drawable.stabil2,
             R.drawable.stabil3,
             R.drawable.stabil4,
             R.drawable.stabil5,
-            R.drawable.stabil6)
+            R.drawable.stabil6
+    )
 
     @JvmStatic
     fun getCityTimeZone(): TimeZone? {
-        val tz =  getTimeZone(TIME_ZONE)
+        val tz = getTimeZone(TIME_ZONE)
         return tz
     }
 

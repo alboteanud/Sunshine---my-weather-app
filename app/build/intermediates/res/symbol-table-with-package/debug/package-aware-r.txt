@@ -670,6 +670,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color blackSemi
+color blackSemi2
 color blackSemi7
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
@@ -1121,10 +1122,6 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable c1
 drawable c2
-drawable c3
-drawable c4
-drawable c5
-drawable c6
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
