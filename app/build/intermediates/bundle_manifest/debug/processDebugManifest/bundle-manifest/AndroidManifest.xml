@@ -23,6 +23,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity
@@ -54,11 +55,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.craiovadata.android.sunshine.ui.policy.PolicyActivity"
-            android:label="@string/label_screen_policy"
-            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" /> <!-- This is required for immediate syncs -->
+        <!-- This is required for immediate syncs -->
         <service
             android:name="com.craiovadata.android.sunshine.data.network.SyncIntentService"
             android:exported="false" />
