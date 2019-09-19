@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.craiovadata.aus.sydney"
+3    package="com.craiovadata.android.sunshine.US.CO.Aurora"
 4    android:versionCode="5"
 5    android:versionName="1.0" >
 6
@@ -36,7 +36,7 @@
 20        android:allowBackup="false"
 20-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:12:9-36
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/08fdaf2837bd06324a86909377858fc3/core-1.0.0/AndroidManifest.xml:22:18-86
+21-->[androidx.core:core:1.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/0ace1c4a8cfe0e92a9bbcba74adc8694/core-1.1.0/AndroidManifest.xml:24:18-86
 22        android:debuggable="true"
 23        android:icon="@mipmap/ic_launcher"
 23-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:13:9-43
@@ -44,314 +44,315 @@
 24-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:14:9-41
 25        android:supportsRtl="true"
 25-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:15:9-35
-26        android:theme="@style/AppTheme"
-26-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:16:9-40
-27        android:usesCleartextTraffic="true" >
-27-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:17:9-44
-28        <activity
-28-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:19:9-27:20
-29            android:name="com.craiovadata.android.sunshine.ui.news.NewsActivity"
-29-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:20:13-49
-30            android:label="@string/title_activity_news"
-30-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:21:13-56
-31            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
-31-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:22:13-63
-32            android:theme="@style/AppTheme.NoActionBar" >
-32-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:23:13-56
-33            <meta-data
-33-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:24:13-26:89
-34                android:name="android.support.PARENT_ACTIVITY"
-34-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:25:17-63
-35                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
-35-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:26:17-86
-36        </activity>
-37        <activity
-37-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:28:9-36:20
-38            android:name="com.craiovadata.android.sunshine.ui.settings.SettingsActivity"
-38-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:29:13-57
-39            android:label="@string/title_activity_settings"
-39-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:30:13-60
-40            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
-40-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:31:13-63
-41            android:theme="@style/AppTheme.SettingsTheme" >
-41-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:32:13-58
-42            <meta-data
-42-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:24:13-26:89
-43                android:name="android.support.PARENT_ACTIVITY"
-43-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:25:17-63
-44                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
-44-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:26:17-86
-45        </activity>
-46        <activity
-46-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:37:9-47:20
-47            android:name="com.craiovadata.android.sunshine.ui.main.MainActivity"
-47-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:38:13-49
-48            android:label="@string/app_name"
-48-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:39:13-45
-49            android:launchMode="singleTop"
-49-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:40:13-43
-50            android:theme="@style/AppTheme.NoActionBar" >
-50-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:41:13-56
-51            <intent-filter>
-51-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:42:13-46:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:43:17-69
-52-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:43:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:45:17-77
-54-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:45:27-74
-55            </intent-filter>
-56        </activity>
-57        <activity
-57-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:48:9-52:59
-58            android:name="com.craiovadata.android.sunshine.ui.policy.PolicyActivity"
-58-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:49:13-53
-59            android:label="@string/label_screen_policy"
-59-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:50:13-56
-60            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
-60-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:51:13-63
-61            android:theme="@style/AppTheme.NoActionBar" /> <!-- This is required for immediate syncs -->
-61-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:52:13-56
-62        <service
-62-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:53:9-55:40
-63            android:name="com.craiovadata.android.sunshine.data.network.SyncIntentService"
-63-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:54:13-59
-64            android:exported="false" />
-64-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:55:13-37
-65        <service
-65-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:56:9-58:40
-66            android:name="com.craiovadata.android.sunshine.data.network.SyncIntentServiceCW"
-66-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:57:13-61
-67            android:exported="false" /> <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
-67-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:58:13-37
-68        <service
-68-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:59:9-65:19
-69            android:name="com.craiovadata.android.sunshine.data.network.MyJobService"
-69-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:60:13-54
-70            android:exported="false" >
-70-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:61:13-37
-71            <intent-filter>
-71-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:62:13-64:29
-72                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
-72-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:63:17-84
-72-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:63:25-81
-73            </intent-filter>
-74        </service>
-75
-76        <meta-data
-76-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:67:9-69:52
-77            android:name="com.google.android.gms.ads.APPLICATION_ID"
-77-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:68:13-69
-78            android:value="@string/admob_app_id" />
-78-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:69:13-49
-79
-80        <receiver android:name="com.craiovadata.android.sunshine.ui.widget.MyAppWidgetProvider" >
-80-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:71:9-79:20
-80-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:71:19-64
-81            <intent-filter>
-81-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:72:13-74:29
-82                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-82-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:73:17-84
-82-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:73:25-81
-83            </intent-filter>
-84
-85            <meta-data
-85-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:76:13-78:68
-86                android:name="android.appwidget.provider"
-86-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:77:17-58
-87                android:resource="@xml/app_widget_provider_info" />
-87-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:78:17-65
-88        </receiver>
-89
-90        <meta-data
-91            android:name="firebase_crashlytics_collection_enabled"
-91-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:82:13-67
-92            android:value="false" />
-92-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:83:13-50
-93        <!--
-94             Receives GooglePlay execution requests and forwards them to the
-95             appropriate internal service.
-96        -->
-97        <service
-97-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
-98            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
-98-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
-99            android:exported="true"
-99-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
-100            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
-100-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
-101            <intent-filter>
-101-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
-102                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
-102-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
-102-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
-103            </intent-filter>
-104        </service>
-105        <service
-105-->[androidx.room:room-runtime:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a8de3a8a4567a65d4339d0bf465c9db1/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
-106            android:name="androidx.room.MultiInstanceInvalidationService"
-106-->[androidx.room:room-runtime:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a8de3a8a4567a65d4339d0bf465c9db1/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
-107            android:exported="false" />
-107-->[androidx.room:room-runtime:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a8de3a8a4567a65d4339d0bf465c9db1/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
-108        <service
-108-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:17:9-23:19
-109            android:name="com.google.firebase.components.ComponentDiscoveryService"
-109-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:18:13-84
-110            android:directBootAware="true"
-110-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:14:13-43
-111            android:exported="false" >
-111-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:19:13-37
-112            <meta-data
-112-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:20:13-22:85
-113                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-113-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:21:17-111
-114                android:value="com.google.firebase.components.ComponentRegistrar" />
-114-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:22:17-82
-115            <meta-data
-115-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5d9f647298b821272abdcdfa9dc2671a/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
-116                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-116-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5d9f647298b821272abdcdfa9dc2671a/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
-117                android:value="com.google.firebase.components.ComponentRegistrar" />
-117-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5d9f647298b821272abdcdfa9dc2671a/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
-118            <meta-data
-118-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
-119                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-119-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
-120                android:value="com.google.firebase.components.ComponentRegistrar" />
-120-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
-121        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
-122        <activity
-122-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:29:9-33:64
-123            android:name="com.google.android.gms.ads.AdActivity"
-123-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:30:13-65
-124            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
-124-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:31:13-122
-125            android:exported="false"
-125-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:32:13-37
-126            android:theme="@android:style/Theme.Translucent" />
-126-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:33:13-61
-127
-128        <provider
-128-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:35:9-39:39
-129            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-129-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:36:13-76
-130            android:authorities="com.craiovadata.aus.sydney.mobileadsinitprovider"
-130-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:37:13-73
-131            android:exported="false"
-131-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:38:13-37
-132            android:initOrder="100" />
-132-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:39:13-36
-133
-134        <receiver
-134-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:29:9-33:20
-135            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-135-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:30:13-85
-136            android:enabled="true"
-136-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:31:13-35
-137            android:exported="false" >
-137-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:32:13-37
-138        </receiver>
-139        <receiver
-139-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:34:9-42:20
-140            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-140-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:35:13-100
-141            android:enabled="true"
-141-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:36:13-35
-142            android:exported="true"
-142-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:37:13-36
-143            android:permission="android.permission.INSTALL_PACKAGES" >
-143-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:38:13-69
-144            <intent-filter>
-144-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:39:13-41:29
-145                <action android:name="com.android.vending.INSTALL_REFERRER" />
-145-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:40:17-79
-145-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:40:25-76
-146            </intent-filter>
-147        </receiver>
-148
-149        <service
-149-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:44:9-47:40
-150            android:name="com.google.android.gms.measurement.AppMeasurementService"
-150-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:45:13-84
-151            android:enabled="true"
-151-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:46:13-35
-152            android:exported="false" />
-152-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:47:13-37
-153        <service
-153-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:48:9-52:72
-154            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-154-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
-155            android:enabled="true"
-155-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:50:13-35
-156            android:exported="false"
-156-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:51:13-37
-157            android:permission="android.permission.BIND_JOB_SERVICE" />
-157-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
-158
-159        <receiver
-159-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
-160            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-160-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
-161            android:exported="true"
-161-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
-162            android:permission="com.google.android.c2dm.permission.SEND" >
-162-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
-163            <intent-filter>
-163-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
-164                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-164-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
-164-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
-165            </intent-filter>
-166        </receiver>
-167
-168        <activity
-168-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-169            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-169-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-170            android:exported="false"
-170-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-171-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-172
-173        <provider
-173-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:17:9-21:39
-174            android:name="com.google.firebase.provider.FirebaseInitProvider"
-174-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:18:13-77
-175            android:authorities="com.craiovadata.aus.sydney.firebaseinitprovider"
-175-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:19:13-72
-176            android:exported="false"
-176-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:20:13-37
-177            android:initOrder="100" />
-177-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:21:13-36
-178
-179        <meta-data
-179-->[com.google.android.gms:play-services-basement:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/34513ee83af9184ca1af20aae1fd4035/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-180            android:name="com.google.android.gms.version"
-180-->[com.google.android.gms:play-services-basement:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/34513ee83af9184ca1af20aae1fd4035/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-181            android:value="@integer/google_play_services_version" />
-181-->[com.google.android.gms:play-services-basement:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/34513ee83af9184ca1af20aae1fd4035/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-182
-183        <provider
-183-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
-184            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-184-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
-185            android:authorities="com.craiovadata.aus.sydney.lifecycle-process"
-185-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
-186            android:exported="false"
-186-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
-187            android:multiprocess="true" />
-187-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
-188        <provider
-188-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
-189            android:name="com.crashlytics.android.CrashlyticsInitProvider"
-189-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
-190            android:authorities="com.craiovadata.aus.sydney.crashlyticsinitprovider"
-190-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
-191            android:exported="false"
-191-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
-192            android:initOrder="90" />
-192-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
-193    </application>
-194
-195</manifest>
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme"
+27-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:16:9-40
+28        android:usesCleartextTraffic="true" >
+28-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:17:9-44
+29        <activity
+29-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:19:9-27:20
+30            android:name="com.craiovadata.android.sunshine.ui.news.NewsActivity"
+30-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:20:13-49
+31            android:label="@string/title_activity_news"
+31-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:21:13-56
+32            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+32-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:22:13-63
+33            android:theme="@style/AppTheme.NoActionBar" >
+33-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:23:13-56
+34            <meta-data
+34-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:24:13-26:89
+35                android:name="android.support.PARENT_ACTIVITY"
+35-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:25:17-63
+36                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+36-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:26:17-86
+37        </activity>
+38        <activity
+38-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:28:9-36:20
+39            android:name="com.craiovadata.android.sunshine.ui.settings.SettingsActivity"
+39-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:29:13-57
+40            android:label="@string/title_activity_settings"
+40-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:30:13-60
+41            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+41-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:31:13-63
+42            android:theme="@style/AppTheme.SettingsTheme" >
+42-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:32:13-58
+43            <meta-data
+43-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:24:13-26:89
+44                android:name="android.support.PARENT_ACTIVITY"
+44-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:25:17-63
+45                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+45-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:26:17-86
+46        </activity>
+47        <activity
+47-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:37:9-47:20
+48            android:name="com.craiovadata.android.sunshine.ui.main.MainActivity"
+48-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:38:13-49
+49            android:label="@string/app_name"
+49-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:39:13-45
+50            android:launchMode="singleTop"
+50-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:40:13-43
+51            android:theme="@style/AppTheme.NoActionBar" >
+51-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:41:13-56
+52            <intent-filter>
+52-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:42:13-46:29
+53                <action android:name="android.intent.action.MAIN" />
+53-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:43:17-69
+53-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:43:25-66
+54
+55                <category android:name="android.intent.category.LAUNCHER" />
+55-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:45:17-77
+55-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:45:27-74
+56            </intent-filter>
+57        </activity>
+58        <activity
+58-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:48:9-52:59
+59            android:name="com.craiovadata.android.sunshine.ui.policy.PolicyActivity"
+59-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:49:13-53
+60            android:label="@string/label_screen_policy"
+60-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:50:13-56
+61            android:parentActivityName="com.craiovadata.android.sunshine.ui.main.MainActivity"
+61-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:51:13-63
+62            android:theme="@style/AppTheme.NoActionBar" /> <!-- This is required for immediate syncs -->
+62-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:52:13-56
+63        <service
+63-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:53:9-55:40
+64            android:name="com.craiovadata.android.sunshine.data.network.SyncIntentService"
+64-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:54:13-59
+65            android:exported="false" />
+65-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:55:13-37
+66        <service
+66-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:56:9-58:40
+67            android:name="com.craiovadata.android.sunshine.data.network.SyncIntentServiceCW"
+67-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:57:13-61
+68            android:exported="false" /> <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
+68-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:58:13-37
+69        <service
+69-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:59:9-65:19
+70            android:name="com.craiovadata.android.sunshine.data.network.MyJobService"
+70-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:60:13-54
+71            android:exported="false" >
+71-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:61:13-37
+72            <intent-filter>
+72-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:62:13-64:29
+73                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+73-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:63:17-84
+73-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:63:25-81
+74            </intent-filter>
+75        </service>
+76
+77        <meta-data
+77-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:67:9-69:52
+78            android:name="com.google.android.gms.ads.APPLICATION_ID"
+78-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:68:13-69
+79            android:value="@string/admob_app_id" />
+79-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:69:13-49
+80
+81        <receiver android:name="com.craiovadata.android.sunshine.ui.widget.MyAppWidgetProvider" >
+81-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:71:9-79:20
+81-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:71:19-64
+82            <intent-filter>
+82-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:72:13-74:29
+83                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+83-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:73:17-84
+83-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:73:25-81
+84            </intent-filter>
+85
+86            <meta-data
+86-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:76:13-78:68
+87                android:name="android.appwidget.provider"
+87-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:77:17-58
+88                android:resource="@xml/app_widget_provider_info" />
+88-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:78:17-65
+89        </receiver>
+90
+91        <meta-data
+92            android:name="firebase_crashlytics_collection_enabled"
+92-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:82:13-67
+93            android:value="false" />
+93-->/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/src/main/AndroidManifest.xml:83:13-50
+94        <!--
+95             Receives GooglePlay execution requests and forwards them to the
+96             appropriate internal service.
+97        -->
+98        <service
+98-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:32:9-39:19
+99            android:name="com.firebase.jobdispatcher.GooglePlayReceiver"
+99-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:33:13-73
+100            android:exported="true"
+100-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:34:13-36
+101            android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE" >
+101-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:35:13-93
+102            <intent-filter>
+102-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:36:13-38:29
+103                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY" />
+103-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:17-87
+103-->[com.firebase:firebase-jobdispatcher:0.8.5] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/b86cd09ff4736a50b2269dbe1e149e06/jetified-firebase-jobdispatcher-0.8.5/AndroidManifest.xml:37:25-84
+104            </intent-filter>
+105        </service>
+106        <service
+106-->[androidx.room:room-runtime:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a8de3a8a4567a65d4339d0bf465c9db1/room-runtime-2.1.0/AndroidManifest.xml:25:9-27:40
+107            android:name="androidx.room.MultiInstanceInvalidationService"
+107-->[androidx.room:room-runtime:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a8de3a8a4567a65d4339d0bf465c9db1/room-runtime-2.1.0/AndroidManifest.xml:26:13-74
+108            android:exported="false" />
+108-->[androidx.room:room-runtime:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/a8de3a8a4567a65d4339d0bf465c9db1/room-runtime-2.1.0/AndroidManifest.xml:27:13-37
+109        <service
+109-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:17:9-23:19
+110            android:name="com.google.firebase.components.ComponentDiscoveryService"
+110-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:18:13-84
+111            android:directBootAware="true"
+111-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:14:13-43
+112            android:exported="false" >
+112-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:19:13-37
+113            <meta-data
+113-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:20:13-22:85
+114                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+114-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:21:17-111
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-firestore:21.1.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/4feb6dfb19ff2a6932cc3b2c60fa988e/jetified-firebase-firestore-21.1.1/AndroidManifest.xml:22:17-82
+116            <meta-data
+116-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5d9f647298b821272abdcdfa9dc2671a/play-services-measurement-api-17.2.0/AndroidManifest.xml:30:13-32:85
+117                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+117-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5d9f647298b821272abdcdfa9dc2671a/play-services-measurement-api-17.2.0/AndroidManifest.xml:31:17-139
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.android.gms:play-services-measurement-api:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/5d9f647298b821272abdcdfa9dc2671a/play-services-measurement-api-17.2.0/AndroidManifest.xml:32:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:32:13-34:85
+120                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+120-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:33:17-96
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:34:17-82
+122        </service> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+123        <activity
+123-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:29:9-33:64
+124            android:name="com.google.android.gms.ads.AdActivity"
+124-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:30:13-65
+125            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+125-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:31:13-122
+126            android:exported="false"
+126-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:32:13-37
+127            android:theme="@android:style/Theme.Translucent" />
+127-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:33:13-61
+128
+129        <provider
+129-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:35:9-39:39
+130            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+130-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:36:13-76
+131            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.mobileadsinitprovider"
+131-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:37:13-73
+132            android:exported="false"
+132-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:38:13-37
+133            android:initOrder="100" />
+133-->[com.google.android.gms:play-services-ads-lite:18.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c9aec77b1802f1ffb036f12d5a1d9771/play-services-ads-lite-18.2.0/AndroidManifest.xml:39:13-36
+134
+135        <receiver
+135-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:29:9-33:20
+136            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+136-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:30:13-85
+137            android:enabled="true"
+137-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:31:13-35
+138            android:exported="false" >
+138-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:32:13-37
+139        </receiver>
+140        <receiver
+140-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:34:9-42:20
+141            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+141-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:35:13-100
+142            android:enabled="true"
+142-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:36:13-35
+143            android:exported="true"
+143-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:37:13-36
+144            android:permission="android.permission.INSTALL_PACKAGES" >
+144-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:38:13-69
+145            <intent-filter>
+145-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:39:13-41:29
+146                <action android:name="com.android.vending.INSTALL_REFERRER" />
+146-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:40:17-79
+146-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:40:25-76
+147            </intent-filter>
+148        </receiver>
+149
+150        <service
+150-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:44:9-47:40
+151            android:name="com.google.android.gms.measurement.AppMeasurementService"
+151-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:45:13-84
+152            android:enabled="true"
+152-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:46:13-35
+153            android:exported="false" />
+153-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:47:13-37
+154        <service
+154-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:48:9-52:72
+155            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+155-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:49:13-87
+156            android:enabled="true"
+156-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:50:13-35
+157            android:exported="false"
+157-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:51:13-37
+158            android:permission="android.permission.BIND_JOB_SERVICE" />
+158-->[com.google.android.gms:play-services-measurement:17.2.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/c58191da1db091094abaa83868376eca/play-services-measurement-17.2.0/AndroidManifest.xml:52:13-69
+159
+160        <receiver
+160-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:37:9-44:20
+161            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+161-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:38:13-78
+162            android:exported="true"
+162-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:39:13-36
+163            android:permission="com.google.android.c2dm.permission.SEND" >
+163-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:40:13-73
+164            <intent-filter>
+164-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:41:13-43:29
+165                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+165-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:42:17-81
+165-->[com.google.firebase:firebase-iid:19.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/d9d4a763e47b08cd75a8dedeecb2f36d/firebase-iid-19.0.0/AndroidManifest.xml:42:25-78
+166            </intent-filter>
+167        </receiver>
+168
+169        <activity
+169-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+170            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+170-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+171            android:exported="false"
+171-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+172            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+172-->[com.google.android.gms:play-services-base:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/2487f6df91b0921ad64447adfc044418/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+173
+174        <provider
+174-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:17:9-21:39
+175            android:name="com.google.firebase.provider.FirebaseInitProvider"
+175-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:18:13-77
+176            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.firebaseinitprovider"
+176-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:19:13-72
+177            android:exported="false"
+177-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:20:13-37
+178            android:initOrder="100" />
+178-->[com.google.firebase:firebase-common:19.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/50a67109e5f88bb184d34b86510421b4/firebase-common-19.1.0/AndroidManifest.xml:21:13-36
+179
+180        <meta-data
+180-->[com.google.android.gms:play-services-basement:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/34513ee83af9184ca1af20aae1fd4035/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+181            android:name="com.google.android.gms.version"
+181-->[com.google.android.gms:play-services-basement:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/34513ee83af9184ca1af20aae1fd4035/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+182            android:value="@integer/google_play_services_version" />
+182-->[com.google.android.gms:play-services-basement:17.0.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/34513ee83af9184ca1af20aae1fd4035/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+183
+184        <provider
+184-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+185            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+185-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+186            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.lifecycle-process"
+186-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+187            android:exported="false"
+187-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+188            android:multiprocess="true" />
+188-->[androidx.lifecycle:lifecycle-process:2.1.0] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/1dec3860031c63f0a2d1ac1e46fb1a66/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+189        <provider
+189-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+190            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+190-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+191            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.crashlyticsinitprovider"
+191-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+192            android:exported="false"
+192-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+193            android:initOrder="90" />
+193-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/75d9c9b3cb0e6494ed6b1dba4e093478/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+194    </application>
+195
+196</manifest>

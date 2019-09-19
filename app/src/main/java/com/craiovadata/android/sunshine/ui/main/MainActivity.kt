@@ -27,7 +27,6 @@ import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.Utils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_news.*
 import kotlinx.android.synthetic.main.content_main.*
 
 //adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
@@ -39,7 +38,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
     private var multiDayEntries: MutableList<ListWeatherEntry>? = null
     //    private var listPosition = RecyclerView.NO_POSITION
-    private val handler = Handler()
+//    private val handler = Handler()
     private lateinit var mAdapter: CardsAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
