@@ -22,6 +22,7 @@ class WeatherEntry {
     var lon: Double = 0.toDouble()
     var iconCodeOWM: String = "01d"
     var isCurrentWeather: Int = 0
+    var cityName: String = ""
 
     /**
      * This constructor is used by OpenWeatherJsonParser. When the network fetch has JSON data, it
@@ -37,7 +38,26 @@ class WeatherEntry {
      * @param iconCodeOWM          Icon code OWM
      */
 
-    // constructor for currentWeather. Has isCurrentWeather = 1
+    // constructor for currentWeather. Has isCurrentWeather = 1 and cityName - for debug
+    @Ignore
+    constructor(
+            weatherId: Int, date: Date, temperature: Double, humidity: Double, pressure: Double,
+            wind: Double, degrees: Double, iconCodeOWM: String, isCurrentWeather: Int, cityName: String, lat: Double, lon: Double) {
+        this.weatherId = weatherId
+        this.date = date
+        this.temperature = temperature
+        this.humidity = humidity
+        this.pressure = pressure
+        this.wind = wind
+        this.degrees = degrees
+        this.iconCodeOWM = iconCodeOWM
+        this.isCurrentWeather = isCurrentWeather
+        this.cityName = cityName
+        this.lat = lat
+        this.lon = lon
+    }
+
+ // constructor for currentWeather. Has isCurrentWeather = 1
     @Ignore
     constructor(
             weatherId: Int, date: Date, temperature: Double, humidity: Double, pressure: Double,
@@ -75,7 +95,7 @@ class WeatherEntry {
     // main constructor. Complet
     constructor(id: Int,
                 weatherId: Int, date: Date, temperature: Double, humidity: Double, pressure: Double,
-                wind: Double, degrees: Double, iconCodeOWM: String, isCurrentWeather: Int) {
+                wind: Double, degrees: Double, iconCodeOWM: String, isCurrentWeather: Int, cityName: String) {
         this.id = id
         this.weatherId = weatherId
         this.date = date
@@ -86,5 +106,6 @@ class WeatherEntry {
         this.degrees = degrees
         this.iconCodeOWM = iconCodeOWM
         this.isCurrentWeather = isCurrentWeather
+        this.cityName = cityName
     }
 }

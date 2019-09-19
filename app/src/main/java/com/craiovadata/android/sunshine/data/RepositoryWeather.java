@@ -217,8 +217,10 @@ public class RepositoryWeather {
         long tomorrowMidnightNormalizedUtc = (daysSinceEpoch + 1) * DAY_IN_MILLIS;
 
 //        long tomorrowCityNoonUtc = tomorrowMidnightNormalizedUtc + 10 * HOUR_IN_MILLIS + offset
+        LiveData<List<ListWeatherEntry>> results =  mWeatherDao.getMidDayForecast(new Date(tomorrowMidnightNormalizedUtc), offset, HOUR_IN_MILLIS);
+
+        return results;
 
 
-        return mWeatherDao.getMidDayForecast(new Date(tomorrowMidnightNormalizedUtc), offset, HOUR_IN_MILLIS);
     }
 }

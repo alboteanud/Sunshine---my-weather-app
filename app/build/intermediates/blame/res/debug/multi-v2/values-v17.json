@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\albot\\AndroidStudioProjects\\Sunshine_2019\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v17\\values-v17.xml",
+            "outputFile": "/Users/danalboteanu/AndroidStudioProjects/Sunshine_2019/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-2\\files-2.1\\1f198bab3f2227d292ebe658e369a7dd\\appcompat-1.0.0\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/aa9747316596f0f0572636a0060b838f/appcompat-1.1.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\albot\\.gradle\\caches\\transforms-2\\files-2.1\\8294f9fbf0b571fc1b0ce838fdeda56d\\preference-1.0.0\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/8294f9fbf0b571fc1b0ce838fdeda56d/preference-1.0.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,7,11",
                         "startColumns": "4,4,4",

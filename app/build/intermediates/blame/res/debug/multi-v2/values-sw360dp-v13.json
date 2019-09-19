@@ -11,6 +11,30 @@
                         "startOffsets": "55,127",
                         "endColumns": "71,64",
                         "endOffsets": "122,187"
+                    },
+                    "to": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,242",
+                        "endColumns": "71,64",
+                        "endOffsets": "122,302"
+                    }
+                },
+                {
+                    "source": "/Users/danalboteanu/.gradle/caches/transforms-2/files-2.1/abaa0460fe743d9e1dea52cfeba37c70/material-1.1.0-alpha07/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,109",
+                        "endColumns": "53,60",
+                        "endOffsets": "104,165"
+                    },
+                    "to": {
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "127,181",
+                        "endColumns": "53,60",
+                        "endOffsets": "176,237"
                     }
                 }
             ]

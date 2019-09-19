@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="default_web_client_id" translatable="false">703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com</string>
-    <string name="firebase_database_url" translatable="false">https://sunshine-2019-02.firebaseio.com</string>
-    <string name="gcm_defaultSenderId" translatable="false">703102845257</string>
-    <string name="google_api_key" translatable="false">AIzaSyAT2bhJPoshjjik3hxbsamP7F_bAdBbNsI</string>
-    <string name="google_app_id" translatable="false">1:703102845257:android:9f2e51197c1b15c8</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyAT2bhJPoshjjik3hxbsamP7F_bAdBbNsI</string>
-    <string name="google_storage_bucket" translatable="false">sunshine-2019-02.appspot.com</string>
-    <string name="project_id" translatable="false">sunshine-2019-02</string>
+    <string name="default_web_client_id" translatable="false">728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://sunshine-2019-03.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">728103942717</string>
+    <string name="google_api_key" translatable="false">AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M</string>
+    <string name="google_app_id" translatable="false">1:728103942717:android:d94755f48b121881</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M</string>
+    <string name="google_storage_bucket" translatable="false">sunshine-2019-03.appspot.com</string>
+    <string name="project_id" translatable="false">sunshine-2019-03</string>
 </resources>

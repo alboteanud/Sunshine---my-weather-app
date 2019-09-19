@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.craiovadata.aus.sydney"
+    package="com.craiovadata.android.sunshine.US.CO.Aurora"
     android:versionCode="5"
     android:versionName="1.0" >
 
@@ -127,7 +127,7 @@
 
         <provider
             android:name="com.google.android.gms.ads.MobileAdsInitProvider"
-            android:authorities="com.craiovadata.aus.sydney.mobileadsinitprovider"
+            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.mobileadsinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -172,7 +172,7 @@
 
         <provider
             android:name="com.google.firebase.provider.FirebaseInitProvider"
-            android:authorities="com.craiovadata.aus.sydney.firebaseinitprovider"
+            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.firebaseinitprovider"
             android:exported="false"
             android:initOrder="100" />
 
@@ -182,12 +182,12 @@
 
         <provider
             android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-            android:authorities="com.craiovadata.aus.sydney.lifecycle-process"
+            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.lifecycle-process"
             android:exported="false"
             android:multiprocess="true" />
         <provider
             android:name="com.crashlytics.android.CrashlyticsInitProvider"
-            android:authorities="com.craiovadata.aus.sydney.crashlyticsinitprovider"
+            android:authorities="com.craiovadata.android.sunshine.US.CO.Aurora.crashlyticsinitprovider"
             android:exported="false"
             android:initOrder="90" />
     </application>

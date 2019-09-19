@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "703102845257",
-    "firebase_url": "https://sunshine-2019-02.firebaseio.com",
-    "project_id": "sunshine-2019-02",
-    "storage_bucket": "sunshine-2019-02.appspot.com"
+    "project_number": "728103942717",
+    "firebase_url": "https://sunshine-2019-03.firebaseio.com",
+    "project_id": "sunshine-2019-03",
+    "storage_bucket": "sunshine-2019-03.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:703102845257:android:731a9371fa8d6d33",
+        "mobilesdk_app_id": "1:728103942717:android:5d19862326ea5fa4",
         "android_client_info": {
-          "package_name": "com.craiovadata.android.sunshine.US.CA.LosAngeles"
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SanDiego2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "703102845257-037jgqhvd0ffp2vgrftce2bihfjf9m8n.apps.googleusercontent.com",
+          "client_id": "728103942717-q7dohr2j2sm7ol7b52qomod3545usdav.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.craiovadata.android.sunshine.US.CA.LosAngeles",
-            "certificate_hash": "4d843560e44c0d4ecdcc913ac7f7dfcdacd66a3c"
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SanDiego2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
           }
         },
         {
-          "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAT2bhJPoshjjik3hxbsamP7F_bAdBbNsI"
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
@@ -45,35 +45,857 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:703102845257:android:9f2e51197c1b15c8",
+        "mobilesdk_app_id": "1:728103942717:android:fbb536dca6e56680",
         "android_client_info": {
-          "package_name": "com.craiovadata.aus.sydney"
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SanFrancisco2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "703102845257-2jl9o4ab6kljsha2occvm0tosu3bv5p3.apps.googleusercontent.com",
+          "client_id": "728103942717-amipj2e2g8bdk4171pe9ip9fg6icvr12.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.craiovadata.aus.sydney",
-            "certificate_hash": "4d843560e44c0d4ecdcc913ac7f7dfcdacd66a3c"
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SanFrancisco2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
           }
         },
         {
-          "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAT2bhJPoshjjik3hxbsamP7F_bAdBbNsI"
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "703102845257-3k6q7bogjfk7feuvap47d3eo3pm7gm2j.apps.googleusercontent.com",
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:4cb8746460a12781",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SanJose2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-oso6oam1mv43sbrld3jln3jje07ffj4s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SanJose2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:76ca53cb402f23ed",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SanMateo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-5jpgh01re88tko208pvhjbtm6gt2ikso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SanMateo",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:f92c7c5da24470e3",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SantaAna2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-khf1ce4bc7bhasisutprlplkhb6rm0aa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SantaAna2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:0c90cf82216a0fd7",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SantaClarita2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-ksg451unc2k1gf6gg8larmq2h181pegc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SantaClarita2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:6076709810211a30",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SantaMaria"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-ogh4dl7ou7rkifmntu4p7eltla11mijr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SantaMaria",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:9be3966ef42309bc",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SantaRosa2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-0or74buhr7dk564o6gl3iiumjojcmg84.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SantaRosa2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:fab667935302cff4",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.SimiValley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-f9oss18ikntdbiurpq7rrd85ksirk7js.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.SimiValley",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:20cb03f8cab474a1",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Stockton2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-8u7e94r98816m3snsecnt9s1trbk5gvl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Stockton2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:a06c50e4855d74ea",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Sunnyvale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-e600hk8l6n0dum1h7viggkpunisnhl6c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Sunnyvale",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:4601b7678ecd5b85",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Temecula"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-k62q36qmomced4tc4uh0qg1o4h13f12l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Temecula",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:cb6a0e26638b4ee0",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.ThousandOaks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-b5g25fk3mjh4tqdvh6i40j3fj99lopbl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.ThousandOaks",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:554e82b68e4ebd00",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Torrance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-3ue20fr73oiiol6mksderia49lp77b2h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Torrance",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:a6a056765063ab39",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Torrance2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-4rhgg4dpbf34329mvm78431e53jlb0c5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Torrance2",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:28c592a580f77283",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Vacaville"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-684cd480u5l7uu1rft76dp89dbdtep5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Vacaville",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:bc17412f2cde7657",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Vallejo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-sr38mjg3hjrvqbqm1qdv677su9n0cmhk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Vallejo",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:e179055ef3d6fb80",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Ventura"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-a5c12gvo9lc7s73r0ucrpj0lt50g29rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Ventura",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:b67853c74517304e",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Victorville"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-1qk4tnfncqu86i0grncglf5kjqoi0ljp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Victorville",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:d924a6a45e65a2c9",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Visalia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-mogac1adpq9hau2n3as1ftuov82cha69.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Visalia",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:17343dccef03b0cc",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.Vista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-7vu0c3msm8gfeijo0renf1elpjqechlo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.Vista",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:302a470082487ee2",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.WestCovina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-ldc52fcf6k4frtm4ibvglv6fonf8bnbg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CA.WestCovina",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:93a57db859eadf25",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CO.Arvada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-egqibkaercsut7qaut1bfronl5nquf3c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CO.Arvada",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728103942717:android:d94755f48b121881",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CO.Aurora"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728103942717-ajvnher1d1jj6rbcmqs74nqpo0jsce2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CO.Aurora",
+            "certificate_hash": "4d843560e44c0d4ecdcc913ac7f7dfcdacd66a3c"
+          }
+        },
+        {
+          "client_id": "728103942717-5ef7dlj3m3seblnmevr3utol07mr1u6o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.US.CO.Aurora",
+            "certificate_hash": "6e1f8a3f1df97c6e34f7762255d50dabb8772f7c"
+          }
+        },
+        {
+          "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5ymPo0v6SkSD9VRzJVYWp4Ql-hiK_L5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728103942717-n2a10eakeo8g0d33m3bksc7qgbdm5nda.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

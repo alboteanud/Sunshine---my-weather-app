@@ -15,6 +15,7 @@
  */
 package com.craiovadata.android.sunshine.data.network;
 
+import com.craiovadata.android.sunshine.BuildConfig;
 import com.craiovadata.android.sunshine.data.database.WeatherEntry;
 
 import org.json.JSONArray;
@@ -69,7 +70,7 @@ final class WeatherJsonParser {
     }
 
     // OWM 5days 3 hours
-    private static WeatherEntry[] fromJsonForecast( final JSONObject forecastJson) throws JSONException {
+    private static WeatherEntry[] fromJsonForecast(final JSONObject forecastJson) throws JSONException {
         JSONArray jsonWeatherArray = forecastJson.getJSONArray(OWM_LIST);
         WeatherEntry[] weatherEntries = new WeatherEntry[jsonWeatherArray.length()];
 
@@ -126,7 +127,8 @@ final class WeatherJsonParser {
     }
 
     // OWM current weather
-    private static WeatherEntry[] fromJsonCW(final JSONObject jsonCurrentWeather) throws JSONException {
+//    private static WeatherEntry[] fromJsonCW(final JSONObject jsonCurrentWeather) throws JSONException {
+    private static WeatherEntry fromJsonCW(final JSONObject jsonCurrentWeather) throws JSONException {
 
         JSONObject mainObject = jsonCurrentWeather.getJSONObject(OWM_MAIN);
 
@@ -163,9 +165,15 @@ final class WeatherJsonParser {
         long dateTimeMillis = jsonCurrentWeather.getLong(OWM_DAY_TIME) * 1000;
         Date wDate = new Date(dateTimeMillis);
 
-        WeatherEntry weather = new WeatherEntry(weatherId, wDate, temp,
-                humidity, pressure, windSpeed, windDirection, iconCode, 1, lat, lon);
-        return new WeatherEntry[]{weather};
+
+        if (BuildConfig.DEBUG) {
+            String cityName = jsonCurrentWeather.getString("name");
+            return new WeatherEntry(weatherId, wDate, temp, humidity, pressure, windSpeed, windDirection, iconCode, 1, cityName, lat, lon);
+        }
+
+        return new WeatherEntry(weatherId, wDate, temp, humidity, pressure, windSpeed, windDirection, iconCode, 1, lat, lon);
+
+
     }
 
     @Nullable
@@ -192,9 +200,9 @@ final class WeatherJsonParser {
             return null;
         }
 
-        WeatherEntry[] weatherForecast = fromJsonCW(forecastJson);
+        WeatherEntry weather = fromJsonCW(forecastJson);
 
-        return new WeatherResponse(weatherForecast);
+        return new WeatherResponse(new WeatherEntry[]{weather});
     }
 
 

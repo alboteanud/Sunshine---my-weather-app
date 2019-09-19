@@ -31,10 +31,10 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weatherId` INTEGER NOT NULL, `date` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weatherId` INTEGER NOT NULL, `date` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL, `cityName` TEXT NOT NULL)");
         _db.execSQL("CREATE UNIQUE INDEX `index_weather_date` ON `weather` (`date`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a0e47c89acff45a206c7d49a61d1f173')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6fec9c574db9909ff8381c1e1c97a18a')");
       }
 
       @Override
@@ -73,7 +73,7 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
 
       @Override
       protected void validateMigration(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsWeather = new HashMap<String, TableInfo.Column>(12);
+        final HashMap<String, TableInfo.Column> _columnsWeather = new HashMap<String, TableInfo.Column>(13);
         _columnsWeather.put("id", new TableInfo.Column("id", "INTEGER", true, 1));
         _columnsWeather.put("weatherId", new TableInfo.Column("weatherId", "INTEGER", true, 0));
         _columnsWeather.put("date", new TableInfo.Column("date", "INTEGER", true, 0));
@@ -86,6 +86,7 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
         _columnsWeather.put("lon", new TableInfo.Column("lon", "REAL", true, 0));
         _columnsWeather.put("iconCodeOWM", new TableInfo.Column("iconCodeOWM", "TEXT", true, 0));
         _columnsWeather.put("isCurrentWeather", new TableInfo.Column("isCurrentWeather", "INTEGER", true, 0));
+        _columnsWeather.put("cityName", new TableInfo.Column("cityName", "TEXT", true, 0));
         final HashSet<TableInfo.ForeignKey> _foreignKeysWeather = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesWeather = new HashSet<TableInfo.Index>(1);
         _indicesWeather.add(new TableInfo.Index("index_weather_date", true, Arrays.asList("date")));
@@ -97,7 +98,7 @@ public final class SunshineDatabase_Impl extends SunshineDatabase {
                   + " Found:\n" + _existingWeather);
         }
       }
-    }, "a0e47c89acff45a206c7d49a61d1f173", "b8c8a3b62e3ca107af1981e949507877");
+    }, "6fec9c574db9909ff8381c1e1c97a18a", "a3d1b7277f2d576c12a0fe5ce41c0820");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

@@ -1,13 +1,10 @@
 package com.craiovadata.android.sunshine.ui.news
 
-import android.content.res.ColorStateList
 import android.os.Bundle
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NavUtils
 import com.craiovadata.android.sunshine.R
 import kotlinx.android.synthetic.main.activity_news.*
-
 import kotlinx.android.synthetic.main.content_news.*
 
 class NewsActivity : AppCompatActivity() {
@@ -20,13 +17,13 @@ class NewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
-//        setSupportActionBar(toolbar)
+        setSupportActionBar(toolbar)
 //
 //        fab.setOnClickListener { view ->
 //            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                    .setAction("Action", null).show()
 //        }
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         webview.loadUrl(urlNews)
         webview.webViewClient = WebViewClient()

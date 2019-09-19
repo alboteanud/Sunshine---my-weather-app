@@ -76,10 +76,10 @@ public interface WeatherDao {
     LiveData<List<WeatherEntry>> getAllEntries();
 
 
-    @Query("SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowCityNoonUtc " +
+    @Query("SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowMidnightNormalizedUtc " +
             "AND (date + :offset) % (24 * :hourInMillis) " +
             "BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
-    LiveData<List<ListWeatherEntry>> getMidDayForecast(Date tomorrowCityNoonUtc, long offset, long hourInMillis);
+    LiveData<List<ListWeatherEntry>> getMidDayForecast(Date tomorrowMidnightNormalizedUtc, long offset, long hourInMillis);
 
 
 }
