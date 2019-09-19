@@ -51,6 +51,13 @@ release/
 build/
 app/build/
 
+.gradle
+/local.properties
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
 # Local configuration file (sdk path, etc)
 local.properties
 
