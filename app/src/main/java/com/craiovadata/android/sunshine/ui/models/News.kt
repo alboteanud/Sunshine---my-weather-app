@@ -16,7 +16,6 @@ data class News(val queryString: String)
 
         @JvmStatic
         fun bindNewsToUI(itemView: View, listener: CardsAdapter.Listener) {
-
 //            itemView.cardNews.setOnClickListener{
             itemView.setOnClickListener{
                 listener.onNewsClicked(it)
