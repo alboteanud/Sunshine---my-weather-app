@@ -2,7 +2,6 @@ package com.craiovadata.android.sunshine.ui.models
 
 import android.view.LayoutInflater
 import android.view.View
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils

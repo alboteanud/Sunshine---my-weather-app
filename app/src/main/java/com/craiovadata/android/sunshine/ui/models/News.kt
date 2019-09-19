@@ -6,7 +6,7 @@ import android.util.Log
 import android.view.View
 import android.webkit.WebViewClient
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
-import kotlinx.android.synthetic.main.news_card.view.*
+//import kotlinx.android.synthetic.main.news_card.view.*
 import java.util.*
 
 data class News(val queryString: String)
@@ -17,7 +17,8 @@ data class News(val queryString: String)
         @JvmStatic
         fun bindNewsToUI(itemView: View, listener: CardsAdapter.Listener) {
 
-            itemView.cardNews.setOnClickListener{
+//            itemView.cardNews.setOnClickListener{
+            itemView.setOnClickListener{
                 listener.onNewsClicked(it)
             }
         }

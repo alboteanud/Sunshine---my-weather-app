@@ -8,10 +8,10 @@ import kotlinx.android.synthetic.main.activity_news.*
 import kotlinx.android.synthetic.main.content_news.*
 
 class NewsActivity : AppCompatActivity() {
-//    private val urlNews = "https://news.google.com/?hl=ro&gl=RO&ceid=RO:ro"
+    private val urlNews = "https://news.google.com"
 //    private val urlNews = "https://news.google.com/foryou?hl=en&gl=US&ceid=US:en"
 //    private val urlNews = "https://news.google.com/foryou?q=craiova"
-    private val urlNews = "https://news.google.com/foryou"
+//    private val urlNews = "https://news.google.com/foryou"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
