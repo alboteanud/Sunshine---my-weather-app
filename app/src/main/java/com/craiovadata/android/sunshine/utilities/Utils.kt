@@ -16,7 +16,7 @@ import java.util.regex.Pattern
 
 object Utils {
 
-    private val images = intArrayOf(
+     private val images = intArrayOf(
             R.drawable.c1,
             R.drawable.c2,
             R.drawable.stabil1,
@@ -28,8 +28,13 @@ object Utils {
     )
 
     @JvmStatic
-    fun getCityTimeZone(): TimeZone? {
+    fun getCityTimeZone(): TimeZone {
         val tz = getTimeZone(TIME_ZONE)
+        if(BuildConfig.DEBUG){
+            if (tz.id == "GMT"){
+                throw IllegalArgumentException("timeZone probably wrong: GMT")
+            }
+        }
         return tz
     }
 
@@ -62,9 +67,5 @@ object Utils {
         Linkify.addLinks(textView, Pattern.compile(pattern), urlString, { _, _, _ -> true }, { _, _ -> "" })
     }
 
-
-    fun addLinks(textView: TextView, pattern: String, urlString: String) {
-        Linkify.addLinks(textView, Pattern.compile(pattern), urlString, { _, _, _ -> true }, { _, _ -> "" })
-    }
 
 }

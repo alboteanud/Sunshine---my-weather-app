@@ -45,11 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.policy.PolicyActivity"
-            android:label="@string/label_screen_policy"
-            android:parentActivityName=".ui.main.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" /> <!-- This is required for immediate syncs -->
+        <!-- This is required for immediate syncs -->
         <service
             android:name=".data.network.SyncIntentService"
             android:exported="false" />

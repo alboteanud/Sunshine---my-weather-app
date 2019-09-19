@@ -99,7 +99,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         }
     }
 
-
     private fun goToPrivacyPolicy() {
         val myLink = Uri.parse(getString(R.string.link_privacy_policy))
         val intent = Intent(Intent.ACTION_VIEW, myLink)
@@ -121,9 +120,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             super.onItemsAdded(recyclerView, positionStart, itemCount)
             scrollToPosition(0)
         }
-
     }
-
+    
     private fun setBackgroundDelayed() {
 //        handler.postDelayed({
             val resId = Utils.getBackResId()
