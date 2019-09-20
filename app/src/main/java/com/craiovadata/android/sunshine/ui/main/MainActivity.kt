@@ -14,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
@@ -22,6 +21,8 @@ import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
+//import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.Utils
@@ -59,8 +60,12 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 //            getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
         loadAdMedRectangle() // before observers
 
-        val adRequest = AdRequest.Builder().build()
+//        if (!BuildConfig.DEBUG){
+        val adRequest = AdRequest.Builder()
+            .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
+            .build()
         bannerAdView.loadAd(adRequest)
+//        }
 
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
@@ -121,11 +126,11 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             scrollToPosition(0)
         }
     }
-    
+
     private fun setBackgroundDelayed() {
 //        handler.postDelayed({
-            val resId = Utils.getBackResId()
-            backImage.setImageResource(resId)
+        val resId = Utils.getBackResId()
+        backImage.setImageResource(resId)
 //        }, 1500)
     }
 
@@ -137,7 +142,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 currentWeatherEntry = entries[0]
                 updateAdapter()
                 logDBvalues(this, mutableListOf(), entries)
-                if (BuildConfig.DEBUG){
+                if (BuildConfig.DEBUG) {
                     title = currentWeatherEntry?.cityName ?: "not found"
                 }
             } else showLoading()
@@ -180,7 +185,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 News("")
             )
         )
-        adViewMedRectangle?.let { updates.add(4, Ads(adViewMedRectangle)) }
+        adViewMedRectangle?.let { updates.add(updates.size, Ads(adViewMedRectangle)) }
         mAdapter.setUpdates(updates)
     }
 
@@ -188,7 +193,11 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         val newAdView = AdView(this)
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
+//            if(BuildConfig.DEBUG){   adUnitId = "ca-app-pub-3940256099942544/6300978111"  // test id
+//            } else
             adUnitId = getString(R.string.admob_med_rectangle_id)
+
+
             adListener = object : AdListener() {
 
                 override fun onAdLoaded() {
@@ -199,8 +208,10 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 }
             }
         }
-
-        adViewMedRectangle?.loadAd(AdRequest.Builder().build())
+        val adRequest = AdRequest.Builder()
+            .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
+            .build()
+        newAdView.loadAd(adRequest)
     }
 
     override fun onResume() {
@@ -255,7 +266,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
 
     override fun onNewsClicked(view: View) {
-startActivity(Intent(this, NewsActivity::class.java))
+        startActivity(Intent(this, NewsActivity::class.java))
     }
 
 

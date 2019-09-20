@@ -18,10 +18,10 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.US.CO.Aurora'
-        minSdkVersion 24
+        applicationId 'com.craiovadata.android.sunshine.US.CO.Boulder'
+        minSdkVersion 21
         targetSdkVersion 29
-        versionCode 5
+        versionCode 6
         versionName '1.0'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         // Required to use Java 8.

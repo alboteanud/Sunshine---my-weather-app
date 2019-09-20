@@ -65,7 +65,7 @@ final class SunshineDateUtils {
         long utcNowMillis = System.currentTimeMillis();
 
         /*
-         * This MyTimeZone represents the device's current time zone. It provides us with a means
+         * This CityTimeZone represents the device's current time zone. It provides us with a means
          * of acquiring the offset for local time from a UTC time stamp.
          */
         TimeZone currentTimeZone = TimeZone.getDefault();

@@ -1,10 +1,9 @@
 package com.craiovadata.android.sunshine.utilities
 
-import android.content.Context
 import android.text.util.Linkify
 import android.widget.TextView
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.MyTimeZone.TIME_ZONE
+import com.craiovadata.android.sunshine.CityTimeZone.TIME_ZONE
 import com.craiovadata.android.sunshine.R
 import java.text.SimpleDateFormat
 import java.util.*
@@ -55,9 +54,12 @@ object Utils {
     }
 
     fun getBackResId(): Int {
+        if (BuildConfig.DEBUG) {
+            val imgNo = Random().nextInt(2)
+            return images[imgNo]
+        }
         val now = System.currentTimeMillis()
-        var hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
-        if (BuildConfig.DEBUG) hoursSinceEpoch = TimeUnit.MILLISECONDS.toMinutes(now)
+        val hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
         val n = (hoursSinceEpoch % images.size).toInt()
         return images[n]
     }
