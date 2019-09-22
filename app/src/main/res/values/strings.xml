@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Boulder</string>
-    <string name="owm_city_id" translatable="false">5574991</string>   <!-- city id from OpenWeatherMap. 680332 - Craiova.  http://bulk.openweathermap.org/sample/  -->
+    <string name="app_name" translatable="false">Pittsburgh</string>
+    <string name="owm_city_id" translatable="false">5206379</string>   <!-- Craiova 680332  http://bulk.openweathermap.org/sample/  -->
 
-<!--    todo schimba:
-        pozele c1, c2
+<!--    todo de schimbat:
+        poza c1
         TIME_ZONE - in CityTimeZone
         OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
 -->

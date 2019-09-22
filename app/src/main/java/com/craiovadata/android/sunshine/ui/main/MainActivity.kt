@@ -10,6 +10,7 @@ import android.os.Handler
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -60,12 +61,12 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 //            getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
         loadAdMedRectangle() // before observers
 
-//        if (!BuildConfig.DEBUG){
-        val adRequest = AdRequest.Builder()
-            .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
-            .build()
-        bannerAdView.loadAd(adRequest)
-//        }
+            val adRequest = AdRequest.Builder()
+                .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
+                .build()
+//            if (!BuildConfig.DEBUG)
+            bannerAdView.loadAd(adRequest)
+
 
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
@@ -143,7 +144,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 updateAdapter()
                 logDBvalues(this, mutableListOf(), entries)
                 if (BuildConfig.DEBUG) {
-                    title = currentWeatherEntry?.cityName ?: "not found"
+                    textCity.text = currentWeatherEntry?.cityName ?: "not found"
                 }
             } else showLoading()
         })

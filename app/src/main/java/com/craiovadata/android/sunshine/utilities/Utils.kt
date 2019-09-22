@@ -17,7 +17,6 @@ object Utils {
 
      private val images = intArrayOf(
             R.drawable.c1,
-            R.drawable.c2,
             R.drawable.stabil1,
             R.drawable.stabil2,
             R.drawable.stabil3,
@@ -32,6 +31,7 @@ object Utils {
         if(BuildConfig.DEBUG){
             if (tz.id == "GMT"){
                 throw IllegalArgumentException("timeZone probably wrong: GMT")
+
             }
         }
         return tz
