@@ -4,8 +4,7 @@
     <string name="app_name" translatable="false">Pittsburgh</string>
     <string name="owm_city_id" translatable="false">5206379</string>   <!-- Craiova 680332  http://bulk.openweathermap.org/sample/  -->
 
-<!--    todo de schimbat:
-        poza c1
+<!--    de schimbat poza c1
         TIME_ZONE - in CityTimeZone
         OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
 -->
