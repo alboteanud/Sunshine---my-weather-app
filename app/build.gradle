@@ -18,7 +18,7 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.US.PA.Pittsburgh'
+        applicationId 'com.craiovadata.android.sunshine.US.PA.Philadelphia'
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 5
