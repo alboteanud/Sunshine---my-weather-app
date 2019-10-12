@@ -61,12 +61,12 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 //            getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
         loadAdMedRectangle() // before observers
 
-            val adRequest = AdRequest.Builder()
-                .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
-                .build()
+        val adRequest = AdRequest.Builder()
+            .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
+            .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
+            .build()
 //            if (!BuildConfig.DEBUG)
-            bannerAdView.loadAd(adRequest)
-
+        bannerAdView.loadAd(adRequest)
 
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
@@ -116,7 +116,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         if (isIntentSafe)
             startActivity(intent)
     }
-
 
     private class MyLinearLayoutManager(private val context: Context) :
         LinearLayoutManager(context) {
@@ -194,10 +193,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         val newAdView = AdView(this)
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
-//            if(BuildConfig.DEBUG){   adUnitId = "ca-app-pub-3940256099942544/6300978111"  // test id
-//            } else
-            adUnitId = getString(R.string.admob_med_rectangle_id)
-
+            adUnitId = if (BuildConfig.DEBUG) ads_test_id
+            else getString(R.string.admob_med_rectangle_id)
 
             adListener = object : AdListener() {
 
@@ -211,11 +208,13 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         }
         val adRequest = AdRequest.Builder()
             .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
+            .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
             .build()
         newAdView.loadAd(adRequest)
     }
 
     override fun onResume() {
+        // resetInitializedCW() in onStop
         InjectorUtils.provideRepository(this).initializeDataCW()
         adViewMedRectangle?.resume()
         setBackgroundDelayed()

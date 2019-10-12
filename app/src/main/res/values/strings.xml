@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Philadelphia</string>
-    <string name="owm_city_id" translatable="false">4560349</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
+    <string name="app_name" translatable="false">Providence</string>
+    <string name="owm_city_id" translatable="false">5224151</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
 
 <!--    c1.jpg
         TIME_ZONE - in CityTimeZone
         OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
+
 -->
+
+<!--    Nota: upload_key_2 - ... 38.CE-->
     <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8970065901</string>
     <string name="admob_med_rectangle_id">ca-app-pub-3931793949981809/2213085867</string>  <!--S Sept2019 - med rect-->
     <string name="admob_banner_id">ca-app-pub-3931793949981809/7249790125</string>      <!--S Sept2019 b1-->

@@ -127,7 +127,8 @@ public class RepositoryWeather {
 
         mExecutors.diskIO().execute(() -> {
             Log.d(LOG_TAG, "execute initDataCurrentWeather");
-            if (isFetchNeededCW()) {
+            boolean isFetchNeeded = isFetchNeededCW();
+            if (isFetchNeeded) {
                 startFetchCWeatherService();
             }
         });
@@ -191,7 +192,7 @@ public class RepositoryWeather {
     }
 
     private boolean isFetchNeededCW() {
-        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 30;
+        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 10;
         Date dateRecently = new Date(recentlyMills);
         int count = mWeatherDao.countCurrentWeather(dateRecently);
 //        if (BuildConfig.DEBUG) return true;

@@ -100,13 +100,13 @@ public class NetworkDataSource {
     public void startFetchWeatherService() {
         Intent intentToFetch = new Intent(context, SyncIntentService.class);
         context.startService(intentToFetch);
-        Log.d(LOG_TAG, "Service created");
+        Log.d(LOG_TAG, "Service created - fetching weather by days");
     }
 
     public void startFetchCurrentWeatherService() {
         Intent intentToFetch = new Intent(context, SyncIntentServiceCW.class);
         context.startService(intentToFetch);
-        Log.d(LOG_TAG, "Service created - current weather");
+        Log.e(LOG_TAG, "Service created - getting current weather");
     }
 
     /**
