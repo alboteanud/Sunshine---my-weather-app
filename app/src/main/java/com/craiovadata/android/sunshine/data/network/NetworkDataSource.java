@@ -16,10 +16,12 @@
 package com.craiovadata.android.sunshine.data.network;
 
 import android.content.Context;
+import android.content.Entity;
 import android.content.Intent;
 import android.util.Log;
 
 import com.craiovadata.android.sunshine.AppExecutors;
+import com.craiovadata.android.sunshine.BuildConfig;
 import com.craiovadata.android.sunshine.data.database.WeatherEntry;
 import com.craiovadata.android.sunshine.utilities.LogUtils;
 import com.craiovadata.android.sunshine.utilities.NotifUtils;
@@ -72,7 +74,7 @@ public class NetworkDataSource {
         mDownloadedCurrentWeather = new MutableLiveData<>();
     }
 
-    public LiveData<WeatherEntry[]> getCurrentWeatherForecasts() {
+    public LiveData<WeatherEntry[]> getForecasts() {
         return mDownloadedWeatherForecasts;
     }
 
@@ -165,7 +167,7 @@ public class NetworkDataSource {
      * Gets the newest weather
      */
     void fetchWeather() {
-        Log.d(LOG_TAG, "Fetch weather started");
+        Log.d(LOG_TAG, "Fetch weather days started");
         mExecutors.networkIO().execute(() -> {
             try {
 
@@ -180,7 +182,7 @@ public class NetworkDataSource {
 
                 // Parse the JSON into a list of weather forecasts
                 WeatherResponse response = new WeatherJsonParser().parseForecastWeather(jsonWeatherResponse);
-                Log.d(LOG_TAG, "JSON Parsing finished");
+                Log.d(LOG_TAG, "weather days -JSON Parsing finished");
 
 
                 // As long as there are weather forecasts, update the LiveData storing the most recent
@@ -190,8 +192,8 @@ public class NetworkDataSource {
                     mDownloadedWeatherForecasts.postValue(response.getWeatherForecast());
                     NotifUtils.notifyIfNeeded(context, response.getWeatherForecast()[0]);
 
-                    Log.d(LOG_TAG, "JSON not null and has " + response.getWeatherForecast().length + " values");
-                    LogUtils.logResponse(LOG_TAG, response.getWeatherForecast()[0]);
+                    Log.d(LOG_TAG, "weather days - JSON not null and has " + response.getWeatherForecast().length + " values");
+//                    LogUtils.logResponse(LOG_TAG, response.getWeatherForecast()[0]);
                     LogUtils.saveDateToPrefs(context);
                 }
             } catch (Exception e) {
@@ -202,7 +204,7 @@ public class NetworkDataSource {
     }
 
     void fetchCurrentWeather() {
-        Log.d(LOG_TAG, "Fetch current weather started");
+        Log.e(LOG_TAG, "Fetch current weather started");
         mExecutors.networkIO().execute(() -> {
             try {
 
@@ -219,7 +221,7 @@ public class NetworkDataSource {
                 // Parse the JSON into a list of weather forecasts
 //                WeatherResponse response = new WeatherJsonParser().parse_(jsonWeatherResponse);       // for test server
                 WeatherResponse response = new WeatherJsonParser().parseCurrentWeather(jsonWeatherResponse);
-                Log.d(LOG_TAG, "JSON Parsing finished Current Weather");
+                Log.e(LOG_TAG, "JSON Parsing finished Current Weather");
 
 
                 // As long as there are weather forecasts, update the LiveData storing the most recent
@@ -230,8 +232,12 @@ public class NetworkDataSource {
                     mDownloadedCurrentWeather.postValue(entries);
                     // Will eventually do something with the downloaded data
 
-                    Log.d(LOG_TAG, "CurrentWeather - JSON not null and has " + entries.length + " values");
-                    LogUtils.logResponse(LOG_TAG, entries[0]);
+                    if (BuildConfig.DEBUG){
+                        WeatherEntry entry = entries[0];
+                        Log.e(LOG_TAG, String.format("parsed CurrentWeather - temp %1.0f  %s ",
+                                entry.getTemperature(),
+                                entry.getDate()));
+                    }
                 }
             } catch (Exception e) {
                 // Server probably invalid

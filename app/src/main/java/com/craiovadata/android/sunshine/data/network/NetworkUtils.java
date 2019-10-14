@@ -94,7 +94,7 @@ final class NetworkUtils {
 
         try {
             URL weatherQueryUrl = new URL(weatherQueryUri.toString());
-            Log.v(TAG, "URL NOW current weather: " + weatherQueryUrl);
+            Log.v(TAG, "URL current weather: " + weatherQueryUrl);
             return weatherQueryUrl;
         } catch (MalformedURLException e) {
             e.printStackTrace();

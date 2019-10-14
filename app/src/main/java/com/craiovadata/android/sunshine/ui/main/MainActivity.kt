@@ -12,6 +12,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat.startActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -26,6 +27,7 @@ import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
+import com.craiovadata.android.sunshine.utilities.LogUtils.logEntry
 import com.craiovadata.android.sunshine.utilities.Utils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -46,9 +48,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        setSupportActionBar(
-            toolbar
-        )
+        setSupportActionBar(toolbar)
         recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = MyLinearLayoutManager(this@MainActivity)
@@ -65,15 +65,14 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
             .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
             .build()
-//            if (!BuildConfig.DEBUG)
         bannerAdView.loadAd(adRequest)
 
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
         val viewModel = ViewModelProviders.of(this, factory).get(MainActivityViewModel::class.java)
 
-        InjectorUtils.provideRepository(this).initializeDataCW()
-        InjectorUtils.provideRepository(this).initializeData()
+//        InjectorUtils.provideRepository(this).initializeDataCW(this)
+//        InjectorUtils.provideRepository(this).initializeData()
 
         observeCurrentWeather(viewModel)
         observeForecastData(viewModel)
@@ -98,7 +97,10 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 return true
             }
             R.id.action_privacy_policy -> {
-                goToPrivacyPolicy()
+                if (BuildConfig.DEBUG) {
+                    InjectorUtils.provideRepository(this).forceInitializeDataCW()
+                } else
+                    goToPrivacyPolicy()
                 return true
             }
             else -> super.onOptionsItemSelected(item)
@@ -141,7 +143,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 showRecyclerView()
                 currentWeatherEntry = entries[0]
                 updateAdapter()
-                logDBvalues(this, mutableListOf(), entries)
+                logEntry(this, entries[0])
                 if (BuildConfig.DEBUG) {
                     textCity.text = currentWeatherEntry?.cityName ?: "not found"
                 }
@@ -156,7 +158,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                 showRecyclerView()
                 graphWeatherEntries = listEntries
                 updateAdapter()
-                logDBvalues(this, listEntries, mutableListOf())
+//                logDBvalues(this, listEntries, mutableListOf())
             }
         })
     }
@@ -166,7 +168,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             if (listEntries != null && listEntries.size > 0) {
                 multiDayEntries = listEntries
                 updateAdapter()
-                logDBvalues(this, listEntries, mutableListOf())
+//                logDBvalues(this, listEntries, mutableListOf())
             }
         })
     }
@@ -213,15 +215,24 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         newAdView.loadAd(adRequest)
     }
 
-    override fun onResume() {
+    override fun onRestart() {
+        super.onRestart()
         // resetInitializedCW() in onStop
-        InjectorUtils.provideRepository(this).initializeDataCW()
+        val repo = InjectorUtils.provideRepository(this)
+        repo.initializeDataCW(this)
+//        repo.
+
+    }
+
+    override fun onResume() {
+
         adViewMedRectangle?.resume()
         setBackgroundDelayed()
         super.onResume()
     }
 
     override fun onPause() {
+        InjectorUtils.provideRepository(this).resetInitializedCW()
         adViewMedRectangle?.pause()
         super.onPause()
     }

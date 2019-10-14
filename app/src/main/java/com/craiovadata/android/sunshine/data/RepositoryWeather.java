@@ -16,10 +16,13 @@
 
 package com.craiovadata.android.sunshine.data;
 
+import android.content.Context;
 import android.text.format.DateUtils;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.craiovadata.android.sunshine.AppExecutors;
+import com.craiovadata.android.sunshine.BuildConfig;
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry;
 import com.craiovadata.android.sunshine.data.database.WeatherDao;
 import com.craiovadata.android.sunshine.data.database.WeatherEntry;
@@ -60,18 +63,18 @@ public class RepositoryWeather {
         mNetworkDataSource = networkDataSource;
         mExecutors = executors;
 
-        LiveData<WeatherEntry[]> networkData = mNetworkDataSource.getCurrentWeatherForecasts();
-        networkData.observeForever(newForecastsFromNetwork -> {
-            mExecutors.diskIO().execute(() -> {
-                // Deletes old historical data
-                deleteOldData();
-                Log.d(LOG_TAG, "Old weather deleted");
-                // Insert our new weather data into Sunshine's database
-                mWeatherDao.bulkInsert(newForecastsFromNetwork);
-                Log.d(LOG_TAG, "New values inserted.");
+        LiveData<WeatherEntry[]> networkData = mNetworkDataSource.getForecasts();
+        networkData.observeForever(newForecastsFromNetwork ->
+                mExecutors.diskIO().execute(() -> {
+                    // Deletes old historical data
+                    deleteOldData();
+                    Log.d(LOG_TAG, "Old weather deleted");
+                    // Insert our new weather data into Sunshine's database
+                    mWeatherDao.bulkInsert(newForecastsFromNetwork);
+                    Log.d(LOG_TAG, "New values inserted.");
 
-            });
-        });
+                })
+        );
 
         LiveData<WeatherEntry[]> networkDataCW = mNetworkDataSource.getCurrentWeather();
         networkDataCW.observeForever(newDataFromNetwork -> {
@@ -85,7 +88,7 @@ public class RepositoryWeather {
 
     public synchronized static RepositoryWeather getInstance(
             WeatherDao weatherDao, NetworkDataSource networkDataSource,
-           AppExecutors executors) {
+            AppExecutors executors) {
         Log.d(LOG_TAG, "Getting the repository");
         if (sInstance == null) {
             synchronized (LOCK) {
@@ -114,15 +117,49 @@ public class RepositoryWeather {
 
         mExecutors.diskIO().execute(() -> {
             Log.d(LOG_TAG, "execute initData");
-            if (isFetchNeeded()) {
+            if (isFetchNeeded())
                 startFetchWeatherService();
-            }
         });
-
     }
 
-    public void initializeDataCW() {
-        if (mInitializedCW) return;
+    private void makeToast(Context context, String msg) {
+        if (!BuildConfig.DEBUG) return;
+        mExecutors.mainThread().execute(() -> {
+            Toast.makeText(context, msg, Toast.LENGTH_LONG).show();
+        });
+    }
+
+    // for test. Contains Toast
+    public void initializeDataCW(Context context) {
+
+        if (mInitializedCW) {
+            makeToast(context, "initialized = true. return");
+            return;
+        }
+        mInitializedCW = true;
+
+        mExecutors.diskIO().execute(() -> {
+            Log.d(LOG_TAG, "execute initDataCurrentWeather");
+            boolean isFetchNeeded = isFetchNeededCW();
+            makeToast(context, "isFetchNeeded = " + isFetchNeeded);
+            if (isFetchNeeded) {
+                startFetchCWeatherService();
+            }
+        });
+    }
+
+    public void forceInitializeDataCW() {
+        mExecutors.diskIO().execute(() -> {
+            Log.e(LOG_TAG, "force execute initDataCurrentWeather");
+            startFetchCWeatherService();
+        });
+    }
+
+    private void initializeDataCW() {
+
+        if (mInitializedCW) {
+            return;
+        }
         mInitializedCW = true;
 
         mExecutors.diskIO().execute(() -> {
@@ -154,19 +191,20 @@ public class RepositoryWeather {
         long nowMills = System.currentTimeMillis();
         Date nowDate = new Date(nowMills);
 
-        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * 30;
+        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * delayCurrentWeather;
         Date recentDate = new Date(recentlyMills);
-
         return mWeatherDao.getCurrentWeather(nowDate, recentDate);
     }
 
- public List<WeatherEntry> getCurrentWeatherList() {
-//        initializeDataCW();
+    private static final int delayCurrentWeather = 10;
+
+    public List<WeatherEntry> getCurrentWeatherList() {
+        initializeDataCW();
 
         long nowMills = System.currentTimeMillis();
         Date nowDate = new Date(nowMills);
 
-        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * 30;
+        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * delayCurrentWeather;
         Date recentDate = new Date(recentlyMills);
 
         return mWeatherDao.getCurrentWeatherList(nowDate, recentDate);
@@ -192,10 +230,8 @@ public class RepositoryWeather {
     }
 
     private boolean isFetchNeededCW() {
-        long recentlyMills = System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 10;
-        Date dateRecently = new Date(recentlyMills);
+        Date dateRecently = new Date(System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * delayCurrentWeather);
         int count = mWeatherDao.countCurrentWeather(dateRecently);
-//        if (BuildConfig.DEBUG) return true;
         return count <= 0;
     }
 
@@ -218,7 +254,7 @@ public class RepositoryWeather {
         long tomorrowMidnightNormalizedUtc = (daysSinceEpoch + 1) * DAY_IN_MILLIS;
 
 //        long tomorrowCityNoonUtc = tomorrowMidnightNormalizedUtc + 10 * HOUR_IN_MILLIS + offset
-        LiveData<List<ListWeatherEntry>> results =  mWeatherDao.getMidDayForecast(new Date(tomorrowMidnightNormalizedUtc), offset, HOUR_IN_MILLIS);
+        LiveData<List<ListWeatherEntry>> results = mWeatherDao.getMidDayForecast(new Date(tomorrowMidnightNormalizedUtc), offset, HOUR_IN_MILLIS);
 
         return results;
 

@@ -27,7 +27,7 @@ class MyAppWidgetProvider : AppWidgetProvider() {
 
                 val currentWeatherEntry = currentWeather[0]
                 updateWidgets(context, appWidgetManager, appWidgetIds, currentWeatherEntry)
-                            logDBvalues(context, mutableListOf(), currentWeather)
+//                            logDBvalues(context, mutableListOf(), currentWeather)
             } else {
                 //            showLoading()
             }

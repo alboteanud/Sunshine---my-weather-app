@@ -36,12 +36,13 @@ object LogUtils {
 
     @JvmStatic
     fun logEntry(context: Context, entry: WeatherEntry) {
+        if (!BuildConfig.DEBUG) return
         val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM HH:mm")
         val date = simpleDateFormat.format(entry.date.time)
         val temperature = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
         val wind = SunshineWeatherUtils.getFormattedWind(context, entry.wind, entry.degrees)
         Log.d(MainActivity.TAG, "$date  $temperature isCW-${entry.isCurrentWeather} " +
-                "id-${entry.id} wind-$wind ")
+                "id-${entry.id} ")
     }
 
     @JvmStatic
@@ -51,12 +52,12 @@ object LogUtils {
         forecastEntries.forEach {
             val date = simpleDateFormat.format(it.date.time)
             val temperature = SunshineWeatherUtils.formatTemperature(context, it.temperature)
-            Log.d("tag", "forecastEntry  $date $temperature")
+            Log.d("LOG_UTILS", "forecastEntry  $date $temperature")
         }
         cwEntries.forEach {
             val date = simpleDateFormat.format(it.date.time)
             val temperature = SunshineWeatherUtils.formatTemperature(context, it.temperature)
-            Log.d("tag", "cw entry $date $temperature")
+            Log.d("LOG_UTILS", "cw entry $date $temperature")
         }
     }
 

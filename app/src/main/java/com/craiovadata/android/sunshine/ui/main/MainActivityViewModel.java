@@ -25,6 +25,8 @@ public class MainActivityViewModel extends ViewModel {
         currentWeather = repository.getCurrentWeather();
     }
 
+
+
     public LiveData<List<ListWeatherEntry>> getNextHoursWeather() {
         return nextHoursWeather;
     }
