@@ -64,9 +64,14 @@ public interface WeatherDao {
     @Query("SELECT * FROM weather WHERE date  >= :recentlyDate " +
             "ORDER BY isCurrentWeather DESC, ABS(:nowDate - date) ASC " +
             "LIMIT 1")
-    LiveData<List<WeatherEntry>> getCurrentWeather(Date nowDate, Date recentlyDate);
+    LiveData<List<WeatherEntry>> getCurrentWeather_old(Date nowDate, Date recentlyDate);
 
- @Query("SELECT * FROM weather WHERE date  >= :recentlyDate " +
+    @Query("SELECT * FROM weather WHERE date  >= :recentlyDate " +
+            "ORDER BY isCurrentWeather DESC, date ASC " +
+            "LIMIT 1")
+    LiveData<List<WeatherEntry>> getCurrentWeather(Date recentlyDate);
+
+    @Query("SELECT * FROM weather WHERE date  >= :recentlyDate " +
             "ORDER BY isCurrentWeather DESC, ABS(:nowDate - date) ASC " +
             "LIMIT 1")
     List<WeatherEntry> getCurrentWeatherList(Date nowDate, Date recentlyDate);

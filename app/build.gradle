@@ -78,7 +78,7 @@ dependencies {
 
     implementation "com.github.bumptech.glide:glide:$glide_version"
     annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
-//    kapt "com.github.bumptech.glide:compiler:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
 
     implementation 'com.google.android.gms:play-services-ads:18.2.0'
     implementation "androidx.cardview:cardview:$support_version"

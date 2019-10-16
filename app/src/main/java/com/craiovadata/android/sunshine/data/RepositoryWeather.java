@@ -37,6 +37,7 @@ import androidx.lifecycle.LiveData;
 
 import static android.text.format.DateUtils.DAY_IN_MILLIS;
 import static android.text.format.DateUtils.HOUR_IN_MILLIS;
+import static java.lang.System.currentTimeMillis;
 
 //import com.craiovadata.android.sunshine.AppExecutors;
 
@@ -180,31 +181,40 @@ public class RepositoryWeather {
      **/
     public LiveData<List<ListWeatherEntry>> getNextHoursWeather() {
         initializeData();
-        long utcNowMillis = System.currentTimeMillis();
+        long utcNowMillis = currentTimeMillis();
         Date date = new Date(utcNowMillis);
         return mWeatherDao.getCurrentForecast(date);
     }
 
-    public LiveData<List<WeatherEntry>> getCurrentWeather() {
+    public LiveData<List<WeatherEntry>> getCurrentWeather_old() {
         initializeDataCW();
 
-        long nowMills = System.currentTimeMillis();
+        long nowMills = currentTimeMillis();
         Date nowDate = new Date(nowMills);
 
-        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * delayCurrentWeather;
+        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * 8;
         Date recentDate = new Date(recentlyMills);
-        return mWeatherDao.getCurrentWeather(nowDate, recentDate);
+        LiveData<List<WeatherEntry>> currentWeather =
+                mWeatherDao.getCurrentWeather_old(nowDate, recentDate);
+        return currentWeather;
+
     }
 
-    private static final int delayCurrentWeather = 10;
+    public LiveData<List<WeatherEntry>> getCurrentWeather() {
+        initializeDataCW();
+        long recentlyMills = currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 16;
+        Date recentDate = new Date(recentlyMills);
+        return mWeatherDao.getCurrentWeather(recentDate);
+
+    }
 
     public List<WeatherEntry> getCurrentWeatherList() {
         initializeDataCW();
 
-        long nowMills = System.currentTimeMillis();
+        long nowMills = currentTimeMillis();
         Date nowDate = new Date(nowMills);
 
-        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * delayCurrentWeather;
+        long recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * 16;
         Date recentDate = new Date(recentlyMills);
 
         return mWeatherDao.getCurrentWeatherList(nowDate, recentDate);
@@ -212,7 +222,7 @@ public class RepositoryWeather {
 
     private void deleteOldData() {
 //        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
-        long oldTime = System.currentTimeMillis() - HOUR_IN_MILLIS;
+        long oldTime = currentTimeMillis() - HOUR_IN_MILLIS;
         Date date = new Date(oldTime);
         mWeatherDao.deleteOldWeather(date);
     }
@@ -224,13 +234,13 @@ public class RepositoryWeather {
      */
     private boolean isFetchNeeded() {
 //        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();
-        Date now = new Date(System.currentTimeMillis());
+        Date now = new Date(currentTimeMillis());
         int count = mWeatherDao.countAllFutureWeatherEntries(now);
         return (count < NetworkDataSource.NUM_MIN_DATA_COUNTS);
     }
 
     private boolean isFetchNeededCW() {
-        Date dateRecently = new Date(System.currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * delayCurrentWeather);
+        Date dateRecently = new Date(currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 16);
         int count = mWeatherDao.countCurrentWeather(dateRecently);
         return count <= 0;
     }
@@ -250,7 +260,7 @@ public class RepositoryWeather {
     public LiveData<List<ListWeatherEntry>> getMidDayWeatherEntries() {
         long offset = Utils.getCityOffset();
 
-        long daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(System.currentTimeMillis());
+        long daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(currentTimeMillis());
         long tomorrowMidnightNormalizedUtc = (daysSinceEpoch + 1) * DAY_IN_MILLIS;
 
 //        long tomorrowCityNoonUtc = tomorrowMidnightNormalizedUtc + 10 * HOUR_IN_MILLIS + offset

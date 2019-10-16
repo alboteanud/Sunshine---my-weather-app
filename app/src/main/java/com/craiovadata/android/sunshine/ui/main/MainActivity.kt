@@ -71,8 +71,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
         val viewModel = ViewModelProviders.of(this, factory).get(MainActivityViewModel::class.java)
 
-//        InjectorUtils.provideRepository(this).initializeDataCW(this)
-//        InjectorUtils.provideRepository(this).initializeData()
+        InjectorUtils.provideRepository(this).initializeDataCW(this)
+        InjectorUtils.provideRepository(this).initializeData()
 
         observeCurrentWeather(viewModel)
         observeForecastData(viewModel)
