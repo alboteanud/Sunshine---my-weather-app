@@ -1,6 +1,7 @@
 package com.craiovadata.android.sunshine.ui.models
 
 import android.view.View
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
@@ -42,11 +43,19 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?)
              * the _date representation for the local _date in local time.
              * SunshineDateUtils#getFriendlyDateString takes care of this for us.
              */
-//        if (BuildConfig.DEBUG){
-            val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM HH:mm")
-            val dateTxt = simpleDateFormat.format(entry.date.time)
-            cardView.weatherDate.text = dateTxt
-//        }
+        if (BuildConfig.DEBUG) {
+            if (entry.cityName == "")
+                cardView.weatherDate.text = "ERROR city not found"
+            else {
+                val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM HH:mm")
+                val myText = entry.cityName + "\n" + simpleDateFormat.format(entry.date.time)
+                cardView.weatherDate.text = myText
+            }
+        } else {
+//                val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM")
+//                val myText = simpleDateFormat.format(entry.date.time)
+//                cardView.weatherDate.text = myText
+        }
 
 
             /***********************

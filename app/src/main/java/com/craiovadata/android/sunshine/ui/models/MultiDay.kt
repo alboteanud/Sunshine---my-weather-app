@@ -9,13 +9,13 @@ import com.craiovadata.android.sunshine.utilities.Utils
 import kotlinx.android.synthetic.main.current_weather_card.view.*
 import kotlinx.android.synthetic.main.multi_day_card.view.*
 
-data class MultiDay(val list: MutableList<ListWeatherEntry>?)
+data class MultiDay(val list: List<ListWeatherEntry>?)
     : Base(list?.get(0)?.id, Base.TYPE.DAYS, list?.get(0)?.date) {
 
     companion object {
 
         @JvmStatic
-        fun bindForecastToUI(weatherEntries: MutableList<ListWeatherEntry>?, view: View) {
+        fun bindForecastToUI(weatherEntries: List<ListWeatherEntry>?, view: View) {
             if (weatherEntries == null || weatherEntries.size <= 0) return
 
             val container = view.daysLayout

@@ -7,11 +7,11 @@ import org.jetbrains.annotations.NotNull;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
 
-public class MainViewModelFactory extends ViewModelProvider.NewInstanceFactory {
+public class ViewModelFactory extends ViewModelProvider.NewInstanceFactory {
 
     private final RepositoryWeather mRepository;
 
-    public MainViewModelFactory(RepositoryWeather repository) {
+    public ViewModelFactory(RepositoryWeather repository) {
         this.mRepository = repository;
     }
 
@@ -19,7 +19,7 @@ public class MainViewModelFactory extends ViewModelProvider.NewInstanceFactory {
     @Override
     public <T extends ViewModel> T create(@NotNull Class<T> modelClass) {
         //noinspection unchecked
-        return (T) new MainActivityViewModel(mRepository);
+        return (T) new MainViewModel(mRepository);
     }
 
 }

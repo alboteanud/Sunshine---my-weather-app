@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Providence</string>
-    <string name="owm_city_id" translatable="false">5224151</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
+    <string name="app_name" translatable="false">Sioux Falls</string>
+    <string name="owm_city_id" translatable="false">5231851</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
 
 <!--    c1.jpg
         TIME_ZONE - in CityTimeZone

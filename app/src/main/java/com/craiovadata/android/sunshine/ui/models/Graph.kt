@@ -17,19 +17,19 @@ import com.jjoe64.graphview.series.LineGraphSeries
 import kotlinx.android.synthetic.main.graph_card.view.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
-data class Graph(val list: MutableList<ListWeatherEntry>?)
+data class Graph(val list: List<ListWeatherEntry>?)
     : Base(list?.get(0)?.id, Base.TYPE.GRAPH, list?.get(0)?.date) {
 
     companion object {
 
         @JvmStatic
-        fun bindForecastToUI(weatherEntries: MutableList<ListWeatherEntry>?, view: View, listener: CardsAdapter.Listener) {
+        fun bindForecastToUI(weatherEntries: List<ListWeatherEntry>?, view: View, listener: CardsAdapter.Listener) {
             if (weatherEntries == null || weatherEntries.size <= 0) return
             drawGraph(weatherEntries, view)
             setTextCelsiusFarStates(view, listener)
         }
 
-        private fun drawGraph(entries: MutableList<ListWeatherEntry>, view: View) {
+        private fun drawGraph(entries: List<ListWeatherEntry>, view: View) {
             val series = LineGraphSeries<DataPoint>()
 
             entries.forEach { entry ->
@@ -54,7 +54,7 @@ data class Graph(val list: MutableList<ListWeatherEntry>?)
                     numHorizontalLabels = entries.size
 //                horizontalAxisTitle = "Hour"
                     gridStyle = GridLabelRenderer.GridStyle.NONE
-                    numVerticalLabels = 4
+//                    numVerticalLabels = 4
                     setHumanRounding(false, true)
                     labelFormatter = object : DateAsXAxisLabelFormatter(context, Utils.getFormatterCityTZ("HH")) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {

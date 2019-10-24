@@ -22,7 +22,7 @@ import com.craiovadata.android.sunshine.AppExecutors;
 import com.craiovadata.android.sunshine.data.RepositoryWeather;
 import com.craiovadata.android.sunshine.data.database.SunshineDatabase;
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource;
-import com.craiovadata.android.sunshine.ui.main.MainViewModelFactory;
+import com.craiovadata.android.sunshine.ui.main.ViewModelFactory;
 
 /**
  * Provides static methods to inject the various classes needed for Sunshine
@@ -31,18 +31,18 @@ public class InjectorUtils {
 
     public static RepositoryWeather provideRepository(Context context) {
         SunshineDatabase database = SunshineDatabase.getInstance(context.getApplicationContext());
-        AppExecutors executors = AppExecutors.getInstance();
+        AppExecutors executors = AppExecutors.Companion.getInstance();
         NetworkDataSource networkDataSource =
-                NetworkDataSource.getInstance(context.getApplicationContext(), executors);
-        return RepositoryWeather.getInstance(database.weatherDao(), networkDataSource, executors);
+                NetworkDataSource.Companion.getInstance(context.getApplicationContext(), executors);
+        return RepositoryWeather.Companion.getInstance(database.weatherDao(), networkDataSource, executors);
     }
 
     public static NetworkDataSource provideNetworkDataSource(Context context) {
         // This call to provide repository is necessary if the app starts from a service - in this
         // case the repository will not exist unless it is specifically created.
         provideRepository(context.getApplicationContext());
-        AppExecutors executors = AppExecutors.getInstance();
-        return NetworkDataSource.getInstance(context.getApplicationContext(), executors);
+        AppExecutors executors = AppExecutors.Companion.getInstance();
+        return NetworkDataSource.Companion.getInstance(context.getApplicationContext(), executors);
     }
 
 //    public static DetailViewModelFactory provideDetailViewModelFactory(Context context, Date date) {
@@ -50,9 +50,9 @@ public class InjectorUtils {
 //        return new DetailViewModelFactory(repository, date);
 //    }
 
-    public static MainViewModelFactory provideMainActivityViewModelFactory(Context context) {
+    public static ViewModelFactory provideMainActivityViewModelFactory(Context context) {
         RepositoryWeather repository = provideRepository(context.getApplicationContext());
-        return new MainViewModelFactory(repository);
+        return new ViewModelFactory(repository);
     }
 
 }

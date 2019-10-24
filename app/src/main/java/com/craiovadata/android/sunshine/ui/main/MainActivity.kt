@@ -6,13 +6,12 @@ import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.net.Uri
 import android.os.Bundle
-import android.os.Handler
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -23,32 +22,32 @@ import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
-//import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
-import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
-import com.craiovadata.android.sunshine.utilities.LogUtils.logEntry
+import com.craiovadata.android.sunshine.utilities.LogUtils.logEntries
 import com.craiovadata.android.sunshine.utilities.Utils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-//adb -e pull sdcard/Download/Sydney_ori_portrait.png /Users/danalboteanu/Desktop
-
 class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     private var adViewMedRectangle: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
-    private var graphWeatherEntries: MutableList<ListWeatherEntry>? = null
-    private var multiDayEntries: MutableList<ListWeatherEntry>? = null
+    private var graphWeatherEntries: List<ListWeatherEntry>? = null
+    private var multiDayEntries: List<ListWeatherEntry>? = null
     //    private var listPosition = RecyclerView.NO_POSITION
 //    private val handler = Handler()
     private lateinit var mAdapter: CardsAdapter
+    private lateinit var viewModel : MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+
+        backImage.setImageResource(Utils.getBackResId())
+
         recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = MyLinearLayoutManager(this@MainActivity)
@@ -57,8 +56,24 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             adapter = mAdapter
         }
 
+        // init ads before observers
+        initAds()
+
+        val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
+        viewModel = ViewModelProviders.of(this, factory).get(MainViewModel::class.java)
+
+//        InjectorUtils.provideRepository(this).initializeDataCW(this)
+//        InjectorUtils.provideRepository(this).initializeData()
+
+        observeCurrentWeather(viewModel)
+        observeNextHoursData(viewModel)
+        observeDaysForecastData(viewModel)
+
+    }
+
+    private fun initAds() {
         MobileAds.initialize(this)
-//            getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
+        //            getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
         loadAdMedRectangle() // before observers
 
         val adRequest = AdRequest.Builder()
@@ -66,19 +81,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
             .build()
         bannerAdView.loadAd(adRequest)
-
-
-        val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
-        val viewModel = ViewModelProviders.of(this, factory).get(MainActivityViewModel::class.java)
-
-        InjectorUtils.provideRepository(this).initializeDataCW(this)
-        InjectorUtils.provideRepository(this).initializeData()
-
-        observeCurrentWeather(viewModel)
-        observeForecastData(viewModel)
-        observeDaysForecastData(viewModel)
-//        observeAllEntriesData(viewModel)
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -98,7 +100,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             }
             R.id.action_privacy_policy -> {
                 if (BuildConfig.DEBUG) {
-                    InjectorUtils.provideRepository(this).forceInitializeDataCW()
+//                    viewModel.onRestartActivity()
+                    viewModel.onPolicyPressed()
                 } else
                     goToPrivacyPolicy()
                 return true
@@ -129,32 +132,23 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         }
     }
 
-    private fun setBackgroundDelayed() {
-//        handler.postDelayed({
-        val resId = Utils.getBackResId()
-        backImage.setImageResource(resId)
-//        }, 1500)
-    }
-
-    private fun observeCurrentWeather(viewModel: MainActivityViewModel) {
+    private fun observeCurrentWeather(viewModel: MainViewModel) {
 
         viewModel.currentWeather.observe(this, androidx.lifecycle.Observer { entries ->
             if (entries != null && entries.size > 0) {
                 showRecyclerView()
                 currentWeatherEntry = entries[0]
+                Toast.makeText(this, "observe entry CW: " + entries[0].temperature + "*", Toast.LENGTH_LONG).show()
                 updateAdapter()
-                logEntry(this, entries[0])
-                if (BuildConfig.DEBUG) {
-                    textCity.text = currentWeatherEntry?.cityName ?: "not found"
-                }
+                logEntries(this, entries)
             } else showLoading()
         })
     }
 
-    private fun observeForecastData(viewModel: MainActivityViewModel) {
+    private fun observeNextHoursData(viewModel: MainViewModel) {
 
-        viewModel.nextHoursWeather.observe(this, androidx.lifecycle.Observer { listEntries ->
-            if (listEntries != null && listEntries.size > 0) {
+        viewModel.nextHoursWeather.observe(this, Observer { listEntries ->
+            if (listEntries != null && listEntries.isNotEmpty()) {
                 showRecyclerView()
                 graphWeatherEntries = listEntries
                 updateAdapter()
@@ -163,7 +157,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         })
     }
 
-    private fun observeDaysForecastData(viewModel: MainActivityViewModel) {
+    private fun observeDaysForecastData(viewModel: MainViewModel) {
         viewModel.midDayWeather.observe(this, androidx.lifecycle.Observer { listEntries ->
             if (listEntries != null && listEntries.size > 0) {
                 multiDayEntries = listEntries
@@ -217,22 +211,16 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     override fun onRestart() {
         super.onRestart()
-        // resetInitializedCW() in onStop
-        val repo = InjectorUtils.provideRepository(this)
-        repo.initializeDataCW(this)
-//        repo.
-
+        viewModel.onRestartActivity()
+//        InjectorUtils.provideRepository(this).initializeDataCW(this)
     }
 
     override fun onResume() {
-
-        adViewMedRectangle?.resume()
-        setBackgroundDelayed()
         super.onResume()
+        adViewMedRectangle?.resume()
     }
 
     override fun onPause() {
-        InjectorUtils.provideRepository(this).resetInitializedCW()
         adViewMedRectangle?.pause()
         super.onPause()
     }
@@ -254,7 +242,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     override fun onStop() {
         super.onStop()
-        InjectorUtils.provideRepository(this).resetInitializedCW()
+//        InjectorUtils.provideRepository(this).resetInitializedCW()
     }
 
     companion object {
@@ -266,19 +254,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         recyclerView.adapter?.notifyItemRangeChanged(0, 4)
     }
 
-//    private fun observeAllEntriesData(viewModel: MainActivityViewModel) {
-//        if (!BuildConfig.DEBUG) return
-//        viewModel.allForecast.observe(this, androidx.lifecycle.Observer { entries ->
-//            if (entries != null && !entries.isEmpty()) {
-//                entries.forEach { LogUtils.logEntry(this@MainActivity, it) }
-//            }
-//        })
-//    }
-
-
     override fun onNewsClicked(view: View) {
         startActivity(Intent(this, NewsActivity::class.java))
     }
-
 
 }

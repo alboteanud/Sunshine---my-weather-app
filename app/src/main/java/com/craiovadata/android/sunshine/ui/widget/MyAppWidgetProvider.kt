@@ -11,7 +11,6 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils.provideRepository
-import com.craiovadata.android.sunshine.utilities.LogUtils.logDBvalues
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 
 class MyAppWidgetProvider : AppWidgetProvider() {
@@ -19,7 +18,7 @@ class MyAppWidgetProvider : AppWidgetProvider() {
     override fun onUpdate(context: Context, appWidgetManager: AppWidgetManager, appWidgetIds: IntArray) {
 
         val repository = provideRepository(context)
-        AppExecutors.getInstance().diskIO().execute {
+        AppExecutors.instance.diskIO().execute {
 
             val currentWeather = repository.currentWeatherList
 
