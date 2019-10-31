@@ -78,10 +78,10 @@ final class SunshineDateUtils {
         long gmtOffsetMillis = currentTimeZone.getOffset(utcNowMillis);
 
         /*
-         * UTC time is measured in milliseconds from January c1, 1970 at midnight from the GMT
-         * time zone. Depending on your time zone, the time since January c1, 1970 at midnight (GMT)
+         * UTC time is measured in milliseconds from January c, 1970 at midnight from the GMT
+         * time zone. Depending on your time zone, the time since January c, 1970 at midnight (GMT)
          * will be greater or smaller. This variable represents the number of milliseconds since
-         * January c1, 1970 (GMT) time.
+         * January c, 1970 (GMT) time.
          */
         long timeSinceEpochLocalTimeMillis = utcNowMillis + gmtOffsetMillis;
 
@@ -164,7 +164,7 @@ final class SunshineDateUtils {
 
         /*
          * In order to determine which day of the week we are creating a _date string for, we need
-         * to compare the number of days that have passed since the epoch (January c1, 1970 at
+         * to compare the number of days that have passed since the epoch (January c, 1970 at
          * 00:00 GMT)
          */
         long daysFromEpochToProvidedDate = elapsedDaysSinceEpoch(localDate);

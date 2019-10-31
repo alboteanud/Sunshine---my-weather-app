@@ -10,19 +10,20 @@ import java.util.*
 import java.util.Calendar.DST_OFFSET
 import java.util.Calendar.ZONE_OFFSET
 import java.util.TimeZone.getTimeZone
-import java.util.concurrent.TimeUnit
 import java.util.regex.Pattern
 
 object Utils {
 
      private val images = intArrayOf(
-            R.drawable.c1,
+            R.drawable.c,
+            R.drawable.c2,
             R.drawable.stabil1,
             R.drawable.stabil2,
             R.drawable.stabil3,
             R.drawable.stabil4,
             R.drawable.stabil5,
-            R.drawable.stabil6
+            R.drawable.stabil6,
+            R.drawable.stabil7
     )
 
     @JvmStatic
@@ -54,13 +55,15 @@ object Utils {
     }
 
     fun getBackResId(): Int {
-        if (BuildConfig.DEBUG) {
-            val imgNo = Random().nextInt(2)
-            return images[imgNo]
-        }
-        val now = System.currentTimeMillis()
-        val hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
-        val n = (hoursSinceEpoch % images.size).toInt()
+//        if (BuildConfig.DEBUG) {
+//            val imgNo = Random().nextInt(2)
+//            return images[imgNo]
+//        }
+//        val now = System.currentTimeMillis()
+//        val hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
+//        val n = (hoursSinceEpoch % images.size).toInt()
+
+        val n = Random().nextInt(images.size)
         return images[n]
     }
 

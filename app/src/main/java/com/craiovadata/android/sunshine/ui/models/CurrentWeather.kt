@@ -1,6 +1,7 @@
 package com.craiovadata.android.sunshine.ui.models
 
 import android.view.View
+import android.widget.Toast
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
@@ -10,8 +11,8 @@ import kotlinx.android.synthetic.main.current_weather_card.view.*
 import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
-data class CurrentWeather(val weatherEntry: WeatherEntry?)
-    : Base(weatherEntry?.id ?: -1, Base.TYPE.WEATHER, weatherEntry?.date ?: Date(0)) {
+data class CurrentWeather(val weatherEntry: WeatherEntry?) :
+    Base(weatherEntry?.id ?: -1, Base.TYPE.WEATHER, weatherEntry?.date ?: Date(0)) {
 
     companion object {
 
@@ -26,8 +27,10 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?)
             val iconId = entry.iconCodeOWM
 //            val iconId = "01n"
             val weatherImageId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(iconId)
-            val weatherDescription = SunshineWeatherUtils.getStringForWeatherCondition(cardView.context, weatherId)
-            val weatherIconDescription = cardView.context.getString(R.string.a11y_forecast_icon, weatherDescription)
+            val weatherDescription =
+                SunshineWeatherUtils.getStringForWeatherCondition(cardView.context, weatherId)
+            val weatherIconDescription =
+                cardView.context.getString(R.string.a11y_forecast_icon, weatherDescription)
 
             cardView.weatherIcon.setImageResource(weatherImageId)
             cardView.weatherIcon.contentDescription = weatherIconDescription
@@ -43,26 +46,28 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?)
              * the _date representation for the local _date in local time.
              * SunshineDateUtils#getFriendlyDateString takes care of this for us.
              */
-        if (BuildConfig.DEBUG) {
-            if (entry.cityName == "")
-                cardView.weatherDate.text = "ERROR city not found"
-            else {
+            if (BuildConfig.DEBUG) {
+//            if (entry.cityName == "")
+//                cardView.weatherDate.text = "city not found"
+//            else {
                 val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM HH:mm")
                 val myText = entry.cityName + "\n" + simpleDateFormat.format(entry.date.time)
-                cardView.weatherDate.text = myText
-            }
-        } else {
+//                cardView.weatherDate.text = myText
+                Toast.makeText(cardView.context, myText, Toast.LENGTH_SHORT).show()
+//            }
+            } else {
 //                val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM")
 //                val myText = simpleDateFormat.format(entry.date.time)
 //                cardView.weatherDate.text = myText
-        }
+            }
 
 
             /***********************
              * Weather Description *
              */
             /* Use the weatherId to obtain the proper description */
-            val description = SunshineWeatherUtils.getStringForWeatherCondition(cardView.context, weatherId)
+            val description =
+                SunshineWeatherUtils.getStringForWeatherCondition(cardView.context, weatherId)
 
             /* Create the accessibility (a11y) String from the weather description */
             val descriptionA11y = cardView.context.getString(R.string.a11y_forecast, description)

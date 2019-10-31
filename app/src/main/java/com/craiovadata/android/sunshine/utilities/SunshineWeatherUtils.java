@@ -300,7 +300,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource _id for the corresponding iconCodeOWM. -c1 if no relation is found.
+     * @return resource _id for the corresponding iconCodeOWM. -c if no relation is found.
      */
     public static int getSmallArtResourceIdForWeatherCondition(int weatherId) {
 
@@ -426,7 +426,7 @@ public final class SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      *                  See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource ID for the corresponding iconCodeOWM. -c1 if no relation is found.
+     * @return resource ID for the corresponding iconCodeOWM. -c if no relation is found.
      */
     public static int getLargeArtResourceIdForWeatherCondition(int weatherId) {
 

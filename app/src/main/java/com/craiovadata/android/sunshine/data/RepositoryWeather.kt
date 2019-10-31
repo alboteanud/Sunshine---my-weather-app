@@ -1,24 +1,20 @@
 package com.craiovadata.android.sunshine.data
 
 import android.text.format.DateUtils
+import android.text.format.DateUtils.DAY_IN_MILLIS
+import android.text.format.DateUtils.HOUR_IN_MILLIS
 import android.util.Log
-
+import androidx.lifecycle.LiveData
 import com.craiovadata.android.sunshine.AppExecutors
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherDao
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.utilities.Utils
-
-import java.util.Date
-import java.util.concurrent.TimeUnit
-
-import androidx.lifecycle.LiveData
-
-import android.text.format.DateUtils.DAY_IN_MILLIS
-import android.text.format.DateUtils.HOUR_IN_MILLIS
 import java.lang.System.currentTimeMillis
-
+import java.util.*
+import java.util.concurrent.TimeUnit
 
 /**
  * Handles data operations in Sunshine. Acts as a mediator between [NetworkDataSource]
@@ -50,12 +46,19 @@ class RepositoryWeather private constructor(
         }
     }
 
-    /**
-     * Database related operations
-     */
+    @Synchronized
+    private fun refreshDataCurrentWeather() {
+        mExecutors.diskIO().execute {
+            Log.d(LOG_TAG, "execute initDataCurrentWeather")
+            if (isFetchNeededCW) {
+                mNetworkDataSource.startFetchCurrentWeatherService()
+            }
+        }
+    }
+
     val dayWeatherEntries: LiveData<List<ListWeatherEntry>>
         get() {
-            initializeData()
+            initializeForecastData()
             val offset = Utils.getCityOffset()
 
             val daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(currentTimeMillis())
@@ -68,31 +71,17 @@ class RepositoryWeather private constructor(
             )
         }
 
-    val currentWeather: LiveData<List<WeatherEntry>>
-        get() {
-            initDataCurrentWeather()
-            val recentlyMills = currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 16
-            val recentDate = Date(recentlyMills)
-            return mWeatherDao.getCurrentWeather(recentDate)
-
-        }
-
     val currentWeatherList: List<WeatherEntry>
         get() {
             initDataCurrentWeather()
-
-            val nowMills = currentTimeMillis()
-            val nowDate = Date(nowMills)
-
-            val recentlyMills = nowMills - DateUtils.MINUTE_IN_MILLIS * 16
+            val recentlyMills = currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * delay
             val recentDate = Date(recentlyMills)
-
-            return mWeatherDao.getCurrentWeatherList(nowDate, recentDate)
+            return mWeatherDao.getCurrentWeatherList(recentDate)
         }
 
     val nextHoursWeather: LiveData<List<ListWeatherEntry>>
         get() {
-//            initializeData()   // not needed. DaysWeather will init it already
+//            initializeForecastData()   // not needed. DaysWeather will init it already
             val utcNowMillis = currentTimeMillis()
             val date = Date(utcNowMillis)
             return mWeatherDao.getCurrentForecast(date)
@@ -112,18 +101,18 @@ class RepositoryWeather private constructor(
 
     private val isFetchNeededCW: Boolean
         get() {
-            val dateRecently = Date(currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 16)
+            val dateRecently = Date(currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * delay)
             val count = mWeatherDao.countCurrentWeather(dateRecently)
-            return count < 1
+            val isFetchNeededCW = count < 1
+            Log.d(LOG_TAG, "isFetchNeededCW: $isFetchNeededCW")
+            return isFetchNeededCW
         }
 
-
-    /**
-     * Creates periodic sync tasks and checks to see if an immediate sync is required. If an
+    /** Creates periodic sync tasks and checks to see if an immediate sync is required. If an
      * immediate sync is required, this method will take care of making sure that sync occurs.
      */
     @Synchronized
-    fun initializeData() {
+    fun initializeForecastData() {
 
         // Only perform initialization once per app lifetime. If initialization has already been
         // performed, we have nothing to do in this method.
@@ -155,11 +144,9 @@ class RepositoryWeather private constructor(
     }
 
     @Synchronized
-    fun fetchCurrentWeatherIfNeeded() {
+    fun forceFetchCurrentWeather() {
         mExecutors.diskIO().execute {
-            if (isFetchNeededCW) {
-                mNetworkDataSource.startFetchCurrentWeatherService()
-            }
+            mNetworkDataSource.startFetchCurrentWeatherService()
         }
     }
 
@@ -174,22 +161,20 @@ class RepositoryWeather private constructor(
         mNetworkDataSource.startFetchWeatherService()
     }
 
-    fun insertFakeDataCW() {
-        val recentlyMills = currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * 16
+    fun getCurrentWeather(timestamp: Long): LiveData<List<WeatherEntry>>? {
+        refreshDataCurrentWeather()
+        val recentlyMills = timestamp - DateUtils.MINUTE_IN_MILLIS * delay
         val recentDate = Date(recentlyMills)
+        val limitCountData = if (BuildConfig.DEBUG) 3
+        else 1
+        Log.d(LOG_TAG, "get currentWeather more recent than $recentDate")
+        return mWeatherDao.getCurrentWeather(recentDate, limitCountData)
 
-        mExecutors.diskIO().execute {
-            val entries = mWeatherDao.getCurrentWeather2(recentDate)
+    }
 
-            val newEntries = entries.map { entry ->
-                entry.cityName = "d" + entry.cityName
-                entry.date.time = entry.date.time + DateUtils.MINUTE_IN_MILLIS * 1
-                entry
-            }
-
-            val array = newEntries.toTypedArray<WeatherEntry>()
-            mWeatherDao.bulkInsert(*array)
-        }
+ fun getWeatherNextHours(timestamp: Long): LiveData<List<ListWeatherEntry>> {
+     val date = Date(timestamp)
+     return mWeatherDao.getCurrentForecast(date)
 
     }
 
@@ -217,5 +202,7 @@ class RepositoryWeather private constructor(
             }
             return sInstance!!
         }
+
+        private const val delay = 10
     }
 }

@@ -112,7 +112,7 @@ final class WeatherJsonParser {
         double windDirection = windObject.getDouble(OWM_WIND_DIRECTION);
 
 
-        // Description is in a child array called "weather", which is c1 element long.
+        // Description is in a child array called "weather", which is c element long.
         // That element also contains a weather code.
         JSONObject weatherObject =
                 dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0);

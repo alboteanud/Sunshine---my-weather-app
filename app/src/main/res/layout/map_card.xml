@@ -24,7 +24,7 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/c1" />
+            tools:src="@drawable/c" />
 
         <ImageView
             android:id="@+id/buttonZoomPlus"

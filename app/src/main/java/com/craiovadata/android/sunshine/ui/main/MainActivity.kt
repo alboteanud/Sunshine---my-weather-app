@@ -11,11 +11,8 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.*
@@ -29,21 +26,22 @@ import com.craiovadata.android.sunshine.utilities.Utils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import androidx.lifecycle.*
 
-class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
+
+class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
 
     private var adViewMedRectangle: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: List<ListWeatherEntry>? = null
     private var multiDayEntries: List<ListWeatherEntry>? = null
     //    private var listPosition = RecyclerView.NO_POSITION
-//    private val handler = Handler()
     private lateinit var mAdapter: CardsAdapter
-    private lateinit var viewModel : MainViewModel
+    private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(com.craiovadata.android.sunshine.R.layout.activity_main)
         setSupportActionBar(toolbar)
 
         backImage.setImageResource(Utils.getBackResId())
@@ -60,14 +58,13 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         initAds()
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
-        viewModel = ViewModelProviders.of(this, factory).get(MainViewModel::class.java)
-
-//        InjectorUtils.provideRepository(this).initializeDataCW(this)
-//        InjectorUtils.provideRepository(this).initializeData()
+        viewModel = ViewModelProviders.of(this@MainActivity, factory).get(MainViewModel::class.java)
 
         observeCurrentWeather(viewModel)
         observeNextHoursData(viewModel)
         observeDaysForecastData(viewModel)
+
+        lifecycle.addObserver(viewModel)
 
     }
 
@@ -85,7 +82,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_main, menu)
+        menuInflater.inflate(com.craiovadata.android.sunshine.R.menu.menu_main, menu)
         return true
     }
 
@@ -94,13 +91,15 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
-            R.id.action_settings -> {
+            com.craiovadata.android.sunshine.R.id.action_settings -> {
+//                if (BuildConfig.DEBUG) {
+//                    viewModel.onRestartActivity()
+//                } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
-            R.id.action_privacy_policy -> {
+            com.craiovadata.android.sunshine.R.id.action_privacy_policy -> {
                 if (BuildConfig.DEBUG) {
-//                    viewModel.onRestartActivity()
                     viewModel.onPolicyPressed()
                 } else
                     goToPrivacyPolicy()
@@ -111,7 +110,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     }
 
     private fun goToPrivacyPolicy() {
-        val myLink = Uri.parse(getString(R.string.link_privacy_policy))
+        val myLink = Uri.parse(getString(com.craiovadata.android.sunshine.R.string.link_privacy_policy))
         val intent = Intent(Intent.ACTION_VIEW, myLink)
         val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
             intent,
@@ -133,21 +132,20 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     }
 
     private fun observeCurrentWeather(viewModel: MainViewModel) {
-
-        viewModel.currentWeather.observe(this, androidx.lifecycle.Observer { entries ->
-            if (entries != null && entries.size > 0) {
-                showRecyclerView()
-                currentWeatherEntry = entries[0]
-                Toast.makeText(this, "observe entry CW: " + entries[0].temperature + "*", Toast.LENGTH_LONG).show()
-                updateAdapter()
-                logEntries(this, entries)
-            } else showLoading()
-        })
+        viewModel.currentWeatherObservable.observe(this,
+            androidx.lifecycle.Observer<List<WeatherEntry>> { entries ->
+                if (entries != null && entries.isNotEmpty()) {
+                    showRecyclerView()
+                    currentWeatherEntry = entries[0]
+                    updateAdapter()
+                    logEntries(this, entries)
+                } else showLoading()
+            })
     }
 
     private fun observeNextHoursData(viewModel: MainViewModel) {
 
-        viewModel.nextHoursWeather.observe(this, Observer { listEntries ->
+        viewModel.nextHoursWeatherObservable.observe(this, Observer { listEntries ->
             if (listEntries != null && listEntries.isNotEmpty()) {
                 showRecyclerView()
                 graphWeatherEntries = listEntries
@@ -190,7 +188,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
             adUnitId = if (BuildConfig.DEBUG) ads_test_id
-            else getString(R.string.admob_med_rectangle_id)
+            else getString(com.craiovadata.android.sunshine.R.string.admob_med_rectangle_id)
 
             adListener = object : AdListener() {
 
@@ -209,25 +207,14 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         newAdView.loadAd(adRequest)
     }
 
-    override fun onRestart() {
-        super.onRestart()
-        viewModel.onRestartActivity()
-//        InjectorUtils.provideRepository(this).initializeDataCW(this)
-    }
-
-    override fun onResume() {
-        super.onResume()
-        adViewMedRectangle?.resume()
-    }
-
-    override fun onPause() {
-        adViewMedRectangle?.pause()
-        super.onPause()
-    }
-
     override fun onDestroy() {
         adViewMedRectangle?.destroy()
         super.onDestroy()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        adViewMedRectangle?.pause()
     }
 
     private fun showRecyclerView() {
@@ -238,11 +225,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
     private fun showLoading() {
         recyclerView.visibility = View.INVISIBLE
         loading_indicator.visibility = View.VISIBLE
-    }
-
-    override fun onStop() {
-        super.onStop()
-//        InjectorUtils.provideRepository(this).resetInitializedCW()
     }
 
     companion object {

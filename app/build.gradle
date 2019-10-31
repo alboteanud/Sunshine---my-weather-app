@@ -1,9 +1,8 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
-apply plugin: 'io.fabric'
+//apply plugin: 'io.fabric'
 
 android {
 
@@ -18,22 +17,22 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.US.SD.SiouxFalls'
+        applicationId 'com.craiovadata.android.sunshine.US.TN.Memphis'
         minSdkVersion 23
         targetSdkVersion 29
-        versionName '5'
+        versionName '6'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 5
+        versionCode = 6
         // Required to use Java 8.
 //        jackOptions { enabled true }
     }
     buildTypes {
         debug {
-            manifestPlaceholders = [crashlyticsEnabled: false]
+//            manifestPlaceholders = [crashlyticsEnabled: false]
         }
         release {
             minifyEnabled false
-            manifestPlaceholders = [crashlyticsEnabled: true]
+//            manifestPlaceholders = [crashlyticsEnabled: true]
         }
     }
     dataBinding.enabled = true
@@ -46,9 +45,10 @@ android {
 
 ext.appcompatVersion = '1.1.0'
 ext.arch_version = '2.1.0'
+ext.room_version = '2.2.1'
 ext.support_version = '1.0.0'
 ext.constraint_layout_version = '1.1.3'
-ext.firebase_jobdispatcher_version = '0.8.5'
+ext.firebase_jobdispatcher_version = '0.8.6'
 ext.junit_version = '4.12'
 ext.support_test_version = '1.1.0'
 ext.glide_version = '4.9.0'
@@ -63,9 +63,9 @@ dependencies {
     implementation "androidx.preference:preference:$support_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout_version"
     implementation "com.firebase:firebase-jobdispatcher:$firebase_jobdispatcher_version"
-    implementation "androidx.room:room-runtime:$arch_version"
+    implementation "androidx.room:room-runtime:$room_version"
     implementation "androidx.constraintlayout:constraintlayout:$support_version"
-    annotationProcessor "androidx.room:room-compiler:$arch_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
     kapt "androidx.room:room-compiler:$arch_version"
     implementation "androidx.lifecycle:lifecycle-runtime:$arch_version"
     implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
@@ -87,10 +87,15 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     implementation "androidx.legacy:legacy-support-v4:$support_version"
     implementation 'com.google.firebase:firebase-core:17.2.0'
-    implementation "com.google.firebase:firebase-firestore:21.1.1"
+    implementation "com.google.firebase:firebase-firestore:21.2.1"
 
     // Add dependency
-    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+//    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
+
+    // coroutines for getting off the UI thread
+//    def coroutines = "1.0.1"
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
 }
 
 apply plugin: 'com.google.gms.google-services'

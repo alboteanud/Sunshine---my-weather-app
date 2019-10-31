@@ -63,6 +63,7 @@ data class Graph(val list: List<ListWeatherEntry>?)
                         }
                     }
                 }
+                title = "Temperature by hour"
             }
 
 
