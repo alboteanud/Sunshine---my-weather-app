@@ -8,12 +8,11 @@ import android.os.Build
 import android.preference.PreferenceManager
 import android.text.format.DateUtils
 import android.text.format.DateUtils.HOUR_IN_MILLIS
-import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import com.craiovadata.android.sunshine.utilities.Utils.getBackResId
+import com.craiovadata.android.sunshine.utilities.CityUtils.getBackResId
 
 object NotifUtils {
 
@@ -59,7 +58,7 @@ object NotifUtils {
     }
 
     private fun buildNotif(context: Context, entry: WeatherEntry): Notification {
-        val backgrResourceId = getBackResId()
+        val backgrResourceId = getBackResId(context)
         val largeIcon = BitmapFactory.decodeResource(context.resources, backgrResourceId)
 
         val smallIconId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(entry.iconCodeOWM)

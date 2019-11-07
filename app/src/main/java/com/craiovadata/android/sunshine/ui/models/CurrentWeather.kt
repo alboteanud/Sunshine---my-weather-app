@@ -6,7 +6,7 @@ import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.utilities.Utils
+import com.craiovadata.android.sunshine.utilities.CityUtils
 import kotlinx.android.synthetic.main.current_weather_card.view.*
 import java.util.*
 
@@ -50,13 +50,13 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?) :
 //            if (entry.cityName == "")
 //                cardView.weatherDate.text = "city not found"
 //            else {
-                val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM HH:mm")
+                val simpleDateFormat = CityUtils.getFormatterCityTZ("dd MMM HH:mm")
                 val myText = entry.cityName + "\n" + simpleDateFormat.format(entry.date.time)
 //                cardView.weatherDate.text = myText
                 Toast.makeText(cardView.context, myText, Toast.LENGTH_SHORT).show()
 //            }
             } else {
-//                val simpleDateFormat = Utils.getFormatterCityTZ("dd MMM")
+//                val simpleDateFormat = CityUtils.getFormatterCityTZ("dd MMM")
 //                val myText = simpleDateFormat.format(entry.date.time)
 //                cardView.weatherDate.text = myText
             }

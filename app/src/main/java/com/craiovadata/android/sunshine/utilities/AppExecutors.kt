@@ -1,4 +1,4 @@
-package com.craiovadata.android.sunshine
+package com.craiovadata.android.sunshine.utilities
 
 import android.os.Handler
 import android.os.Looper
@@ -51,11 +51,12 @@ class AppExecutors private constructor(
             get() {
                 if (sInstance == null) {
                     synchronized(LOCK) {
-                        sInstance = AppExecutors(
-                            Executors.newSingleThreadExecutor(),
-                            Executors.newFixedThreadPool(3),
-                            MainThreadExecutor()
-                        )
+                        sInstance =
+                            AppExecutors(
+                                Executors.newSingleThreadExecutor(),
+                                Executors.newFixedThreadPool(3),
+                                MainThreadExecutor()
+                            )
                     }
                 }
                 return sInstance!!

@@ -5,7 +5,7 @@ import android.view.View
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.utilities.Utils
+import com.craiovadata.android.sunshine.utilities.CityUtils
 import kotlinx.android.synthetic.main.current_weather_card.view.*
 import kotlinx.android.synthetic.main.multi_day_card.view.*
 
@@ -54,7 +54,7 @@ data class MultiDay(val list: List<ListWeatherEntry>?)
              */
             val pattern = "EEEE"
 //            if (BuildConfig.DEBUG) pattern = "EEE dd MMM HH.mm"
-            val simpleDateFormat = Utils.getFormatterCityTZ(pattern)
+            val simpleDateFormat = CityUtils.getFormatterCityTZ(pattern)
             val time = entry.date.time
             val dateTxt = simpleDateFormat.format(time )
             dayView.weatherDate.text = dateTxt

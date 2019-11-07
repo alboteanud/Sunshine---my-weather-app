@@ -16,30 +16,25 @@
 package com.craiovadata.android.sunshine.data.network
 
 import android.content.Context
-import android.content.Entity
 import android.content.Intent
 import android.util.Log
 
-import com.craiovadata.android.sunshine.AppExecutors
+import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
-import com.craiovadata.android.sunshine.utilities.LogUtils
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.firebase.jobdispatcher.Constraint
-import com.firebase.jobdispatcher.Driver
 import com.firebase.jobdispatcher.FirebaseJobDispatcher
 import com.firebase.jobdispatcher.GooglePlayDriver
-import com.firebase.jobdispatcher.Job
 import com.firebase.jobdispatcher.Lifetime
 import com.firebase.jobdispatcher.Trigger
 
-import java.net.URL
 import java.util.concurrent.TimeUnit
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 
-//import com.craiovadata.android.sunshine.AppExecutors;
+//import com.craiovadata.android.sunshine.utilities.AppExecutors;
 
 /**
  * Provides an API for doing all operations with the server data

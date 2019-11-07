@@ -18,7 +18,6 @@ package com.craiovadata.android.sunshine.utilities;
 
 import android.content.Context;
 
-import com.craiovadata.android.sunshine.AppExecutors;
 import com.craiovadata.android.sunshine.data.RepositoryWeather;
 import com.craiovadata.android.sunshine.data.database.SunshineDatabase;
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource;

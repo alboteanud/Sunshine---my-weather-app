@@ -17,12 +17,12 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.US.TN.Memphis'
+        applicationId 'com.craiovadata.android.sunshine.US.FL.Jacksonville'
         minSdkVersion 23
         targetSdkVersion 29
-        versionName '6'
+        versionName '5'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 6
+        versionCode = 5
         // Required to use Java 8.
 //        jackOptions { enabled true }
     }
@@ -78,16 +78,15 @@ dependencies {
 
     implementation "com.github.bumptech.glide:glide:$glide_version"
     annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
-    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
     implementation 'com.google.android.gms:play-services-ads:18.2.0'
     implementation "androidx.cardview:cardview:$support_version"
     implementation 'com.jjoe64:graphview:4.2.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation "androidx.legacy:legacy-support-v4:$support_version"
-    implementation 'com.google.firebase:firebase-core:17.2.0'
-    implementation "com.google.firebase:firebase-firestore:21.2.1"
+//    implementation "androidx.legacy:legacy-support-v4:$support_version"
+//    implementation 'com.google.firebase:firebase-core:17.2.0'
+//    implementation "com.google.firebase:firebase-firestore:21.2.1"
 
     // Add dependency
 //    implementation 'com.crashlytics.sdk.android:crashlytics:2.10.1'
@@ -98,4 +97,4 @@ dependencies {
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'

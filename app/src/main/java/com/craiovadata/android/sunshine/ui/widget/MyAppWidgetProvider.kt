@@ -6,7 +6,7 @@ import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.content.Intent
 import android.widget.RemoteViews
-import com.craiovadata.android.sunshine.AppExecutors
+import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity

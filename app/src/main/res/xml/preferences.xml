@@ -6,21 +6,9 @@
         app:title="@string/pref_enable_notifications_label"
         app:defaultValue="true"/>
 
-    <EditTextPreference
-        app:key="@string/key_pref_feedback"
+    <Preference
+        app:key="@string/button_feedback"
         app:summary="@string/feedback_pref_summary"
         app:title="@string/feedback_pref_title" />
-
-    <!--
-        <ListPreference
-            app:key="example_list"
-            app:title="@string/pref_title_add_friends_to_messages"
-            app:defaultValue="-1"
-            app:entries="@array/pref_example_list_titles"
-            app:entryValues="@array/pref_example_list_values"
-            app:negativeButtonText="@null"
-            app:positiveButtonText="@null"/>
-    -->
-
 
 </androidx.preference.PreferenceScreen>

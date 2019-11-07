@@ -9,7 +9,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.utilities.Utils
+import com.craiovadata.android.sunshine.utilities.CityUtils
 import com.jjoe64.graphview.GridLabelRenderer
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
 import com.jjoe64.graphview.series.DataPoint
@@ -17,14 +17,18 @@ import com.jjoe64.graphview.series.LineGraphSeries
 import kotlinx.android.synthetic.main.graph_card.view.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
-data class Graph(val list: List<ListWeatherEntry>?)
-    : Base(list?.get(0)?.id, Base.TYPE.GRAPH, list?.get(0)?.date) {
+data class Graph(val list: List<ListWeatherEntry>?) :
+    Base(list?.get(0)?.id, Base.TYPE.GRAPH, list?.get(0)?.date) {
 
     companion object {
 
         @JvmStatic
-        fun bindForecastToUI(weatherEntries: List<ListWeatherEntry>?, view: View, listener: CardsAdapter.Listener) {
-            if (weatherEntries == null || weatherEntries.size <= 0) return
+        fun bindForecastToUI(
+            weatherEntries: List<ListWeatherEntry>?,
+            view: View,
+            listener: CardsAdapter.Listener
+        ) {
+            if (weatherEntries == null || weatherEntries.isEmpty()) return
             drawGraph(weatherEntries, view)
             setTextCelsiusFarStates(view, listener)
         }
@@ -33,7 +37,8 @@ data class Graph(val list: List<ListWeatherEntry>?)
             val series = LineGraphSeries<DataPoint>()
 
             entries.forEach { entry ->
-                val temperature = SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
+                val temperature =
+                    SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
                 val dataPoint = DataPoint(entry.date, temperature)
                 series.appendData(dataPoint, false, entries.size)
             }
@@ -42,13 +47,14 @@ data class Graph(val list: List<ListWeatherEntry>?)
                 color = view.context.getColor(R.color.semitransparentGray)
 //            backgroundColor = Color.TRANSPARENT
                 isDrawBackground = true
-                setAnimated(false)
+                setAnimated(true)
                 thickness = 3
                 isDrawDataPoints = false
             }
 
             view.graphView.apply {
                 removeAllSeries()
+
                 addSeries(series)
                 gridLabelRenderer.apply {
                     numHorizontalLabels = entries.size
@@ -56,7 +62,8 @@ data class Graph(val list: List<ListWeatherEntry>?)
                     gridStyle = GridLabelRenderer.GridStyle.NONE
 //                    numVerticalLabels = 4
                     setHumanRounding(false, true)
-                    labelFormatter = object : DateAsXAxisLabelFormatter(context, Utils.getFormatterCityTZ("HH")) {
+                    labelFormatter = object :
+                        DateAsXAxisLabelFormatter(context, CityUtils.getFormatterCityTZ("HH")) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
                             else super.formatLabel(value, isValueX) + "\u00B0"
@@ -64,6 +71,7 @@ data class Graph(val list: List<ListWeatherEntry>?)
                     }
                 }
                 title = "Temperature by hour"
+//                onDataChanged(false, false)
             }
 
 
@@ -71,18 +79,12 @@ data class Graph(val list: List<ListWeatherEntry>?)
         }
 
         private fun setLabelTime(view: View) {
-            val cityTimeZone = Utils.getCityTimeZone()
-            var text = cityTimeZone?.displayName
-            if (cityTimeZone == null && cityTimeZone?.id == "GMT") {
+            val cityTimeZone = CityUtils.getCityTimeZone()
+            var text = cityTimeZone.displayName
+
+            if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
                 text = "TIME_ZONE error: $cityTimeZone"
                 view.textLabel.setTextColor(Color.RED)
-            }
-
-            if (BuildConfig.DEBUG) {
-                if (cityTimeZone == null && cityTimeZone?.id == "GMT") {
-                    text = "TIME_ZONE error: $cityTimeZone"
-                    view.textLabel.setTextColor(Color.RED)
-                }
             }
             view.textLabel.text = text
 

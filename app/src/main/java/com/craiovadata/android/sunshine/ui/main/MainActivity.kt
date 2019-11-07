@@ -9,7 +9,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -22,14 +21,15 @@ import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.logEntries
-import com.craiovadata.android.sunshine.utilities.Utils
+import com.craiovadata.android.sunshine.utilities.CityUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import androidx.lifecycle.*
+import com.craiovadata.android.sunshine.R
 
 
-class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
+class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     private var adViewMedRectangle: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
         setContentView(com.craiovadata.android.sunshine.R.layout.activity_main)
         setSupportActionBar(toolbar)
 
-        backImage.setImageResource(Utils.getBackResId())
+        backImage.setImageResource(CityUtils.getBackResId(this))
 
         recyclerView.apply {
             setHasFixedSize(true)
@@ -99,10 +99,10 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
                 return true
             }
             com.craiovadata.android.sunshine.R.id.action_privacy_policy -> {
-                if (BuildConfig.DEBUG) {
-                    viewModel.onPolicyPressed()
-                } else
-                    goToPrivacyPolicy()
+//                if (BuildConfig.DEBUG) {
+//                    viewModel.onPolicyPressed()
+//                } else
+                goToPrivacyPolicy()
                 return true
             }
             else -> super.onOptionsItemSelected(item)
@@ -110,7 +110,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
     }
 
     private fun goToPrivacyPolicy() {
-        val myLink = Uri.parse(getString(com.craiovadata.android.sunshine.R.string.link_privacy_policy))
+        val myLink =
+            Uri.parse(getString(com.craiovadata.android.sunshine.R.string.link_privacy_policy))
         val intent = Intent(Intent.ACTION_VIEW, myLink)
         val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
             intent,
@@ -139,8 +140,31 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
                     currentWeatherEntry = entries[0]
                     updateAdapter()
                     logEntries(this, entries)
+                    warnIfCityNameWrong(currentWeatherEntry)
                 } else showLoading()
             })
+    }
+
+    private fun warnIfCityNameWrong(currentWeatherEntry: WeatherEntry?) {
+        if (!BuildConfig.DEBUG) return
+        if (currentWeatherEntry == null) return
+        if (currentWeatherEntry.cityName.isEmpty()) return
+        if (currentWeatherEntry.isCurrentWeather == 0) return  // only currentWeatherEntry contains cityName
+
+        if (currentWeatherEntry.cityName == getString(R.string.app_name)) {  // ok
+            layoutAttention.visibility = View.GONE
+        }
+        //  !!! problem - wrong city name
+        else {
+            layoutAttention.visibility = View.VISIBLE
+            val textToShow =
+                "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
+            textViewAttention.text = textToShow
+
+            buttonAttention.setOnClickListener {
+                layoutAttention.visibility = View.GONE
+            }
+        }
     }
 
     private fun observeNextHoursData(viewModel: MainViewModel) {
@@ -157,7 +181,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener{
 
     private fun observeDaysForecastData(viewModel: MainViewModel) {
         viewModel.midDayWeather.observe(this, androidx.lifecycle.Observer { listEntries ->
-            if (listEntries != null && listEntries.size > 0) {
+            if (listEntries != null && listEntries.isNotEmpty()) {
                 multiDayEntries = listEntries
                 updateAdapter()
 //                logDBvalues(this, listEntries, mutableListOf())
