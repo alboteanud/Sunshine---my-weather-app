@@ -62,10 +62,10 @@ object LogUtils {
                     if (responseStatus == "OK") {
                         val timeZoneId = jsonObject.getString("timeZoneId")
                         if (timeZoneId == CityUtils.TIME_ZONE_ID) {
-                            Log.d(MainActivity.TAG, "verification successful - timezone is OK")
+                            Log.e(MainActivity.TAG, "verification successful - timezone is OK")
                         } else {
                             warningText =
-                                "! timezoneId should be: $timeZoneId"
+                                "error timezoneId should be: $timeZoneId"
                         }
                     } else {
                         warningText = "timezoneAPI -> status: $responseStatus"

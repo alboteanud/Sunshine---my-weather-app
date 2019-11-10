@@ -4,7 +4,7 @@
     <string name="app_name" translatable="false">Milwaukee</string>
     <string name="owm_city_id" translatable="false">5263045</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
 
-    <!--    schimba c.jpg c2.jpg
+    <!--    schimba c.jpg
             TIME_ZONE_ID din CityUtils
             OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
             SHA1: 64:5D:DB:FB:F5:EB:C5...  -->

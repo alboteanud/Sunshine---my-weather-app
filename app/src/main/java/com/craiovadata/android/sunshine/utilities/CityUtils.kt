@@ -21,7 +21,7 @@ object CityUtils {
 
     private val images = intArrayOf(
         R.drawable.c,
-        R.drawable.c2,
+//        R.drawable.c2,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,
