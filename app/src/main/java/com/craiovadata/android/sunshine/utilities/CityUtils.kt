@@ -1,11 +1,9 @@
 package com.craiovadata.android.sunshine.utilities
 
 import android.content.Context
-import androidx.preference.Preference
 import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.ui.main.MainActivity
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Calendar.DST_OFFSET
@@ -14,11 +12,12 @@ import java.util.TimeZone.getTimeZone
 
 object CityUtils {
 
-    private const val TIME_ZONE =
-      "US/Eastern"
-//      "US/Central"
+    const val TIME_ZONE_ID =
+//      "US/Eastern"
+      "US/Central"
 //      "US/Mountain"
 //      "US/Pacific"
+//        "America/Chicago"
 
     private val images = intArrayOf(
         R.drawable.c,
@@ -34,7 +33,7 @@ object CityUtils {
 
     @JvmStatic
     fun getCityTimeZone(): TimeZone {
-        val tz = getTimeZone(TIME_ZONE)
+        val tz = getTimeZone(TIME_ZONE_ID)
         if (BuildConfig.DEBUG) {
             require(tz.id != "GMT") { "timeZone probably wrong: GMT" }
         }

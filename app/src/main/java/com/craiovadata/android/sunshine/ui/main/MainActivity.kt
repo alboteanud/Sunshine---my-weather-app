@@ -2,14 +2,10 @@ package com.craiovadata.android.sunshine.ui.main
 
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.content.pm.ResolveInfo
-import android.net.Uri
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
@@ -17,21 +13,11 @@ import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
-import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
-import com.craiovadata.android.sunshine.utilities.LogUtils.logEntries
-import com.craiovadata.android.sunshine.utilities.CityUtils
-import com.google.android.gms.ads.*
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import androidx.lifecycle.*
-import com.craiovadata.android.sunshine.R
 
+class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
-class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
-
-    private var adViewMedRectangle: AdView? = null
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: List<ListWeatherEntry>? = null
     private var multiDayEntries: List<ListWeatherEntry>? = null
@@ -41,10 +27,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.craiovadata.android.sunshine.R.layout.activity_main)
-        setSupportActionBar(toolbar)
-
-        backImage.setImageResource(CityUtils.getBackResId(this))
 
         recyclerView.apply {
             setHasFixedSize(true)
@@ -54,9 +36,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
             adapter = mAdapter
         }
 
-        // init ads before observers
-        initAds()
-
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
         viewModel = ViewModelProviders.of(this@MainActivity, factory).get(MainViewModel::class.java)
 
@@ -65,61 +44,6 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         observeDaysForecastData(viewModel)
 
         lifecycle.addObserver(viewModel)
-
-    }
-
-    private fun initAds() {
-        MobileAds.initialize(this)
-        //            getString(com.craiovadata.android.sunshine.R.string.admob_app_id))
-        loadAdMedRectangle() // before observers
-
-        val adRequest = AdRequest.Builder()
-            .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
-            .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
-            .build()
-        bannerAdView.loadAd(adRequest)
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(com.craiovadata.android.sunshine.R.menu.menu_main, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        return when (item.itemId) {
-            com.craiovadata.android.sunshine.R.id.action_settings -> {
-//                if (BuildConfig.DEBUG) {
-//                    viewModel.onRestartActivity()
-//                } else
-                startActivity(Intent(this, SettingsActivity::class.java))
-                return true
-            }
-            com.craiovadata.android.sunshine.R.id.action_privacy_policy -> {
-//                if (BuildConfig.DEBUG) {
-//                    viewModel.onPolicyPressed()
-//                } else
-                goToPrivacyPolicy()
-                return true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
-
-    private fun goToPrivacyPolicy() {
-        val myLink =
-            Uri.parse(getString(com.craiovadata.android.sunshine.R.string.link_privacy_policy))
-        val intent = Intent(Intent.ACTION_VIEW, myLink)
-        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
-            intent,
-            PackageManager.MATCH_DEFAULT_ONLY
-        )
-        val isIntentSafe: Boolean = activities.isNotEmpty()
-        if (isIntentSafe)
-            startActivity(intent)
     }
 
     private class MyLinearLayoutManager(private val context: Context) :
@@ -139,36 +63,12 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
                     showRecyclerView()
                     currentWeatherEntry = entries[0]
                     updateAdapter()
-                    logEntries(this, entries)
-                    warnIfCityNameWrong(currentWeatherEntry)
+                    logAndWarnCurrentWeather(entries)
                 } else showLoading()
             })
     }
 
-    private fun warnIfCityNameWrong(currentWeatherEntry: WeatherEntry?) {
-        if (!BuildConfig.DEBUG) return
-        if (currentWeatherEntry == null) return
-        if (currentWeatherEntry.cityName.isEmpty()) return
-        if (currentWeatherEntry.isCurrentWeather == 0) return  // only currentWeatherEntry contains cityName
-
-        if (currentWeatherEntry.cityName == getString(R.string.app_name)) {  // ok
-            layoutAttention.visibility = View.GONE
-        }
-        //  !!! problem - wrong city name
-        else {
-            layoutAttention.visibility = View.VISIBLE
-            val textToShow =
-                "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
-            textViewAttention.text = textToShow
-
-            buttonAttention.setOnClickListener {
-                layoutAttention.visibility = View.GONE
-            }
-        }
-    }
-
     private fun observeNextHoursData(viewModel: MainViewModel) {
-
         viewModel.nextHoursWeatherObservable.observe(this, Observer { listEntries ->
             if (listEntries != null && listEntries.isNotEmpty()) {
                 showRecyclerView()
@@ -189,7 +89,7 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         })
     }
 
-    private fun updateAdapter() {
+    override fun updateAdapter() {
         val updates = mutableListOf<Base>()
         // Primele 4 sunt notificate de schimbare °C|°F - onCelsiusFarClicked
         updates.addAll(
@@ -207,53 +107,8 @@ class MainActivity : AppCompatActivity(), CardsAdapter.Listener {
         mAdapter.setUpdates(updates)
     }
 
-    private fun loadAdMedRectangle() {
-        val newAdView = AdView(this)
-        newAdView.apply {
-            adSize = AdSize.MEDIUM_RECTANGLE
-            adUnitId = if (BuildConfig.DEBUG) ads_test_id
-            else getString(com.craiovadata.android.sunshine.R.string.admob_med_rectangle_id)
-
-            adListener = object : AdListener() {
-
-                override fun onAdLoaded() {
-                    super.onAdLoaded()
-                    adViewMedRectangle = newAdView
-                    updateAdapter()
-
-                }
-            }
-        }
-        val adRequest = AdRequest.Builder()
-            .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
-            .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
-            .build()
-        newAdView.loadAd(adRequest)
-    }
-
-    override fun onDestroy() {
-        adViewMedRectangle?.destroy()
-        super.onDestroy()
-    }
-
-    override fun onPause() {
-        super.onPause()
-        adViewMedRectangle?.pause()
-    }
-
-    private fun showRecyclerView() {
-        loading_indicator.visibility = View.INVISIBLE
-        recyclerView.visibility = View.VISIBLE
-    }
-
-    private fun showLoading() {
-        recyclerView.visibility = View.INVISIBLE
-        loading_indicator.visibility = View.VISIBLE
-    }
-
     companion object {
         const val TAG = "MainActivity"
-        const val ads_test_id = "ca-app-pub-3940256099942544/6300978111"
     }
 
     override fun onCelsiusFarClicked(view: View) {

@@ -17,7 +17,7 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.US.FL.Jacksonville'
+        applicationId 'com.craiovadata.android.sunshine.US.WI.Milwaukee'
         minSdkVersion 23
         targetSdkVersion 29
         versionName '5'
@@ -80,7 +80,7 @@ dependencies {
     annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
-    implementation 'com.google.android.gms:play-services-ads:18.2.0'
+    implementation 'com.google.android.gms:play-services-ads:18.3.0'
     implementation "androidx.cardview:cardview:$support_version"
     implementation 'com.jjoe64:graphview:4.2.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
@@ -95,6 +95,8 @@ dependencies {
 //    def coroutines = "1.0.1"
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines"
 //    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines"
+
+    implementation 'com.android.volley:volley:1.1.1'
 }
 
 //apply plugin: 'com.google.gms.google-services'

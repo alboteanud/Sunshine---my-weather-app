@@ -83,7 +83,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
             var text = cityTimeZone.displayName
 
             if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
-                text = "TIME_ZONE error: $cityTimeZone"
+                text = "TIME_ZONE_ID error: $cityTimeZone"
                 view.textLabel.setTextColor(Color.RED)
             }
             view.textLabel.text = text

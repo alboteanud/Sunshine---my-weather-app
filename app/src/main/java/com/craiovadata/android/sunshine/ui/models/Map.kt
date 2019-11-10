@@ -73,7 +73,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0
             lon: Double,
             zoomLevel: Int
         ): String {
-            val apiKey = context.getString(R.string.STATIC_GMAP_KEY)
+            val apiKey = context.getString(R.string.GOOGLE_API_KEY)
             val scale = context.resources.getInteger(R.integer.scale_static_map).toString()
             val baseUrl = context.getString(R.string.BASE_STATIC_MAP_URL)
             val staticMapUri = Uri.parse(baseUrl).buildUpon()
