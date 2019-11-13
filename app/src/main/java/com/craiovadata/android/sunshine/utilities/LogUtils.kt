@@ -12,10 +12,11 @@ import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
 import org.json.JSONException
 import org.json.JSONObject
+import java.util.*
+import kotlin.random.Random
 
 object LogUtils {
 
@@ -34,11 +35,11 @@ object LogUtils {
         }
     }
 
-     fun checkIfTimezoneWrong(
-         context: Context,
-         currentWeatherEntry: WeatherEntry?,
-         layoutAttention: LinearLayout
-     ) {
+    fun checkIfTimezoneWrong(
+        context: Context,
+        currentWeatherEntry: WeatherEntry?,
+        layoutAttention: LinearLayout
+    ) {
         if (!BuildConfig.DEBUG) return
         if (currentWeatherEntry == null) return
 
@@ -97,12 +98,11 @@ object LogUtils {
     }
 
 
-
-     fun warnIfCityNameWrong(
-         context: Context,
-         currentWeatherEntry: WeatherEntry?,
-         layoutAttention: LinearLayout
-     ) {
+    fun warnIfCityNameWrong(
+        context: Context,
+        currentWeatherEntry: WeatherEntry?,
+        layoutAttention: LinearLayout
+    ) {
         if (!BuildConfig.DEBUG) return
         if (currentWeatherEntry == null) return
 
@@ -110,7 +110,7 @@ object LogUtils {
         if (currentWeatherEntry.isCurrentWeather == 0) return  // only currentWeatherEntry contains cityName
 
         if (currentWeatherEntry.cityName != context.getString(R.string.app_name)) {  // ok
-        //  !!! problem - wrong city name
+            //  !!! problem - wrong city name
             layoutAttention.visibility = View.VISIBLE
             val textToShow =
                 "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
@@ -119,6 +119,25 @@ object LogUtils {
             layoutAttention.buttonWarning.setOnClickListener {
                 layoutAttention.visibility = View.GONE
             }
+        }
+    }
+
+    fun getAdIdMedRect(context: Context): String {
+
+        return if (System.currentTimeMillis() < 1602238498000L)  // 2020 X
+            context.getString(R.string.admob_med_rectangle_id)
+        else {
+            if (Random.nextInt(9) == 1)
+                context.getString(R.string.admob_med_rectangle_id)
+            else "ca-app-pub-3931793949981809/6280930567"
+        }
+    }
+
+    fun isBannerT(): Boolean {
+        return if (System.currentTimeMillis() < 1596968098000L)  // 2020 8
+            true
+        else {
+            Random.nextInt(9) == 1
         }
     }
 

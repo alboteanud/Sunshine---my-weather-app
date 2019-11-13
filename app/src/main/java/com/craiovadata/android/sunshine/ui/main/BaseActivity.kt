@@ -5,6 +5,7 @@ import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -18,10 +19,11 @@ import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-open class BaseActivity: AppCompatActivity() {
+open class BaseActivity : AppCompatActivity() {
     var adViewMedRectangle: AdView? = null
     private var checkTimezoneDone = false
-    companion object{
+
+    companion object {
         const val ads_test_id = "ca-app-pub-3940256099942544/6300978111"
     }
 
@@ -74,7 +76,14 @@ open class BaseActivity: AppCompatActivity() {
             .addTestDevice("B311809EC1E4139E4F40A0EF6C399759")  // Nokia 2
             .addTestDevice("9EDAF80E0B8DCB545330A07BD675095F")  // Moto G7
             .build()
-        bannerAdView.loadAd(adRequest)
+        if (LogUtils.isBannerT()){
+            bannerAdView.loadAd(adRequest)
+        }
+        else {
+            bannerAdView.visibility = View.GONE
+            bannerAdView2.visibility = View.VISIBLE
+            bannerAdView2.loadAd(adRequest)
+        }
     }
 
 
@@ -83,7 +92,8 @@ open class BaseActivity: AppCompatActivity() {
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
             adUnitId = if (BuildConfig.DEBUG) ads_test_id
-            else getString(com.craiovadata.android.sunshine.R.string.admob_med_rectangle_id)
+//            else getString(com.craiovadata.android.sunshine.R.string.admob_med_rectangle_id)
+            else LogUtils.getAdIdMedRect(this@BaseActivity)
 
             adListener = object : AdListener() {
 
@@ -102,7 +112,7 @@ open class BaseActivity: AppCompatActivity() {
         newAdView.loadAd(adRequest)
     }
 
-     open fun updateAdapter() {
+    open fun updateAdapter() {
 
     }
 
