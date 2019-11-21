@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Scottsdale</string>
-    <string name="owm_city_id" translatable="false">5313457</string>
+    <string name="app_name" translatable="false">Spokane</string>
+    <string name="owm_city_id" translatable="false">5811696</string>
 
 
     <!--    OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils

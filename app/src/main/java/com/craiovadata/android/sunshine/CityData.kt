@@ -10,7 +10,7 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "America/Phoenix"
+    const val TIME_ZONE_ID = "America/Los_Angeles"
 
     private val images = intArrayOf(
         R.drawable.c,
@@ -60,13 +60,13 @@ object CityData {
 
         val n = if (BuildConfig.DEBUG) {
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
-            val storedResId = preferences.getInt("resId", 0)
-            if (storedResId == 0) {
-                preferences.edit().putInt("resId", 1).apply()
-            } else {
-                preferences.edit().putInt("resId", 0).apply()
-            }
-            storedResId
+
+            val isRes0 = preferences.getBoolean("prefKey", true)
+            preferences.edit().putBoolean("prefKey", !isRes0).apply()
+
+            if (isRes0) 0
+            else Random().nextInt(images.size)
+
         } else Random().nextInt(images.size)
 
         return images[n]
