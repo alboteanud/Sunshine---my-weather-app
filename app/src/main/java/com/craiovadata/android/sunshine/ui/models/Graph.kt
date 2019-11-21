@@ -9,7 +9,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.utilities.CityUtils
+import com.craiovadata.android.sunshine.CityData
 import com.jjoe64.graphview.GridLabelRenderer
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
 import com.jjoe64.graphview.series.DataPoint
@@ -63,7 +63,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 //                    numVerticalLabels = 4
                     setHumanRounding(false, true)
                     labelFormatter = object :
-                        DateAsXAxisLabelFormatter(context, CityUtils.getFormatterCityTZ("HH")) {
+                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ("HH")) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
                             else super.formatLabel(value, isValueX) + "\u00B0"
@@ -79,7 +79,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
         }
 
         private fun setLabelTime(view: View) {
-            val cityTimeZone = CityUtils.getCityTimeZone()
+            val cityTimeZone = CityData.getCityTimeZone()
             var text = cityTimeZone.displayName
 
             if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {

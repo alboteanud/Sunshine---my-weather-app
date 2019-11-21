@@ -12,7 +12,7 @@ import androidx.core.app.NotificationCompat
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import com.craiovadata.android.sunshine.utilities.CityUtils.getBackResId
+import com.craiovadata.android.sunshine.CityData.getBackResId
 
 object NotifUtils {
 

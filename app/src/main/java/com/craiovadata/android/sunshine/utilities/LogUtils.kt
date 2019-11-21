@@ -9,10 +9,10 @@ import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
 import org.json.JSONException
 import org.json.JSONObject
@@ -22,7 +22,7 @@ object LogUtils {
     @JvmStatic
     fun logEntries(context: Context, entries: List<WeatherEntry>) {
         if (!BuildConfig.DEBUG) return
-        val simpleDateFormat = CityUtils.getFormatterCityTZ("HH:mm  dd MMM")
+        val simpleDateFormat = CityData.getFormatterCityTZ("HH:mm  dd MMM")
 
         entries.forEachIndexed { i, entry ->
             val date = simpleDateFormat.format(entry.date.time)
@@ -61,7 +61,7 @@ object LogUtils {
                     val responseStatus = jsonObject.getString("status")
                     if (responseStatus == "OK") {
                         val timeZoneId = jsonObject.getString("timeZoneId")
-                        if (timeZoneId == CityUtils.TIME_ZONE_ID) {
+                        if (timeZoneId == CityData.TIME_ZONE_ID) {
                             Log.e(MainActivity.TAG, "verification successful - timezone is OK")
                         } else {
                             warningText =

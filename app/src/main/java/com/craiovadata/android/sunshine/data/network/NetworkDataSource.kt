@@ -140,7 +140,7 @@ class NetworkDataSource private constructor(
                 // weather. It will decide whether to create a URL based off of the latitude and
                 // longitude or off of a simple location as a String.
 
-                val weatherRequestUrl = NetworkUtils.getUrl(context)
+                val weatherRequestUrl = NetworkUtils.getUrl(context) ?: return@execute
 
                 // Use the URL to retrieve the JSON
                 val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
@@ -153,7 +153,7 @@ class NetworkDataSource private constructor(
                 // As long as there are weather forecasts, update the LiveData storing the most recent
                 // weather forecasts. This will trigger observers of that LiveData, such as the
                 // RepositoryWeather.
-                if (response != null && response.weatherForecast.size != 0) {
+                if (response != null && response.weatherForecast.isNotEmpty()) {
                     mDownloadedWeatherForecasts.postValue(response.weatherForecast)
                     NotifUtils.notifyIfNeeded(context, response.weatherForecast[0])
 
@@ -180,7 +180,7 @@ class NetworkDataSource private constructor(
                 // longitude or off of a simple location as a String.
 
                 //                URL weatherRequestUrl = NetworkUtils.getUrl_();                                           // for test server
-                val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context)
+                val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context) ?: return@execute
 
                 // Use the URL to retrieve the JSON
                 val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
@@ -194,7 +194,7 @@ class NetworkDataSource private constructor(
                 // As long as there are weather forecasts, update the LiveData storing the most recent
                 // weather forecasts. This will trigger observers of that LiveData, such as the
                 // RepositoryWeather.
-                if (response != null && response.weatherForecast.size != 0) {
+                if (response != null && response.weatherForecast.isNotEmpty()) {
                     val entries = response.weatherForecast
                     mDownloadedCurrentWeather.postValue(entries)
                     // Will eventually do something with the downloaded data

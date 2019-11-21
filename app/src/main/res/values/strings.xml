@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Milwaukee</string>
-    <string name="owm_city_id" translatable="false">5263045</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
+    <string name="app_name" translatable="false">Scottsdale</string>
+    <string name="owm_city_id" translatable="false">5313457</string>
 
-    <!--    schimba c.jpg
-            TIME_ZONE_ID din CityUtils
-            OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
+
+    <!--    OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
             SHA1: 64:5D:DB:FB:F5:EB:C5...  -->
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8970065901</string>
-    <string name="admob_med_rectangle_id">ca-app-pub-3931793949981809/2213085867</string>  <!--S Sept2019 - med rect-->
-    <string name="admob_banner_id">ca-app-pub-3931793949981809/7249790125</string>      <!--S Sept2019 b1-->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8463067313</string>
+    <string name="admob_med_rectangle_id">ca-app-pub-3931793949981809/7826102057</string>  <!--S Nov2019 - med rect-->
+    <string name="admob_banner_id">ca-app-pub-3931793949981809/5583082094</string>      <!--S Nov2019 b1-->
 
     <string name="GOOGLE_API_KEY">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
     <string name="BASE_STATIC_MAP_URL">https://maps.googleapis.com/maps/api/staticmap?</string>

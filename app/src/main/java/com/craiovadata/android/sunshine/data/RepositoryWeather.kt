@@ -11,7 +11,7 @@ import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherDao
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource
-import com.craiovadata.android.sunshine.utilities.CityUtils
+import com.craiovadata.android.sunshine.CityData
 import java.lang.System.currentTimeMillis
 import java.util.*
 import java.util.concurrent.TimeUnit
@@ -59,7 +59,7 @@ class RepositoryWeather private constructor(
     val dayWeatherEntries: LiveData<List<ListWeatherEntry>>
         get() {
             initializeForecastData()
-            val offset = CityUtils.getCityOffset()
+            val offset = CityData.getCityOffset()
 
             val daysSinceEpoch = TimeUnit.MILLISECONDS.toDays(currentTimeMillis())
             val tomorrowMidnightNormalizedUtc = (daysSinceEpoch + 1) * DAY_IN_MILLIS

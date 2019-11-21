@@ -1,23 +1,16 @@
-package com.craiovadata.android.sunshine.utilities
+package com.craiovadata.android.sunshine
 
 import android.content.Context
 import androidx.preference.PreferenceManager
-import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.R
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.Calendar.DST_OFFSET
 import java.util.Calendar.ZONE_OFFSET
 import java.util.TimeZone.getTimeZone
 
-object CityUtils {
+object CityData {
 
-    const val TIME_ZONE_ID =
-//      "US/Eastern"
-      "US/Central"
-//      "US/Mountain"
-//      "US/Pacific"
-//        "America/Chicago"
+    const val TIME_ZONE_ID = "America/Phoenix"
 
     private val images = intArrayOf(
         R.drawable.c,
