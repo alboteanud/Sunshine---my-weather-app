@@ -12,7 +12,7 @@ class WeatherResponse {
     @NonNull
     private final WeatherEntry[] mWeatherForecast;
 
-    public WeatherResponse(@NonNull final WeatherEntry[] weatherForecast) {
+    WeatherResponse(@NonNull final WeatherEntry[] weatherForecast) {
         mWeatherForecast = weatherForecast;
     }
 

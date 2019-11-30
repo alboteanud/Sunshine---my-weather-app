@@ -1,4 +1,4 @@
-package com.craiovadata.android.sunshine.data
+package com.craiovadata.android.sunshine.data.database
 
 import android.text.format.DateUtils
 import android.text.format.DateUtils.DAY_IN_MILLIS
@@ -7,9 +7,6 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
-import com.craiovadata.android.sunshine.data.database.WeatherDao
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.CityData
 import java.lang.System.currentTimeMillis
@@ -20,7 +17,7 @@ import java.util.concurrent.TimeUnit
  * Handles data operations in Sunshine. Acts as a mediator between [NetworkDataSource]
  * and [WeatherDao]
  */
-class RepositoryWeather private constructor(
+class Repository private constructor(
     private val mWeatherDao: WeatherDao,
     private val mNetworkDataSource: NetworkDataSource,
     private val mExecutors: AppExecutors
@@ -79,13 +76,13 @@ class RepositoryWeather private constructor(
             return mWeatherDao.getCurrentWeatherList(recentDate)
         }
 
-    val nextHoursWeather: LiveData<List<ListWeatherEntry>>
-        get() {
-//            initializeForecastData()   // not needed. DaysWeather will init it already
-            val utcNowMillis = currentTimeMillis()
-            val date = Date(utcNowMillis)
-            return mWeatherDao.getCurrentForecast(date)
-        }
+//    val nextHoursWeather: LiveData<List<ListWeatherEntry>>
+//        get() {
+////            initializeForecastData()   // not needed. DaysWeather will init it already
+//            val utcNowMillis = currentTimeMillis()
+//            val date = Date(utcNowMillis)
+//            return mWeatherDao.getCurrentForecast(date)
+//        }
 
     /**
      * Checks if there are enough days of future weather for the app to display all the needed data.
@@ -172,31 +169,32 @@ class RepositoryWeather private constructor(
 
     }
 
- fun getWeatherNextHours(timestamp: Long): LiveData<List<ListWeatherEntry>> {
-     val date = Date(timestamp)
-     return mWeatherDao.getCurrentForecast(date)
+    fun getWeatherNextHours(timestamp: Long): LiveData<List<ListWeatherEntry>> {
+        val date = Date(timestamp)
+        return mWeatherDao.getCurrentForecast(date)
 
     }
 
     companion object {
-        private val LOG_TAG = RepositoryWeather::class.java.simpleName
+        private val LOG_TAG = Repository::class.java.simpleName
 
         // For Singleton instantiation
         private val LOCK = Any()
-        private var sInstance: RepositoryWeather? = null
+        private var sInstance: Repository? = null
 
         @Synchronized
         fun getInstance(
             weatherDao: WeatherDao, networkDataSource: NetworkDataSource,
             executors: AppExecutors
-        ): RepositoryWeather {
+        ): Repository {
             Log.d(LOG_TAG, "Getting the repository")
             if (sInstance == null) {
                 synchronized(LOCK) {
-                    sInstance = RepositoryWeather(
-                        weatherDao, networkDataSource,
-                        executors
-                    )
+                    sInstance =
+                        Repository(
+                            weatherDao, networkDataSource,
+                            executors
+                        )
                     Log.d(LOG_TAG, "Made new repository")
                 }
             }

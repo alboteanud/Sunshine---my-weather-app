@@ -3,16 +3,21 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
+import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -23,7 +28,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
     private var multiDayEntries: List<ListWeatherEntry>? = null
     //    private var listPosition = RecyclerView.NO_POSITION
     private lateinit var mAdapter: CardsAdapter
-    private lateinit var viewModel: MainViewModel
+    private lateinit var myViewModel: MyViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,13 +42,13 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         }
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
-        viewModel = ViewModelProviders.of(this@MainActivity, factory).get(MainViewModel::class.java)
+        myViewModel = ViewModelProviders.of(this@MainActivity, factory).get(MyViewModel::class.java)
 
-        observeCurrentWeather(viewModel)
-        observeNextHoursData(viewModel)
-        observeDaysForecastData(viewModel)
+        observeCurrentWeather(myViewModel)
+        observeNextHoursData(myViewModel)
+        observeDaysForecastData(myViewModel)
 
-        lifecycle.addObserver(viewModel)
+        lifecycle.addObserver(myViewModel)
     }
 
     private class MyLinearLayoutManager(private val context: Context) :
@@ -56,8 +61,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         }
     }
 
-    private fun observeCurrentWeather(viewModel: MainViewModel) {
-        viewModel.currentWeatherObservable.observe(this,
+    private fun observeCurrentWeather(myViewModel: MyViewModel) {
+        myViewModel.currentWeatherObservable.observe(this,
             androidx.lifecycle.Observer<List<WeatherEntry>> { entries ->
                 if (entries != null && entries.isNotEmpty()) {
                     showRecyclerView()
@@ -68,8 +73,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             })
     }
 
-    private fun observeNextHoursData(viewModel: MainViewModel) {
-        viewModel.nextHoursWeatherObservable.observe(this, Observer { listEntries ->
+    private fun observeNextHoursData(myViewModel: MyViewModel) {
+        myViewModel.nextHoursWeatherObservable.observe(this, Observer { listEntries ->
             if (listEntries != null && listEntries.isNotEmpty()) {
                 showRecyclerView()
                 graphWeatherEntries = listEntries
@@ -79,8 +84,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         })
     }
 
-    private fun observeDaysForecastData(viewModel: MainViewModel) {
-        viewModel.midDayWeather.observe(this, androidx.lifecycle.Observer { listEntries ->
+    private fun observeDaysForecastData(myViewModel: MyViewModel) {
+        myViewModel.midDayWeather.observe(this, androidx.lifecycle.Observer { listEntries ->
             if (listEntries != null && listEntries.isNotEmpty()) {
                 multiDayEntries = listEntries
                 updateAdapter()
@@ -105,6 +110,33 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         )
         adViewMedRectangle?.let { updates.add(updates.size, Ads(adViewMedRectangle)) }
         mAdapter.setUpdates(updates)
+    }
+
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        menuInflater.inflate(R.menu.menu_main, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        return when (item.itemId) {
+            R.id.action_settings -> {
+                startActivity(Intent(this, SettingsActivity::class.java))
+                return true
+            }
+            R.id.action_privacy_policy -> {
+                if (BuildConfig.DEBUG) {
+                    myViewModel.forceSyncWeather()
+                } else
+                    goToPrivacyPolicy()
+                return true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     companion object {

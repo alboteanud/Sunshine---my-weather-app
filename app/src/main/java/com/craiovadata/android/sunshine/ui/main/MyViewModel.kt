@@ -2,21 +2,23 @@ package com.craiovadata.android.sunshine.ui.main
 
 import android.util.Log
 import androidx.lifecycle.*
-import com.craiovadata.android.sunshine.data.RepositoryWeather
+import com.craiovadata.android.sunshine.data.database.Repository
 import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.LifecycleObserver
 
-class MainViewModel internal constructor(private val repository: RepositoryWeather) : ViewModel(),
+class MyViewModel internal constructor(private val repository: Repository) : ViewModel(),
     LifecycleObserver {
     //    val nextHoursWeather: LiveData<List<ListWeatherEntry>> = repository.nextHoursWeather
     val midDayWeather: LiveData<List<ListWeatherEntry>> = repository.dayWeatherEntries
 
-    fun onPolicyPressed() {
+    // pt teste
+    fun forceSyncWeather() {
         repository.forceFetchCurrentWeather()
     }
 
+    // are rol la afisare
     @OnLifecycleEvent(Lifecycle.Event.ON_START)
     internal fun onStartEvent() {
         Log.i("MainVieModel", "Observer ON_START")

@@ -21,9 +21,9 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-
+        <item name="colorPrimary">@color/blackSemi7</item>
     </style>
-<!--    <item name="colorPrimary">@color/transparent</item>-->
+<!--   -->
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

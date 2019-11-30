@@ -18,8 +18,8 @@ package com.craiovadata.android.sunshine.utilities;
 
 import android.content.Context;
 
-import com.craiovadata.android.sunshine.data.RepositoryWeather;
-import com.craiovadata.android.sunshine.data.database.SunshineDatabase;
+import com.craiovadata.android.sunshine.data.database.Repository;
+import com.craiovadata.android.sunshine.data.database.MyDatabase;
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource;
 import com.craiovadata.android.sunshine.ui.main.ViewModelFactory;
 
@@ -28,12 +28,12 @@ import com.craiovadata.android.sunshine.ui.main.ViewModelFactory;
  */
 public class InjectorUtils {
 
-    public static RepositoryWeather provideRepository(Context context) {
-        SunshineDatabase database = SunshineDatabase.getInstance(context.getApplicationContext());
+    public static Repository provideRepository(Context context) {
+        MyDatabase myDatabase = MyDatabase.getInstance(context.getApplicationContext());
         AppExecutors executors = AppExecutors.Companion.getInstance();
         NetworkDataSource networkDataSource =
                 NetworkDataSource.Companion.getInstance(context.getApplicationContext(), executors);
-        return RepositoryWeather.Companion.getInstance(database.weatherDao(), networkDataSource, executors);
+        return Repository.Companion.getInstance(myDatabase.weatherDao(), networkDataSource, executors);
     }
 
     public static NetworkDataSource provideNetworkDataSource(Context context) {
@@ -50,7 +50,7 @@ public class InjectorUtils {
 //    }
 
     public static ViewModelFactory provideMainActivityViewModelFactory(Context context) {
-        RepositoryWeather repository = provideRepository(context.getApplicationContext());
+        Repository repository = provideRepository(context.getApplicationContext());
         return new ViewModelFactory(repository);
     }
 

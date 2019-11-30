@@ -44,7 +44,8 @@ class NetworkDataSource private constructor(
     private val mExecutors: AppExecutors
 ) {
     // LiveData storing the latest downloaded weather forecasts
-    private val mDownloadedWeatherForecasts: MutableLiveData<Array<WeatherEntry>> = MutableLiveData()
+    private val mDownloadedWeatherForecasts: MutableLiveData<Array<WeatherEntry>> =
+        MutableLiveData()
     private val mDownloadedCurrentWeather: MutableLiveData<Array<WeatherEntry>> = MutableLiveData()
 
     val forecasts: LiveData<Array<WeatherEntry>>
@@ -85,7 +86,7 @@ class NetworkDataSource private constructor(
             /* The Service that will be used to sync Sunshine's data */
             .setService(MyJobService::class.java)
             /* Set the UNIQUE tag used to identify this Job */
-            .setTag(SUNSHINE_SYNC_TAG)
+            .setTag(LOG_TAG)
             /*
                  * Network constraints on which this Job should run. We choose to run on any
                  * network, but you can also choose to run only on un-metered networks or when the
@@ -162,7 +163,15 @@ class NetworkDataSource private constructor(
                         "weather days - JSON not null and has " + response.weatherForecast.size + " values"
                     )
                     //                    LogUtils.logResponse(LOG_TAG, response.getWeatherForecast()[0]);
+                } else if (BuildConfig.DEBUG) { // notify anyway in debug
+                    response?.weatherForecast?.get(0)?.let {
+                        NotifUtils.notifyUserOfNewWeather(context, it)
+                    }
+
+
                 }
+
+
             } catch (e: Exception) {
                 // Server probably invalid
                 e.printStackTrace()
@@ -208,6 +217,8 @@ class NetworkDataSource private constructor(
                                 entry.date
                             )
                         )
+                            NotifUtils.notifyUserOfNewWeather(context, entry)
+
                     }
                 }
             } catch (e: Exception) {
@@ -223,13 +234,10 @@ class NetworkDataSource private constructor(
 
         // Interval at which to sync with the weather. Use TimeUnit for convenience, rather than
         // writing out a bunch of multiplication ourselves and risk making a silly mistake.
-        private val SYNC_INTERVAL_HOURS = 8
-        val NUM_MIN_DATA_COUNTS = (5 - 1) * 8
-        private val SYNC_INTERVAL_SECONDS =
-            TimeUnit.HOURS.toSeconds(SYNC_INTERVAL_HOURS.toLong()).toInt()
-        //    private static final int SYNC_INTERVAL_SECONDS = 5 * 60;
-        private val SYNC_FLEXTIME_SECONDS = SYNC_INTERVAL_SECONDS / 3
-        private val SUNSHINE_SYNC_TAG = "sunshine-sync"
+
+        const val NUM_MIN_DATA_COUNTS = 24
+        private const val SYNC_INTERVAL_SECONDS = 6 * 3600
+        private const val SYNC_FLEXTIME_SECONDS = 2 * 3600
 
         // For Singleton instantiation
         private val LOCK = Any()
