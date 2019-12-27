@@ -3,11 +3,13 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.BuildConfig
@@ -20,6 +22,7 @@ import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_main.view.*
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
@@ -51,14 +54,28 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         lifecycle.addObserver(myViewModel)
     }
 
+
     private class MyLinearLayoutManager(private val context: Context) :
         LinearLayoutManager(context) {
+
+        private var didScroll: Boolean = false
 
         // Force new items appear at the top
         override fun onItemsAdded(recyclerView: RecyclerView, positionStart: Int, itemCount: Int) {
             super.onItemsAdded(recyclerView, positionStart, itemCount)
+            val position = findLastCompletelyVisibleItemPosition()
+            Log.d(TAG, "onItemsAdded()  positionStart: " + positionStart + " itemCount: "+ itemCount +
+                    "  LastCompletelyVisibleItemPosition: " + position)
+            if (!didScroll)
             scrollToPosition(0)
         }
+
+        override fun onScrollStateChanged(state: Int) {
+            super.onScrollStateChanged(state)
+            Log.d(TAG, "onScrollStateChanged()  state: $state")
+             didScroll = true
+        }
+
     }
 
     private fun observeCurrentWeather(myViewModel: MyViewModel) {
@@ -96,22 +113,16 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     override fun updateAdapter() {
         val updates = mutableListOf<Base>()
-        // Primele 4 sunt notificate de schimbare °C|°F - onCelsiusFarClicked
-        updates.addAll(
-            listOf(
-                CurrentWeather(currentWeatherEntry),
-                Graph(graphWeatherEntries),
-                Details(currentWeatherEntry),
-                MultiDay(multiDayEntries),
-//                        Ads(adViewMedRectangle),
-                Map(currentWeatherEntry),
-                News("")
-            )
-        )
-        adViewMedRectangle?.let { updates.add(updates.size, Ads(adViewMedRectangle)) }
+//        // Primele 4 sunt notificate de schimbare °C|°F - onCelsiusFarClicked
+        updates.add(CurrentWeather(currentWeatherEntry))
+        updates.add(Graph(graphWeatherEntries))
+        updates.add(Details(currentWeatherEntry))
+        updates.add(MultiDay(multiDayEntries))
+        updates.add(Map(currentWeatherEntry))
+        updates.add(News(""))
+        if (adViewMedRectangle != null) updates.add(updates.size, Ads(adViewMedRectangle))
         mAdapter.setUpdates(updates)
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -125,14 +136,18 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
+                if (BuildConfig.DEBUG) myViewModel.forceSyncWeather()
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
             R.id.action_privacy_policy -> {
                 if (BuildConfig.DEBUG) {
-                    myViewModel.forceSyncWeather()
-                } else
-                    goToPrivacyPolicy()
+                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
+                    val savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+
+                    layoutAttention.visibility = View.VISIBLE
+                    layoutAttention.textViewWarnCityWrong.text = savedTxt
+                } else goToPrivacyPolicy()
                 return true
             }
             else -> super.onOptionsItemSelected(item)
@@ -141,6 +156,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     companion object {
         const val TAG = "MainActivity"
+        const val PREF_SYNC_KEY = "sync_key"
     }
 
     override fun onCelsiusFarClicked(view: View) {
@@ -149,6 +165,10 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     override fun onNewsClicked(view: View) {
         startActivity(Intent(this, NewsActivity::class.java))
+    }
+
+    fun onOkTestButtonPressed(view: View) {
+        layoutAttention.visibility = View.GONE
     }
 
 }

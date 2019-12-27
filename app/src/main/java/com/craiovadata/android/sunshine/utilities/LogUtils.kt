@@ -98,28 +98,6 @@ object LogUtils {
 
 
 
-     fun warnIfCityNameWrong(
-         context: Context,
-         currentWeatherEntry: WeatherEntry?,
-         layoutAttention: LinearLayout
-     ) {
-        if (!BuildConfig.DEBUG) return
-        if (currentWeatherEntry == null) return
 
-        if (currentWeatherEntry.cityName.isEmpty()) return
-        if (currentWeatherEntry.isCurrentWeather == 0) return  // only currentWeatherEntry contains cityName
-
-        if (currentWeatherEntry.cityName != context.getString(R.string.app_name)) {  // ok
-        //  !!! problem - wrong city name
-            layoutAttention.visibility = View.VISIBLE
-            val textToShow =
-                "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
-            layoutAttention.textViewWarnCityWrong.text = textToShow
-
-            layoutAttention.buttonWarning.setOnClickListener {
-                layoutAttention.visibility = View.GONE
-            }
-        }
-    }
 
 }

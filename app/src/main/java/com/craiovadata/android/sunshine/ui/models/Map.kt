@@ -13,7 +13,7 @@ import com.bumptech.glide.request.RequestOptions
 import com.craiovadata.android.sunshine.R
 
 
-data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0)) {
+data class Map(val weatherEntry: WeatherEntry?) : Base(-4, TYPE.MAP, Date(0)) {
 
 
     companion object {
@@ -58,8 +58,8 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0
             val mapImageView = itemView.mapImageView
             val requestOptions = RequestOptions()
             .placeholder(
-                com.craiovadata.android.sunshine.R.drawable.ic_map)
-            .error(com.craiovadata.android.sunshine.R.drawable.ic_map)
+                R.drawable.ic_map)
+            .error(R.drawable.ic_map)
 
             Glide.with(mapImageView)
                 .load(url)

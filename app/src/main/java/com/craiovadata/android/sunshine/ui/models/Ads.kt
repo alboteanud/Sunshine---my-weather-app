@@ -7,7 +7,7 @@ import kotlinx.android.synthetic.main.ads_card.view.*
 import java.util.*
 
 data class Ads(val adView: AdView?)
-    : Base(adView?.id, Base.TYPE.ADS, Date(0)) {
+    : Base(adView?.id, TYPE.ADS, Date(0)) {
 
     companion object {
 

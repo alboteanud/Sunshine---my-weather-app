@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.graph_card.view.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
 data class Graph(val list: List<ListWeatherEntry>?) :
-    Base(list?.get(0)?.id, Base.TYPE.GRAPH, list?.get(0)?.date) {
+    Base(list?.get(0)?.id, TYPE.GRAPH, list?.get(0)?.date) {
 
     companion object {
 

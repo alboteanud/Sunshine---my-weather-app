@@ -25,10 +25,6 @@ class AppExecutors private constructor(
         return diskIO
     }
 
-    fun mainThread(): Executor {
-        return mainThread
-    }
-
     fun networkIO(): Executor {
         return networkIO
     }

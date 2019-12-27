@@ -15,7 +15,8 @@ class MyViewModel internal constructor(private val repository: Repository) : Vie
 
     // pt teste
     fun forceSyncWeather() {
-        repository.forceFetchCurrentWeather()
+//        repository.forceFetchCurrentWeather()
+        repository.forceFetchWeather()
     }
 
     // are rol la afisare

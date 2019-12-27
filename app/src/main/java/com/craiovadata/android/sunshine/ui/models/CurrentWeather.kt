@@ -1,18 +1,15 @@
 package com.craiovadata.android.sunshine.ui.models
 
 import android.view.View
-import android.widget.Toast
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.CityData
 import kotlinx.android.synthetic.main.current_weather_card.view.*
 import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
 data class CurrentWeather(val weatherEntry: WeatherEntry?) :
-    Base(weatherEntry?.id ?: -1, Base.TYPE.WEATHER, weatherEntry?.date ?: Date(0)) {
+    Base(weatherEntry?.id ?: -1, TYPE.WEATHER, weatherEntry?.date ?: Date(0)) {
 
     companion object {
 
@@ -46,20 +43,20 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?) :
              * the _date representation for the local _date in local time.
              * SunshineDateUtils#getFriendlyDateString takes care of this for us.
              */
-            if (BuildConfig.DEBUG) {
+//            if (BuildConfig.DEBUG) {
 //            if (entry.cityName == "")
 //                cardView.weatherDate.text = "city not found"
 //            else {
-                val simpleDateFormat = CityData.getFormatterCityTZ("dd MMM HH:mm")
-                val myText = entry.cityName + "\n" + simpleDateFormat.format(entry.date.time)
+//                val simpleDateFormat = CityData.getFormatterCityTZ("dd MMM HH:mm")
+//                val myText = entry.cityName + "\n" + simpleDateFormat.format(entry.date.time)
 //                cardView.weatherDate.text = myText
-                Toast.makeText(cardView.context, myText, Toast.LENGTH_SHORT).show()
+//                Toast.makeText(cardView.context, myText, Toast.LENGTH_SHORT).show()
 //            }
-            } else {
+//            } else {
 //                val simpleDateFormat = CityData.getFormatterCityTZ("dd MMM")
 //                val myText = simpleDateFormat.format(entry.date.time)
 //                cardView.weatherDate.text = myText
-            }
+//            }
 
 
             /***********************

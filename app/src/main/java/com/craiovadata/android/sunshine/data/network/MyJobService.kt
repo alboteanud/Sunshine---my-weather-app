@@ -44,10 +44,6 @@ class MyJobService : JobService() {
     /**
      * Called when the scheduling engine has decided to interrupt the execution of a running job,
      * most likely because the runtime constraints associated with the job are no longer satisfied.
-     *
-     * @return whether the job should be retried
-     * @see Job.Builder.setRetryStrategy
-     * @see RetryStrategy
      */
     override fun onStopJob(jobParameters: JobParameters): Boolean {
         return true

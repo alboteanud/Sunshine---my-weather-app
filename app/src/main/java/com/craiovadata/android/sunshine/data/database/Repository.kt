@@ -146,6 +146,12 @@ class Repository private constructor(
             mNetworkDataSource.startFetchCurrentWeatherService()
         }
     }
+@Synchronized
+    fun forceFetchWeather() {
+        mExecutors.diskIO().execute {
+            mNetworkDataSource.startFetchWeatherService()
+        }
+    }
 
     private fun deleteOldData() {
         //        Date today = SunshineDateUtils.getNormalizedUtcDateForToday();

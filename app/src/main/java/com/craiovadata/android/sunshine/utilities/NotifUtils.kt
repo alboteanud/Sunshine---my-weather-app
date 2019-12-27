@@ -5,17 +5,19 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
-import androidx.preference.PreferenceManager
-import android.text.format.DateUtils
 import android.text.format.DateUtils.DAY_IN_MILLIS
 import android.text.format.DateUtils.HOUR_IN_MILLIS
 import androidx.core.app.NotificationCompat
+import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.CityData.getBackResId
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import com.craiovadata.android.sunshine.CityData.getBackResId
-import java.util.concurrent.TimeUnit
+import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
+import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isForeground
+import java.util.*
+
 
 object NotifUtils {
 
@@ -33,23 +35,18 @@ object NotifUtils {
 
     private fun getEllapsedTimeSinceLastNotification(context: Context): Long {
         val lastNotificationTimeMillis = getLastNotificationTimeInMillis(context)
-        val elapsedTimeSinceLastNotif = System.currentTimeMillis() - lastNotificationTimeMillis
-        if (BuildConfig.DEBUG) {
-            val fakeElapsed = elapsedTimeSinceLastNotif + DAY_IN_MILLIS
-            return fakeElapsed
-        }
-        return elapsedTimeSinceLastNotif
+        return System.currentTimeMillis() - lastNotificationTimeMillis
     }
 
-    private fun saveLastNotificationTime(context: Context, timeOfNotification: Long) {
+    private fun saveLastNotificationTime(context: Context) {
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
         val editor = sp.edit()
         val lastNotificationKey = context.getString(R.string.pref_last_notification)
-        editor.putLong(lastNotificationKey, timeOfNotification)
+        editor.putLong(lastNotificationKey, System.currentTimeMillis())
         editor.apply()
     }
 
-    fun notifyUserOfNewWeather(context: Context, entry: WeatherEntry) {
+    private fun notifyUserOfNewWeather(context: Context, entry: WeatherEntry) {
         val chanelId = context.getString(R.string.norif_channel_id)
         val notificationManager =
             context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
@@ -64,7 +61,7 @@ object NotifUtils {
         val notification = buildNotif(context, entry)
         notificationManager.notify(1, notification)
 
-        saveLastNotificationTime(context, System.currentTimeMillis())
+        saveLastNotificationTime(context)
     }
 
     private fun buildNotif(context: Context, entry: WeatherEntry): Notification {
@@ -96,7 +93,7 @@ object NotifUtils {
             .setContentText(contentTxt)
             .setColor(color)
             .setAutoCancel(true)
-            .setTimeoutAfter(3 * HOUR_IN_MILLIS)
+            .setTimeoutAfter(8 * HOUR_IN_MILLIS)
             //            .setOngoing(true)
             .setContentIntent(getPendingIntentMA(context))
         //                .addAction(
@@ -117,17 +114,29 @@ object NotifUtils {
 
     @JvmStatic
     fun notifyIfNeeded(context: Context, weatherEntry: WeatherEntry) {
-
-        val notificationsEnabled = areNotificationsEnabled(context)
         val timeSinceLastNotification = getEllapsedTimeSinceLastNotification(context)
-        val oneDayPassedSinceLastNotification = timeSinceLastNotification >= DAY_IN_MILLIS
+        val oneDayPassedSinceLastNotification = timeSinceLastNotification > DAY_IN_MILLIS
 
-        val isBackground = !ForegroundListener.isForeground()
+        val rightNow = Calendar.getInstance()
+        val currentHourIn24Format = rightNow[Calendar.HOUR_OF_DAY]
 
-        if (notificationsEnabled && oneDayPassedSinceLastNotification
-            && isBackground
+        if (areNotificationsEnabled(context)
+            && oneDayPassedSinceLastNotification
+            && !isForeground()
+            && currentHourIn24Format > 7
+            && currentHourIn24Format < 19
         ) {
             notifyUserOfNewWeather(context, weatherEntry)
+
+
+            if (BuildConfig.DEBUG ) {
+//                || context.getString(R.string.app_name) == "Ontario"
+
+                val pref = PreferenceManager.getDefaultSharedPreferences(context)
+                var savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+                savedTxt += "n"
+                pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
+            }
         }
     }
 

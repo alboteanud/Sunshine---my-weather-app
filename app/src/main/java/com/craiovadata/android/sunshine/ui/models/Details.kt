@@ -7,7 +7,7 @@ import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import kotlinx.android.synthetic.main.details_weather_card.view.*
 
 data class Details(val weatherEntry: WeatherEntry?)
-    : Base(weatherEntry?.id, Base.TYPE.DETAILS, weatherEntry?.date) {
+    : Base(weatherEntry?.id, TYPE.DETAILS, weatherEntry?.date) {
 
     companion object {
 

@@ -62,7 +62,7 @@ class CardsViewHolders {
         : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
-            val mapUpdate = update as com.craiovadata.android.sunshine.ui.models.Map
+            val mapUpdate = update as Map
             val entry = mapUpdate.weatherEntry
             Map.bindMapToUI(entry, itemView)
         }

@@ -17,12 +17,12 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.US.IA.DesMoines'
+        applicationId 'com.craiovadata.android.sunshine.RO.Craiova'
         minSdkVersion 23
         targetSdkVersion 29
-        versionName '5'
+        versionName '6'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 5
+        versionCode = 6
         // Required to use Java 8.
 //        jackOptions { enabled true }
     }

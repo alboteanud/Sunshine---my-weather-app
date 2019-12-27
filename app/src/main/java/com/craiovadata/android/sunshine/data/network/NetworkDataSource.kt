@@ -29,12 +29,12 @@ import com.firebase.jobdispatcher.GooglePlayDriver
 import com.firebase.jobdispatcher.Lifetime
 import com.firebase.jobdispatcher.Trigger
 
-import java.util.concurrent.TimeUnit
-
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-
-//import com.craiovadata.android.sunshine.utilities.AppExecutors;
+import androidx.preference.PreferenceManager
+import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
+import java.lang.System.currentTimeMillis
+import java.text.SimpleDateFormat
 
 /**
  * Provides an API for doing all operations with the server data
@@ -148,29 +148,41 @@ class NetworkDataSource private constructor(
 
                 // Parse the JSON into a list of weather forecasts
                 val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
-                Log.d(LOG_TAG, "weather days -JSON Parsing finished")
 
+                // test stuff
+                if (BuildConfig.DEBUG  ) {
+//                    || context.getString(R.string.app_name) == "Ontario"
 
-                // As long as there are weather forecasts, update the LiveData storing the most recent
-                // weather forecasts. This will trigger observers of that LiveData, such as the
-                // RepositoryWeather.
-                if (response != null && response.weatherForecast.isNotEmpty()) {
-                    mDownloadedWeatherForecasts.postValue(response.weatherForecast)
-                    NotifUtils.notifyIfNeeded(context, response.weatherForecast[0])
-
+//                    Log.d(LOG_TAG, "weather days -JSON Parsing finished")
                     Log.d(
                         LOG_TAG,
                         "weather days - JSON not null and has " + response.weatherForecast.size + " values"
                     )
                     //                    LogUtils.logResponse(LOG_TAG, response.getWeatherForecast()[0]);
-                } else if (BuildConfig.DEBUG) { // notify anyway in debug
-                    response?.weatherForecast?.get(0)?.let {
-                        NotifUtils.notifyUserOfNewWeather(context, it)
-                    }
 
+                    // save time in prefs
 
+                    val pref = PreferenceManager.getDefaultSharedPreferences(context)
+                    var savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+
+                    val format = SimpleDateFormat("HH.mm")
+                    savedTxt += " " + format.format(currentTimeMillis())
+                    pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
                 }
 
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the
+                // RepositoryWeather.
+                if (!response.weatherForecast.isNullOrEmpty()) {
+
+                    val entries = response.weatherForecast
+
+                    mDownloadedWeatherForecasts.postValue(entries)
+                    NotifUtils.notifyIfNeeded(context, entries[0])
+                }
+
+
+//                        NotifUtils.notifyUserOfNewWeather(context, response.weatherForecast[0])
 
             } catch (e: Exception) {
                 // Server probably invalid
@@ -203,23 +215,12 @@ class NetworkDataSource private constructor(
                 // As long as there are weather forecasts, update the LiveData storing the most recent
                 // weather forecasts. This will trigger observers of that LiveData, such as the
                 // RepositoryWeather.
-                if (response != null && response.weatherForecast.isNotEmpty()) {
+                if (response.weatherForecast.isNotEmpty()) {
                     val entries = response.weatherForecast
                     mDownloadedCurrentWeather.postValue(entries)
                     // Will eventually do something with the downloaded data
 
-                    if (BuildConfig.DEBUG) {
-                        val entry = entries[0]
-                        Log.i(
-                            LOG_TAG, String.format(
-                                "parsed CurrentWeather - temp %1.0f  %s ",
-                                entry.temperature,
-                                entry.date
-                            )
-                        )
-                            NotifUtils.notifyUserOfNewWeather(context, entry)
-
-                    }
+//                    Log.i(LOG_TAG, String.format("parsed CurrentWeather - temp %1.0f  %s ", entries[0].temperature, entries[0].date))
                 }
             } catch (e: Exception) {
                 // Server probably invalid
@@ -235,9 +236,9 @@ class NetworkDataSource private constructor(
         // Interval at which to sync with the weather. Use TimeUnit for convenience, rather than
         // writing out a bunch of multiplication ourselves and risk making a silly mistake.
 
-        const val NUM_MIN_DATA_COUNTS = 24
+        const val NUM_MIN_DATA_COUNTS = 16
         private const val SYNC_INTERVAL_SECONDS = 6 * 3600
-        private const val SYNC_FLEXTIME_SECONDS = 2 * 3600
+        private const val SYNC_FLEXTIME_SECONDS = 3 * 3600
 
         // For Singleton instantiation
         private val LOCK = Any()

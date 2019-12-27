@@ -20,10 +20,8 @@ import android.net.Uri
 import android.util.Log
 
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.CityData
 
 import java.io.IOException
-import java.lang.IllegalArgumentException
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
@@ -37,8 +35,7 @@ internal object NetworkUtils {
     private const val TAG = "NetworkUtils"
     private const val BASE_OWM_WEATHER_URL = "http://api.openweathermap.org/data/2.5/forecast?"
     private const val BASE_OWM_WEATHER_NOW_URL = "http://api.openweathermap.org/data/2.5/weather?"
-    private const val OWM_USER_ID =
-        "1dcb16570a0e21ac8c7938cc8c0c50c6" // OWM cont gratuit Miha Scobaru - creat 19 Sept 2019
+
     private const val ID_PARAM = "id"
     private const val APPID_PARAM = "APPID"
 
@@ -53,47 +50,54 @@ internal object NetworkUtils {
     private const val UNITS_PARAM = "units"
 
     fun getUrl(mContext: Context): URL? {
-        return buildUrlWithLocationId(mContext.getString(R.string.owm_city_id))
+        val owmApiKey = mContext.getString(R.string.owm_api_key)
+        val owmCityId = mContext.getString(R.string.owm_city_id)
+        return buildUrlWithLocationId(owmCityId, owmApiKey)
     }
 
     fun getUrlCurrentWeather(mContext: Context): URL? {
-        return buildUrlWeatherNowWithLocationId(mContext.getString(R.string.owm_city_id))
+        val owmApiKey = mContext.getString(R.string.owm_api_key)
+        val owmCityId = mContext.getString(R.string.owm_city_id)
+        return buildUrlWeatherNowWithLocationId(owmCityId, owmApiKey)
     }
 
-    private fun buildUrlWithLocationId(locationID: String): URL? {
+    private fun buildUrlWithLocationId(locationID: String, owmApiKey: String): URL? {
         val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
             .appendQueryParameter(ID_PARAM, locationID)
             .appendQueryParameter(FORMAT_PARAM, format)
             .appendQueryParameter(UNITS_PARAM, units)
-            .appendQueryParameter(APPID_PARAM, OWM_USER_ID)
+            .appendQueryParameter(APPID_PARAM, owmApiKey)
             .build()
 
-        try {
+        return try {
             val weatherQueryUrl = URL(weatherQueryUri.toString())
-            Log.v(TAG, "URL forecasts 5 days 3 hours: $weatherQueryUrl")
-            return weatherQueryUrl
+            Log.v(TAG, "URL forecasts 5 days = $weatherQueryUrl")
+            weatherQueryUrl
         } catch (e: MalformedURLException) {
             e.printStackTrace()
-            return null
+            null
         }
 
     }
 
-    private fun buildUrlWeatherNowWithLocationId(locationID: String): URL? {
+    private fun buildUrlWeatherNowWithLocationId(
+        locationID: String,
+        owmApiKey: String
+    ): URL? {
         val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_NOW_URL).buildUpon()
             .appendQueryParameter(ID_PARAM, locationID)
             .appendQueryParameter(FORMAT_PARAM, format)
             .appendQueryParameter(UNITS_PARAM, units)
-            .appendQueryParameter(APPID_PARAM, OWM_USER_ID)
+            .appendQueryParameter(APPID_PARAM, owmApiKey)
             .build()
 
-        try {
+        return try {
             val weatherQueryUrl = URL(weatherQueryUri.toString())
             Log.v(TAG, "URL current weather: $weatherQueryUrl")
-            return weatherQueryUrl
+            weatherQueryUrl
         } catch (e: MalformedURLException) {
             e.printStackTrace()
-            return null
+            null
         }
 
     }

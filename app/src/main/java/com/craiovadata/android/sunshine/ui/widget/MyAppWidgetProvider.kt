@@ -22,13 +22,11 @@ class MyAppWidgetProvider : AppWidgetProvider() {
 
             val currentWeather = repository.currentWeatherList
 
-            if (currentWeather != null && currentWeather.size > 0) {
+            if (currentWeather.isNotEmpty()) {
 
                 val currentWeatherEntry = currentWeather[0]
                 updateWidgets(context, appWidgetManager, appWidgetIds, currentWeatherEntry)
 //                            logDBvalues(context, mutableListOf(), currentWeather)
-            } else {
-                //            showLoading()
             }
 
         }

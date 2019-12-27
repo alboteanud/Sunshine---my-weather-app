@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <!--    <string name="today">Heute</string>
+        <string name="tomorrow">Morgen</string>-->
+    <!--  <string name="pref_location_label">Standort</string>-->
+    <!--    <string name="pref_enable_notifications_true">An</string>
+    <string name="pref_enable_notifications_false">Aus</string>-->
+    <!--    <string name="pref_units_label">Einheiten</string>
+        <string name="pref_units_label_metric">Metrisch</string>
+        <string name="pref_units_label_imperial">Imperial</string>-->
+    <!--<string name="a11y_temp_now">Temperatur: <xliff:g id="temp">%1$s</xliff:g></string>
+    <string name="a11y_low_temp">Niedrige Temperatur: <xliff:g id="low">%1$s</xliff:g></string>-->
+
+    <string name="format_wind_kmh">
+        <xliff:g id="speed">%1$1.0f</xliff:g> km/h
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_wind_mph">
+        <xliff:g id="speed">%1$1.0f</xliff:g> mph
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_pressure">
+        <xliff:g id="pressure">%1.0f</xliff:g> hPa
+    </string>
+
+    <string name="action_settings">Einstellungen</string>
+    <string name="title_activity_settings">Einstellungen</string>
+    <string name="map_content_description">Karte</string>
+    <string name="wind_label">Wind</string>
+    <string name="pressure_label">Luftdruck</string>
+    <string name="humidity_label">Luftfeuchtigkeit</string>
+    <string name="pref_enable_notifications_label">Benachrichtigungen erhalten</string>
+
+    <string name="a11y_forecast">Das Wetter: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Wetter-Symbol: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">Hochtemperatur: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Luftfeuchtigkeit: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Luftdruck: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Geschwindigkeit und Windrichtung: <xliff:g id="wind">%1$s</xliff:g></string>
+    <string name="a11y_news_icon_content">Symbol Nachrichten</string>
+    <string name="a11y_news_arrow">Symbol Pfeil gehe zu Nachrichten</string>
+
+    <string name="N">N</string>
+    <string name="S">S</string>
+    <string name="E">O</string>
+    <string name="W">W</string>
+    <string name="NE">NE</string>
+    <string name="NW">NW</string>
+    <string name="SE">SE</string>
+    <string name="SW">SW</string>
+
+
+    <!--TODO translate-->
+    <string name="labelOurAd">Werbung</string>
+    <string name="menu_label_privacy_policy">Datenschutzerklärung</string>
+
+    <string name="feedback_review_sent">Danke</string>
+    <string name="feedback_review_sent_unsuccesfully">Fehler beim Senden der Bewertung</string>
+    <string name="sent_feedback_label">wurde versendet</string>
+    <string name="feedback_pref_summary">Melden Sie technische Probleme oder schlagen Sie neue Funktionen vor</string>
+    <string name="feedback_pref_title">Feedback schicken</string>
+    <string name="title_activity_news">Nachrichten</string>
+
+    <string name="label_news_text">Die neuesten Nachrichten</string>
+
+    <!-- Weather Conditions (From OpenWeatherMap)
+    http://api.openweathermap.org/data/2.5/forecast?id=518557&mode=json&units=metric&APPID=6efe9ba5f984adebdeb54334751f6c0b&lang=de
+    -->
+    <string name="condition_2xx">der Sturm</string>
+    <string name="condition_3xx">der Nieselregen</string>
+    <string name="condition_500">Leichter Regen</string>
+    <string name="condition_501">Mäßiger Regen</string>
+    <string name="condition_502">Starkregen</string>
+    <string name="condition_503">intensiver Niederschlag</string>
+    <string name="condition_504">Extremer Regen</string>
+    <string name="condition_511">Gefrierender Regen</string>
+    <string name="condition_520">Light Shower</string>
+    <string name="condition_521">Shower</string>
+    <string name="condition_522">Heavy Shower</string>
+    <string name="condition_531">Ragged Shower</string>
+    <string name="condition_600">Mäßiger Schnee</string>
+    <string name="condition_601">Schnee</string>
+    <string name="condition_602">Heavy Snow</string>
+    <string name="condition_611">Sleet</string>
+    <string name="condition_612">Light shower Sleet</string>
+    <string name="condition_613">Shower Sleet</string>
+    <string name="condition_615">Rain and Snow</string>
+    <string name="condition_616">Rain and Snow</string>
+    <string name="condition_620">Shower Snow</string>
+    <string name="condition_621">Shower Snow</string>
+    <string name="condition_622">Shower Snow</string>
+    <string name="condition_701">Mist</string>
+    <string name="condition_711">Smoke</string>
+    <string name="condition_721">Haze</string>
+    <string name="condition_731">Sand, Dust</string>
+    <string name="condition_741">Fog</string>
+    <string name="condition_751">Sand</string>
+    <string name="condition_761">Dust</string>
+    <string name="condition_762">Volcanic Ash</string>
+    <string name="condition_771">Squalls</string>
+    <string name="condition_781">Tornado</string>
+    <string name="condition_800">Klarer Himmel</string>
+    <string name="condition_801">Mostly Clear</string>
+    <string name="condition_802">Mäßig bewölkt</string>
+    <string name="condition_803">Überwiegend bewölkt</string>
+    <string name="condition_804">Bedeckt</string>
+    <string name="condition_900">Tornado</string>
+    <string name="condition_901">Tropical Storm</string>
+    <string name="condition_902">Hurricane</string>
+    <string name="condition_903">Cold</string>
+    <string name="condition_904">Hot</string>
+    <string name="condition_905">Windy</string>
+    <string name="condition_906">Hail</string>
+    <string name="condition_951">Calm</string>
+    <string name="condition_952">Light Breeze</string>
+    <string name="condition_953">Gentle Breeze</string>
+    <string name="condition_954">Breeze</string>
+    <string name="condition_955">Fresh Breeze</string>
+    <string name="condition_956">Strong Breeze</string>
+    <string name="condition_957">High Wind</string>
+    <string name="condition_958">Gale</string>
+    <string name="condition_959">Severe Gale</string>
+    <string name="condition_960">Storm</string>
+    <string name="condition_961">Violent Storm</string>
+    <string name="condition_962">Hurricane</string>
+
+    <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+
+</resources>
+

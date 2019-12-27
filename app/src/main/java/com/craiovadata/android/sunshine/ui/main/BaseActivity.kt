@@ -5,20 +5,17 @@ import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
 import android.net.Uri
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.view.View
-import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
-import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
+import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.LogUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_main.view.*
 
 open class BaseActivity : AppCompatActivity() {
     var adViewMedRectangle: AdView? = null
@@ -30,16 +27,11 @@ open class BaseActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         backImage.setImageResource(CityData.getBackResId(this))
 
-        initAds()
+//        if (!BuildConfig.DEBUG)
+            initAds()
     }
 
-
-
     private fun initAds() {
-        if (BuildConfig.DEBUG) {
-            bannerAdView.visibility = GONE
-            return
-        }
         MobileAds.initialize(this)
         bannerAdView.loadAd(AdRequest.Builder().build())
         loadAdMedRectangle() // before observers
@@ -72,10 +64,32 @@ open class BaseActivity : AppCompatActivity() {
         LogUtils.logEntries(this, entries)
 
         val currentWeatherEntry = entries[0]
-        LogUtils.warnIfCityNameWrong(this, currentWeatherEntry, layoutAttention)
+        warnIfCityNameWrong(currentWeatherEntry)
         if (!checkTimezoneDone) {
             LogUtils.checkIfTimezoneWrong(this, currentWeatherEntry, layoutAttention)
             checkTimezoneDone = true
+        }
+    }
+
+    private fun warnIfCityNameWrong(
+        currentWeatherEntry: WeatherEntry?
+    ) {
+        if (!BuildConfig.DEBUG) return
+        if (currentWeatherEntry == null) return
+
+        if (currentWeatherEntry.cityName.isEmpty()) return
+        if (currentWeatherEntry.isCurrentWeather == 0) return  // only currentWeatherEntry contains cityName
+
+        if (currentWeatherEntry.cityName != getString(R.string.app_name)) {  // ok
+            //  !!! problem - wrong city name
+            layoutAttention.visibility = View.VISIBLE
+            val textToShow =
+                "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
+            layoutAttention.textViewWarnCityWrong.text = textToShow
+
+//            layoutAttention.buttonWarning.setOnClickListener {
+//                layoutAttention.visibility = View.GONE
+//            }
         }
     }
 

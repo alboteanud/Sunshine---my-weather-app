@@ -10,7 +10,7 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "America/Chicago"
+    const val TIME_ZONE_ID = "Europe/Bucharest"
 
     private val images = intArrayOf(
         R.drawable.c,
@@ -20,8 +20,7 @@ object CityData {
         R.drawable.stabil3,
         R.drawable.stabil4,
         R.drawable.stabil5,
-        R.drawable.stabil6,
-        R.drawable.stabil7
+        R.drawable.stabil6
     )
 
     @JvmStatic
@@ -58,18 +57,31 @@ object CityData {
 //        val hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
 //        val n = (hoursSinceEpoch % images.size).toInt()
 
-        val n = if (BuildConfig.DEBUG) {
+        val noImg = if (BuildConfig.DEBUG) {
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
 
-            val isRes0 = preferences.getBoolean("prefKey", true)
-            preferences.edit().putBoolean("prefKey", !isRes0).apply()
+            val storedResNo = preferences.getInt("prefKeyI", 0)
 
-            if (isRes0) 0
-            else Random().nextInt(images.size)
+            if (storedResNo == 2) {  // checking bound
+                preferences.edit().putInt("prefKeyI", 0).apply()
+                val noImg_ = 2 + Random().nextInt(images.size - 2)
+                noImg_
+            } else {
+                preferences.edit().putInt("prefKeyI", storedResNo + 1).apply()
+                storedResNo
+            }
+        } else {
+            val pref = PreferenceManager.getDefaultSharedPreferences(context)
+            val isFirstOpen = pref.getBoolean("key_first_open", true)
+            if (isFirstOpen) {
+                pref.edit().putBoolean("key_first_open", false).apply()
+                0
+            } else {
+                Random().nextInt(images.size)
+            }
+        }
 
-        } else Random().nextInt(images.size)
-
-        return images[n]
+        return images[noImg]
     }
 
 
