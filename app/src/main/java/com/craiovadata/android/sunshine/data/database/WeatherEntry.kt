@@ -23,6 +23,7 @@ class WeatherEntry {
     var iconCodeOWM: String = "01d"
     var isCurrentWeather: Int = 0
     var cityName: String = ""
+    var description: String = ""
 
     /**
      * This constructor is used by OpenWeatherJsonParser. When the network fetch has JSON data, it
@@ -107,5 +108,11 @@ class WeatherEntry {
         this.iconCodeOWM = iconCodeOWM
         this.isCurrentWeather = isCurrentWeather
         this.cityName = cityName
+    }
+
+    @Ignore
+    constructor(id: Int, description: String){
+        this.description = description
+        this.id = id
     }
 }

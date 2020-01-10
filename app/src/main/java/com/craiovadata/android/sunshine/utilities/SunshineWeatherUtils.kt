@@ -194,7 +194,7 @@ object SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      * See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource _id for the corresponding iconCodeOWM. -c if no relation is found.
+     * @return resource _id for the corresponding iconCodeOWM. -city_1 if no relation is found.
      */
     fun getSmallArtResourceIdForWeatherCondition(weatherId: Int): Int { /*
          * Based on weather code data for Open Weather Map.
@@ -279,7 +279,7 @@ object SunshineWeatherUtils {
      *
      * @param weatherId from OpenWeatherMap API response
      * See http://openweathermap.org/weather-conditions for a list of all IDs
-     * @return resource ID for the corresponding iconCodeOWM. -c if no relation is found.
+     * @return resource ID for the corresponding iconCodeOWM. -city_1 if no relation is found.
      */
     fun getLargeArtResourceIdForWeatherCondition(weatherId: Int): Int { /*
          * Based on weather code data for Open Weather Map.

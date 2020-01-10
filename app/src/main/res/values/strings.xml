@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Craiova</string>
-    <string name="owm_city_id" translatable="false">680332</string>
-
+    <string name="app_name" translatable="false">Frankfurt am Main</string>
+    <string name="owm_city_id" translatable="false">2925533</string>
 
     <!--    OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
-            SHA1: 64:5D:DB:FB:F5:EB:C5...  -->
+            SHA1: 64:5D:DB:FB:F5:EB:C5...
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~6888465614</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/3364153576</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/4525557810</string>
+            Upload certificates
+            AndreiDan SHA1: 00:3D:81:B7:54:3A:11:28:EC:FB:F7:E1:76:10:CC:7A:1E:2F:51:CD
+            upload_key_2 SHA1: 64:5D:DB:FB:F5:EB:C5:C6:7D:5C:4B:2C:CA:40:FE:BD:1C:A9:6F:C1
+            Andrei
+            -->
+
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~4399021976</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/5875755177</string>
+    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/6849629940</string>
 
     <!--
       <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~3204791182</string>
@@ -150,7 +155,7 @@
     <string name="condition_962">Hurricane</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
-
+    <string name="title_graph_temperature">Temperature by hour</string>
 
 
 </resources>

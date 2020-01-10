@@ -115,7 +115,7 @@ object NotifUtils {
     @JvmStatic
     fun notifyIfNeeded(context: Context, weatherEntry: WeatherEntry) {
         val timeSinceLastNotification = getEllapsedTimeSinceLastNotification(context)
-        val oneDayPassedSinceLastNotification = timeSinceLastNotification > DAY_IN_MILLIS
+        val oneDayPassedSinceLastNotification = timeSinceLastNotification > 20 * HOUR_IN_MILLIS
 
         val rightNow = Calendar.getInstance()
         val currentHourIn24Format = rightNow[Calendar.HOUR_OF_DAY]
@@ -123,13 +123,13 @@ object NotifUtils {
         if (areNotificationsEnabled(context)
             && oneDayPassedSinceLastNotification
             && !isForeground()
-            && currentHourIn24Format > 7
-            && currentHourIn24Format < 19
+            && currentHourIn24Format > 6
+            && currentHourIn24Format < 20
         ) {
             notifyUserOfNewWeather(context, weatherEntry)
 
 
-            if (BuildConfig.DEBUG ) {
+            if (BuildConfig.DEBUG) {
 //                || context.getString(R.string.app_name) == "Ontario"
 
                 val pref = PreferenceManager.getDefaultSharedPreferences(context)

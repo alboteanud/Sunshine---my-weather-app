@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version c2.0 (the "License");
+ * Licensed under the Apache License, Version city_2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -28,7 +28,7 @@ import java.util.*
 internal class WeatherJsonParser {
     @Throws(JSONException::class)
     fun parseForecastWeather(forecastJsonStr: String?): WeatherResponse {
-        if (forecastJsonStr==null) return WeatherResponse(emptyArray())
+        if (forecastJsonStr == null) return WeatherResponse(emptyArray())
         val forecastJson = JSONObject(forecastJsonStr)
         // Is there an error?
         if (hasHttpError(forecastJson)) {
@@ -37,10 +37,21 @@ internal class WeatherJsonParser {
         val weatherForecast = fromJsonForecast(forecastJson)
         return WeatherResponse(weatherForecast)
     }
+ @Throws(JSONException::class)
+    fun parseForecastWeather2(forecastJsonStr: String?): WeatherResponse {
+        if (forecastJsonStr == null) return WeatherResponse(emptyArray())
+        val forecastJson = JSONObject(forecastJsonStr)
+        // Is there an error?
+        if (hasHttpError(forecastJson)) {
+            return WeatherResponse(emptyArray())
+        }
+        val weatherForecast = fromJsonForecast2(forecastJson)
+        return WeatherResponse(weatherForecast)
+    }
 
     @Throws(JSONException::class)
     fun parseCurrentWeather(forecastJsonStr: String?): WeatherResponse {
-        if (forecastJsonStr==null) return WeatherResponse(emptyArray())
+        if (forecastJsonStr == null) return WeatherResponse(emptyArray())
         val forecastJson = JSONObject(forecastJsonStr)
         // Is there an error?
         if (hasHttpError(forecastJson)) {
@@ -108,6 +119,57 @@ internal class WeatherJsonParser {
             return weatherEntries.toTypedArray()
         }
 
+        /*
+* "list": [
+{
+"dt": 1577815200,
+"main": {
+"temp": 271.82,
+"feels_like": 268.81,
+"temp_min": 271.82,
+"temp_max": 273.15,
+"pressure": 1030,
+"sea_level": 1030,
+"grnd_level": 918,
+"humidity": 64,
+"temp_kf": -1.33
+},
+"weather": [
+{
+"id": 804,
+"main": "Clouds",
+"description": "Bedeckt",
+"icon": "04n"
+}
+],
+* */
+
+ @Throws(JSONException::class)
+        private fun fromJsonForecast2(forecastJson: JSONObject): Array<WeatherEntry> {
+            val jsonWeatherArray =
+                forecastJson.getJSONArray(OWM_LIST)
+            val weatherEntries = mutableListOf<WeatherEntry>()
+//                arrayOfNulls<WeatherEntry>(jsonWeatherArray.length())
+            /*
+         * OWM returns daily forecasts based upon the local time of the city that is being asked
+         * for, which means that we need to know the GMT offset to translate this data properly.
+         * Since this data is also sent in-order and the first day is always the current day, we're
+         * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
+         */
+//        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
+            val coordObj = forecastJson.getJSONObject("city").getJSONObject("coord")
+            val lat = coordObj.getDouble("lat").toFloat()
+            val lon = coordObj.getDouble("lon").toFloat()
+            for (i in 0 until jsonWeatherArray.length()) { // Get the JSON object representing the day
+                val dayForecast = jsonWeatherArray.getJSONObject(i)
+                val weather =
+                    fromJsonForecast2(dayForecast, lat, lon)
+//                weatherEntries[i] = weather
+                weatherEntries.add(i, weather)
+            }
+            return weatherEntries.toTypedArray()
+        }
+
         // OWM 5days 3 hours
         @Throws(JSONException::class)
         private fun fromJsonForecast(
@@ -130,7 +192,7 @@ internal class WeatherJsonParser {
                 windObject.getDouble(OWM_WINDSPEED)
             val windDirection =
                 windObject.getDouble(OWM_WIND_DIRECTION)
-            // Description is in a child array called "weather", which is c element long.
+            // Description is in a child array called "weather", which is city_1 element long.
 // That element also contains a weather code.
             val weatherObject =
                 dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0)
@@ -150,6 +212,22 @@ internal class WeatherJsonParser {
                 lat.toDouble(),
                 lon.toDouble()
             )
+        }
+
+        // OWM 5days 3 hours
+        @Throws(JSONException::class)
+        private fun fromJsonForecast2(
+            dayForecast: JSONObject,
+            lat: Float,
+            lon: Float
+        ): WeatherEntry { // We ignore all the datetime values embedded in the JSON and assume that
+            val weatherObject =
+                dayForecast.getJSONArray(OWM_WEATHER).getJSONObject(0)
+            val weatherId = weatherObject.getInt(OWM_WEATHER_ID)
+            val description = weatherObject.getString("description")
+            //        Log.d("TAG", iconCodeOWM);
+// Create the weather entry object
+            return WeatherEntry(weatherId, description)
         }
 
         // OWM current weather

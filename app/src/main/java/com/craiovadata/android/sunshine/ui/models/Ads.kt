@@ -19,7 +19,7 @@ data class Ads(val adView: AdView?)
             // AdViewHolder of any subviews in case it has a different
             // AdView associated with it, and make sure the AdView for this position doesn't
             // already have a parent of a different recycled AdViewHolder.
-            val container = itemView.adsContainer
+            val container = itemView.adsMedRectContainer
             if (container.childCount > 0) container.removeAllViews()
 
             if (adView.parent != null) {

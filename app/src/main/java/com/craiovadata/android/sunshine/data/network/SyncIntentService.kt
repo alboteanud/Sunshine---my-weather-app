@@ -1,7 +1,7 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
  *
- * Licensed under the Apache License, Version c2.0 (the "License");
+ * Licensed under the Apache License, Version city_2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
@@ -31,6 +31,10 @@ class SyncIntentService : IntentService("SyncIntentService") {
         Log.d(LOG_TAG, "Intent service started")
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
+
+//        if (BuildConfig.DEBUG)
+//        networkDataSource.fetchWeatherForCities2(this.applicationContext)
+//        else
         networkDataSource.fetchWeather()
     }
 

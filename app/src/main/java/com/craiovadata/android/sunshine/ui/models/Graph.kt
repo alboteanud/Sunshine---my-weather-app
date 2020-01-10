@@ -58,6 +58,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                 addSeries(series)
                 gridLabelRenderer.apply {
                     numHorizontalLabels = entries.size
+                    numVerticalLabels = 3
 //                horizontalAxisTitle = "Hour"
                     gridStyle = GridLabelRenderer.GridStyle.NONE
 //                    numVerticalLabels = 4
@@ -70,7 +71,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                         }
                     }
                 }
-                title = "Temperature by hour"
+                title = context.getString(R.string.title_graph_temperature)
 //                onDataChanged(false, false)
             }
 

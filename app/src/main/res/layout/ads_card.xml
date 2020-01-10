@@ -22,7 +22,7 @@
             android:textColor="@android:color/white"/>
 
         <FrameLayout
-            android:id="@+id/adsContainer"
+            android:id="@+id/adsMedRectContainer"
             android:layout_width="300dp"
             android:layout_height="250dp"
             android:layout_gravity="center_horizontal">

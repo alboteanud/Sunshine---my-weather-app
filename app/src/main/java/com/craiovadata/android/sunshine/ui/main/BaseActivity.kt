@@ -6,6 +6,7 @@ import android.content.pm.ResolveInfo
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
@@ -14,6 +15,7 @@ import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.LogUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.ads_card.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
 
@@ -26,12 +28,14 @@ open class BaseActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
         backImage.setImageResource(CityData.getBackResId(this))
-
-//        if (!BuildConfig.DEBUG)
-            initAds()
+        initAds()
     }
 
     private fun initAds() {
+        if (BuildConfig.DEBUG) {
+            bannerAdView.visibility = GONE
+            return
+        }
         MobileAds.initialize(this)
         bannerAdView.loadAd(AdRequest.Builder().build())
         loadAdMedRectangle() // before observers

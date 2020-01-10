@@ -17,8 +17,8 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.craiovadata.android.sunshine.RO.Craiova'
-        minSdkVersion 23
+        applicationId 'com.craiovadata.android.sunshine.FrankfurtamMain'
+        minSdkVersion 24
         targetSdkVersion 29
         versionName '6'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"

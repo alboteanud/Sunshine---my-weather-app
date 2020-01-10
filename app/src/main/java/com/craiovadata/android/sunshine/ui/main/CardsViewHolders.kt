@@ -2,6 +2,7 @@ package com.craiovadata.android.sunshine.ui.main
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 
@@ -12,8 +13,7 @@ class CardsViewHolders {
         fun bindViews(update: Base)
     }
 
-    class WeatherViewHolder(itemView: View)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class WeatherViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
             val currentWeatherUpdate = update as CurrentWeather
@@ -22,8 +22,7 @@ class CardsViewHolders {
         }
     }
 
-    class DetailsViewHolder(itemView: View)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class DetailsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
             val detailsUpdate = update as Details
@@ -34,8 +33,8 @@ class CardsViewHolders {
         }
     }
 
-    class GraphViewHolder(itemView: View, private val listener: CardsAdapter.Listener)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class GraphViewHolder(itemView: View, private val listener: CardsAdapter.Listener) :
+        RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
             val forecastUpdate = update as Graph
@@ -46,8 +45,7 @@ class CardsViewHolders {
         }
     }
 
-  class MultyDayViewHolder(itemView: View)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class MultyDayViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
             val multiDayUpdate = update as MultiDay
@@ -58,28 +56,27 @@ class CardsViewHolders {
         }
     }
 
-    class MapViewHolder(itemView: View)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class MapViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
             val mapUpdate = update as Map
             val entry = mapUpdate.weatherEntry
-            Map.bindMapToUI(entry, itemView)
+//            if (!BuildConfig.DEBUG)
+                Map.bindMapToUI(entry, itemView)
         }
     }
 
- class NewsViewHolder(itemView: View, private val listener: CardsAdapter.Listener)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class NewsViewHolder(itemView: View, private val listener: CardsAdapter.Listener) :
+        RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
 //            val newsUpdate = update as com.craiovadata.android.sunshine.ui.models.News
 
-            News.bindNewsToUI( itemView, listener)
+            News.bindNewsToUI(itemView, listener)
         }
     }
 
-    class AdsViewHolder(itemView: View)
-        : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+    class AdsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
             val adsUpdate = update as Ads

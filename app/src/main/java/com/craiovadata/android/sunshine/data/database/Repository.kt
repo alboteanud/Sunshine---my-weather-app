@@ -176,7 +176,7 @@ class Repository private constructor(
     }
 
     fun getWeatherNextHours(timestamp: Long): LiveData<List<ListWeatherEntry>> {
-        val date = Date(timestamp)
+        val date = Date(timestamp - 1)
         return mWeatherDao.getCurrentForecast(date)
 
     }

@@ -64,67 +64,68 @@
     <string name="label_news_text">Die neuesten Nachrichten</string>
 
     <!-- Weather Conditions (From OpenWeatherMap)
-    http://api.openweathermap.org/data/2.5/forecast?id=518557&mode=json&units=metric&APPID=6efe9ba5f984adebdeb54334751f6c0b&lang=de
+    http://api.openweathermap.org/data/2.5/forecast?id=2922582&mode=json&units=metric&APPID=6efe9ba5f984adebdeb54334751f6c0b&lang=de
     -->
     <string name="condition_2xx">der Sturm</string>
     <string name="condition_3xx">der Nieselregen</string>
-    <string name="condition_500">Leichter Regen</string>
+    <string name="condition_500">leichter Regen</string>
     <string name="condition_501">Mäßiger Regen</string>
-    <string name="condition_502">Starkregen</string>
+    <string name="condition_502">Starker Regen</string>
     <string name="condition_503">intensiver Niederschlag</string>
     <string name="condition_504">Extremer Regen</string>
     <string name="condition_511">Gefrierender Regen</string>
-    <string name="condition_520">Light Shower</string>
-    <string name="condition_521">Shower</string>
-    <string name="condition_522">Heavy Shower</string>
-    <string name="condition_531">Ragged Shower</string>
+    <string name="condition_520">leichter Regen</string>
+    <string name="condition_521">Mäßiger Regen</string>
+    <string name="condition_522">Starker Regen</string>
+    <string name="condition_531">Starker Regen</string>
     <string name="condition_600">Mäßiger Schnee</string>
     <string name="condition_601">Schnee</string>
-    <string name="condition_602">Heavy Snow</string>
-    <string name="condition_611">Sleet</string>
-    <string name="condition_612">Light shower Sleet</string>
-    <string name="condition_613">Shower Sleet</string>
-    <string name="condition_615">Rain and Snow</string>
-    <string name="condition_616">Rain and Snow</string>
-    <string name="condition_620">Shower Snow</string>
-    <string name="condition_621">Shower Snow</string>
-    <string name="condition_622">Shower Snow</string>
-    <string name="condition_701">Mist</string>
-    <string name="condition_711">Smoke</string>
-    <string name="condition_721">Haze</string>
-    <string name="condition_731">Sand, Dust</string>
-    <string name="condition_741">Fog</string>
+    <string name="condition_602">starker Schnee</string>
+    <string name="condition_611">Schneeregen</string>
+    <string name="condition_612">leichter Schneeregen</string>
+    <string name="condition_613">Schneeregen</string>
+    <string name="condition_615">Schneeregen</string>
+    <string name="condition_616">Schneeregen</string>
+    <string name="condition_620">Schnee</string>
+    <string name="condition_621">Schnee</string>
+    <string name="condition_622">Schnee</string>
+    <string name="condition_701">Nebel</string>
+    <string name="condition_711">Rauch</string>
+    <string name="condition_721">Dunst</string>
+    <string name="condition_731">Sand, Staub</string>
+    <string name="condition_741">Nebel</string>
     <string name="condition_751">Sand</string>
-    <string name="condition_761">Dust</string>
-    <string name="condition_762">Volcanic Ash</string>
-    <string name="condition_771">Squalls</string>
+    <string name="condition_761">Staub</string>
+    <string name="condition_762">Vulkanasche</string>
+    <string name="condition_771">Böen</string>
     <string name="condition_781">Tornado</string>
     <string name="condition_800">Klarer Himmel</string>
-    <string name="condition_801">Mostly Clear</string>
-    <string name="condition_802">Mäßig bewölkt</string>
-    <string name="condition_803">Überwiegend bewölkt</string>
-    <string name="condition_804">Bedeckt</string>
+    <string name="condition_801">wolkig</string>
+    <string name="condition_802">leicht bewölkt</string>
+    <string name="condition_803">bedeckt</string>
+    <string name="condition_804">bedeckt</string>
     <string name="condition_900">Tornado</string>
-    <string name="condition_901">Tropical Storm</string>
-    <string name="condition_902">Hurricane</string>
+    <string name="condition_901">Tropensturm</string>
+    <string name="condition_902">Hurrikan</string>
     <string name="condition_903">Cold</string>
-    <string name="condition_904">Hot</string>
-    <string name="condition_905">Windy</string>
-    <string name="condition_906">Hail</string>
-    <string name="condition_951">Calm</string>
-    <string name="condition_952">Light Breeze</string>
-    <string name="condition_953">Gentle Breeze</string>
-    <string name="condition_954">Breeze</string>
-    <string name="condition_955">Fresh Breeze</string>
-    <string name="condition_956">Strong Breeze</string>
-    <string name="condition_957">High Wind</string>
-    <string name="condition_958">Gale</string>
-    <string name="condition_959">Severe Gale</string>
-    <string name="condition_960">Storm</string>
-    <string name="condition_961">Violent Storm</string>
-    <string name="condition_962">Hurricane</string>
+    <string name="condition_904">Kalt</string>
+    <string name="condition_905">Windig</string>
+    <string name="condition_906">Hagel</string>
+    <string name="condition_951">die Ruhe</string>
+    <string name="condition_952">Leichte Brise</string>
+    <string name="condition_953">Leichte Brise</string>
+    <string name="condition_954">Brise</string>
+    <string name="condition_955">Brise</string>
+    <string name="condition_956">Starke Brise</string>
+    <string name="condition_957">Starker Wind</string>
+    <string name="condition_958">Sturm</string>
+    <string name="condition_959">Schwerer Sturm</string>
+    <string name="condition_960">Sturm</string>
+    <string name="condition_961">Heftigen Sturm</string>
+    <string name="condition_962">Hurrikan</string>
 
-    <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+    <string name="condition_unknown">Unbekannt (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+    <string name="title_graph_temperature">Temperatur</string>
 
 </resources>
 
