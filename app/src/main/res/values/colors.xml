@@ -14,6 +14,6 @@
 
     <color name="blackSemi">#90000000</color>
     <color name="blackSemi7">#70000000</color>
-    <color name="blackSemi5">#50000000</color>
+    <color name="semiTransparent5">#50000000</color>
     <color name="blackSemi2">#20000000</color>
 </resources>
