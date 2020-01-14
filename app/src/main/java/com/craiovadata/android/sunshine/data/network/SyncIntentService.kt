@@ -18,6 +18,7 @@ package com.craiovadata.android.sunshine.data.network
 import android.app.IntentService
 import android.content.Intent
 import android.util.Log
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 
 /**
@@ -33,9 +34,9 @@ class SyncIntentService : IntentService("SyncIntentService") {
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
 
 //        if (BuildConfig.DEBUG)
-//        networkDataSource.fetchWeatherForCities2(this.applicationContext)
+//            networkDataSource.fetchWeatherForMultipleCities(this.applicationContext)
 //        else
-        networkDataSource.fetchWeather()
+            networkDataSource.fetchWeather()
     }
 
     companion object {

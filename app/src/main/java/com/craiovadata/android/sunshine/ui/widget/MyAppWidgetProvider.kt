@@ -8,7 +8,7 @@ import android.content.Intent
 import android.widget.RemoteViews
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils.provideRepository
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils

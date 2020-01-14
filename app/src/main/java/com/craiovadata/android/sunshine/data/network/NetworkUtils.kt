@@ -95,7 +95,7 @@ internal object NetworkUtils {
             .appendQueryParameter(FORMAT_PARAM, format)
             .appendQueryParameter(UNITS_PARAM, units)
             .appendQueryParameter(APPID_PARAM, owmApiKey)
-            .appendQueryParameter("lang", "de")
+            .appendQueryParameter("lang", "fr")
 
             .build()
 

@@ -10,11 +10,11 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "Europe/Berlin"
+    const val TIME_ZONE_ID = "Europe/Paris"
 
     private val images = intArrayOf(
         R.drawable.city_1,
-        R.drawable.city_2,
+//        R.drawable.city_2,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,
@@ -64,8 +64,8 @@ object CityData {
 
             if (storedResNo == 2) {  // checking bound
                 preferences.edit().putInt("prefKeyI", 0).apply()
-                val noImg_ = 2 + Random().nextInt(images.size - 2)
-                noImg_
+                val imgNumber = 2 + Random().nextInt(images.size - 2)
+                imgNumber
             } else {
                 preferences.edit().putInt("prefKeyI", storedResNo + 1).apply()
                 storedResNo

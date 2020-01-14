@@ -60,7 +60,6 @@
     <string name="feedback_pref_summary">Melden Sie technische Probleme oder schlagen Sie neue Funktionen vor</string>
     <string name="feedback_pref_title">Feedback schicken</string>
     <string name="title_activity_news">Nachrichten</string>
-
     <string name="label_news_text">Die neuesten Nachrichten</string>
 
     <!-- Weather Conditions (From OpenWeatherMap)

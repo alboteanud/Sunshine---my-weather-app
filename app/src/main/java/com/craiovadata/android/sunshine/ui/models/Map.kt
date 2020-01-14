@@ -6,7 +6,6 @@ import android.net.Uri
 import android.util.Log
 import android.view.View
 import com.bumptech.glide.Glide
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import kotlinx.android.synthetic.main.map_card.view.*
 import java.util.*
 import com.bumptech.glide.request.RequestOptions

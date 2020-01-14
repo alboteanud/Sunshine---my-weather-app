@@ -11,7 +11,7 @@ import com.android.volley.toolbox.Volley
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
 import kotlinx.android.synthetic.main.content_main.view.*
 import org.json.JSONException

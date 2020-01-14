@@ -23,7 +23,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.utilities.NotifUtils
@@ -191,15 +191,16 @@ class NetworkDataSource private constructor(
         }
     }
 
-    fun fetchWeatherForCities2(context: Context) {
+    fun fetchWeatherForMultipleCities(context: Context) {
         Log.d(LOG_TAG, "Fetch weather days started")
         mExecutors.networkIO().execute {
             try {
 
                 val cityIds =
                 listOf(
-//                    680332, 3191281, 2037013, 3448439, 1174872 ,2662689, 3133895, 548408, 548410, 543704, 115019, 75337, 108048, 933555
-                    3415496, 276781, 2187908,  3037899, 1687196, 139889, 2324774
+                    680332, 3191281, 2037013, 3448439, 1174872 ,2662689, 3133895,
+                    548408, 548410, 543704, 115019, 75337, 108048, 933555
+//                    3415496, 276781, 2187908,  3037899, 1687196, 139889, 2324774
                 )
 
 
@@ -213,10 +214,11 @@ class NetworkDataSource private constructor(
 
                     // Parse the JSON into a list of weather forecasts
                     val response = WeatherJsonParser().parseForecastWeather2(jsonWeatherResponse)
+                    Log.d("description", "parsing finished. Size: " + response.weatherForecast.size)
                     response.weatherForecast.forEach { entry ->
 
                         if (!descriptions.containsKey(entry.id)) {
-                            descriptions.put(entry.id, entry.description)
+                            descriptions[entry.id] = entry.description
                             val descriptionStringName = "condition_" + entry.id.toString()
                             val isTranslated =
                                 byIdName(context, descriptionStringName) == entry.description

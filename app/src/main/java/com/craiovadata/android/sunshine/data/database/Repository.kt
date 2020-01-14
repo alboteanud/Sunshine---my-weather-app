@@ -9,6 +9,8 @@ import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import java.lang.System.currentTimeMillis
 import java.util.*
 import java.util.concurrent.TimeUnit

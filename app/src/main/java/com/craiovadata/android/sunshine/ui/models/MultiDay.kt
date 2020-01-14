@@ -3,7 +3,6 @@ package com.craiovadata.android.sunshine.ui.models
 import android.view.LayoutInflater
 import android.view.View
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.CityData
 import kotlinx.android.synthetic.main.current_weather_card.view.*

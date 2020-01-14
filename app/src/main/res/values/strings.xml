@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Frankfurt am Main</string>
-    <string name="owm_city_id" translatable="false">2925533</string>
+    <string name="app_name" translatable="false">Caen</string>
+    <string name="owm_city_id" translatable="false">6427109</string>
 
     <!--    OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
             SHA1: 64:5D:DB:FB:F5:EB:C5...
@@ -13,16 +13,9 @@
             Andrei
             -->
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~4399021976</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/5875755177</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/6849629940</string>
-
-    <!--
-      <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~3204791182</string>
-        <string name="admob_banner_id">ca-app-pub-3931793949981809/2046448726</string>
-        <string name="admob_med_rectangle_id">ca-app-pub-3931793949981809/9026790042</string>
-            Sunshine UK 5small cities u 170k
-    -->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~5223358373</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/6700091570</string>
+    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/7637744222</string>
 
     <string name="owm_api_key" translatable="false">6efe9ba5f984adebdeb54334751f6c0b</string> <!-- alboteanui - creat Dec 2019-->
     <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
@@ -31,7 +24,6 @@
 
     <string name="pref_last_notification" translatable="false">last_notification</string>
     <string name="pref_enable_notifications_key" translatable="false">notification_daily</string>
-    <string name="notification_title_text" translatable="false">%s in %s</string>
     <string name="pref_units_key" translatable="false">units_system</string>
     <string name="button_feedback" translatable="false">feedback_button_id</string>
     <string name="notification_content_text" translatable="false">%s %s</string>

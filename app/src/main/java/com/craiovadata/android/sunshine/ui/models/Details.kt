@@ -2,7 +2,6 @@ package com.craiovadata.android.sunshine.ui.models
 
 import android.view.View
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import kotlinx.android.synthetic.main.details_weather_card.view.*
 

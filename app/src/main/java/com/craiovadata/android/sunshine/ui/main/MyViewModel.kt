@@ -3,8 +3,8 @@ package com.craiovadata.android.sunshine.ui.main
 import android.util.Log
 import androidx.lifecycle.*
 import com.craiovadata.android.sunshine.data.database.Repository
-import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.LifecycleObserver
 

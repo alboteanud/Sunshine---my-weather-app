@@ -5,14 +5,13 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
-import android.text.format.DateUtils.DAY_IN_MILLIS
 import android.text.format.DateUtils.HOUR_IN_MILLIS
 import androidx.core.app.NotificationCompat
 import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData.getBackResId
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
 import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isForeground
@@ -71,29 +70,17 @@ object NotifUtils {
         val smallIconId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(entry.iconCodeOWM)
         val chanelId = context.getString(R.string.norif_channel_id)
 
-        val highString = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
-
-        val description =
-            SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherId)
-//        val weatherTimeMills = SunshineDateUtils.getCityDate(context, entry.date.time)
-//        val weatherDate = SimpleDateFormat("HH mm", Locale.getDefault()).format(weatherTimeMills)
-//        val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
-
-        val cityName = context.getString(R.string.app_name)
-        val titleTxt =
-            String.format(context.getString(R.string.notification_title_text), highString, cityName)
-        val contentTxt =
-            String.format(context.getString(R.string.notification_content_text), description, "")
-        val color = context.getColor(R.color.colorPrimary)
+        val titleTxt = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
+        val contentTxt = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherId)
 
         val builder = NotificationCompat.Builder(context, chanelId)
             .setSmallIcon(smallIconId)
             .setLargeIcon(largeIcon)
             .setContentTitle(titleTxt)
             .setContentText(contentTxt)
-            .setColor(color)
+//            .setColor(context.getColor(R.color.colorPrimary))
             .setAutoCancel(true)
-            .setTimeoutAfter(8 * HOUR_IN_MILLIS)
+            .setTimeoutAfter(4 * HOUR_IN_MILLIS)
             //            .setOngoing(true)
             .setContentIntent(getPendingIntentMA(context))
         //                .addAction(
@@ -114,20 +101,24 @@ object NotifUtils {
 
     @JvmStatic
     fun notifyIfNeeded(context: Context, weatherEntry: WeatherEntry) {
+
         val timeSinceLastNotification = getEllapsedTimeSinceLastNotification(context)
-        val oneDayPassedSinceLastNotification = timeSinceLastNotification > 20 * HOUR_IN_MILLIS
+        val oneDayPassedSinceLastNotification = timeSinceLastNotification > 22 * HOUR_IN_MILLIS
 
         val rightNow = Calendar.getInstance()
         val currentHourIn24Format = rightNow[Calendar.HOUR_OF_DAY]
 
-        if (areNotificationsEnabled(context)
-            && oneDayPassedSinceLastNotification
-            && !isForeground()
-            && currentHourIn24Format > 6
-            && currentHourIn24Format < 20
-        ) {
+        val shouldNotify = areNotificationsEnabled(context)
+                && oneDayPassedSinceLastNotification
+                && !isForeground()
+                && currentHourIn24Format > 6
+                && currentHourIn24Format < 20
+
+        if (BuildConfig.DEBUG)
             notifyUserOfNewWeather(context, weatherEntry)
 
+        if (shouldNotify) {
+            notifyUserOfNewWeather(context, weatherEntry)
 
             if (BuildConfig.DEBUG) {
 //                || context.getString(R.string.app_name) == "Ontario"
@@ -138,6 +129,8 @@ object NotifUtils {
                 pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
             }
         }
+
+
     }
 
 

@@ -14,15 +14,17 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.utilities.NotifUtils
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
+import java.util.*
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
@@ -64,16 +66,19 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         override fun onItemsAdded(recyclerView: RecyclerView, positionStart: Int, itemCount: Int) {
             super.onItemsAdded(recyclerView, positionStart, itemCount)
             val position = findLastCompletelyVisibleItemPosition()
-            Log.d(TAG, "onItemsAdded()  positionStart: " + positionStart + " itemCount: "+ itemCount +
-                    "  LastCompletelyVisibleItemPosition: " + position)
+            Log.d(
+                TAG,
+                "onItemsAdded()  positionStart: " + positionStart + " itemCount: " + itemCount +
+                        "  LastCompletelyVisibleItemPosition: " + position
+            )
             if (!didScroll)
-            scrollToPosition(0)
+                scrollToPosition(0)
         }
 
         override fun onScrollStateChanged(state: Int) {
             super.onScrollStateChanged(state)
             Log.d(TAG, "onScrollStateChanged()  state: $state")
-             didScroll = true
+            didScroll = true
         }
 
     }
@@ -130,13 +135,13 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         return true
     }
 
+//    var iconCodeIndex = 0
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
-                if (BuildConfig.DEBUG) myViewModel.forceSyncWeather()
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }

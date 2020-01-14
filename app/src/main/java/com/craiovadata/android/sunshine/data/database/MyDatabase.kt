@@ -6,6 +6,7 @@ import androidx.room.Database
 import androidx.room.Room.databaseBuilder
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 
 @Database(entities = [WeatherEntry::class], version = 1, exportSchema = false)
 @TypeConverters(

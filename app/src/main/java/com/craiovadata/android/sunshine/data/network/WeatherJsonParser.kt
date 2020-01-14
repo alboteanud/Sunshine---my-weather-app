@@ -16,7 +16,7 @@
 package com.craiovadata.android.sunshine.data.network
 
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import org.json.JSONException
 import org.json.JSONObject
 import java.net.HttpURLConnection
@@ -227,7 +227,10 @@ internal class WeatherJsonParser {
             val description = weatherObject.getString("description")
             //        Log.d("TAG", iconCodeOWM);
 // Create the weather entry object
-            return WeatherEntry(weatherId, description)
+            return WeatherEntry(
+                weatherId,
+                description
+            )
         }
 
         // OWM current weather
