@@ -14,9 +14,10 @@ class MyViewModel internal constructor(private val repository: Repository) : Vie
     val midDayWeather: LiveData<List<ListWeatherEntry>> = repository.dayWeatherEntries
 
     // pt teste
-    fun forceSyncWeather() {
+    fun forceSyncWeather(citiesIndex: Int) {
 //        repository.forceFetchCurrentWeather()
-        repository.forceFetchWeather()
+        repository.forceFetchWeather(citiesIndex)
+
     }
 
     // are rol la afisare

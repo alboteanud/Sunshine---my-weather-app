@@ -9,6 +9,7 @@ import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.map_card.view.*
 import java.util.*
 import com.bumptech.glide.request.RequestOptions
+import com.craiovadata.android.sunshine.CityData.DEFAULT_ZOOM_LEVEL
 import com.craiovadata.android.sunshine.R
 
 
@@ -17,7 +18,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, TYPE.MAP, Date(0)) {
 
     companion object {
 
-        private const val DEFAULT_ZOOM_LEVEL: Int = 12
+
 
         @JvmStatic
         fun bindMapToUI(weatherEntry: WeatherEntry?, itemView: View) {

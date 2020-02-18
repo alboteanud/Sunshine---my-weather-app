@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="format_wind_kmh">
+        <xliff:g id="speed">%1$1.0f</xliff:g> km/h
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_wind_mph">
+        <xliff:g id="speed">%1$1.0f</xliff:g> mph
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_pressure">
+        <xliff:g id="pressure">%1.0f</xliff:g> hPa
+    </string>
+
+    <string name="action_settings">Impostazioni</string>
+    <string name="title_activity_settings">Impostazioni</string>
+
+    <string name="wind_label">Vento</string>
+    <string name="pressure_label">Pressione</string>
+    <string name="humidity_label">Umidità</string>
+    <string name="pref_enable_notifications_label">Consenti notifiche</string>
+
+    <string name="a11y_forecast">Previsioni del tempo: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Icona del tempo: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">Alta temperatura: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Umidità: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Pressione: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Velocità e direzione del vento: <xliff:g id="wind">%1$s</xliff:g></string>
+    <string name="a11y_news_icon_content">l\'icona delle notizie</string>
+    <string name="a11y_news_arrow">la freccia - accedi alle notizie</string>
+    <string name="a11y_map_content_description">La mappa</string>
+
+    <string name="N">N</string>
+    <string name="S">S</string>
+    <string name="E">E</string>
+    <string name="W">O</string>
+
+    <string name="NE">NE</string>
+    <string name="NW">NO</string>
+    <string name="SE">SE</string>
+    <string name="SW">SO</string>
+
+    <string name="labelOurAd">La nostra pubblicità</string>
+    <string name="menu_label_privacy_policy">Informativa sulla privacy</string>
+
+    <string name="feedback_pref_summary">Segnala problemi tecnici o suggerisci nuove funzionalità</string>
+    <string name="feedback_pref_title">Feedback</string>
+
+    <string name="title_activity_news">Le notizie</string>
+    <string name="label_news_text">Le notizie</string>
+
+    <string name="condition_2xx">tempesta</string>
+    <string name="condition_3xx">pioggerella</string>
+
+<!--  traduse ok-->
+    <string name="condition_500">pioggia leggera</string>
+    <string name="condition_501">pioggia moderata</string>
+    <string name="condition_502">forte pioggia</string>
+    <string name="condition_503">pioggia fortissima</string>
+
+    <string name="condition_504">pioggia fortissima</string>
+    <string name="condition_511">pioggia</string>
+    <string name="condition_520">pioggia leggera</string>
+    <string name="condition_521">pioggia moderata</string>
+    <string name="condition_522">forte pioggia</string>
+    <string name="condition_531">forte pioggia</string>
+
+    <!--  traduse ok-->
+    <string name="condition_600">neve</string>
+    <string name="condition_601">neve</string>
+
+    <string name="condition_602">forte nevicata</string>
+    <string name="condition_611">nevischio</string>
+    <string name="condition_612">leggero nevischio</string>
+    <string name="condition_613">nevischio</string>
+    <string name="condition_615">nevischio</string>
+    <string name="condition_616">nevischio</string>
+    <string name="condition_620">neve</string>
+    <string name="condition_621">neve</string>
+    <string name="condition_622">neve</string>
+    <string name="condition_701">nebbia</string>
+    <string name="condition_711">fumo</string>
+    <string name="condition_721">foschia</string>
+    <string name="condition_731">sabbia, polvere</string>
+    <string name="condition_741">nebbia</string>
+    <string name="condition_751">sabbia</string>
+    <string name="condition_761">polvere</string>
+    <string name="condition_762">cenere vulcanica</string>
+    <string name="condition_771">raffica</string>
+    <string name="condition_781">tornado</string>
+
+    <!--  traduse ok-->
+    <string name="condition_800">cielo sereno</string>
+    <string name="condition_801">poche nuvole</string>
+    <string name="condition_802">nubi sparse</string>
+    <string name="condition_803">nubi sparse</string>
+    <string name="condition_804">cielo coperto</string>
+
+    <string name="condition_900">tornado</string>
+    <string name="condition_901">tempesta tropicale</string>
+    <string name="condition_902">uragano</string>
+    <string name="condition_903">freddo</string>
+    <string name="condition_904">tempo caldo</string>
+    <string name="condition_905">ventoso</string>
+    <string name="condition_906">grandinate</string>
+    <string name="condition_951">tempo calmo</string>
+    <string name="condition_952">brezza leggera</string>
+    <string name="condition_953">brezza leggera</string>
+    <string name="condition_954">brezza</string>
+    <string name="condition_955">brezza</string>
+    <string name="condition_956">brezza forte</string>
+    <string name="condition_957">vento forte</string>
+    <string name="condition_958">tempesta</string>
+    <string name="condition_959">forte tempesta</string>
+    <string name="condition_960">tempesta</string>
+    <string name="condition_961">forte tempesta</string>
+    <string name="condition_962">uragano</string>
+
+    <string name="condition_unknown">sconosciuto (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+    <string name="title_graph_temperature">La temperatura</string>
+
+
+
+</resources>
+<!--
+
+
+
+-->

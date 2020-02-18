@@ -55,14 +55,9 @@ internal object NetworkUtils {
         return buildUrlWithLocationId(owmCityId, owmApiKey)
     }
 
-    fun getUrl2(mContext: Context, cityId: Int): URL? {
+    fun getUrl2(mContext: Context, cityId: Int, language: String): URL? {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
-        return buildUrlWithLocationId2(cityId.toString(), owmApiKey)
-    }
-
-    fun getUrl3(mContext: Context, cityIds: List<Int>): URL? {
-        val owmApiKey = mContext.getString(R.string.owm_api_key)
-        return buildUrlWithLocationId3(cityIds, owmApiKey)
+        return buildUrlWithLocationId2(cityId.toString(), owmApiKey, language )
     }
 
     fun getUrlCurrentWeather(mContext: Context): URL? {
@@ -89,14 +84,13 @@ internal object NetworkUtils {
         }
     }
 
-    private fun buildUrlWithLocationId2(locationID: String, owmApiKey: String): URL? {
+    private fun buildUrlWithLocationId2(locationID: String, owmApiKey: String, language: String): URL? {
         val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
             .appendQueryParameter(ID_PARAM, locationID)
             .appendQueryParameter(FORMAT_PARAM, format)
             .appendQueryParameter(UNITS_PARAM, units)
             .appendQueryParameter(APPID_PARAM, owmApiKey)
-            .appendQueryParameter("lang", "fr")
-
+            .appendQueryParameter("lang", language)
             .build()
 
         return try {
@@ -109,32 +103,6 @@ internal object NetworkUtils {
         }
     }
 
-    private fun buildUrlWithLocationId3(locationIds: List<Int>, owmApiKey: String): URL? {
-        val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
-
-            .appendQueryParameter(FORMAT_PARAM, format)
-            .appendQueryParameter(UNITS_PARAM, units)
-            .appendQueryParameter(APPID_PARAM, owmApiKey)
-            .appendQueryParameter("lang", "de")
-
-        var idsString = ""
-        locationIds.forEach {
-            if (idsString != "")
-                idsString += ","
-            idsString += it.toString()
-        }
-        weatherQueryUri.appendQueryParameter(ID_PARAM, idsString)
-        val finalUri = weatherQueryUri.build()
-
-        return try {
-            val weatherQueryUrl = URL(finalUri.toString())
-            Log.v(TAG, "URL forecasts five days = $weatherQueryUrl")
-            weatherQueryUrl
-        } catch (e: MalformedURLException) {
-            e.printStackTrace()
-            null
-        }
-    }
 
     private fun buildUrlWeatherNowWithLocationId(
         locationID: String,

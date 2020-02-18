@@ -42,7 +42,7 @@
                 android:id="@+id/humidity_measurement"
                 style="@style/SubheadWhiteTextStyle"
                 app:layout_constraintBottom_toBottomOf="@+id/humidity_label"
-                app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle2"
+                app:layout_constraintStart_toStartOf="@+id/horizontal_middle2"
                 tools:text="38%"/>
 
             <!-- Pressure label -->
@@ -59,7 +59,7 @@
                 android:id="@+id/pressure_details"
                 style="@style/SubheadWhiteTextStyle"
                 app:layout_constraintBottom_toBottomOf="@+id/pressure_label"
-                app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle2"
+                app:layout_constraintStart_toStartOf="@+id/horizontal_middle2"
                 tools:text="995 hPa"/>
 
             <!-- Wind label -->
@@ -76,7 +76,7 @@
                 android:id="@+id/wind_measurement"
                 style="@style/SubheadWhiteTextStyle"
                 app:layout_constraintBottom_toBottomOf="@+id/wind_label"
-                app:layout_constraintLeft_toLeftOf="@+id/horizontal_middle2"
+                app:layout_constraintStart_toStartOf="@+id/horizontal_middle2"
                 tools:text="4km/h NW"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

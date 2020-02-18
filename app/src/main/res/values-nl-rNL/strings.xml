@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+    <string name="format_wind_kmh">
+        <xliff:g id="speed">%1$1.0f</xliff:g> km/h
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_wind_mph">
+        <xliff:g id="speed">%1$1.0f</xliff:g> mph
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_pressure">
+        <xliff:g id="pressure">%1.0f</xliff:g> hPa
+    </string>
+
+    <string name="action_settings">Instellingen</string>
+    <string name="title_activity_settings">Instellingen</string>
+    <string name="a11y_map_content_description">Kaart</string>
+
+    <string name="wind_label">Wind</string>
+    <string name="pressure_label">Luchtdruk</string>
+    <string name="humidity_label">Luchtvochtigheid</string>
+    <string name="pref_enable_notifications_label">Meldingen toestaan</string>
+
+    <string name="a11y_forecast">Weersvoorspelling: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Weersvoorspelling pictogram: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">Max temperatuur: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Luchtvochtigheid: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Luchtdruk: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Windkracht en windrichting: <xliff:g id="wind">%1$s</xliff:g></string>
+    <string name="a11y_news_icon_content">nieuws pictogram</string>
+    <string name="a11y_news_arrow">pijl naar nieuws</string>
+
+    <string name="N">N</string>
+    <string name="S">Z</string>
+    <string name="E">O</string>
+    <string name="W">W</string>
+
+    <string name="NE">NO</string>
+    <string name="NW">NW</string>
+    <string name="SE">ZO</string>
+    <string name="SW">ZW</string>
+
+    <string name="labelOurAd">Onze reclame</string>
+    <string name="menu_label_privacy_policy">Privacybeleid</string>
+
+    <string name="feedback_pref_summary">Meld technische problemen of stel nieuwe functies voor</string>
+    <string name="feedback_pref_title">Feedback sturen</string>
+
+    <string name="title_activity_news">Nieuws</string>
+    <string name="label_news_text">Het laatste nieuws</string>
+
+    <string name="condition_2xx">storm</string>
+    <string name="condition_3xx">motregen</string>
+    <string name="condition_500">lichte regen</string>
+    <string name="condition_501">matige regen</string>
+    <string name="condition_502">zware regenval</string>
+    <string name="condition_503">zeer zware regenval</string>
+    <string name="condition_504">extreme regen</string>
+    <string name="condition_511">ijskoude regen</string>
+    <string name="condition_520">lichte regen</string>
+    <string name="condition_521">regen</string>
+    <string name="condition_522">zware regen</string>
+    <string name="condition_531">regen</string>
+    <string name="condition_600">lichte sneeuw</string>
+    <string name="condition_601">sneeuw</string>
+    <string name="condition_602">hevige sneeuw</string>
+    <string name="condition_611">sneeuw</string>
+    <string name="condition_612">sneeuw en regen</string>
+    <string name="condition_613">sneeuw en regen</string>
+    <string name="condition_615">sneeuw en regen</string>
+    <string name="condition_616">sneeuw en regen</string>
+    <string name="condition_620">sneeuw</string>
+    <string name="condition_621">sneeuw</string>
+    <string name="condition_622">sneeuw</string>
+    <string name="condition_701">nevel</string>
+    <string name="condition_711">rook</string>
+    <string name="condition_721">nevel</string>
+    <string name="condition_731">zand, stof</string>
+    <string name="condition_741">mist</string>
+    <string name="condition_751">zand</string>
+    <string name="condition_761">stof</string>
+    <string name="condition_762">vulkanische as</string>
+    <string name="condition_771">rukwinden</string>
+    <string name="condition_781">whirlwind</string>
+    <string name="condition_800">onbewolkt</string>
+    <string name="condition_801">licht bewolkt</string>
+    <string name="condition_802">half bewolkt</string>
+    <string name="condition_803">zwaar bewolkt</string>
+    <string name="condition_804">geheel bewolkt</string>
+    <string name="condition_900">whirlwind</string>
+    <string name="condition_901">tropische storm</string>
+    <string name="condition_902">orkaan</string>
+    <string name="condition_903">froid</string>
+    <string name="condition_904">warm weer</string>
+    <string name="condition_905">wind</string>
+    <string name="condition_906">hagel</string>
+    <string name="condition_951">kalm weer</string>
+    <string name="condition_952">lichte bries</string>
+    <string name="condition_953">brise</string>
+    <string name="condition_954">brise</string>
+    <string name="condition_955">brise</string>
+    <string name="condition_956">sterke bries</string>
+    <string name="condition_957">sterke wind</string>
+    <string name="condition_958">storm</string>
+    <string name="condition_959">zware storm</string>
+    <string name="condition_960">storm</string>
+    <string name="condition_961">zware storm</string>
+    <string name="condition_962">orkaan</string>
+
+    <string name="condition_unknown">onbekend (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+    <string name="title_graph_temperature">Temperatuur</string>
+
+</resources>

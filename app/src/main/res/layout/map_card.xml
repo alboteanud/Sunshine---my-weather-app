@@ -19,7 +19,7 @@
             android:layout_width="300dp"
             android:layout_height="250dp"
             android:adjustViewBounds="true"
-            android:contentDescription="@string/map_content_description"
+            android:contentDescription="@string/a11y_map_content_description"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"

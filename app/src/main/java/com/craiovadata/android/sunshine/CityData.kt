@@ -10,7 +10,7 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "Europe/Paris"
+    const val TIME_ZONE_ID = "Europe/Amsterdam"
 
     private val images = intArrayOf(
         R.drawable.city_1,
@@ -22,6 +22,8 @@ object CityData {
         R.drawable.stabil5,
         R.drawable.stabil6
     )
+
+    const val DEFAULT_ZOOM_LEVEL: Int = 13
 
     @JvmStatic
     fun getCityTimeZone(): TimeZone {

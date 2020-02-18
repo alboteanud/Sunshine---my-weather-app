@@ -18,6 +18,7 @@ package com.craiovadata.android.sunshine.data.network
 import android.app.IntentService
 import android.content.Intent
 import android.util.Log
+import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 
 /**
@@ -26,15 +27,32 @@ import com.craiovadata.android.sunshine.utilities.InjectorUtils
  * will not trigger a job immediately. This should only be called when the application is on the
  * screen.
  */
-class SyncIntentService : IntentService("SyncIntentService") {
+class SyncIntentServiceTest : IntentService("SyncIntentService") {
     override fun onHandleIntent(intent: Intent?) {
         Log.d(LOG_TAG, "Intent service started")
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
-            networkDataSource.fetchWeather()
+
+        if (BuildConfig.DEBUG) {
+            val languageParam = "fr"
+
+            val citiesIndex = intent?.getIntExtra("citiesIndex", 0) ?: 0
+
+            val ids = CityIds.cityIds2
+            val cityIndexEnd = citiesIndex+ 20
+            if (cityIndexEnd < ids.size) {
+                networkDataSource.fetchWeatherForMultipleCities(
+                    this.applicationContext,
+                    ids.subList(citiesIndex, cityIndexEnd),
+                    languageParam
+                )
+                Log.e("description", "index " + citiesIndex + " to " + cityIndexEnd)
+            }
+
+        }
     }
 
     companion object {
-        private val LOG_TAG = SyncIntentService::class.java.simpleName
+        private val LOG_TAG = SyncIntentServiceTest::class.java.simpleName
     }
 }

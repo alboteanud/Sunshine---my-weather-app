@@ -17,12 +17,12 @@ android {
 
     compileSdkVersion 29
     defaultConfig {
-        applicationId 'com.alboteanu.sunshine.Caen'
         minSdkVersion 24
         targetSdkVersion 29
-        versionName '7'
+        versionName '8'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 7
+        versionCode = 8
+        applicationId = 'com.craiovadata.android.sunshine.Amsterdam'
         // Required to use Java 8.
 //        jackOptions { enabled true }
     }

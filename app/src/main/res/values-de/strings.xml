@@ -25,7 +25,7 @@
 
     <string name="action_settings">Einstellungen</string>
     <string name="title_activity_settings">Einstellungen</string>
-    <string name="map_content_description">Karte</string>
+    <string name="a11y_map_content_description">Karte</string>
     <string name="wind_label">Wind</string>
     <string name="pressure_label">Luftdruck</string>
     <string name="humidity_label">Luftfeuchtigkeit</string>
@@ -49,16 +49,12 @@
     <string name="SE">SE</string>
     <string name="SW">SW</string>
 
-
-    <!--TODO translate-->
     <string name="labelOurAd">Werbung</string>
     <string name="menu_label_privacy_policy">Datenschutzerklärung</string>
 
-    <string name="feedback_review_sent">Danke</string>
-    <string name="feedback_review_sent_unsuccesfully">Fehler beim Senden der Bewertung</string>
-    <string name="sent_feedback_label">wurde versendet</string>
     <string name="feedback_pref_summary">Melden Sie technische Probleme oder schlagen Sie neue Funktionen vor</string>
     <string name="feedback_pref_title">Feedback schicken</string>
+
     <string name="title_activity_news">Nachrichten</string>
     <string name="label_news_text">Die neuesten Nachrichten</string>
 

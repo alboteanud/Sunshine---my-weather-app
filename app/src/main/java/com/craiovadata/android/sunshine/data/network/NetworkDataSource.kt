@@ -23,15 +23,11 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.utilities.NotifUtils
-import com.firebase.jobdispatcher.Constraint
-import com.firebase.jobdispatcher.FirebaseJobDispatcher
-import com.firebase.jobdispatcher.GooglePlayDriver
-import com.firebase.jobdispatcher.Lifetime
-import com.firebase.jobdispatcher.Trigger
+import com.firebase.jobdispatcher.*
 import java.lang.System.currentTimeMillis
 import java.text.SimpleDateFormat
 
@@ -59,6 +55,13 @@ class NetworkDataSource private constructor(
      */
     fun startFetchWeatherService() {
         val intentToFetch = Intent(context, SyncIntentService::class.java)
+        context.startService(intentToFetch)
+        Log.d(LOG_TAG, "Service created - fetching weather by days")
+    }
+
+    fun startFetchWeatherServiceTest(citiesIndex: Int) {
+        val intentToFetch = Intent(context, SyncIntentServiceTest::class.java)
+        intentToFetch.putExtra("citiesIndex", citiesIndex)
         context.startService(intentToFetch)
         Log.d(LOG_TAG, "Service created - fetching weather by days")
     }
@@ -191,30 +194,30 @@ class NetworkDataSource private constructor(
         }
     }
 
-    fun fetchWeatherForMultipleCities(context: Context) {
+    fun fetchWeatherForMultipleCities(
+        context: Context,
+        cityIds: List<Int>,
+        language: String
+    ) {
         Log.d(LOG_TAG, "Fetch weather days started")
         mExecutors.networkIO().execute {
             try {
 
-                val cityIds =
-                listOf(
-                    680332, 3191281, 2037013, 3448439, 1174872 ,2662689, 3133895,
-                    548408, 548410, 543704, 115019, 75337, 108048, 933555
-//                    3415496, 276781, 2187908,  3037899, 1687196, 139889, 2324774
-                )
-
-
                 val descriptions = mutableMapOf<Int, String>()
 
                 cityIds.forEach { id ->
-                    val weatherRequestUrl = NetworkUtils.getUrl2(context, id) ?: return@execute
+                    val weatherRequestUrl =
+                        NetworkUtils.getUrl2(context, id, language) ?: return@execute
 
                     // Use the URL to retrieve the JSON
                     val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
 
                     // Parse the JSON into a list of weather forecasts
                     val response = WeatherJsonParser().parseForecastWeather2(jsonWeatherResponse)
-                    Log.d("description", "parsing finished. Size: " + response.weatherForecast.size)
+                    Log.d(
+                        "description " + id,
+                        "parsing finished. Size: " + response.weatherForecast.size
+                    )
                     response.weatherForecast.forEach { entry ->
 
                         if (!descriptions.containsKey(entry.id)) {
@@ -225,57 +228,10 @@ class NetworkDataSource private constructor(
 
                             if (!isTranslated)
                                 Log.e("description", entry.id.toString() + "  " + entry.description)
-
                         }
-
                     }
                 }
-//                Log.e("descriptions", " descr: " + descriptions)
-
-            } catch (e: Exception) {
-                // Server probably invalid
-                e.printStackTrace()
-            }
-        }
-    }
- fun fetchWeatherForCities3(context: Context) {
-        Log.d(LOG_TAG, "Fetch weather days started")
-        mExecutors.networkIO().execute {
-            try {
-
-                val cityIds =
-                listOf(
-//                    680332, 3191281, 2037013, 3448439, 1174872
-//                    ,2662689, 3133895, 548408, 548410, 543704)
-//                    115019, 75337, 108048, 933555
-                    3037899, 1687196, 139889, 2324774
-                )
-
-
-                val descriptions = mutableMapOf<Int, String>()
-
-                    val weatherRequestUrl = NetworkUtils.getUrl3(context, cityIds) ?: return@execute
-
-                    // Use the URL to retrieve the JSON
-                    val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
-
-                    // Parse the JSON into a list of weather forecasts
-                    val response = WeatherJsonParser().parseForecastWeather2(jsonWeatherResponse)
-                    response.weatherForecast.forEach { entry ->
-
-                        if (!descriptions.containsKey(entry.id)) {
-                            descriptions.put(entry.id, entry.description)
-                            val descriptionStringName = "condition_" + entry.id.toString()
-                            val isTranslated =
-                                byIdName(context, descriptionStringName) == entry.description
-
-                            if (!isTranslated)
-                                Log.e("description", entry.id.toString() + "  " + entry.description)
-
-                        }
-
-                    }
-
+//                Log.e("descriptions all", " " + descriptions)
 
             } catch (e: Exception) {
                 // Server probably invalid
@@ -336,7 +292,7 @@ class NetworkDataSource private constructor(
 
         const val NUM_MIN_DATA_COUNTS = 16
         private const val SYNC_INTERVAL_SECONDS = 6 * 3600
-        private const val SYNC_FLEXTIME_SECONDS = 2 * 3600
+        private const val SYNC_FLEXTIME_SECONDS = 3 * 3600
 
         // For Singleton instantiation
         private val LOCK = Any()

@@ -15,7 +15,7 @@
 
     <string name="action_settings">Paramètres</string>
     <string name="title_activity_settings">Paramètres</string>
-    <string name="map_content_description">La carte</string>
+    <string name="a11y_map_content_description">La carte</string>
     <string name="wind_label">Vent</string>
     <string name="pressure_label">Pression</string>
     <string name="humidity_label">Humidité</string>
@@ -40,22 +40,15 @@
     <string name="SE">SE</string>
     <string name="SW">SW</string>
 
-
     <string name="labelOurAd">Notre publicité</string>
     <string name="menu_label_privacy_policy">Politique de confidentialité</string>
 
-    <string name="feedback_review_sent">Je vous remercie!</string>
-    <string name="feedback_review_sent_unsuccesfully">Une erreur s\'est produite lors de l\'envoi de l\'avis</string>
-    <string name="sent_feedback_label">expédié</string>
-    <string name="feedback_pref_summary">Signaler des problèmes techniques ou suggérer de nouvelles fonctionnalités</string>
     <string name="feedback_pref_title">Envoyer des commentaires</string>
-    <string name="title_activity_news">Les nouvelles</string>
+    <string name="feedback_pref_summary">Signaler des problèmes techniques ou suggérer de nouvelles fonctionnalités</string>
 
+    <string name="title_activity_news">Les nouvelles</string>
     <string name="label_news_text">Les nouvelles</string>
 
-    <!-- Weather Conditions (From OpenWeatherMap)
-    http://api.openweathermap.org/data/2.5/forecast?id=2922582&mode=json&units=metric&APPID=6efe9ba5f984adebdeb54334751f6c0b&lang=de
-    -->
     <string name="condition_2xx">tempête</string>
     <string name="condition_3xx">bruine</string>
     <string name="condition_500">légère pluie</string>
@@ -98,7 +91,7 @@
     <string name="condition_901">tempête tropicale</string>
     <string name="condition_902">ouragan</string>
     <string name="condition_903">froid</string>
-    <string name="condition_904">froid</string>
+    <string name="condition_904">temps chaud</string>
     <string name="condition_905">venteux</string>
     <string name="condition_906">grêle</string>
     <string name="condition_951">temps calme</string>

@@ -80,7 +80,7 @@ object NotifUtils {
             .setContentText(contentTxt)
 //            .setColor(context.getColor(R.color.colorPrimary))
             .setAutoCancel(true)
-            .setTimeoutAfter(4 * HOUR_IN_MILLIS)
+            .setTimeoutAfter(3 * HOUR_IN_MILLIS)
             //            .setOngoing(true)
             .setContentIntent(getPendingIntentMA(context))
         //                .addAction(
@@ -114,8 +114,7 @@ object NotifUtils {
                 && currentHourIn24Format > 6
                 && currentHourIn24Format < 20
 
-        if (BuildConfig.DEBUG)
-            notifyUserOfNewWeather(context, weatherEntry)
+//        if (BuildConfig.DEBUG) notifyUserOfNewWeather(context, weatherEntry)
 
         if (shouldNotify) {
             notifyUserOfNewWeather(context, weatherEntry)

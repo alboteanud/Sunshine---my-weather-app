@@ -3,28 +3,24 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
-import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
-import com.craiovadata.android.sunshine.utilities.NotifUtils
 import kotlinx.android.synthetic.main.content_main.*
-import kotlinx.android.synthetic.main.content_main.view.*
-import java.util.*
+
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
@@ -135,7 +131,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         return true
     }
 
-//    var iconCodeIndex = 0
+    //    var iconCodeIndex = 0
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -147,15 +143,39 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             }
             R.id.action_privacy_policy -> {
                 if (BuildConfig.DEBUG) {
-                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
-                    val savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
 
-                    layoutAttention.visibility = View.VISIBLE
-                    layoutAttention.textViewWarnCityWrong.text = savedTxt
+                    // show sync times and notif times
+//                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
+//                    val savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+//                    layoutAttention.visibility = View.VISIBLE
+//                    layoutAttention.textViewWarnCityWrong.text = savedTxt
+
+                    // make a request for multiple cities weather - for translation purpose
+                    if (citiesIndexIncrement > 20)
+                        handler.removeCallbacksAndMessages(null)
+                    else{
+                        handler.post(timedTask)
+                    }
+
+
                 } else goToPrivacyPolicy()
                 return true
             }
             else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    val citiIndexStart = 0
+    var citiesIndexIncrement = 0
+    val handler = Handler()
+    private val timedTask: Runnable = object : Runnable {
+        override fun run() {
+            if (citiIndexStart + citiesIndexIncrement < CityIds.cityIds2.size - 21) {
+                myViewModel.forceSyncWeather(citiIndexStart + citiesIndexIncrement)
+                citiesIndexIncrement += 20
+                handler.postDelayed(this, 6 * 1000)
+            }
+
         }
     }
 

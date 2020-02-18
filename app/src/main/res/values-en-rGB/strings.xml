@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Amsterdam</string>
-    <string name="owm_city_id" translatable="false">2759794</string>
-
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~2122331698</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/3180456011</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/5615047669</string>
-
-    <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
-    <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
-    <string name="BASE_STATIC_MAP_URL" translatable="false">https://maps.googleapis.com/maps/api/staticmap?</string>
-    <string name="link_privacy_policy" translatable="false">https://sites.google.com/view/privacy-policy-for-app-weather/main</string>
-
-    <string name="pref_last_notification" translatable="false">last_notification</string>
-    <string name="pref_enable_notifications_key" translatable="false">notification_daily</string>
-    <string name="pref_units_key" translatable="false">units_system</string>
-    <string name="button_feedback" translatable="false">feedback_button_id</string>
-    <string name="notification_content_text" translatable="false">%s %s</string>
-    <string name="norif_channel_id" translatable="false">norif_chanel_sun</string>
-    <string name="notif_channel_name" translatable="false">Norification channel</string>
-    <string name="format_temperature" translatable="false">
-        <xliff:g id="temp">%1.0f</xliff:g>\u00B0
-    </string>
-    <string name="format_humidity" translatable="false">
-        <xliff:g id="humidity">%1.0f</xliff:g> %%
-    </string>
-    <string name="format_wind_kmh">
+     <string name="format_wind_kmh">
         <xliff:g id="speed">%1$1.0f</xliff:g> km/h
         <xliff:g id="direction">%2$s</xliff:g>
     </string>
@@ -57,7 +32,7 @@
 
     <string name="N">N</string>
     <string name="S">S</string>
-    <string name="E">O</string>
+    <string name="E">E</string>
     <string name="W">W</string>
 
     <string name="NE">NE</string>
@@ -72,23 +47,29 @@
     <string name="feedback_pref_summary">Report technical issues or suggest new features</string>
 
     <string name="title_activity_news">News</string>
-    <string name="label_news_text">Latest news</string>
+    <string name="label_news_text">News</string>
 
     <!-- Weather Conditions (From OpenWeatherMap) -->
     <string name="condition_2xx">Storm</string>
     <string name="condition_3xx">Drizzle</string>
+
+    <!--  traduse ok-->
     <string name="condition_500">Light Rain</string>
     <string name="condition_501">Moderate Rain</string>
     <string name="condition_502">Heavy Rain</string>
     <string name="condition_503">Intense Rain</string>
+
     <string name="condition_504">Extreme Rain</string>
     <string name="condition_511">Freezing Rain</string>
     <string name="condition_520">Light Shower</string>
     <string name="condition_521">Shower</string>
     <string name="condition_522">Heavy Shower</string>
     <string name="condition_531">Ragged Shower</string>
+
+    <!--  traduse ok-->
     <string name="condition_600">Light Snow</string>
     <string name="condition_601">Snow</string>
+
     <string name="condition_602">Heavy Snow</string>
     <string name="condition_611">Sleet</string>
     <string name="condition_612">Light shower Sleet</string>
@@ -108,11 +89,14 @@
     <string name="condition_762">Volcanic Ash</string>
     <string name="condition_771">Squalls</string>
     <string name="condition_781">Tornado</string>
+
+    <!--  traduse ok-->
     <string name="condition_800">Clear</string>
     <string name="condition_801">Mostly Clear</string>
     <string name="condition_802">Scattered Clouds</string>
     <string name="condition_803">Broken Clouds</string>
     <string name="condition_804">Overcast Clouds</string>
+
     <string name="condition_900">Tornado</string>
     <string name="condition_901">Tropical Storm</string>
     <string name="condition_902">Hurricane</string>
@@ -135,6 +119,7 @@
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
     <string name="title_graph_temperature">Temperature by hour</string>
+
 
 
 </resources>
