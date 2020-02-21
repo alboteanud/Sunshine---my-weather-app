@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Amsterdam</string>
-    <string name="owm_city_id" translatable="false">2759794</string>
+    <string name="app_name" translatable="false">Hafar Al-Batin</string>
+    <string name="owm_city_id" translatable="false">106297</string>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~2122331698</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/3180456011</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/5615047669</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~1673810953</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/2795320936</string>
+    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/4792936498</string>
 
     <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
     <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->

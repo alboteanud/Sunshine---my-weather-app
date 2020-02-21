@@ -10,7 +10,7 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "Europe/Amsterdam"
+    const val TIME_ZONE_ID = "Asia/Riyadh"
 
     private val images = intArrayOf(
         R.drawable.city_1,

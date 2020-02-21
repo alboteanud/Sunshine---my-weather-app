@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
-    <!--    <string name="today">Heute</string>
-        <string name="tomorrow">Morgen</string>-->
-    <!--  <string name="pref_location_label">Standort</string>-->
-    <!--    <string name="pref_enable_notifications_true">An</string>
-    <string name="pref_enable_notifications_false">Aus</string>-->
-    <!--    <string name="pref_units_label">Einheiten</string>
-        <string name="pref_units_label_metric">Metrisch</string>
-        <string name="pref_units_label_imperial">Imperial</string>-->
-    <!--<string name="a11y_temp_now">Temperatur: <xliff:g id="temp">%1$s</xliff:g></string>
-    <string name="a11y_low_temp">Niedrige Temperatur: <xliff:g id="low">%1$s</xliff:g></string>-->
 
     <string name="format_wind_kmh">
         <xliff:g id="speed">%1$1.0f</xliff:g> km/h
