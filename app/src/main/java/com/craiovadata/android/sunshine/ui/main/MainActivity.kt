@@ -10,6 +10,7 @@ import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.BuildConfig
@@ -20,6 +21,7 @@ import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import kotlinx.android.synthetic.main.content_main.*
+import kotlinx.android.synthetic.main.content_main.view.*
 
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
@@ -145,17 +147,17 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
                 if (BuildConfig.DEBUG) {
 
                     // show sync times and notif times
-//                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
-//                    val savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
-//                    layoutAttention.visibility = View.VISIBLE
-//                    layoutAttention.textViewWarnCityWrong.text = savedTxt
+                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
+                    val savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+                    layoutAttention.visibility = View.VISIBLE
+                    layoutAttention.textViewWarnCityWrong.text = savedTxt
 
                     // make a request for multiple cities weather - for translation purpose
-                    if (citiesIndexIncrement > 20)
-                        handler.removeCallbacksAndMessages(null)
-                    else{
-                        handler.post(timedTask)
-                    }
+//                    if (citiesIndexIncrement > 20)
+//                        handler.removeCallbacksAndMessages(null)
+//                    else{
+//                        handler.post(timedTask)
+//                    }
 
 
                 } else goToPrivacyPolicy()

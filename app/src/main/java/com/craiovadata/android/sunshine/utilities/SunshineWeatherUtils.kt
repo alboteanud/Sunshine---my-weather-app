@@ -71,6 +71,7 @@ object SunshineWeatherUtils {
      * See https://www.mathsisfun.com/geometry/degrees.html
      * @return Wind String in the following form: "2 km/h SW"
      */
+    const val NO_DEGREE_WIND = 1.0
     fun getFormattedWind(
         context: Context,
         windSpeed_m_s: Double,
@@ -82,8 +83,10 @@ object SunshineWeatherUtils {
             windFormat = R.string.format_wind_mph
             windSpeed *= .6213f // transf in miles/hour
         }
-        var direction = "?"
-        if (degrees >= 337.5 || degrees < 22.5) {
+        var direction = ""
+        if (degrees == NO_DEGREE_WIND){
+            direction = ""
+        } else if (degrees >= 337.5 || degrees < 22.5) {
             direction = context.getString(R.string.N)
         } else if (degrees >= 22.5 && degrees < 67.5) {
             direction =  context.getString(R.string.NE)
@@ -316,4 +319,6 @@ object SunshineWeatherUtils {
         Log.e(LOG_TAG, "Unknown Weather: $weatherId")
         return R.drawable.art_storm
     }
+
+
 }

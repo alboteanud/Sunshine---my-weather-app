@@ -291,8 +291,8 @@ class NetworkDataSource private constructor(
         // writing out a bunch of multiplication ourselves and risk making a silly mistake.
 
         const val NUM_MIN_DATA_COUNTS = 16
-        private const val SYNC_INTERVAL_SECONDS = 6 * 3600
-        private const val SYNC_FLEXTIME_SECONDS = 3 * 3600
+        private const val SYNC_INTERVAL_SECONDS = 2 * 3600
+        private const val SYNC_FLEXTIME_SECONDS = 1 * 3600
 
         // For Singleton instantiation
         private val LOCK = Any()

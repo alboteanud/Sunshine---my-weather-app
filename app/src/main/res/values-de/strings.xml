@@ -20,6 +20,7 @@
     <string name="pressure_label">Luftdruck</string>
     <string name="humidity_label">Luftfeuchtigkeit</string>
     <string name="pref_enable_notifications_label">Benachrichtigungen erhalten</string>
+    <string name="sun_label">Sonnenaufgang</string>
 
     <string name="a11y_forecast">Das Wetter: <xliff:g id="condition">%1$s</xliff:g></string>
     <string name="a11y_forecast_icon">Wetter-Symbol: <xliff:g id="condition">%1$s</xliff:g></string>

@@ -17,6 +17,7 @@ package com.craiovadata.android.sunshine.data.network
 
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry.Companion.CURRENT_WEATHER
 import org.json.JSONException
 import org.json.JSONObject
 import java.net.HttpURLConnection
@@ -269,6 +270,11 @@ internal class WeatherJsonParser {
             val dateTimeMillis =
                 jsonCurrentWeather.getLong(OWM_DAY_TIME) * 1000
             val wDate = Date(dateTimeMillis)
+
+            val sunrise = jsonCurrentWeather.getJSONObject("sys").getLong("sunrise")
+            val sunset = jsonCurrentWeather.getJSONObject("sys").getLong("sunset")
+            val dt = jsonCurrentWeather.getLong("dt")
+
             if (BuildConfig.DEBUG) {
                 val cityName = jsonCurrentWeather.getString("name")
                 return WeatherEntry(
@@ -280,13 +286,14 @@ internal class WeatherJsonParser {
                     windSpeed,
                     windDirection,
                     iconCode,
-                    1,
+                    CURRENT_WEATHER,
                     cityName,
                     lat.toDouble(),
-                    lon.toDouble()
+                    lon.toDouble(),
+                    sunrise, sunset, dt
                 )
             }
-            return WeatherEntry(
+             return WeatherEntry(
                 weatherId,
                 wDate,
                 temp,
@@ -295,9 +302,10 @@ internal class WeatherJsonParser {
                 windSpeed,
                 windDirection,
                 iconCode,
-                1,
+                CURRENT_WEATHER,
                 lat.toDouble(),
-                lon.toDouble()
+                lon.toDouble(),
+                 sunrise, sunset, dt
             )
 
 //            constructor(

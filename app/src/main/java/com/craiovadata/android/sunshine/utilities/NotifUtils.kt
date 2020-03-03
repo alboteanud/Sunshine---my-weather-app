@@ -103,7 +103,7 @@ object NotifUtils {
     fun notifyIfNeeded(context: Context, weatherEntry: WeatherEntry) {
 
         val timeSinceLastNotification = getEllapsedTimeSinceLastNotification(context)
-        val oneDayPassedSinceLastNotification = timeSinceLastNotification > 22 * HOUR_IN_MILLIS
+        val oneDayPassedSinceLastNotification = timeSinceLastNotification > 2 * HOUR_IN_MILLIS
 
         val rightNow = Calendar.getInstance()
         val currentHourIn24Format = rightNow[Calendar.HOUR_OF_DAY]
@@ -112,7 +112,7 @@ object NotifUtils {
                 && oneDayPassedSinceLastNotification
                 && !isForeground()
                 && currentHourIn24Format > 6
-                && currentHourIn24Format < 20
+//                && currentHourIn24Format < 20
 
 //        if (BuildConfig.DEBUG) notifyUserOfNewWeather(context, weatherEntry)
 

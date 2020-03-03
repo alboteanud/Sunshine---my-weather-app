@@ -29,8 +29,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, TYPE.MAP, Date(0)) {
             val lon = weatherEntry.lon
             val prefs = itemView.context.getSharedPreferences("_", MODE_PRIVATE)
             val key = "key_zoom_level"
-            val defaultZoomLevel = DEFAULT_ZOOM_LEVEL
-            var zoomLevel = prefs.getInt(key, defaultZoomLevel)
+            var zoomLevel = prefs.getInt(key, DEFAULT_ZOOM_LEVEL)
             var url = buildUrlGoogleStaticMap(itemView.context, lat, lon, zoomLevel)
             loadMap(url, itemView)
 
@@ -38,7 +37,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, TYPE.MAP, Date(0)) {
                 when (it.id) {
                     R.id.buttonZoomPlus -> {
                         zoomLevel++
-                        if (zoomLevel >= 15) zoomLevel = 15
+                        if (zoomLevel >= 14) zoomLevel = 14
                     }
                     R.id.buttonZoomMinus -> {
                         zoomLevel--

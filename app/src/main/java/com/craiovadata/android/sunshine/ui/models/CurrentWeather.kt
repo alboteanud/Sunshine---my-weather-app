@@ -1,9 +1,14 @@
 package com.craiovadata.android.sunshine.ui.models
 
+import android.animation.ValueAnimator
 import android.view.View
+import android.view.animation.Animation
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
+import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils.NO_DEGREE_WIND
 import kotlinx.android.synthetic.main.current_weather_card.view.*
+import kotlinx.android.synthetic.main.current_weather_card.view.wind_measurement
+import kotlinx.android.synthetic.main.details_weather_card.view.*
 import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
@@ -95,6 +100,47 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?) :
             cardView.temperatureText.text = highString
             cardView.temperatureText.contentDescription = highA11y
 
+
+            /****************************
+             * Wind speed and direction *
+             */
+            val windSpeed = entry.wind
+//            val windDirection = entry.degrees
+            val windDirection = NO_DEGREE_WIND
+            val windString =
+                SunshineWeatherUtils.getFormattedWind(cardView.context, windSpeed, windDirection)
+            val windA11y = cardView.context.getString(R.string.a11y_wind, windString)
+
+            cardView.wind_measurement.text = windString
+            cardView.wind_measurement.contentDescription = windA11y
+//            cardView.wind_label.contentDescription = windA11y
+
+
+            rotateMill(cardView, entry)
+
+        }
+
+        private fun rotateMill(cardView: View, entry: WeatherEntry) {
+
+            val millRotorView =  cardView.findViewById(R.id.rotor_mill) as View? ?: return
+
+            var endAngle = 360f
+            if (entry.degrees < 180) endAngle = -endAngle
+            val animator = ValueAnimator.ofFloat(0f, endAngle)
+            animator.addUpdateListener { animation ->
+                millRotorView.rotation = animation.animatedValue as Float
+            }
+            val normalisedWindSpeed = normalizeWind(entry.wind)
+//            val normalisedWindSpeed = 12.0
+            val duration = 20000 / normalisedWindSpeed
+            animator.duration =  duration.toLong()
+            animator.interpolator = null
+            animator.repeatCount = Animation.INFINITE
+            animator.start()
+        }
+
+        private fun normalizeWind(windSpeed: Double): Double {
+            return if (windSpeed < 4) 4.0 else if (windSpeed > 12) 12.0 else windSpeed
         }
     }
 }
