@@ -49,7 +49,7 @@ internal object NetworkUtils {
     /* The units parameter allows us to designate whether we want metric units or imperial units */
     private const val UNITS_PARAM = "units"
 
-    fun getUrl(mContext: Context): URL? {
+    fun getUrl(mContext: Context): URL {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
         val owmCityId = mContext.getString(R.string.owm_city_id)
         return buildUrlWithLocationId(owmCityId, owmApiKey)
@@ -66,22 +66,17 @@ internal object NetworkUtils {
         return buildUrlWeatherNowWithLocationId(owmCityId, owmApiKey)
     }
 
-    private fun buildUrlWithLocationId(locationID: String, owmApiKey: String): URL? {
+    private fun buildUrlWithLocationId(locationID: String, owmApiKey: String): URL {
         val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
             .appendQueryParameter(ID_PARAM, locationID)
             .appendQueryParameter(FORMAT_PARAM, format)
             .appendQueryParameter(UNITS_PARAM, units)
             .appendQueryParameter(APPID_PARAM, owmApiKey)
             .build()
+        val weatherQueryUrl = URL(weatherQueryUri.toString())
+        Log.v(TAG, "URL forecasts 5 days = $weatherQueryUrl")
+        return weatherQueryUrl
 
-        return try {
-            val weatherQueryUrl = URL(weatherQueryUri.toString())
-            Log.v(TAG, "URL forecasts 5 days = $weatherQueryUrl")
-            weatherQueryUrl
-        } catch (e: MalformedURLException) {
-            e.printStackTrace()
-            null
-        }
     }
 
     private fun buildUrlWithLocationId2(locationID: String, owmApiKey: String, language: String): URL? {

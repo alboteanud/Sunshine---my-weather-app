@@ -39,31 +39,33 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                 val temperature =
                     SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
                 val dataPoint = DataPoint(entry.date, temperature)
-                series.appendData(dataPoint, false, entries.size)
+                series.appendData(dataPoint, false, entries.size + 1)
             }
 
             series.apply {
                 color = view.context.getColor(R.color.semitransparentGray)
 //            backgroundColor = Color.TRANSPARENT
                 isDrawBackground = true
-                setAnimated(true)
+                setAnimated(false)
                 thickness = 3
                 isDrawDataPoints = false
+
             }
 
             view.graphView.apply {
                 removeAllSeries()
+                onDataChanged(false, false)
 
                 addSeries(series)
                 gridLabelRenderer.apply {
-                    numHorizontalLabels = entries.size
-                    numVerticalLabels = 3
+//                    numHorizontalLabels = entries.size
+//                    numVerticalLabels = 3
 //                horizontalAxisTitle = "Hour"
+
                     gridStyle = GridLabelRenderer.GridStyle.NONE
-//                    numVerticalLabels = 4
                     setHumanRounding(false, true)
                     labelFormatter = object :
-                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ("HH")) {
+                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ("HH.mm")) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
                             else super.formatLabel(value, isValueX) + "\u00B0"
@@ -80,13 +82,15 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 
         private fun setLabelTime(view: View) {
             val cityTimeZone = CityData.getCityTimeZone()
-            var text = cityTimeZone.displayName
 
             if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
-                text = "TIME_ZONE_ID error: $cityTimeZone"
+
+                var text = cityTimeZone.displayName
+                text = "timp GMT -> TIME_ZONE_ID error: $cityTimeZone"
                 view.textLabel.setTextColor(Color.RED)
+                view.textLabel.text = text
             }
-            view.textLabel.text = text
+
 
         }
 

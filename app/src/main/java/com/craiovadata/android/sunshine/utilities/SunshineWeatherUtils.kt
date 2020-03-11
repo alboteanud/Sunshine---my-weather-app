@@ -30,7 +30,7 @@ object SunshineWeatherUtils {
         temperature: Double
     ): String {
         val mTemperature = adaptTemperature(context, temperature)
-        val roundedTemp = mTemperature.roundToInt().toFloat()
+        val roundedTemp = mTemperature.toInt().toFloat()
         val temperatureFormatResourceId = R.string.format_temperature
         /* For presentation, assume the user doesn't care about tenths of a degree. */return String.format(
             context.getString(temperatureFormatResourceId),

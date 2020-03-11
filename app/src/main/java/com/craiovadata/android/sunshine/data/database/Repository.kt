@@ -120,12 +120,14 @@ class Repository private constructor(
 
         // This method call triggers Sunshine to create its task to synchronize weather data
         // periodically.
-        mNetworkDataSource.scheduleRecurringFetchWeatherSync()
+//        mNetworkDataSource.scheduleRecurringFetchWeatherSync()
+        mNetworkDataSource.scheduleRecurringFetchWeatherSyncUsingWorker()
 
         mExecutors.diskIO().execute {
-            Log.d(LOG_TAG, "execute initData")
+
             if (isFetchNeeded)
                 startFetchWeatherService()
+            Log.d(LOG_TAG, "isFetchNeeded forecast: $isFetchNeeded")
         }
     }
 

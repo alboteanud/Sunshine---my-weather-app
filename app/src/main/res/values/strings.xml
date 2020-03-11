@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Annaba</string>
-    <string name="owm_city_id" translatable="false">2506999</string>
+    <string name="app_name" translatable="false">Rabat</string>
+    <string name="owm_city_id" translatable="false">2537763</string>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~9058961475</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/2844427985</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/6241226445</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-1015344817183694~3434394813</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/5029535759</string>
+    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-1015344817183694/1080075706</string>
 
     <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
 <!--    <string name="owm_api_key" translatable="false">d53bff8f3256eaf090be3c94964b0cb8</string> &lt;!&ndash; alboteanud   &ndash;&gt;-->

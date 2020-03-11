@@ -13,6 +13,7 @@ import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.LogUtils
+import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -28,6 +29,7 @@ open class BaseActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         backImage.setImageResource(CityData.getBackResId(this))
         initAds()
+
     }
 
     private fun initAds() {
@@ -109,6 +111,11 @@ open class BaseActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         adViewMedRectangle?.resume()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        NotifUtils.saveTimeAsLastNotification(this)
     }
 
     fun showRecyclerView() {
