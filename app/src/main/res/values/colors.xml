@@ -3,6 +3,7 @@
 
     <color name="colorPrimary">#03A9F4</color>
     <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryDarkSemi">#aa0288D1</color>
     <color name="colorAccent">#FFD740</color>
 
     <!--our detail accent colors -->

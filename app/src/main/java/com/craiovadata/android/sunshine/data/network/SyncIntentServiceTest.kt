@@ -34,7 +34,7 @@ class SyncIntentServiceTest : IntentService("SyncIntentService") {
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
 
         if (BuildConfig.DEBUG) {
-            val languageParam = "fr"
+
 
             val citiesIndex = intent?.getIntExtra("citiesIndex", 0) ?: 0
 
@@ -43,8 +43,7 @@ class SyncIntentServiceTest : IntentService("SyncIntentService") {
             if (cityIndexEnd < ids.size) {
                 networkDataSource.fetchWeatherForMultipleCities(
                     this.applicationContext,
-                    ids.subList(citiesIndex, cityIndexEnd),
-                    languageParam
+                    ids.subList(citiesIndex, cityIndexEnd)
                 )
                 Log.e("description", "index " + citiesIndex + " to " + cityIndexEnd)
             }

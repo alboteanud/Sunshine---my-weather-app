@@ -9,6 +9,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.preference.PreferenceManager
 import androidx.work.*
 import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.AppExecutors
@@ -128,8 +129,7 @@ class NetworkDataSource private constructor(
 
     fun fetchWeatherForMultipleCities(
         context: Context,
-        cityIds: List<Int>,
-        language: String
+        cityIds: List<Int>
     ) {
         Log.d(LOG_TAG, "Fetch weather days started")
         mExecutors.networkIO().execute {
@@ -139,7 +139,7 @@ class NetworkDataSource private constructor(
 
                 cityIds.forEach { id ->
                     val weatherRequestUrl =
-                        NetworkUtils.getUrl2(context, id, language) ?: return@execute
+                        NetworkUtils.getUrl2(context, id, MainActivity.languageParamMultipleCitiesTest) ?: return@execute
 
                     // Use the URL to retrieve the JSON
                     val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)

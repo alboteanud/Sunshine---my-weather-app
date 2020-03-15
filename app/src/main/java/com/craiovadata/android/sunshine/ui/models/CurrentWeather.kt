@@ -3,6 +3,7 @@ package com.craiovadata.android.sunshine.ui.models
 import android.animation.ValueAnimator
 import android.view.View
 import android.view.animation.Animation
+import android.widget.Toast
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils.NO_DEGREE_WIND
@@ -118,11 +119,16 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?) :
 
             rotateMill(cardView, entry)
 
+            cardView.wind_layout_current.setOnClickListener {
+                val text = cardView.context.getString(R.string.wind_label)
+                Toast.makeText(it.context, text, Toast.LENGTH_SHORT).show()
+            }
+
         }
 
         private fun rotateMill(cardView: View, entry: WeatherEntry) {
 
-            val millRotorView =  cardView.findViewById(R.id.rotor_mill) as View? ?: return
+            val millRotorView = cardView.findViewById(R.id.rotor_mill) as View? ?: return
 
             var endAngle = 360f
             if (entry.degrees < 180) endAngle = -endAngle
@@ -133,7 +139,7 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?) :
             val normalisedWindSpeed = normalizeWind(entry.wind)
 //            val normalisedWindSpeed = 12.0
             val duration = 20000 / normalisedWindSpeed
-            animator.duration =  duration.toLong()
+            animator.duration = duration.toLong()
             animator.interpolator = null
             animator.repeatCount = Animation.INFINITE
             animator.start()

@@ -54,7 +54,6 @@
     <string name="condition_2xx">Storm</string>
     <string name="condition_3xx">Drizzle</string>
 
-    <!--  traduse ok-->
     <string name="condition_500">Light Rain</string>
     <string name="condition_501">Moderate Rain</string>
     <string name="condition_502">Heavy Rain</string>
@@ -67,7 +66,6 @@
     <string name="condition_522">Heavy Shower</string>
     <string name="condition_531">Ragged Shower</string>
 
-    <!--  traduse ok-->
     <string name="condition_600">Light Snow</string>
     <string name="condition_601">Snow</string>
 
@@ -91,7 +89,6 @@
     <string name="condition_771">Squalls</string>
     <string name="condition_781">Tornado</string>
 
-    <!--  traduse ok-->
     <string name="condition_800">Clear</string>
     <string name="condition_801">Mostly Clear</string>
     <string name="condition_802">Scattered Clouds</string>

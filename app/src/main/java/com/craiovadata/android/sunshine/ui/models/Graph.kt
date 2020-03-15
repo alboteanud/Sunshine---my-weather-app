@@ -3,6 +3,7 @@ package com.craiovadata.android.sunshine.ui.models
 import android.graphics.Color
 import android.preference.PreferenceManager
 import android.view.View
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
@@ -61,6 +62,12 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 //                    numHorizontalLabels = entries.size
 //                    numVerticalLabels = 3
 //                horizontalAxisTitle = "Hour"
+
+                    view.graphView.setOnClickListener {
+
+                        Toast.makeText(it.context, "hour", Toast.LENGTH_SHORT).show()
+                    }
+
 
                     gridStyle = GridLabelRenderer.GridStyle.NONE
                     setHumanRounding(false, true)

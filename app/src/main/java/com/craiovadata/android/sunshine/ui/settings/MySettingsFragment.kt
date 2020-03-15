@@ -21,11 +21,12 @@ class MySettingsFragment : PreferenceFragmentCompat() {
 
     private fun composeEmail() {
         val appName = getString(R.string.app_name)
+        val appFeedback = getString(R.string.feedback_pref_title)
         val intent = Intent(Intent.ACTION_SENDTO).apply {
             data = Uri.parse("mailto:") // only email apps should handle this
-            putExtra(Intent.EXTRA_EMAIL, arrayOf("alboteanud@gmail.com"))
-            putExtra(Intent.EXTRA_SUBJECT, "Feedback on $appName app")
-//            putExtra(Intent.EXTRA_TEXT, "feedback")
+            putExtra(Intent.EXTRA_EMAIL, arrayOf("craiova.data@gmail.com"))
+            putExtra(Intent.EXTRA_SUBJECT, "$appName - app feedback")
+            putExtra(Intent.EXTRA_TEXT, "$appFeedback: ")
         }
         val pm = activity?.packageManager
         if (pm?.let { intent.resolveActivity(it) } != null) {

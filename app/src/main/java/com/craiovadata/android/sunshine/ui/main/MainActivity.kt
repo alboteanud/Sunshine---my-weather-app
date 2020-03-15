@@ -184,6 +184,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
     companion object {
         const val TAG = "MainActivity"
         const val PREF_SYNC_KEY = "sync_key"
+       const val languageParamMultipleCitiesTest = "es"
     }
 
     override fun onCelsiusFarClicked(view: View) {
