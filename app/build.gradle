@@ -13,7 +13,7 @@ android {
         versionName '8'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         versionCode = 8
-        applicationId = 'com.craiovadata.android.sunshine.Madrid2'
+        applicationId = 'com.craiovadata.android.sunshine.Albacete'
         // Required to use Java 8.
 //        jackOptions { enabled true }
     }

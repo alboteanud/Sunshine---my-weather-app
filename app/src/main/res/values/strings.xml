@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Madrid</string>
-    <string name="owm_city_id" translatable="false">6359304</string>
+    <string name="app_name" translatable="false">Albacete</string>
+    <string name="owm_city_id" translatable="false">2522258</string>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-1015344817183694~9523658038</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/1645168018</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-1015344817183694/8019004675</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8517313499</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/9411947985</string>
+    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/5761195355</string>
 
     <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
 <!--    <string name="owm_api_key" translatable="false">d53bff8f3256eaf090be3c94964b0cb8</string> &lt;!&ndash; alboteanud   &ndash;&gt;-->
@@ -138,7 +138,8 @@
     <string name="condition_962">Hurricane</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
-    <string name="title_graph_temperature">Temperature by hour</string>
+    <string name="title_graph_temperature">Temperature</string>
+    <string name="clock_symbol" translatable="false">◷</string>
 
 
 </resources>

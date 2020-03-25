@@ -8,6 +8,7 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.preference.PreferenceManager
@@ -153,11 +154,12 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
                     layoutAttention.textViewWarnCityWrong.text = savedTxt
 
                     // make a request for multiple cities weather - for translation purpose
-//                    if (citiesIndexIncrement > 20)
-//                        handler.removeCallbacksAndMessages(null)
-//                    else{
-//                        handler.post(timedTask)
-//                    }
+                    if (citiesIndexIncrement > 20)
+                        handler.removeCallbacksAndMessages(null)
+                    else{
+                        handler.post(timedTask)
+                        Toast.makeText(this, "getting data from multiple cities", Toast.LENGTH_LONG).show()
+                    }
 
 
                 } else goToPrivacyPolicy()

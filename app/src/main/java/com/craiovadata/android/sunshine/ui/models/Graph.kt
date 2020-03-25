@@ -33,14 +33,18 @@ data class Graph(val list: List<ListWeatherEntry>?) :
             setTextCelsiusFarStates(view, listener)
         }
 
-        private fun drawGraph(entries: List<ListWeatherEntry>, view: View) {
-            val series = LineGraphSeries<DataPoint>()
 
+
+        private fun drawGraph(entries: List<ListWeatherEntry>, view: View) {
+            view.graphView.removeAllSeries()
+
+            val series = LineGraphSeries<DataPoint>()
             entries.forEach { entry ->
                 val temperature =
                     SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
                 val dataPoint = DataPoint(entry.date, temperature)
-                series.appendData(dataPoint, false, entries.size + 1)
+//                series.appendData(dataPoint, false, entries.size)
+                series.appendData(dataPoint, true, entries.size+2, true)
             }
 
             series.apply {
@@ -49,57 +53,54 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                 isDrawBackground = true
                 setAnimated(false)
                 thickness = 3
-                isDrawDataPoints = false
+                isDrawDataPoints = true
+//                dataPointsRadius = 3.0f
 
             }
 
             view.graphView.apply {
-                removeAllSeries()
-                onDataChanged(false, false)
+//                removeAllSeries()
+//                onDataChanged(false, false)
 
                 addSeries(series)
                 gridLabelRenderer.apply {
 //                    numHorizontalLabels = entries.size
 //                    numVerticalLabels = 3
-//                horizontalAxisTitle = "Hour"
-
-                    view.graphView.setOnClickListener {
-
-                        Toast.makeText(it.context, "hour", Toast.LENGTH_SHORT).show()
-                    }
-
-
+//                horizontalAxisTitle = "hour"
+//                    verticalAxisTitle = "Temperature"
+//                    horizontalAxisTitle =  "\u23F0"
+//                    horizontalAxisTitle =  "\uE12b"
+val timeFormat = if (BuildConfig.DEBUG) { "HH:mm" }
+                    else { "HH:mm" }
                     gridStyle = GridLabelRenderer.GridStyle.NONE
                     setHumanRounding(false, true)
                     labelFormatter = object :
-                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ("HH.mm")) {
+                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ(timeFormat)) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
                             else super.formatLabel(value, isValueX) + "\u00B0"
                         }
                     }
                 }
-                title = context.getString(R.string.title_graph_temperature)
-//                onDataChanged(false, false)
+//                title = context.getString(R.string.title_graph_temperature)
+                onDataChanged(false, false)
             }
 
 
-            setLabelTime(view)
-        }
 
-        private fun setLabelTime(view: View) {
             val cityTimeZone = CityData.getCityTimeZone()
-
-            if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
-
-                var text = cityTimeZone.displayName
-                text = "timp GMT -> TIME_ZONE_ID error: $cityTimeZone"
-                view.textLabel.setTextColor(Color.RED)
-                view.textLabel.text = text
+            view.textViewClockSymbol.setOnClickListener {
+                Toast.makeText(it.context, cityTimeZone.displayName, Toast.LENGTH_SHORT).show()
             }
-
-
+            if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
+//                var text = cityTimeZone.displayName
+                val text = "timp GMT -> TIME_ZONE_ID eroare: $cityTimeZone"
+                view.textViewClockSymbol.setTextColor(Color.RED)
+                view.textViewClockSymbol.text = text
+            }
         }
+
+
 
         private fun setTextCelsiusFarStates(view: View, listener: CardsAdapter.Listener) {
             val context = view.context
