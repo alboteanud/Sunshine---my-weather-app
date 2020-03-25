@@ -140,7 +140,7 @@ class NetworkDataSource private constructor(
                 // weather. It will decide whether to create a URL based off of the latitude and
                 // longitude or off of a simple location as a String.
 
-                val weatherRequestUrl = NetworkUtils.getUrl(context)
+                val weatherRequestUrl = NetworkUtils.getUrl(context) ?: return@execute
 
                 // Use the URL to retrieve the JSON
                 val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
@@ -180,7 +180,7 @@ class NetworkDataSource private constructor(
                 // longitude or off of a simple location as a String.
 
                 //                URL weatherRequestUrl = NetworkUtils.getUrl_();                                           // for test server
-                val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context)
+                val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context) ?: return@execute
 
                 // Use the URL to retrieve the JSON
                 val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)

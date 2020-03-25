@@ -12,12 +12,13 @@ import java.util.TimeZone.getTimeZone
 
 object CityUtils {
 
+
     const val TIME_ZONE_ID =
 //      "US/Eastern"
-      "US/Central"
+//      "US/Central"
 //      "US/Mountain"
 //      "US/Pacific"
-//        "America/Chicago"
+      "America/Phoenix"
 
     private val images = intArrayOf(
         R.drawable.c,
@@ -31,12 +32,17 @@ object CityUtils {
         R.drawable.stabil7
     )
 
+    val OWM_IDS = mapOf(
+        "Tucson2 " to 5318313
+    )
+
     @JvmStatic
     fun getCityTimeZone(): TimeZone {
         val tz = getTimeZone(TIME_ZONE_ID)
         if (BuildConfig.DEBUG) {
             require(tz.id != "GMT") { "timeZone probably wrong: GMT" }
         }
+
         return tz
     }
 

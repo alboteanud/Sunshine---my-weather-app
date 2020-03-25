@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Milwaukee</string>
-    <string name="owm_city_id" translatable="false">5263045</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
+    <string name="app_name" translatable="false">Tucson</string>
+    <string name="owm_city_id" translatable="false">5318313</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
 
     <!--    schimba c.jpg
             TIME_ZONE_ID din CityUtils
