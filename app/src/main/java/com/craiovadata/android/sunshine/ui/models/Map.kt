@@ -6,19 +6,19 @@ import android.net.Uri
 import android.util.Log
 import android.view.View
 import com.bumptech.glide.Glide
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
 import kotlinx.android.synthetic.main.map_card.view.*
 import java.util.*
 import com.bumptech.glide.request.RequestOptions
+import com.craiovadata.android.sunshine.CityData.DEFAULT_ZOOM_LEVEL
 import com.craiovadata.android.sunshine.R
 
 
-data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0)) {
+data class Map(val weatherEntry: WeatherEntry?) : Base(-4, TYPE.MAP, Date(0)) {
 
 
     companion object {
 
-        private const val DEFAULT_ZOOM_LEVEL: Int = 12
+
 
         @JvmStatic
         fun bindMapToUI(weatherEntry: WeatherEntry?, itemView: View) {
@@ -29,8 +29,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0
             val lon = weatherEntry.lon
             val prefs = itemView.context.getSharedPreferences("_", MODE_PRIVATE)
             val key = "key_zoom_level"
-            val defaultZoomLevel = DEFAULT_ZOOM_LEVEL
-            var zoomLevel = prefs.getInt(key, defaultZoomLevel)
+            var zoomLevel = prefs.getInt(key, DEFAULT_ZOOM_LEVEL)
             var url = buildUrlGoogleStaticMap(itemView.context, lat, lon, zoomLevel)
             loadMap(url, itemView)
 
@@ -38,7 +37,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0
                 when (it.id) {
                     R.id.buttonZoomPlus -> {
                         zoomLevel++
-                        if (zoomLevel >= 15) zoomLevel = 15
+                        if (zoomLevel >= 14) zoomLevel = 14
                     }
                     R.id.buttonZoomMinus -> {
                         zoomLevel--
@@ -58,8 +57,8 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(-4, Base.TYPE.MAP, Date(0
             val mapImageView = itemView.mapImageView
             val requestOptions = RequestOptions()
             .placeholder(
-                com.craiovadata.android.sunshine.R.drawable.ic_map)
-            .error(com.craiovadata.android.sunshine.R.drawable.ic_map)
+                R.drawable.ic_map)
+            .error(R.drawable.ic_map)
 
             Glide.with(mapImageView)
                 .load(url)

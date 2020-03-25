@@ -21,11 +21,12 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-
+        <item name="colorPrimary">@color/blackSemi7</item>
     </style>
-<!--    <item name="colorPrimary">@color/transparent</item>-->
 
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+        <item name="windowActionBarOverlay">true</item>
+    </style>
 
     <style name="SubheadWhiteTextStyle" parent="@style/TextAppearance.AppCompat.Subhead">
         <item name="android:layout_width">wrap_content</item>

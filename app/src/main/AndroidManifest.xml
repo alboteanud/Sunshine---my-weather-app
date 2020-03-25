@@ -52,6 +52,9 @@
             android:name=".data.network.SyncIntentService"
             android:exported="false" />
         <service
+            android:name=".data.network.SyncIntentServiceTest"
+            android:exported="false" />
+        <service
             android:name=".data.network.SyncIntentServiceCW"
             android:exported="false" /> <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
         <service

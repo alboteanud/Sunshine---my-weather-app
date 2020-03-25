@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+     <string name="format_wind_kmh">
+        <xliff:g id="speed">%1$1.0f</xliff:g> km/h
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_wind_mph">
+        <xliff:g id="speed">%1$1.0f</xliff:g> mph
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+    <string name="format_pressure">
+        <xliff:g id="pressure">%1.0f</xliff:g> hPa
+    </string>
+
+    <string name="action_settings">Setări</string>
+    <string name="title_activity_settings">Setări</string>
+    <string name="wind_label">Vânt</string>
+    <string name="pressure_label">Presiune</string>
+    <string name="humidity_label">Umiditatea</string>
+    <string name="pref_enable_notifications_label">Permite notificări</string>
+    <string name="sun_label">Rasăritul</string>
+
+    <string name="a11y_map_content_description">harta</string>
+    <string name="a11y_forecast">Prognoza: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Prognoza semn: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">Maxima: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Umiditatea: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Presiunea: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Vântul - viteza şi direcția: <xliff:g id="wind">%1$s</xliff:g></string>
+    <string name="a11y_news_icon_content">ştiri</string>
+    <string name="a11y_news_arrow">săgeata de navigare către ştiri</string>
+
+    <string name="N">N</string>
+    <string name="S">S</string>
+    <string name="E">E</string>
+    <string name="W">V</string>
+
+    <string name="NE">NE</string>
+    <string name="NW">NV</string>
+    <string name="SE">SE</string>
+    <string name="SW">SV</string>
+
+    <string name="labelOurAd">Publicitate</string>
+    <string name="menu_label_privacy_policy">Politica de confidențialitate</string>
+
+    <string name="feedback_pref_title">Trimite o evaluare</string>
+    <string name="feedback_pref_summary">Raportează o problemă tehnică sau sugerează-ne îmbunătățiri </string>
+
+    <string name="title_activity_news">Știri</string>
+    <string name="label_news_text">Știri</string>
+
+    <!-- Weather Conditions (From OpenWeatherMap) -->
+    <string name="condition_2xx">Furtună</string>
+    <string name="condition_3xx">Burniță</string>
+
+    <string name="condition_500">Ploaie uşoară</string>
+    <string name="condition_501">Ploaie moderată</string>
+    <string name="condition_502">Ploaie puternică</string>
+    <string name="condition_503">Ploaie intensă</string>
+
+    <string name="condition_504">Ploaie extremă</string>
+    <string name="condition_511">Ploaie rece</string>
+    <string name="condition_520">Ploaie uşoară</string>
+    <string name="condition_521">Ploaie scurtă</string>
+    <string name="condition_522">Aversă de ploaie</string>
+    <string name="condition_531">Aversă de ploaie</string>
+
+
+    <string name="condition_600">Ninsoare uşoară</string>
+    <string name="condition_601">Ninsoare</string>
+
+    <string name="condition_602">Ninsoare puternică</string>
+    <string name="condition_611">Lapoviță</string>
+    <string name="condition_612">Lapoviță şi ninsoare</string>
+    <string name="condition_613">Lapoviță</string>
+    <string name="condition_615">Ploaie şi ninsoare</string>
+    <string name="condition_616">Ploaie şi ninsoare</string>
+    <string name="condition_620">Ploaie şi ninsoare</string>
+    <string name="condition_621">Ploaie şi ninsoare</string>
+    <string name="condition_622">Ploaie şi ninsoare</string>
+    <string name="condition_701">Pâclă</string>
+    <string name="condition_711">Fum</string>
+    <string name="condition_721">Ceață</string>
+    <string name="condition_731">Nisip, praf</string>
+    <string name="condition_741">Ceață</string>
+    <string name="condition_751">Nisip</string>
+    <string name="condition_761">Praf</string>
+    <string name="condition_762">Cenuşă vulcanică</string>
+    <string name="condition_771">Vijelie</string>
+    <string name="condition_781">Tornadă</string>
+
+    <string name="condition_800">Cer senin</string>
+    <string name="condition_801">Cer mai mult senin</string>
+    <string name="condition_802">Nori împrăştiați</string>
+    <string name="condition_803">Nori împrăștiați</string>
+    <string name="condition_804">Acoperit de nori</string>
+
+    <string name="condition_900">Tornadă</string>
+    <string name="condition_901">Furtună tropicală</string>
+    <string name="condition_902">Uragan</string>
+    <string name="condition_903">Frig</string>
+    <string name="condition_904">Cald</string>
+    <string name="condition_905">Vânt</string>
+    <string name="condition_906">Grindină</string>
+    <string name="condition_951">Calm</string>
+    <string name="condition_952">Briză ușoară</string>
+    <string name="condition_953">Briză ușoară</string>
+    <string name="condition_954">Briză</string>
+    <string name="condition_955">Briză ușoară</string>
+    <string name="condition_956">Briză puternică</string>
+    <string name="condition_957">Vânt puternic</string>
+    <string name="condition_958">Viscol</string>
+    <string name="condition_959">Viscol puternic</string>
+    <string name="condition_960">Furtună</string>
+    <string name="condition_961">Furtună violentă</string>
+    <string name="condition_962">Uragan</string>
+
+    <string name="condition_unknown">Vreme necunoscută (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+    <string name="title_graph_temperature">Temperatura</string>
+
+
+
+</resources>

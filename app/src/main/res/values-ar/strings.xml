@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+
+<!--    <string name="app_name">مسقط</string>-->
+
+    <string name="format_wind_kmh"><xliff:g id="speed">%1$1.0f</xliff:g> كم / ساعة<xliff:g id="direction"> %2$s</xliff:g></string>
+    <string name="format_wind_mph"><xliff:g id="speed">%1$1.0f</xliff:g> ميل في الساعة<xliff:g id="direction"> %2$s</xliff:g></string>
+    <string name="format_pressure"><xliff:g id="pressure">%1.0f</xliff:g> هكتوباسكال</string>
+
+    <string name="action_settings">الإعدادات</string>
+    <string name="title_activity_settings">الإعدادات</string>
+
+    <string name="wind_label">رياح</string>
+    <string name="pressure_label">الضغط</string>
+    <string name="humidity_label">رطوبة</string>
+    <string name="pref_enable_notifications_label">السماح للإشعارات</string>
+    <string name="sun_label">شروق الشمس</string>
+
+    <string name="a11y_map_content_description">موقعك</string>
+    <string name="a11y_forecast"> توقعات<xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon"> توقعات<xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp"> الكبرى<xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_humidity"> رطوبة<xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure"> الضغط الجوي<xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">سرعة الرياح واتجاهها<xliff:g id="wind">%1$s</xliff:g></string>
+    <string name="a11y_news_icon_content">أيقونة الأخبار</string>
+    <string name="a11y_news_arrow">أيقونة الأخبار</string>
+
+    <string name="N">شمالي</string>
+    <string name="S">جنوبي</string>
+    <string name="E">شرقي</string>
+    <string name="W">الغربي</string>
+
+    <string name="NE">لشمال الشرقي</string>
+    <string name="NW">شمال غرب</string>
+    <string name="SE">الجنوب الشرقي</string>
+    <string name="SW">الجنوب الغربي</string>
+
+    <string name="labelOurAd">إعلان</string>
+    <string name="menu_label_privacy_policy">سياسة خاصة</string>
+
+    <string name="feedback_pref_title">ارسل رأيك!</string>
+    <string name="feedback_pref_summary">الإبلاغ عن المشكلات الفنية أو اقتراح ميزات جديدة</string>
+
+    <string name="title_activity_news">أخبار</string>
+    <string name="label_news_text">أحدث الأخبار</string>
+
+    <!-- Weather Conditions (From OpenWeatherMap) -->
+    <string name="condition_2xx">عاصفة</string>
+    <string name="condition_3xx">رذاذ</string>
+
+<!--  traduse ok-->
+    <string name="condition_500">مطر خفيف</string>
+    <string name="condition_501">مطر متوسط الغزارة</string>
+    <string name="condition_502">مطر غزير</string>
+    <string name="condition_503">مطر شديد الغزارة</string>
+
+    <string name="condition_504">مطر</string>
+    <string name="condition_511">أمطار متجمدة</string>
+    <string name="condition_520">زخات مطر خفيفة</string>
+    <string name="condition_521">زخات مطر</string>
+    <string name="condition_522">زخات المطر</string>
+    <string name="condition_531">زخات المطر</string>
+
+    <!--  traduse ok-->
+    <string name="condition_600">ثلوج خفيفة</string>
+    <string name="condition_601">ثلوج</string>
+    <string name="condition_602">ثلوج قوية</string>
+
+    <string name="condition_611">مطر متجمد</string>
+    <string name="condition_612">مطر متجمد</string>
+    <string name="condition_613">مطر متجمد</string>
+    <string name="condition_615">مطر ثلجى</string>
+    <string name="condition_616">مطر ثلجى</string>
+    <string name="condition_620">تساقط الثلوج</string>
+    <string name="condition_621">تساقط الثلوج</string>
+    <string name="condition_622">تساقط الثلوج</string>
+    <string name="condition_701">ضباب</string>
+    <string name="condition_711">دخان</string>
+    <string name="condition_721">ضباب</string>
+    <string name="condition_731">مغبر</string>
+    <string name="condition_741">ضباب</string>
+    <string name="condition_751">عاصفة غبارية</string>
+    <string name="condition_761">مغبر</string>
+    <string name="condition_762">الرماد البركاني</string>
+    <string name="condition_771">عاصفة</string>
+    <string name="condition_781">عاصفة</string>
+
+    <!--  traduse ok-->
+    <string name="condition_800">سماء صافية</string>
+    <string name="condition_801">غائم جزئي</string>
+    <string name="condition_802">غيوم متفرقة</string>
+    <string name="condition_803">غيوم متناثرة</string>
+    <string name="condition_804">غيوم قاتمة</string>
+
+    <string name="condition_900">عاصفة</string>
+    <string name="condition_901">عاصفة</string>
+    <string name="condition_902">عاصفة</string>
+    <string name="condition_903">بارد</string>
+    <string name="condition_904">حار</string>
+    <string name="condition_905">عاصف</string>
+    <string name="condition_906">تمطر بردا</string>
+    <string name="condition_951">هادئ</string>
+    <string name="condition_952">نسيم خفيف</string>
+    <string name="condition_953">نسيم خفيف</string>
+    <string name="condition_954">نسيم</string>
+    <string name="condition_955">نسيم</string>
+    <string name="condition_956">عاصفة</string>
+    <string name="condition_957">عاصفة</string>
+    <string name="condition_958">عاصفة</string>
+    <string name="condition_959">عاصفة</string>
+    <string name="condition_960">عاصفة</string>
+    <string name="condition_961">عاصفة</string>
+    <string name="condition_962">عاصفة</string>
+
+    <string name="condition_unknown">)مجهول<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+    <string name="title_graph_temperature">درجة الحرارة</string>
+
+
+</resources>

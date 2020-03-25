@@ -1,6 +1,7 @@
 package com.craiovadata.android.sunshine.ui.news
 
 import android.os.Bundle
+import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import com.craiovadata.android.sunshine.R
@@ -13,7 +14,7 @@ class NewsActivity : AppCompatActivity() {
 //    private val urlNews = "https://news.google.com/foryou?q=craiova"
 //    private val urlNews = "https://news.google.com/foryou"
 
-
+    private var mWebView: WebView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_news)
@@ -25,14 +26,27 @@ class NewsActivity : AppCompatActivity() {
 //        }
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        webview.loadUrl(urlNews)
-        webview.webViewClient = WebViewClient()
-        webview.settings.javaScriptEnabled = true
+        mWebView = news_webview
+        mWebView?.loadUrl(urlNews)
+        mWebView?.webViewClient = WebViewClient()
+        mWebView?.settings?.javaScriptEnabled = true
 
 //        fab.backgroundTintList = ColorStateList.valueOf(getColor(R.color.blackSemi7));
 //        fab.setOnClickListener{
 //            NavUtils.navigateUpFromSameTask(this);
 //        }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        mWebView?.onPause()
+        mWebView?.pauseTimers()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        mWebView?.onResume()
+        mWebView?.resumeTimers()
     }
 
 

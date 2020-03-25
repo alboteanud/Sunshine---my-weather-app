@@ -3,13 +3,13 @@ package com.craiovadata.android.sunshine.ui.models
 import android.graphics.Color
 import android.preference.PreferenceManager
 import android.view.View
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.utilities.CityUtils
+import com.craiovadata.android.sunshine.CityData
 import com.jjoe64.graphview.GridLabelRenderer
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
 import com.jjoe64.graphview.series.DataPoint
@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.graph_card.view.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
 data class Graph(val list: List<ListWeatherEntry>?) :
-    Base(list?.get(0)?.id, Base.TYPE.GRAPH, list?.get(0)?.date) {
+    Base(list?.get(0)?.id, TYPE.GRAPH, list?.get(0)?.date) {
 
     companion object {
 
@@ -40,37 +40,46 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                 val temperature =
                     SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
                 val dataPoint = DataPoint(entry.date, temperature)
-                series.appendData(dataPoint, false, entries.size)
+                series.appendData(dataPoint, false, entries.size + 1)
             }
 
             series.apply {
                 color = view.context.getColor(R.color.semitransparentGray)
 //            backgroundColor = Color.TRANSPARENT
                 isDrawBackground = true
-                setAnimated(true)
+                setAnimated(false)
                 thickness = 3
                 isDrawDataPoints = false
+
             }
 
             view.graphView.apply {
                 removeAllSeries()
+                onDataChanged(false, false)
 
                 addSeries(series)
                 gridLabelRenderer.apply {
-                    numHorizontalLabels = entries.size
+//                    numHorizontalLabels = entries.size
+//                    numVerticalLabels = 3
 //                horizontalAxisTitle = "Hour"
+
+                    view.graphView.setOnClickListener {
+
+                        Toast.makeText(it.context, "hour", Toast.LENGTH_SHORT).show()
+                    }
+
+
                     gridStyle = GridLabelRenderer.GridStyle.NONE
-//                    numVerticalLabels = 4
                     setHumanRounding(false, true)
                     labelFormatter = object :
-                        DateAsXAxisLabelFormatter(context, CityUtils.getFormatterCityTZ("HH")) {
+                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ("HH.mm")) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
                             else super.formatLabel(value, isValueX) + "\u00B0"
                         }
                     }
                 }
-                title = "Temperature by hour"
+                title = context.getString(R.string.title_graph_temperature)
 //                onDataChanged(false, false)
             }
 
@@ -79,14 +88,16 @@ data class Graph(val list: List<ListWeatherEntry>?) :
         }
 
         private fun setLabelTime(view: View) {
-            val cityTimeZone = CityUtils.getCityTimeZone()
-            var text = cityTimeZone.displayName
+            val cityTimeZone = CityData.getCityTimeZone()
 
             if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
-                text = "TIME_ZONE_ID error: $cityTimeZone"
+
+                var text = cityTimeZone.displayName
+                text = "timp GMT -> TIME_ZONE_ID error: $cityTimeZone"
                 view.textLabel.setTextColor(Color.RED)
+                view.textLabel.text = text
             }
-            view.textLabel.text = text
+
 
         }
 

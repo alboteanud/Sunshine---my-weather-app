@@ -1,59 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Tucson</string>
-    <string name="owm_city_id" translatable="false">5318313</string>   <!--  http://bulk.openweathermap.org/sample/  Craiova 680332  -->
+    <string name="app_name" translatable="false">Madrid</string>
+    <string name="owm_city_id" translatable="false">6359304</string>
 
-    <!--    schimba c.jpg
-            TIME_ZONE_ID din CityUtils
-            OWM_USER_ID la fiecare 100 de aplicatii - in data/NetworkUtils
-            SHA1: 64:5D:DB:FB:F5:EB:C5...  -->
+    <string name="admob_app_id" translatable="false">ca-app-pub-1015344817183694~9523658038</string>
+    <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/1645168018</string>
+    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-1015344817183694/8019004675</string>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8970065901</string>
-    <string name="admob_med_rectangle_id">ca-app-pub-3931793949981809/2213085867</string>  <!--S Sept2019 - med rect-->
-    <string name="admob_banner_id">ca-app-pub-3931793949981809/7249790125</string>      <!--S Sept2019 b1-->
+    <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
+<!--    <string name="owm_api_key" translatable="false">d53bff8f3256eaf090be3c94964b0cb8</string> &lt;!&ndash; alboteanud   &ndash;&gt;-->
+    <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
+    <string name="BASE_STATIC_MAP_URL" translatable="false">https://maps.googleapis.com/maps/api/staticmap?</string>
+    <string name="link_privacy_policy" translatable="false">https://sites.google.com/view/privacy-policy-for-app-weather/main</string>
 
-    <string name="GOOGLE_API_KEY">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
-    <string name="BASE_STATIC_MAP_URL">https://maps.googleapis.com/maps/api/staticmap?</string>
-    <string name="link_privacy_policy">https://sites.google.com/view/privacy-policy-for-app-weather/main</string>
-    <string name="link_terms_of_use">https://sites.google.com/view/privacy-policy-for-app-weather/main</string>
-
-    <!-- For labelling today's forecast -->
-    <string name="today">Today</string>
-
-    <!-- For labelling tomorrow's forecast -->
-    <string name="tomorrow">Tomorrow</string>
-
-    <!-- Date format -->
-
-    <string name="format_temperature">
+    <string name="pref_last_notification" translatable="false">last_notification</string>
+    <string name="pref_enable_notifications_key" translatable="false">notification_daily</string>
+    <string name="pref_units_key" translatable="false">units_system</string>
+    <string name="button_feedback" translatable="false">feedback_button_id</string>
+    <string name="notification_content_text" translatable="false">%s %s</string>
+    <string name="norif_channel_id" translatable="false">norif_chanel_sun</string>
+    <string name="notif_channel_name" translatable="false">Norification channel</string>
+    <string name="format_temperature" translatable="false">
         <xliff:g id="temp">%1.0f</xliff:g>\u00B0
     </string>
-
-    <string name="wind_label">Wind</string>
-    <!-- Wind in kph -->
+    <string name="format_humidity" translatable="false">
+        <xliff:g id="humidity">%1.0f</xliff:g> %%
+    </string>
     <string name="format_wind_kmh">
         <xliff:g id="speed">%1$1.0f</xliff:g> km/h
         <xliff:g id="direction">%2$s</xliff:g>
     </string>
-
-    <!-- Wind in mph -->
     <string name="format_wind_mph">
         <xliff:g id="speed">%1$1.0f</xliff:g> mph
         <xliff:g id="direction">%2$s</xliff:g>
     </string>
-
-    <string name="pressure_label">Pressure</string>
-    <!-- Pressure format -->
     <string name="format_pressure">
         <xliff:g id="pressure">%1.0f</xliff:g> hPa
     </string>
 
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="wind_label">Wind</string>
+    <string name="sun_label">Sunrise</string>
+    <string name="pressure_label">Pressure</string>
     <string name="humidity_label">Humidity</string>
-    <!-- Humidity format -->
-    <string name="format_humidity">
-        <xliff:g id="humidity">%1.0f</xliff:g> %%
-    </string>
+    <string name="pref_enable_notifications_label">Receive notifications</string>
+
+    <string name="a11y_map_content_description">map city</string>
+    <string name="a11y_forecast">Forecast: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Forecast icon: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">High: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Humidity: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Barometric Pressure: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Wind speed and direction: <xliff:g id="wind">%1$s</xliff:g></string>
+    <string name="a11y_news_icon_content">icon news</string>
+    <string name="a11y_news_arrow">arrow navigate to news</string>
+    <string name="a11y_windmill_rotor" translatable="false">windmill rotor</string>
+    <string name="a11y_windmill_leg" translatable="false">windmill leg</string>
+
+    <string name="N">N</string>
+    <string name="S">S</string>
+    <string name="E">E</string>
+    <string name="W">W</string>
+
+    <string name="NE">NE</string>
+    <string name="NW">NW</string>
+    <string name="SE">SE</string>
+    <string name="SW">SW</string>
+
+    <string name="labelOurAd">Advertising</string>
+    <string name="menu_label_privacy_policy">Privacy Policy</string>
+
+    <string name="feedback_pref_title">Send feedback</string>
+    <string name="feedback_pref_summary">Report technical issues or suggest new features</string>
+
+    <string name="title_activity_news">News</string>
+    <string name="label_news_text">Latest news</string>
 
     <!-- Weather Conditions (From OpenWeatherMap) -->
     <string name="condition_2xx">Storm</string>
@@ -115,41 +138,7 @@
     <string name="condition_962">Hurricane</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
-
-    <string name="a11y_forecast">Forecast: <xliff:g id="condition">%1$s</xliff:g></string>
-    <string name="a11y_forecast_icon">Forecast icon: <xliff:g id="condition">%1$s</xliff:g></string>
-    <string name="a11y_high_temp">High: <xliff:g id="high">%1$s</xliff:g></string>
-    <string name="a11y_humidity">Humidity: <xliff:g id="humidity">%1$s</xliff:g></string>
-    <string name="a11y_pressure">Barometric Pressure: <xliff:g id="pressure">%1$s</xliff:g></string>
-    <string name="a11y_wind">Wind speed and direction: <xliff:g id="wind">%1$s</xliff:g></string>
-
-    <string name="pref_enable_notifications_key" translatable="false">notification_daily</string>
-    <string name="pref_enable_notifications_label">Weather Notifications</string>
-    <string name="pref_last_notification" translatable="false">last_notification</string>
-    <string name="norif_channel_id">norif_chanel_sun</string>
-    <string name="notif_channel_name">Norification channel</string>
-    <string name="notification_title_text" translatable="false">%s in %s</string>
-    <string name="notification_content_text">%s %s</string>
-
-    <string name="pref_units_key" translatable="false">units_system</string>
-    <string name="button_feedback" translatable="false">feedback_button_id</string>
-
-    <string name="map_content_description">map city</string>
-    <string name="labelOurAd">Advertising here</string>
-    <string name="action_settings">Settings</string>
-    <string name="menu_label_privacy_policy">Privacy Policy</string>
-
-    <string name="title_activity_settings">Settings</string>
-    <string name="feedback_review_sent">Thank you</string>
-    <string name="feedback_review_sent_unsuccesfully">Error sending the review</string>
-    <string name="sent_feedback_label">sent</string>
-    <string name="feedback_pref_summary">Report technical issues or suggest new features</string>
-    <string name="feedback_pref_title">Send feedback</string>
-    <string name="title_activity_news">News</string>
-
-    <string name="label_news_text">Latest news</string>
-    <string name="news_icon_content_description">icon news</string>
-    <string name="news_arrow_content_description">arrow navigate to news</string>
+    <string name="title_graph_temperature">Temperature by hour</string>
 
 
 </resources>

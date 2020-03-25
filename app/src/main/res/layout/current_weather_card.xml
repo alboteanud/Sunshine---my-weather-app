@@ -24,33 +24,33 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-           >
+            android:padding="8dp">
 
             <ImageView
                 android:id="@+id/weatherIcon"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="16dp"
+                android:contentDescription="@string/a11y_forecast_icon"
                 app:layout_constraintBottom_toTopOf="@+id/weatherDescription"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_chainStyle="spread_inside"
-                tools:src="@drawable/ic_clear"
-                android:contentDescription="@string/a11y_forecast_icon"/>
+                tools:src="@drawable/ic_clear" />
 
             <TextView
                 android:id="@+id/temperatureText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
                 android:layout_marginStart="24dp"
+                android:textColor="@android:color/white"
                 android:textSize="40sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/weatherIcon"
                 app:layout_constraintStart_toEndOf="@+id/weatherIcon"
                 app:layout_constraintTop_toTopOf="@+id/weatherIcon"
                 tools:text="15*" />
+            <!--
 
             <TextView
                 android:id="@+id/weatherDate"
@@ -61,6 +61,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="15 Jan 2019" />
+-->
 
 
             <TextView
@@ -74,11 +75,57 @@
                 android:gravity="center_horizontal"
                 android:maxLines="3"
                 android:textColor="@android:color/white"
-                app:layout_constraintBottom_toBottomOf="@id/weatherIcon"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/temperatureText"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/weatherIcon"
-                tools:text="Clear sky shfdjkh hdfl dfksh dshfh hjgfhjgf" />
+                tools:text="Clear sky nice weather " />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:gravity="center_horizontal"
+    android:padding="8dp"
+    android:id="@+id/wind_layout_current"
+    >
+
+    <include
+        android:id="@+id/mill"
+        layout="@layout/mill_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/mill_height" />
+
+    <!-- Wind measurement -->
+    <TextView
+        android:id="@+id/wind_measurement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        tools:text="4km/h NW" />
+</LinearLayout>
+
+
+
+            <!-- Wind label -->
+<!--
+            <TextView
+                android:id="@+id/wind_label"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@string/wind_label"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/mill"
+                app:layout_constraintStart_toStartOf="@+id/mill"
+                app:layout_constraintTop_toBottomOf="@+id/mill" />
+-->
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

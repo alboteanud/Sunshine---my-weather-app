@@ -3,20 +3,22 @@ package com.craiovadata.android.sunshine.ui.models
 import android.view.LayoutInflater
 import android.view.View
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.ListWeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import com.craiovadata.android.sunshine.utilities.CityUtils
+import com.craiovadata.android.sunshine.CityData
 import kotlinx.android.synthetic.main.current_weather_card.view.*
+import kotlinx.android.synthetic.main.current_weather_card.view.temperatureText
+import kotlinx.android.synthetic.main.current_weather_card.view.weatherIcon
+import kotlinx.android.synthetic.main.days_weather_item.view.*
 import kotlinx.android.synthetic.main.multi_day_card.view.*
 
 data class MultiDay(val list: List<ListWeatherEntry>?)
-    : Base(list?.get(0)?.id, Base.TYPE.DAYS, list?.get(0)?.date) {
+    : Base(list?.get(0)?.id, TYPE.DAYS, list?.get(0)?.date) {
 
     companion object {
 
         @JvmStatic
         fun bindForecastToUI(weatherEntries: List<ListWeatherEntry>?, view: View) {
-            if (weatherEntries == null || weatherEntries.size <= 0) return
+            if (weatherEntries == null || weatherEntries.isEmpty()) return
 
             val container = view.daysLayout
             if (container.childCount > 0) {
@@ -54,7 +56,7 @@ data class MultiDay(val list: List<ListWeatherEntry>?)
              */
             val pattern = "EEEE"
 //            if (BuildConfig.DEBUG) pattern = "EEE dd MMM HH.mm"
-            val simpleDateFormat = CityUtils.getFormatterCityTZ(pattern)
+            val simpleDateFormat = CityData.getFormatterCityTZ(pattern)
             val time = entry.date.time
             val dateTxt = simpleDateFormat.format(time )
             dayView.weatherDate.text = dateTxt

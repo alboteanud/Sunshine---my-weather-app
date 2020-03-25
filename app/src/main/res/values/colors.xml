@@ -3,6 +3,7 @@
 
     <color name="colorPrimary">#03A9F4</color>
     <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryDarkSemi">#aa0288D1</color>
     <color name="colorAccent">#FFD740</color>
 
     <!--our detail accent colors -->
@@ -12,7 +13,13 @@
     <color name="semitransparentGray">#80aaaaaa</color>
     <color name="transparent">#00000000</color>
 
-    <color name="blackSemi">#80000000</color>
+    <color name="blackSemi">#90000000</color>
     <color name="blackSemi7">#70000000</color>
+    <color name="semiTransparent5">#50000000</color>
     <color name="blackSemi2">#20000000</color>
+
+    <color name="gray_aaa">#ddd</color>
+    <color name="gray_808080">#808080</color>
+
+
 </resources>

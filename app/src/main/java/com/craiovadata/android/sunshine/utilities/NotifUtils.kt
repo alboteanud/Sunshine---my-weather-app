@@ -5,18 +5,23 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
-import android.preference.PreferenceManager
 import android.text.format.DateUtils
 import android.text.format.DateUtils.HOUR_IN_MILLIS
 import androidx.core.app.NotificationCompat
+import androidx.preference.PreferenceManager
+import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.CityData.getBackResId
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.database.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import com.craiovadata.android.sunshine.utilities.CityUtils.getBackResId
+import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
+import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isForeground
+import java.util.*
+
 
 object NotifUtils {
 
-   private fun areNotificationsEnabled(context: Context): Boolean {
+    private fun areNotificationsEnabled(context: Context): Boolean {
         val displayNotificationsKey = context.getString(R.string.pref_enable_notifications_key)
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
         return sp.getBoolean(displayNotificationsKey, true)
@@ -25,7 +30,12 @@ object NotifUtils {
     private fun getLastNotificationTimeInMillis(context: Context): Long {
         val lastNotificationKey = context.getString(R.string.pref_last_notification)
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
-        return sp.getLong(lastNotificationKey, 0)
+        var timeLastNotification = sp.getLong(lastNotificationKey, 0L)
+        if (timeLastNotification == 0L) {
+            timeLastNotification = System.currentTimeMillis()
+            saveTimeAsLastNotification(context)
+        }
+        return timeLastNotification
     }
 
     private fun getEllapsedTimeSinceLastNotification(context: Context): Long {
@@ -33,28 +43,30 @@ object NotifUtils {
         return System.currentTimeMillis() - lastNotificationTimeMillis
     }
 
-    private fun saveLastNotificationTime(context: Context, timeOfNotification: Long) {
+    fun saveTimeAsLastNotification(context: Context) {
         val sp = PreferenceManager.getDefaultSharedPreferences(context)
         val editor = sp.edit()
         val lastNotificationKey = context.getString(R.string.pref_last_notification)
-        editor.putLong(lastNotificationKey, timeOfNotification)
+        editor.putLong(lastNotificationKey, System.currentTimeMillis())
         editor.apply()
     }
 
     private fun notifyUserOfNewWeather(context: Context, entry: WeatherEntry) {
         val chanelId = context.getString(R.string.norif_channel_id)
-        val notificationManager = context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
+        val notificationManager =
+            context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
-                    chanelId,
-                    context.getString(R.string.notif_channel_name),
-                    NotificationManager.IMPORTANCE_DEFAULT)
+                chanelId,
+                context.getString(R.string.notif_channel_name),
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
             notificationManager.createNotificationChannel(channel)
         }
         val notification = buildNotif(context, entry)
         notificationManager.notify(1, notification)
 
-        saveLastNotificationTime(context, System.currentTimeMillis())
+        saveTimeAsLastNotification(context)
     }
 
     private fun buildNotif(context: Context, entry: WeatherEntry): Notification {
@@ -64,28 +76,19 @@ object NotifUtils {
         val smallIconId = SunshineWeatherUtils.getLargeArtResourceIdForIconCode(entry.iconCodeOWM)
         val chanelId = context.getString(R.string.norif_channel_id)
 
-        val highString = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
-
-        val description = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherId)
-//        val weatherTimeMills = SunshineDateUtils.getCityDate(context, entry.date.time)
-//        val weatherDate = SimpleDateFormat("HH mm", Locale.getDefault()).format(weatherTimeMills)
-//        val weatherDate = DateFormat.getTimeInstance(DateFormat.SHORT).format(weatherTimeMills)
-
-        val cityName = context.getString(R.string.app_name)
-        val titleTxt = String.format(context.getString(R.string.notification_title_text), highString, cityName)
-        val contentTxt = String.format(context.getString(R.string.notification_content_text), description, "")
-        val color = context.getColor(R.color.colorPrimary)
+        val titleTxt = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
+        val contentTxt = SunshineWeatherUtils.getStringForWeatherCondition(context, entry.weatherId)
 
         val builder = NotificationCompat.Builder(context, chanelId)
-                .setSmallIcon(smallIconId)
-                .setLargeIcon(largeIcon)
-                .setContentTitle(titleTxt)
-                .setContentText(contentTxt)
-                .setColor(color)
-                .setAutoCancel(true)
-                .setTimeoutAfter(HOUR_IN_MILLIS)
-                //            .setOngoing(true)
-                .setContentIntent(getPendingIntentMA(context))
+            .setSmallIcon(smallIconId)
+            .setLargeIcon(largeIcon)
+            .setContentTitle(titleTxt)
+            .setContentText(contentTxt)
+//            .setColor(context.getColor(R.color.colorPrimary))
+            .setAutoCancel(true)
+            .setTimeoutAfter(3 * HOUR_IN_MILLIS)
+            //            .setOngoing(true)
+            .setContentIntent(getPendingIntentMA(context))
         //                .addAction(
         //                        android.R.drawable.ic_media_play,
         //                        getString(R.string.notif_action_play),
@@ -99,24 +102,40 @@ object NotifUtils {
         val taskStackBuilder = TaskStackBuilder.create(context)
         taskStackBuilder.addNextIntentWithParentStack(intentToMainActivity)
         return taskStackBuilder
-                .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT)
+            .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT)
     }
 
     @JvmStatic
     fun notifyIfNeeded(context: Context, weatherEntry: WeatherEntry) {
 
-        val notificationsEnabled = NotifUtils.areNotificationsEnabled(context)
-        val timeSinceLastNotification = NotifUtils.getEllapsedTimeSinceLastNotification(context)
-        var oneDayPassedSinceLastNotification = false
+        val timeSinceLastNotification = getEllapsedTimeSinceLastNotification(context)
+        val oneDayPassedSinceLastNotification =
+            if (BuildConfig.DEBUG) timeSinceLastNotification > 21 * DateUtils.MINUTE_IN_MILLIS
+            else timeSinceLastNotification > 21 * DateUtils.HOUR_IN_MILLIS
 
-        if (timeSinceLastNotification >= DateUtils.DAY_IN_MILLIS) {
-            oneDayPassedSinceLastNotification = true
+        val rightNow = Calendar.getInstance()
+        val currentHourIn24Format = rightNow[Calendar.HOUR_OF_DAY]
+
+        val shouldNotify = areNotificationsEnabled(context)
+                && oneDayPassedSinceLastNotification
+                && !isForeground()
+                && currentHourIn24Format > 6
+                && currentHourIn24Format < 21
+
+//        if (BuildConfig.DEBUG) notifyUserOfNewWeather(context, weatherEntry)
+
+        if (shouldNotify) {
+            notifyUserOfNewWeather(context, weatherEntry)
+
+            if (BuildConfig.DEBUG) {
+                val pref = PreferenceManager.getDefaultSharedPreferences(context)
+                var savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+                savedTxt += "n"
+                pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
+            }
         }
 
-        if (notificationsEnabled && oneDayPassedSinceLastNotification
-                && !ForegroundListener.isForeground()) {
-            NotifUtils.notifyUserOfNewWeather(context, weatherEntry)
-        }
+
     }
 
 

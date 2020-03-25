@@ -5,9 +5,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ui.main.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+     >
+
+    <!-- app:layout_behavior="@string/appbar_scrolling_view_behavior"
+   -->
 
     <ImageView
         android:id="@+id/backImage"
@@ -15,12 +18,9 @@
         android:layout_height="0dp"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
-        android:src="@drawable/c"
-        app:layout_constraintBottom_toTopOf="@+id/bannerAdView"
+        android:src="@drawable/city_1"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -38,10 +38,12 @@
         android:id="@+id/layoutAttention"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:background="#000"
         android:orientation="vertical"
         android:padding="8dp"
         android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
         tools:visibility="visible">
 
         <TextView
@@ -64,6 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:onClick="onOkTestButtonPressed"
             android:text="ok" />
 
     </LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sunriseLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:layoutDirection="ltr">
+
+    <!--
+        android:paddingBottom="@dimen/sunriseLayoutPadding"
+    android:paddingEnd="@dimen/sunriseLayoutPadding"
+    android:paddingStart="@dimen/sunriseLayoutPadding"
+    -->
+
+    <!--    <FrameLayout
+            android:id="@+id/backgroundFrameLayout"
+            android:layout_width="@dimen/icon_horizont_width"
+            android:layout_height="@dimen/icon_horizont_heihgt">
+
+        </FrameLayout>-->
+
+    <ImageView
+        android:id="@+id/horizont"
+        android:layout_width="@dimen/icon_horizont_width"
+        android:layout_height="@dimen/icon_horizont_height"
+        android:src="@drawable/ic_horizont" />
+
+    <ImageView
+        android:id="@+id/icon_sun"
+        android:layout_width="@dimen/icon_sun_size"
+        android:layout_height="@dimen/icon_sun_size"
+        android:src="@drawable/sun_little"/>
+    <!--        -->
+</FrameLayout>
+
