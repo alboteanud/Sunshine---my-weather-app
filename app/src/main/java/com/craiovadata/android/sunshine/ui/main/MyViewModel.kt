@@ -21,11 +21,12 @@ class MyViewModel internal constructor(private val repository: Repository) : Vie
     }
 
     // are rol la afisare
-    @OnLifecycleEvent(Lifecycle.Event.ON_START)
+    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     internal fun onStartEvent() {
-        Log.i("MainVieModel", "Observer ON_START")
-        searchCurrentWeatherByTimestamp(System.currentTimeMillis())
+        Log.i("MainVieModel", "Observer ON_RESUME")
+        searchCurrentWeatherByTimestamp(System.currentTimeMillis()+ 3000)
     }
+
 
     private val mutableTimestamp: MutableLiveData<Long> = MutableLiveData()
 

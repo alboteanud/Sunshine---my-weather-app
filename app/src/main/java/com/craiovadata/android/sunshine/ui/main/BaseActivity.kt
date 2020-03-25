@@ -1,5 +1,6 @@
 package com.craiovadata.android.sunshine.ui.main
 
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.content.pm.ResolveInfo
@@ -18,6 +19,7 @@ import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
+import java.util.concurrent.TimeUnit
 
 open class BaseActivity : AppCompatActivity() {
     var adViewMedRectangle: AdView? = null
@@ -37,9 +39,24 @@ open class BaseActivity : AppCompatActivity() {
             bannerAdView.visibility = GONE
             return
         }
+
+        loadAdMedRectangle() // before observers
+
+        val savedDate = getPreferences(Context.MODE_PRIVATE).getLong("savedDateAds", 0L)
+        if (savedDate == 0L) {
+            getPreferences(Context.MODE_PRIVATE).edit()
+                .putLong("savedDateAds", System.currentTimeMillis()).apply()
+            bannerAdView.visibility = GONE
+            return
+        }
+        val oneDaySinceInstall = System.currentTimeMillis() - savedDate > TimeUnit.DAYS.toMillis(1)
+        if (!oneDaySinceInstall){
+            bannerAdView.visibility = GONE
+            return
+        }
         MobileAds.initialize(this)
         bannerAdView.loadAd(AdRequest.Builder().build())
-        loadAdMedRectangle() // before observers
+
     }
 
     private fun loadAdMedRectangle() {

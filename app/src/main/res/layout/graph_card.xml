@@ -17,59 +17,68 @@
             android:id="@+id/textViewCelsius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:text="°C"
-            android:focusable="true"
-            android:textSize="18sp"
-            card_view:layout_constraintEnd_toStartOf="@+id/separator"
+            android:textSize="17sp"
+            card_view:layout_constraintLeft_toLeftOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/separator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="|"
-            android:textSize="18sp"
-            card_view:layout_constraintBottom_toBottomOf="@+id/textViewCelsius"
-            card_view:layout_constraintEnd_toStartOf="@+id/textViewFarenheit"
-            card_view:layout_constraintTop_toTopOf="@+id/textViewCelsius" />
+        <!--
+            <TextView
+                android:id="@+id/separator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="17sp"
+                card_view:layout_constraintBottom_toBottomOf="@+id/textViewCelsius"
+                card_view:layout_constraintLeft_toRightOf="@+id/textViewCelsius"
+                card_view:layout_constraintTop_toTopOf="@+id/textViewCelsius" />
+    -->
 
         <TextView
             android:id="@+id/textViewFarenheit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
             android:gravity="center"
             android:minWidth="48dp"
             android:minHeight="48dp"
             android:text="°F"
-            android:textSize="18sp"
-            android:focusable="true"
-            card_view:layout_constraintBottom_toBottomOf="@+id/separator"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintTop_toTopOf="@+id/separator" />
-
+            android:textSize="17sp"
+            card_view:layout_constraintLeft_toRightOf="@+id/textViewCelsius"
+            card_view:layout_constraintTop_toTopOf="parent" />
 
         <com.jjoe64.graphview.GraphView
             android:id="@+id/graphView"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="170dp"
-            card_view:layout_constraintBottom_toTopOf="@+id/textLabel"
+            card_view:layout_constraintBottom_toTopOf="@id/textViewClockSymbol"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toBottomOf="@+id/textViewCelsius" />
 
         <TextView
-            android:id="@+id/textLabel"
+            android:id="@+id/textViewClockSymbol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/graphView"
-            android:layout_marginBottom="8dp"
-            tools:text="Time"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/clock_symbol"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent" />
+            card_view:layout_constraintStart_toStartOf="parent"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:gravity="center_horizontal"
+            />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

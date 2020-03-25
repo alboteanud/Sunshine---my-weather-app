@@ -156,7 +156,7 @@ class NetworkDataSource private constructor(
                                 byIdName(context, descriptionStringName) == entry.description
 
                             if (!isTranslated)
-                                Log.e("description", entry.id.toString() + "  " + entry.description)
+                                Log.e("NEW description", entry.id.toString() + "  " + entry.description)
                         }
                     }
                 }
