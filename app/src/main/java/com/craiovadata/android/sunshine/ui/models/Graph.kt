@@ -34,17 +34,22 @@ data class Graph(val list: List<ListWeatherEntry>?) :
         }
 
 
-
         private fun drawGraph(entries: List<ListWeatherEntry>, view: View) {
             view.graphView.removeAllSeries()
 
             val series = LineGraphSeries<DataPoint>()
+            var minTemp = 45.0
+            var maxTemp = - 45.0
             entries.forEach { entry ->
                 val temperature =
                     SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
+
+               if ( temperature < minTemp) minTemp = temperature
+               if (temperature > maxTemp) maxTemp =  temperature
+
                 val dataPoint = DataPoint(entry.date, temperature)
 //                series.appendData(dataPoint, false, entries.size)
-                series.appendData(dataPoint, true, entries.size+2, true)
+                series.appendData(dataPoint, true, entries.size + 2, true)
             }
 
             series.apply {
@@ -62,20 +67,31 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 //                removeAllSeries()
 //                onDataChanged(false, false)
 
+
+
+
                 addSeries(series)
                 gridLabelRenderer.apply {
 //                    numHorizontalLabels = entries.size
-//                    numVerticalLabels = 3
+                    numVerticalLabels = ((maxTemp - minTemp)/5).toInt() + 3
+//                    numHorizontalLabels = 5
 //                horizontalAxisTitle = "hour"
 //                    verticalAxisTitle = "Temperature"
 //                    horizontalAxisTitle =  "\u23F0"
 //                    horizontalAxisTitle =  "\uE12b"
-val timeFormat = if (BuildConfig.DEBUG) { "HH:mm" }
-                    else { "HH:mm" }
+
+                    val timeFormat = if (BuildConfig.DEBUG) {
+                        "HH:mm"
+                    } else {
+                        "HH:mm"
+                    }
                     gridStyle = GridLabelRenderer.GridStyle.NONE
                     setHumanRounding(false, true)
                     labelFormatter = object :
-                        DateAsXAxisLabelFormatter(context, CityData.getFormatterCityTZ(timeFormat)) {
+                        DateAsXAxisLabelFormatter(
+                            context,
+                            CityData.getFormatterCityTZ(timeFormat)
+                        ) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
                             else super.formatLabel(value, isValueX) + "\u00B0"
@@ -84,8 +100,13 @@ val timeFormat = if (BuildConfig.DEBUG) { "HH:mm" }
                 }
 //                title = context.getString(R.string.title_graph_temperature)
                 onDataChanged(false, false)
-            }
 
+                // set manual x bounds to have nice steps
+                viewport.setMinY(minTemp - 6)
+                viewport.setMaxY(maxTemp + 6)
+                viewport.isYAxisBoundsManual = true
+
+            }
 
 
             val cityTimeZone = CityData.getCityTimeZone()
@@ -99,7 +120,6 @@ val timeFormat = if (BuildConfig.DEBUG) { "HH:mm" }
                 view.textViewClockSymbol.text = text
             }
         }
-
 
 
         private fun setTextCelsiusFarStates(view: View, listener: CardsAdapter.Listener) {
