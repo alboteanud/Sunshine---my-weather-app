@@ -122,6 +122,7 @@ class Repository private constructor(
         // periodically.
 //        mNetworkDataSource.scheduleRecurringFetchWeatherSync()
         mNetworkDataSource.scheduleRecurringFetchWeatherSyncUsingWorker()
+//mNetworkDataSource.initScheduleUniqueWorkSyncWeather()
 
         mExecutors.diskIO().execute {
 

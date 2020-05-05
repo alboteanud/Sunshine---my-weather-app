@@ -10,7 +10,8 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "Atlantic/Canary"
+    val  inTestMode = true
+    const val TIME_ZONE_ID = "Europe/Madrid"
 
     private val images = intArrayOf(
         R.drawable.city_0,
@@ -24,7 +25,7 @@ object CityData {
         R.drawable.stabil6
     )
 
-    const val DEFAULT_ZOOM_LEVEL: Int = 11
+    const val DEFAULT_ZOOM_LEVEL: Int = 10
 
     @JvmStatic
     fun getCityTimeZone(): TimeZone {

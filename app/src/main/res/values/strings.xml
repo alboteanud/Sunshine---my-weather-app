@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Santa Cruz de Tenerife</string>
-    <string name="owm_city_id" translatable="false">2511174</string>
+    <string name="app_name" translatable="false">Madrid</string>
+    <string name="owm_city_id" translatable="false">3117735</string>
 <!--    <string name="owm_city_id" translatable="false">5074472</string>-->
 <!--    <string name="owm_city_id" translatable="false">2293538</string>-->
 <!--    <string name="owm_city_id" translatable="false">524305</string>-->

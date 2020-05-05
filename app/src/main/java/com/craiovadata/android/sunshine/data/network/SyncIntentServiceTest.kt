@@ -41,7 +41,7 @@ class SyncIntentServiceTest : IntentService("SyncIntentService") {
             val ids = CityIds.cityIds2
             val cityIndexEnd = citiesIndex+ 20
             if (cityIndexEnd < ids.size) {
-                networkDataSource.fetchWeatherForMultipleCities(
+                networkDataSource.fetchWeatherForMultipleCitiesTest(
                     this.applicationContext,
                     ids.subList(citiesIndex, cityIndexEnd)
                 )

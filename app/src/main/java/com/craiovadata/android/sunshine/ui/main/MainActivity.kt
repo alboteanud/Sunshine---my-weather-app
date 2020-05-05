@@ -14,7 +14,10 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.work.WorkManager
 import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
@@ -141,25 +144,39 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
+                if (inTestMode) {
+                    layoutAttention.visibility = View.VISIBLE
+                    layoutAttention.textViewWarnCityWrong.text = "sync 20m, no flex, 20m init delay, constraints - device idle, KEEP"
+
+                } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
             R.id.action_privacy_policy -> {
-                if (BuildConfig.DEBUG) {
-
+                if (inTestMode) {
                     // show sync times and notif times
                     val pref = PreferenceManager.getDefaultSharedPreferences(this)
-                    val savedTxt = pref.getString(PREF_SYNC_KEY, "sync ")
+                    val savedTxt = pref.getString(PREF_SYNC_KEY, "")
                     layoutAttention.visibility = View.VISIBLE
                     layoutAttention.textViewWarnCityWrong.text = savedTxt
 
                     // make a request for multiple cities weather - for translation purpose
-                    if (citiesIndexIncrement > 20)
-                        handler.removeCallbacksAndMessages(null)
-                    else{
-                        handler.post(timedTask)
-                        Toast.makeText(this, "getting data from multiple cities", Toast.LENGTH_LONG).show()
-                    }
+//                    if (citiesIndexIncrement > 20)
+//                        handler.removeCallbacksAndMessages(null)
+//                    else{
+//                    private val timedTask: Runnable = object : Runnable {
+//                        override fun run() {
+//                            if (citiIndexStart + citiesIndexIncrement < CityIds.cityIds2.size - 21) {
+//                                myViewModel.forceSyncWeather(citiIndexStart + citiesIndexIncrement)
+//                                citiesIndexIncrement += 20
+//                                handler.postDelayed(this, 6 * 1000)
+//                            }
+//
+//                        }
+//                    }
+//                        handler.post(timedTask)
+//                        Toast.makeText(this, "getting data from multiple cities", Toast.LENGTH_LONG).show()
+//                    }
 
 
                 } else goToPrivacyPolicy()
@@ -172,16 +189,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
     val citiIndexStart = 0
     var citiesIndexIncrement = 0
     val handler = Handler()
-    private val timedTask: Runnable = object : Runnable {
-        override fun run() {
-            if (citiIndexStart + citiesIndexIncrement < CityIds.cityIds2.size - 21) {
-                myViewModel.forceSyncWeather(citiIndexStart + citiesIndexIncrement)
-                citiesIndexIncrement += 20
-                handler.postDelayed(this, 6 * 1000)
-            }
 
-        }
-    }
 
     companion object {
         const val TAG = "MainActivity"
