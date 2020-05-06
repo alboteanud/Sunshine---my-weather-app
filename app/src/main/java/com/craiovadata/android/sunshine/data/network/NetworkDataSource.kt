@@ -105,7 +105,7 @@ class NetworkDataSource private constructor(
             val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
             Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
-            addTestText(context, "sy${response.weatherForecast.size}v")
+            addTestText(context, "sync-${response.weatherForecast.size}val")
 
             // As long as there are weather forecasts, update the LiveData storing the most recent
             // weather forecasts. This will trigger observers of that LiveData, such as the Repo
@@ -120,7 +120,7 @@ class NetworkDataSource private constructor(
         } catch (e: Exception) {
             // Server probably invalid
             e.printStackTrace()
-            addTestText(context, "sy-err")
+            addTestText(context, "sync-err")
             return false
         }
         return false
@@ -156,13 +156,8 @@ class NetworkDataSource private constructor(
                             if (inTestMode) {
                                 val descriptionStringName = "condition_" + entry.id.toString()
                                 val res: Resources = context.resources
-                                val isTranslated =
-                                    res.getString(
-                                        res.getIdentifier(
-                                            descriptionStringName,
-                                            "string",
-                                            context.packageName
-                                        )
+                                val isTranslated = res.getString(res.getIdentifier(
+                                            descriptionStringName, "string", context.packageName)
                                     ) == entry.description
 
                                 if (!isTranslated)
