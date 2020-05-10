@@ -31,7 +31,6 @@ All classes related to fetching data from the network.
 All classes related to caching the data locally (it's pretty empty right now).
 * WeatherEntry - A simple Java object representing one day of weather.
 
-
 ### `ui` package
 All activities and adapters - anything to do with display.
 
