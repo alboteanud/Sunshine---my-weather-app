@@ -17,7 +17,6 @@ import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isForeground
 import java.util.*
 
-
 object NotifUtils {
 
     private fun areNotificationsEnabled(context: Context): Boolean {
@@ -123,8 +122,6 @@ object NotifUtils {
                 && !isForeground()
                 && currentHourIn24Format > 5
                 && currentHourIn24Format < 20
-
-//        if (BuildConfig.DEBUG) notifyUserOfNewWeather(context, weatherEntry)
 
         if (shouldNotify) {
             notifyUserOfNewWeather(context, weatherEntry)
