@@ -55,7 +55,7 @@
         <com.jjoe64.graphview.GraphView
             android:id="@+id/graphView"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="180dp"
             card_view:layout_constraintBottom_toTopOf="@id/textViewClockSymbol"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"

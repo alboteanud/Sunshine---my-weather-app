@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Albacete</string>
-    <string name="owm_city_id" translatable="false">2522258</string>
+    <string name="app_name" translatable="false">Madrid</string>
+    <string name="owm_city_id" translatable="false">3117735</string>
+<!--    <string name="owm_city_id" translatable="false">5074472</string>-->
+<!--    <string name="owm_city_id" translatable="false">2293538</string>-->
+<!--    <string name="owm_city_id" translatable="false">524305</string>-->
 
     <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8517313499</string>
     <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/9411947985</string>
