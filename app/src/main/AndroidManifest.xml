@@ -59,13 +59,17 @@
         <service
             android:name=".data.network.SyncIntentServiceCW"
             android:exported="false" /> <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
-        <service
-            android:name=".data.network.MyJobService"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
-            </intent-filter>
-        </service>
+<!--        <service-->
+<!--            android:name=".data.network.MyJobService"-->
+<!--            android:exported="false">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />-->
+<!--            </intent-filter>-->
+<!--        </service>-->
+
+<!--        <provider-->
+<!--            android:name="androidx.work.impl.WorkManagerInitializer"-->
+<!--            android:authorities="${applicationId}.workmanager-init" />-->
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

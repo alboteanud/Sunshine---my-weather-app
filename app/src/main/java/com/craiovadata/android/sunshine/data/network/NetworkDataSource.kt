@@ -27,8 +27,6 @@ class NetworkDataSource private constructor(
     private val mExecutors: AppExecutors
 ) {
 
-    private val mWorkManager: WorkManager = WorkManager.getInstance()
-
     // LiveData storing the latest downloaded weather forecasts
     private val mDownloadedWeatherForecasts: MutableLiveData<Array<WeatherEntry>> =
         MutableLiveData()
@@ -73,22 +71,17 @@ class NetworkDataSource private constructor(
             setRequiresBatteryNotLow(true)
         }.build()
 
-        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(
-            MySimpleWorker::class.java,
-            2, TimeUnit.HOURS, 20, TimeUnit.MINUTES
-        )
-//                .setInputData(input)
+        val request = PeriodicWorkRequestBuilder<MySimpleWorker>(2, TimeUnit.HOURS)
+//            PeriodicWorkRequest.Builder(MySimpleWorker::class.java, 3, TimeUnit.HOURS, 1, TimeUnit.HOURS)
 //                .setConstraints(constraints)
-            .setInitialDelay(2, TimeUnit.HOURS)
-//                .addTag(TAG_WORK_NAME)
-            .setBackoffCriteria(BackoffPolicy.LINEAR, 20, TimeUnit.MINUTES)
+//            .setInitialDelay(2, TimeUnit.HOURS)
+//            .setBackoffCriteria(BackoffPolicy.LINEAR, 1, TimeUnit.HOURS)
             .build()
-        mWorkManager.enqueueUniquePeriodicWork(
+        WorkManager.getInstance(context).enqueueUniquePeriodicWork(
             TAG_WORK_NAME,
-            ExistingPeriodicWorkPolicy.KEEP,
+            ExistingPeriodicWorkPolicy.REPLACE,
             request
         )
-//      mWorkManager.enqueue(request)
     }
 
 
@@ -105,7 +98,7 @@ class NetworkDataSource private constructor(
             val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
             Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
-            addTestText(context, "sync-${response.weatherForecast.size}val")
+            addTestText(context, "sy-${response.weatherForecast.size}")
 
             // As long as there are weather forecasts, update the LiveData storing the most recent
             // weather forecasts. This will trigger observers of that LiveData, such as the Repo
@@ -228,8 +221,8 @@ class NetworkDataSource private constructor(
             if (!inTestMode) return
             val pref = PreferenceManager.getDefaultSharedPreferences(context)
             var savedTxt = pref.getString(PREF_SYNC_KEY, "")
-            val format = SimpleDateFormat("HH.mm")
-            savedTxt += " $text" + format.format(currentTimeMillis())
+            val format = SimpleDateFormat("dd_HH.mm")
+            savedTxt += " $text" +"-" + format.format(currentTimeMillis())
             pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
         }
 

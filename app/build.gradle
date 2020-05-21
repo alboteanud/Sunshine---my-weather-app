@@ -78,7 +78,7 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
-    implementation 'com.google.android.gms:play-services-ads:19.0.1'
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
     implementation "androidx.cardview:cardview:$support_version"
     implementation 'com.jjoe64:graphview:4.2.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"

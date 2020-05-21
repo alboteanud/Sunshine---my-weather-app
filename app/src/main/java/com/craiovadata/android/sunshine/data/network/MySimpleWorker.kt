@@ -19,7 +19,7 @@ class MySimpleWorker(context: Context, params: WorkerParameters) : Worker(contex
         return try {
             val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
             val didFetch = networkDataSource.fetchWeather()
-            addTestText(applicationContext, "wk-$didFetch")
+//            addTestText(applicationContext, "wk-$didFetch")
             if (didFetch) Result.success()
             else Result.retry()
         } catch (e: Error) {

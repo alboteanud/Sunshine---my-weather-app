@@ -14,11 +14,13 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.work.WorkInfo
 import androidx.work.WorkManager
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
+import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
@@ -146,7 +148,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             R.id.action_settings -> {
                 if (inTestMode) {
                     layoutAttention.visibility = View.VISIBLE
-                    layoutAttention.textViewWarnCityWrong.text = "sync 20m, no flex, 20m init delay, constraints - device idle, KEEP"
+                    layoutAttention.textViewWarnCityWrong.text = "?"
 
                 } else
                 startActivity(Intent(this, SettingsActivity::class.java))
@@ -156,10 +158,20 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
                 if (inTestMode) {
                     // show sync times and notif times
                     val pref = PreferenceManager.getDefaultSharedPreferences(this)
-                    val savedTxt = pref.getString(PREF_SYNC_KEY, "")
+                    var savedTxt = pref.getString(PREF_SYNC_KEY, "")
                     layoutAttention.visibility = View.VISIBLE
-                    layoutAttention.textViewWarnCityWrong.text = savedTxt
 
+
+                    val workInfo = WorkManager.getInstance(this).getWorkInfosByTag(NetworkDataSource.TAG_WORK_NAME)
+                    if (workInfo != null && workInfo.isCancelled) {
+                        savedTxt += "wk-canceled+$workInfo"
+                    }
+                    if (workInfo != null && workInfo.isDone) {
+                        savedTxt += "wk-done+$workInfo"
+                    }
+
+
+                    layoutAttention.textViewWarnCityWrong.text = savedTxt
                     // make a request for multiple cities weather - for translation purpose
 //                    if (citiesIndexIncrement > 20)
 //                        handler.removeCallbacksAndMessages(null)
