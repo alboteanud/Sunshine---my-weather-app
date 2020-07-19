@@ -3,20 +3,15 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.work.WorkManager
-import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.*
@@ -49,7 +44,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         }
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
-        myViewModel = ViewModelProviders.of(this@MainActivity, factory).get(MyViewModel::class.java)
+        myViewModel = ViewModelProvider(this@MainActivity, factory).get(MyViewModel::class.java)
 
         observeCurrentWeather(myViewModel)
         observeNextHoursData(myViewModel)
@@ -145,8 +140,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         return when (item.itemId) {
             R.id.action_settings -> {
                 if (inTestMode) {
-                    layoutAttention.visibility = View.VISIBLE
-                    layoutAttention.textViewWarnCityWrong.text = "sync 20m, no flex, 20m init delay, constraints - device idle, KEEP"
+                    val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
+                    networkDataSource.scheduleFetchWeatherTest()
 
                 } else
                 startActivity(Intent(this, SettingsActivity::class.java))
@@ -186,9 +181,9 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         }
     }
 
-    val citiIndexStart = 0
-    var citiesIndexIncrement = 0
-    val handler = Handler()
+//    val citiIndexStart = 0
+//    var citiesIndexIncrement = 0
+//    val handler = Handler()
 
 
     companion object {

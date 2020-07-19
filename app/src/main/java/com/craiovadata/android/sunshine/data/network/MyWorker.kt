@@ -13,19 +13,21 @@ import java.lang.System.currentTimeMillis
 import java.text.SimpleDateFormat
 
 
-class MySimpleWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
+class MyWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
 
     override fun doWork(): Result {
+        addTestText(applicationContext, "wkSt")
         return try {
             val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
-            val didFetch = networkDataSource.fetchWeather()
-            addTestText(applicationContext, "wk-$didFetch")
-            if (didFetch) Result.success()
-            else Result.retry()
+            networkDataSource.fetchWeather()
+
+            Result.success()
         } catch (e: Error) {
-            addTestText(applicationContext, "wk-err")
-            Result.failure()
+            addTestText(applicationContext, "wkEr:$e")
+//            Result.failure()
+            Result.retry()
         }
+
     }
 
     override fun onStopped() {

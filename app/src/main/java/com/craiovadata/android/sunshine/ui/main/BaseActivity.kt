@@ -106,7 +106,7 @@ open class BaseActivity : AppCompatActivity() {
             //  !!! problem - wrong city name
             layoutAttention.visibility = View.VISIBLE
             val textToShow =
-                "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
+                "orasul de la OWM se numeste: ${currentWeatherEntry.cityName} !"
             layoutAttention.textViewWarnCityWrong.text = textToShow
 
 //            layoutAttention.buttonWarning.setOnClickListener {

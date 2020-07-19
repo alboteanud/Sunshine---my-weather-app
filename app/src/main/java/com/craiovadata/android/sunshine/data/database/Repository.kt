@@ -11,6 +11,9 @@ import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import java.lang.System.currentTimeMillis
 import java.util.*
 import java.util.concurrent.TimeUnit
@@ -28,21 +31,37 @@ class Repository private constructor(
     private var mInitializedCW = false
 
     init {
-        mNetworkDataSource.forecasts.observeForever { newForecastsFromNetwork ->
-            mExecutors.diskIO().execute {
-                // Deletes old historical data
-                deleteOldData()
-                // Insert our new weather data into Sunshine's database
-                mWeatherDao.bulkInsert(*newForecastsFromNetwork)
-                Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
+
+//        Handler(Looper.getMainLooper()).post {
+
+//            networkData.observeForever { newData->
+//                appExecutors.diskIO().execute {
+//                    userDao.insert(newData.user)
+//                }
+//            }
+
+        GlobalScope.launch(Dispatchers.Main) {
+
+            mNetworkDataSource.forecasts.observeForever { newForecastsFromNetwork ->
+                mExecutors.diskIO().execute {
+                    // Deletes old historical data
+                    deleteOldData()
+                    // Insert our new weather data into Sunshine's database
+                    mWeatherDao.bulkInsert(*newForecastsFromNetwork)
+                    Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
+                }
             }
+
+            mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
+                mExecutors.diskIO().execute {
+                    mWeatherDao.bulkInsert(*newDataFromNetwork)
+                }
+            }
+
+
         }
 
-        mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
-            mExecutors.diskIO().execute {
-                mWeatherDao.bulkInsert(*newDataFromNetwork)
-            }
-        }
+
     }
 
     @Synchronized
@@ -118,12 +137,7 @@ class Repository private constructor(
         if (mInitialized) return
         mInitialized = true
 
-        // This method call triggers Sunshine to create its task to synchronize weather data
-        // periodically.
-//        mNetworkDataSource.scheduleRecurringFetchWeatherSync()
-        mNetworkDataSource.scheduleRecurringFetchWeatherSyncUsingWorker()
-//mNetworkDataSource.initScheduleUniqueWorkSyncWeather()
-
+        mNetworkDataSource.scheduleFetchWeather()
         mExecutors.diskIO().execute {
 
             if (isFetchNeeded)

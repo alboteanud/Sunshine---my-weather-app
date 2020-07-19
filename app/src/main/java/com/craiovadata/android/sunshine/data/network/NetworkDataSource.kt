@@ -1,6 +1,5 @@
 package com.craiovadata.android.sunshine.data.network
 
-//import com.firebase.jobdispatcher.*
 import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
@@ -66,65 +65,66 @@ class NetworkDataSource private constructor(
         Log.i(LOG_TAG, "Service created - getting current weather")
     }
 
-    fun scheduleRecurringFetchWeatherSyncUsingWorker() {
+    fun scheduleFetchWeather() {
 //        val input = workDataOf("some_key" to "some_val")
         val constraints: Constraints = Constraints.Builder().apply {
             setRequiredNetworkType(NetworkType.CONNECTED)
             setRequiresBatteryNotLow(true)
         }.build()
 
-        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(
-            MySimpleWorker::class.java,
-            2, TimeUnit.HOURS, 20, TimeUnit.MINUTES
-        )
+        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, 3, TimeUnit.HOURS)
 //                .setInputData(input)
-//                .setConstraints(constraints)
-            .setInitialDelay(2, TimeUnit.HOURS)
+            .setConstraints(constraints)
+            .setInitialDelay(3, TimeUnit.HOURS)
 //                .addTag(TAG_WORK_NAME)
-            .setBackoffCriteria(BackoffPolicy.LINEAR, 20, TimeUnit.MINUTES)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 30, TimeUnit.MINUTES)
             .build()
         mWorkManager.enqueueUniquePeriodicWork(
             TAG_WORK_NAME,
-            ExistingPeriodicWorkPolicy.KEEP,
+            ExistingPeriodicWorkPolicy.REPLACE,
             request
         )
-//      mWorkManager.enqueue(request)
     }
 
+    fun scheduleFetchWeatherTest() {
+        val request: OneTimeWorkRequest = OneTimeWorkRequest.Builder(MyWorker::class.java)
+            .setInitialDelay(15, TimeUnit.SECONDS)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 20, TimeUnit.MINUTES)
+            .build()
+        mWorkManager.enqueue(request)
+    }
 
-    fun fetchWeather(): Boolean {
+    fun fetchWeather() {
         Log.d(LOG_TAG, "Fetch weather days started")
-//        mExecutors.networkIO().execute {
-        try {
-            val weatherRequestUrl = NetworkUtils.getUrl(context)
+        addTestText(context, "fetchW")
+        mExecutors.networkIO().execute {
+            try {
+                val weatherRequestUrl = NetworkUtils.getUrl(context)
 
-            // Use the URL to retrieve the JSON
-            val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
+                // Use the URL to retrieve the JSON
+                val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
 
-            // Parse the JSON into a list of weather forecasts
-            val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
+                // Parse the JSON into a list of weather forecasts
+                val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
-            Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
-            addTestText(context, "sync-${response.weatherForecast.size}val")
+                Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
+                addTestText(context, "syc${response.weatherForecast.size}")
 
-            // As long as there are weather forecasts, update the LiveData storing the most recent
-            // weather forecasts. This will trigger observers of that LiveData, such as the Repo
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the Repo
 
-            if (!response.weatherForecast.isNullOrEmpty()) {
-                val entries = response.weatherForecast
-                mDownloadedWeatherForecasts.postValue(entries)
-                NotifUtils.notifyIfNeeded(context, entries[0])
+                if (!response.weatherForecast.isNullOrEmpty()) {
+                    val entries = response.weatherForecast
+                    mDownloadedWeatherForecasts.postValue(entries)
+                    NotifUtils.notifyIfNeeded(context, entries[0])
 
-                return true
+                }
+            } catch (e: Exception) {
+                // Server probably invalid
+                e.printStackTrace()
+                addTestText(context, "fetchErr:$e")
             }
-        } catch (e: Exception) {
-            // Server probably invalid
-            e.printStackTrace()
-            addTestText(context, "sync-err")
-            return false
         }
-        return false
-//        }
     }
 
     fun fetchWeatherForMultipleCitiesTest(
@@ -156,9 +156,11 @@ class NetworkDataSource private constructor(
                             if (inTestMode) {
                                 val descriptionStringName = "condition_" + entry.id.toString()
                                 val res: Resources = context.resources
-                                val isTranslated = res.getString(res.getIdentifier(
-                                            descriptionStringName, "string", context.packageName)
-                                    ) == entry.description
+                                val isTranslated = res.getString(
+                                    res.getIdentifier(
+                                        descriptionStringName, "string", context.packageName
+                                    )
+                                ) == entry.description
 
                                 if (!isTranslated)
                                     Log.e(
@@ -203,7 +205,7 @@ class NetworkDataSource private constructor(
 
     companion object {
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
-        var NUM_MIN_DATA_COUNTS = if (inTestMode) 8 else 38
+        var NUM_MIN_DATA_COUNTS = if (inTestMode) 12 else 38
 
         const val TAG_WORK_NAME = "my-unique-name-v3"
 
@@ -229,7 +231,7 @@ class NetworkDataSource private constructor(
             val pref = PreferenceManager.getDefaultSharedPreferences(context)
             var savedTxt = pref.getString(PREF_SYNC_KEY, "")
             val format = SimpleDateFormat("HH.mm")
-            savedTxt += " $text" + format.format(currentTimeMillis())
+            savedTxt += " $text" + "_" + format.format(currentTimeMillis())
             pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
         }
 
