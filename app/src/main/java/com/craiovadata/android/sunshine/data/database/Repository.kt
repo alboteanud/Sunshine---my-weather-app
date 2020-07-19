@@ -29,6 +29,7 @@ class Repository private constructor(
 
     init {
         mNetworkDataSource.forecasts.observeForever { newForecastsFromNetwork ->
+//            mExecutors.diskIO().execute {
             mExecutors.diskIO().execute {
                 // Deletes old historical data
                 deleteOldData()
@@ -120,9 +121,7 @@ class Repository private constructor(
 
         // This method call triggers Sunshine to create its task to synchronize weather data
         // periodically.
-//        mNetworkDataSource.scheduleRecurringFetchWeatherSync()
         mNetworkDataSource.scheduleRecurringFetchWeatherSyncUsingWorker()
-//mNetworkDataSource.initScheduleUniqueWorkSyncWeather()
 
         mExecutors.diskIO().execute {
 

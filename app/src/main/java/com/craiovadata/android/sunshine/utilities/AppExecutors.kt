@@ -29,6 +29,10 @@ class AppExecutors private constructor(
         return networkIO
     }
 
+    fun mainIO(): Executor {
+        return mainThread
+    }
+
     private class MainThreadExecutor : Executor {
         private val mainThreadHandler = Handler(Looper.getMainLooper())
 

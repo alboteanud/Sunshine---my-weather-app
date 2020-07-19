@@ -69,54 +69,110 @@ class NetworkDataSource private constructor(
         val constraints: Constraints = Constraints.Builder().apply {
             setRequiredNetworkType(NetworkType.CONNECTED)
             setRequiresBatteryNotLow(true)
+//            setRequiresDeviceIdle(true)
+                .setRequiresStorageNotLow(true)
         }.build()
 
+/*
         val request = PeriodicWorkRequestBuilder<MySimpleWorker>(2, TimeUnit.HOURS)
 //            PeriodicWorkRequest.Builder(MySimpleWorker::class.java, 3, TimeUnit.HOURS, 1, TimeUnit.HOURS)
-//                .setConstraints(constraints)
+//            .setConstraints(constraints)
 //            .setInitialDelay(2, TimeUnit.HOURS)
-//            .setBackoffCriteria(BackoffPolicy.LINEAR, 1, TimeUnit.HOURS)
+            .setBackoffCriteria(BackoffPolicy.LINEAR, 1, TimeUnit.HOURS)
             .build()
         WorkManager.getInstance(context).enqueueUniquePeriodicWork(
             TAG_WORK_NAME,
             ExistingPeriodicWorkPolicy.REPLACE,
             request
         )
+        */
+
+        val workRequest = PeriodicWorkRequestBuilder<MyWork>(120, TimeUnit.MINUTES)
+            .setInitialDelay(60, TimeUnit.MINUTES)
+            .setConstraints(constraints)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 10, TimeUnit.MINUTES)
+            .build()
+
+        WorkManager.getInstance(context)
+            .enqueueUniquePeriodicWork(WORK_NAME, ExistingPeriodicWorkPolicy.REPLACE, workRequest)
+
+    }
+
+    fun scheduleWork() {
+        val workRequest = OneTimeWorkRequestBuilder<MyWork>()
+            .setInitialDelay(10, TimeUnit.SECONDS)
+            .build()
+        WorkManager.getInstance(context).enqueue(workRequest)
     }
 
 
-    fun fetchWeather(): Boolean {
+    fun fetchWeather() {
         Log.d(LOG_TAG, "Fetch weather days started")
-//        mExecutors.networkIO().execute {
-        try {
-            val weatherRequestUrl = NetworkUtils.getUrl(context)
+        mExecutors.networkIO().execute {
+            addTestText(context, "fetchW")
+            try {
+                val weatherRequestUrl = NetworkUtils.getUrl(context)
 
-            // Use the URL to retrieve the JSON
-            val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
+                // Use the URL to retrieve the JSON
+                val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
 
-            // Parse the JSON into a list of weather forecasts
-            val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
+                // Parse the JSON into a list of weather forecasts
+                val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
-            Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
-            addTestText(context, "sy-${response.weatherForecast.size}")
+                Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
+//            addTestText(context, "sy-${response.weatherForecast.size}")
+                addTestText(context, "syncOK")
 
-            // As long as there are weather forecasts, update the LiveData storing the most recent
-            // weather forecasts. This will trigger observers of that LiveData, such as the Repo
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the Repo
 
-            if (!response.weatherForecast.isNullOrEmpty()) {
-                val entries = response.weatherForecast
-                mDownloadedWeatherForecasts.postValue(entries)
-                NotifUtils.notifyIfNeeded(context, entries[0])
+                if (!response.weatherForecast.isNullOrEmpty()) {
+                    val entries = response.weatherForecast
+                    mDownloadedWeatherForecasts.postValue(entries)
+                    NotifUtils.notifyIfNeeded(context, entries[0])
+                }
+            } catch (e: Exception) {
+                // Server probably invalid
+                e.printStackTrace()
+                addTestText(context, "syErr")
 
-                return true
             }
-        } catch (e: Exception) {
-            // Server probably invalid
-            e.printStackTrace()
-            addTestText(context, "sync-err")
-            return false
+
         }
-        return false
+    }
+
+    fun fetchWeatherMainThread() {
+        Log.d(LOG_TAG, "Fetch weather days started")
+//        mExecutors.mainIO().execute {
+            addTestText(context, "fetchW")
+            try {
+                val weatherRequestUrl = NetworkUtils.getUrl(context)
+
+                // Use the URL to retrieve the JSON
+                val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
+
+                // Parse the JSON into a list of weather forecasts
+                val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
+
+                Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
+//            addTestText(context, "sy-${response.weatherForecast.size}")
+                addTestText(context, "syncOK")
+
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the Repo
+
+                if (!response.weatherForecast.isNullOrEmpty()) {
+                    val entries = response.weatherForecast
+                    mDownloadedWeatherForecasts.postValue(entries)
+                    NotifUtils.notifyIfNeeded(context, entries[0])
+                }
+            } catch (e: Exception) {
+                // Server probably invalid
+                e.printStackTrace()
+                addTestText(context, "syErr")
+
+            }
+
 //        }
     }
 
@@ -149,9 +205,11 @@ class NetworkDataSource private constructor(
                             if (inTestMode) {
                                 val descriptionStringName = "condition_" + entry.id.toString()
                                 val res: Resources = context.resources
-                                val isTranslated = res.getString(res.getIdentifier(
-                                            descriptionStringName, "string", context.packageName)
-                                    ) == entry.description
+                                val isTranslated = res.getString(
+                                    res.getIdentifier(
+                                        descriptionStringName, "string", context.packageName
+                                    )
+                                ) == entry.description
 
                                 if (!isTranslated)
                                     Log.e(
@@ -196,9 +254,9 @@ class NetworkDataSource private constructor(
 
     companion object {
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
-        var NUM_MIN_DATA_COUNTS = if (inTestMode) 8 else 38
+        var NUM_MIN_DATA_COUNTS = if (inTestMode) 20 else 38
 
-        const val TAG_WORK_NAME = "my-unique-name-v3"
+        const val WORK_NAME = "my-unique-name-v4"
 
         // For Singleton instantiation
         private val LOCK = Any()
@@ -221,8 +279,9 @@ class NetworkDataSource private constructor(
             if (!inTestMode) return
             val pref = PreferenceManager.getDefaultSharedPreferences(context)
             var savedTxt = pref.getString(PREF_SYNC_KEY, "")
-            val format = SimpleDateFormat("dd_HH.mm")
-            savedTxt += " $text" +"-" + format.format(currentTimeMillis())
+            val format = SimpleDateFormat("HH.mmE")
+            val time = format.format(currentTimeMillis())
+            savedTxt += " $text-$time"
             pref.edit().putString(PREF_SYNC_KEY, savedTxt).apply()
         }
 

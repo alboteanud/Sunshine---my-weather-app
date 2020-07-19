@@ -42,9 +42,11 @@ object InjectorUtils {
 
     fun provideNetworkDataSource(context: Context): NetworkDataSource { // This call to provide repository is necessary if the app starts from a service - in this
 // case the repository will not exist unless it is specifically created.
-        provideRepository(context.applicationContext)
+//        provideRepository(context.applicationContext)
+        provideRepository(context)
         val executors = instance
-        return getInstance(context.applicationContext, executors)
+//        return getInstance(context.applicationContext, executors)
+        return getInstance(context, executors)
     }
 
     //    public static DetailViewModelFactory provideDetailViewModelFactory(Context context, Date date) {
