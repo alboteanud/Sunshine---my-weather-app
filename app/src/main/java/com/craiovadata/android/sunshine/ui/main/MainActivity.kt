@@ -17,6 +17,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
+import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import kotlinx.android.synthetic.main.content_main.*
@@ -140,14 +141,15 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         return when (item.itemId) {
             R.id.action_settings -> {
                 if (inTestMode) {
-                    val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
-                    networkDataSource.scheduleFetchWeatherTest()
+//                    val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
+//                    networkDataSource.scheduleFetchWeatherTest()
 
                 } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
             R.id.action_privacy_policy -> {
+
                 if (inTestMode) {
                     // show sync times and notif times
                     val pref = PreferenceManager.getDefaultSharedPreferences(this)
@@ -174,7 +176,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 //                    }
 
 
-                } else goToPrivacyPolicy()
+                }
+                else goToPrivacyPolicy()
                 return true
             }
             else -> super.onOptionsItemSelected(item)

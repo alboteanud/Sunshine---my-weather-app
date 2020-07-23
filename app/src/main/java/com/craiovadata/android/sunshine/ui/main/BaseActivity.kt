@@ -13,6 +13,7 @@ import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.utilities.LogUtils
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.google.android.gms.ads.*
@@ -146,16 +147,17 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun goToPrivacyPolicy() {
-        val myLink =
-            Uri.parse(getString(R.string.link_privacy_policy))
-        val intent = Intent(Intent.ACTION_VIEW, myLink)
-        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
-            intent,
-            PackageManager.MATCH_DEFAULT_ONLY
-        )
-        val isIntentSafe: Boolean = activities.isNotEmpty()
-        if (isIntentSafe)
-            startActivity(intent)
+//        val myLink =
+//            Uri.parse(getString(R.string.link_privacy_policy))
+//        val intent = Intent(Intent.ACTION_VIEW, myLink)
+//        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
+//            intent,
+//            PackageManager.MATCH_DEFAULT_ONLY
+//        )
+//        val isIntentSafe: Boolean = activities.isNotEmpty()
+//        if (isIntentSafe)
+//            startActivity(intent)
+        startActivity(Intent(this, PrivacyPolicyActivity::class.java))
     }
 
 }

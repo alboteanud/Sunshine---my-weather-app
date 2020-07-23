@@ -10,10 +10,10 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 29
-        versionName '11'
+        versionName '1'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 11
-        applicationId = 'com.craiovadata.android.sunshine.Madrid3'
+        versionCode = 15
+        applicationId = 'com.craiovadata.android.sunshine.Sevilla'
         // Required to use Java 8.
 //        jackOptions { enabled true }
     }
@@ -26,7 +26,10 @@ android {
 //            manifestPlaceholders = [crashlyticsEnabled: true]
         }
     }
-    dataBinding.enabled = true
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8

@@ -16,7 +16,7 @@ import java.text.SimpleDateFormat
 class MyWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
 
     override fun doWork(): Result {
-        addTestText(applicationContext, "wkSt")
+//        addTestText(applicationContext, "wkSt")
         return try {
             val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
             networkDataSource.fetchWeather()

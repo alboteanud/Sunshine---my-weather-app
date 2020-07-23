@@ -51,14 +51,12 @@ class Repository private constructor(
                     Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
                 }
             }
+        }
 
-            mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
-                mExecutors.diskIO().execute {
-                    mWeatherDao.bulkInsert(*newDataFromNetwork)
-                }
+        mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
+            mExecutors.diskIO().execute {
+                mWeatherDao.bulkInsert(*newDataFromNetwork)
             }
-
-
         }
 
 

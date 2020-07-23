@@ -5,6 +5,7 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
+import android.text.format.DateUtils.DAY_IN_MILLIS
 import android.text.format.DateUtils.HOUR_IN_MILLIS
 import androidx.core.app.NotificationCompat
 import androidx.preference.PreferenceManager
@@ -107,21 +108,17 @@ object NotifUtils {
     fun notifyIfNeeded(context: Context, weatherEntry: WeatherEntry) {
 
         val timeSinceLastNotification = getEllapsedTimeSinceLastNotification(context)
-        val notifyAfter =
-            if (inTestMode) 4
-            else 22
-        val oneDayPassedSinceLastNotification =
-            timeSinceLastNotification > notifyAfter * HOUR_IN_MILLIS
+        val oneDayPassedSinceLastNotification = timeSinceLastNotification > DAY_IN_MILLIS
 
         val rightNow = Calendar.getInstance()
         val currentHourIn24Format = rightNow[Calendar.HOUR_OF_DAY]
+        val isRightInterval = currentHourIn24Format in 7..20
 
         val shouldNotify =
                 areNotificationsEnabled(context)
                 && oneDayPassedSinceLastNotification
                 && !isForeground()
-                && currentHourIn24Format > 5
-                && currentHourIn24Format < 20
+                && isRightInterval
 
         if (shouldNotify) {
             notifyUserOfNewWeather(context, weatherEntry)
