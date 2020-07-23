@@ -10,12 +10,10 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    val inTestMode = BuildConfig.DEBUG
-    const val TIME_ZONE_ID = "Europe/Madrid"
+    const val TIME_ZONE_ID = "America/New_York"
 
     private val images = intArrayOf(
-        R.drawable.city_0,
-        R.drawable.city_1,
+        R.drawable.city,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,
@@ -23,6 +21,8 @@ object CityData {
         R.drawable.stabil5
     )
 
+    const val IS_IMPERIAL_UNITS_DEFAULT = true
+    val inTestMode = BuildConfig.DEBUG
     const val DEFAULT_ZOOM_LEVEL: Int = 10
 
     @JvmStatic

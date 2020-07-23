@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Sevilla</string>
-    <string name="owm_city_id" translatable="false">2510911</string>
+    <string name="app_name" translatable="false">New York</string>
+    <string name="owm_city_id" translatable="false">5128581</string>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8517313499</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/9411947985</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/5761195355</string>
-
+    <string name="admob_banner_id" translatable="false">ca-app-pub-2035789438833504/3764321861</string>  <!--banner Petru UK-->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~4020129278</string>
     <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
 <!--    <string name="owm_api_key" translatable="false">d53bff8f3256eaf090be3c94964b0cb8</string> &lt;!&ndash; alboteanud   &ndash;&gt;-->
     <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->

@@ -3,8 +3,8 @@ package com.craiovadata.android.sunshine.utilities
 import android.content.Context
 import androidx.preference.PreferenceManager
 import android.util.Log
+import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
-import kotlin.math.roundToInt
 
 /**
  * Contains useful utilities for displaying weather forecasts, such as conversion between Celsius
@@ -52,8 +52,7 @@ object SunshineWeatherUtils {
         val sp =
             PreferenceManager.getDefaultSharedPreferences(context)
         val key = context.getString(R.string.pref_units_key)
-        val defaultImperial =
-            context.resources.getBoolean(R.bool.is_imperial_default)
+        val defaultImperial = CityData.IS_IMPERIAL_UNITS_DEFAULT
         return sp.getBoolean(key, defaultImperial)
     }
 

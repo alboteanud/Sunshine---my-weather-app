@@ -38,7 +38,7 @@ class SyncIntentServiceTest : IntentService("SyncIntentService") {
 
             val citiesIndex = intent?.getIntExtra("citiesIndex", 0) ?: 0
 
-            val ids = CityIds.cityIds2
+            val ids = CityIdsTest.cityIds2
             val cityIndexEnd = citiesIndex+ 20
             if (cityIndexEnd < ids.size) {
                 networkDataSource.fetchWeatherForMultipleCitiesTest(

@@ -12,7 +12,6 @@ import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import java.lang.System.currentTimeMillis
 import java.text.SimpleDateFormat
 
-
 class MyWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
 
     override fun doWork(): Result {

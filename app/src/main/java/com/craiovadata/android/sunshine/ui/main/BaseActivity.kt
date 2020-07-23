@@ -11,10 +11,12 @@ import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.utilities.LogUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils.getAdId
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -36,11 +38,11 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     private fun initAds() {
-        if (BuildConfig.DEBUG) {
+        if (inTestMode) {
             bannerAdView.visibility = GONE
             return
         }
-
+        MobileAds.initialize(this)
         loadAdMedRectangle() // before observers
 
         val savedDate = getPreferences(Context.MODE_PRIVATE).getLong("savedDateAds", 0L)
@@ -55,7 +57,7 @@ open class BaseActivity : AppCompatActivity() {
             bannerAdView.visibility = GONE
             return
         }
-        MobileAds.initialize(this)
+
         bannerAdView.loadAd(AdRequest.Builder().build())
 
     }
@@ -64,7 +66,7 @@ open class BaseActivity : AppCompatActivity() {
         val newAdView = AdView(this)
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
-            adUnitId = getString(R.string.admob_med_rectangle_id)
+            adUnitId = getAdId(this@BaseActivity)
 
             adListener = object : AdListener() {
 
