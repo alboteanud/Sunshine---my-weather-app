@@ -71,8 +71,6 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                 //                title = context.getString(R.string.title_graph_temperature)
                 onDataChanged(false, false)
 
-//                minTemp = 40.0
-//                maxTemp = 100.0
                 // set manual x bounds to have nice steps
                 viewport.isYAxisBoundsManual = true
                 viewport.setMinY(minTemp - 3)
@@ -81,7 +79,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                 addSeries(series)
                 gridLabelRenderer.apply {
 //                    numHorizontalLabels = entries.size
-                   numVerticalLabels = ((maxTemp - minTemp)/7).toInt() + 2
+                   numVerticalLabels = ((maxTemp - minTemp)/6).toInt() + 3
 //numVerticalLabels = 4
 //                horizontalAxisTitle = "hour"
 //                    verticalAxisTitle = "Temperature"
