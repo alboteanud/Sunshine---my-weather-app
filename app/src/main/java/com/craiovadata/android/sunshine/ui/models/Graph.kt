@@ -40,7 +40,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 
             val series = LineGraphSeries<DataPoint>()
             var minTemp = 125.0
-            var maxTemp = - 40.0
+            var maxTemp = - 50.0
             entries.forEach { entry ->
                 val temperature =
                     SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
@@ -68,11 +68,21 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 //                removeAllSeries()
 //                onDataChanged(false, false)
 
+                //                title = context.getString(R.string.title_graph_temperature)
+                onDataChanged(false, false)
+
+//                minTemp = 40.0
+//                maxTemp = 100.0
+                // set manual x bounds to have nice steps
+                viewport.isYAxisBoundsManual = true
+                viewport.setMinY(minTemp - 3)
+                viewport.setMaxY(maxTemp + 3)
+
                 addSeries(series)
                 gridLabelRenderer.apply {
 //                    numHorizontalLabels = entries.size
-//                    numVerticalLabels = ((maxTemp - minTemp)/5).toInt() + 3
-numVerticalLabels = 3
+                   numVerticalLabels = ((maxTemp - minTemp)/7).toInt() + 2
+//numVerticalLabels = 4
 //                horizontalAxisTitle = "hour"
 //                    verticalAxisTitle = "Temperature"
 //                    horizontalAxisTitle =  "\u23F0"
@@ -96,13 +106,8 @@ numVerticalLabels = 3
                         }
                     }
                 }
-//                title = context.getString(R.string.title_graph_temperature)
-                onDataChanged(false, false)
 
-                // set manual x bounds to have nice steps
-                viewport.setMinY(minTemp - 6)
-                viewport.setMaxY(maxTemp + 6)
-                viewport.isYAxisBoundsManual = true
+
 
             }
 

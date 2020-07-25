@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">New York</string>
-    <string name="owm_city_id" translatable="false">5128581</string>
+    <string name="app_name" translatable="false">Los Angeles</string>
+    <string name="owm_city_id" translatable="false">5368361</string>
 
     <string name="admob_banner_id" translatable="false">ca-app-pub-2035789438833504/3764321861</string>  <!--banner Petru UK-->
     <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~4020129278</string>
