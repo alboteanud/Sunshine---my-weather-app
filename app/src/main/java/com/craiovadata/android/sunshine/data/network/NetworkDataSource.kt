@@ -64,13 +64,11 @@ class NetworkDataSource private constructor(
         Log.i(LOG_TAG, "Service created - getting current weather")
     }
 
-    fun scheduleRecurringFetchWeatherSyncUsingWorker() {
+    fun scheduleRecurringFetchWeather() {
 //        val input = workDataOf("some_key" to "some_val")
         val constraints: Constraints = Constraints.Builder().apply {
             setRequiredNetworkType(NetworkType.CONNECTED)
             setRequiresBatteryNotLow(true)
-//            setRequiresDeviceIdle(true)
-                .setRequiresStorageNotLow(true)
         }.build()
 
 /*
@@ -87,24 +85,16 @@ class NetworkDataSource private constructor(
         )
         */
 
-        val workRequest = PeriodicWorkRequestBuilder<MyWork>(120, TimeUnit.MINUTES)
-            .setInitialDelay(60, TimeUnit.MINUTES)
+        val workRequest = PeriodicWorkRequestBuilder<MyWork>(90, TimeUnit.MINUTES)
+            .setInitialDelay(10, TimeUnit.MINUTES)
             .setConstraints(constraints)
             .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 10, TimeUnit.MINUTES)
             .build()
 
         WorkManager.getInstance(context)
-            .enqueueUniquePeriodicWork(WORK_NAME, ExistingPeriodicWorkPolicy.REPLACE, workRequest)
+            .enqueueUniquePeriodicWork(WORK_NAME, ExistingPeriodicWorkPolicy.KEEP, workRequest)
 
     }
-
-    fun scheduleWork() {
-        val workRequest = OneTimeWorkRequestBuilder<MyWork>()
-            .setInitialDelay(10, TimeUnit.SECONDS)
-            .build()
-        WorkManager.getInstance(context).enqueue(workRequest)
-    }
-
 
     fun fetchWeather() {
         Log.d(LOG_TAG, "Fetch weather days started")

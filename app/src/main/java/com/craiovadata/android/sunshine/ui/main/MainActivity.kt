@@ -49,7 +49,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         }
 
         val factory = InjectorUtils.provideMainActivityViewModelFactory(this.applicationContext)
-        myViewModel = ViewModelProviders.of(this@MainActivity, factory).get(MyViewModel::class.java)
+        myViewModel = ViewModelProvider(this@MainActivity, factory).get(MyViewModel::class.java)
 
         observeCurrentWeather(myViewModel)
         observeNextHoursData(myViewModel)
@@ -160,8 +160,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 //                            }
 //                        })
 
-                    val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
-                    networkDataSource.scheduleWork()
+//                    val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
+//                    networkDataSource.scheduleWork()
 
                 } else
                 startActivity(Intent(this, SettingsActivity::class.java))
