@@ -2,9 +2,6 @@ package com.craiovadata.android.sunshine.ui.main
 
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.content.pm.ResolveInfo
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.view.View.GONE
@@ -16,7 +13,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.utilities.LogUtils
-import com.craiovadata.android.sunshine.utilities.LogUtils.getAdId
+import com.craiovadata.android.sunshine.utilities.LogUtils.getAdIdPetru
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -66,7 +63,8 @@ open class BaseActivity : AppCompatActivity() {
         val newAdView = AdView(this)
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
-            adUnitId = getAdId(this@BaseActivity)
+            adUnitId = getAdIdPetru(this@BaseActivity)
+//            adUnitId = getString(R.string.admob_banner_id)
 
             adListener = object : AdListener() {
 

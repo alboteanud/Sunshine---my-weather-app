@@ -98,11 +98,11 @@ object LogUtils {
     }
 
 
-    fun getAdId(context: Context): String {
+    fun getAdIdPetru(context: Context): String {
         if (System.currentTimeMillis() < 1616510552000L          // 3 2021
             || Random().nextInt(4) == 1
         )
-            return context.getString(R.string.admob_banner_id)
+            return context.getString(R.string.admob_banner_id)  // Petru
         return "ca-app-pub-3931793949981809/6280930567"  // test ad
 
     }
