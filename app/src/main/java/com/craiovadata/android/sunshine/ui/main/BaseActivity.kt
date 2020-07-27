@@ -63,8 +63,7 @@ open class BaseActivity : AppCompatActivity() {
         val newAdView = AdView(this)
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
-            adUnitId = getAdIdPetru(this@BaseActivity)
-//            adUnitId = getString(R.string.admob_banner_id)
+            adUnitId = getString(R.string.admob_med_rect)
 
             adListener = object : AdListener() {
 

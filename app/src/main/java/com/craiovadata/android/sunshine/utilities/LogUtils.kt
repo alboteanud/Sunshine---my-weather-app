@@ -103,7 +103,7 @@ object LogUtils {
             || Random().nextInt(4) == 1
         )
             return context.getString(R.string.admob_banner_id)  // Petru
-        return "ca-app-pub-3931793949981809/6280930567"  // test ad
+        return "ca-app-pub-3931793949981809/6280930567"  // ad
 
     }
 
