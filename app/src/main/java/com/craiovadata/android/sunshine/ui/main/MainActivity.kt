@@ -140,21 +140,22 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
-//                if (inTestMode) {
-//                } else
+                if (inTestMode) {
+                    throw RuntimeException("Test Crash") // Force a crash
+                } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
             R.id.action_privacy_policy -> {
 
-                if (inTestMode) {
-//                 show sync times and notif times
+               if (inTestMode) {
+                // show sync times and notif times
                     val pref = PreferenceManager.getDefaultSharedPreferences(this)
                     val savedTxt = pref.getString(PREF_SYNC_KEY, "")
                     layoutAttention.visibility = View.VISIBLE
                     layoutAttention.textViewWarnCityWrong.text = savedTxt
 
-//                 make a request for multiple cities weather - for translation purpose
+                // make a request for multiple cities weather - for translation purpose
 //                    if (citiesIndexIncrement > 20)
 //                        handler.removeCallbacksAndMessages(null)
 //                    else{
