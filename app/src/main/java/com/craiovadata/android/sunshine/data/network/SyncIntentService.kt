@@ -15,6 +15,7 @@ import com.craiovadata.android.sunshine.utilities.InjectorUtils
 class SyncIntentService : IntentService("SyncIntentService") {
     override fun onHandleIntent(intent: Intent?) {
         Log.d(LOG_TAG, "Intent service started")
+//        NetworkDataSource.addTestText(applicationContext, "syInt")
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
             networkDataSource.fetchWeather()

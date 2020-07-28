@@ -21,6 +21,7 @@ object InjectorUtils {
             myDatabase!!.weatherDao()!!,
             networkDataSource,
             executors)
+        NetworkDataSource.addTestText(context, "prRep")
         return repository
 
     }
@@ -30,7 +31,9 @@ object InjectorUtils {
 // case the repository will not exist unless it is specifically created.
         provideRepository(context.applicationContext)
         val executors = AppExecutors.instance
-        return NetworkDataSource.getInstance(context.applicationContext, executors)
+        val networkDataSource = NetworkDataSource.getInstance(context.applicationContext, executors)
+        NetworkDataSource.addTestText(context, "prNDS")
+        return networkDataSource
     }
 
     //    public static DetailViewModelFactory provideDetailViewModelFactory(Context context, Date date) {

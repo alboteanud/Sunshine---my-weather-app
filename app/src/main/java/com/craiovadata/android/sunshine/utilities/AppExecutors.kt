@@ -54,7 +54,7 @@ fun mainThread(): Executor {
                         sInstance =
                             AppExecutors(
                                 Executors.newSingleThreadExecutor(),
-                                Executors.newFixedThreadPool(3),
+                                Executors.newFixedThreadPool(2),
                                 MainThreadExecutor()
                             )
                     }

@@ -147,14 +147,14 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             }
             R.id.action_privacy_policy -> {
 
-//                if (inTestMode) {
-                // show sync times and notif times
-//                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
-//                    val savedTxt = pref.getString(PREF_SYNC_KEY, "")
-//                    layoutAttention.visibility = View.VISIBLE
-//                    layoutAttention.textViewWarnCityWrong.text = savedTxt
+                if (inTestMode) {
+//                 show sync times and notif times
+                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
+                    val savedTxt = pref.getString(PREF_SYNC_KEY, "")
+                    layoutAttention.visibility = View.VISIBLE
+                    layoutAttention.textViewWarnCityWrong.text = savedTxt
 
-                // make a request for multiple cities weather - for translation purpose
+//                 make a request for multiple cities weather - for translation purpose
 //                    if (citiesIndexIncrement > 20)
 //                        handler.removeCallbacksAndMessages(null)
 //                    else{
@@ -173,7 +173,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 //                    }
 
 
-//            } else
+            } else
                 goToPrivacyPolicy()
                 return true
             }

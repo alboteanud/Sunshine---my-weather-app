@@ -73,7 +73,7 @@ class NetworkDataSource private constructor(
 //            setRequiresDeviceIdle(true)     // not working with BackoffPolicy
         }.build()
 
-        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, 6, TimeUnit.HOURS, 2, TimeUnit.HOURS)
+        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, 5, TimeUnit.HOURS, 60, TimeUnit.MINUTES)
 //                .setInputData(input)
             .setConstraints(constraints)
             .setInitialDelay(5, TimeUnit.HOURS)
@@ -89,7 +89,7 @@ class NetworkDataSource private constructor(
 
     fun fetchWeather() {
         Log.d(LOG_TAG, "Fetch weather days started")
-//        addTestText(context, "fetchW")
+        addTestText(context, "fetchW")
         mExecutors.networkIO().execute {
             try {
                 val weatherRequestUrl = NetworkUtils.getUrl(context)
@@ -198,7 +198,7 @@ class NetworkDataSource private constructor(
 
     companion object {
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
-        var NUM_MIN_DATA_COUNTS = 39
+        val NUM_MIN_DATA_COUNTS = if (inTestMode) 20 else 39
 
         const val WORK_NAME = "my-work-name-v3"
 
