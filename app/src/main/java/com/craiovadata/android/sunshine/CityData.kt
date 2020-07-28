@@ -10,27 +10,25 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    val  inTestMode = true
-    const val TIME_ZONE_ID = "Europe/Madrid"
+    const val TIME_ZONE_ID = "America/Los_Angeles"
 
     private val images = intArrayOf(
-//        R.drawable.city_0,
-        R.drawable.city_1,
-//        R.drawable.city_2,
+        R.drawable.city,
         R.drawable.stabil1,
         R.drawable.stabil2,
-//        R.drawable.stabil3,
+        R.drawable.stabil3,
         R.drawable.stabil4,
-        R.drawable.stabil5,
-        R.drawable.stabil6
+        R.drawable.stabil5
     )
 
+    const val IS_IMPERIAL_UNITS_DEFAULT = true
+    val inTestMode = BuildConfig.DEBUG
     const val DEFAULT_ZOOM_LEVEL: Int = 10
 
     @JvmStatic
     fun getCityTimeZone(): TimeZone {
         val tz = getTimeZone(TIME_ZONE_ID)
-        if (BuildConfig.DEBUG) {
+        if (inTestMode) {
             require(tz.id != "GMT") { "timeZone probably wrong: GMT" }
         }
         return tz
@@ -61,7 +59,7 @@ object CityData {
 //        val hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
 //        val n = (hoursSinceEpoch % images.size).toInt()
 
-        val noImg = if (BuildConfig.DEBUG) {
+        val noImg = if (inTestMode) {
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
 
             val storedResNo = preferences.getInt("prefKeyI", 0)

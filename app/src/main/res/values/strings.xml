@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Madrid</string>
-    <string name="owm_city_id" translatable="false">3117735</string>
-<!--    <string name="owm_city_id" translatable="false">5074472</string>-->
-<!--    <string name="owm_city_id" translatable="false">2293538</string>-->
-<!--    <string name="owm_city_id" translatable="false">524305</string>-->
+    <string name="app_name" translatable="false">Los Angeles</string>
+    <string name="owm_city_id" translatable="false">5368361</string>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8517313499</string>
-    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/9411947985</string>
-    <string name="admob_med_rectangle_id" translatable="false">ca-app-pub-3931793949981809/5761195355</string>
+    <string name="admob_med_rect" translatable="false">ca-app-pub-3931793949981809/2213085867</string>  <!--US peste 250-->
+    <string name="admob_banner_id" translatable="false">ca-app-pub-3931793949981809/7249790125</string>  <!--US peste 250-->
+    <string name="admob_app_id" translatable="false">ca-app-pub-3931793949981809~8970065901</string> <!--US peste 250-->
 
     <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
 <!--    <string name="owm_api_key" translatable="false">d53bff8f3256eaf090be3c94964b0cb8</string> &lt;!&ndash; alboteanud   &ndash;&gt;-->

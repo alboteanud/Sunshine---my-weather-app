@@ -2,18 +2,18 @@ package com.craiovadata.android.sunshine.ui.main
 
 import android.content.Context
 import android.content.Intent
-import android.content.pm.PackageManager
-import android.content.pm.ResolveInfo
-import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.utilities.LogUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils.getAdIdPetru
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
@@ -35,11 +35,11 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     private fun initAds() {
-        if (BuildConfig.DEBUG) {
+        if (inTestMode) {
             bannerAdView.visibility = GONE
             return
         }
-
+        MobileAds.initialize(this)
         loadAdMedRectangle() // before observers
 
         val savedDate = getPreferences(Context.MODE_PRIVATE).getLong("savedDateAds", 0L)
@@ -54,7 +54,7 @@ open class BaseActivity : AppCompatActivity() {
             bannerAdView.visibility = GONE
             return
         }
-        MobileAds.initialize(this)
+
         bannerAdView.loadAd(AdRequest.Builder().build())
 
     }
@@ -63,7 +63,7 @@ open class BaseActivity : AppCompatActivity() {
         val newAdView = AdView(this)
         newAdView.apply {
             adSize = AdSize.MEDIUM_RECTANGLE
-            adUnitId = getString(R.string.admob_med_rectangle_id)
+            adUnitId = getString(R.string.admob_med_rect)
 
             adListener = object : AdListener() {
 
@@ -106,7 +106,7 @@ open class BaseActivity : AppCompatActivity() {
             //  !!! problem - wrong city name
             layoutAttention.visibility = View.VISIBLE
             val textToShow =
-                "!!! orasul (primit de la OWM) se numeste: ${currentWeatherEntry.cityName}"
+                "orasul de la OWM se numeste: ${currentWeatherEntry.cityName} !"
             layoutAttention.textViewWarnCityWrong.text = textToShow
 
 //            layoutAttention.buttonWarning.setOnClickListener {
@@ -146,16 +146,17 @@ open class BaseActivity : AppCompatActivity() {
     }
 
     fun goToPrivacyPolicy() {
-        val myLink =
-            Uri.parse(getString(R.string.link_privacy_policy))
-        val intent = Intent(Intent.ACTION_VIEW, myLink)
-        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
-            intent,
-            PackageManager.MATCH_DEFAULT_ONLY
-        )
-        val isIntentSafe: Boolean = activities.isNotEmpty()
-        if (isIntentSafe)
-            startActivity(intent)
+//        val myLink =
+//            Uri.parse(getString(R.string.link_privacy_policy))
+//        val intent = Intent(Intent.ACTION_VIEW, myLink)
+//        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
+//            intent,
+//            PackageManager.MATCH_DEFAULT_ONLY
+//        )
+//        val isIntentSafe: Boolean = activities.isNotEmpty()
+//        if (isIntentSafe)
+//            startActivity(intent)
+        startActivity(Intent(this, PrivacyPolicyActivity::class.java))
     }
 
 }

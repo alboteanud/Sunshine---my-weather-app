@@ -31,11 +31,18 @@ class Repository private constructor(
     private var mInitializedCW = false
 
     init {
+
+//        Handler(Looper.getMainLooper()).post {
+
+//            networkData.observeForever { newData->
+//                appExecutors.diskIO().execute {
+//                    userDao.insert(newData.user)
+//                }
+//            }
+
         GlobalScope.launch(Dispatchers.Main) {
-            // your code here...
 
             mNetworkDataSource.forecasts.observeForever { newForecastsFromNetwork ->
-//            mExecutors.diskIO().execute {
                 mExecutors.diskIO().execute {
                     // Deletes old historical data
                     deleteOldData()
@@ -44,13 +51,14 @@ class Repository private constructor(
                     Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
                 }
             }
+        }
 
-            mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
-                mExecutors.diskIO().execute {
-                    mWeatherDao.bulkInsert(*newDataFromNetwork)
-                }
+        mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
+            mExecutors.diskIO().execute {
+                mWeatherDao.bulkInsert(*newDataFromNetwork)
             }
         }
+
 
     }
 
@@ -127,10 +135,7 @@ class Repository private constructor(
         if (mInitialized) return
         mInitialized = true
 
-        // This method call triggers Sunshine to create its task to synchronize weather data
-        // periodically.
-        mNetworkDataSource.scheduleRecurringFetchWeather()
-
+        mNetworkDataSource.scheduleFetchWeather()
         mExecutors.diskIO().execute {
 
             if (isFetchNeeded)

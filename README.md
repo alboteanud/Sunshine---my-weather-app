@@ -3,9 +3,9 @@ Sunshine with Architecture Components
 
 Weather application for Android devices
 
-![Image 1](image1.png)
+![screenshot 1](image1.png)
 
-![Image 2](image2.png)
+![screenshot 2](image2.png)
 
 ## About
 This app is built with Android Architecture Components.

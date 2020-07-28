@@ -3,25 +3,21 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.Toast
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.work.WorkInfo
-import androidx.work.WorkManager
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
+import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import kotlinx.android.synthetic.main.content_main.*
@@ -144,37 +140,21 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
-                if (inTestMode) {
-//                    layoutAttention.visibility = View.VISIBLE
-//                    layoutAttention.textViewWarnCityWrong.text = "?"
-
-//                    WorkManager.getInstance(this).getWorkInfosForUniqueWorkLiveData(NetworkDataSource.WORK_NAME)
-//                        .observe(this, Observer { workInfo ->
-//                            if (workInfo != null && workInfo[0].state == WorkInfo.State.SUCCEEDED) {
-//                                Toast.makeText(this, "WorkInfo.State.SUCCEEDED", Toast.LENGTH_LONG).show()
-//                            } else if (workInfo != null && workInfo[0].state == WorkInfo.State.ENQUEUED) {
-//                                Toast.makeText(this, "WorkInfo.State.ENQUEUED ${workInfo[0].runAttemptCount}", Toast.LENGTH_LONG).show()
-//                            }
-//                            else  {
-//                                Toast.makeText(this, "WorkInfo.State -> other state", Toast.LENGTH_LONG).show()
-//                            }
-//                        })
-
-//                    val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
-//                    networkDataSource.scheduleWork()
-
-                } else
+//                if (inTestMode) {
+//                } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
             R.id.action_privacy_policy -> {
-                if (inTestMode) {
-                    // show sync times and notif times
-                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
-                    layoutAttention.visibility = View.VISIBLE
-                    layoutAttention.textViewWarnCityWrong.text = pref.getString(PREF_SYNC_KEY, "")
 
-                    // make a request for multiple cities weather - for translation purpose
+//                if (inTestMode) {
+                // show sync times and notif times
+//                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
+//                    val savedTxt = pref.getString(PREF_SYNC_KEY, "")
+//                    layoutAttention.visibility = View.VISIBLE
+//                    layoutAttention.textViewWarnCityWrong.text = savedTxt
+
+                // make a request for multiple cities weather - for translation purpose
 //                    if (citiesIndexIncrement > 20)
 //                        handler.removeCallbacksAndMessages(null)
 //                    else{
@@ -193,16 +173,17 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 //                    }
 
 
-                } else goToPrivacyPolicy()
+//            } else
+                goToPrivacyPolicy()
                 return true
             }
             else -> super.onOptionsItemSelected(item)
         }
     }
 
-    val citiIndexStart = 0
-    var citiesIndexIncrement = 0
-    val handler = Handler()
+//    val citiIndexStart = 0
+//    var citiesIndexIncrement = 0
+//    val handler = Handler()
 
 
     companion object {

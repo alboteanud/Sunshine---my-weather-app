@@ -10,6 +10,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.CityData.IS_IMPERIAL_UNITS_DEFAULT
 import com.jjoe64.graphview.GridLabelRenderer
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
 import com.jjoe64.graphview.series.DataPoint
@@ -38,14 +39,14 @@ data class Graph(val list: List<ListWeatherEntry>?) :
             view.graphView.removeAllSeries()
 
             val series = LineGraphSeries<DataPoint>()
-            var minTemp = 45.0
-            var maxTemp = - 45.0
+//            var minTemp = 125.0
+//            var maxTemp = - 50.0
             entries.forEach { entry ->
                 val temperature =
                     SunshineWeatherUtils.adaptTemperature(view.context, entry.temperature)
 
-               if ( temperature < minTemp) minTemp = temperature
-               if (temperature > maxTemp) maxTemp =  temperature
+//               if ( temperature < minTemp) minTemp = temperature
+//               if (temperature > maxTemp) maxTemp =  temperature
 
                 val dataPoint = DataPoint(entry.date, temperature)
 //                series.appendData(dataPoint, false, entries.size)
@@ -67,14 +68,19 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 //                removeAllSeries()
 //                onDataChanged(false, false)
 
+                //                title = context.getString(R.string.title_graph_temperature)
+                onDataChanged(false, false)
 
-
+                // set manual x bounds to have nice steps
+//                viewport.isYAxisBoundsManual = true
+//                viewport.setMinY(minTemp - 3)
+//                viewport.setMaxY(maxTemp + 3)
 
                 addSeries(series)
                 gridLabelRenderer.apply {
 //                    numHorizontalLabels = entries.size
-                    numVerticalLabels = ((maxTemp - minTemp)/5).toInt() + 3
-//                    numHorizontalLabels = 5
+//                   numVerticalLabels = ((maxTemp - minTemp)/6).toInt() + 3
+//numVerticalLabels = 4
 //                horizontalAxisTitle = "hour"
 //                    verticalAxisTitle = "Temperature"
 //                    horizontalAxisTitle =  "\u23F0"
@@ -98,13 +104,8 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                         }
                     }
                 }
-//                title = context.getString(R.string.title_graph_temperature)
-                onDataChanged(false, false)
 
-                // set manual x bounds to have nice steps
-                viewport.setMinY(minTemp - 6)
-                viewport.setMaxY(maxTemp + 6)
-                viewport.isYAxisBoundsManual = true
+
 
             }
 
@@ -121,13 +122,11 @@ data class Graph(val list: List<ListWeatherEntry>?) :
             }
         }
 
-
         private fun setTextCelsiusFarStates(view: View, listener: CardsAdapter.Listener) {
             val context = view.context
             val sp = PreferenceManager.getDefaultSharedPreferences(context)
             val key = context.getString(R.string.pref_units_key)
-            val isImperialDefault = context.resources.getBoolean(R.bool.is_imperial_default)
-            val isImperial = sp.getBoolean(key, isImperialDefault)
+            val isImperial = sp.getBoolean(key, IS_IMPERIAL_UNITS_DEFAULT)
 
             var blueView = view.textViewFarenheit
             var whiteView = view.textViewCelsius

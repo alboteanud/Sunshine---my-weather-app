@@ -29,7 +29,7 @@ class AppExecutors private constructor(
         return networkIO
     }
 
-    fun mainIO(): Executor {
+fun mainThread(): Executor {
         return mainThread
     }
 

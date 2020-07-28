@@ -19,6 +19,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+
         <activity
             android:name=".ui.news.NewsActivity"
             android:label="@string/title_activity_news"
@@ -28,6 +29,18 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
         </activity>
+
+        <activity
+            android:name=".ui.policy.PrivacyPolicyActivity"
+            android:label="@string/menu_label_privacy_policy"
+            android:parentActivityName=".ui.main.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.craiovadata.android.sunshine.ui.main.MainActivity" />
+        </activity>
+
+
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -59,17 +72,6 @@
         <service
             android:name=".data.network.SyncIntentServiceCW"
             android:exported="false" /> <!-- This is the Service declaration used in conjunction with FirebaseJobDispatcher -->
-<!--        <service-->
-<!--            android:name=".data.network.MyJobService"-->
-<!--            android:exported="false">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />-->
-<!--            </intent-filter>-->
-<!--        </service>-->
-
-<!--        <provider-->
-<!--            android:name="androidx.work.impl.WorkManagerInitializer"-->
-<!--            android:authorities="${applicationId}.workmanager-init" />-->
 
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"

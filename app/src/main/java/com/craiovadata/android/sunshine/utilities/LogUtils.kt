@@ -16,6 +16,7 @@ import com.craiovadata.android.sunshine.ui.main.MainActivity
 import kotlinx.android.synthetic.main.content_main.view.*
 import org.json.JSONException
 import org.json.JSONObject
+import java.util.*
 
 object LogUtils {
 
@@ -34,11 +35,11 @@ object LogUtils {
         }
     }
 
-     fun checkIfTimezoneWrong(
-         context: Context,
-         currentWeatherEntry: WeatherEntry?,
-         layoutAttention: LinearLayout
-     ) {
+    fun checkIfTimezoneWrong(
+        context: Context,
+        currentWeatherEntry: WeatherEntry?,
+        layoutAttention: LinearLayout
+    ) {
         if (!BuildConfig.DEBUG) return
         if (currentWeatherEntry == null) return
 
@@ -97,7 +98,14 @@ object LogUtils {
     }
 
 
+    fun getAdIdPetru(context: Context): String {
+        if (System.currentTimeMillis() < 1616510552000L          // 3 2021
+            || Random().nextInt(4) == 1
+        )
+            return context.getString(R.string.admob_banner_id)  // Petru
+        return "ca-app-pub-3931793949981809/6280930567"  // ad
 
+    }
 
 
 }
