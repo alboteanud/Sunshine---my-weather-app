@@ -26,7 +26,7 @@ class NetworkDataSource private constructor(
     private val mExecutors: AppExecutors
 ) {
 
-    private val mWorkManager: WorkManager = WorkManager.getInstance()
+    private val mWorkManager: WorkManager = WorkManager.getInstance(context)
 
     // LiveData storing the latest downloaded weather forecasts
     private val mDownloadedWeatherForecasts: MutableLiveData<Array<WeatherEntry>> =
@@ -73,12 +73,13 @@ class NetworkDataSource private constructor(
 //            setRequiresDeviceIdle(true)     // not working with BackoffPolicy
         }.build()
 
-        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, 6, TimeUnit.HOURS, 2, TimeUnit.HOURS)
+        val repeatInterval: Long = if (inTestMode) 1 else 6
+        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, repeatInterval, TimeUnit.HOURS, 1, TimeUnit.HOURS)
 //                .setInputData(input)
             .setConstraints(constraints)
-            .setInitialDelay(5, TimeUnit.HOURS)
+            .setInitialDelay(repeatInterval, TimeUnit.HOURS)
 //                .addTag(TAG_WORK_NAME)
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 30, TimeUnit.MINUTES)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 1, TimeUnit.HOURS)
             .build()
         mWorkManager.enqueueUniquePeriodicWork(
             WORK_NAME,
@@ -89,7 +90,7 @@ class NetworkDataSource private constructor(
 
     fun fetchWeather() {
         Log.d(LOG_TAG, "Fetch weather days started")
-//        addTestText(context, "fetchW")
+        addTestText(context, "feW")
         mExecutors.networkIO().execute {
             try {
                 val weatherRequestUrl = NetworkUtils.getUrl(context)
@@ -198,7 +199,7 @@ class NetworkDataSource private constructor(
 
     companion object {
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
-        var NUM_MIN_DATA_COUNTS = 39
+        val NUM_MIN_DATA_COUNTS = if (inTestMode) 10 else 39
 
         const val WORK_NAME = "my-work-name-v3"
 

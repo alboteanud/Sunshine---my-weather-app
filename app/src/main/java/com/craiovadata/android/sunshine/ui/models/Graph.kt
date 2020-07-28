@@ -1,10 +1,10 @@
 package com.craiovadata.android.sunshine.ui.models
 
 import android.graphics.Color
-import android.preference.PreferenceManager
 import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.preference.PreferenceManager.getDefaultSharedPreferences
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
@@ -124,7 +124,8 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 
         private fun setTextCelsiusFarStates(view: View, listener: CardsAdapter.Listener) {
             val context = view.context
-            val sp = PreferenceManager.getDefaultSharedPreferences(context)
+
+            val sp = getDefaultSharedPreferences(context)
             val key = context.getString(R.string.pref_units_key)
             val isImperial = sp.getBoolean(key, IS_IMPERIAL_UNITS_DEFAULT)
 
