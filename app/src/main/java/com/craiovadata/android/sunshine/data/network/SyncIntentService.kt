@@ -18,7 +18,8 @@ class SyncIntentService : IntentService("SyncIntentService") {
 //        NetworkDataSource.addTestText(applicationContext, "syInt")
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
-            networkDataSource.fetchWeather()
+//            networkDataSource.fetchWeather()
+            networkDataSource.fetchWeatheMainThread()
     }
 
     companion object {

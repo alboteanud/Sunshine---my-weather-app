@@ -12,7 +12,8 @@ class MyWorker(context: Context, params: WorkerParameters) : Worker(context, par
         addTestText(applicationContext, "wkSt")
         return try {
             val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
-            networkDataSource.fetchWeather()
+//            networkDataSource.fetchWeather()
+            networkDataSource.fetchWeatheMainThread()
 
             Result.success()
         } catch (e: Error) {

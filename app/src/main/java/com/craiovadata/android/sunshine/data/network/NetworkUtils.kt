@@ -18,6 +18,10 @@ package com.craiovadata.android.sunshine.data.network
 import android.content.Context
 import android.net.Uri
 import android.util.Log
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 import com.craiovadata.android.sunshine.R
 import java.io.BufferedInputStream
 import java.io.IOException
@@ -26,6 +30,8 @@ import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
 import java.util.*
+import javax.security.auth.callback.Callback
+
 
 /**
  * These utilities will be used to communicate with the weather servers.
@@ -55,6 +61,12 @@ internal object NetworkUtils {
         return buildUrlWithLocationId(owmCityId, owmApiKey)
     }
 
+ fun getUrlString(mContext: Context): String {
+        val owmApiKey = mContext.getString(R.string.owm_api_key)
+        val owmCityId = mContext.getString(R.string.owm_city_id)
+        return buildUrlStringWithLocationId(owmCityId, owmApiKey)
+    }
+
     fun getUrl2(mContext: Context, cityId: Int, language: String): URL? {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
         return buildUrlWithLocationId2(cityId.toString(), owmApiKey, language )
@@ -76,6 +88,18 @@ internal object NetworkUtils {
         val weatherQueryUrl = URL(weatherQueryUri.toString())
         Log.v(TAG, "URL forecasts 5 days = $weatherQueryUrl")
         return weatherQueryUrl
+
+    }
+ private fun buildUrlStringWithLocationId(locationID: String, owmApiKey: String): String {
+        val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
+            .appendQueryParameter(ID_PARAM, locationID)
+            .appendQueryParameter(FORMAT_PARAM, format)
+            .appendQueryParameter(UNITS_PARAM, units)
+            .appendQueryParameter(APPID_PARAM, owmApiKey)
+            .build()
+        val urlString = weatherQueryUri.toString()
+        Log.v(TAG, "URL forecasts 5 days = $urlString")
+        return urlString
 
     }
 
@@ -150,34 +174,33 @@ internal object NetworkUtils {
             urlConnection.disconnect()
         }
 
+    }
+
+
+    fun getResponseFromHttpUrl2(context: Context, urlString: String, callback: (response: String?) -> Unit) {
+
+// Instantiate the RequestQueue.
+        val queue = Volley.newRequestQueue(context)
+
+// Request a string response from the provided URL.
+        val stringRequest = StringRequest(
+            Request.Method.GET, urlString,
+            Response.Listener<String> { response ->
+                // Display the first 500 characters of the response string.
+                Log.d("tag", "Response is: ${response.substring(0, 500)}")
+callback.invoke(response)
+            },
+            Response.ErrorListener {
+                Log.e("tag", "That didn't work!")
+                callback.invoke(null)
+            })
+
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest)
 
     }
 
-    /*
-    *  URL url = new URL("http://www.android.com/");
-   HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-   try {
-     InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-     readStream(in);
-   } finally {
-     urlConnection.disconnect();
-   }
-    * */
 
-    /*
-    * HttpClient httpClient = HttpClients.custom()
-            .setConnectionTimeToLive(20, TimeUnit.SECONDS)
-            .setMaxConnTotal(400).setMaxConnPerRoute(400)
-            .setDefaultRequestConfig(RequestConfig.custom()
-                    .setSocketTimeout(30000).setConnectTimeout(5000).build())
-            .setRetryHandler(new DefaultHttpRequestRetryHandler(5, true))
-            .build();
-// the httpClient should be re-used because it is pooled and thread-safe.
-
-HttpGet request = new HttpGet(uri);
-HttpResponse response = httpClient.execute(request);
-reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
-// handle response ...
-    * */
 
 }

@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
+import com.craiovadata.android.sunshine.data.network.NetworkUtils
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.models.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
@@ -141,7 +142,11 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         return when (item.itemId) {
             R.id.action_settings -> {
                 if (inTestMode) {
-                    throw RuntimeException("Test Crash") // Force a crash
+//                    throw RuntimeException("Test Crash") // Force a crash
+                    val weatherRequestUrl2 = NetworkUtils.getUrlString(this)
+                    val jsonWeatherResponse2 = NetworkUtils.getResponseFromHttpUrl2(this, weatherRequestUrl2){
+
+                    }
                 } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
