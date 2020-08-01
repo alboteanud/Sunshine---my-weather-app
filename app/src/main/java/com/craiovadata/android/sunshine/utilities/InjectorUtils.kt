@@ -21,7 +21,7 @@ object InjectorUtils {
             myDatabase!!.weatherDao()!!,
             networkDataSource,
             executors)
-        NetworkDataSource.addTestText(context, "prRep")
+//        NetworkDataSource.addTestText(context, "prRep")
         return repository
 
     }
@@ -32,7 +32,7 @@ object InjectorUtils {
         provideRepository(context.applicationContext)
         val executors = AppExecutors.instance
         val networkDataSource = NetworkDataSource.getInstance(context.applicationContext, executors)
-        NetworkDataSource.addTestText(context, "prNDS")
+//        NetworkDataSource.addTestText(context, "prNDS")
         return networkDataSource
     }
 

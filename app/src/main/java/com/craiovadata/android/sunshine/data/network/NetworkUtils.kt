@@ -18,14 +18,14 @@ package com.craiovadata.android.sunshine.data.network
 import android.content.Context
 import android.net.Uri
 import android.util.Log
-
 import com.craiovadata.android.sunshine.R
-
+import java.io.BufferedInputStream
 import java.io.IOException
+import java.io.InputStream
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
 import java.net.URL
-import java.util.Scanner
+import java.util.*
 
 /**
  * These utilities will be used to communicate with the weather servers.
@@ -130,9 +130,11 @@ internal object NetworkUtils {
      */
     @Throws(IOException::class)
     fun getResponseFromHttpUrl(url: URL): String? {
+        // url.openConnection() as HttpURLConnection
         val urlConnection = url.openConnection() as HttpURLConnection
         try {
-            val `in` = urlConnection.inputStream
+//            val `in` = urlConnection.inputStream
+            val `in`: InputStream = BufferedInputStream(urlConnection.inputStream)
 
             val scanner = Scanner(`in`)
             scanner.useDelimiter("\\A")
@@ -147,5 +149,35 @@ internal object NetworkUtils {
         } finally {
             urlConnection.disconnect()
         }
+
+
     }
+
+    /*
+    *  URL url = new URL("http://www.android.com/");
+   HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+   try {
+     InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+     readStream(in);
+   } finally {
+     urlConnection.disconnect();
+   }
+    * */
+
+    /*
+    * HttpClient httpClient = HttpClients.custom()
+            .setConnectionTimeToLive(20, TimeUnit.SECONDS)
+            .setMaxConnTotal(400).setMaxConnPerRoute(400)
+            .setDefaultRequestConfig(RequestConfig.custom()
+                    .setSocketTimeout(30000).setConnectTimeout(5000).build())
+            .setRetryHandler(new DefaultHttpRequestRetryHandler(5, true))
+            .build();
+// the httpClient should be re-used because it is pooled and thread-safe.
+
+HttpGet request = new HttpGet(uri);
+HttpResponse response = httpClient.execute(request);
+reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent()));
+// handle response ...
+    * */
+
 }

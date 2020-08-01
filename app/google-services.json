@@ -1,0 +1,239 @@
+{
+  "project_info": {
+    "project_number": "221162661110",
+    "firebase_url": "https://adoct2016.firebaseio.com",
+    "project_id": "adoct2016",
+    "storage_bucket": "adoct2016.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:e0cd3a858b36e7c4",
+        "android_client_info": {
+          "package_name": "com.alboteanu.sunshine.HollywoodFL"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:5838c7f9be868586",
+        "android_client_info": {
+          "package_name": "com.alboteanu.sunshine.KansasCityKS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-3931793949981809~1680963171"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:e236e0cb452e47ef",
+        "android_client_info": {
+          "package_name": "com.alboteanu.sunshine2.Roma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-esrc1bd9j6tupcpbv221ge6qi312lfpp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alboteanu.sunshine2.Roma",
+            "certificate_hash": "4a39814008ba9597a7cfd6949ca5efad32e35739"
+          }
+        },
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:d9e5b7834ccb6a9d",
+        "android_client_info": {
+          "package_name": "com.craiovadata.Longueuil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-bg6kkc9eta0osgfd3ul05s9nth2q7rdf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.Longueuil",
+            "certificate_hash": "4a39814008ba9597a7cfd6949ca5efad32e35739"
+          }
+        },
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:1fc1428cda46ffe39878d7",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.AR.Phoenix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:16c3f00eab61858c9878d7",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.CA.LosAngeles2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:95235294216ef50c",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.Windsor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-r16coentmbbfpkrvgtjoj20hmoi9pu08.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.craiovadata.android.sunshine.Windsor",
+            "certificate_hash": "4a39814008ba9597a7cfd6949ca5efad32e35739"
+          }
+        },
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

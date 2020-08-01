@@ -49,15 +49,19 @@ class Repository private constructor(
                     // Insert our new weather data into Sunshine's database
                     mWeatherDao.bulkInsert(*newForecastsFromNetwork)
                     Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
+//                    NetworkDataSource.addTestText()
                 }
             }
+
+            mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
+                mExecutors.diskIO().execute {
+                    mWeatherDao.bulkInsert(*newDataFromNetwork)
+                }
+            }
+
         }
 
-        mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
-            mExecutors.diskIO().execute {
-                mWeatherDao.bulkInsert(*newDataFromNetwork)
-            }
-        }
+
 
 
     }

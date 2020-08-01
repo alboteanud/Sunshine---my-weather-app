@@ -79,11 +79,11 @@ class NetworkDataSource private constructor(
             .setConstraints(constraints)
             .setInitialDelay(repeatInterval, TimeUnit.HOURS)
 //                .addTag(TAG_WORK_NAME)
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 1, TimeUnit.HOURS)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 30, TimeUnit.MINUTES)
             .build()
         mWorkManager.enqueueUniquePeriodicWork(
             WORK_NAME,
-            ExistingPeriodicWorkPolicy.REPLACE,
+            ExistingPeriodicWorkPolicy.KEEP,
             request
         )
     }

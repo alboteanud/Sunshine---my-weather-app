@@ -14,7 +14,6 @@ object CityData {
 
     private val images = intArrayOf(
         R.drawable.city,
-        R.drawable.city0,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,
