@@ -1,6 +1,7 @@
 package com.craiovadata.android.sunshine.utilities
 
 import android.app.Application
+import android.content.Context
 import androidx.lifecycle.ProcessLifecycleOwner
 
 class DummyApp : Application() {
@@ -11,5 +12,7 @@ class DummyApp : Application() {
                 .lifecycle
                 .addObserver(ForegroundListener())
     }
+
+
 
 }

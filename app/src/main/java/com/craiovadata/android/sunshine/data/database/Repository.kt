@@ -32,14 +32,6 @@ class Repository private constructor(
 
     init {
 
-//        Handler(Looper.getMainLooper()).post {
-
-//            networkData.observeForever { newData->
-//                appExecutors.diskIO().execute {
-//                    userDao.insert(newData.user)
-//                }
-//            }
-
         GlobalScope.launch(Dispatchers.Main) {
 
             mNetworkDataSource.forecasts.observeForever { newForecastsFromNetwork ->
@@ -60,9 +52,6 @@ class Repository private constructor(
             }
 
         }
-
-
-
 
     }
 

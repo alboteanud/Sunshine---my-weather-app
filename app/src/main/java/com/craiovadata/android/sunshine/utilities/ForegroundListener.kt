@@ -26,6 +26,7 @@ class ForegroundListener : LifecycleObserver {
         var active = false
         fun isForeground(): Boolean { return active
         }
+
     }
 
 }

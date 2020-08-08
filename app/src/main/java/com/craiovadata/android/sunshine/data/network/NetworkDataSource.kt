@@ -122,13 +122,15 @@ class NetworkDataSource private constructor(
         }
     }
 
-    fun fetchWeatheMainThread() {
+    fun fetchWeatheMainThread(function: (success: Boolean) -> Unit) {
         val weatherRequestUrl2 = NetworkUtils.getUrlString(context)
 
         NetworkUtils.getResponseFromHttpUrl2(context, weatherRequestUrl2) { jsonWeatherResponse ->
-if (jsonWeatherResponse == null){
-  return@getResponseFromHttpUrl2
-}
+            if (jsonWeatherResponse == null) {
+                function.invoke(false)
+                addTestText(context, "syFa")
+                return@getResponseFromHttpUrl2
+            }
             // Parse the JSON into a list of weather forecasts
             val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
@@ -138,13 +140,15 @@ if (jsonWeatherResponse == null){
             // As long as there are weather forecasts, update the LiveData storing the most recent
             // weather forecasts. This will trigger observers of that LiveData, such as the Repo
 
-            if (!response.weatherForecast.isNullOrEmpty()) {
+            if (response.weatherForecast.isNullOrEmpty()) {
+                function.invoke(false)
+                addTestText(context, "syFailNullWe")
+            } else {
                 val entries = response.weatherForecast
                 mDownloadedWeatherForecasts.postValue(entries)
                 NotifUtils.notifyIfNeeded(context, entries[0])
-
+                function.invoke(true)
             }
-
 
         }
     }

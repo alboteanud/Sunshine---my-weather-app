@@ -19,7 +19,9 @@ class SyncIntentService : IntentService("SyncIntentService") {
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
 //            networkDataSource.fetchWeather()
-            networkDataSource.fetchWeatheMainThread()
+            networkDataSource.fetchWeatheMainThread {
+
+            }
     }
 
     companion object {
