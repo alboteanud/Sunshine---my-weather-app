@@ -18,6 +18,10 @@ package com.craiovadata.android.sunshine.data.network
 import android.content.Context
 import android.net.Uri
 import android.util.Log
+import com.android.volley.Request
+import com.android.volley.Response
+import com.android.volley.toolbox.StringRequest
+import com.android.volley.toolbox.Volley
 
 import com.craiovadata.android.sunshine.R
 
@@ -148,4 +152,32 @@ internal object NetworkUtils {
             urlConnection.disconnect()
         }
     }
+
+
+
+
+    fun getResponseFromHttpUrl2(context: Context, urlString: String, callback: (response: String?) -> Unit) {
+
+// Instantiate the RequestQueue.
+        val queue = Volley.newRequestQueue(context)
+
+// Request a string response from the provided URL.
+        val stringRequest = StringRequest(
+            Request.Method.GET, urlString,
+            Response.Listener<String> { response ->
+                // Display the first 500 characters of the response string.
+                Log.d("tag", "Response is: ${response.substring(0, 500)}")
+                callback.invoke(response)
+            },
+            Response.ErrorListener {
+                Log.e("tag", "That didn't work!")
+                callback.invoke(null)
+            })
+
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest)
+
+    }
+
 }
