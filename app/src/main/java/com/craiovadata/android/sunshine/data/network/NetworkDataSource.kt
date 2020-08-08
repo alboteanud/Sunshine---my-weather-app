@@ -1,8 +1,10 @@
 package com.craiovadata.android.sunshine.data.network
 
+import android.app.Notification
 import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
+import android.os.Build
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -13,6 +15,7 @@ import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.ui.main.MainActivity.Companion.PREF_SYNC_KEY
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.AppExecutors
+import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isBackground
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import java.lang.System.currentTimeMillis
 import java.text.SimpleDateFormat
@@ -44,7 +47,12 @@ class NetworkDataSource private constructor(
      */
     fun startFetchWeatherService() {
         val intentToFetch = Intent(context, SyncIntentService::class.java)
-        context.startService(intentToFetch)
+        if (inTestMode || (isBackground() && Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)) {
+            context.startForegroundService(intentToFetch)
+
+        } else
+            context.startService(intentToFetch)
+        //   java.lang.IllegalStateException: Not allowed to start service Intent ... app is in background uid
         Log.d(LOG_TAG, "Service created - fetching weather by days")
     }
 
@@ -74,7 +82,7 @@ class NetworkDataSource private constructor(
         }.build()
 
         val repeatInterval: Long = if (inTestMode) 1 else 6
-        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, repeatInterval, TimeUnit.HOURS, 1, TimeUnit.HOURS)
+        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, repeatInterval, TimeUnit.HOURS, 3, TimeUnit.HOURS)
 //                .setInputData(input)
             .setConstraints(constraints)
             .setInitialDelay(repeatInterval, TimeUnit.HOURS)
@@ -83,7 +91,7 @@ class NetworkDataSource private constructor(
             .build()
         mWorkManager.enqueueUniquePeriodicWork(
             WORK_NAME,
-            ExistingPeriodicWorkPolicy.REPLACE,
+            ExistingPeriodicWorkPolicy.KEEP,
             request
         )
     }

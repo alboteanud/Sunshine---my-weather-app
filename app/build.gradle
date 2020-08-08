@@ -11,9 +11,9 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 29
-        versionName '1'
+        versionName '18'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 16
+        versionCode = 18
         applicationId = 'com.craiovadata.android.sunshine.US.AR.Phoenix'
         // Required to use Java 8.
 //        jackOptions { enabled true }
@@ -53,11 +53,10 @@ ext.junit_version = '4.12'
 ext.support_test_version = '1.2.0'
 ext.glide_version = '4.11.0'
 ext.materialVersion = '1.1.0'
-ext.coreVersion = '1.3.0'
 
 dependencies {
 
-    implementation "androidx.core:core-ktx:$coreVersion"
+    implementation "androidx.core:core-ktx:1.3.1"
     implementation "androidx.appcompat:appcompat:$appcompatVersion"
     implementation "com.google.android.material:material:$materialVersion"
     implementation "androidx.preference:preference:$support_version"

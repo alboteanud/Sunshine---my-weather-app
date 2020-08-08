@@ -51,14 +51,15 @@ class Repository private constructor(
                     Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
                 }
             }
-        }
 
-        mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
-            mExecutors.diskIO().execute {
-                mWeatherDao.bulkInsert(*newDataFromNetwork)
+
+            mNetworkDataSource.currentWeather.observeForever { newDataFromNetwork ->
+                mExecutors.diskIO().execute {
+                    mWeatherDao.bulkInsert(*newDataFromNetwork)
+                }
             }
-        }
 
+        }
 
     }
 
@@ -136,10 +137,15 @@ class Repository private constructor(
         mInitialized = true
 
         mNetworkDataSource.scheduleFetchWeather()
-        mExecutors.diskIO().execute {
 
+        mExecutors.diskIO().execute {
             if (isFetchNeeded)
                 startFetchWeatherService()
+            // will crash. Start intent from background service
+            //   java.lang.IllegalStateException: Not allowed to start service Intent ... app is in background uid
+            // or
+            // java.lang.IllegalStateException: Cannot access database on the main thread since it may potentially lock the UI for a long period of time.
+           //  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3131)
             Log.d(LOG_TAG, "isFetchNeeded forecast: $isFetchNeeded")
         }
     }
