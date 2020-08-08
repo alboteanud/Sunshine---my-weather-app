@@ -1,6 +1,5 @@
 package com.craiovadata.android.sunshine.data.network
 
-import android.app.Notification
 import android.content.Context
 import android.content.Intent
 import android.content.res.Resources

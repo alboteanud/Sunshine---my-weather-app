@@ -153,6 +153,18 @@ internal object NetworkUtils {
         }
     }
 
+    private fun buildUrlStringWithLocationId(locationID: String, owmApiKey: String): String {
+        val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
+            .appendQueryParameter(ID_PARAM, locationID)
+            .appendQueryParameter(FORMAT_PARAM, format)
+            .appendQueryParameter(UNITS_PARAM, units)
+            .appendQueryParameter(APPID_PARAM, owmApiKey)
+            .build()
+        val urlString = weatherQueryUri.toString()
+        Log.v(TAG, "URL forecasts 5 days = $urlString")
+        return urlString
+
+    }
 
     fun getUrlString(mContext: Context): String {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
