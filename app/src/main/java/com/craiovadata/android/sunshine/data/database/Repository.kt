@@ -164,13 +164,6 @@ class Repository private constructor(
     }
 
     @Synchronized
-    fun forceFetchCurrentWeather() {
-        mExecutors.diskIO().execute {
-            mNetworkDataSource.startFetchCurrentWeatherService()
-        }
-    }
-
-    @Synchronized
     fun forceFetchWeather(citiesIndex: Int) {
         mExecutors.diskIO().execute {
             mNetworkDataSource.startFetchWeatherServiceTest(citiesIndex)

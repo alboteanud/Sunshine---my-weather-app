@@ -96,36 +96,34 @@ class NetworkDataSource private constructor(
         )
     }
 
-    fun fetchWeather() {
-        Log.d(LOG_TAG, "Fetch weather days started")
-        addTestText(context, "feW")
-        mExecutors.networkIO().execute {
-            try {
-                val weatherRequestUrl = NetworkUtils.getUrl(context)
+    fun fetchWeather(function: (success: Boolean) -> Unit) {
+        val weatherRequestUrl2 = NetworkUtils.getUrlString(context)
 
-                // Use the URL to retrieve the JSON
-                val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
-
-                // Parse the JSON into a list of weather forecasts
-                val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
-
-                Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
-                addTestText(context, "sy${response.weatherForecast.size}")
-
-                // As long as there are weather forecasts, update the LiveData storing the most recent
-                // weather forecasts. This will trigger observers of that LiveData, such as the Repo
-
-                if (!response.weatherForecast.isNullOrEmpty()) {
-                    val entries = response.weatherForecast
-                    mDownloadedWeatherForecasts.postValue(entries)
-                    NotifUtils.notifyIfNeeded(context, entries[0])
-
-                }
-            } catch (e: Exception) {
-                // Server probably invalid
-                e.printStackTrace()
-                addTestText(context, "fetchErr:$e")
+        NetworkUtils.getResponseFromHttpUrl2(context, weatherRequestUrl2) { jsonWeatherResponse ->
+            if (jsonWeatherResponse == null) {
+                function.invoke(false)
+                addTestText(context, "syFail")
+                return@getResponseFromHttpUrl2
             }
+            // Parse the JSON into a list of weather forecasts
+            val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
+
+            Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
+            addTestText(context, "sy${response.weatherForecast.size}")
+
+            // As long as there are weather forecasts, update the LiveData storing the most recent
+            // weather forecasts. This will trigger observers of that LiveData, such as the Repo
+
+            if (response.weatherForecast.isNullOrEmpty()) {
+                function.invoke(false)
+                addTestText(context, "syFailNullWe")
+            } else {
+                val entries = response.weatherForecast
+                mDownloadedWeatherForecasts.postValue(entries)
+                NotifUtils.notifyIfNeeded(context, entries[0])
+                function.invoke(true)
+            }
+
         }
     }
 

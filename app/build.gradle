@@ -44,7 +44,7 @@ android {
 }
 
 ext.work_version = "2.4.0"
-ext.appcompatVersion = '1.1.0'
+ext.appcompatVersion = '1.2.0'
 ext.arch_version = '2.2.0'
 ext.room_version = '2.2.5'
 ext.support_version = '1.0.0'
