@@ -32,14 +32,6 @@ class Repository private constructor(
 
     init {
 
-//        Handler(Looper.getMainLooper()).post {
-
-//            networkData.observeForever { newData->
-//                appExecutors.diskIO().execute {
-//                    userDao.insert(newData.user)
-//                }
-//            }
-
         GlobalScope.launch(Dispatchers.Main) {
 
             mNetworkDataSource.forecasts.observeForever { newForecastsFromNetwork ->
@@ -66,10 +58,8 @@ class Repository private constructor(
     @Synchronized
     private fun refreshDataCurrentWeather() {
         mExecutors.diskIO().execute {
-            Log.d(LOG_TAG, "execute initDataCurrentWeather")
-            if (isFetchNeededCW) {
-                mNetworkDataSource.startFetchCurrentWeatherService()
-            }
+            if (isFetchNeededCW)
+                mNetworkDataSource.fetchCurrentWeather()
         }
     }
 
@@ -138,15 +128,10 @@ class Repository private constructor(
 
         mNetworkDataSource.scheduleFetchWeather()
 
+//            // java.lang.IllegalStateException: Cannot access database on the main thread since it may potentially lock the UI for a long period of time.
         mExecutors.diskIO().execute {
             if (isFetchNeeded)
-                startFetchWeatherService()
-            // will crash. Start intent from background service
-            //   java.lang.IllegalStateException: Not allowed to start service Intent ... app is in background uid
-            // or
-            // java.lang.IllegalStateException: Cannot access database on the main thread since it may potentially lock the UI for a long period of time.
-           //  at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3131)
-            Log.d(LOG_TAG, "isFetchNeeded forecast: $isFetchNeeded")
+                mNetworkDataSource.fetchWeather {}
         }
     }
 
@@ -156,17 +141,8 @@ class Repository private constructor(
         mInitializedCW = true
 
         mExecutors.diskIO().execute {
-            Log.d(LOG_TAG, "execute initDataCurrentWeather")
-            if (isFetchNeededCW) {
-                mNetworkDataSource.startFetchCurrentWeatherService()
-            }
-        }
-    }
-
-    @Synchronized
-    fun forceFetchWeather(citiesIndex: Int) {
-        mExecutors.diskIO().execute {
-            mNetworkDataSource.startFetchWeatherServiceTest(citiesIndex)
+            if (isFetchNeededCW)
+                mNetworkDataSource.fetchCurrentWeather()
         }
     }
 
@@ -175,10 +151,6 @@ class Repository private constructor(
         val oldTime = currentTimeMillis() - HOUR_IN_MILLIS
         val date = Date(oldTime)
         mWeatherDao.deleteOldWeather(date)
-    }
-
-    private fun startFetchWeatherService() {
-        mNetworkDataSource.startFetchWeatherService()
     }
 
     fun getCurrentWeather(timestamp: Long): LiveData<List<WeatherEntry>>? {

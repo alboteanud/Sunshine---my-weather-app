@@ -45,45 +45,26 @@ internal object NetworkUtils {
 
     /* The format we want our API to return */
     private const val format = "json"
+
     /* The units we want our API to return */
     private const val units = "metric"
 
     /* The format parameter allows us to designate whether we want JSON or XML from our API */
     private const val FORMAT_PARAM = "mode"
+
     /* The units parameter allows us to designate whether we want metric units or imperial units */
     private const val UNITS_PARAM = "units"
 
-    fun getUrl(mContext: Context): URL {
-        val owmApiKey = mContext.getString(R.string.owm_api_key)
-        val owmCityId = mContext.getString(R.string.owm_city_id)
-        return buildUrlWithLocationId(owmCityId, owmApiKey)
-    }
-
     fun getUrl2(mContext: Context, cityId: Int, language: String): URL? {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
-        return buildUrlWithLocationId2(cityId.toString(), owmApiKey, language )
+        return buildUrlWithLocationId2(cityId.toString(), owmApiKey, language)
     }
 
-    fun getUrlCurrentWeather(mContext: Context): URL? {
-        val owmApiKey = mContext.getString(R.string.owm_api_key)
-        val owmCityId = mContext.getString(R.string.owm_city_id)
-        return buildUrlWeatherNowWithLocationId(owmCityId, owmApiKey)
-    }
-
-    private fun buildUrlWithLocationId(locationID: String, owmApiKey: String): URL {
-        val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
-            .appendQueryParameter(ID_PARAM, locationID)
-            .appendQueryParameter(FORMAT_PARAM, format)
-            .appendQueryParameter(UNITS_PARAM, units)
-            .appendQueryParameter(APPID_PARAM, owmApiKey)
-            .build()
-        val weatherQueryUrl = URL(weatherQueryUri.toString())
-        Log.v(TAG, "URL forecasts 5 days = $weatherQueryUrl")
-        return weatherQueryUrl
-
-    }
-
-    private fun buildUrlWithLocationId2(locationID: String, owmApiKey: String, language: String): URL? {
+    private fun buildUrlWithLocationId2(
+        locationID: String,
+        owmApiKey: String,
+        language: String
+    ): URL? {
         val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_URL).buildUpon()
             .appendQueryParameter(ID_PARAM, locationID)
             .appendQueryParameter(FORMAT_PARAM, format)
@@ -106,22 +87,14 @@ internal object NetworkUtils {
     private fun buildUrlWeatherNowWithLocationId(
         locationID: String,
         owmApiKey: String
-    ): URL? {
+    ): String {
         val weatherQueryUri = Uri.parse(BASE_OWM_WEATHER_NOW_URL).buildUpon()
             .appendQueryParameter(ID_PARAM, locationID)
             .appendQueryParameter(FORMAT_PARAM, format)
             .appendQueryParameter(UNITS_PARAM, units)
             .appendQueryParameter(APPID_PARAM, owmApiKey)
             .build()
-
-        return try {
-            val weatherQueryUrl = URL(weatherQueryUri.toString())
-            Log.v(TAG, "URL current weather: $weatherQueryUrl")
-            weatherQueryUrl
-        } catch (e: MalformedURLException) {
-            e.printStackTrace()
-            null
-        }
+        return weatherQueryUri.toString()
 
     }
 
@@ -172,7 +145,18 @@ internal object NetworkUtils {
         return buildUrlStringWithLocationId(owmCityId, owmApiKey)
     }
 
-    fun getResponseFromHttpUrl2(context: Context, urlString: String, callback: (response: String?) -> Unit) {
+
+    fun getUrlCurrentWeather(mContext: Context): String {
+        val owmApiKey = mContext.getString(R.string.owm_api_key)
+        val owmCityId = mContext.getString(R.string.owm_city_id)
+        return buildUrlWeatherNowWithLocationId(owmCityId, owmApiKey)
+    }
+
+    fun getResponseFromHttpUrl(
+        context: Context,
+        urlString: String,
+        callback: (response: String?) -> Unit
+    ) {
 
 // Instantiate the RequestQueue.
         val queue = Volley.newRequestQueue(context)
@@ -182,7 +166,7 @@ internal object NetworkUtils {
             Request.Method.GET, urlString,
             Response.Listener<String> { response ->
                 // Display the first 500 characters of the response string.
-                Log.d("tag", "Response is: ${response.substring(0, 500)}")
+//                Log.d("tag", "Response is: ${response.substring(0, 500)}")
                 callback.invoke(response)
             },
             Response.ErrorListener {

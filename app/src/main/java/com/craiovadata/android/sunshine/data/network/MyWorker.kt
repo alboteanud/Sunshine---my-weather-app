@@ -3,8 +3,8 @@ package com.craiovadata.android.sunshine.data.network
 import android.content.Context
 import androidx.work.Worker
 import androidx.work.WorkerParameters
-import com.craiovadata.android.sunshine.data.network.NetworkDataSource.Companion.addTestText
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils.addTestText
 import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 

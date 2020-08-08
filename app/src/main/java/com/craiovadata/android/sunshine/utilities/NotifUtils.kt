@@ -13,10 +13,10 @@ import androidx.core.app.NotificationCompat.PRIORITY_MIN
 import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.CityData.getBackResId
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.network.NetworkDataSource.Companion.addTestText
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isBackground
+import com.craiovadata.android.sunshine.utilities.LogUtils.addTestText
 import java.util.*
 
 object NotifUtils {
