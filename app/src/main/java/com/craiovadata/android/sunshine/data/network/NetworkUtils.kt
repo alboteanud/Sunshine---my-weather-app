@@ -154,7 +154,11 @@ internal object NetworkUtils {
     }
 
 
-
+    fun getUrlString(mContext: Context): String {
+        val owmApiKey = mContext.getString(R.string.owm_api_key)
+        val owmCityId = mContext.getString(R.string.owm_city_id)
+        return buildUrlStringWithLocationId(owmCityId, owmApiKey)
+    }
 
     fun getResponseFromHttpUrl2(context: Context, urlString: String, callback: (response: String?) -> Unit) {
 
