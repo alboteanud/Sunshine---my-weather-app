@@ -4,18 +4,19 @@ import android.app.*
 import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
+import android.graphics.Color
 import android.os.Build
-import android.text.format.DateUtils.DAY_IN_MILLIS
-import android.text.format.DateUtils.HOUR_IN_MILLIS
+import android.text.format.DateUtils.*
+import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationCompat.PRIORITY_MIN
 import androidx.preference.PreferenceManager
 import com.craiovadata.android.sunshine.CityData.getBackResId
-import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.data.network.NetworkDataSource.Companion.addTestText
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
-import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isForeground
+import com.craiovadata.android.sunshine.utilities.ForegroundListener.Companion.isBackground
+import com.craiovadata.android.sunshine.utilities.LogUtils.addTestText
 import java.util.*
 
 object NotifUtils {
@@ -68,6 +69,52 @@ object NotifUtils {
         saveTimeAsLastNotification(context)
     }
 
+    fun getUpdatingNotification(context: Context): Notification{
+        val chanelId = context.getString(R.string.norif_channel_id)
+        val notificationManager =
+            context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            val channel = NotificationChannel(
+                chanelId,
+                context.getString(R.string.notif_channel_name),
+                NotificationManager.IMPORTANCE_DEFAULT
+            )
+            notificationManager.createNotificationChannel(channel)
+        }
+
+        val channelId =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                createNotificationChannel(context, "my_service", "My Background Service")
+            } else {
+                // If earlier version channel ID is not used
+                ""
+            }
+
+        val notificationBuilder = NotificationCompat.Builder(context, channelId )
+        val notification = notificationBuilder.setOngoing(true)
+            .setSmallIcon(R.mipmap.ic_launcher)
+            .setPriority(PRIORITY_MIN)
+            .setContentTitle("updating weather data")
+            .setAutoCancel(true)
+            .setTimeoutAfter(1 * MINUTE_IN_MILLIS)
+            .setCategory(Notification.CATEGORY_SERVICE)
+            .setSmallIcon(R.drawable.art_clear)
+            .build()
+
+        return notification
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
+    private fun createNotificationChannel(context: Context, channelId: String, channelName: String): String{
+        val chan = NotificationChannel(channelId,
+            channelName, NotificationManager.IMPORTANCE_NONE)
+        chan.lightColor = Color.BLUE
+        chan.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
+        val service = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+        service.createNotificationChannel(chan)
+        return channelId
+    }
+
     private fun buildNotif(context: Context, entry: WeatherEntry): Notification {
         val backgrResourceId = getBackResId(context)
         val largeIcon = BitmapFactory.decodeResource(context.resources, backgrResourceId)
@@ -117,7 +164,7 @@ object NotifUtils {
         val shouldNotify =
                 areNotificationsEnabled(context)
                 && oneDayPassedSinceLastNotification
-                && !isForeground()
+                && isBackground()
                 && isRightInterval
 
         if (shouldNotify) {

@@ -75,7 +75,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
         override fun onScrollStateChanged(state: Int) {
             super.onScrollStateChanged(state)
-            Log.d(TAG, "onScrollStateChanged()  state: $state")
+//            Log.d(TAG, "onScrollStateChanged()  state: $state")
             didScroll = true
         }
 

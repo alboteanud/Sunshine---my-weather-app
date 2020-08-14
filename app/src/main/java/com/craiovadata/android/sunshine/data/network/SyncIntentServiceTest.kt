@@ -19,22 +19,15 @@ import android.app.IntentService
 import android.content.Intent
 import android.util.Log
 import com.craiovadata.android.sunshine.BuildConfig
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 
-/**
- * An [IntentService] subclass for immediately scheduling a sync with the server off of the
- * main thread. This is necessary because [com.firebase.jobdispatcher.FirebaseJobDispatcher]
- * will not trigger a job immediately. This should only be called when the application is on the
- * screen.
- */
 class SyncIntentServiceTest : IntentService("SyncIntentService") {
     override fun onHandleIntent(intent: Intent?) {
         Log.d(LOG_TAG, "Intent service started")
+        if (!inTestMode) return
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
-
-        if (BuildConfig.DEBUG) {
-
 
             val citiesIndex = intent?.getIntExtra("citiesIndex", 0) ?: 0
 
@@ -47,8 +40,6 @@ class SyncIntentServiceTest : IntentService("SyncIntentService") {
                 )
                 Log.e("description", "index " + citiesIndex + " to " + cityIndexEnd)
             }
-
-        }
     }
 
     companion object {

@@ -10,15 +10,21 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "America/Phoenix"
+    const val TIME_ZONE_ID = "America/Chicago"
 
     private val images = intArrayOf(
         R.drawable.city,
+        R.drawable.city1,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,
         R.drawable.stabil4,
-        R.drawable.stabil5
+        R.drawable.stabil5,
+        R.drawable.stabil6,
+        R.drawable.stabil7,
+        R.drawable.stabil8,
+        R.drawable.stabil9,
+        R.drawable.stabil10
     )
 
     const val IS_IMPERIAL_UNITS_DEFAULT = true
@@ -64,10 +70,10 @@ object CityData {
 
             val storedResNo = preferences.getInt("prefKeyI", 0)
 
-            if (storedResNo == 2) {  // checking bound
+            if (storedResNo == images.size) {  // checking bound
                 preferences.edit().putInt("prefKeyI", 0).apply()
-                val imgNumber = 2 + Random().nextInt(images.size - 2)
-                imgNumber
+                val imgRandomNumber = 2 + Random().nextInt(images.size - 2)
+                imgRandomNumber
             } else {
                 preferences.edit().putInt("prefKeyI", storedResNo + 1).apply()
                 storedResNo

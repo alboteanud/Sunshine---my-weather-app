@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
+import androidx.preference.PreferenceManager
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -16,6 +17,7 @@ import com.craiovadata.android.sunshine.ui.main.MainActivity
 import kotlinx.android.synthetic.main.content_main.view.*
 import org.json.JSONException
 import org.json.JSONObject
+import java.text.SimpleDateFormat
 import java.util.*
 
 object LogUtils {
@@ -105,6 +107,15 @@ object LogUtils {
             return context.getString(R.string.admob_banner_id)  // Petru
         return "ca-app-pub-3931793949981809/6280930567"  // ad
 
+    }
+
+    fun addTestText(context: Context, text: String) {
+        if (!CityData.inTestMode) return
+        val pref = PreferenceManager.getDefaultSharedPreferences(context)
+        var savedTxt = pref.getString(MainActivity.PREF_SYNC_KEY, "")
+        val format = SimpleDateFormat("HH.mm")
+        savedTxt += " $text" + "_" + format.format(System.currentTimeMillis())
+        pref.edit().putString(MainActivity.PREF_SYNC_KEY, savedTxt).apply()
     }
 
 

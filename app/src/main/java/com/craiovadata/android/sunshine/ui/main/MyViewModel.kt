@@ -13,13 +13,6 @@ class MyViewModel internal constructor(private val repository: Repository) : Vie
     //    val nextHoursWeather: LiveData<List<ListWeatherEntry>> = repository.nextHoursWeather
     val midDayWeather: LiveData<List<ListWeatherEntry>> = repository.dayWeatherEntries
 
-    // pt teste
-    fun forceSyncWeather(citiesIndex: Int) {
-//        repository.forceFetchCurrentWeather()
-        repository.forceFetchWeather(citiesIndex)
-
-    }
-
     // are rol la afisare
     @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
     internal fun onStartEvent() {

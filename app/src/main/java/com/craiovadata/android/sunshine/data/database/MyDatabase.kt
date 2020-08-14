@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 
-@Database(entities = [WeatherEntry::class], version = 1, exportSchema = false)
+@Database(entities = [WeatherEntry::class], version = 4, exportSchema = false)
 @TypeConverters(
     DateConverter::class
 )
@@ -24,7 +24,7 @@ abstract class MyDatabase : RoomDatabase() {
         private var sInstance: MyDatabase? = null
 
         @JvmStatic
-        fun getInstance(context: Context): MyDatabase? {
+        fun getInstance(context: Context): MyDatabase {
             Log.d(LOG_TAG, "Getting the database")
             if (sInstance == null) {
                 synchronized(LOCK) {
@@ -32,11 +32,13 @@ abstract class MyDatabase : RoomDatabase() {
                         context.applicationContext,
                         MyDatabase::class.java,
                         DATABASE_NAME
-                    ).build()
+                    )
+                        .fallbackToDestructiveMigration()
+                        .build()
                     Log.d(LOG_TAG, "Made new database")
                 }
             }
-            return sInstance
+            return sInstance!!
         }
     }
 }
