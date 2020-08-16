@@ -20,6 +20,7 @@ import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils.log
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
 
@@ -64,11 +65,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         override fun onItemsAdded(recyclerView: RecyclerView, positionStart: Int, itemCount: Int) {
             super.onItemsAdded(recyclerView, positionStart, itemCount)
             val position = findLastCompletelyVisibleItemPosition()
-            Log.d(
-                TAG,
-                "onItemsAdded()  positionStart: " + positionStart + " itemCount: " + itemCount +
-                        "  LastCompletelyVisibleItemPosition: " + position
-            )
+            log("onItemsAdded()  positionStart: " + positionStart + " itemCount: " + itemCount +
+                        "  LastCompletelyVisibleItemPosition: " + position)
             if (!didScroll)
                 scrollToPosition(0)
         }
@@ -140,9 +138,6 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
-                if (inTestMode) {
-                    throw RuntimeException("Test Crash") // Force a crash
-                } else
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
@@ -188,9 +183,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
 
     companion object {
-        const val TAG = "MainActivity"
         const val PREF_SYNC_KEY = "sync_key"
-       const val languageParamMultipleCitiesTest = "es"
+//       const val languageParamMultipleCitiesTest = "es"
     }
 
     override fun onCelsiusFarClicked(view: View) {

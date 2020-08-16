@@ -17,12 +17,11 @@ object InjectorUtils {
         val executors = AppExecutors.instance
         val networkDataSource =
             NetworkDataSource.getInstance(context.applicationContext, executors)
-        val repository = Repository.getInstance(
-            myDatabase!!.weatherDao()!!,
+        //        NetworkDataSource.addTestText(context, "prRep")
+        return Repository.getInstance(
+            myDatabase.weatherDao()!!,
             networkDataSource,
             executors)
-//        NetworkDataSource.addTestText(context, "prRep")
-        return repository
 
     }
 

@@ -228,6 +228,35 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:221162661110:android:9bc57f3ac47cdc9a9878d7",
+        "android_client_info": {
+          "package_name": "com.craiovadata.android.sunshine.US.MI.Detroit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:221162661110:android:7b21f7da5ea439cb9878d7",
         "android_client_info": {
           "package_name": "com.craiovadata.android.sunshine.US.NY.NewYork"

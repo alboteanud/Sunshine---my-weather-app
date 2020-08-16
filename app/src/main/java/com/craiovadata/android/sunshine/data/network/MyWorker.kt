@@ -20,9 +20,7 @@ class MyWorker(context: Context, params: WorkerParameters) : Worker(context, par
             val networkDataSource = InjectorUtils.provideNetworkDataSource(applicationContext)
 //            networkDataSource.fetchWeather()
             networkDataSource.fetchWeather {success ->
-                if (success){
-
-                } else {
+                if (!success){
                     addTestText(applicationContext, "wkRetry")
                     Result.retry()
                 }

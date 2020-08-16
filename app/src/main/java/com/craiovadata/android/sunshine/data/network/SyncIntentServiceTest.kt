@@ -21,6 +21,7 @@ import android.util.Log
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils.log
 
 class SyncIntentServiceTest : IntentService("SyncIntentService") {
     override fun onHandleIntent(intent: Intent?) {
@@ -38,7 +39,7 @@ class SyncIntentServiceTest : IntentService("SyncIntentService") {
                     this.applicationContext,
                     ids.subList(citiesIndex, cityIndexEnd)
                 )
-                Log.e("description", "index " + citiesIndex + " to " + cityIndexEnd)
+                log("index $citiesIndex to $cityIndexEnd")
             }
     }
 

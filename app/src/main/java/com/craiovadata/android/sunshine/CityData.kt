@@ -9,12 +9,13 @@ import java.util.Calendar.ZONE_OFFSET
 import java.util.TimeZone.getTimeZone
 
 object CityData {
-
-    const val TIME_ZONE_ID = "America/Chicago"
+//  https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=42.39,-83.12,30?key=D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb&show=webcams:location,image
+    const val TIME_ZONE_ID = "America/Detroit"
 
     private val images = intArrayOf(
-        R.drawable.city,
         R.drawable.city1,
+        R.drawable.city2,
+        R.drawable.city3,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,

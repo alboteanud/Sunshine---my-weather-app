@@ -11,6 +11,7 @@ import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.utilities.LogUtils.log
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -40,7 +41,7 @@ class Repository private constructor(
                     deleteOldData()
                     // Insert our new weather data into Sunshine's database
                     mWeatherDao.bulkInsert(*newForecastsFromNetwork)
-                    Log.d(LOG_TAG, "Old weather deleted. New values inserted.")
+                    log( "Old weather deleted. New values inserted.")
                 }
             }
 
@@ -111,7 +112,7 @@ class Repository private constructor(
             val dateRecently = Date(currentTimeMillis() - DateUtils.MINUTE_IN_MILLIS * delay)
             val count = mWeatherDao.countCurrentWeather(dateRecently)
             val isFetchNeededCW = count < 1
-            Log.d(LOG_TAG, "isFetchNeededCW: $isFetchNeededCW")
+            log( "isFetchNeededCW: $isFetchNeededCW")
             return isFetchNeededCW
         }
 
@@ -182,7 +183,7 @@ class Repository private constructor(
             weatherDao: WeatherDao, networkDataSource: NetworkDataSource,
             executors: AppExecutors
         ): Repository {
-            Log.d(LOG_TAG, "Getting the repository")
+            log("Getting the repository")
             if (sInstance == null) {
                 synchronized(LOCK) {
                     sInstance =
@@ -190,7 +191,7 @@ class Repository private constructor(
                             weatherDao, networkDataSource,
                             executors
                         )
-                    Log.d(LOG_TAG, "Made new repository")
+                    log("Made new repository")
                 }
             }
             return sInstance!!

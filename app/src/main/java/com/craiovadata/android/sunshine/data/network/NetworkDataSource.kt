@@ -11,6 +11,7 @@ import com.craiovadata.android.sunshine.ui.main.MainActivity
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.utilities.LogUtils.addTestText
+import com.craiovadata.android.sunshine.utilities.LogUtils.log
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import java.util.concurrent.TimeUnit
 
@@ -65,7 +66,7 @@ class NetworkDataSource private constructor(
             // Parse the JSON into a list of weather forecasts
             val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
-            Log.d(LOG_TAG, "weather JSON has ${response.weatherForecast.size} values")
+            log("weather JSON has ${response.weatherForecast.size} values")
             addTestText(context, "${response.weatherForecast.size}sy")
 
             // As long as there are weather forecasts, update the LiveData storing the most recent
@@ -94,8 +95,7 @@ class NetworkDataSource private constructor(
                     val weatherRequestUrl =
                         NetworkUtils.getUrl2(
                             context,
-                            id,
-                            MainActivity.languageParamMultipleCitiesTest
+                            id,"es"
                         ) ?: return@execute
 
                     // Use the URL to retrieve the JSON
@@ -103,7 +103,7 @@ class NetworkDataSource private constructor(
 
                     // Parse the JSON into a list of weather forecasts
                     val response = WeatherJsonParser().parseForecastWeather2(jsonWeatherResponse)
-                    Log.d(LOG_TAG, "parsing finished. Size: ${response.weatherForecast.size} ")
+                    log("parsing finished. Size: ${response.weatherForecast.size} ")
                     response.weatherForecast.forEach { entry ->
 
                         if (!descriptions.containsKey(entry.id)) {
@@ -118,9 +118,7 @@ class NetworkDataSource private constructor(
                                 ) == entry.description
 
                                 if (!isTranslated)
-                                    Log.e(
-                                        "NEW description",
-                                        entry.id.toString() + "  " + entry.description
+                                    log(entry.id.toString() + "  " + entry.description
                                     )
                             }
                         }
@@ -137,9 +135,7 @@ class NetworkDataSource private constructor(
         val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context)
         NetworkUtils.getResponseFromHttpUrl(context, weatherRequestUrl) { jsonWeatherResponse ->
             val response = WeatherJsonParser().parseCurrentWeather(jsonWeatherResponse)
-            Log.e(
-                LOG_TAG,
-                "JSON Parsing finished Current Weather: ${response.weatherForecast[0].degrees}"
+            log("JSON Parsing finished Current Weather. Size: ${response.weatherForecast.size}"
             )
 
             // As long as there are weather forecasts, update the LiveData storing the most recent
@@ -166,11 +162,11 @@ class NetworkDataSource private constructor(
 
         // Get the singleton for this class
         fun getInstance(context: Context, executors: AppExecutors): NetworkDataSource {
-            Log.d(LOG_TAG, "Getting the network data source")
+            log("Getting the network data source")
             if (sInstance == null) {
                 synchronized(LOCK) {
                     sInstance = NetworkDataSource(context.applicationContext, executors)
-                    Log.d(LOG_TAG, "Made new network data source")
+                    log("Made new network data source")
                 }
             }
             return sInstance!!

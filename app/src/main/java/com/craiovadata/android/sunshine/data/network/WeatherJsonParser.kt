@@ -101,7 +101,7 @@ internal class WeatherJsonParser {
             val weatherEntries = mutableListOf<WeatherEntry>()
 //                arrayOfNulls<WeatherEntry>(jsonWeatherArray.length())
             /*
-         * OWM returns daily forecasts based upon the local time of the city that is being asked
+         * OWM returns daily forecasts based upon the local time of the city1 that is being asked
          * for, which means that we need to know the GMT offset to translate this data properly.
          * Since this data is also sent in-order and the first day is always the current day, we're
          * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
@@ -152,13 +152,13 @@ internal class WeatherJsonParser {
             val weatherEntries = mutableListOf<WeatherEntry>()
 //                arrayOfNulls<WeatherEntry>(jsonWeatherArray.length())
             /*
-         * OWM returns daily forecasts based upon the local time of the city that is being asked
+         * OWM returns daily forecasts based upon the local time of the city1 that is being asked
          * for, which means that we need to know the GMT offset to translate this data properly.
          * Since this data is also sent in-order and the first day is always the current day, we're
          * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
          */
 //        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
-            val coordObj = forecastJson.getJSONObject("city").getJSONObject("coord")
+            val coordObj = forecastJson.getJSONObject("city1").getJSONObject("coord")
             val lat = coordObj.getDouble("lat").toFloat()
             val lon = coordObj.getDouble("lon").toFloat()
             for (i in 0 until jsonWeatherArray.length()) { // Get the JSON object representing the day

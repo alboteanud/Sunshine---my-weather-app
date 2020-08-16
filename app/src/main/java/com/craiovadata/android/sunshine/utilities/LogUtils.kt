@@ -11,6 +11,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
@@ -30,8 +31,7 @@ object LogUtils {
         entries.forEachIndexed { i, entry ->
             val date = simpleDateFormat.format(entry.date.time)
             val temperature = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
-            Log.d(
-                MainActivity.TAG, "entry[$i] $date  $temperature isCW-${entry.isCurrentWeather} " +
+            log("entry[$i] $date  $temperature isCW-${entry.isCurrentWeather} " +
                         "id-${entry.id} "
             )
         }
@@ -60,12 +60,12 @@ object LogUtils {
                 var warningText: String? = null
                 try {
                     val jsonObject = JSONObject(response)
-                    Log.d(MainActivity.TAG, "timezoneAPI: $jsonObject")
+                    log("timezoneAPI: $jsonObject")
                     val responseStatus = jsonObject.getString("status")
                     if (responseStatus == "OK") {
                         val timeZoneId = jsonObject.getString("timeZoneId")
                         if (timeZoneId == CityData.TIME_ZONE_ID) {
-                            Log.e(MainActivity.TAG, "verification successful - timezone is OK")
+                            log("verification successful - timezone is OK")
                         } else {
                             warningText =
                                 "error timezoneId should be: $timeZoneId"
@@ -110,12 +110,17 @@ object LogUtils {
     }
 
     fun addTestText(context: Context, text: String) {
-        if (!CityData.inTestMode) return
+        if (!inTestMode) return
         val pref = PreferenceManager.getDefaultSharedPreferences(context)
         var savedTxt = pref.getString(MainActivity.PREF_SYNC_KEY, "")
         val format = SimpleDateFormat("HH.mm")
         savedTxt += " $text" + "_" + format.format(System.currentTimeMillis())
         pref.edit().putString(MainActivity.PREF_SYNC_KEY, savedTxt).apply()
+    }
+
+    fun log(msg: String) {
+        if (!inTestMode) return
+        Log.d("log Dan", msg)
     }
 
 

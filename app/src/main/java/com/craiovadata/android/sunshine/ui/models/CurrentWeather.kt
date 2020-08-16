@@ -50,7 +50,7 @@ data class CurrentWeather(val weatherEntry: WeatherEntry?) :
              */
 //            if (BuildConfig.DEBUG) {
 //            if (entry.cityName == "")
-//                cardView.weatherDate.text = "city not found"
+//                cardView.weatherDate.text = "city1 not found"
 //            else {
 //                val simpleDateFormat = CityData.getFormatterCityTZ("dd MMM HH:mm")
 //                val myText = entry.cityName + "\n" + simpleDateFormat.format(entry.date.time)

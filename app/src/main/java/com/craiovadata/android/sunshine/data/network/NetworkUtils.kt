@@ -24,6 +24,7 @@ import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 
 import com.craiovadata.android.sunshine.R
+import com.craiovadata.android.sunshine.utilities.LogUtils.log
 
 import java.io.IOException
 import java.net.HttpURLConnection
@@ -75,7 +76,7 @@ internal object NetworkUtils {
 
         return try {
             val weatherQueryUrl = URL(weatherQueryUri.toString())
-            Log.v(TAG, "URL forecasts 5 days = $weatherQueryUrl")
+            log("URL forecasts 5 days = $weatherQueryUrl")
             weatherQueryUrl
         } catch (e: MalformedURLException) {
             e.printStackTrace()
@@ -134,7 +135,7 @@ internal object NetworkUtils {
             .appendQueryParameter(APPID_PARAM, owmApiKey)
             .build()
         val urlString = weatherQueryUri.toString()
-        Log.v(TAG, "URL forecasts 5 days = $urlString")
+        log("URL forecasts 5 days = $urlString")
         return urlString
 
     }
@@ -170,7 +171,7 @@ internal object NetworkUtils {
                 callback.invoke(response)
             },
             Response.ErrorListener {
-                Log.e("tag", "That didn't work!")
+                log( "That didn't work!")
                 callback.invoke(null)
             })
 

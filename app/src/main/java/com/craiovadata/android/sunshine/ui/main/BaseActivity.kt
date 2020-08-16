@@ -103,7 +103,7 @@ open class BaseActivity : AppCompatActivity() {
         if (currentWeatherEntry.isCurrentWeather == 0) return  // only currentWeatherEntry contains cityName
 
         if (currentWeatherEntry.cityName != getString(R.string.app_name)) {  // ok
-            //  !!! problem - wrong city name
+            //  !!! problem - wrong city1 name
             layoutAttention.visibility = View.VISIBLE
             val textToShow =
                 "orasul de la OWM se numeste: ${currentWeatherEntry.cityName} !"

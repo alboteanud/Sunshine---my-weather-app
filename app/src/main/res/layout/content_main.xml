@@ -18,7 +18,7 @@
         android:layout_height="0dp"
         android:contentDescription="@string/app_name"
         android:scaleType="centerCrop"
-        android:src="@drawable/city"
+        android:src="@drawable/city1"
         app:layout_constraintBottom_toTopOf="@id/bannerAdView"
         app:layout_constraintTop_toTopOf="parent" />
 

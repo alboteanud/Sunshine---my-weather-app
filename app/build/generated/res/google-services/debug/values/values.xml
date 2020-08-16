@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">221162661110-2jcamfk15eltk0fe2u20pknbcbveb1gk.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://adoct2016.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">221162661110</string>
+    <string name="google_api_key" translatable="false">AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0</string>
+    <string name="google_app_id" translatable="false">1:221162661110:android:9bc57f3ac47cdc9a9878d7</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCP_VMwT4THDk6l5wlv2yv9TTfagjLCcj0</string>
+    <string name="google_storage_bucket" translatable="false">adoct2016.appspot.com</string>
+    <string name="project_id" translatable="false">adoct2016</string>
+</resources>
