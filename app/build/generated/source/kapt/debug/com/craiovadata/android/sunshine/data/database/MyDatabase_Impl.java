@@ -28,18 +28,21 @@ public final class MyDatabase_Impl extends MyDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(4) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weatherId` INTEGER NOT NULL, `date` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL, `cityName` TEXT NOT NULL, `description` TEXT NOT NULL, `sunrise` INTEGER NOT NULL, `sunset` INTEGER NOT NULL, `dt` INTEGER NOT NULL)");
         _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_weather_date` ON `weather` (`date`)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `webcams` (`id` TEXT NOT NULL, `statusActive` INTEGER NOT NULL, `title` TEXT NOT NULL, `inserted` INTEGER NOT NULL, `update` INTEGER NOT NULL, `previewUrl` TEXT NOT NULL, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_webcams_id` ON `webcams` (`id`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3c49e2064b57e8f3222a25dec7a33278')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1d0dc8a3a2d93420808d30f3e341bf19')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `weather`");
+        _db.execSQL("DROP TABLE IF EXISTS `webcams`");
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onDestructiveMigration(_db);
@@ -106,9 +109,26 @@ public final class MyDatabase_Impl extends MyDatabase {
                   + " Expected:\n" + _infoWeather + "\n"
                   + " Found:\n" + _existingWeather);
         }
+        final HashMap<String, TableInfo.Column> _columnsWebcams = new HashMap<String, TableInfo.Column>(6);
+        _columnsWebcams.put("id", new TableInfo.Column("id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWebcams.put("statusActive", new TableInfo.Column("statusActive", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWebcams.put("title", new TableInfo.Column("title", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWebcams.put("inserted", new TableInfo.Column("inserted", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWebcams.put("update", new TableInfo.Column("update", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWebcams.put("previewUrl", new TableInfo.Column("previewUrl", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysWebcams = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesWebcams = new HashSet<TableInfo.Index>(1);
+        _indicesWebcams.add(new TableInfo.Index("index_webcams_id", true, Arrays.asList("id")));
+        final TableInfo _infoWebcams = new TableInfo("webcams", _columnsWebcams, _foreignKeysWebcams, _indicesWebcams);
+        final TableInfo _existingWebcams = TableInfo.read(_db, "webcams");
+        if (! _infoWebcams.equals(_existingWebcams)) {
+          return new RoomOpenHelper.ValidationResult(false, "webcams(com.craiovadata.android.sunshine.ui.models.WebcamEntry).\n"
+                  + " Expected:\n" + _infoWebcams + "\n"
+                  + " Found:\n" + _existingWebcams);
+        }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "3c49e2064b57e8f3222a25dec7a33278", "caf5ff5ee5ca8fcfa5b138b3a436fac0");
+    }, "1d0dc8a3a2d93420808d30f3e341bf19", "1b3a33713fd2fd2ce9f33b834c84d18a");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -121,7 +141,7 @@ public final class MyDatabase_Impl extends MyDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "weather");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "weather","webcams");
   }
 
   @Override
@@ -131,6 +151,7 @@ public final class MyDatabase_Impl extends MyDatabase {
     try {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `weather`");
+      _db.execSQL("DELETE FROM `webcams`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();

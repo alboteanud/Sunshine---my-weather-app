@@ -18,8 +18,8 @@ package com.craiovadata.android.sunshine.data.network
 import android.app.IntentService
 import android.content.Intent
 import android.util.Log
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.utilities.CityIdsTest
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.log
 

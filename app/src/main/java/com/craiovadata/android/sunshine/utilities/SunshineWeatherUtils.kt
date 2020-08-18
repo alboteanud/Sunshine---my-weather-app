@@ -60,16 +60,6 @@ object SunshineWeatherUtils {
         return temperatureInCelsius * 1.8 + 32
     }
 
-    /**
-     * This method uses the wind direction in degrees to determine compass direction as a
-     * String. (eg NW) The method will return the wind String in the following form: "2 km/h SW"
-     *
-     * @param context       Android Context to access preferences and resources
-     * @param windSpeed_m_s Wind speed in kilometers / hour
-     * @param degrees       Degrees as measured on a compass, NOT temperature degrees!
-     * See https://www.mathsisfun.com/geometry/degrees.html
-     * @return Wind String in the following form: "2 km/h SW"
-     */
     const val NO_DEGREE_WIND = 1.0
     fun getFormattedWind(
         context: Context,

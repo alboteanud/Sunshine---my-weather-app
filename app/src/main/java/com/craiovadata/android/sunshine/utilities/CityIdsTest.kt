@@ -1,4 +1,4 @@
-
+package com.craiovadata.android.sunshine.utilities
 class CityIdsTest {
     companion object {
         val cityIds2 = listOf(

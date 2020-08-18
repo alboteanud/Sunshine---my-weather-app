@@ -9,14 +9,21 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 
 @Dao
 interface WeatherDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun bulkInsert(vararg weather: WeatherEntry)
 
+ @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun bulkInsertWebcams(vararg webcams: WebcamEntry)
+
     @Query("SELECT * FROM weather")
-    fun getAllEntries(): LiveData<List<WeatherEntry>>
+    fun getAllWeatherEntries(): LiveData<List<WeatherEntry>>
+
+ @Query("SELECT * FROM weather LIMIT 1")
+    fun getOneRandomWeatherEntry(): WeatherEntry?
 
     @Query("SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= :date ORDER BY date ASC LIMIT 5")
     fun getCurrentForecast(date: Date): LiveData<List<ListWeatherEntry>>
@@ -30,6 +37,12 @@ interface WeatherDao {
     @Query("DELETE FROM weather WHERE date < :recently")
     fun deleteOldWeather(recently: Date)
 
+ @Query("DELETE FROM webcams WHERE inserted < :mDate")
+    fun deleteOldWebcams(mDate: Date)
+
+    @Query("SELECT COUNT(*) FROM webcams ")
+    fun countAllWebcamEntries(): Int
+
     @Query("SELECT * FROM weather WHERE date  >= :recentlyDate ORDER BY isCurrentWeather DESC, date ASC LIMIT :limit")
     fun getCurrentWeather(recentlyDate: Date, limit: Int): LiveData<List<WeatherEntry>>
 
@@ -39,4 +52,9 @@ interface WeatherDao {
     @Query("SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowMidnightNormalizedUtc AND (date + :offset) % (24 * :hourInMillis) BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
     fun getMidDayForecast(tomorrowMidnightNormalizedUtc: Date, offset: Long, hourInMillis: Long): LiveData<List<ListWeatherEntry>>
 
+    @Query("SELECT * FROM webcams ORDER BY inserted ASC LIMIT 1")
+    fun getLatestWebcam(): List<WebcamEntry>
+
+   @Query("SELECT * FROM webcams")
+   fun getAllWebcamEntries(): LiveData<List<WebcamEntry>>
 }

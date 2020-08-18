@@ -17,7 +17,6 @@ package com.craiovadata.android.sunshine.data.network
 
 import android.content.Context
 import android.net.Uri
-import android.util.Log
 import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
@@ -140,10 +139,20 @@ internal object NetworkUtils {
 
     }
 
-    fun getUrlString(mContext: Context): String {
+    fun getForecastUrlString(mContext: Context): String {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
         val owmCityId = mContext.getString(R.string.owm_city_id)
         return buildUrlStringWithLocationId(owmCityId, owmApiKey)
+    }
+
+ fun getWebcamListUrl(
+     mContext: Context,
+     latitude: Double,
+     longitude: Double
+ ): String {
+//     return "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=44.33,23.73,80?key=D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb&show=webcams:location,image"  // Craiova
+        val windyApiKey = mContext.getString(R.string.windy_api_key)
+     return "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=$latitude,$longitude,15?key=$windyApiKey&show=webcams:location,image"
     }
 
 

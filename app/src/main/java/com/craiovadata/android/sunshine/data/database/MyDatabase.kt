@@ -7,8 +7,9 @@ import androidx.room.Room.databaseBuilder
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 
-@Database(entities = [WeatherEntry::class], version = 4, exportSchema = false)
+@Database(entities = [WeatherEntry::class, WebcamEntry::class], version = 5, exportSchema = false)
 @TypeConverters(
     DateConverter::class
 )

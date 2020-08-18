@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.R
-import com.craiovadata.android.sunshine.ui.models.Base
+import com.craiovadata.android.sunshine.ui.adpterModels.Base
 
 class CardsAdapter(val context: Context,
                    var listUpdates: List<Base>,
@@ -22,6 +22,7 @@ class CardsAdapter(val context: Context,
         const val VIEW_TYPE_ADS = 4
         const val VIEW_TYPE_DAYS = 5
         const val VIEW_TYPE_NEWS = 6
+        const val VIEW_TYPE_WEBCAM = 7
     }
 
     override fun getItemViewType(position: Int): Int {
@@ -30,6 +31,7 @@ class CardsAdapter(val context: Context,
             Base.TYPE.DETAILS -> VIEW_TYPE_DETAILS
             Base.TYPE.GRAPH -> VIEW_TYPE_GRAPH
             Base.TYPE.MAP -> VIEW_TYPE_MAP
+            Base.TYPE.WEBCAM -> VIEW_TYPE_WEBCAM
             Base.TYPE.DAYS -> VIEW_TYPE_DAYS
             Base.TYPE.NEWS -> VIEW_TYPE_NEWS
             else -> VIEW_TYPE_ADS
@@ -50,6 +52,8 @@ class CardsAdapter(val context: Context,
 
             VIEW_TYPE_MAP -> CardsViewHolders.MapViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.map_card, viewGroup, false))
+ VIEW_TYPE_WEBCAM -> CardsViewHolders.WebcamViewHolder(
+                    LayoutInflater.from(viewGroup.context).inflate(R.layout.webcam_card, viewGroup, false))
 
             VIEW_TYPE_DAYS -> CardsViewHolders.MultyDayViewHolder(
                     LayoutInflater.from(viewGroup.context).inflate(R.layout.multi_day_card, viewGroup, false))

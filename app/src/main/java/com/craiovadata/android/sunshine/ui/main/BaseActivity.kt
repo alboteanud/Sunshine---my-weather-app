@@ -81,7 +81,7 @@ open class BaseActivity : AppCompatActivity() {
 
     fun logAndWarnCurrentWeather(entries: List<WeatherEntry>) {
         // logs and warnings
-        if (!BuildConfig.DEBUG) return
+        if (!inTestMode) return
 
         LogUtils.logEntries(this, entries)
 
@@ -96,7 +96,7 @@ open class BaseActivity : AppCompatActivity() {
     private fun warnIfCityNameWrong(
         currentWeatherEntry: WeatherEntry?
     ) {
-        if (!BuildConfig.DEBUG) return
+        if (!inTestMode) return
         if (currentWeatherEntry == null) return
 
         if (currentWeatherEntry.cityName.isEmpty()) return
@@ -145,18 +145,29 @@ open class BaseActivity : AppCompatActivity() {
         loading_indicator.visibility = View.VISIBLE
     }
 
-    fun goToPrivacyPolicy() {
-//        val myLink =
-//            Uri.parse(getString(R.string.link_privacy_policy))
-//        val intent = Intent(Intent.ACTION_VIEW, myLink)
-//        val activities: List<ResolveInfo> = packageManager.queryIntentActivities(
-//            intent,
-//            PackageManager.MATCH_DEFAULT_ONLY
-//        )
-//        val isIntentSafe: Boolean = activities.isNotEmpty()
-//        if (isIntentSafe)
-//            startActivity(intent)
-        startActivity(Intent(this, PrivacyPolicyActivity::class.java))
+    fun makeRequestsForMultipleCities(){
+        // make a request for multiple cities weather - pt traducere coduri de vreme
+//                    if (citiesIndexIncrement > 20)
+//                        handler.removeCallbacksAndMessages(null)
+//                    else{
+//                    private val timedTask: Runnable = object : Runnable {
+//                        override fun run() {
+//                            if (citiIndexStart + citiesIndexIncrement < CityIds.cityIds2.size - 21) {
+//                                myViewModel.forceSyncWeather(citiIndexStart + citiesIndexIncrement)
+//                                citiesIndexIncrement += 20
+//                                handler.postDelayed(this, 6 * 1000)
+//                            }
+//
+//                        }
+//                    }
+//                        handler.post(timedTask)
+//                        Toast.makeText(this, "getting data from multiple cities", Toast.LENGTH_LONG).show()
+//                    }
     }
+
+//    val citiIndexStart = 0
+//    var citiesIndexIncrement = 0
+//    val handler = Handler()
+//       const val languageParamMultipleCitiesTest = "es"
 
 }

@@ -140,6 +140,7 @@
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
     <string name="title_graph_temperature">Temperature</string>
     <string name="clock_symbol" translatable="false">◷</string>
+    <string name="windy_api_key" translatable="false" >D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb</string>
 
 
 </resources>

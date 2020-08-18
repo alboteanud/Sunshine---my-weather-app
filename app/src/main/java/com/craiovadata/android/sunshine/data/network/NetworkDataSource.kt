@@ -7,8 +7,10 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.work.*
 import com.craiovadata.android.sunshine.CityData.inTestMode
-import com.craiovadata.android.sunshine.ui.main.MainActivity
+import com.craiovadata.android.sunshine.data.network.WebcamsWorker.Companion.WEBCAMS_WORK_PARAM_LON
+import com.craiovadata.android.sunshine.data.network.WebcamsWorker.Companion.WEBCAMS_WORK_PARAM_LAT
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.utilities.LogUtils.addTestText
 import com.craiovadata.android.sunshine.utilities.LogUtils.log
@@ -29,12 +31,16 @@ class NetworkDataSource private constructor(
     private val mDownloadedWeatherForecasts: MutableLiveData<Array<WeatherEntry>> =
         MutableLiveData()
     private val mDownloadedCurrentWeather: MutableLiveData<Array<WeatherEntry>> = MutableLiveData()
+    private val mDownloadedWebcams: MutableLiveData<Array<WebcamEntry>> = MutableLiveData()
 
     val forecasts: LiveData<Array<WeatherEntry>>
         get() = mDownloadedWeatherForecasts
 
     val currentWeather: LiveData<Array<WeatherEntry>>
         get() = mDownloadedCurrentWeather
+
+    val webcams: LiveData<Array<WebcamEntry>>
+        get() = mDownloadedWebcams
 
     fun scheduleFetchWeather() {
 //        val input = workDataOf("some_key" to "some_val")
@@ -46,7 +52,7 @@ class NetworkDataSource private constructor(
 
         val repeatIntervalHours: Long = if (inTestMode) 2 else 6
 
-        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(MyWorker::class.java, repeatIntervalHours, TimeUnit.HOURS, 3, TimeUnit.HOURS)
+        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(WeatherWorker::class.java, repeatIntervalHours, TimeUnit.HOURS, 3, TimeUnit.HOURS)
 //                .setInputData(input)
             .setConstraints(constraints)
             .setInitialDelay(repeatIntervalHours, TimeUnit.HOURS)
@@ -54,14 +60,45 @@ class NetworkDataSource private constructor(
             .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 30, TimeUnit.MINUTES)
             .build()
         mWorkManager.enqueueUniquePeriodicWork(
-            WORK_NAME,
+            SYNC_WEATHER_WORK,
             ExistingPeriodicWorkPolicy.KEEP,
             request
         )
     }
 
-    fun fetchWeather(function: (success: Boolean) -> Unit) {
-        val weatherRequestUrl = NetworkUtils.getUrlString(context)
+    fun scheduleFetchWebcams(weatherEntry: WeatherEntry) {
+        val input = workDataOf(WEBCAMS_WORK_PARAM_LAT to weatherEntry.lat, WEBCAMS_WORK_PARAM_LON to weatherEntry.lon)
+        val constraints: Constraints = Constraints.Builder().apply {
+            setRequiredNetworkType(NetworkType.CONNECTED)
+            setRequiresBatteryNotLow(true)
+//            setRequiresDeviceIdle(true)     // not working with BackoffPolicy
+        }.build()
+
+        val repeatIntervalHours: Long = if (inTestMode) 2 else 7 * 24
+        val flexIntervalHours: Long = if (inTestMode) 1 else 24
+
+        val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(
+            WebcamsWorker::class.java,
+            repeatIntervalHours,
+            TimeUnit.HOURS,
+            flexIntervalHours,
+            TimeUnit.HOURS
+        )
+            .setInputData(input)
+            .setConstraints(constraints)
+            .setInitialDelay(repeatIntervalHours, TimeUnit.HOURS)
+//                .addTag(TAG_WORK_NAME)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 1, TimeUnit.HOURS)
+            .build()
+        mWorkManager.enqueueUniquePeriodicWork(
+            SYNC_WEBCAMS_WORK,
+            ExistingPeriodicWorkPolicy.KEEP,
+            request
+        )
+    }
+
+    fun fetchWeather(function: (success: WeatherEntry?) -> Unit) {
+        val weatherRequestUrl = NetworkUtils.getForecastUrlString(context)
         NetworkUtils.getResponseFromHttpUrl(context, weatherRequestUrl) { jsonWeatherResponse ->
             // Parse the JSON into a list of weather forecasts
             val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
@@ -73,12 +110,33 @@ class NetworkDataSource private constructor(
             // weather forecasts. This will trigger observers of that LiveData, such as the Repo
 
             if (response.weatherForecast.isNullOrEmpty()) {
-                function.invoke(false)
+                function.invoke(null)
                 addTestText(context, "syFailNullWe")
             } else {
                 val entries = response.weatherForecast
                 mDownloadedWeatherForecasts.postValue(entries)
                 NotifUtils.notifyIfNeeded(context, entries[0])
+                function.invoke(entries[0])
+            }
+
+        }
+    }
+
+    fun fetchWebcams(latitude: Double, longitude: Double, function: (success: Boolean) -> Unit) {
+        val weatherRequestUrl = NetworkUtils.getWebcamListUrl(context, latitude, longitude)
+        NetworkUtils.getResponseFromHttpUrl(context, weatherRequestUrl) { jsonResponse ->
+            val webcamList = WebcamJsonParser.parseWebcamsResponse(jsonResponse)
+
+            log("webcams JSON has ${webcamList.webcams.size} values")
+
+            if (webcamList.webcams.isNullOrEmpty()) {
+                function.invoke(false)
+                addTestText(context, "syFailNullWebcams")
+            } else {
+                addTestText(context, "syWebcamsOK")
+                val entries = webcamList.webcams
+                mDownloadedWebcams.postValue(entries)
+//                NotifUtils.notifyIfNeeded(context, entries[0])
                 function.invoke(true)
             }
 
@@ -154,7 +212,9 @@ class NetworkDataSource private constructor(
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
         val NUM_MIN_DATA_COUNTS = if (inTestMode) 10 else 39
 
-        const val WORK_NAME = "my-work-name-v3"
+        const val SYNC_WEATHER_WORK = "my-work-sync-weather-v3"
+        const val SYNC_WEBCAMS_WORK = "my-work-sync-webcams-v3"
+
 
         // For Singleton instantiation
         private val LOCK = Any()

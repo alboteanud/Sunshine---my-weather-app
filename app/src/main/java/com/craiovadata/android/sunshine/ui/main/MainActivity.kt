@@ -3,7 +3,6 @@ package com.craiovadata.android.sunshine.ui.main
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -14,22 +13,22 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
+import com.craiovadata.android.sunshine.ui.adpterModels.*
 import com.craiovadata.android.sunshine.ui.models.*
-import com.craiovadata.android.sunshine.ui.models.Map
+import com.craiovadata.android.sunshine.ui.adpterModels.Map
 import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
-import com.craiovadata.android.sunshine.utilities.LogUtils.log
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
-
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     private var currentWeatherEntry: WeatherEntry? = null
     private var graphWeatherEntries: List<ListWeatherEntry>? = null
     private var multiDayEntries: List<ListWeatherEntry>? = null
+    private var webcamEntries: List<WebcamEntry>? = null
     //    private var listPosition = RecyclerView.NO_POSITION
     private lateinit var mAdapter: CardsAdapter
     private lateinit var myViewModel: MyViewModel
@@ -38,7 +37,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         super.onCreate(savedInstanceState)
 
         recyclerView.apply {
-            setHasFixedSize(true)
+//            setHasFixedSize(true)
             layoutManager = MyLinearLayoutManager(this@MainActivity)
 
             mAdapter = CardsAdapter(this@MainActivity, listOf(), this@MainActivity)
@@ -49,142 +48,136 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
         myViewModel = ViewModelProvider(this@MainActivity, factory).get(MyViewModel::class.java)
 
         observeCurrentWeather(myViewModel)
-        observeNextHoursData(myViewModel)
-        observeDaysForecastData(myViewModel)
+        observeDayWeather(myViewModel)
+        observeDaysWeather(myViewModel)
+        observeWebcamsData(myViewModel)
 
         lifecycle.addObserver(myViewModel)
     }
 
-
-    private class MyLinearLayoutManager(private val context: Context) :
+    private class MyLinearLayoutManager(context: Context) :
         LinearLayoutManager(context) {
-
-        private var didScroll: Boolean = false
+        private var didScroll = false
 
         // Force new items appear at the top
         override fun onItemsAdded(recyclerView: RecyclerView, positionStart: Int, itemCount: Int) {
             super.onItemsAdded(recyclerView, positionStart, itemCount)
-            val position = findLastCompletelyVisibleItemPosition()
-            log("onItemsAdded()  positionStart: " + positionStart + " itemCount: " + itemCount +
-                        "  LastCompletelyVisibleItemPosition: " + position)
+//            val position = findLastCompletelyVisibleItemPosition()
             if (!didScroll)
                 scrollToPosition(0)
         }
 
         override fun onScrollStateChanged(state: Int) {
             super.onScrollStateChanged(state)
-//            Log.d(TAG, "onScrollStateChanged()  state: $state")
-            didScroll = true
+            if (!didScroll) didScroll = true
         }
 
     }
 
     private fun observeCurrentWeather(myViewModel: MyViewModel) {
         myViewModel.currentWeatherObservable.observe(this,
-            androidx.lifecycle.Observer<List<WeatherEntry>> { entries ->
-                if (entries != null && entries.isNotEmpty()) {
-                    showRecyclerView()
-                    currentWeatherEntry = entries[0]
-                    updateAdapter()
-                    logAndWarnCurrentWeather(entries)
-                } else showLoading()
+            androidx.lifecycle.Observer<List<WeatherEntry>> { listEntries ->
+                if (listEntries.isNullOrEmpty()) {
+                    showLoading()
+                    return@Observer
+                }
+                showRecyclerView()
+                currentWeatherEntry = listEntries[0]
+                updateAdapter()
+                logAndWarnCurrentWeather(listEntries)
             })
     }
 
-    private fun observeNextHoursData(myViewModel: MyViewModel) {
+    private fun observeDayWeather(myViewModel: MyViewModel) {
         myViewModel.nextHoursWeatherObservable.observe(this, Observer { listEntries ->
-            if (listEntries != null && listEntries.isNotEmpty()) {
-                showRecyclerView()
-                graphWeatherEntries = listEntries
-                updateAdapter()
-//                logDBvalues(this, listEntries, mutableListOf())
-            }
+            if (listEntries.isNullOrEmpty()) return@Observer
+            showRecyclerView()
+            graphWeatherEntries = listEntries
+            updateAdapter()
         })
     }
 
-    private fun observeDaysForecastData(myViewModel: MyViewModel) {
+    private fun observeDaysWeather(myViewModel: MyViewModel) {
         myViewModel.midDayWeather.observe(this, androidx.lifecycle.Observer { listEntries ->
-            if (listEntries != null && listEntries.isNotEmpty()) {
-                multiDayEntries = listEntries
-                updateAdapter()
-//                logDBvalues(this, listEntries, mutableListOf())
-            }
+            if (listEntries.isNullOrEmpty()) return@Observer
+            multiDayEntries = listEntries
+            updateAdapter()
+        })
+    }
+  private fun observeWebcamsData(myViewModel: MyViewModel) {
+        myViewModel.webcams.observe(this, androidx.lifecycle.Observer { listEntries ->
+            if (listEntries.isNullOrEmpty()) return@Observer
+//            multiDayEntries = listEntries
+            webcamEntries = listEntries
+            updateAdapter()
         })
     }
 
     override fun updateAdapter() {
         val updates = mutableListOf<Base>()
 //        // Primele 4 sunt notificate de schimbare °C|°F - onCelsiusFarClicked
-        updates.add(CurrentWeather(currentWeatherEntry))
-        updates.add(Graph(graphWeatherEntries))
-        updates.add(Details(currentWeatherEntry))
-        updates.add(MultiDay(multiDayEntries))
-        updates.add(Map(currentWeatherEntry))
+        updates.add(
+            CurrentWeather(
+                currentWeatherEntry
+            )
+        )
+        updates.add(
+            Graph(
+                graphWeatherEntries
+            )
+        )
+        updates.add(
+            Details(
+                currentWeatherEntry
+            )
+        )
+        updates.add(
+            MultiDay(
+                multiDayEntries
+            )
+        )
+        if (!webcamEntries.isNullOrEmpty()){
+            updates.add(
+                Webcam(
+                    webcamEntries
+                )
+            )
+        }
+
+        updates.add(
+            Map(
+                currentWeatherEntry
+            )
+        )
         updates.add(News(""))
-        if (adViewMedRectangle != null) updates.add(updates.size, Ads(adViewMedRectangle))
+        if (adViewMedRectangle != null) updates.add(updates.size,
+            Ads(adViewMedRectangle)
+        )
         mAdapter.setUpdates(updates)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         return true
     }
 
-    //    var iconCodeIndex = 0
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         return when (item.itemId) {
             R.id.action_settings -> {
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
             R.id.action_privacy_policy -> {
-
-               if (inTestMode) {
-                // show sync times and notif times
+                if (inTestMode) {
                     val pref = PreferenceManager.getDefaultSharedPreferences(this)
                     val savedTxt = pref.getString(PREF_SYNC_KEY, "")
                     layoutAttention.visibility = View.VISIBLE
                     layoutAttention.textViewWarnCityWrong.text = savedTxt
-
-                // make a request for multiple cities weather - for translation purpose
-//                    if (citiesIndexIncrement > 20)
-//                        handler.removeCallbacksAndMessages(null)
-//                    else{
-//                    private val timedTask: Runnable = object : Runnable {
-//                        override fun run() {
-//                            if (citiIndexStart + citiesIndexIncrement < CityIds.cityIds2.size - 21) {
-//                                myViewModel.forceSyncWeather(citiIndexStart + citiesIndexIncrement)
-//                                citiesIndexIncrement += 20
-//                                handler.postDelayed(this, 6 * 1000)
-//                            }
-//
-//                        }
-//                    }
-//                        handler.post(timedTask)
-//                        Toast.makeText(this, "getting data from multiple cities", Toast.LENGTH_LONG).show()
-//                    }
-
-
-            } else
-                goToPrivacyPolicy()
+                } else startActivity(Intent(this, PrivacyPolicyActivity::class.java))
                 return true
             }
             else -> super.onOptionsItemSelected(item)
         }
-    }
-
-//    val citiIndexStart = 0
-//    var citiesIndexIncrement = 0
-//    val handler = Handler()
-
-
-    companion object {
-        const val PREF_SYNC_KEY = "sync_key"
-//       const val languageParamMultipleCitiesTest = "es"
     }
 
     override fun onCelsiusFarClicked(view: View) {
@@ -197,6 +190,10 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     fun onOkTestButtonPressed(view: View) {
         layoutAttention.visibility = View.GONE
+    }
+
+    companion object {
+        const val PREF_SYNC_KEY = "sync_key"
     }
 
 }

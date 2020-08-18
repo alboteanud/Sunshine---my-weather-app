@@ -2,9 +2,8 @@ package com.craiovadata.android.sunshine.ui.main
 
 import android.view.View
 import androidx.recyclerview.widget.RecyclerView
-import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.ui.models.*
-import com.craiovadata.android.sunshine.ui.models.Map
+import com.craiovadata.android.sunshine.ui.adpterModels.*
+import com.craiovadata.android.sunshine.ui.adpterModels.Map
 
 
 class CardsViewHolders {
@@ -65,12 +64,18 @@ class CardsViewHolders {
                 Map.bindMapToUI(entry, itemView)
         }
     }
+  class WebcamViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView), UpdateViewHolder {
+        override fun bindViews(update: Base) {
+            val webcamUpdate = update as Webcam
+            Webcam.bindPhotoToUI(webcamUpdate.webcams, itemView)
+        }
+    }
 
     class NewsViewHolder(itemView: View, private val listener: CardsAdapter.Listener) :
         RecyclerView.ViewHolder(itemView), UpdateViewHolder {
         // get the views reference from itemView...
         override fun bindViews(update: Base) {
-//            val newsUpdate = update as com.craiovadata.android.sunshine.ui.models.News
+//            val newsUpdate = update as com.craiovadata.android.sunshine.ui.adpterModels.News
 
             News.bindNewsToUI(itemView, listener)
         }
