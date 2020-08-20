@@ -1,25 +1,24 @@
 package com.craiovadata.android.sunshine.ui.main
 
 import android.content.Context
-import android.content.Intent
 import android.os.Bundle
+import android.os.StrictMode
 import android.view.View
 import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
-import com.craiovadata.android.sunshine.BuildConfig
+import androidx.core.content.ContextCompat
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
-import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.utilities.LogUtils
-import com.craiovadata.android.sunshine.utilities.LogUtils.getAdIdPetru
 import com.craiovadata.android.sunshine.utilities.NotifUtils
 import com.google.android.gms.ads.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
 import java.util.concurrent.TimeUnit
+
 
 open class BaseActivity : AppCompatActivity() {
     var adViewMedRectangle: AdView? = null
@@ -29,9 +28,29 @@ open class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
-        backImage.setImageResource(CityData.getBackResId(this))
+        setBackground()
         initAds()
+initStrictMode()
+    }
 
+    private fun initStrictMode() {
+        if (!inTestMode) return
+        StrictMode.setThreadPolicy(
+            StrictMode.ThreadPolicy.Builder()
+                .detectDiskReads()
+                .detectDiskWrites()
+                .detectNetwork()
+                .penaltyLog()
+//                .penaltyDeath()
+                .build()
+        )
+    }
+
+    private fun setBackground(){
+    //    backImage.setImageResource(CityData.getBackResId(this))     // not recommended as it decodes on MainThread
+        val resId = CityData.getBackResId(this)
+        val backDrawable = ContextCompat.getDrawable(this, resId)
+        backImage.setImageDrawable(backDrawable)
     }
 
     private fun initAds() {

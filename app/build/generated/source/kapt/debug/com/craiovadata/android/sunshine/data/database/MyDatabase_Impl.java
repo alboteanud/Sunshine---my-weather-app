@@ -28,15 +28,15 @@ public final class MyDatabase_Impl extends MyDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(6) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weatherId` INTEGER NOT NULL, `date` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL, `cityName` TEXT NOT NULL, `description` TEXT NOT NULL, `sunrise` INTEGER NOT NULL, `sunset` INTEGER NOT NULL, `dt` INTEGER NOT NULL)");
         _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_weather_date` ON `weather` (`date`)");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `webcams` (`id` TEXT NOT NULL, `statusActive` INTEGER NOT NULL, `title` TEXT NOT NULL, `inserted` INTEGER NOT NULL, `update` INTEGER NOT NULL, `previewUrl` TEXT NOT NULL, PRIMARY KEY(`id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `webcams` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `updateDate` INTEGER NOT NULL, `previewUrl` TEXT NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_webcams_id` ON `webcams` (`id`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1d0dc8a3a2d93420808d30f3e341bf19')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '88f3b2e51ceebdce20184a8737e16c70')");
       }
 
       @Override
@@ -109,12 +109,10 @@ public final class MyDatabase_Impl extends MyDatabase {
                   + " Expected:\n" + _infoWeather + "\n"
                   + " Found:\n" + _existingWeather);
         }
-        final HashMap<String, TableInfo.Column> _columnsWebcams = new HashMap<String, TableInfo.Column>(6);
+        final HashMap<String, TableInfo.Column> _columnsWebcams = new HashMap<String, TableInfo.Column>(4);
         _columnsWebcams.put("id", new TableInfo.Column("id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsWebcams.put("statusActive", new TableInfo.Column("statusActive", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWebcams.put("title", new TableInfo.Column("title", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsWebcams.put("inserted", new TableInfo.Column("inserted", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsWebcams.put("update", new TableInfo.Column("update", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsWebcams.put("updateDate", new TableInfo.Column("updateDate", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWebcams.put("previewUrl", new TableInfo.Column("previewUrl", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysWebcams = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesWebcams = new HashSet<TableInfo.Index>(1);
@@ -128,7 +126,7 @@ public final class MyDatabase_Impl extends MyDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "1d0dc8a3a2d93420808d30f3e341bf19", "1b3a33713fd2fd2ce9f33b834c84d18a");
+    }, "88f3b2e51ceebdce20184a8737e16c70", "64260c6bd016037234bd2d9564b8563f");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

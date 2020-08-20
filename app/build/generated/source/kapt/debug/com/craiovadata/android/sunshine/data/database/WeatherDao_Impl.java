@@ -84,7 +84,7 @@ public final class WeatherDao_Impl implements WeatherDao {
     this.__insertionAdapterOfWebcamEntry = new EntityInsertionAdapter<WebcamEntry>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `webcams` (`id`,`statusActive`,`title`,`inserted`,`update`,`previewUrl`) VALUES (?,?,?,?,?,?)";
+        return "INSERT OR REPLACE INTO `webcams` (`id`,`title`,`updateDate`,`previewUrl`) VALUES (?,?,?,?)";
       }
 
       @Override
@@ -94,32 +94,22 @@ public final class WeatherDao_Impl implements WeatherDao {
         } else {
           stmt.bindString(1, value.getId());
         }
-        final int _tmp;
-        _tmp = value.getStatusActive() ? 1 : 0;
-        stmt.bindLong(2, _tmp);
         if (value.getTitle() == null) {
+          stmt.bindNull(2);
+        } else {
+          stmt.bindString(2, value.getTitle());
+        }
+        final Long _tmp;
+        _tmp = DateConverter.toTimestamp(value.getUpdateDate());
+        if (_tmp == null) {
           stmt.bindNull(3);
         } else {
-          stmt.bindString(3, value.getTitle());
-        }
-        final Long _tmp_1;
-        _tmp_1 = DateConverter.toTimestamp(value.getInserted());
-        if (_tmp_1 == null) {
-          stmt.bindNull(4);
-        } else {
-          stmt.bindLong(4, _tmp_1);
-        }
-        final Long _tmp_2;
-        _tmp_2 = DateConverter.toTimestamp(value.getUpdate());
-        if (_tmp_2 == null) {
-          stmt.bindNull(5);
-        } else {
-          stmt.bindLong(5, _tmp_2);
+          stmt.bindLong(3, _tmp);
         }
         if (value.getPreviewUrl() == null) {
-          stmt.bindNull(6);
+          stmt.bindNull(4);
         } else {
-          stmt.bindString(6, value.getPreviewUrl());
+          stmt.bindString(4, value.getPreviewUrl());
         }
       }
     };
@@ -133,7 +123,7 @@ public final class WeatherDao_Impl implements WeatherDao {
     this.__preparedStmtOfDeleteOldWebcams = new SharedSQLiteStatement(__db) {
       @Override
       public String createQuery() {
-        final String _query = "DELETE FROM webcams WHERE inserted < ?";
+        final String _query = "DELETE FROM webcams WHERE updateDate < ?";
         return _query;
       }
     };
@@ -774,47 +764,33 @@ public final class WeatherDao_Impl implements WeatherDao {
 
   @Override
   public List<WebcamEntry> getLatestWebcam() {
-    final String _sql = "SELECT * FROM webcams ORDER BY inserted ASC LIMIT 1";
+    final String _sql = "SELECT * FROM webcams LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
     try {
       final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-      final int _cursorIndexOfStatusActive = CursorUtil.getColumnIndexOrThrow(_cursor, "statusActive");
       final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
-      final int _cursorIndexOfInserted = CursorUtil.getColumnIndexOrThrow(_cursor, "inserted");
-      final int _cursorIndexOfUpdate = CursorUtil.getColumnIndexOrThrow(_cursor, "update");
+      final int _cursorIndexOfUpdateDate = CursorUtil.getColumnIndexOrThrow(_cursor, "updateDate");
       final int _cursorIndexOfPreviewUrl = CursorUtil.getColumnIndexOrThrow(_cursor, "previewUrl");
       final List<WebcamEntry> _result = new ArrayList<WebcamEntry>(_cursor.getCount());
       while(_cursor.moveToNext()) {
         final WebcamEntry _item;
         final String _tmpId;
         _tmpId = _cursor.getString(_cursorIndexOfId);
-        final boolean _tmpStatusActive;
-        final int _tmp;
-        _tmp = _cursor.getInt(_cursorIndexOfStatusActive);
-        _tmpStatusActive = _tmp != 0;
         final String _tmpTitle;
         _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
-        final Date _tmpInserted;
-        final Long _tmp_1;
-        if (_cursor.isNull(_cursorIndexOfInserted)) {
-          _tmp_1 = null;
+        final Date _tmpUpdateDate;
+        final Long _tmp;
+        if (_cursor.isNull(_cursorIndexOfUpdateDate)) {
+          _tmp = null;
         } else {
-          _tmp_1 = _cursor.getLong(_cursorIndexOfInserted);
+          _tmp = _cursor.getLong(_cursorIndexOfUpdateDate);
         }
-        _tmpInserted = DateConverter.toDate(_tmp_1);
-        final Date _tmpUpdate;
-        final Long _tmp_2;
-        if (_cursor.isNull(_cursorIndexOfUpdate)) {
-          _tmp_2 = null;
-        } else {
-          _tmp_2 = _cursor.getLong(_cursorIndexOfUpdate);
-        }
-        _tmpUpdate = DateConverter.toDate(_tmp_2);
+        _tmpUpdateDate = DateConverter.toDate(_tmp);
         final String _tmpPreviewUrl;
         _tmpPreviewUrl = _cursor.getString(_cursorIndexOfPreviewUrl);
-        _item = new WebcamEntry(_tmpId,_tmpInserted,_tmpStatusActive,_tmpTitle,_tmpUpdate,_tmpPreviewUrl);
+        _item = new WebcamEntry(_tmpId,_tmpTitle,_tmpUpdateDate,_tmpPreviewUrl);
         _result.add(_item);
       }
       return _result;
@@ -834,41 +810,27 @@ public final class WeatherDao_Impl implements WeatherDao {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
           final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
-          final int _cursorIndexOfStatusActive = CursorUtil.getColumnIndexOrThrow(_cursor, "statusActive");
           final int _cursorIndexOfTitle = CursorUtil.getColumnIndexOrThrow(_cursor, "title");
-          final int _cursorIndexOfInserted = CursorUtil.getColumnIndexOrThrow(_cursor, "inserted");
-          final int _cursorIndexOfUpdate = CursorUtil.getColumnIndexOrThrow(_cursor, "update");
+          final int _cursorIndexOfUpdateDate = CursorUtil.getColumnIndexOrThrow(_cursor, "updateDate");
           final int _cursorIndexOfPreviewUrl = CursorUtil.getColumnIndexOrThrow(_cursor, "previewUrl");
           final List<WebcamEntry> _result = new ArrayList<WebcamEntry>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final WebcamEntry _item;
             final String _tmpId;
             _tmpId = _cursor.getString(_cursorIndexOfId);
-            final boolean _tmpStatusActive;
-            final int _tmp;
-            _tmp = _cursor.getInt(_cursorIndexOfStatusActive);
-            _tmpStatusActive = _tmp != 0;
             final String _tmpTitle;
             _tmpTitle = _cursor.getString(_cursorIndexOfTitle);
-            final Date _tmpInserted;
-            final Long _tmp_1;
-            if (_cursor.isNull(_cursorIndexOfInserted)) {
-              _tmp_1 = null;
+            final Date _tmpUpdateDate;
+            final Long _tmp;
+            if (_cursor.isNull(_cursorIndexOfUpdateDate)) {
+              _tmp = null;
             } else {
-              _tmp_1 = _cursor.getLong(_cursorIndexOfInserted);
+              _tmp = _cursor.getLong(_cursorIndexOfUpdateDate);
             }
-            _tmpInserted = DateConverter.toDate(_tmp_1);
-            final Date _tmpUpdate;
-            final Long _tmp_2;
-            if (_cursor.isNull(_cursorIndexOfUpdate)) {
-              _tmp_2 = null;
-            } else {
-              _tmp_2 = _cursor.getLong(_cursorIndexOfUpdate);
-            }
-            _tmpUpdate = DateConverter.toDate(_tmp_2);
+            _tmpUpdateDate = DateConverter.toDate(_tmp);
             final String _tmpPreviewUrl;
             _tmpPreviewUrl = _cursor.getString(_cursorIndexOfPreviewUrl);
-            _item = new WebcamEntry(_tmpId,_tmpInserted,_tmpStatusActive,_tmpTitle,_tmpUpdate,_tmpPreviewUrl);
+            _item = new WebcamEntry(_tmpId,_tmpTitle,_tmpUpdateDate,_tmpPreviewUrl);
             _result.add(_item);
           }
           return _result;

@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Detroit</string>
-    <string name="owm_city_id" translatable="false">4990729</string>
+    <string name="app_name" translatable="false">New York</string>
+    <string name="owm_city_id" translatable="false">5128581</string>
+
+    <string name="windy_api_key" translatable="false" >D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb</string>
+<!--    <string name="windy_api_key" translatable="false" >Pm0gTKh1WNqkPzSjC7hXmfVyA7IZqI85</string>-->
 
     <string name="admob_med_rect" translatable="false">ca-app-pub-1015344817183694/2381456535</string>  <!--Sunshine 2020 08 Victoria55-->
     <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/4742459765</string>  <!--Sunshine 2020 08 Victoria55-->
@@ -140,7 +143,9 @@
     <string name="condition_unknown">Unknown (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
     <string name="title_graph_temperature">Temperature</string>
     <string name="clock_symbol" translatable="false">◷</string>
-    <string name="windy_api_key" translatable="false" >D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb</string>
+
+    <string name="camera_preview">camera preview</string>
+    <string name="camera_preview_error">preview error</string>
 
 
 </resources>

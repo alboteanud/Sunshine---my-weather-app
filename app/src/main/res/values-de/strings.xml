@@ -113,6 +113,8 @@
 
     <string name="condition_unknown">Unbekannt (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
     <string name="title_graph_temperature">Temperatur</string>
+    <string name="camera_preview">camera preview</string>
+    <string name="camera_preview_error">preview error</string>
 
 </resources>
 

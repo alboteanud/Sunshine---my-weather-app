@@ -11,12 +11,14 @@ import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.CityData.IS_IMPERIAL_UNITS_DEFAULT
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.jjoe64.graphview.GridLabelRenderer
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
 import kotlinx.android.synthetic.main.graph_card.view.*
+import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
 data class Graph(val list: List<ListWeatherEntry>?) :
@@ -93,17 +95,12 @@ data class Graph(val list: List<ListWeatherEntry>?) :
 //                    horizontalAxisTitle =  "\u23F0"
 //                    horizontalAxisTitle =  "\uE12b"
 
-                    val timeFormat = if (BuildConfig.DEBUG) {
-                        "HH:mm"
-                    } else {
-                        "HH:mm"
-                    }
                     gridStyle = GridLabelRenderer.GridStyle.NONE
                     setHumanRounding(false, true)
                     labelFormatter = object :
                         DateAsXAxisLabelFormatter(
                             context,
-                            CityData.getFormatterCityTZ(timeFormat)
+                            CityData.getFormatterCityTZ("HH:mm")
                         ) {
                         override fun formatLabel(value: Double, isValueX: Boolean): String {
                             return if (isValueX) super.formatLabel(value, isValueX)
@@ -112,18 +109,15 @@ data class Graph(val list: List<ListWeatherEntry>?) :
                     }
                 }
 
-
-
             }
 
-
-            val cityTimeZone = CityData.getCityTimeZone()
+            val cityTimeZone = TimeZone.getTimeZone(CityData.TIME_ZONE_ID)
             view.textViewClockSymbol.setOnClickListener {
                 Toast.makeText(it.context, cityTimeZone.displayName, Toast.LENGTH_SHORT).show()
             }
-            if (BuildConfig.DEBUG && cityTimeZone.id == "GMT") {
+            if (inTestMode && cityTimeZone.id == "GMT") {
 //                var text = cityTimeZone.displayName
-                val text = "timp GMT -> TIME_ZONE_ID eroare: $cityTimeZone"
+                val text = "GMT time -> TIME_ZONE_ID error: $cityTimeZone"
                 view.textViewClockSymbol.setTextColor(Color.RED)
                 view.textViewClockSymbol.text = text
             }

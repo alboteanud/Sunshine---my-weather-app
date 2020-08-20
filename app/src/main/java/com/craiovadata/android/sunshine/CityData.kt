@@ -9,8 +9,8 @@ import java.util.Calendar.ZONE_OFFSET
 import java.util.TimeZone.getTimeZone
 
 object CityData {
-//  https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=42.39,-83.12,30?key=D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb&show=webcams:location,image
-    const val TIME_ZONE_ID = "America/Detroit"
+
+    const val TIME_ZONE_ID = "America/New_York"
 
     private val images = intArrayOf(
         R.drawable.city1,
@@ -33,25 +33,25 @@ object CityData {
     const val DEFAULT_ZOOM_LEVEL: Int = 10
 
     @JvmStatic
-    fun getCityTimeZone(): TimeZone {
+    fun getCityTimeZone2(): TimeZone {
         val tz = getTimeZone(TIME_ZONE_ID)
-        if (inTestMode) {
-            require(tz.id != "GMT") { "timeZone probably wrong: GMT" }
-        }
+//        if (inTestMode) {
+//            require(tz.id != "GMT") { "timeZone probably wrong: GMT" }
+//        }
         return tz
     }
 
     @JvmStatic
     fun getCityOffset(): Long {
         val cal = GregorianCalendar()
-        cal.timeZone = getCityTimeZone()
+        cal.timeZone = getTimeZone(TIME_ZONE_ID)
         return (cal.get(ZONE_OFFSET) + cal.get(DST_OFFSET)).toLong()
     }
 
     @JvmStatic
     fun getFormatterCityTZ(pattern: String): SimpleDateFormat {
         val cal = GregorianCalendar()
-        cal.timeZone = getCityTimeZone()
+        cal.timeZone = getTimeZone(TIME_ZONE_ID)
         val simpleDateFormat = SimpleDateFormat(pattern, Locale.getDefault())
         simpleDateFormat.calendar = cal
         return simpleDateFormat

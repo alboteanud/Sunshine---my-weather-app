@@ -69,52 +69,6 @@ object NotifUtils {
         saveTimeAsLastNotification(context)
     }
 
-    fun getUpdatingNotification(context: Context): Notification{
-        val chanelId = context.getString(R.string.norif_channel_id)
-        val notificationManager =
-            context.getSystemService(Activity.NOTIFICATION_SERVICE) as NotificationManager
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                chanelId,
-                context.getString(R.string.notif_channel_name),
-                NotificationManager.IMPORTANCE_DEFAULT
-            )
-            notificationManager.createNotificationChannel(channel)
-        }
-
-        val channelId =
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                createNotificationChannel(context, "my_service", "My Background Service")
-            } else {
-                // If earlier version channel ID is not used
-                ""
-            }
-
-        val notificationBuilder = NotificationCompat.Builder(context, channelId )
-        val notification = notificationBuilder.setOngoing(true)
-            .setSmallIcon(R.mipmap.ic_launcher)
-            .setPriority(PRIORITY_MIN)
-            .setContentTitle("updating weather data")
-            .setAutoCancel(true)
-            .setTimeoutAfter(1 * MINUTE_IN_MILLIS)
-            .setCategory(Notification.CATEGORY_SERVICE)
-            .setSmallIcon(R.drawable.art_clear)
-            .build()
-
-        return notification
-    }
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    private fun createNotificationChannel(context: Context, channelId: String, channelName: String): String{
-        val chan = NotificationChannel(channelId,
-            channelName, NotificationManager.IMPORTANCE_NONE)
-        chan.lightColor = Color.BLUE
-        chan.lockscreenVisibility = Notification.VISIBILITY_PRIVATE
-        val service = context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
-        service.createNotificationChannel(chan)
-        return channelId
-    }
-
     private fun buildNotif(context: Context, entry: WeatherEntry): Notification {
         val backgrResourceId = getBackResId(context)
         val largeIcon = BitmapFactory.decodeResource(context.resources, backgrResourceId)
@@ -169,7 +123,7 @@ object NotifUtils {
 
         if (shouldNotify) {
             notifyUserOfNewWeather(context, weatherEntry)
-            addTestText(context, "notif")
+            addTestText(context, "ntf")
         }
 
 

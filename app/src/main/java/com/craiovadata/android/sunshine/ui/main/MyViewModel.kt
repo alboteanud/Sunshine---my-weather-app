@@ -7,7 +7,6 @@ import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import androidx.lifecycle.OnLifecycleEvent
 import androidx.lifecycle.LifecycleObserver
-import com.craiovadata.android.sunshine.ui.models.ListWebcamEntry
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 
 class MyViewModel internal constructor(private val repository: Repository) : ViewModel(),

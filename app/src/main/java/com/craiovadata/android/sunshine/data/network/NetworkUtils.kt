@@ -21,6 +21,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.craiovadata.android.sunshine.CityData.inTestMode
 
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.utilities.LogUtils.log
@@ -150,11 +151,14 @@ internal object NetworkUtils {
      latitude: Double,
      longitude: Double
  ): String {
-//     return "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=44.33,23.73,80?key=D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb&show=webcams:location,image"  // Craiova
-        val windyApiKey = mContext.getString(R.string.windy_api_key)
-     return "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=$latitude,$longitude,15?key=$windyApiKey&show=webcams:location,image"
+     val windyApiKey = mContext.getString(R.string.windy_api_key)
+     val areaKm = 100
+//     if (inTestMode) return "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=44.33,23.73,$areaKm?key=$windyApiKey&show=webcams:location,image"  // Craiova
+     // ordere by: polularity, distance, hotnes
+     val url = "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=$latitude,$longitude,$areaKm?key=$windyApiKey&show=webcams:location,image"
+     log(url)
+     return url
     }
-
 
     fun getUrlCurrentWeather(mContext: Context): String {
         val owmApiKey = mContext.getString(R.string.owm_api_key)
@@ -174,16 +178,13 @@ internal object NetworkUtils {
 // Request a string response from the provided URL.
         val stringRequest = StringRequest(
             Request.Method.GET, urlString,
-            Response.Listener<String> { response ->
-                // Display the first 500 characters of the response string.
-//                Log.d("tag", "Response is: ${response.substring(0, 500)}")
+            { response ->
                 callback.invoke(response)
             },
-            Response.ErrorListener {
+            {
                 log( "That didn't work!")
                 callback.invoke(null)
             })
-
 
 // Add the request to the RequestQueue.
         queue.add(stringRequest)

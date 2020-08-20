@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardMap"
+    android:id="@+id/cardWebcam"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardBackgroundColor="@color/blackSemi"
@@ -11,8 +11,17 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp">
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/SubheadWhiteTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/camera_preview"
+            card_view:layout_constraintBottom_toBottomOf="@+id/webcamImageView"
+            card_view:layout_constraintEnd_toEndOf="@+id/webcamImageView"
+            card_view:layout_constraintStart_toStartOf="@+id/webcamImageView"
+            card_view:layout_constraintTop_toTopOf="@+id/webcamImageView"/>
 
         <ImageView
             android:id="@+id/webcamImageView"
@@ -23,28 +32,17 @@
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
-            tools:src="@drawable/ic_image" />
+            tools:src="@drawable/city1" />
+
 
         <ImageView
-            android:id="@+id/buttonZoomPlus"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
-            android:padding="6dp"
-            android:background="@drawable/selector_blacksemi"
-            android:src="@drawable/ic_zoom_in"
-            card_view:layout_constraintBottom_toTopOf="@+id/buttonZoomMinus"
-            card_view:layout_constraintEnd_toEndOf="@+id/buttonZoomMinus"
-            card_view:layout_constraintStart_toStartOf="@+id/buttonZoomMinus"
-            android:layout_marginBottom="2sp"/>
-
-        <ImageView
-            android:id="@+id/buttonZoomMinus"
-            android:layout_width="38dp"
-            android:layout_height="38dp"
+            android:id="@+id/buttonNextPreview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
-            android:padding="6dp"
-            android:src="@drawable/ic_zoom_out"
+            android:padding="2dp"
+            android:src="@drawable/ic_next"
             card_view:layout_constraintBottom_toBottomOf="@id/webcamImageView"
             card_view:layout_constraintEnd_toEndOf="@id/webcamImageView"
             android:background="@drawable/selector_blacksemi"/>
@@ -54,11 +52,16 @@
             style="@style/SubheadWhiteTextStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:maxWidth="384dp"
             android:layout_marginTop="8dp"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="8dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="@+id/webcamImageView"
+            card_view:layout_constraintStart_toStartOf="@+id/webcamImageView"
             card_view:layout_constraintTop_toBottomOf="@+id/webcamImageView"
-            tools:text="text kjydiuf difkyilduyf  ">
+            tools:text="text kjydiuf difkyilduyf hgjdfhjg  gouiio sug s  98rt   ty 98er t ty       t t    fuhf f fi freh ff  rhfhr ">
 
         </TextView>
 

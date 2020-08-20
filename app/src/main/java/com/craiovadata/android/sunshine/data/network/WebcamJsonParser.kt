@@ -1,20 +1,12 @@
 
 package com.craiovadata.android.sunshine.data.network
 
-import com.craiovadata.android.sunshine.BuildConfig
-import com.craiovadata.android.sunshine.ui.models.WeatherEntry
-import com.craiovadata.android.sunshine.ui.models.WeatherEntry.Companion.CURRENT_WEATHER
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 import org.json.JSONException
 import org.json.JSONObject
-import java.net.HttpURLConnection
 import java.util.*
 
-/**
- * Parser for OpenWeatherMap JSON data.
- */
 internal class WebcamJsonParser {
-
 
     companion object {
         private const val STATUS = "status"
@@ -34,7 +26,7 @@ internal class WebcamJsonParser {
 
             for (i in 0 until jsonWebcamArray.length()) { // Get the JSON object representing the day
                 val jsonWebcam = jsonWebcamArray.getJSONObject(i)
-                val webcam = fromJsonWebcam(jsonWebcam)
+                val webcam = fromJsonWebcam(jsonWebcam, i)
 //                weatherEntries[i] = weather
                 webcamEntries.add(i, webcam)
             }
@@ -42,15 +34,15 @@ internal class WebcamJsonParser {
         }
 
         @Throws(JSONException::class)
-        private fun fromJsonWebcam(jsonWebcam: JSONObject ): WebcamEntry{
+        private fun fromJsonWebcam(jsonWebcam: JSONObject, i: Int): WebcamEntry{
             val webcamId = jsonWebcam.getString("id")
-            val statusActive = jsonWebcam.getString("status") == "active"
+//            val statusActive = jsonWebcam.getString("status") == "active"
             val title = jsonWebcam.getString("title")
             val imageObj = jsonWebcam.getJSONObject("image")
             val updateMilli = imageObj.getLong("update") * 1000
             val previewUrl = imageObj.getJSONObject("current").getString("preview")
 
-            return WebcamEntry(webcamId, Date(), statusActive, title, Date(updateMilli), previewUrl)
+            return WebcamEntry(webcamId, title, Date(updateMilli), previewUrl)
         }
 
         @Throws(JSONException::class)

@@ -9,11 +9,11 @@ import java.util.concurrent.CountDownLatch
 import java.util.concurrent.TimeUnit
 
 class WebcamsWorker(context: Context, params: WorkerParameters) : Worker(context, params) {
-    var latch: CountDownLatch? = null
+    private var latch: CountDownLatch? = null
     private val MAX_WAIT_TIME_SECONDS = 10L
 
     override fun doWork(): Result {
-        addTestText(applicationContext, "wkWebcams")
+        addTestText(applicationContext, "wkWebc")
 
         val defaultLatLon = 0.0
         val lat = inputData.getDouble(WEBCAMS_WORK_PARAM_LAT, defaultLatLon)
@@ -26,7 +26,7 @@ class WebcamsWorker(context: Context, params: WorkerParameters) : Worker(context
 //            networkDataSource.fetchWeather()
             networkDataSource.fetchWebcams(lat, lon) {success ->
                 if (!success){
-                    addTestText(applicationContext, "wkWebcamsRetry")
+                    addTestText(applicationContext, "wkWebcRetry")
                     Result.retry()
                 }
                 latch?.countDown()
@@ -35,7 +35,7 @@ class WebcamsWorker(context: Context, params: WorkerParameters) : Worker(context
             latch?.await(MAX_WAIT_TIME_SECONDS, TimeUnit.SECONDS)
             Result.success()
         } catch (e: Error) {
-            addTestText(applicationContext, "wkWebcamsEr:$e")
+            addTestText(applicationContext, "wkWebcEr:$e")
 //            Result.failure()
             Result.retry()
         }

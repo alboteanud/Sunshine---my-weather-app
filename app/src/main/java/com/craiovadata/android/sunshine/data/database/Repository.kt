@@ -3,12 +3,11 @@ package com.craiovadata.android.sunshine.data.database
 import android.text.format.DateUtils
 import android.text.format.DateUtils.DAY_IN_MILLIS
 import android.text.format.DateUtils.HOUR_IN_MILLIS
-import android.util.Log
 import androidx.lifecycle.LiveData
 import com.craiovadata.android.sunshine.utilities.AppExecutors
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.CityData
+import com.craiovadata.android.sunshine.CityData.inTestMode
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
@@ -133,7 +132,7 @@ class Repository private constructor(
             if (webcams.isNullOrEmpty()) return true
             // check if data webcams is older than one week
             val oneWeekAgo = Date(currentTimeMillis() - 7 * DAY_IN_MILLIS )
-            val isOldWebcamsData = webcams[0].inserted <   oneWeekAgo     
+            val isOldWebcamsData = webcams[0].updateDate < oneWeekAgo
             return isOldWebcamsData
         }
 
@@ -204,9 +203,8 @@ class Repository private constructor(
         refreshDataCurrentWeather()
         val recentlyMills = timestamp - DateUtils.MINUTE_IN_MILLIS * delay
         val recentDate = Date(recentlyMills)
-        val limitCountData = if (BuildConfig.DEBUG) 3
-        else 1
-        Log.d(LOG_TAG, "get currentWeather more recent than $recentDate")
+        val limitCountData = if (inTestMode) 3 else 1
+        log("get currentWeather more recent than $recentDate")
         return mWeatherDao.getCurrentWeather(recentDate, limitCountData)
 
     }
@@ -218,7 +216,6 @@ class Repository private constructor(
     }
 
     companion object {
-        private val LOG_TAG = Repository::class.java.simpleName
 
         // For Singleton instantiation
         private val LOCK = Any()

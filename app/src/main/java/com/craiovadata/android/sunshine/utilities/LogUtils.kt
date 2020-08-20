@@ -1,6 +1,7 @@
 package com.craiovadata.android.sunshine.utilities
 
 import android.content.Context
+import android.content.Context.MODE_PRIVATE
 import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
@@ -111,7 +112,8 @@ object LogUtils {
 
     fun addTestText(context: Context, text: String) {
         if (!inTestMode) return
-        val pref = PreferenceManager.getDefaultSharedPreferences(context)
+        val pref = context.getSharedPreferences("_", MODE_PRIVATE)
+
         var savedTxt = pref.getString(MainActivity.PREF_SYNC_KEY, "")
         val format = SimpleDateFormat("HH.mm")
         savedTxt += " $text" + "_" + format.format(System.currentTimeMillis())

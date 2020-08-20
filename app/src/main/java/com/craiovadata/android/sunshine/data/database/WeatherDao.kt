@@ -16,13 +16,13 @@ interface WeatherDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun bulkInsert(vararg weather: WeatherEntry)
 
- @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun bulkInsertWebcams(vararg webcams: WebcamEntry)
 
     @Query("SELECT * FROM weather")
     fun getAllWeatherEntries(): LiveData<List<WeatherEntry>>
 
- @Query("SELECT * FROM weather LIMIT 1")
+    @Query("SELECT * FROM weather LIMIT 1")
     fun getOneRandomWeatherEntry(): WeatherEntry?
 
     @Query("SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= :date ORDER BY date ASC LIMIT 5")
@@ -37,7 +37,7 @@ interface WeatherDao {
     @Query("DELETE FROM weather WHERE date < :recently")
     fun deleteOldWeather(recently: Date)
 
- @Query("DELETE FROM webcams WHERE inserted < :mDate")
+    @Query("DELETE FROM webcams WHERE updateDate < :mDate")
     fun deleteOldWebcams(mDate: Date)
 
     @Query("SELECT COUNT(*) FROM webcams ")
@@ -50,11 +50,18 @@ interface WeatherDao {
     fun getCurrentWeatherList(recentlyDate: Date): List<WeatherEntry>
 
     @Query("SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowMidnightNormalizedUtc AND (date + :offset) % (24 * :hourInMillis) BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
-    fun getMidDayForecast(tomorrowMidnightNormalizedUtc: Date, offset: Long, hourInMillis: Long): LiveData<List<ListWeatherEntry>>
+    fun getMidDayForecast(
+        tomorrowMidnightNormalizedUtc: Date,
+        offset: Long,
+        hourInMillis: Long
+    ): LiveData<List<ListWeatherEntry>>
 
-    @Query("SELECT * FROM webcams ORDER BY inserted ASC LIMIT 1")
+    @Query("SELECT * FROM webcams LIMIT 1")
     fun getLatestWebcam(): List<WebcamEntry>
 
-   @Query("SELECT * FROM webcams")
-   fun getAllWebcamEntries(): LiveData<List<WebcamEntry>>
+//    @Query("SELECT * FROM webcams ORDER BY `order` ASC")
+//    fun getAllWebcamEntries(): LiveData<List<WebcamEntry>>
+
+    @Query("SELECT * FROM webcams")
+    fun getAllWebcamEntries(): LiveData<List<WebcamEntry>>
 }

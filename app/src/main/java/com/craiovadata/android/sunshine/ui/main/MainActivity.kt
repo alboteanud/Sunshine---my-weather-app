@@ -20,8 +20,10 @@ import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
+import com.craiovadata.android.sunshine.utilities.LogUtils
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
+import kotlin.math.log
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
@@ -107,8 +109,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
   private fun observeWebcamsData(myViewModel: MyViewModel) {
         myViewModel.webcams.observe(this, androidx.lifecycle.Observer { listEntries ->
             if (listEntries.isNullOrEmpty()) return@Observer
-//            multiDayEntries = listEntries
             webcamEntries = listEntries
+//            listEntries.forEach { webcamEntry ->  LogUtils.log(webcamEntry.title) }
             updateAdapter()
         })
     }
@@ -137,13 +139,9 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             )
         )
         if (!webcamEntries.isNullOrEmpty()){
-            updates.add(
-                Webcam(
-                    webcamEntries
-                )
+            updates.add(Webcam(webcamEntries)
             )
         }
-
         updates.add(
             Map(
                 currentWeatherEntry
@@ -169,7 +167,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             }
             R.id.action_privacy_policy -> {
                 if (inTestMode) {
-                    val pref = PreferenceManager.getDefaultSharedPreferences(this)
+                    val pref = getSharedPreferences("_", MODE_PRIVATE)
                     val savedTxt = pref.getString(PREF_SYNC_KEY, "")
                     layoutAttention.visibility = View.VISIBLE
                     layoutAttention.textViewWarnCityWrong.text = savedTxt

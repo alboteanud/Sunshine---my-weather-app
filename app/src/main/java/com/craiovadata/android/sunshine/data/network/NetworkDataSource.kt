@@ -74,8 +74,8 @@ class NetworkDataSource private constructor(
 //            setRequiresDeviceIdle(true)     // not working with BackoffPolicy
         }.build()
 
-        val repeatIntervalHours: Long = if (inTestMode) 2 else 7 * 24
-        val flexIntervalHours: Long = if (inTestMode) 1 else 24
+        val repeatIntervalHours: Long = if (inTestMode) 12 else 14 * 24
+        val flexIntervalHours: Long = if (inTestMode) 2 else 24
 
         val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(
             WebcamsWorker::class.java,
@@ -88,7 +88,7 @@ class NetworkDataSource private constructor(
             .setConstraints(constraints)
             .setInitialDelay(repeatIntervalHours, TimeUnit.HOURS)
 //                .addTag(TAG_WORK_NAME)
-            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 1, TimeUnit.HOURS)
+            .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 24, TimeUnit.HOURS)
             .build()
         mWorkManager.enqueueUniquePeriodicWork(
             SYNC_WEBCAMS_WORK,
@@ -131,9 +131,9 @@ class NetworkDataSource private constructor(
 
             if (webcamList.webcams.isNullOrEmpty()) {
                 function.invoke(false)
-                addTestText(context, "syFailNullWebcams")
+                addTestText(context, "syFailNullWebc")
             } else {
-                addTestText(context, "syWebcamsOK")
+                addTestText(context, "syWebcOK")
                 val entries = webcamList.webcams
                 mDownloadedWebcams.postValue(entries)
 //                NotifUtils.notifyIfNeeded(context, entries[0])
@@ -212,8 +212,8 @@ class NetworkDataSource private constructor(
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
         val NUM_MIN_DATA_COUNTS = if (inTestMode) 10 else 39
 
-        const val SYNC_WEATHER_WORK = "my-work-sync-weather-v3"
-        const val SYNC_WEBCAMS_WORK = "my-work-sync-webcams-v3"
+        const val SYNC_WEATHER_WORK = "my-work-sync-weather"
+        const val SYNC_WEBCAMS_WORK = "my-work-sync-webcams"
 
 
         // For Singleton instantiation
