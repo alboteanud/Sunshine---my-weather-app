@@ -31,15 +31,7 @@ object CityData {
     const val IS_IMPERIAL_UNITS_DEFAULT = true
     val inTestMode = BuildConfig.DEBUG
     const val DEFAULT_ZOOM_LEVEL: Int = 10
-
-    @JvmStatic
-    fun getCityTimeZone2(): TimeZone {
-        val tz = getTimeZone(TIME_ZONE_ID)
-//        if (inTestMode) {
-//            require(tz.id != "GMT") { "timeZone probably wrong: GMT" }
-//        }
-        return tz
-    }
+    const  val AREA_WEBCAMS = 250
 
     @JvmStatic
     fun getCityOffset(): Long {

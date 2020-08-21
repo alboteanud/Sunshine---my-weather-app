@@ -21,6 +21,7 @@ import com.android.volley.Request
 import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
+import com.craiovadata.android.sunshine.CityData.AREA_WEBCAMS
 import com.craiovadata.android.sunshine.CityData.inTestMode
 
 import com.craiovadata.android.sunshine.R
@@ -152,10 +153,10 @@ internal object NetworkUtils {
      longitude: Double
  ): String {
      val windyApiKey = mContext.getString(R.string.windy_api_key)
-     val areaKm = 100
+
 //     if (inTestMode) return "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=44.33,23.73,$areaKm?key=$windyApiKey&show=webcams:location,image"  // Craiova
      // ordere by: polularity, distance, hotnes
-     val url = "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=$latitude,$longitude,$areaKm?key=$windyApiKey&show=webcams:location,image"
+     val url = "https://api.windy.com/api/webcams/v2/list/orderby=popularity/nearby=$latitude,$longitude,$AREA_WEBCAMS?key=$windyApiKey&show=webcams:location,image"
      log(url)
      return url
     }
