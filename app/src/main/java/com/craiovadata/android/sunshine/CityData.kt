@@ -10,7 +10,7 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "America/New_York"
+    const val TIME_ZONE_ID = "America/Denver"
 
     private val images = intArrayOf(
         R.drawable.city1,
@@ -31,7 +31,7 @@ object CityData {
     const val IS_IMPERIAL_UNITS_DEFAULT = true
     val inTestMode = BuildConfig.DEBUG
     const val DEFAULT_ZOOM_LEVEL: Int = 10
-    const  val AREA_WEBCAMS = 250
+    const  val AREA_WEBCAMS = 300
 
     @JvmStatic
     fun getCityOffset(): Long {

@@ -13,6 +13,7 @@ import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 
 @Dao
 interface WeatherDao {
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun bulkInsert(vararg weather: WeatherEntry)
 
@@ -58,9 +59,6 @@ interface WeatherDao {
 
     @Query("SELECT * FROM webcams LIMIT 1")
     fun getLatestWebcam(): List<WebcamEntry>
-
-//    @Query("SELECT * FROM webcams ORDER BY `order` ASC")
-//    fun getAllWebcamEntries(): LiveData<List<WebcamEntry>>
 
     @Query("SELECT * FROM webcams")
     fun getAllWebcamEntries(): LiveData<List<WebcamEntry>>

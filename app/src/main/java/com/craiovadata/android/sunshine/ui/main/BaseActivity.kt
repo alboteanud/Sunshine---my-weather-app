@@ -75,7 +75,6 @@ initStrictMode()
         }
 
         bannerAdView.loadAd(AdRequest.Builder().build())
-
     }
 
     private fun loadAdMedRectangle() {

@@ -1,4 +1,3 @@
-
 package com.craiovadata.android.sunshine.data.network
 
 import com.craiovadata.android.sunshine.BuildConfig
@@ -13,6 +12,7 @@ import java.util.*
  * Parser for OpenWeatherMap JSON data.
  */
 internal class WeatherJsonParser {
+
     @Throws(JSONException::class)
     fun parseForecastWeather(forecastJsonStr: String?): WeatherResponse {
         if (forecastJsonStr == null) return WeatherResponse(emptyArray())
@@ -22,17 +22,6 @@ internal class WeatherJsonParser {
             return WeatherResponse(emptyArray())
         }
         val weatherForecast = fromJsonForecast(forecastJson)
-        return WeatherResponse(weatherForecast)
-    }
- @Throws(JSONException::class)
-    fun parseForecastWeather2(forecastJsonStr: String?): WeatherResponse {
-        if (forecastJsonStr == null) return WeatherResponse(emptyArray())
-        val forecastJson = JSONObject(forecastJsonStr)
-        // Is there an error?
-        if (hasHttpError(forecastJson)) {
-            return WeatherResponse(emptyArray())
-        }
-        val weatherForecast = fromJsonForecast2(forecastJson)
         return WeatherResponse(weatherForecast)
     }
 
@@ -58,12 +47,14 @@ internal class WeatherJsonParser {
         private const val OWM_HUMIDITY = "humidity"
         private const val OWM_WINDSPEED = "speed"
         private const val OWM_WIND_DIRECTION = "deg"
+
         // All temperatures are children of the "temperature" object
         private const val OWM_TEMP = "temp"
         private const val OWM_WEATHER = "weather"
         private const val OWM_WEATHER_ID = "id"
         private const val OWM_MESSAGE_CODE = "cod"
         private const val OWM_ICON = "icon"
+
         @Throws(JSONException::class)
         private fun hasHttpError(forecastJson: JSONObject): Boolean {
             if (forecastJson.has(OWM_MESSAGE_CODE)) {
@@ -100,57 +91,6 @@ internal class WeatherJsonParser {
                 val dayForecast = jsonWeatherArray.getJSONObject(i)
                 val weather =
                     fromJsonForecast(dayForecast, lat, lon)
-//                weatherEntries[i] = weather
-                weatherEntries.add(i, weather)
-            }
-            return weatherEntries.toTypedArray()
-        }
-
-        /*
-* "list": [
-{
-"dt": 1577815200,
-"main": {
-"temp": 271.82,
-"feels_like": 268.81,
-"temp_min": 271.82,
-"temp_max": 273.15,
-"pressure": 1030,
-"sea_level": 1030,
-"grnd_level": 918,
-"humidity": 64,
-"temp_kf": -1.33
-},
-"weather": [
-{
-"id": 804,
-"main": "Clouds",
-"description": "Bedeckt",
-"icon": "04n"
-}
-],
-* */
-
- @Throws(JSONException::class)
-        private fun fromJsonForecast2(forecastJson: JSONObject): Array<WeatherEntry> {
-            val jsonWeatherArray =
-                forecastJson.getJSONArray(OWM_LIST)
-            val weatherEntries = mutableListOf<WeatherEntry>()
-//                arrayOfNulls<WeatherEntry>(jsonWeatherArray.length())
-            /*
-         * OWM returns daily forecasts based upon the local time of the city1 that is being asked
-         * for, which means that we need to know the GMT offset to translate this data properly.
-         * Since this data is also sent in-order and the first day is always the current day, we're
-         * going to take advantage of that to get a nice normalized UTC _date for all of our weather.
-         */
-//        long normalizedUtcStartDay = SunshineDateUtils.getNormalizedUtcMsForToday();
-            val coordObj = forecastJson.getJSONObject("city1").getJSONObject("coord")
-            val lat = coordObj.getDouble("lat").toFloat()
-            val lon = coordObj.getDouble("lon").toFloat()
-            for (i in 0 until jsonWeatherArray.length()) { // Get the JSON object representing the day
-                val dayForecast = jsonWeatherArray.getJSONObject(i)
-                val weather =
-                    fromJsonForecast2(dayForecast, lat, lon)
 //                weatherEntries[i] = weather
                 weatherEntries.add(i, weather)
             }
@@ -279,7 +219,7 @@ internal class WeatherJsonParser {
                     sunrise, sunset, dt
                 )
             }
-             return WeatherEntry(
+            return WeatherEntry(
                 weatherId,
                 wDate,
                 temp,
@@ -291,24 +231,8 @@ internal class WeatherJsonParser {
                 CURRENT_WEATHER,
                 lat.toDouble(),
                 lon.toDouble(),
-                 sunrise, sunset, dt
+                sunrise, sunset, dt
             )
-
-//            constructor(
-//                weatherId: Int, date: Date, temperature: Double, humidity: Double, pressure: Double,
-//                wind: Double, degrees: Double, iconCodeOWM: String, isCurrentWeather: Int, lat: Double, lon: Double) {
-//                this.weatherId = weatherId
-//                this.date = date
-//                this.temperature = temperature
-//                this.humidity = humidity
-//                this.pressure = pressure
-//                this.wind = wind
-//                this.degrees = degrees
-//                this.iconCodeOWM = iconCodeOWM
-//                this.isCurrentWeather = isCurrentWeather
-//                this.lat = lat
-//                this.lon = lon
-//            }
 
         }
     }

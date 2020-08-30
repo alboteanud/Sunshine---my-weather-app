@@ -15,6 +15,7 @@ import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.utilities.LogUtils.addTestText
 import com.craiovadata.android.sunshine.utilities.LogUtils.log
 import com.craiovadata.android.sunshine.utilities.NotifUtils
+import org.json.JSONException
 import java.util.concurrent.TimeUnit
 
 /**
@@ -100,24 +101,29 @@ class NetworkDataSource private constructor(
     fun fetchWeather(function: (success: WeatherEntry?) -> Unit) {
         val weatherRequestUrl = NetworkUtils.getForecastUrlString(context)
         NetworkUtils.getResponseFromHttpUrl(context, weatherRequestUrl) { jsonWeatherResponse ->
-            // Parse the JSON into a list of weather forecasts
-            val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
+            try {
+                // Parse the JSON into a list of weather forecasts
+                val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
 
-            log("weather JSON has ${response.weatherForecast.size} values")
-            addTestText(context, "${response.weatherForecast.size}sy")
+                log("weather JSON has ${response.weatherForecast.size} values")
+                addTestText(context, "${response.weatherForecast.size}sy")
 
-            // As long as there are weather forecasts, update the LiveData storing the most recent
-            // weather forecasts. This will trigger observers of that LiveData, such as the Repo
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the Repo
 
-            if (response.weatherForecast.isNullOrEmpty()) {
-                function.invoke(null)
-                addTestText(context, "syFailNullWe")
-            } else {
-                val entries = response.weatherForecast
-                mDownloadedWeatherForecasts.postValue(entries)
-                NotifUtils.notifyIfNeeded(context, entries[0])
-                function.invoke(entries[0])
+                if (response.weatherForecast.isNullOrEmpty()) {
+                    function.invoke(null)
+                    addTestText(context, "syFailNullWe")
+                } else {
+                    val entries = response.weatherForecast
+                    mDownloadedWeatherForecasts.postValue(entries)
+                    NotifUtils.notifyIfNeeded(context, entries[0])
+                    function.invoke(entries[0])
+                }
+            } catch (e: JSONException){
+                e.printStackTrace()
             }
+
 
         }
     }
@@ -143,8 +149,7 @@ class NetworkDataSource private constructor(
         }
     }
 
-    fun fetchWeatherForMultipleCitiesTest(context: Context, cityIds: List<Int>
-    ) {
+    fun fetchWeatherForMultipleCitiesTest(context: Context, cityIds: List<Int>) {
         Log.d(LOG_TAG, "Fetch weather days started")
         mExecutors.networkIO().execute {
             try {
@@ -160,7 +165,7 @@ class NetworkDataSource private constructor(
                     val jsonWeatherResponse = NetworkUtils.getResponseFromHttpUrl(weatherRequestUrl)
 
                     // Parse the JSON into a list of weather forecasts
-                    val response = WeatherJsonParser().parseForecastWeather2(jsonWeatherResponse)
+                    val response = WeatherJsonParser().parseForecastWeather(jsonWeatherResponse)
                     log("parsing finished. Size: ${response.weatherForecast.size} ")
                     response.weatherForecast.forEach { entry ->
 
@@ -192,16 +197,19 @@ class NetworkDataSource private constructor(
     fun fetchCurrentWeather() {
         val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context)
         NetworkUtils.getResponseFromHttpUrl(context, weatherRequestUrl) { jsonWeatherResponse ->
-            val response = WeatherJsonParser().parseCurrentWeather(jsonWeatherResponse)
-            log("JSON Parsing finished Current Weather. Size: ${response.weatherForecast.size}"
-            )
+            try {
+                val response = WeatherJsonParser().parseCurrentWeather(jsonWeatherResponse)
+                log("JSON Parsing finished Current Weather. Size: ${response.weatherForecast.size}")
 
-            // As long as there are weather forecasts, update the LiveData storing the most recent
-            // weather forecasts. This will trigger observers of that LiveData, such as the RepositoryWeather.
-            if (response.weatherForecast.isNotEmpty()) {
-                val entries = response.weatherForecast
-                mDownloadedCurrentWeather.postValue(entries)
-                // Will eventually do something with the downloaded data
+                // As long as there are weather forecasts, update the LiveData storing the most recent
+                // weather forecasts. This will trigger observers of that LiveData, such as the RepositoryWeather.
+                if (response.weatherForecast.isNotEmpty()) {
+                    val entries = response.weatherForecast
+                    mDownloadedCurrentWeather.postValue(entries)
+                    // Will eventually do something with the downloaded data
+                }
+            } catch (e: JSONException){
+                e.printStackTrace()
             }
 
         }

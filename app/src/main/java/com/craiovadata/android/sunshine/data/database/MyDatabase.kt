@@ -9,7 +9,7 @@ import androidx.room.TypeConverters
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 
-@Database(entities = [WeatherEntry::class, WebcamEntry::class], version = 6, exportSchema = false)
+@Database(entities = [WeatherEntry::class, WebcamEntry::class], version = 7, exportSchema = false)
 @TypeConverters(
     DateConverter::class
 )

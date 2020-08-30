@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Columbus</string>
-    <string name="owm_city_id" translatable="false">4509177</string>
+    <string name="app_name" translatable="false">Arvada</string>
+    <string name="owm_city_id" translatable="false">5412199</string>
 
-<!--    <string name="windy_api_key" translatable="false" >D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb</string>-->
-    <string name="windy_api_key" translatable="false" >Pm0gTKh1WNqkPzSjC7hXmfVyA7IZqI85</string>
+    <string name="windy_api_key" translatable="false">D6rvS8kB6d9JJ2KQEc3OcRrTl7JhXBHA</string>
 
     <string name="admob_med_rect" translatable="false">ca-app-pub-1015344817183694/2381456535</string>  <!--Sunshine 2020 08 Victoria55-->
     <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/4742459765</string>  <!--Sunshine 2020 08 Victoria55-->
     <string name="admob_app_id" translatable="false">ca-app-pub-1015344817183694~3265726566</string> <!--Sunshine 2020 08 Victoria55-->
 
-    <string name="owm_api_key" translatable="false">0e4061d341ecfc024a6a7637daf4773f</string> <!-- vatiana.scobaru - creat 21 Ian 2020 - for Africa -->
-<!--    <string name="owm_api_key" translatable="false">d53bff8f3256eaf090be3c94964b0cb8</string> &lt;!&ndash; alboteanud   &ndash;&gt;-->
+    <string name="owm_api_key" translatable="false">4c14e201ecae5b691310645549e5080e</string> <!-- craiova.data - Sep 2020 -->
     <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
     <string name="BASE_STATIC_MAP_URL" translatable="false">https://maps.googleapis.com/maps/api/staticmap?</string>
     <string name="link_privacy_policy" translatable="false">https://sites.google.com/view/privacy-policy-for-app-weather/main</string>

@@ -11,10 +11,10 @@ android {
     defaultConfig {
         minSdkVersion 24
         targetSdkVersion 29
-        versionName '24'
+        versionName '25'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 24
-        applicationId = 'com.craiovadata.android.sunshine.US.OH.Columbus'
+        versionCode = 25
+        applicationId = 'com.craiovadata.android.sunshine.US.CO.Arvada'
         // Required to use Java 8.
 //        jackOptions { enabled true }
         javaCompileOptions {

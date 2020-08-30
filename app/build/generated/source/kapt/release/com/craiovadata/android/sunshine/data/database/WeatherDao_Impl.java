@@ -130,11 +130,11 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public void bulkInsert(final WeatherEntry... weather) {
+  public void bulkInsert(final WeatherEntry... arg0) {
     __db.assertNotSuspendingTransaction();
     __db.beginTransaction();
     try {
-      __insertionAdapterOfWeatherEntry.insert(weather);
+      __insertionAdapterOfWeatherEntry.insert(arg0);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -142,11 +142,11 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public void bulkInsertWebcams(final WebcamEntry... webcams) {
+  public void bulkInsertWebcams(final WebcamEntry... arg0) {
     __db.assertNotSuspendingTransaction();
     __db.beginTransaction();
     try {
-      __insertionAdapterOfWebcamEntry.insert(webcams);
+      __insertionAdapterOfWebcamEntry.insert(arg0);
       __db.setTransactionSuccessful();
     } finally {
       __db.endTransaction();
@@ -154,12 +154,12 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public void deleteOldWeather(final Date recently) {
+  public void deleteOldWeather(final Date arg0) {
     __db.assertNotSuspendingTransaction();
     final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteOldWeather.acquire();
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(recently);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _stmt.bindNull(_argIndex);
     } else {
@@ -176,12 +176,12 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public void deleteOldWebcams(final Date mDate) {
+  public void deleteOldWebcams(final Date arg0) {
     __db.assertNotSuspendingTransaction();
     final SupportSQLiteStatement _stmt = __preparedStmtOfDeleteOldWebcams.acquire();
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(mDate);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _stmt.bindNull(_argIndex);
     } else {
@@ -372,12 +372,12 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<List<ListWeatherEntry>> getCurrentForecast(final Date date) {
+  public LiveData<List<ListWeatherEntry>> getCurrentForecast(final Date arg0) {
     final String _sql = "SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= ? ORDER BY date ASC LIMIT 5";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(date);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
@@ -429,12 +429,12 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public int countAllFutureWeatherEntries(final Date date) {
+  public int countAllFutureWeatherEntries(final Date arg0) {
     final String _sql = "SELECT COUNT(*) FROM weather WHERE date > ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(date);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
@@ -457,12 +457,12 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public int countCurrentWeather(final Date recently) {
+  public int countCurrentWeather(final Date arg0) {
     final String _sql = "SELECT COUNT(*) FROM weather WHERE date >= ? AND isCurrentWeather = 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(recently);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
@@ -505,19 +505,19 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<List<WeatherEntry>> getCurrentWeather(final Date recentlyDate, final int limit) {
+  public LiveData<List<WeatherEntry>> getCurrentWeather(final Date arg0, final int arg1) {
     final String _sql = "SELECT * FROM weather WHERE date  >= ? ORDER BY isCurrentWeather DESC, date ASC LIMIT ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(recentlyDate);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
       _statement.bindLong(_argIndex, _tmp);
     }
     _argIndex = 2;
-    _statement.bindLong(_argIndex, limit);
+    _statement.bindLong(_argIndex, arg1);
     return __db.getInvalidationTracker().createLiveData(new String[]{"weather"}, false, new Callable<List<WeatherEntry>>() {
       @Override
       public List<WeatherEntry> call() throws Exception {
@@ -606,12 +606,12 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public List<WeatherEntry> getCurrentWeatherList(final Date recentlyDate) {
+  public List<WeatherEntry> getCurrentWeatherList(final Date arg0) {
     final String _sql = "SELECT * FROM weather WHERE date  >= ? ORDER BY isCurrentWeather DESC, date ASC LIMIT 1";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(recentlyDate);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
@@ -697,26 +697,26 @@ public final class WeatherDao_Impl implements WeatherDao {
   }
 
   @Override
-  public LiveData<List<ListWeatherEntry>> getMidDayForecast(
-      final Date tomorrowMidnightNormalizedUtc, final long offset, final long hourInMillis) {
+  public LiveData<List<ListWeatherEntry>> getMidDayForecast(final Date arg0, final long arg1,
+      final long arg2) {
     final String _sql = "SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > ? AND (date + ?) % (24 * ?) BETWEEN (11 * ? +1) AND 14 * ?";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 5);
     int _argIndex = 1;
     final Long _tmp;
-    _tmp = DateConverter.toTimestamp(tomorrowMidnightNormalizedUtc);
+    _tmp = DateConverter.toTimestamp(arg0);
     if (_tmp == null) {
       _statement.bindNull(_argIndex);
     } else {
       _statement.bindLong(_argIndex, _tmp);
     }
     _argIndex = 2;
-    _statement.bindLong(_argIndex, offset);
+    _statement.bindLong(_argIndex, arg1);
     _argIndex = 3;
-    _statement.bindLong(_argIndex, hourInMillis);
+    _statement.bindLong(_argIndex, arg2);
     _argIndex = 4;
-    _statement.bindLong(_argIndex, hourInMillis);
+    _statement.bindLong(_argIndex, arg2);
     _argIndex = 5;
-    _statement.bindLong(_argIndex, hourInMillis);
+    _statement.bindLong(_argIndex, arg2);
     return __db.getInvalidationTracker().createLiveData(new String[]{"weather"}, false, new Callable<List<ListWeatherEntry>>() {
       @Override
       public List<ListWeatherEntry> call() throws Exception {
