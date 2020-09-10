@@ -9,10 +9,11 @@ import java.util.*
 @Entity(tableName = "weather", indices = [Index(value = ["date"], unique = true)])
 class WeatherEntry {
 
-    @PrimaryKey(autoGenerate = true)
-    var id: Int = 0
+//    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey var date: Date = Date()
+//    var id: Int = 0
     var weatherId: Int = 0
-    var date: Date = Date()
+
     var temperature: Double = 0.toDouble()
     var humidity: Double = 0.toDouble()
     var pressure: Double = 0.toDouble()
@@ -106,10 +107,11 @@ class WeatherEntry {
     }
 
     // main constructor. Complet
-    constructor(id: Int,
+    constructor(
+//        id: Int,
                 weatherId: Int, date: Date, temperature: Double, humidity: Double, pressure: Double,
                 wind: Double, degrees: Double, iconCodeOWM: String, isCurrentWeather: Int, cityName: String) {
-        this.id = id
+//        this.id = id
         this.weatherId = weatherId
         this.date = date
         this.temperature = temperature
@@ -123,9 +125,13 @@ class WeatherEntry {
     }
 
     @Ignore
-    constructor(id: Int, description: String){
+    constructor(
+//        id: Int,
+        weatherId: Int,
+        description: String){
         this.description = description
-        this.id = id
+//        this.id = id
+        this.weatherId = weatherId
     }
 
     companion object{

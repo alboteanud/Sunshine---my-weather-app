@@ -110,13 +110,14 @@ class CardsAdapter(val context: Context,
                 }
 
                 override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-                    return listUpdates[oldItemPosition]._id == newUpdates[newItemPosition]._id
+                    return listUpdates[oldItemPosition]._type == newUpdates[newItemPosition]._type
                 }
 
                 override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
                     val newWeather = newUpdates[newItemPosition]
                     val oldWeather = listUpdates[oldItemPosition]
-                    return newWeather._id == oldWeather._id && newWeather._date == oldWeather._date
+                    return newWeather._type == oldWeather._type
+//                            && newWeather._date == oldWeather._date
                 }
             })
             listUpdates = newUpdates

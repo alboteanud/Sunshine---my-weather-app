@@ -14,7 +14,9 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 
 
-data class Map(val weatherEntry: WeatherEntry?) : Base(-4, TYPE.MAP, Date(0)) {
+data class Map(val weatherEntry: WeatherEntry?) : Base(
+//    -4,
+    TYPE.MAP) {
 
     companion object {
 

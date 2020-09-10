@@ -23,7 +23,9 @@ import kotlinx.android.synthetic.main.webcam_card.view.*
 import java.util.*
 import java.util.logging.Handler
 
-data class Webcam(val webcams: List<WebcamEntry>?) : Base(-5, TYPE.WEBCAM, Date(0)) {
+data class Webcam(val webcams: List<WebcamEntry>?) : Base(
+//    -5,
+    TYPE.WEBCAM, ) {
 
     companion object {
 

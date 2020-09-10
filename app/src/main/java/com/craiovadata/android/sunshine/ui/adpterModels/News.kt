@@ -6,7 +6,9 @@ import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import java.util.*
 
 data class News(val queryString: String)
-    : Base(-5, TYPE.NEWS, Date(0)) {
+    : Base(
+//    -5,
+    TYPE.NEWS ) {
 
     companion object {
 

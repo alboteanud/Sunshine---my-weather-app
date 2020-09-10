@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Arvada</string>
-    <string name="owm_city_id" translatable="false">5412199</string>
+    <string name="app_name" translatable="false">Tucson</string>
+    <string name="owm_city_id" translatable="false">5318313</string>
 
-    <string name="windy_api_key" translatable="false">D6rvS8kB6d9JJ2KQEc3OcRrTl7JhXBHA</string>
+    <string name="windy_api_key" translatable="false">5PaQzwHgyCxCZClmyem5cb09fiC5VWEa</string>
 
     <string name="admob_med_rect" translatable="false">ca-app-pub-1015344817183694/2381456535</string>  <!--Sunshine 2020 08 Victoria55-->
     <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/4742459765</string>  <!--Sunshine 2020 08 Victoria55-->

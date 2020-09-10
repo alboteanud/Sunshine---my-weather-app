@@ -12,8 +12,9 @@ import kotlinx.android.synthetic.main.current_weather_card.view.weatherIcon
 import kotlinx.android.synthetic.main.days_weather_item.view.*
 import kotlinx.android.synthetic.main.multi_day_card.view.*
 
-data class MultiDay(val list: List<ListWeatherEntry>?)
-    : Base(list?.get(0)?.id, TYPE.DAYS, list?.get(0)?.date) {
+data class MultiDay(val list: List<ListWeatherEntry>?): Base(
+//    list?.get(0)?.date?.time ,
+    TYPE.DAYS) {
 
     companion object {
 

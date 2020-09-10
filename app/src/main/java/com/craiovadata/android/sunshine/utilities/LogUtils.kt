@@ -33,7 +33,7 @@ object LogUtils {
             val date = simpleDateFormat.format(entry.date.time)
             val temperature = SunshineWeatherUtils.formatTemperature(context, entry.temperature)
             log("entry[$i] $date  $temperature isCW-${entry.isCurrentWeather} " +
-                        "id-${entry.id} "
+                        "id-${entry.date} "
             )
         }
     }

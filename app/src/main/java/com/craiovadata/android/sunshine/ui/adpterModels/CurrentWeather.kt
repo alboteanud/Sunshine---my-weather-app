@@ -13,8 +13,10 @@ import kotlinx.android.synthetic.main.current_weather_card.view.wind_measurement
 import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
-data class CurrentWeather(val weatherEntry: WeatherEntry?) :
-    Base(weatherEntry?.id ?: -1, TYPE.WEATHER, weatherEntry?.date ?: Date(0)) {
+data class CurrentWeather(val weatherEntry: WeatherEntry) :
+    Base(
+//        weatherEntry.date.time ,
+        TYPE.WEATHER) {
 
     companion object {
 

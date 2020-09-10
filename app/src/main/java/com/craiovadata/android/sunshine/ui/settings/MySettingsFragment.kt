@@ -12,8 +12,8 @@ class MySettingsFragment : PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
 
-        val button = findPreference(getString(R.string.button_feedback))
-        button.onPreferenceClickListener = Preference.OnPreferenceClickListener {
+        val button = findPreference(getString(R.string.button_feedback)) as? Preference
+        button?.onPreferenceClickListener = Preference.OnPreferenceClickListener {
             composeEmail()
             true
         }

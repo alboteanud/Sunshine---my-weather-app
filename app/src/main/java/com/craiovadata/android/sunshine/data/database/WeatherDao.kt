@@ -26,7 +26,8 @@ interface WeatherDao {
     @Query("SELECT * FROM weather LIMIT 1")
     fun getOneRandomWeatherEntry(): WeatherEntry?
 
-    @Query("SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= :date ORDER BY date ASC LIMIT 5")
+//    @Query("SELECT id, weatherId, date, temperature, iconCodeOWM FROM weather WHERE date >= :date ORDER BY date ASC LIMIT 5")
+    @Query("SELECT date, weatherId, temperature, iconCodeOWM FROM weather WHERE date >= :date ORDER BY date ASC LIMIT 5")
     fun getCurrentForecast(date: Date): LiveData<List<ListWeatherEntry>>
 
     @Query("SELECT COUNT(*) FROM weather WHERE date > :date")
@@ -50,7 +51,8 @@ interface WeatherDao {
     @Query("SELECT * FROM weather WHERE date  >= :recentlyDate ORDER BY isCurrentWeather DESC, date ASC LIMIT 1")
     fun getCurrentWeatherList(recentlyDate: Date): List<WeatherEntry>
 
-    @Query("SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowMidnightNormalizedUtc AND (date + :offset) % (24 * :hourInMillis) BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
+//    @Query("SELECT id, date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowMidnightNormalizedUtc AND (date + :offset) % (24 * :hourInMillis) BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
+    @Query("SELECT date, weatherId, iconCodeOWM, temperature FROM weather WHERE date > :tomorrowMidnightNormalizedUtc AND (date + :offset) % (24 * :hourInMillis) BETWEEN (11 * :hourInMillis +1) AND 14 * :hourInMillis")
     fun getMidDayForecast(
         tomorrowMidnightNormalizedUtc: Date,
         offset: Long,

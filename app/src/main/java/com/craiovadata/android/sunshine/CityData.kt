@@ -10,12 +10,11 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "America/Denver"
+    const val TIME_ZONE_ID = "America/Phoenix"
 
     private val images = intArrayOf(
         R.drawable.city1,
         R.drawable.city2,
-        R.drawable.city3,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,

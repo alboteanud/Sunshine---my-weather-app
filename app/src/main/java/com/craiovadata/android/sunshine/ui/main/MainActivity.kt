@@ -118,21 +118,17 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
     override fun updateAdapter() {
         val updates = mutableListOf<Base>()
 //        // Primele 4 sunt notificate de schimbare °C|°F - onCelsiusFarClicked
-        updates.add(
-            CurrentWeather(
-                currentWeatherEntry
-            )
-        )
-        updates.add(
-            Graph(
-                graphWeatherEntries
-            )
-        )
-        updates.add(
-            Details(
-                currentWeatherEntry
-            )
-        )
+
+        currentWeatherEntry?.let {
+                updates.add(CurrentWeather(it)  )
+            }
+
+        updates.add(Graph(graphWeatherEntries))
+
+            currentWeatherEntry?.let {
+                updates.add(  Details(it) )
+            }
+
         updates.add(
             MultiDay(
                 multiDayEntries

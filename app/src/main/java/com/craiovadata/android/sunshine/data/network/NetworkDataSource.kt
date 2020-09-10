@@ -149,6 +149,7 @@ class NetworkDataSource private constructor(
         }
     }
 
+/*
     fun fetchWeatherForMultipleCitiesTest(context: Context, cityIds: List<Int>) {
         Log.d(LOG_TAG, "Fetch weather days started")
         mExecutors.networkIO().execute {
@@ -193,6 +194,8 @@ class NetworkDataSource private constructor(
             }
         }
     }
+*/
+
 
     fun fetchCurrentWeather() {
         val weatherRequestUrl = NetworkUtils.getUrlCurrentWeather(context)

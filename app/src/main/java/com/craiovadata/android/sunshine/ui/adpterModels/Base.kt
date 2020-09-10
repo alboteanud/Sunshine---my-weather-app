@@ -4,9 +4,9 @@ import com.craiovadata.android.sunshine.ui.adpterModels.Base.TYPE.Companion.DAYS
 import java.util.*
 
 abstract class Base(
-        var _id: Int? = -1,
-        var _type: String? = DAYS,
-        var _date: Date? = Date(0)
+//        var _id: Long? = -1,
+        var _type: String? = DAYS
+
 ) {
 
     class TYPE {

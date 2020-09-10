@@ -19,8 +19,10 @@ import kotlin.math.pow
 import kotlin.math.roundToInt
 
 
-data class Details(val weatherEntry: WeatherEntry?) :
-    Base(weatherEntry?.id, TYPE.DETAILS, weatherEntry?.date) {
+data class Details(val weatherEntry: WeatherEntry) :
+    Base(
+//        weatherEntry.date.time,
+        TYPE.DETAILS) {
 
     companion object {
 
