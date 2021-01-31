@@ -5,19 +5,18 @@ import android.view.View
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.preference.PreferenceManager.getDefaultSharedPreferences
-import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.main.CardsAdapter
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.CityData.IS_IMPERIAL_UNITS_DEFAULT
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.jjoe64.graphview.GridLabelRenderer
 import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
 import com.jjoe64.graphview.series.DataPoint
 import com.jjoe64.graphview.series.LineGraphSeries
-import kotlinx.android.synthetic.main.graph_card.view.*
+import kotlinx.android.synthetic.main.card_graph.view.*
 import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)
@@ -117,7 +116,7 @@ data class Graph(val list: List<ListWeatherEntry>?) :
             view.textViewClockSymbol.setOnClickListener {
                 Toast.makeText(it.context, cityTimeZone.displayName, Toast.LENGTH_SHORT).show()
             }
-            if (inTestMode && cityTimeZone.id == "GMT") {
+            if (isTestMode && cityTimeZone.id == "GMT") {
 //                var text = cityTimeZone.displayName
                 val text = "GMT time -> TIME_ZONE_ID error: $cityTimeZone"
                 view.textViewClockSymbol.setTextColor(Color.RED)

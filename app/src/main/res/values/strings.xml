@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
 
-    <string name="app_name" translatable="false">Tucson</string>
-    <string name="owm_city_id" translatable="false">5318313</string>
+    <string name="app_name" translatable="false">Los Angeles</string>
+    <string name="owm_city_id" translatable="false">5368361</string>
 
-    <string name="windy_api_key" translatable="false">5PaQzwHgyCxCZClmyem5cb09fiC5VWEa</string>
+    <string name="windy_api_key" translatable="false">D9shU62zYfuI35AkCM9F6xq5x6lZ1qfb</string>
 
     <string name="admob_med_rect" translatable="false">ca-app-pub-1015344817183694/2381456535</string>  <!--Sunshine 2020 08 Victoria55-->
     <string name="admob_banner_id" translatable="false">ca-app-pub-1015344817183694/4742459765</string>  <!--Sunshine 2020 08 Victoria55-->
     <string name="admob_app_id" translatable="false">ca-app-pub-1015344817183694~3265726566</string> <!--Sunshine 2020 08 Victoria55-->
 
     <string name="owm_api_key" translatable="false">4c14e201ecae5b691310645549e5080e</string> <!-- craiova.data - Sep 2020 -->
-    <string name="GOOGLE_API_KEY" translatable="false">AIzaSyB3W6TqecOLdHp8lcW4X9SCEmyYDr9BgZ0</string>    <!--Sunshine 2019 - anca.scobaru@gmail.com-->
+    <string name="GOOGLE_API_KEY" translatable="false">AIzaSyCXtL2IEteCA1W0JwiaF_sVgP2icsvjObg</string>    <!--LosAngeles 2021 - alboteanud@gmail.com-->
     <string name="BASE_STATIC_MAP_URL" translatable="false">https://maps.googleapis.com/maps/api/staticmap?</string>
-    <string name="link_privacy_policy" translatable="false">https://sites.google.com/view/privacy-policy-for-app-weather/main</string>
+    <string name="link_privacy_policy" translatable="false">https://sites.google.com/view/privacy-policy-for-app-weather/pagina-de-pornire</string>
 
     <string name="pref_last_notification" translatable="false">last_notification</string>
     <string name="pref_enable_notifications_key" translatable="false">notification_daily</string>

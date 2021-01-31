@@ -2,19 +2,17 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
-//apply plugin: 'com.google.gms.google-services'
-//apply plugin: 'com.google.firebase.crashlytics'
 
 android {
 
     compileSdkVersion 29
     defaultConfig {
-        minSdkVersion 24
-        targetSdkVersion 29
-        versionName '27'
+        minSdkVersion 26
+        targetSdkVersion 30
+        versionName '3'
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        versionCode = 27
-        applicationId = 'com.craiovadata.android.sunshine.US.AR.Tucson'
+        versionCode = 3
+        applicationId = 'com.craiovadata2.android.sunshine.US.CA.LosAngeles'
         // Required to use Java 8.
 //        jackOptions { enabled true }
         javaCompileOptions {
@@ -61,12 +59,12 @@ ext.glide_version = '4.11.0'
 
 dependencies {
 
-    implementation "androidx.core:core-ktx:1.3.1"
+    implementation "androidx.core:core-ktx:1.3.2"
     implementation "androidx.appcompat:appcompat:1.2.0"
     implementation "com.google.android.material:material:1.2.1"
     implementation "androidx.preference:preference:1.1.1"
-    implementation "androidx.constraintlayout:constraintlayout:2.0.1"
-    implementation "androidx.constraintlayout:constraintlayout:2.0.1"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
+    implementation "androidx.constraintlayout:constraintlayout:2.0.4"
 
     implementation "androidx.room:room-runtime:2.2.5"
     annotationProcessor "androidx.room:room-compiler:2.2.5"
@@ -87,12 +85,13 @@ dependencies {
     kapt "com.github.bumptech.glide:compiler:$glide_version"
     kapt "com.github.bumptech.glide:compiler:$glide_version"
 
-    implementation "com.google.android.gms:play-services-ads:19.3.0"
+    implementation "com.google.android.gms:play-services-ads:19.5.0"
     implementation "androidx.cardview:cardview:1.0.0"
     implementation 'com.jjoe64:graphview:4.2.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
 
     implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.jakewharton.timber:timber:4.7.1'
 
 
 }

@@ -18,11 +18,9 @@ package com.craiovadata.android.sunshine.data.network
 import android.content.Context
 import android.net.Uri
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.craiovadata.android.sunshine.CityData.AREA_WEBCAMS
-import com.craiovadata.android.sunshine.CityData.inTestMode
 
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.utilities.LogUtils.log

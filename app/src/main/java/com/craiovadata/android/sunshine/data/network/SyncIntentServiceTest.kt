@@ -18,7 +18,7 @@ package com.craiovadata.android.sunshine.data.network
 import android.app.IntentService
 import android.content.Intent
 import android.util.Log
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.utilities.CityIdsTest
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
 import com.craiovadata.android.sunshine.utilities.LogUtils.log
@@ -26,7 +26,7 @@ import com.craiovadata.android.sunshine.utilities.LogUtils.log
 class SyncIntentServiceTest : IntentService("SyncIntentService") {
     override fun onHandleIntent(intent: Intent?) {
         Log.d(LOG_TAG, "Intent service started")
-        if (!inTestMode) return
+        if (!isTestMode) return
         val networkDataSource =
             InjectorUtils.provideNetworkDataSource(this.applicationContext)
 

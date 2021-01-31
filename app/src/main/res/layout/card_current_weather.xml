@@ -94,7 +94,7 @@
 
     <include
         android:id="@+id/mill"
-        layout="@layout/mill_layout"
+        layout="@layout/wind_mill_layout"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/mill_height" />
 

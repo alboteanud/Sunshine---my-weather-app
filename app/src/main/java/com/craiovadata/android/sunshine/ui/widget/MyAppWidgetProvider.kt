@@ -44,7 +44,7 @@ class MyAppWidgetProvider : AppWidgetProvider() {
 
             // Get the layout for the App Widget and attach an on-click listener
             // to the button
-            val views = RemoteViews(context.packageName, R.layout.my_widget_layout)
+            val views = RemoteViews(context.packageName, R.layout.widget_layout)
             views.setOnClickPendingIntent(R.id.widgetView, pendingIntent)
 
             /****************

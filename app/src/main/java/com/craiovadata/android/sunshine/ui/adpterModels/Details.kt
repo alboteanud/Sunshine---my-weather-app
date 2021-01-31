@@ -11,7 +11,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry.Companion.CURRENT_WEATHER
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
-import kotlinx.android.synthetic.main.details_weather_card.view.*
+import kotlinx.android.synthetic.main.card_details_weather.view.*
 import java.lang.System.currentTimeMillis
 import java.text.SimpleDateFormat
 import java.util.*

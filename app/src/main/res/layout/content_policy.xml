@@ -9,7 +9,7 @@
     tools:showIn="@layout/activity_policy">
 
     <WebView
-        android:id="@+id/news_webview"
+        android:id="@+id/policy_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 

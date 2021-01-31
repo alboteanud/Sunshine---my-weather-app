@@ -1,12 +1,10 @@
 package com.craiovadata.android.sunshine.data.network
 
 import android.content.Context
-import android.content.res.Resources
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.work.*
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.data.network.WebcamsWorker.Companion.WEBCAMS_WORK_PARAM_LON
 import com.craiovadata.android.sunshine.data.network.WebcamsWorker.Companion.WEBCAMS_WORK_PARAM_LAT
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
@@ -51,7 +49,7 @@ class NetworkDataSource private constructor(
 //            setRequiresDeviceIdle(true)     // not working with BackoffPolicy
         }.build()
 
-        val repeatIntervalHours: Long = if (inTestMode) 2 else 6
+        val repeatIntervalHours: Long = if (isTestMode) 2 else 6
 
         val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(WeatherWorker::class.java, repeatIntervalHours, TimeUnit.HOURS, 3, TimeUnit.HOURS)
 //                .setInputData(input)
@@ -75,8 +73,8 @@ class NetworkDataSource private constructor(
 //            setRequiresDeviceIdle(true)     // not working with BackoffPolicy
         }.build()
 
-        val repeatIntervalHours: Long = if (inTestMode) 12 else 14 * 24
-        val flexIntervalHours: Long = if (inTestMode) 2 else 24
+        val repeatIntervalHours: Long = if (isTestMode) 12 else 14 * 24
+        val flexIntervalHours: Long = if (isTestMode) 2 else 24
 
         val request: PeriodicWorkRequest = PeriodicWorkRequest.Builder(
             WebcamsWorker::class.java,
@@ -221,7 +219,7 @@ class NetworkDataSource private constructor(
 
     companion object {
         private val LOG_TAG = NetworkDataSource::class.java.simpleName
-        val NUM_MIN_DATA_COUNTS = if (inTestMode) 10 else 39
+        val NUM_MIN_DATA_COUNTS = if (isTestMode) 10 else 39
 
         const val SYNC_WEATHER_WORK = "my-work-sync-weather"
         const val SYNC_WEBCAMS_WORK = "my-work-sync-webcams"

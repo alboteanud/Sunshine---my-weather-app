@@ -8,8 +8,7 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils.NO_DEGREE_WIND
-import kotlinx.android.synthetic.main.current_weather_card.view.*
-import kotlinx.android.synthetic.main.current_weather_card.view.wind_measurement
+import kotlinx.android.synthetic.main.card_current_weather.view.*
 import java.util.*
 
 //(val weatherId: Int, val date: Date, val temperature: Double, val iconCodeOWM: String)

@@ -5,8 +5,8 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import com.craiovadata.android.sunshine.R
-import kotlinx.android.synthetic.main.activity_news.*
-import kotlinx.android.synthetic.main.content_news.*
+import kotlinx.android.synthetic.main.activity_policy.*
+import kotlinx.android.synthetic.main.content_policy.*
 
 class PrivacyPolicyActivity : AppCompatActivity() {
 
@@ -15,15 +15,11 @@ class PrivacyPolicyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_policy)
         setSupportActionBar(toolbar)
-//
-//        fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                    .setAction("Action", null).show()
-//        }
+
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val urlPolicy = getString(R.string.link_privacy_policy)
 
-        mWebView = news_webview
+        mWebView = policy_webview
         mWebView?.loadUrl(urlPolicy)
         mWebView?.webViewClient = WebViewClient()
         mWebView?.settings?.javaScriptEnabled = true

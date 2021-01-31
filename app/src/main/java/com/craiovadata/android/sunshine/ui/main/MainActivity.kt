@@ -8,22 +8,18 @@ import android.view.MenuItem
 import android.view.View
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.adpterModels.*
 import com.craiovadata.android.sunshine.ui.models.*
 import com.craiovadata.android.sunshine.ui.adpterModels.Map
-import com.craiovadata.android.sunshine.ui.news.NewsActivity
 import com.craiovadata.android.sunshine.ui.policy.PrivacyPolicyActivity
 import com.craiovadata.android.sunshine.ui.settings.SettingsActivity
 import com.craiovadata.android.sunshine.utilities.InjectorUtils
-import com.craiovadata.android.sunshine.utilities.LogUtils
 import kotlinx.android.synthetic.main.content_main.*
 import kotlinx.android.synthetic.main.content_main.view.*
-import kotlin.math.log
 
 class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
@@ -31,6 +27,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
     private var graphWeatherEntries: List<ListWeatherEntry>? = null
     private var multiDayEntries: List<ListWeatherEntry>? = null
     private var webcamEntries: List<WebcamEntry>? = null
+
     //    private var listPosition = RecyclerView.NO_POSITION
     private lateinit var mAdapter: CardsAdapter
     private lateinit var myViewModel: MyViewModel
@@ -106,7 +103,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
             updateAdapter()
         })
     }
-  private fun observeWebcamsData(myViewModel: MyViewModel) {
+
+    private fun observeWebcamsData(myViewModel: MyViewModel) {
         myViewModel.webcams.observe(this, androidx.lifecycle.Observer { listEntries ->
             if (listEntries.isNullOrEmpty()) return@Observer
             webcamEntries = listEntries
@@ -120,22 +118,23 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 //        // Primele 4 sunt notificate de schimbare °C|°F - onCelsiusFarClicked
 
         currentWeatherEntry?.let {
-                updates.add(CurrentWeather(it)  )
-            }
+            updates.add(CurrentWeather(it))
+        }
 
         updates.add(Graph(graphWeatherEntries))
 
-            currentWeatherEntry?.let {
-                updates.add(  Details(it) )
-            }
+        currentWeatherEntry?.let {
+            updates.add(Details(it))
+        }
 
         updates.add(
             MultiDay(
                 multiDayEntries
             )
         )
-        if (!webcamEntries.isNullOrEmpty()){
-            updates.add(Webcam(webcamEntries)
+        if (!webcamEntries.isNullOrEmpty()) {
+            updates.add(
+                Webcam(webcamEntries)
             )
         }
         updates.add(
@@ -143,8 +142,8 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
                 currentWeatherEntry
             )
         )
-        updates.add(News(""))
-        if (adViewMedRectangle != null) updates.add(updates.size,
+        if (adViewMedRectangle != null) updates.add(
+            updates.size,
             Ads(adViewMedRectangle)
         )
         mAdapter.setUpdates(updates)
@@ -152,6 +151,7 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
+        menu.findItem(R.id.action_show_syncs).isVisible = isTestMode
         return true
     }
 
@@ -161,13 +161,16 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
                 startActivity(Intent(this, SettingsActivity::class.java))
                 return true
             }
+            R.id.action_show_syncs -> {
+                if (!isTestMode) return true
+                val pref = getSharedPreferences("_", MODE_PRIVATE)
+                val savedTxt = pref.getString(PREF_SYNC_KEY, "")
+                layoutAttention.visibility = View.VISIBLE
+                layoutAttention.textViewWarnCityWrong.text = savedTxt
+                return true
+            }
             R.id.action_privacy_policy -> {
-                if (inTestMode) {
-                    val pref = getSharedPreferences("_", MODE_PRIVATE)
-                    val savedTxt = pref.getString(PREF_SYNC_KEY, "")
-                    layoutAttention.visibility = View.VISIBLE
-                    layoutAttention.textViewWarnCityWrong.text = savedTxt
-                } else startActivity(Intent(this, PrivacyPolicyActivity::class.java))
+                startActivity(Intent(this, PrivacyPolicyActivity::class.java))
                 return true
             }
             else -> super.onOptionsItemSelected(item)
@@ -176,10 +179,6 @@ class MainActivity : BaseActivity(), CardsAdapter.Listener {
 
     override fun onCelsiusFarClicked(view: View) {
         recyclerView.adapter?.notifyItemRangeChanged(0, 4)
-    }
-
-    override fun onNewsClicked(view: View) {
-        startActivity(Intent(this, NewsActivity::class.java))
     }
 
     fun onOkTestButtonPressed(view: View) {

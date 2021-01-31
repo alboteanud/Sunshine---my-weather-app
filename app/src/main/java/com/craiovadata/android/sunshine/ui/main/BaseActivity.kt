@@ -8,7 +8,7 @@ import android.view.View.GONE
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.craiovadata.android.sunshine.CityData
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.utilities.LogUtils
@@ -30,11 +30,11 @@ open class BaseActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
         setBackground()
         initAds()
-initStrictMode()
+        initStrictMode()
     }
 
     private fun initStrictMode() {
-        if (!inTestMode) return
+        if (!isTestMode) return
         StrictMode.setThreadPolicy(
             StrictMode.ThreadPolicy.Builder()
 //                .detectDiskReads()
@@ -46,15 +46,15 @@ initStrictMode()
         )
     }
 
-    private fun setBackground(){
-    //    backImage.setImageResource(CityData.getBackResId(this))     // not recommended as it decodes on MainThread
+    private fun setBackground() {
+        //    backImage.setImageResource(CityData.getBackResId(this))     // not recommended as it decodes on MainThread
         val resId = CityData.getBackResId(this)
         val backDrawable = ContextCompat.getDrawable(this, resId)
         backImage.setImageDrawable(backDrawable)
     }
 
     private fun initAds() {
-        if (inTestMode) {
+        if (isTestMode) {
             bannerAdView.visibility = GONE
             return
         }
@@ -69,7 +69,7 @@ initStrictMode()
             return
         }
         val oneDaySinceInstall = System.currentTimeMillis() - savedDate > TimeUnit.DAYS.toMillis(1)
-        if (!oneDaySinceInstall){
+        if (!oneDaySinceInstall) {
             bannerAdView.visibility = GONE
             return
         }
@@ -99,7 +99,7 @@ initStrictMode()
 
     fun logAndWarnCurrentWeather(entries: List<WeatherEntry>) {
         // logs and warnings
-        if (!inTestMode) return
+        if (!isTestMode) return
 
         LogUtils.logEntries(this, entries)
 
@@ -114,7 +114,7 @@ initStrictMode()
     private fun warnIfCityNameWrong(
         currentWeatherEntry: WeatherEntry?
     ) {
-        if (!inTestMode) return
+        if (!isTestMode) return
         if (currentWeatherEntry == null) return
 
         if (currentWeatherEntry.cityName.isEmpty()) return
@@ -163,7 +163,7 @@ initStrictMode()
         loading_indicator.visibility = View.VISIBLE
     }
 
-    fun makeRequestsForMultipleCities(){
+    fun makeRequestsForMultipleCities() {
         // make a request for multiple cities weather - pt traducere coduri de vreme
 //                    if (citiesIndexIncrement > 20)
 //                        handler.removeCallbacksAndMessages(null)

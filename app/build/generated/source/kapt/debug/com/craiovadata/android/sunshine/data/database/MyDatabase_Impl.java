@@ -28,15 +28,15 @@ public final class MyDatabase_Impl extends MyDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(7) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(9) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `weatherId` INTEGER NOT NULL, `date` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL, `cityName` TEXT NOT NULL, `description` TEXT NOT NULL, `sunrise` INTEGER NOT NULL, `sunset` INTEGER NOT NULL, `dt` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `weather` (`date` INTEGER NOT NULL, `weatherId` INTEGER NOT NULL, `temperature` REAL NOT NULL, `humidity` REAL NOT NULL, `pressure` REAL NOT NULL, `wind` REAL NOT NULL, `degrees` REAL NOT NULL, `lat` REAL NOT NULL, `lon` REAL NOT NULL, `iconCodeOWM` TEXT NOT NULL, `isCurrentWeather` INTEGER NOT NULL, `cityName` TEXT NOT NULL, `description` TEXT NOT NULL, `sunrise` INTEGER NOT NULL, `sunset` INTEGER NOT NULL, `dt` INTEGER NOT NULL, PRIMARY KEY(`date`))");
         _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_weather_date` ON `weather` (`date`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `webcams` (`id` TEXT NOT NULL, `title` TEXT NOT NULL, `updateDate` INTEGER NOT NULL, `previewUrl` TEXT NOT NULL, PRIMARY KEY(`id`))");
         _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_webcams_id` ON `webcams` (`id`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '88f3b2e51ceebdce20184a8737e16c70')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'acdca0d4a0c94b186580b8e3677d897c')");
       }
 
       @Override
@@ -81,10 +81,9 @@ public final class MyDatabase_Impl extends MyDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsWeather = new HashMap<String, TableInfo.Column>(17);
-        _columnsWeather.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashMap<String, TableInfo.Column> _columnsWeather = new HashMap<String, TableInfo.Column>(16);
+        _columnsWeather.put("date", new TableInfo.Column("date", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("weatherId", new TableInfo.Column("weatherId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsWeather.put("date", new TableInfo.Column("date", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("temperature", new TableInfo.Column("temperature", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("humidity", new TableInfo.Column("humidity", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsWeather.put("pressure", new TableInfo.Column("pressure", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -126,7 +125,7 @@ public final class MyDatabase_Impl extends MyDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "88f3b2e51ceebdce20184a8737e16c70", "64260c6bd016037234bd2d9564b8563f");
+    }, "acdca0d4a0c94b186580b8e3677d897c", "b2fe7605066dffd1bd6dc5ed0db23ecc");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

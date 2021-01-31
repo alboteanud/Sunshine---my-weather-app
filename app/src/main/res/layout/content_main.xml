@@ -30,7 +30,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bannerAdView"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".MainActivity"
-        tools:listitem="@layout/current_weather_card" />
+        tools:listitem="@layout/card_current_weather" />
     <!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
 
 

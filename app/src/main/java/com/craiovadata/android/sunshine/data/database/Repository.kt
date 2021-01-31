@@ -7,7 +7,7 @@ import androidx.lifecycle.LiveData
 import com.craiovadata.android.sunshine.utilities.AppExecutors
 import com.craiovadata.android.sunshine.data.network.NetworkDataSource
 import com.craiovadata.android.sunshine.CityData
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
@@ -203,7 +203,7 @@ class Repository private constructor(
         refreshDataCurrentWeather()
         val recentlyMills = timestamp - DateUtils.MINUTE_IN_MILLIS * delay
         val recentDate = Date(recentlyMills)
-        val limitCountData = if (inTestMode) 3 else 1
+        val limitCountData = if (isTestMode) 3 else 1
         log("get currentWeather more recent than $recentDate")
         return mWeatherDao.getCurrentWeather(recentDate, limitCountData)
 

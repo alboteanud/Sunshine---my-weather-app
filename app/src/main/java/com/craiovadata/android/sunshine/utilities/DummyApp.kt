@@ -2,6 +2,7 @@ package com.craiovadata.android.sunshine.utilities
 
 import android.app.Application
 import androidx.lifecycle.ProcessLifecycleOwner
+import timber.log.Timber
 
 class DummyApp : Application() {
 
@@ -10,6 +11,7 @@ class DummyApp : Application() {
         ProcessLifecycleOwner.get()
                 .lifecycle
                 .addObserver(ForegroundListener())
+        Timber.plant()
     }
 
 }

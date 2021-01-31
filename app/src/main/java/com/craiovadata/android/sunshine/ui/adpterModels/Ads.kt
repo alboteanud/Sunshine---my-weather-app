@@ -3,7 +3,7 @@ package com.craiovadata.android.sunshine.ui.adpterModels
 import android.view.View
 import android.view.ViewGroup
 import com.google.android.gms.ads.AdView
-import kotlinx.android.synthetic.main.ads_card.view.*
+import kotlinx.android.synthetic.main.card_ads.view.*
 import java.util.*
 
 data class Ads(val adView: AdView?)

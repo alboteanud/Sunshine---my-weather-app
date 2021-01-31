@@ -6,11 +6,8 @@ import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.utilities.SunshineWeatherUtils
 import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.ui.models.ListWeatherEntry
-import com.craiovadata.android.sunshine.ui.models.WeatherEntry
-import kotlinx.android.synthetic.main.current_weather_card.view.temperatureText
-import kotlinx.android.synthetic.main.current_weather_card.view.weatherIcon
+import kotlinx.android.synthetic.main.card_days.view.*
 import kotlinx.android.synthetic.main.days_weather_item.view.*
-import kotlinx.android.synthetic.main.multi_day_card.view.*
 
 data class MultiDay(val list: List<ListWeatherEntry>?): Base(
 //    list?.get(0)?.date?.time ,

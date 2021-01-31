@@ -10,11 +10,13 @@ import java.util.TimeZone.getTimeZone
 
 object CityData {
 
-    const val TIME_ZONE_ID = "America/Phoenix"
+    const val TIME_ZONE_ID = "America/Los_Angeles"
 
     private val images = intArrayOf(
         R.drawable.city1,
         R.drawable.city2,
+        R.drawable.city3,
+        R.drawable.city4,
         R.drawable.stabil1,
         R.drawable.stabil2,
         R.drawable.stabil3,
@@ -28,9 +30,9 @@ object CityData {
     )
 
     const val IS_IMPERIAL_UNITS_DEFAULT = true
-    val inTestMode = BuildConfig.DEBUG
+    val isTestMode = BuildConfig.DEBUG
     const val DEFAULT_ZOOM_LEVEL: Int = 10
-    const  val AREA_WEBCAMS = 300
+    const  val AREA_WEBCAMS = 150
 
     @JvmStatic
     fun getCityOffset(): Long {
@@ -57,7 +59,7 @@ object CityData {
 //        val hoursSinceEpoch = TimeUnit.MILLISECONDS.toHours(now)
 //        val n = (hoursSinceEpoch % images.size).toInt()
 
-        val noImg = if (inTestMode) {
+        val noImg = if (isTestMode) {
             val preferences = PreferenceManager.getDefaultSharedPreferences(context)
 
             val storedResNo = preferences.getInt("prefKeyI", 0)

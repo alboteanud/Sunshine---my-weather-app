@@ -2,7 +2,6 @@ package com.craiovadata.android.sunshine.ui.adpterModels
 
 import android.content.Context.MODE_PRIVATE
 import android.graphics.drawable.Drawable
-import android.util.Log
 import android.view.View
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.DataSource
@@ -10,18 +9,11 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.bumptech.glide.request.RequestListener
-import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.Target
-import com.craiovadata.android.sunshine.CityData
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
-import com.jjoe64.graphview.GridLabelRenderer
-import com.jjoe64.graphview.helper.DateAsXAxisLabelFormatter
-import kotlinx.android.synthetic.main.map_card.view.buttonZoomMinus
-import kotlinx.android.synthetic.main.map_card.view.buttonZoomPlus
-import kotlinx.android.synthetic.main.webcam_card.view.*
+import kotlinx.android.synthetic.main.card_webcam.view.*
 import java.util.*
-import java.util.logging.Handler
 
 data class Webcam(val webcams: List<WebcamEntry>?) : Base(
 //    -5,

@@ -47,7 +47,7 @@
             android:padding="6dp"
             android:src="@drawable/ic_zoom_out"
             card_view:layout_constraintBottom_toBottomOf="@id/mapImageView"
-            card_view:layout_constraintEnd_toEndOf="@id/mapImageView"
+            card_view:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/selector_blacksemi"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

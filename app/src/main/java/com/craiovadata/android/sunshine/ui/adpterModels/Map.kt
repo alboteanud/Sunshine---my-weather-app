@@ -3,15 +3,15 @@ package com.craiovadata.android.sunshine.ui.adpterModels
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.net.Uri
-import android.util.Log
 import android.view.View
 import com.bumptech.glide.Glide
-import kotlinx.android.synthetic.main.map_card.view.*
 import java.util.*
 import com.bumptech.glide.request.RequestOptions
 import com.craiovadata.android.sunshine.CityData.DEFAULT_ZOOM_LEVEL
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
+import com.craiovadata.android.sunshine.utilities.LogUtils.log
+import kotlinx.android.synthetic.main.card_map.view.*
 
 
 data class Map(val weatherEntry: WeatherEntry?) : Base(
@@ -101,7 +101,7 @@ data class Map(val weatherEntry: WeatherEntry?) : Base(
                 .appendQueryParameter("key", apiKey)
                 .build()
             val url = staticMapUri.toString()
-            Log.d("tag", "map url: $url")
+            log("map url: $url")
             return url
         }
 

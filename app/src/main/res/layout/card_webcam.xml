@@ -25,7 +25,7 @@
 
         <ImageView
             android:id="@+id/webcamImageView"
-            android:layout_width="400dp"
+            android:layout_width="match_parent"
             android:layout_height="224dp"
             android:adjustViewBounds="true"
             android:contentDescription="@string/a11y_map_content_description"
@@ -44,7 +44,7 @@
             android:padding="2dp"
             android:src="@drawable/ic_next"
             card_view:layout_constraintBottom_toBottomOf="@id/webcamImageView"
-            card_view:layout_constraintEnd_toEndOf="@id/webcamImageView"
+            card_view:layout_constraintEnd_toEndOf="parent"
             android:background="@drawable/selector_blacksemi"/>
 
         <TextView

@@ -16,7 +16,7 @@ abstract class Base(
             const val GRAPH = "graph"
             const val MAP = "map"
             const val WEBCAM = "webcam"
-            const val NEWS = "news"
+//            const val NEWS = "news"
             const val ADS = "ads"
             const val DAYS: String = "days"
         }

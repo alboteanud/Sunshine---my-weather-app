@@ -5,8 +5,8 @@ package com.craiovadata.android.sunshine;
 
 public final class BuildConfig {
   public static final boolean DEBUG = Boolean.parseBoolean("true");
-  public static final String APPLICATION_ID = "com.craiovadata.android.sunshine.US.CO.Arvada";
+  public static final String APPLICATION_ID = "com.craiovadata2.android.sunshine.US.CA.LosAngeles";
   public static final String BUILD_TYPE = "debug";
-  public static final int VERSION_CODE = 25;
-  public static final String VERSION_NAME = "25";
+  public static final int VERSION_CODE = 3;
+  public static final String VERSION_NAME = "3";
 }

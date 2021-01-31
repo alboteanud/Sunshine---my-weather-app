@@ -12,7 +12,8 @@ import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.models.WebcamEntry
 
 @Dao
-interface WeatherDao {
+interface
+WeatherDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun bulkInsert(vararg weather: WeatherEntry)

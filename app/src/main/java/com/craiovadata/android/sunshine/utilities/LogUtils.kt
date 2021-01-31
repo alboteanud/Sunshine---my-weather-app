@@ -2,23 +2,21 @@ package com.craiovadata.android.sunshine.utilities
 
 import android.content.Context
 import android.content.Context.MODE_PRIVATE
-import android.util.Log
 import android.view.View
 import android.widget.LinearLayout
-import androidx.preference.PreferenceManager
 import com.android.volley.Request
-import com.android.volley.Response
 import com.android.volley.toolbox.StringRequest
 import com.android.volley.toolbox.Volley
 import com.craiovadata.android.sunshine.BuildConfig
 import com.craiovadata.android.sunshine.CityData
-import com.craiovadata.android.sunshine.CityData.inTestMode
+import com.craiovadata.android.sunshine.CityData.isTestMode
 import com.craiovadata.android.sunshine.R
 import com.craiovadata.android.sunshine.ui.models.WeatherEntry
 import com.craiovadata.android.sunshine.ui.main.MainActivity
 import kotlinx.android.synthetic.main.content_main.view.*
 import org.json.JSONException
 import org.json.JSONObject
+import timber.log.Timber
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -52,11 +50,12 @@ object LogUtils {
                 "location=${currentWeatherEntry.lat},${currentWeatherEntry.lon}" +
                 "&timestamp=${timsetampSec}" +
                 "&key=${context.getString(R.string.GOOGLE_API_KEY)}"
+        log("timezone check: $url")
 
         // Request a string response from the provided URL.
         val stringRequest = StringRequest(
             Request.Method.GET, url,
-            Response.Listener<String> { response ->
+            { response ->
 
                 var warningText: String? = null
                 try {
@@ -87,7 +86,7 @@ object LogUtils {
                     }
                 }
             },
-            Response.ErrorListener {
+            {
                 layoutAttention.visibility = View.VISIBLE
                 val warningText = "timezoneAPI: volley error"
                 layoutAttention.textViewWarnTimezone.text = warningText
@@ -111,7 +110,7 @@ object LogUtils {
     }
 
     fun addTestText(context: Context, text: String) {
-        if (!inTestMode) return
+        if (!isTestMode) return
         val pref = context.getSharedPreferences("_", MODE_PRIVATE)
 
         var savedTxt = pref.getString(MainActivity.PREF_SYNC_KEY, "")
@@ -121,8 +120,9 @@ object LogUtils {
     }
 
     fun log(msg: String) {
-        if (!inTestMode) return
-        Log.d("log Dan", msg)
+        if (!isTestMode) return
+//        Log.d("log Dan", msg)
+        Timber.d(msg)
     }
 
 
